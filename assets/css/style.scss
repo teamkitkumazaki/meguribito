@@ -1,0 +1,22 @@
+/*########## ミックスイン ##########*/
+@import 'mixin.scss';
+
+/*########## 共通レイアウト ##########*/
+@import 'common/reset.scss';
+/*@import 'common/form.scss';*/
+@import 'common/common.scss';
+@import 'common/header.scss';
+@import 'common/footer.scss';
+@import 'common/hummenu.scss';
+/*@import 'common/animation.scss';*/
+
+
+/*########## ページ個別レイアウト ##########*/
+@import 'pages/index.scss';
+
+
+
+
+/*########## コンポーネント ##########*/
+/* 共通パーツ */
+/*@import 'component/comp-fixed-header.scss';*/

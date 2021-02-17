@@ -1,0 +1,373 @@
+.page-index{
+  .section-concept{
+    padding: 160px 0 250px;
+    background-color: #ebf0f3;
+    background-size: 1380px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-image: url(../img/index/concept_bg.svg);
+    .comp-section-title{
+      position: relative;
+      margin-bottom: 40px;
+      .title{
+        font-size: 42px;
+        br{
+          display: none;
+        }
+      }
+    }
+    .section_inner{
+      position: relative;
+      z-index: 10;
+      .concept_txt{
+        margin-top: 60px;
+        .txt_item{
+          .concept_ttl{
+            @include midashi;
+            font-size: 32px;
+            font-weight: normal;
+            line-height: 1.6;
+            letter-spacing: 3.2px;
+            text-align: left;
+            color: #111111;
+            margin-bottom: 30px;
+            span{
+              display: block;
+              &.small{
+                display: block;
+                font-size: 22px;
+                letter-spacing: 2.2px;
+                margin-bottom: 5px;
+              }
+            }
+          }
+          .concept_desc{
+            line-height: 2;
+            letter-spacing: 0.32px;
+            height: 230px;
+          }
+          .link_wrap{
+            @include flexSet;
+            justify-content: flex-end;
+            .comp-arrow-button{
+              margin-right: 25px;
+              &:nth-last-of-type(1){
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-example{
+    padding: 160px 0;
+    border-bottom: 1px solid #ddd;
+    .comp-section-title{
+      margin-bottom: 60px;
+    }
+    .usecase_wrap{
+      margin-top: 160px;
+      @include blackBg;
+      .comp-section-title{
+        width: 100%;
+        margin-bottom: 40px;
+        .title{
+          font-size: 32px;
+        }
+      }
+    }
+  }
+  .section-top-footer-link{
+    padding: 160px 0;
+    .links_flex{
+      .links_item{
+        .comp-section-title{
+          margin-bottom: 60px;
+        }
+        .useage_txt{
+          margin: -5px auto 5px;
+          height: 350px;
+          .useage_desc{
+            @include basicP;
+          }
+          .useage_detail{
+            margin-top: 35px;
+            @include basicP;
+            span{
+              display: block;
+            }
+          }
+        }
+        .link_wrap{
+          @include flexSet;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .page-index{
+    .section-concept{
+      padding: 120px 0 20vw;
+      background-size: 120vw;
+      .comp-section-title{
+        .title{
+          font-size: 34px;
+        }
+      }
+      .section_inner{
+        position: relative;
+        z-index: 10;
+        .concept_txt{
+          margin-top: 60px;
+          .txt_item{
+            .concept_ttl{
+              font-size: 28px;
+              letter-spacing: 2.7px;
+              span{
+                display: block;
+                &.small{
+                  font-size: 18px;
+                  letter-spacing: 1.8px;
+                }
+              }
+            }
+            .concept_desc{
+              height: 260px;
+            }
+          }
+        }
+      }
+    }
+    .section-example{
+      padding: 120px 0;
+      border-bottom: 1px solid #ddd;
+      .usecase_wrap{
+        margin-top: 120px;
+        @include blackBg;
+        .comp-section-title{
+          width: 100%;
+          margin-bottom: 40px;
+          .title{
+            font-size: 32px;
+          }
+        }
+      }
+    }
+    .section-top-footer-link{
+      padding: 120px 0;
+      .links_flex{
+        .links_item{
+          .comp-section-title{
+            margin-bottom: 60px;
+          }
+          .useage_txt{
+            margin: -5px auto 5px;
+            height: 350px;
+            .useage_desc{
+              @include basicP;
+            }
+            .useage_detail{
+              margin-top: 35px;
+              @include basicP;
+              span{
+                display: block;
+              }
+            }
+          }
+          .link_wrap{
+            @include flexSet;
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px){
+  .page-index{
+    padding-top: 140px;
+    .section-concept{
+      padding: 100px 0 20vw;
+      background-color: #ebf0f3;
+      background-size: 120vw;
+      .comp-section-title{
+        position: relative;
+        margin-bottom: 40px;
+        .title{
+          font-size: 34px;
+          br{
+            display: block;
+          }
+        }
+      }
+      .section_inner{
+        .concept_txt{
+          margin-top: 60px;
+          .txt_item{
+            &:nth-of-type(1){
+              position: relative;
+              margin-bottom: 60px;
+              padding-bottom: 60px;
+              &::after{
+                display: block;
+                content: "";
+                position: absolute;
+                left:-6vw;
+                bottom:0;
+                width: 100vw;
+                height: 1px;
+                background: #fff;
+              }
+            }
+            .concept_desc{
+              height: auto;
+              margin-bottom: 50px;
+            }
+          }
+        }
+      }
+    }
+    .section-example{
+      padding: 80px 0 0;
+      border-bottom: 0px;
+      .comp-section-title{
+        margin-bottom: 40px;
+      }
+      .usecase_wrap{
+        margin-top: 80px;
+        .comp-section-title{
+          width: 100%;
+          margin-bottom: 40px;
+          .title{
+            font-size: 32px;
+          }
+        }
+      }
+    }
+    .section-top-footer-link{
+      padding: 80px 0;
+      .links_flex{
+        .links_item{
+          &:nth-of-type(1){
+            margin-bottom: 50px;
+          }
+          .comp-section-title{
+            margin-bottom: 40px;
+          }
+          .useage_txt{
+            margin: -5px auto 5px;
+            height: auto;
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  .page-index{
+    padding-top: 140px;
+    .section-concept{
+      padding: 60px 0 20vw;
+      background-color: #ebf0f3;
+      background-size: 120vw;
+      .comp-section-title{
+        position: relative;
+        margin-bottom: 40px;
+        .title{
+          font-size: 7.5vw;
+        }
+      }
+      .section_inner{
+        .concept_txt{
+          margin-top: 50px;
+          .txt_item{
+            &:nth-of-type(1){
+              position: relative;
+              margin-bottom: 45px;
+              padding-bottom: 45px;
+              &::after{
+                display: block;
+                content: "";
+                position: absolute;
+                left:-6vw;
+                bottom:0;
+                width: 100vw;
+                height: 1px;
+                background: #fff;
+              }
+            }
+            .concept_ttl{
+              font-size: 6.4vw;
+              letter-spacing: 0.04em;
+              margin-bottom: 20px;
+              span.small{
+                font-size: 4vw;
+                letter-spacing: 0.03em;
+              }
+            }
+            .concept_desc{
+              @include basicP;
+              height: auto;
+              margin-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+    .section-example{
+      padding: 60px 0 0;
+      border-bottom: 0px;
+      .comp-section-title{
+        margin-bottom: 30px;
+      }
+      .usecase_wrap{
+        margin-top: 80px;
+        .comp-section-title{
+          width: 100%;
+          margin-bottom: 30px;
+          .title{
+            font-size: 7.2vw;
+          }
+        }
+      }
+    }
+    .section-top-footer-link{
+      padding: 60px 0;
+      .links_flex{
+        .links_item{
+          &:nth-of-type(1){
+            position: relative;
+            padding-bottom: 60px;
+            margin-bottom: 60px;
+            &::after{
+              display: block;
+              content: "";
+              position: absolute;
+              left:-7vw;
+              right:0;
+              bottom: 0;
+              width: 100vw;
+              height: 1px;
+              background: #ddd;
+            }
+          }
+          .comp-section-title{
+            margin-bottom: 30px;
+          }
+          .useage_txt{
+            margin: -5px auto 5px;
+            height: auto;
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}
