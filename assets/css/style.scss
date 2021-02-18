@@ -19,4 +19,17 @@
 
 /*########## コンポーネント ##########*/
 /* 共通パーツ */
-/*@import 'component/comp-fixed-header.scss';*/
+@import 'component/comp-section-title.scss';
+@import 'component/comp-section-sub-title.scss';
+@import 'component/comp-kagibito-wrap.scss';
+
+/* プラン一覧 */
+@import 'component/comp-plan-list.scss';
+
+/* ニュース一覧 */
+@import 'component/comp-news-list.scss';
+
+
+/* トップページ */
+@import 'component/comp-main-slider.scss';
+@import 'component/comp-pickup-plan.scss';

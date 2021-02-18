@@ -5,8 +5,9 @@ body {
   font-style: normal;
   line-height: 1;
 	letter-spacing: 0.07em;
-  color: #111111;
-	font-family: noto-sans-cjk-jp, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #222;
+	background: $basicBgColor;
+	font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	&.bind{
 		position: fixed;
 		width: 100%;

@@ -84,7 +84,7 @@ $(function() {
 
   function init(){
     if(current_scrollY < 100){
-      $('body').addClass('bind');
+      /*$('body').addClass('bind');*/
     }
     target.find('li img').each(function(index) {
       originSrc[index] = $(this).attr('src');

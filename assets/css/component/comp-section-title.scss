@@ -1,0 +1,20 @@
+.comp-section-title{
+  .upper_txt{
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.9px;
+    margin-bottom: 10px;
+  }
+  .title{
+    @include tsukushi-b;
+    font-size: 50px;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+  }
+  &.center{
+    text-align: center;
+  }
+  &.margin{
+    margin-bottom: 90px;
+  }
+}

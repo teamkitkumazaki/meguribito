@@ -1,0 +1,19 @@
+.comp-section-sub-title{
+  margin-bottom: 40px;
+  .title{
+    @include tsukushi-b;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+  }
+  .sub_ttl{
+    @include tsukushi-b;
+    font-size: 30px;
+    line-height: 1.53;
+    letter-spacing: 1.93px;
+    span{
+      display: block;
+    }
+  }
+}

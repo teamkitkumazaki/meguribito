@@ -1,22 +1,18 @@
-$black01: #111;
-$black02: #222;
+$black01: #363636;
+$black02: #363636;
+$basicBgColor: #f9f6f3;
+$pointYellow: #BF992E;
 
 /* ----- Google Fonts ----- */
-@font-face {
-    font-family: 'PoiretOne';
-    src: url('../fonts/PoiretOne.eot'),url('../fonts/PoiretOne.woff') format('woff'),
-    url('../fonts/PoiretOne.otf') format('truetype'),
-}
 
-@mixin midashi{
-  font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-@mixin poiret{
-  font-family: 'PoiretOne', sans-serif;
+@mixin tsukushi-r{
+  font-family: "TsukuARdGothicStd-R";
   font-weight: normal;
+}
+
+@mixin tsukushi-b{
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
 }
 
 @mixin waku{
@@ -52,6 +48,12 @@ $black02: #222;
     opacity: 0.75;
   }
 }
+@mixin txtHover{
+  transition: color .2s;
+  &:hover{
+    color: #979797;
+  }
+}
 @mixin blackBg{
   background: $black02;
   padding: 80px;
@@ -78,12 +80,12 @@ $black02: #222;
     padding: 0 0 0 20px;
   }
 }
+@mixin border{
+  padding: 30px 0 0 0;
+  background: url(../img/common/wave.png) repeat-y center bottom;
+}
 @mixin basicP{
   font-size: 16px;
   line-height: 2;
-  letter-spacing: 0.32px;
-  color: $black01;
-  @media screen and (max-width: 1100px){
-    font-size: 14px;
-  }
+  letter-spacing: 0.6px;
 }

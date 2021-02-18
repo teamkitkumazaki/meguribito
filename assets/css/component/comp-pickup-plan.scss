@@ -1,0 +1,148 @@
+.comp-pickup-plan{
+  .pickup_item{
+    @include flexSet;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 140px;
+    &:nth-of-type(2n+3){
+      flex-direction: row-reverse;
+    }
+    &:nth-last-of-type(1){
+      margin-bottom: 0;
+    }
+    .img_wrap{
+      width: 52%;
+    }
+    .txt_wrap{
+      width: 43%;
+      .title_wrap{
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px dotted $pointYellow;
+        a{
+          display: block;
+          @include tsukushi-b;
+          font-size: 26px;
+          line-height: 1.44;
+          line-height: 1.54;
+          letter-spacing: 1.2px;
+          color: inherit;
+          margin-bottom: 15px;
+          @include hover;
+        }
+      }
+      .location{
+        span{
+          @include tsukushi-r;
+          font-size: 16px;
+          line-height: normal;
+          color: #464646;
+          position: relative;
+          padding: 5px 0;
+          &::before{
+            display: block;
+            content: "";
+            position: absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            margin: auto;
+            @include bgSet;
+          }
+          &.area{
+            padding-left: 30px;
+            margin-right: 20px;
+            &::before{
+              width: 15px;
+              height: 100%;
+              background-size: 14px;
+              background-image: url(../img/common/pin.svg);
+            }
+          }
+          &.guesthouse{
+            padding-left: 30px;
+            &::before{
+              width: 17px;
+              height: 100%;
+              background-size: 17px;
+              background-image: url(../img/common/guesthouse.svg);
+            }
+          }
+        }
+      }
+      .desc_wrap{
+        p{
+          @include basicP;
+          margin-bottom: 30px;
+        }
+        .kagibito{
+          @include flexSet;
+          align-items: center;
+          .icon{
+            display: block;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 1px solid $pointYellow;
+            @include bgSet;
+            margin-right: 20px;
+            box-sizing: border-box;
+          }
+          .kagibito_info{
+            width: calc(100% - 90px);
+            padding-bottom: 5px;
+            .info{
+              display: block;
+              @include tsukushi-r;
+              font-size: 14px;
+              line-height: normal;
+              letter-spacing: 0.8px;
+              margin-bottom: 5px;
+            }
+            .name{
+              display: block;
+              @include tsukushi-b;
+              font-size: 20px;
+              letter-spacing: 1.16px;
+              color: inherit;
+              @include hover;
+            }
+          }
+        }
+      }
+    }
+    &:nth-of-type(1){
+      display: block;
+      width: 80%;
+      margin: 0 auto 140px;
+      .img_wrap{
+        width: 100%;
+        margin-bottom: 40px;
+      }
+      .txt_wrap{
+        width: 100%;
+
+        .title_wrap{
+          a{
+            font-size: 32px;
+            line-height: 1.44;
+            letter-spacing: 2.46px;
+            span{
+              display: block;
+            }
+          }
+        }
+        .desc_wrap{
+          @include flexSet;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 0;
+          p{
+            width: 55%;
+            margin-right: 5%;
+          }
+        }
+      }
+    }
+  }
+}
