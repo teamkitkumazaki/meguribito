@@ -12,6 +12,7 @@
     }
     .img_wrap{
       width: 52%;
+      transition: opacity .5s;
       a{
         display: block;
         overflow: hidden;
@@ -24,9 +25,12 @@
         &:hover{
           img{
             opacity: 0.85;
-            transform: scale(1.1);
+            transform: scale(1.05);
           }
         }
+      }
+      &.slide_change{
+        opacity: 0;
       }
     }
     .txt_wrap{
@@ -151,6 +155,32 @@
         width: 100%;
 
         .title_wrap{
+          @include flexSet;
+          justify-content: space-between;
+          align-items: center;
+          .slider_shifter{
+            @include flexSet;
+            width: 330px;
+            .img_box{
+              width: 33.333333%;
+              padding: 0 0 7px 7px;
+              box-sizing: border-box;
+              @include hover;
+              cursor: pointer;
+              img{
+                border: 1px solid #f9f6f3;
+                box-sizing: border-box;
+              }
+              &:nth-of-type(3n){
+                margin-right: 0;
+              }
+              &.active_box{
+                img{
+                  border: 1px solid $pointYellow;
+                }
+              }
+            }
+          }
           a{
             font-size: 32px;
             line-height: 1.44;

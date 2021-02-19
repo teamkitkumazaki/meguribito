@@ -299,92 +299,110 @@ if (document.getElementById('index')) {
 
   humMenuControll($('#searchHummenu'));
 
-  function humMenuControll2(target){
-    var humMenuButton = $('#humMenuButton');
-    var humClose = $('#humClose2');
-    var humMenuState = 0;
-    var fadeBox = [];
-    var current_scrollY;
 
-    function hummenuMove(){
-      if(humMenuState == 0){
-        target.addClass('open');
-        humMenuState = 1;
-        current_scrollY = $(window).scrollTop();
-        setTimeout(function() {
-          $('body').addClass('bind');
-          $('body').css({
-            top: -1 * current_scrollY
-          });
-          target.find('.fade_box').each(function(index) {
-            fadeBox[index] = $(this);
-            var duration = 100 * index;
-            setTimeout(function() {
-              fadeBox[index].addClass('open');
-            }, duration);
-          });
-        }, 250);
-      }else{
-        target.removeClass('open');
-        $('body').removeClass('bind');
-        $('body').attr('style', '');
-        $('html, body').prop({scrollTop: current_scrollY});
-        humMenuState = 0;
-        setTimeout(function() {
-          target.find('.fade_box').each(function(index) {
-            $(this).removeClass('open');
-          });
-        }, 1000);
-      }
+  /* トップページ メインのピックアップ画像切り替え */
+  function slideItemThumb(target) {
+  var currentSlide = 1;
+  var sliderImg = [];
+  var targetSlide;
+  var targetImgWrap = $('#mainPickImg');
+  var targetImg = $('#mainPickImg').find('img');
+  var slideNum = target.find('li').length - 1;
+  var slideNextButton = target.find('.slide_next');
+  var slidePrevButton = target.find('.slide_prev');
+
+  function slideChange(e) {
+    console.log(currentSlide);
+    targetImgWrap.addClass('slide_change');
+    setTimeout(function() {
+      targetImg.attr('src', sliderImg[e]);
+      targetImgWrap.removeClass('slide_change');
+    }, 500);
+    /*targetSlide = target.find('.slide' + currentSlide);
+    target.find('.active_slide').removeClass('active_slide');
+    targetSlide.addClass('active_slide');
+    target.find('.current').text(currentSlide);*/
+  };
+
+  function slideNext(){
+    if (currentSlide < slideNum - 0.1) {
+      currentSlide = currentSlide + 1;
+    } else {
+      currentSlide = 1;
     }
+    slideChange();
+  };
 
-    function init(){
-      humMenuButton.on({
-        'click': function(){
-          hummenuMove();
+  function slidePrev(){
+    if (currentSlide == 1) {
+      currentSlide = slideNum;
+    } else {
+      currentSlide = currentSlide - 1;
+    }
+    slideChange();
+  };
+
+  function tabTouch(){
+    if(startTouchX - endTouchX > 50){
+      slideNext();
+    }else if(startTouchX - endTouchX < - 50){
+      slidePrev();
+    }
+  };
+
+  function windowDrag() {
+    if (startDragX - endDragX > 100) {
+      slideNext();
+    } else if (startDragX - endDragX < -100) {
+      slidePrev();
+    }
+  };
+
+  function init() {
+    target.find('button').each(function(index) {
+      sliderImg[index] = $(this).find('img').attr('src');
+      console.log('index:' + sliderImg[index]);
+      $(this).on({
+        'click': function() {
+          $('.active_box').removeClass('active_box');
+          $(this).addClass('active_box');
+          slideChange(index);
         }
       })
-      humClose.on({
-        'click': function(){
-          hummenuMove();
-        }
-      })
-    }
+    });
 
-    init();
-  }
+    $('.slide0').remove();
+    $('.slide1').addClass('active_slide')
 
-  humMenuControll2($('#menuHum'));
 
-  //検索欄の有効化
-  function controlKeyWordSearch(target,word){
-    var searchInput = [];
-    var submitButton = [];
-
-    function keyWordSearch(w){
-      if(w.length > 0 && w != null){
-        location.href = location.protocol + '/?s=' + w;
+    target.on({
+      'touchstart' : function(e){
+        startTouchX = event.changedTouches[0].pageX;
+      },
+      'touchmove' : function(e){
+        /*
+        movingTouchX = event.changedTouches[0].pageX;
+        var movingX = movingTouchX - startTouchX;
+        var sliderPosition = parseInt($('#top_slide ul').css('left'));
+        Position = sliderPosition + movingX;
+        console.log(Position);
+        $('#top_slide ul').css({'left': Position + 'px'});
+        */
+      },
+      'touchend' : function(e){
+        endTouchX = event.changedTouches[0].pageX;
+        tabTouch();
       }
-    }
+    });
+  };
 
-    function init(){
-      target.find('.function-search').each(function(index) {
-        searchInput[index] = $(this).find('input');
-        submitButton[index] = $(this).find('button');
-        submitButton[index].on({
-          'click': function(){
-            var word = searchInput[index].val();
-            keyWordSearch(word);
-          }
-        })
-      });
-    }
+  init();
 
-    init();
+};
 
-  }
-
-    controlKeyWordSearch($('body'));
+if (document.getElementById('index')) {
+  slideItemThumb($('#sliderShifter'));
+}
 
   // 作品詳細 ローディングアニメーション
   function loadingSet(target){
