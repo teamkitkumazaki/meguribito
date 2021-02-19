@@ -9,15 +9,19 @@ $(function() {
   var loadingState = 0;
 
     function homeKvShifter(){
-      var slider = $('#sliderImgBox');
-      var sliderLength = $('#sliderImgBox').find('li').length;
+      var slider = $('#slideShow');
+      var sliderLength = $('#slideShow').find('li').length;
+      var slideTxt = $('#slideTxt');
+      var slideNumber = slideTxt.find('.number')
+      var slideTxtBox = slideTxt.find('p');
       var objSelect;
       var timeId;
-      var duration = 4000;
-      var interval = 4000;
+      var duration = 8000;
+      var interval = 8000;
       var current = 0;
       var objBox = [];
       var btnList = [];
+      var imgAlt = [];
 
     function changeState() {
       if (current < sliderLength - 1) {
@@ -41,14 +45,22 @@ $(function() {
     }
 
     function slideChange(e) {
+      console.log('e:' + e);
       $('.display_slide').removeClass('display_slide');
-      $('.slide' + e).addClass('display_slide');
+      setTimeout(function() {
+        $('.slide' + e).addClass('display_slide');
+        var slidenum = e + 1;
+        slideNumber.html('0' + slidenum);
+        slideTxtBox.addClass('change').html(imgAlt[e]).removeClass('change');
+      }, 10);
       complete();
       current = e;
     };
 
     function init() {
+      console.log('init');
       slider.find('li').each(function(index) {
+        imgAlt[index] = $(this).find('img').attr('alt');
         if(index == 0){
           $(this).addClass('display_slide');
         }
@@ -58,10 +70,12 @@ $(function() {
     };
 
     init();
+
   }
 
   function loadingDelete(){
-    setTimeout(function() {
+    homeKvShifter();
+    /*setTimeout(function() {
       $('#loadInner').addClass('loaded');
       setTimeout(function() {
         $('#loading').addClass('loaded');
@@ -78,7 +92,7 @@ $(function() {
           }, 800);
         }, 1200);
       }, 1000);
-    }, 1000);
+    }, 1000);*/
   }
 
 
@@ -90,6 +104,7 @@ $(function() {
       originSrc[index] = $(this).attr('src');
       $(this).attr('src', "");
       $(this).attr('src', originSrc[index]);
+      console.log('index:' + originSrc[index]);
       $(this).on({
         'load': function(){
           loadingCount = loadingCount + 1;
@@ -112,7 +127,7 @@ $(function() {
 }
 
 if (document.getElementById('index')) {
-  loadingAnimation($('#sliderImages'));
+  loadingAnimation($('#slideShow'));
 }
 
   //ヘッダーのスクロール制御
@@ -361,7 +376,6 @@ if (document.getElementById('index')) {
   function init() {
     target.find('button').each(function(index) {
       sliderImg[index] = $(this).find('img').attr('src');
-      console.log('index:' + sliderImg[index]);
       $(this).on({
         'click': function() {
           $('.active_box').removeClass('active_box');
@@ -371,8 +385,6 @@ if (document.getElementById('index')) {
       })
     });
 
-    $('.slide0').remove();
-    $('.slide1').addClass('active_slide')
 
 
     target.on({

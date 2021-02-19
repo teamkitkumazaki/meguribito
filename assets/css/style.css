@@ -547,56 +547,44 @@ footer .footer_inner .footer_lower .copyright {
 
 /*@import 'common/animation.scss';*/
 /*########## ページ個別レイアウト ##########*/
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  99.9%, to {
+    width: 100%;
+  }
+}
 .page-index .section-main .main_inner {
   width: 100%;
   height: 100vh;
   position: relative;
 }
-.page-index .section-main .main_inner .txt_wrap {
+.page-index .section-main .main_inner .gauge_wrap {
+  width: 100%;
   position: absolute;
-  left: 60px;
-  bottom: 60px;
-  z-index: 50;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  z-index: 60;
 }
-.page-index .section-main .main_inner .txt_wrap .site_ttl {
-  font-family: "TsukuARdGothicStd-R";
-  font-weight: normal;
-  font-size: 65px;
-  line-height: 1.54;
-  letter-spacing: 8px;
-  color: #fff;
-  margin-bottom: 30px;
+.page-index .section-main .main_inner .gauge_wrap .gauge_inner {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: #fff;
 }
-.page-index .section-main .main_inner .txt_wrap .site_ttl span {
-  display: block;
-}
-.page-index .section-main .main_inner .txt_wrap .slide_txt {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.page-index .section-main .main_inner .txt_wrap .slide_txt .number {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
-  font-weight: bold;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1.5px solid #fff;
-  color: #fff;
-  text-align: center;
-  line-height: 40px;
-  font-size: 14px;
-  letter-spacing: 0.33px;
-  margin-right: 15px;
-}
-.page-index .section-main .main_inner .txt_wrap .slide_txt .txt {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: 1.2px;
-  color: #fff;
-  margin-bottom: 3px;
+.page-index .section-main .main_inner .gauge_wrap .gauge_inner .gauge_display {
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #BF992E;
+  animation: loading 8s linear 0s infinite normal;
 }
 .page-index .section-pickup {
   padding: 160px 0;
@@ -1045,6 +1033,8 @@ footer .footer_inner .footer_lower .copyright {
   width: 100%;
   height: 100vh;
   position: relative;
+  background: #242424;
+  overflow: hidden;
 }
 .comp-main-slider ul li {
   position: absolute;
@@ -1055,6 +1045,75 @@ footer .footer_inner .footer_lower .copyright {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  opacity: 0;
+  transition: opacity 2.5s, transform 6s;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.comp-main-slider ul li img {
+  opacity: 0;
+}
+.comp-main-slider ul li.display_slide {
+  opacity: 1;
+  transform: scale(1.06);
+}
+
+.comp-slider-txt {
+  position: absolute;
+  left: 60px;
+  bottom: 60px;
+  z-index: 50;
+}
+.comp-slider-txt .site_ttl {
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  font-size: 65px;
+  line-height: 1.54;
+  letter-spacing: 8px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.comp-slider-txt .site_ttl span {
+  display: block;
+}
+.comp-slider-txt .slide_txt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.comp-slider-txt .slide_txt .number {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 0.33px;
+  padding-right: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+.comp-slider-txt .slide_txt .number::after {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: #fff;
+}
+.comp-slider-txt .slide_txt .txt {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 1.2px;
+  color: #fff;
+  margin-bottom: 3px;
 }
 
 .comp-pickup-plan .pickup_item {
