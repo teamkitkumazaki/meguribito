@@ -17,4 +17,9 @@
   &.margin{
     margin-bottom: 90px;
   }
+  &.button{
+    @include flexSet;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

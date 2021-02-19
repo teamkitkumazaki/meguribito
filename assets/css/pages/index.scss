@@ -77,40 +77,61 @@
         .description{
           @include basicP;
         }
+        .comp-link-button{
+          margin-top: 30px;
+        }
       }
     }
   }
   .section-kagibito{
-    margin: 160px 0 160px;
+    margin: 160px 0 200px;
     .section_inner{
       @include flexSet;
       position: relative;
+      background: #fff;
       &::before{
         display: block;
         content: "";
         position: absolute;
         top:0;
-        right:0;
-        width: 85%;
+        left:0;
+        width: 15%;
         height: 100%;
-        background: #fff;
+        background: #f9f6f3;
       }
       .kagibito_img{
-        width: 50%;
+        width: 45%;
+        position: absolute;
+        left:0;
+        top: -40px;
+        @include flexSet;
+        .img_box{
+          width: 33%;
+          @include bgSet;
+          padding-right: 1px;
+          padding-bottom: 1px;
+          box-sizing: border-box;
+        }
       }
       .txt_wrap{
-        width: 50%;
-        position: relative;
+        width: 55%;
+        margin-left: 45%;
         z-index: 10;
         padding: 80px;
         box-sizing: border-box;
         .description{
           @include basicP;
         }
+        .comp-link-button{
+          margin-top: 30px;
+        }
       }
     }
   }
   .section-news{
     margin-bottom: 160px;
+  }
+  .section-footer-link{
+    margin-bottom: 120px;
   }
 }

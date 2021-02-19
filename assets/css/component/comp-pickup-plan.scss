@@ -12,6 +12,22 @@
     }
     .img_wrap{
       width: 52%;
+      a{
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: 28vw;
+        max-height: 480px;
+        img{
+          transition: transform .7s, opacity .7s;
+        }
+        &:hover{
+          img{
+            opacity: 0.85;
+            transform: scale(1.1);
+          }
+        }
+      }
     }
     .txt_wrap{
       width: 43%;
@@ -77,35 +93,41 @@
         }
         .kagibito{
           @include flexSet;
+          justify-content: space-between;
           align-items: center;
-          .icon{
-            display: block;
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            border: 1px solid $pointYellow;
-            @include bgSet;
-            margin-right: 20px;
-            box-sizing: border-box;
-          }
-          .kagibito_info{
-            width: calc(100% - 90px);
-            padding-bottom: 5px;
-            .info{
-              display: block;
-              @include tsukushi-r;
-              font-size: 14px;
-              line-height: normal;
-              letter-spacing: 0.8px;
-              margin-bottom: 5px;
-            }
-            .name{
-              display: block;
-              @include tsukushi-b;
-              font-size: 20px;
-              letter-spacing: 1.16px;
-              color: inherit;
+          .kagibito_wrap{
+            @include flexSet;
+            align-items: center;
+            .icon{
               @include hover;
+              display: block;
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              border: 1px solid $pointYellow;
+              @include bgSet;
+              margin-right: 20px;
+              box-sizing: border-box;
+            }
+            .kagibito_info{
+              width: calc(100% - 90px);
+              padding-bottom: 5px;
+              .info{
+                display: block;
+                @include tsukushi-r;
+                font-size: 14px;
+                line-height: normal;
+                letter-spacing: 0.8px;
+                margin-bottom: 5px;
+              }
+              .name{
+                display: block;
+                @include tsukushi-b;
+                font-size: 20px;
+                letter-spacing: 1.16px;
+                color: inherit;
+                @include hover;
+              }
             }
           }
         }
@@ -135,11 +157,16 @@
         .desc_wrap{
           @include flexSet;
           justify-content: space-between;
-          align-items: center;
           margin-bottom: 0;
           p{
             width: 55%;
             margin-right: 5%;
+          }
+        }
+        .kagibito{
+          display: block;
+          .comp-link-button{
+            margin-top: 40px;
           }
         }
       }

@@ -9,6 +9,22 @@
     }
     .img_wrap{
       margin-bottom: 25px;
+      a{
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        height: 16vw;
+        max-height: 275px;
+        img{
+          transition: transform .7s, opacity .7s;
+        }
+        &:hover{
+          img{
+            opacity: 0.85;
+            transform: scale(1.15);
+          }
+        }
+      }
     }
     .txt_wrap{
       .title_wrap{
@@ -20,6 +36,7 @@
           letter-spacing: 0.83px;
           color: inherit;
           margin-bottom: 20px;
+          @include hover;
         }
         .location{
           span{

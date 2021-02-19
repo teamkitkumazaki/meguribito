@@ -1,0 +1,45 @@
+.comp-link-button{
+  &.right{
+    text-align: right;
+  }
+  a{
+    @include tsukushi-b;
+    display: inline-block;
+    min-width: 120px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.58px;
+    padding: 12px 30px;
+    background: #4d4327;
+    border-radius: 200px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #4d4327;
+    transition: color .2s;
+    &::before{
+      display: block;
+      content: "";
+      width: 0px;
+      height: 100%;
+      position: absolute;
+      top:0;
+      bottom:0;
+      left:-1px;
+      margin: auto;
+      background: #fff;
+      transition: width .2s;
+    }
+    span{
+      position: relative;
+      z-index: 10;
+    }
+    &:hover{
+      color: #4d4327;
+      &::before{
+        width: calc(100% + 2px);
+      }
+    }
+  }
+}

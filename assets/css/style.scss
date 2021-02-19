@@ -19,9 +19,12 @@
 
 /*########## コンポーネント ##########*/
 /* 共通パーツ */
+@import 'component/comp-link-button.scss';
+@import 'component/comp-kagibito-wrap.scss';
 @import 'component/comp-section-title.scss';
 @import 'component/comp-section-sub-title.scss';
 @import 'component/comp-kagibito-wrap.scss';
+
 
 /* プラン一覧 */
 @import 'component/comp-plan-list.scss';
@@ -33,3 +36,4 @@
 /* トップページ */
 @import 'component/comp-main-slider.scss';
 @import 'component/comp-pickup-plan.scss';
+@import 'component/comp-footer-link.scss';

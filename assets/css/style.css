@@ -421,6 +421,130 @@ header .header_inner .header_right .box_contents .box_item.cart {
   background-image: url(../img/common/cart.svg);
 }
 
+footer {
+  padding: 120px 0;
+  background-color: #231916;
+}
+footer .footer_inner .footer_upper {
+  margin-bottom: 60px;
+}
+footer .footer_inner .footer_upper .footer_logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../img/common/logo_white.svg);
+}
+footer .footer_inner .footer_upper .catchcopy {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 0.15px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+footer .footer_inner .footer_upper .sns_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer .footer_inner .footer_upper .sns_wrap a {
+  display: block;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+footer .footer_inner .footer_upper .sns_wrap a:nth-last-of-type(1) {
+  margin-right: 0;
+}
+footer .footer_inner .footer_upper .sns_wrap a.ig {
+  background-size: 22px;
+  background-image: url(../img/common/icon_ig.png);
+}
+footer .footer_inner .footer_upper .sns_wrap a.fb {
+  background-size: 14px;
+  background-image: url(../img/common/icon_fb.png);
+}
+footer .footer_inner .footer_upper .sns_wrap a.tw {
+  background-size: 20px;
+  background-image: url(../img/common/icon_tw.png);
+}
+footer .footer_inner .footer_lower .nav_upper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+footer .footer_inner .footer_lower .nav_upper a {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  display: block;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 1.14px;
+  color: #fff;
+  position: relative;
+  margin-right: 1.2em;
+  padding-right: 1.2em;
+}
+footer .footer_inner .footer_lower .nav_upper a::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 1px;
+  height: 15px;
+  background: #fff;
+}
+footer .footer_inner .footer_lower .nav_upper a:nth-last-of-type(1) {
+  margin-right: 0em;
+  padding-right: 0em;
+}
+footer .footer_inner .footer_lower .nav_upper a:nth-last-of-type(1)::after {
+  display: none;
+}
+footer .footer_inner .footer_lower .nav_lower {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+footer .footer_inner .footer_lower .nav_lower a {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  display: block;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1.14px;
+  color: #fff;
+  position: relative;
+  margin-right: 2em;
+}
+footer .footer_inner .footer_lower .nav_lower a:nth-last-of-type(1) {
+  margin-right: 0em;
+}
+footer .footer_inner .footer_lower .copyright {
+  text-align: center;
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 1.14px;
+  color: #fff;
+}
+
 /*@import 'common/animation.scss';*/
 /*########## ページ個別レイアウト ##########*/
 .page-index .section-main .main_inner {
@@ -508,30 +632,48 @@ header .header_inner .header_right .box_contents .box_item.cart {
   line-height: 2;
   letter-spacing: 0.6px;
 }
+.page-index .section-service .section_inner .txt_wrap .comp-link-button {
+  margin-top: 30px;
+}
 .page-index .section-kagibito {
-  margin: 160px 0 160px;
+  margin: 160px 0 200px;
 }
 .page-index .section-kagibito .section_inner {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  background: #fff;
 }
 .page-index .section-kagibito .section_inner::before {
   display: block;
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
-  width: 85%;
+  left: 0;
+  width: 15%;
   height: 100%;
-  background: #fff;
+  background: #f9f6f3;
 }
 .page-index .section-kagibito .section_inner .kagibito_img {
-  width: 50%;
+  width: 45%;
+  position: absolute;
+  left: 0;
+  top: -40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-index .section-kagibito .section_inner .kagibito_img .img_box {
+  width: 33%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-right: 1px;
+  padding-bottom: 1px;
+  box-sizing: border-box;
 }
 .page-index .section-kagibito .section_inner .txt_wrap {
-  width: 50%;
-  position: relative;
+  width: 55%;
+  margin-left: 45%;
   z-index: 10;
   padding: 80px;
   box-sizing: border-box;
@@ -541,12 +683,90 @@ header .header_inner .header_right .box_contents .box_item.cart {
   line-height: 2;
   letter-spacing: 0.6px;
 }
+.page-index .section-kagibito .section_inner .txt_wrap .comp-link-button {
+  margin-top: 30px;
+}
 .page-index .section-news {
   margin-bottom: 160px;
+}
+.page-index .section-footer-link {
+  margin-bottom: 120px;
 }
 
 /*########## コンポーネント ##########*/
 /* 共通パーツ */
+.comp-link-button.right {
+  text-align: right;
+}
+.comp-link-button a {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  display: inline-block;
+  min-width: 120px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.58px;
+  padding: 12px 30px;
+  background: #4d4327;
+  border-radius: 200px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #4d4327;
+  transition: color 0.2s;
+}
+.comp-link-button a::before {
+  display: block;
+  content: "";
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  margin: auto;
+  background: #fff;
+  transition: width 0.2s;
+}
+.comp-link-button a span {
+  position: relative;
+  z-index: 10;
+}
+.comp-link-button a:hover {
+  color: #4d4327;
+}
+.comp-link-button a:hover::before {
+  width: calc(100% + 2px);
+}
+
+.comp-kagibito-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.comp-kagibito-wrap .icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #BF992E;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-right: 10px;
+}
+.comp-kagibito-wrap .name {
+  display: block;
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.81px;
+  color: #363636;
+}
+
 .comp-section-title .upper_txt {
   font-size: 14px;
   line-height: 1.6;
@@ -565,6 +785,12 @@ header .header_inner .header_right .box_contents .box_item.cart {
 }
 .comp-section-title.margin {
   margin-bottom: 90px;
+}
+.comp-section-title.button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .comp-section-sub-title {
@@ -632,6 +858,20 @@ header .header_inner .header_right .box_contents .box_item.cart {
 .comp-plan-list .plan_item .img_wrap {
   margin-bottom: 25px;
 }
+.comp-plan-list .plan_item .img_wrap a {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  height: 16vw;
+  max-height: 275px;
+}
+.comp-plan-list .plan_item .img_wrap a img {
+  transition: transform 0.7s, opacity 0.7s;
+}
+.comp-plan-list .plan_item .img_wrap a:hover img {
+  opacity: 0.85;
+  transform: scale(1.15);
+}
 .comp-plan-list .plan_item .txt_wrap .title_wrap a {
   display: block;
   font-family: "FOT-筑紫A丸ゴシック Std D";
@@ -641,6 +881,10 @@ header .header_inner .header_right .box_contents .box_item.cart {
   letter-spacing: 0.83px;
   color: inherit;
   margin-bottom: 20px;
+  transition: opacity 0.3s;
+}
+.comp-plan-list .plan_item .txt_wrap .title_wrap a:hover {
+  opacity: 0.75;
 }
 .comp-plan-list .plan_item .txt_wrap .title_wrap .location span {
   font-family: "TsukuARdGothicStd-R";
@@ -698,6 +942,20 @@ header .header_inner .header_right .box_contents .box_item.cart {
   margin-right: 5%;
   background: #fff;
 }
+.comp-news-list .news_item .img_wrap a {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 16.5vw;
+  max-height: 290px;
+}
+.comp-news-list .news_item .img_wrap a img {
+  transition: transform 0.7s, opacity 0.7s;
+}
+.comp-news-list .news_item .img_wrap a:hover img {
+  opacity: 0.85;
+  transform: scale(1.15);
+}
 .comp-news-list .news_item .txt_wrap {
   padding: 25px 20px;
   box-sizing: border-box;
@@ -711,6 +969,10 @@ header .header_inner .header_right .box_contents .box_item.cart {
   letter-spacing: 0.25px;
   color: #464646;
   margin-bottom: 10px;
+  transition: opacity 0.3s;
+}
+.comp-news-list .news_item .txt_wrap .category:hover {
+  opacity: 0.75;
 }
 .comp-news-list .news_item .txt_wrap .name {
   display: block;
@@ -721,6 +983,10 @@ header .header_inner .header_right .box_contents .box_item.cart {
   letter-spacing: 0.7px;
   color: inherit;
   margin-bottom: 0px;
+  transition: opacity 0.3s;
+}
+.comp-news-list .news_item .txt_wrap .name:hover {
+  opacity: 0.75;
 }
 .comp-news-list .news_item .txt_wrap .desc_wrap {
   display: none;
@@ -731,10 +997,17 @@ header .header_inner .header_right .box_contents .box_item.cart {
   flex-wrap: wrap;
   align-items: center;
   margin-right: 0;
-  margin-bottom: 65px;
+  margin-bottom: 75px;
 }
 .comp-news-list .news_item:nth-of-type(1) .img_wrap {
   width: 50%;
+}
+.comp-news-list .news_item:nth-of-type(1) .img_wrap a {
+  height: 24vw;
+  max-height: 475px;
+}
+.comp-news-list .news_item:nth-of-type(1) .img_wrap a:hover img {
+  transform: scale(1.1);
 }
 .comp-news-list .news_item:nth-of-type(1) .txt_wrap {
   width: 50%;
@@ -758,6 +1031,9 @@ header .header_inner .header_right .box_contents .box_item.cart {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.6px;
+}
+.comp-news-list .news_item:nth-of-type(1) .txt_wrap .desc_wrap .comp-link-button {
+  margin-top: 30px;
 }
 .comp-news-list .news_item:nth-of-type(3n+4) {
   margin-right: 0;
@@ -795,6 +1071,20 @@ header .header_inner .header_right .box_contents .box_item.cart {
 }
 .comp-pickup-plan .pickup_item .img_wrap {
   width: 52%;
+}
+.comp-pickup-plan .pickup_item .img_wrap a {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 28vw;
+  max-height: 480px;
+}
+.comp-pickup-plan .pickup_item .img_wrap a img {
+  transition: transform 0.7s, opacity 0.7s;
+}
+.comp-pickup-plan .pickup_item .img_wrap a:hover img {
+  opacity: 0.85;
+  transform: scale(1.1);
 }
 .comp-pickup-plan .pickup_item .txt_wrap {
   width: 43%;
@@ -868,9 +1158,16 @@ header .header_inner .header_right .box_contents .box_item.cart {
 .comp-pickup-plan .pickup_item .txt_wrap .desc_wrap .kagibito {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 }
-.comp-pickup-plan .pickup_item .txt_wrap .desc_wrap .kagibito .icon {
+.comp-pickup-plan .pickup_item .txt_wrap .desc_wrap .kagibito .kagibito_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.comp-pickup-plan .pickup_item .txt_wrap .desc_wrap .kagibito .kagibito_wrap .icon {
+  transition: opacity 0.3s;
   display: block;
   width: 70px;
   height: 70px;
@@ -882,11 +1179,14 @@ header .header_inner .header_right .box_contents .box_item.cart {
   margin-right: 20px;
   box-sizing: border-box;
 }
-.comp-pickup-plan .pickup_item .txt_wrap .desc_wrap .kagibito .kagibito_info {
+.comp-pickup-plan .pickup_item .txt_wrap .desc_wrap .kagibito .kagibito_wrap .icon:hover {
+  opacity: 0.75;
+}
+.comp-pickup-plan .pickup_item .txt_wrap .desc_wrap .kagibito .kagibito_wrap .kagibito_info {
   width: calc(100% - 90px);
   padding-bottom: 5px;
 }
-.comp-pickup-plan .pickup_item .txt_wrap .desc_wrap .kagibito .kagibito_info .info {
+.comp-pickup-plan .pickup_item .txt_wrap .desc_wrap .kagibito .kagibito_wrap .kagibito_info .info {
   display: block;
   font-family: "TsukuARdGothicStd-R";
   font-weight: normal;
@@ -895,7 +1195,7 @@ header .header_inner .header_right .box_contents .box_item.cart {
   letter-spacing: 0.8px;
   margin-bottom: 5px;
 }
-.comp-pickup-plan .pickup_item .txt_wrap .desc_wrap .kagibito .kagibito_info .name {
+.comp-pickup-plan .pickup_item .txt_wrap .desc_wrap .kagibito .kagibito_wrap .kagibito_info .name {
   display: block;
   font-family: "FOT-筑紫A丸ゴシック Std D";
   font-weight: bold;
@@ -904,7 +1204,7 @@ header .header_inner .header_right .box_contents .box_item.cart {
   color: inherit;
   transition: opacity 0.3s;
 }
-.comp-pickup-plan .pickup_item .txt_wrap .desc_wrap .kagibito .kagibito_info .name:hover {
+.comp-pickup-plan .pickup_item .txt_wrap .desc_wrap .kagibito .kagibito_wrap .kagibito_info .name:hover {
   opacity: 0.75;
 }
 .comp-pickup-plan .pickup_item:nth-of-type(1) {
@@ -931,10 +1231,62 @@ header .header_inner .header_right .box_contents .box_item.cart {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 0;
 }
 .comp-pickup-plan .pickup_item:nth-of-type(1) .txt_wrap .desc_wrap p {
   width: 55%;
   margin-right: 5%;
+}
+.comp-pickup-plan .pickup_item:nth-of-type(1) .txt_wrap .kagibito {
+  display: block;
+}
+.comp-pickup-plan .pickup_item:nth-of-type(1) .txt_wrap .kagibito .comp-link-button {
+  margin-top: 40px;
+}
+
+.comp-footer-link {
+  display: flex;
+  flex-wrap: wrap;
+}
+.comp-footer-link .link_item {
+  width: 47.5%;
+  margin-right: 5%;
+}
+.comp-footer-link .link_item:nth-last-of-type(1) {
+  margin-right: 0;
+}
+.comp-footer-link .link_item a {
+  display: block;
+  position: relative;
+}
+.comp-footer-link .link_item a .txt_wrap {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  color: #fff;
+}
+.comp-footer-link .link_item a .txt_wrap .small {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  display: block;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.73px;
+  margin-bottom: 10px;
+}
+.comp-footer-link .link_item a .txt_wrap .large {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: 1.2px;
 }
