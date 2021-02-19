@@ -1,11 +1,21 @@
-header{
-  position: absolute;
-  width: 100%;
-  top:0;
+.comp-fixed-header{
+  position: fixed;
+  top:0px;
   left:0;
   right:0;
+  margin: auto;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 5px 5px 0 rgba(6, 0, 1, 0.05);
   z-index: 100;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  opacity: 0;
+  transition: transform .3s cubic-bezier(0.5, 1, 0.89, 1), opacity .3s cubic-bezier(0.5, 1, 0.89, 1);
+  transform: translate3d(0, -100%, 0);
+  will-change: transform, opacity;
+  &.rolled{
+    opacity: 1;
+    transform: translate3d(0, 0%, 0);
+  }
   .header_inner{
     @include flexSet;
     justify-content: space-between;
@@ -14,7 +24,7 @@ header{
       align-items: center;
       .h_logo{
         position: relative;
-        height: 120px;
+        height: 100px;
         margin-right: 30px;
         &::after{
           display: block;
@@ -26,15 +36,15 @@ header{
           margin: auto;
           width: 1px;
           height: 60%;
-          background: #fff;
+          background: $black01;
         }
         a{
           display: block;
-          width: 160px;
-          height: 120px;
+          width: 130px;
+          height: 100px;
           @include bgSet;
-          background-size: 80px;
-          background-image: url(../img/common/logo_white.svg);
+          background-size: 60px;
+          background-image: url(../img/common/logo.svg);
           @include hover;
         }
       }
@@ -48,7 +58,7 @@ header{
               line-height: 2;
               display: block;
               @include hover;
-              color: #fff;
+              color: $black01;
             }
           }
         }
@@ -72,13 +82,13 @@ header{
               margin: auto;
               width: 1px;
               height: 80%;
-              background: #fff;
+              background: $black01;
             }
           }
           a{
             @include hover;
             display: block;
-            color: #fff;
+            color: $black01;
             padding: 0 35px;
             .number{
               @include flexSet;
@@ -107,24 +117,24 @@ header{
         @include flexSet;
         .box_item{
           display: block;
-          width: 120px;
-          height: 120px;
+          width: 100px;
+          height: 100px;
           font-size: 10px;
           text-align: center;
           @include bgSet;
-          line-height: 180px;
+          line-height: 150px;
           &.mypage{
             background-color: #f1f1f1;
-            color: $black01;
+            color: $black02;
             background-size: 25px;
-            background-position: center top 40px;
+            background-position: center top 30px;
             background-image: url(../img/common/mypage.svg);
           }
           &.cart{
             background-color: $black01;
             color: #fff;
             background-size: 32px;
-            background-position: left 42px top 38px;
+            background-position: left 32px top 25px;
             background-image: url(../img/common/cart.svg);
           }
         }

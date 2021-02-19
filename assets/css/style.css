@@ -129,7 +129,7 @@ body {
   font-style: normal;
   line-height: 1;
   letter-spacing: 0.07em;
-  color: #222;
+  color: #363636;
   background: #f9f6f3;
   font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
@@ -408,13 +408,13 @@ header .header_inner .header_right .box_contents .box_item {
 }
 header .header_inner .header_right .box_contents .box_item.mypage {
   background-color: #f1f1f1;
-  color: #363636;
+  color: #222;
   background-size: 25px;
   background-position: center top 40px;
   background-image: url(../img/common/mypage.svg);
 }
 header .header_inner .header_right .box_contents .box_item.cart {
-  background-color: #363636;
+  background-color: #222;
   color: #fff;
   background-size: 32px;
   background-position: left 42px top 38px;
@@ -684,6 +684,170 @@ footer .footer_inner .footer_lower .copyright {
 
 /*########## コンポーネント ##########*/
 /* 共通パーツ */
+.comp-fixed-header {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 5px 5px 0 rgba(6, 0, 1, 0.05);
+  z-index: 100;
+  opacity: 0;
+  transition: transform 0.3s cubic-bezier(0.5, 1, 0.89, 1), opacity 0.3s cubic-bezier(0.5, 1, 0.89, 1);
+  transform: translate3d(0, -100%, 0);
+  will-change: transform, opacity;
+}
+.comp-fixed-header.rolled {
+  opacity: 1;
+  transform: translate3d(0, 0%, 0);
+}
+.comp-fixed-header .header_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.comp-fixed-header .header_inner .header_left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.comp-fixed-header .header_inner .header_left .h_logo {
+  position: relative;
+  height: 100px;
+  margin-right: 30px;
+}
+.comp-fixed-header .header_inner .header_left .h_logo::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 1px;
+  height: 60%;
+  background: #222;
+}
+.comp-fixed-header .header_inner .header_left .h_logo a {
+  display: block;
+  width: 130px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-size: 60px;
+  background-image: url(../img/common/logo.svg);
+  transition: opacity 0.3s;
+}
+.comp-fixed-header .header_inner .header_left .h_logo a:hover {
+  opacity: 0.75;
+}
+.comp-fixed-header .header_inner .header_left .h_nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.comp-fixed-header .header_inner .header_left .h_nav ul li {
+  margin-right: 1.5em;
+}
+.comp-fixed-header .header_inner .header_left .h_nav ul li a {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  line-height: 2;
+  display: block;
+  transition: opacity 0.3s;
+  color: #222;
+}
+.comp-fixed-header .header_inner .header_left .h_nav ul li a:hover {
+  opacity: 0.75;
+}
+.comp-fixed-header .header_inner .header_right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.comp-fixed-header .header_inner .header_right .count_contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+.comp-fixed-header .header_inner .header_right .count_contents .count_item.line {
+  position: relative;
+}
+.comp-fixed-header .header_inner .header_right .count_contents .count_item.line::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 1px;
+  height: 80%;
+  background: #222;
+}
+.comp-fixed-header .header_inner .header_right .count_contents .count_item a {
+  transition: opacity 0.3s;
+  display: block;
+  color: #222;
+  padding: 0 35px;
+}
+.comp-fixed-header .header_inner .header_right .count_contents .count_item a:hover {
+  opacity: 0.75;
+}
+.comp-fixed-header .header_inner .header_right .count_contents .count_item a .number {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.comp-fixed-header .header_inner .header_right .count_contents .count_item a .number .num {
+  display: block;
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin-right: 0.3em;
+}
+.comp-fixed-header .header_inner .header_right .count_contents .count_item a .content {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.comp-fixed-header .header_inner .header_right .count_contents .count_item a .content span {
+  display: inline-block;
+}
+.comp-fixed-header .header_inner .header_right .box_contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+.comp-fixed-header .header_inner .header_right .box_contents .box_item {
+  display: block;
+  width: 100px;
+  height: 100px;
+  font-size: 10px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  line-height: 150px;
+}
+.comp-fixed-header .header_inner .header_right .box_contents .box_item.mypage {
+  background-color: #f1f1f1;
+  color: #363636;
+  background-size: 25px;
+  background-position: center top 30px;
+  background-image: url(../img/common/mypage.svg);
+}
+.comp-fixed-header .header_inner .header_right .box_contents .box_item.cart {
+  background-color: #222;
+  color: #fff;
+  background-size: 32px;
+  background-position: left 32px top 25px;
+  background-image: url(../img/common/cart.svg);
+}
+
 .comp-link-button.right {
   text-align: right;
 }

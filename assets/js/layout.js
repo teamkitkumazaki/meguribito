@@ -79,14 +79,7 @@ $(function() {
       $('#loadInner').addClass('loaded');
       setTimeout(function() {
         $('#loading').addClass('loaded');
-        setTimeout(function() {
-          setTimeout(function() {
-            homeKvShifter();
-            setTimeout(function() {
-              $('body').removeClass('bind');
-            }, 800);
-          }, 800);
-        }, 1200);
+        $('body').removeClass('bind');
       }, 1000);
     }, 1000);
   }
