@@ -59,15 +59,16 @@
     margin: 160px 0;
     .section_inner{
       position: relative;
+      background: #fff;
       &::before{
         display: block;
         content: "";
         position: absolute;
         top:0;
-        left:0;
-        width: 85%;
+        right:0;
+        width: 15%;
         height: 100%;
-        background: #fff;
+        background: #f9f6f3;
       }
       .txt_wrap{
         width: 40%;

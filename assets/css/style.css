@@ -610,16 +610,17 @@ footer .footer_inner .footer_lower .copyright {
 }
 .page-index .section-service .section_inner {
   position: relative;
+  background: #fff;
 }
 .page-index .section-service .section_inner::before {
   display: block;
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  width: 85%;
+  right: 0;
+  width: 15%;
   height: 100%;
-  background: #fff;
+  background: #f9f6f3;
 }
 .page-index .section-service .section_inner .txt_wrap {
   width: 40%;
@@ -1080,7 +1081,7 @@ footer .footer_inner .footer_lower .copyright {
   max-height: 480px;
 }
 .comp-pickup-plan .pickup_item .img_wrap a img {
-  transition: transform 0.7s, opacity 0.7s;
+  transition: transform 0.5s, opacity 0.5s;
 }
 .comp-pickup-plan .pickup_item .img_wrap a:hover img {
   opacity: 0.85;
@@ -1216,6 +1217,12 @@ footer .footer_inner .footer_lower .copyright {
   width: 100%;
   margin-bottom: 40px;
 }
+.comp-pickup-plan .pickup_item:nth-of-type(1) .img_wrap a {
+  display: block;
+  overflow: hidden;
+  height: 43vw;
+  max-height: 740px;
+}
 .comp-pickup-plan .pickup_item:nth-of-type(1) .txt_wrap {
   width: 100%;
 }
@@ -1259,6 +1266,20 @@ footer .footer_inner .footer_lower .copyright {
   display: block;
   position: relative;
 }
+.comp-footer-link .link_item a .img_wrap {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  max-height: 375px;
+  height: 22vw;
+}
+.comp-footer-link .link_item a .img_wrap img {
+  transition: transform 0.7s, opacity 0.7s;
+}
+.comp-footer-link .link_item a .img_wrap:hover img {
+  opacity: 0.85;
+  transform: scale(1.1);
+}
 .comp-footer-link .link_item a .txt_wrap {
   display: block;
   position: absolute;
@@ -1289,4 +1310,100 @@ footer .footer_inner .footer_lower .copyright {
   font-size: 22px;
   line-height: 1;
   letter-spacing: 1.2px;
+}
+
+.comp-service-slider {
+  position: absolute;
+  left: 43vw;
+  top: 20px;
+  bottom: 0;
+  margin: auto;
+  width: 100vw;
+  height: 480px;
+  overflow: hidden;
+}
+.comp-service-slider .slick-arrow {
+  position: absolute;
+  bottom: -50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-size: 15px;
+  padding: 5px 0;
+  display: inline-block;
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  font-size: 16px;
+  color: #646464;
+  text-indent: 0px;
+}
+.comp-service-slider .slick-arrow::after {
+  display: inline-block;
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  font-size: 14px;
+  color: #646464;
+  text-indent: 0px;
+}
+.comp-service-slider .slick-arrow.slick-prev {
+  left: 0;
+  padding-left: 25px;
+  background-position: center left;
+  background-image: url(../img/common/caret_prev.svg);
+}
+.comp-service-slider .slick-arrow.slick-next {
+  left: 120px;
+  padding-right: 25px;
+  background-position: center right;
+  background-image: url(../img/common/caret_next.svg);
+}
+.comp-service-slider .slick-slider {
+  /*position: absolute !important;*/
+  width: 360px;
+}
+.comp-service-slider .slick-slider .item_box {
+  display: block !important;
+}
+.comp-service-slider .slick-slider .item_box .slider_img {
+  width: 360px;
+  box-sizing: border-box;
+  border-right: 3px solid #fff;
+}
+.comp-service-slider .slick-slider .item_box .slider_txt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #f1f1f1;
+  border-right: 3px solid #fff;
+}
+.comp-service-slider .slick-slider .item_box .slider_txt .number {
+  display: block;
+  width: 80px;
+  padding: 15px 0;
+  text-align: center;
+  border-right: 1px solid #acacac;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 1;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+}
+.comp-service-slider .slick-slider .item_box .slider_txt .number span {
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  display: block;
+  font-size: 30px;
+  line-height: 1;
+  margin-top: 10px;
+}
+.comp-service-slider .slick-slider .item_box .slider_txt .txt {
+  width: calc(100% - 80px);
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.63;
+  letter-spacing: 0.68px;
+  color: #3f3f3f;
+  padding: 0 15px;
+  box-sizing: border-box;
 }

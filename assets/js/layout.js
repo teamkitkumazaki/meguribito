@@ -960,16 +960,18 @@ if (document.getElementById('index')) {
     setMyForm($('#formWrap'));
   }
 
-  if (document.getElementById('artistDetail')) {
-    $('#artistSlider').slick({
+  if (document.getElementById('index')) {
+    $('#serviceSlider').slick({
       accessibility: false,
       infinite: true,
       dots: false,
       slidesToShow: 1,
-      centerMode: true,
-      autoplay: true,
+      centerMode: false,
+      autoplay: false,
       autoplaySpeed: 5000,
-      speed: 1000,
+      speed: 500,
+      prevArrow: '<button type="button" class="slick-prev">PREV</button>',
+      nextArrow: '<button type="button" class="slick-next">NEXT</button>',
       responsive: [{
         breakpoint: 760,
         settings: {

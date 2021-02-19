@@ -19,7 +19,7 @@
         height: 28vw;
         max-height: 480px;
         img{
-          transition: transform .7s, opacity .7s;
+          transition: transform .5s, opacity .5s;
         }
         &:hover{
           img{
@@ -140,6 +140,12 @@
       .img_wrap{
         width: 100%;
         margin-bottom: 40px;
+        a{
+          display: block;
+          overflow: hidden;
+          height: 43vw;
+          max-height: 740px;
+        }
       }
       .txt_wrap{
         width: 100%;

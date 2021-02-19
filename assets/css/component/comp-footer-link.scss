@@ -9,6 +9,22 @@
     a{
       display: block;
       position: relative;
+      .img_wrap{
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        max-height: 375px;
+        height: 22vw;
+        img{
+          transition: transform .7s, opacity .7s;
+        }
+        &:hover{
+          img{
+            opacity: 0.85;
+            transform: scale(1.1);
+          }
+        }
+      }
       .txt_wrap{
         display: block;
         position: absolute;

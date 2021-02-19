@@ -1,0 +1,87 @@
+.comp-service-slider{
+  position: absolute;
+  left: 43vw;
+  top:20px;
+  bottom:0;
+  margin: auto;
+  width: 100vw;
+  height: 480px;
+  overflow: hidden;
+  .slick-arrow{
+    position: absolute;
+    bottom: -50px;
+    @include bgSet;
+    background-size: 15px;
+    padding: 5px 0;
+    display: inline-block;
+    @include tsukushi-r;
+    font-size: 16px;
+    color: #646464;
+    text-indent: 0px;
+    &::after{
+      display: inline-block;
+      @include tsukushi-r;
+      font-size: 14px;
+      color: #646464;
+      text-indent: 0px;
+    }
+    &.slick-prev{
+      left:0;
+      padding-left: 25px;
+      background-position: center left;
+      background-image: url(../img/common/caret_prev.svg);
+    }
+    &.slick-next{
+      left: 120px;
+      padding-right: 25px;
+      background-position: center right;
+      background-image: url(../img/common/caret_next.svg);
+    }
+  }
+  .slick-slider{
+    /*position: absolute !important;*/
+    width: 360px;
+    .item_box{
+      display: block !important;
+      .slider_img{
+        width: 360px;
+        box-sizing: border-box;
+        border-right: 3px solid #fff;
+      }
+      .slider_txt{
+        @include flexSet;
+        align-items: center;
+        background: #f1f1f1;
+        border-right: 3px solid #fff;
+        .number{
+          display: block;
+          width: 80px;
+          padding: 15px 0;
+          text-align: center;
+          border-right: 1px solid #acacac;
+          box-sizing: border-box;
+          font-size: 12px;
+          line-height: 1;
+          @include tsukushi-b;
+          span{
+            @include tsukushi-r;
+            display: block;
+            font-size: 30px;
+            line-height: 1;
+            margin-top: 10px;
+          }
+        }
+        .txt{
+          width: calc(100% - 80px);
+          @include tsukushi-b;
+          font-size: 14px;
+          line-height: 1.63;
+          letter-spacing: 0.68px;
+          color: #3f3f3f;
+          padding: 0 15px;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+}
