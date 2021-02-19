@@ -75,30 +75,26 @@ $(function() {
 
   function loadingDelete(){
     homeKvShifter();
-    /*setTimeout(function() {
+    setTimeout(function() {
       $('#loadInner').addClass('loaded');
       setTimeout(function() {
         $('#loading').addClass('loaded');
         setTimeout(function() {
-          $('#homeKvWrap').removeClass('loading');
           setTimeout(function() {
-            $('#homeKvWrap').addClass('loaded');
-            $('#sliderImages').removeClass('loading')
             homeKvShifter();
             setTimeout(function() {
-              $('header').removeClass('loading');
               $('body').removeClass('bind');
             }, 800);
           }, 800);
         }, 1200);
       }, 1000);
-    }, 1000);*/
+    }, 1000);
   }
 
 
   function init(){
     if(current_scrollY < 100){
-      /*$('body').addClass('bind');*/
+      $('body').addClass('bind');
     }
     target.find('li img').each(function(index) {
       originSrc[index] = $(this).attr('src');
