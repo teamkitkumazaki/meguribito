@@ -1,0 +1,79 @@
+.comp-flow-wrap{
+  @include flexSet;
+  .flow_item{
+    width: 47%;
+    margin-right: 6%;
+    margin-bottom: 60px;
+    &:nth-of-type(2n){
+      margin-right: 0;
+    }
+    &.full{
+      width: 100%;
+    }
+    .flow_ttl{
+      @include flexSet;
+      align-items: center;
+      background: #fff;
+      padding: 10px;
+      margin-bottom: 35px;
+      .icon{
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+        background: $basicBgColor;
+        border-radius: 50%;
+        @include bgSet;
+      }
+      .box{
+        width: calc(100% - 80px);
+        @include flexSet;
+        align-items: center;
+        @include tsukushi-b;
+        .step{
+          font-size: 18px;
+          line-height: 2.06;
+          letter-spacing: 1.29px;
+          color: $black02;
+          padding-right: 1em;
+        }
+        .flow_item_title{
+          font-size: 26px;
+          line-height: 1;
+          letter-spacing: 1.86px;
+          color: $black02;
+        }
+      }
+    }
+    .flow_description{
+      padding: 0 10px;
+      .flow_subttl{
+        @include tsukushi-b;
+        font-size: 22px;
+        line-height: 1;
+        letter-spacing: 0.98px;
+        color: $black02;
+        margin-bottom: 25px;
+      }
+      .desc{
+        @include basicP;
+        font-size: 14px;
+        p{
+          margin-bottom: 10px;
+          &:nth-last-of-type(1){
+            margin-bottom: 0;
+          }
+          span{
+            display: block;
+            &.large{
+              font-size: 16px;
+            }
+          }
+        }
+        a{
+          color: $pointYellow;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

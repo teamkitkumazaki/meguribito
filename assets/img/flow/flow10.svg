@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>eyecatch</title>
+    <g id="flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="meguribito_flow" transform="translate(-136.000000, -3703.000000)">
+            <g id="Group-39" transform="translate(120.000000, 3692.000000)">
+                <g id="Group-5" transform="translate(16.000000, 10.000000)">
+                    <g id="eyecatch" transform="translate(0.000000, 1.000000)">
+                        <ellipse id="Oval" fill="#F9F6F3" cx="29.7174374" cy="29.6704016" rx="29.7174374" ry="29.6704016"></ellipse>
+                        <g id="pencil" transform="translate(16.500000, 15.750000)" fill="#4D4327" fill-rule="nonzero">
+                            <polygon id="Path" points="2.47836349 18.5670732 0 26.25 7.68292683 23.7716365"></polygon>
+                            <polygon id="Rectangle" transform="translate(13.656413, 12.606980) rotate(-45.000000) translate(-13.656413, -12.606980) " points="4.60032662 8.66954368 22.7124991 8.66954368 22.7124991 16.5444169 4.60032662 16.5444169"></polygon>
+                            <path d="M25.8587398,4.04302168 L22.2069783,0.391260163 C21.6852981,-0.130420054 20.9027778,-0.130420054 20.3810976,0.391260163 L19.2073171,1.56504065 L24.6849593,7.04268293 L25.8587398,5.86890244 C26.3804201,5.34722222 26.3804201,4.5647019 25.8587398,4.04302168 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

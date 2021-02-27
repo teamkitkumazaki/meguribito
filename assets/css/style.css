@@ -129,7 +129,7 @@ body {
   font-style: normal;
   line-height: 1;
   letter-spacing: 0.07em;
-  color: #363636;
+  color: #3f3f3f;
   background: #f9f6f3;
   font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
@@ -142,6 +142,7 @@ body.bind {
 
 article {
   overflow: hidden;
+  min-height: 100vh;
 }
 article .comp-loading-bar {
   opacity: 0;
@@ -408,17 +409,39 @@ header .header_inner .header_right .box_contents .box_item {
 }
 header .header_inner .header_right .box_contents .box_item.mypage {
   background-color: #f1f1f1;
-  color: #222;
+  color: #3f3f3f;
   background-size: 25px;
   background-position: center top 40px;
   background-image: url(../img/common/mypage.svg);
 }
 header .header_inner .header_right .box_contents .box_item.cart {
-  background-color: #222;
+  background-color: #3f3f3f;
   color: #fff;
   background-size: 32px;
   background-position: left 42px top 38px;
   background-image: url(../img/common/cart.svg);
+}
+header.underpage {
+  background-image: none;
+}
+header.underpage .header_inner .header_left .h_logo::after {
+  background: #3f3f3f;
+}
+header.underpage .header_inner .header_left .h_logo a {
+  background-image: url(../img/common/logo.svg);
+}
+header.underpage .header_inner .header_left .h_nav ul li a {
+  color: #3f3f3f;
+}
+header.underpage .header_inner .header_right .count_contents .count_item.line {
+  position: relative;
+}
+header.underpage .header_inner .header_right .count_contents .count_item.line::after {
+  background-color: #3f3f3f;
+  color: #3f3f3f;
+}
+header.underpage .header_inner .header_right .count_contents .count_item a {
+  color: #3f3f3f;
 }
 
 footer {
@@ -682,6 +705,76 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 120px;
 }
 
+.page-flow .section-flow-01 {
+  margin: 80px auto 100px;
+}
+.page-flow .section-flow-02 {
+  margin: 0px auto 120px;
+}
+.page-flow .section-flow-02 .trip_detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.page-flow .section-flow-02 .trip_detail .detail_item {
+  width: 31%;
+}
+.page-flow .section-flow-02 .trip_detail .detail_item .img_wrap {
+  margin-bottom: 20px;
+}
+.page-flow .section-flow-02 .trip_detail .detail_item .txt_wrap .title_wrap {
+  margin-bottom: 20px;
+}
+.page-flow .section-flow-02 .trip_detail .detail_item .txt_wrap .title_wrap .small {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  display: block;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #3f3f3f;
+  margin-bottom: 5px;
+}
+.page-flow .section-flow-02 .trip_detail .detail_item .txt_wrap .title_wrap .item_ttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.5;
+  letter-spacing: 1.41px;
+  color: #3f3f3f;
+}
+.page-flow .section-flow-02 .trip_detail .detail_item .txt_wrap .item_desc {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+}
+.page-flow .section-flow-02 .trip_outline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.page-flow .section-flow-02 .trip_outline .img_wrap {
+  width: 48%;
+}
+.page-flow .section-flow-02 .trip_outline .txt_wrap {
+  width: 48%;
+}
+.page-flow .section-flow-02 .trip_outline .txt_wrap .desc_wrap {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+  margin-top: -10px;
+}
+.page-flow .section-plans {
+  padding: 160px 0 100px;
+  background: #fff;
+}
+
 /*########## コンポーネント ##########*/
 /* 共通パーツ */
 .comp-fixed-header {
@@ -728,7 +821,7 @@ footer .footer_inner .footer_lower .copyright {
   margin: auto;
   width: 1px;
   height: 60%;
-  background: #222;
+  background: #3f3f3f;
 }
 .comp-fixed-header .header_inner .header_left .h_logo a {
   display: block;
@@ -757,7 +850,7 @@ footer .footer_inner .footer_lower .copyright {
   line-height: 2;
   display: block;
   transition: opacity 0.3s;
-  color: #222;
+  color: #3f3f3f;
 }
 .comp-fixed-header .header_inner .header_left .h_nav ul li a:hover {
   opacity: 0.75;
@@ -784,12 +877,12 @@ footer .footer_inner .footer_lower .copyright {
   margin: auto;
   width: 1px;
   height: 80%;
-  background: #222;
+  background: #3f3f3f;
 }
 .comp-fixed-header .header_inner .header_right .count_contents .count_item a {
   transition: opacity 0.3s;
   display: block;
-  color: #222;
+  color: #3f3f3f;
   padding: 0 35px;
 }
 .comp-fixed-header .header_inner .header_right .count_contents .count_item a:hover {
@@ -835,13 +928,13 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-fixed-header .header_inner .header_right .box_contents .box_item.mypage {
   background-color: #f1f1f1;
-  color: #363636;
+  color: #3f3f3f;
   background-size: 25px;
   background-position: center top 30px;
   background-image: url(../img/common/mypage.svg);
 }
 .comp-fixed-header .header_inner .header_right .box_contents .box_item.cart {
-  background-color: #222;
+  background-color: #3f3f3f;
   color: #fff;
   background-size: 32px;
   background-position: left 32px top 25px;
@@ -932,9 +1025,22 @@ footer .footer_inner .footer_lower .copyright {
   font-size: 50px;
   line-height: 1.6;
   letter-spacing: 0.1em;
+  text-indent: -0.15em;
+}
+.comp-section-title .description {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+}
+.comp-section-title .description span {
+  display: block;
 }
 .comp-section-title.center {
   text-align: center;
+}
+.comp-section-title.center .title {
+  text-indent: 0em;
 }
 .comp-section-title.margin {
   margin-bottom: 90px;
@@ -993,6 +1099,66 @@ footer .footer_inner .footer_lower .copyright {
   line-height: normal;
   letter-spacing: 0.81px;
   color: #363636;
+}
+
+.comp-underpage-lead {
+  padding-top: 200px;
+}
+.comp-underpage-lead .page_ttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 2.55px;
+  color: #3f3f3f;
+  margin-bottom: 20px;
+}
+.comp-underpage-lead .sub_ttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 1.43px;
+  color: #3f3f3f;
+  margin-bottom: 25px;
+}
+.comp-underpage-lead .description {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  color: #3f3f3f;
+}
+.comp-underpage-lead .description span {
+  display: block;
+}
+
+.comp-block-ttl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #3f3f3f;
+  color: #fff;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+.comp-block-ttl .num {
+  width: 70px;
+  font-size: 26px;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 7px 0;
+  border-right: 1px solid #fff;
+  box-sizing: border-box;
+}
+.comp-block-ttl .title {
+  width: calc(100% - 70px);
+  font-size: 26px;
+  line-height: 1.38;
+  letter-spacing: 1px;
+  padding: 0px 15px;
+  box-sizing: border-box;
 }
 
 /* プラン一覧 */
@@ -1156,7 +1322,7 @@ footer .footer_inner .footer_lower .copyright {
   width: 50%;
 }
 .comp-news-list .news_item:nth-of-type(1) .img_wrap a {
-  height: 24vw;
+  height: 27vw;
   max-height: 475px;
 }
 .comp-news-list .news_item:nth-of-type(1) .img_wrap a:hover img {
@@ -1190,6 +1356,96 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-news-list .news_item:nth-of-type(3n+4) {
   margin-right: 0;
+}
+
+/* 旅の流れ */
+.comp-flow-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.comp-flow-wrap .flow_item {
+  width: 47%;
+  margin-right: 6%;
+  margin-bottom: 60px;
+}
+.comp-flow-wrap .flow_item:nth-of-type(2n) {
+  margin-right: 0;
+}
+.comp-flow-wrap .flow_item.full {
+  width: 100%;
+}
+.comp-flow-wrap .flow_item .flow_ttl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 35px;
+}
+.comp-flow-wrap .flow_item .flow_ttl .icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background: #f9f6f3;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.comp-flow-wrap .flow_item .flow_ttl .box {
+  width: calc(100% - 80px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+}
+.comp-flow-wrap .flow_item .flow_ttl .box .step {
+  font-size: 18px;
+  line-height: 2.06;
+  letter-spacing: 1.29px;
+  color: #3f3f3f;
+  padding-right: 1em;
+}
+.comp-flow-wrap .flow_item .flow_ttl .box .flow_item_title {
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: 1.86px;
+  color: #3f3f3f;
+}
+.comp-flow-wrap .flow_item .flow_description {
+  padding: 0 10px;
+}
+.comp-flow-wrap .flow_item .flow_description .flow_subttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: 0.98px;
+  color: #3f3f3f;
+  margin-bottom: 25px;
+}
+.comp-flow-wrap .flow_item .flow_description .desc {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+}
+.comp-flow-wrap .flow_item .flow_description .desc p {
+  margin-bottom: 10px;
+}
+.comp-flow-wrap .flow_item .flow_description .desc p:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.comp-flow-wrap .flow_item .flow_description .desc p span {
+  display: block;
+}
+.comp-flow-wrap .flow_item .flow_description .desc p span.large {
+  font-size: 16px;
+}
+.comp-flow-wrap .flow_item .flow_description .desc a {
+  color: #BF992E;
+  text-decoration: underline;
 }
 
 /* トップページ */

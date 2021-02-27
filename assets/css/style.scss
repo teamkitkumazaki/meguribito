@@ -13,6 +13,7 @@
 
 /*########## ページ個別レイアウト ##########*/
 @import 'pages/index.scss';
+@import 'pages/flow.scss';
 
 
 
@@ -25,6 +26,8 @@
 @import 'component/comp-section-title.scss';
 @import 'component/comp-section-sub-title.scss';
 @import 'component/comp-kagibito-wrap.scss';
+@import 'component/comp-underpage-lead.scss';
+@import 'component/comp-block-ttl.scss';
 
 
 /* プラン一覧 */
@@ -32,6 +35,9 @@
 
 /* ニュース一覧 */
 @import 'component/comp-news-list.scss';
+
+/* 旅の流れ */
+@import 'component/comp-flow-wrap.scss';
 
 
 /* トップページ */

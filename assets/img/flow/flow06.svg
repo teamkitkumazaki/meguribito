@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>eyecatch</title>
+    <g id="flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="meguribito_flow" transform="translate(-766.000000, -1426.000000)">
+            <g id="Group-22" transform="translate(120.000000, 465.000000)">
+                <g id="Group-13" transform="translate(630.000000, 950.000000)">
+                    <g id="eyecatch" transform="translate(16.000000, 11.000000)">
+                        <ellipse id="Oval" fill="#F9F6F3" cx="29.7174374" cy="29.6704016" rx="29.7174374" ry="29.6704016"></ellipse>
+                        <g id="email" transform="translate(15.000000, 19.500000)" fill="#4D4327" fill-rule="nonzero">
+                            <path d="M27.6881474,0 L1.3255814,0 L14.5068941,11.2674419 L27.8372093,0.0315673337 C27.788433,0.016770146 27.7385872,0.00622714981 27.6881474,0 Z" id="Path"></path>
+                            <path d="M14.8922336,13.1940787 C14.5172171,13.5011407 13.9776538,13.5011407 13.6026373,13.1940787 L0,1.98837209 L0,19.5287164 C0,20.0908385 0.455709434,20.5465116 1.01787631,20.5465116 L27.4821237,20.5465116 C28.0442906,20.5465116 28.5,20.0908385 28.5,19.5287164 L28.5,2.1390108 L14.8922336,13.1940787 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

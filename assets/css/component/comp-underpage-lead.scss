@@ -1,0 +1,26 @@
+.comp-underpage-lead{
+  padding-top: 200px;
+  .page_ttl{
+    @include tsukushi-b;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 2.55px;
+    color: $black02;
+    margin-bottom: 20px;
+  }
+  .sub_ttl{
+    @include tsukushi-b;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: 1.43px;
+    color: #3f3f3f;
+    margin-bottom: 25px;
+  }
+  .description{
+    @include basicP;
+    color: #3f3f3f;
+    span{
+      display: block;
+    }
+  }
+}

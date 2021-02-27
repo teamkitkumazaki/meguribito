@@ -1,0 +1,26 @@
+.comp-block-ttl{
+  @include flexSet;
+  align-items: center;
+  background-color: #3f3f3f;
+  color: #fff;
+  @include tsukushi-b;
+  margin-bottom: 60px;
+  .num{
+    width: 70px;
+    font-size: 26px;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 7px 0;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+  }
+  .title{
+    width: calc(100% - 70px);
+    font-size: 26px;
+    line-height: 1.38;
+    letter-spacing: 1px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,65 @@
+.page-flow{
+  .section-flow-01{
+    margin: 80px auto 100px;
+  }
+  .section-flow-02{
+    margin: 0px auto 120px;
+    .trip_detail{
+      @include flexSet;
+      justify-content: space-between;
+      margin-top: 40px;
+      .detail_item{
+        width: 31%;
+        .img_wrap{
+          margin-bottom: 20px;
+        }
+        .txt_wrap{
+          .title_wrap{
+            margin-bottom: 20px;
+            .small{
+              @include tsukushi-b;
+              display: block;
+              font-size: 16px;
+              line-height: normal;
+              letter-spacing: 1px;
+              color: $black02;
+              margin-bottom: 5px;
+            }
+            .item_ttl{
+              @include tsukushi-b;
+              font-size: 22px;
+              line-height: 1.5;
+              letter-spacing: 1.41px;
+              color: $black02;
+            }
+          }
+          .item_desc{
+            @include basicP;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .trip_outline{
+      @include flexSet;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 40px;
+      .img_wrap{
+        width: 48%;
+      }
+      .txt_wrap{
+        width: 48%;
+        .desc_wrap{
+          @include basicP;
+          font-size: 14px;
+          margin-top: -10px;
+        }
+      }
+    }
+  }
+  .section-plans{
+    padding: 160px 0 100px;
+    background: #fff;
+  }
+}

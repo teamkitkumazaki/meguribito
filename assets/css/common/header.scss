@@ -131,4 +131,44 @@ header{
       }
     }
   }
+  &.underpage{
+    background-image: none;
+    .header_inner{
+      .header_left{
+        .h_logo{
+          &::after{
+            background: $black01;
+          }
+          a{
+            background-image: url(../img/common/logo.svg);
+          }
+        }
+        .h_nav{
+          ul{
+            li{
+              a{
+                color: $black01;
+              }
+            }
+          }
+        }
+      }
+      .header_right{
+        .count_contents{
+          .count_item{
+            &.line{
+              position: relative;
+              &::after{
+                background-color: $black01;
+                color: $black01;
+              }
+            }
+            a{
+              color: $black01;
+            }
+          }
+        }
+      }
+    }
+  }
 }
