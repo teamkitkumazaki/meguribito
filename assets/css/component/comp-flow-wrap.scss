@@ -77,3 +77,31 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px){
+  .comp-flow-wrap{
+    @include flexSet;
+    .flow_item{
+      .flow_ttl{
+        margin-bottom: 30px;
+        .box{
+          .step{
+            font-size: 16px;
+            letter-spacing: 1.2px;
+          }
+          .flow_item_title{
+            font-size: 22px;
+            letter-spacing: 1.5px;
+          }
+        }
+      }
+      .flow_description{
+        .flow_subttl{
+          font-size: 18px;
+          line-height: 1.6;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

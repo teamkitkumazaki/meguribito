@@ -11,6 +11,9 @@
     line-height: 1.6;
     letter-spacing: 0.1em;
     text-indent: -0.15em;
+    @media screen and (max-width: 1200px){
+      font-size: 44px;
+    }
   }
   .description{
     margin-top: 20px;

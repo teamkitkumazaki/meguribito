@@ -444,6 +444,63 @@ header.underpage .header_inner .header_right .count_contents .count_item a {
   color: #3f3f3f;
 }
 
+@media screen and (max-width: 1200px) {
+  header .header_inner .header_left .h_logo {
+    height: 100px;
+    margin-right: 25px;
+  }
+  header .header_inner .header_left .h_logo a {
+    width: 120px;
+    height: 100px;
+    background-size: 60px;
+  }
+  header .header_inner .header_left .h_nav ul li a {
+    font-size: 14px;
+  }
+  header .header_inner .header_right .count_contents .count_item a {
+    padding: 0 25px;
+  }
+  header .header_inner .header_right .count_contents .count_item a .number .num {
+    font-size: 28px;
+  }
+  header .header_inner .header_right .count_contents .count_item a .content {
+    font-size: 14px;
+  }
+  header .header_inner .header_right .box_contents .box_item {
+    width: 100px;
+    height: 100px;
+    font-size: 10px;
+    line-height: 150px;
+  }
+  header .header_inner .header_right .box_contents .box_item.mypage {
+    background-position: center top 30px;
+  }
+  header .header_inner .header_right .box_contents .box_item.cart {
+    background-position: left 32px top 28px;
+  }
+  header.underpage {
+    background-image: none;
+  }
+  header.underpage .header_inner .header_left .h_logo::after {
+    background: #3f3f3f;
+  }
+  header.underpage .header_inner .header_left .h_logo a {
+    background-image: url(../img/common/logo.svg);
+  }
+  header.underpage .header_inner .header_left .h_nav ul li a {
+    color: #3f3f3f;
+  }
+  header.underpage .header_inner .header_right .count_contents .count_item.line {
+    position: relative;
+  }
+  header.underpage .header_inner .header_right .count_contents .count_item.line::after {
+    background-color: #3f3f3f;
+    color: #3f3f3f;
+  }
+  header.underpage .header_inner .header_right .count_contents .count_item a {
+    color: #3f3f3f;
+  }
+}
 footer {
   padding: 120px 0;
   background-color: #231916;
@@ -941,6 +998,41 @@ footer .footer_inner .footer_lower .copyright {
   background-image: url(../img/common/cart.svg);
 }
 
+@media screen and (max-width: 1200px) {
+  .comp-fixed-header .header_inner .header_left .h_logo {
+    height: 100px;
+    margin-right: 25px;
+  }
+  .comp-fixed-header .header_inner .header_left .h_logo a {
+    width: 120px;
+    height: 100px;
+    background-size: 60px;
+  }
+  .comp-fixed-header .header_inner .header_left .h_nav ul li a {
+    font-size: 14px;
+  }
+  .comp-fixed-header .header_inner .header_right .count_contents .count_item a {
+    padding: 0 25px;
+  }
+  .comp-fixed-header .header_inner .header_right .count_contents .count_item a .number .num {
+    font-size: 28px;
+  }
+  .comp-fixed-header .header_inner .header_right .count_contents .count_item a .content {
+    font-size: 14px;
+  }
+  .comp-fixed-header .header_inner .header_right .box_contents .box_item {
+    width: 100px;
+    height: 100px;
+    font-size: 10px;
+    line-height: 150px;
+  }
+  .comp-fixed-header .header_inner .header_right .box_contents .box_item.mypage {
+    background-position: center top 30px;
+  }
+  .comp-fixed-header .header_inner .header_right .box_contents .box_item.cart {
+    background-position: left 32px top 28px;
+  }
+}
 .comp-link-button.right {
   text-align: right;
 }
@@ -1026,6 +1118,11 @@ footer .footer_inner .footer_lower .copyright {
   line-height: 1.6;
   letter-spacing: 0.1em;
   text-indent: -0.15em;
+}
+@media screen and (max-width: 1200px) {
+  .comp-section-title .title {
+    font-size: 44px;
+  }
 }
 .comp-section-title .description {
   margin-top: 20px;
@@ -1132,6 +1229,11 @@ footer .footer_inner .footer_lower .copyright {
   display: block;
 }
 
+@media screen and (max-width: 1200px) {
+  .comp-underpage-lead {
+    padding-top: 160px;
+  }
+}
 .comp-block-ttl {
   display: flex;
   flex-wrap: wrap;
@@ -1448,6 +1550,28 @@ footer .footer_inner .footer_lower .copyright {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1200px) {
+  .comp-flow-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .comp-flow-wrap .flow_item .flow_ttl {
+    margin-bottom: 30px;
+  }
+  .comp-flow-wrap .flow_item .flow_ttl .box .step {
+    font-size: 16px;
+    letter-spacing: 1.2px;
+  }
+  .comp-flow-wrap .flow_item .flow_ttl .box .flow_item_title {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+  }
+  .comp-flow-wrap .flow_item .flow_description .flow_subttl {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+}
 /* トップページ */
 @keyframes loading {
   0% {

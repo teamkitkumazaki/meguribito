@@ -172,3 +172,101 @@ header{
     }
   }
 }
+
+@media screen and (max-width: 1200px){
+  header{
+    .header_inner{
+      .header_left{
+        .h_logo{
+          height: 100px;
+          margin-right: 25px;
+          a{
+            width: 120px;
+            height: 100px;
+            background-size: 60px;
+          }
+        }
+        .h_nav{
+          ul{
+            li{
+              a{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+      .header_right{
+        .count_contents{
+          .count_item{
+            a{
+              padding: 0 25px;
+              .number{
+                .num{
+                  font-size: 28px;
+                }
+              }
+              .content{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .box_contents{
+          .box_item{
+            width: 100px;
+            height: 100px;
+            font-size: 10px;
+            line-height: 150px;
+            &.mypage{
+              background-position: center top 30px;
+            }
+            &.cart{
+              background-position: left 32px top 28px;
+            }
+          }
+        }
+      }
+    }
+    &.underpage{
+      background-image: none;
+      .header_inner{
+        .header_left{
+          .h_logo{
+            &::after{
+              background: $black01;
+            }
+            a{
+              background-image: url(../img/common/logo.svg);
+            }
+          }
+          .h_nav{
+            ul{
+              li{
+                a{
+                  color: $black01;
+                }
+              }
+            }
+          }
+        }
+        .header_right{
+          .count_contents{
+            .count_item{
+              &.line{
+                position: relative;
+                &::after{
+                  background-color: $black01;
+                  color: $black01;
+                }
+              }
+              a{
+                color: $black01;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
