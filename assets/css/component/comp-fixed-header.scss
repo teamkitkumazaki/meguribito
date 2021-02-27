@@ -1,17 +1,11 @@
 .comp-fixed-header{
   position: fixed;
-  top:0px;
-  left:0;
-  right:0;
-  margin: auto;
-  width: 100%;
   background-color: #fff;
   box-shadow: 0px 5px 5px 0 rgba(6, 0, 1, 0.05);
   z-index: 100;
   opacity: 0;
   transition: transform .3s cubic-bezier(0.5, 1, 0.89, 1), opacity .3s cubic-bezier(0.5, 1, 0.89, 1);
-  transform: translate3d(0, -100%, 0);
-  will-change: transform, opacity;
+  background-image: none;
   &.rolled{
     opacity: 1;
     transform: translate3d(0, 0%, 0);
@@ -23,41 +17,21 @@
       @include flexSet;
       align-items: center;
       .h_logo{
-        position: relative;
         height: 100px;
-        margin-right: 30px;
         &::after{
-          display: block;
-          content: "";
-          position: absolute;
-          top:0;
-          bottom:0;
-          right:0;
-          margin: auto;
-          width: 1px;
-          height: 60%;
           background: $black01;
         }
-        a{
-          display: block;
-          width: 130px;
+        .logo_link{
+          width: 120px;
           height: 100px;
-          @include bgSet;
           background-size: 60px;
           background-image: url(../img/common/logo.svg);
-          @include hover;
         }
       }
       .h_nav{
         ul{
-          @include flexSet;
           li{
-            margin-right: 1.5em;
             a{
-              @include tsukushi-b;
-              line-height: 2;
-              display: block;
-              @include hover;
               color: $black01;
             }
           }
@@ -65,74 +39,29 @@
       }
     }
     .header_right{
-      @include flexSet;
-      align-items: center;
       .count_contents{
-        @include flexSet;
         .count_item{
           &.line{
-            position: relative;
             &::after{
-              display: block;
-              content: "";
-              position: absolute;
-              top:0;
-              bottom:0;
-              right:0;
-              margin: auto;
-              width: 1px;
-              height: 80%;
               background: $black01;
             }
           }
           a{
-            @include hover;
-            display: block;
             color: $black01;
-            padding: 0 35px;
-            .number{
-              @include flexSet;
-              align-items: baseline;
-              .num{
-                display: block;
-                @include tsukushi-r;
-                font-size: 32px;
-                letter-spacing: 1px;
-                margin-right: 0.3em;
-              }
-            }
-            .content{
-              @include tsukushi-b;
-              display: block;
-              font-size: 14px;
-              margin-top: 10px;
-              span{
-                display: inline-block;
-              }
-            }
           }
         }
       }
       .box_contents{
-        @include flexSet;
         .box_item{
-          display: block;
           width: 100px;
           height: 100px;
-          font-size: 10px;
-          text-align: center;
-          @include bgSet;
           line-height: 150px;
           &.mypage{
-            background-color: #f1f1f1;
-            color: $black02;
             background-size: 25px;
             background-position: center top 30px;
             background-image: url(../img/common/mypage.svg);
           }
           &.cart{
-            background-color: $black01;
-            color: #fff;
             background-size: 32px;
             background-position: left 32px top 25px;
             background-image: url(../img/common/cart.svg);
@@ -192,6 +121,41 @@
             }
             &.cart{
               background-position: left 32px top 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 980px){
+  .comp-fixed-header{
+    .header_inner{
+      display: block;
+      .header_left{
+        .h_logo{
+          width: 100%;
+          @include flexSet;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+          height: 100px;
+          margin-right: 0px;
+          .logo_link{
+            display: block;
+            width: 70px;
+            height: 100px;
+            @include bgSet;
+            background-size: 60px;
+          }
+          .hum_button{
+            button{
+              background-image: url(../img/common/menu_button.svg);
+            }
+          }
+          .header_cart{
+            a{
+              background-image: url(../img/common/cart_black.svg);
             }
           }
         }

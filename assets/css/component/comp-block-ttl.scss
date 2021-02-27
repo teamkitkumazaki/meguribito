@@ -24,3 +24,31 @@
     box-sizing: border-box;
   }
 }
+
+@media screen and (max-width: 980px){
+  .comp-block-ttl{
+    margin-bottom: 40px;
+    padding: 15px 15px;
+    .num{
+      width: 60px;
+      height: 60px;
+      background: #fff;
+      border-radius: 50%;
+      line-height: 60px;
+      text-align: center;
+      color: $black02;
+      font-size: 22px;
+      letter-spacing: 1px;
+      padding: 0;
+      border-right: 0px solid #fff;
+      text-indent: 0.2em;
+      margin-right: 20px;
+    }
+    .title{
+      width: calc(100% - 80px);
+      font-size: 26px;
+      line-height: 1.38;
+      padding: 0;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-header{
+.comp-header{
   position: absolute;
   width: 100%;
   top:0;
@@ -16,6 +16,9 @@ header{
         position: relative;
         height: 120px;
         margin-right: 30px;
+        .hum_button, .header_cart{
+          display: none;
+        }
         &::after{
           display: block;
           content: "";
@@ -28,7 +31,7 @@ header{
           height: 60%;
           background: #fff;
         }
-        a{
+        .logo_link{
           display: block;
           width: 160px;
           height: 120px;
@@ -139,7 +142,7 @@ header{
           &::after{
             background: $black01;
           }
-          a{
+          .logo_link{
             background-image: url(../img/common/logo.svg);
           }
         }
@@ -174,13 +177,13 @@ header{
 }
 
 @media screen and (max-width: 1200px){
-  header{
+  .comp-header{
     .header_inner{
       .header_left{
         .h_logo{
           height: 100px;
           margin-right: 25px;
-          a{
+          .logo_link{
             width: 120px;
             height: 100px;
             background-size: 60px;
@@ -262,6 +265,95 @@ header{
               }
               a{
                 color: $black01;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px){
+  .comp-header{
+    .header_inner{
+      display: block;
+      .header_left{
+        .h_logo{
+          width: 100%;
+          @include flexSet;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+          height: 100px;
+          margin-right: 0px;
+          .logo_link{
+            display: block;
+            width: 70px;
+            height: 100px;
+            @include bgSet;
+            background-size: 60px;
+          }
+          .hum_button{
+            width: 100px;
+            height: 100px;
+            display: block;
+            position: relative;
+            button{
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              cursor: pointer;
+              @include hover;
+              @include bgSet;
+              background-size: 35px;
+              background-image: url(../img/common/menu_button_white.svg);
+            }
+          }
+          .header_cart{
+            width: 100px;
+            height: 100px;
+            display: block;
+            position: relative;
+            a{
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              cursor: pointer;
+              @include hover;
+              @include bgSet;
+              background-size: 35px;
+              background-image: url(../img/common/cart.svg);
+            }
+          }
+          &::after{
+            display: none;
+          }
+        }
+        .h_nav{
+          display: none;
+        }
+      }
+      .header_right{
+        display: none;
+      }
+    }
+    &.underpage{
+      background-image: none;
+      .header_inner{
+        .header_left{
+          .h_logo{
+            .logo_link{
+              background-image: url(../img/common/logo.svg);
+            }
+            .hum_button{
+              button{
+                background-image: url(../img/common/menu_button.svg);
+              }
+            }
+            .header_cart{
+              a{
+                background-image: url(../img/common/cart_black.svg);
               }
             }
           }
