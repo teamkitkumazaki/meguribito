@@ -52,3 +52,24 @@
     }
   }
 }
+
+@media screen and (max-width: 700px){
+  .comp-block-ttl{
+    margin-bottom: 30px;
+    padding: 15px 15px;
+    .num{
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      letter-spacing: 1px;
+      text-indent: 0.2em;
+      margin-right: 15px;
+    }
+    .title{
+      width: calc(100% - 75px);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+}

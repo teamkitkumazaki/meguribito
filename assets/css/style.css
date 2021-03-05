@@ -591,6 +591,42 @@ button:focus {
     background-image: url(../img/common/cart_black.svg);
   }
 }
+@media screen and (max-width: 700px) {
+  .comp-header .header_inner {
+    display: block;
+  }
+  .comp-header .header_inner .header_left .h_logo {
+    height: 70px;
+    margin-right: 0px;
+  }
+  .comp-header .header_inner .header_left .h_logo .logo_link {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-size: 45px;
+  }
+  .comp-header .header_inner .header_left .h_logo .hum_button {
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: relative;
+  }
+  .comp-header .header_inner .header_left .h_logo .hum_button button {
+    background-size: 25px;
+  }
+  .comp-header .header_inner .header_left .h_logo .header_cart {
+    width: 60px;
+    height: 60px;
+  }
+  .comp-header .header_inner .header_left .h_logo .header_cart a {
+    width: 100%;
+    height: 100%;
+    background-size: 25px;
+  }
+}
 footer {
   padding: 120px 0;
   background-color: #231916;
@@ -1050,6 +1086,60 @@ footer .footer_inner .footer_lower .copyright {
     padding: 100px 0 60px;
   }
 }
+@media screen and (max-width: 700px) {
+  .page-flow .section-flow-01 {
+    margin: 40px auto 60px;
+  }
+  .page-flow .section-flow-02 {
+    margin: 0px auto 60px;
+  }
+  .page-flow .section-flow-02 .trip_detail {
+    display: block;
+    margin-top: 30px;
+  }
+  .page-flow .section-flow-02 .trip_detail .detail_item {
+    display: block;
+    width: 100%;
+  }
+  .page-flow .section-flow-02 .trip_detail .detail_item .img_wrap {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .page-flow .section-flow-02 .trip_detail .detail_item .txt_wrap {
+    width: 100%;
+  }
+  .page-flow .section-flow-02 .trip_detail .detail_item .txt_wrap .title_wrap {
+    margin-bottom: 20px;
+  }
+  .page-flow .section-flow-02 .trip_detail .detail_item .txt_wrap .title_wrap .small {
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    display: block;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.75px;
+    color: #3f3f3f;
+    margin-bottom: 5px;
+  }
+  .page-flow .section-flow-02 .trip_detail .detail_item .txt_wrap .title_wrap .item_ttl {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .page-flow .section-flow-02 .trip_outline {
+    display: block;
+    margin-top: 30px;
+  }
+  .page-flow .section-flow-02 .trip_outline .img_wrap {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .page-flow .section-flow-02 .trip_outline .txt_wrap {
+    width: 100%;
+  }
+  .page-flow .section-plans {
+    padding: 60px 0 20px;
+  }
+}
 /*########## コンポーネント ##########*/
 /* 共通パーツ */
 .comp-fixed-header {
@@ -1177,6 +1267,42 @@ footer .footer_inner .footer_lower .copyright {
     background-image: url(../img/common/cart_black.svg);
   }
 }
+@media screen and (max-width: 700px) {
+  .comp-fixed-header .header_inner {
+    display: block;
+  }
+  .comp-fixed-header .header_inner .header_left .h_logo {
+    height: 70px;
+    margin-right: 0px;
+  }
+  .comp-fixed-header .header_inner .header_left .h_logo .logo_link {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-size: 45px;
+  }
+  .comp-fixed-header .header_inner .header_left .h_logo .hum_button {
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: relative;
+  }
+  .comp-fixed-header .header_inner .header_left .h_logo .hum_button button {
+    background-size: 25px;
+  }
+  .comp-fixed-header .header_inner .header_left .h_logo .header_cart {
+    width: 60px;
+    height: 60px;
+  }
+  .comp-fixed-header .header_inner .header_left .h_logo .header_cart a {
+    width: 100%;
+    height: 100%;
+    background-size: 25px;
+  }
+}
 .comp-link-button.right {
   text-align: right;
 }
@@ -1249,6 +1375,20 @@ footer .footer_inner .footer_lower .copyright {
   color: #363636;
 }
 
+@media screen and (max-width: 700px) {
+  .comp-kagibito-wrap {
+    margin-bottom: 10px;
+  }
+  .comp-kagibito-wrap .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .comp-kagibito-wrap .name {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+}
 .comp-section-title .upper_txt {
   font-size: 14px;
   line-height: 1.6;
@@ -1293,6 +1433,44 @@ footer .footer_inner .footer_lower .copyright {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 700px) {
+  .comp-section-title .upper_txt {
+    font-size: 14px;
+    letter-spacing: 0.75px;
+    margin-bottom: 5px;
+  }
+  .comp-section-title .title {
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+  }
+  .comp-section-title .description {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.6px;
+  }
+  .comp-section-title .description span {
+    display: inline;
+  }
+  .comp-section-title.center {
+    text-align: center;
+  }
+  .comp-section-title.center .title {
+    text-indent: 0em;
+  }
+  .comp-section-title.margin {
+    margin-bottom: 40px;
+  }
+  .comp-section-title.button {
+    display: block;
+  }
+  .comp-section-title.button .comp-link-button {
+    display: none;
+  }
+}
 .comp-section-sub-title {
   margin-bottom: 40px;
 }
@@ -1315,6 +1493,21 @@ footer .footer_inner .footer_lower .copyright {
   display: block;
 }
 
+@media screen and (max-width: 700px) {
+  .comp-section-sub-title {
+    margin-bottom: 30px;
+  }
+  .comp-section-sub-title .title {
+    font-size: 14px;
+    letter-spacing: 0.75px;
+    margin-bottom: 5px;
+  }
+  .comp-section-sub-title .sub_ttl {
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+  }
+}
 .comp-kagibito-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -1342,6 +1535,20 @@ footer .footer_inner .footer_lower .copyright {
   color: #363636;
 }
 
+@media screen and (max-width: 700px) {
+  .comp-kagibito-wrap {
+    margin-bottom: 10px;
+  }
+  .comp-kagibito-wrap .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .comp-kagibito-wrap .name {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+}
 .comp-underpage-lead {
   padding-top: 200px;
 }
@@ -1376,6 +1583,27 @@ footer .footer_inner .footer_lower .copyright {
 @media screen and (max-width: 1200px) {
   .comp-underpage-lead {
     padding-top: 160px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .comp-underpage-lead {
+    padding-top: 100px;
+  }
+  .comp-underpage-lead .page_ttl {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  .comp-underpage-lead .sub_ttl {
+    font-size: 18px;
+    letter-spacing: 1.4px;
+    margin-bottom: 20px;
+  }
+  .comp-underpage-lead .description {
+    font-size: 14px;
+  }
+  .comp-underpage-lead .description span {
+    display: inline;
   }
 }
 .comp-block-ttl {
@@ -1432,6 +1660,26 @@ footer .footer_inner .footer_lower .copyright {
     font-size: 26px;
     line-height: 1.38;
     padding: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .comp-block-ttl {
+    margin-bottom: 30px;
+    padding: 15px 15px;
+  }
+  .comp-block-ttl .num {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-indent: 0.2em;
+    margin-right: 15px;
+  }
+  .comp-block-ttl .title {
+    width: calc(100% - 75px);
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 /* プラン一覧 */
@@ -1551,6 +1799,56 @@ footer .footer_inner .footer_lower .copyright {
     display: none;
   }
   .comp-plan-list .plan_item .txt_wrap .title_wrap .location span.guesthouse {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .comp-plan-list .plan_item {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  .comp-plan-list .plan_item .img_wrap {
+    margin-bottom: 25px;
+  }
+  .comp-plan-list .plan_item .img_wrap a {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 52vw;
+    max-height: unset;
+  }
+  .comp-plan-list .plan_item .img_wrap a img {
+    display: none;
+  }
+  .comp-plan-list .plan_item .txt_wrap .title_wrap a {
+    display: block;
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    margin-bottom: 20px;
+  }
+  .comp-plan-list .plan_item .txt_wrap .title_wrap .location {
+    position: absolute;
+    bottom: 0;
+  }
+  .comp-plan-list .plan_item .txt_wrap .title_wrap .location span {
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 0.5px;
+  }
+  .comp-plan-list .plan_item .txt_wrap .title_wrap .location span.area {
+    padding-left: 20px;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+  .comp-plan-list .plan_item .txt_wrap .title_wrap .location span.area::before {
+    width: 12px;
+    height: 100%;
+    background-size: 12px;
+  }
+  .comp-plan-list .plan_item .txt_wrap .title_wrap .location span.area::after {
     display: none;
   }
 }
@@ -1778,6 +2076,55 @@ footer .footer_inner .footer_lower .copyright {
     width: 100%;
     margin-right: 0%;
     margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .comp-flow-wrap .flow_item {
+    margin-bottom: 40px;
+  }
+  .comp-flow-wrap .flow_item:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
+  .comp-flow-wrap .flow_item .flow_ttl {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .comp-flow-wrap .flow_item .flow_ttl .icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .comp-flow-wrap .flow_item .flow_ttl .box {
+    width: calc(100% - 75px);
+    display: block;
+    margin-bottom: 5px;
+  }
+  .comp-flow-wrap .flow_item .flow_ttl .box .step {
+    display: block;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    padding-right: 0em;
+    margin-bottom: 5px;
+  }
+  .comp-flow-wrap .flow_item .flow_ttl .box .flow_item_title {
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-indent: -0.1em;
+  }
+  .comp-flow-wrap .flow_item .flow_description {
+    padding: 0 10px;
+  }
+  .comp-flow-wrap .flow_item .flow_description .flow_subttl {
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
   }
 }
 /* トップページ */

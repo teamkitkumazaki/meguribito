@@ -29,3 +29,25 @@
     padding-top: 160px;
   }
 }
+
+@media screen and (max-width: 700px){
+  .comp-underpage-lead{
+    padding-top: 100px;
+    .page_ttl{
+      font-size: 28px;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .sub_ttl{
+      font-size: 18px;
+      letter-spacing: 1.4px;
+      margin-bottom: 20px;
+    }
+    .description{
+      font-size: 14px;
+      span{
+        display: inline;
+      }
+    }
+  }
+}

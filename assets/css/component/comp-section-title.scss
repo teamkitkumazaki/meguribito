@@ -37,3 +37,40 @@
     justify-content: space-between;
   }
 }
+@media screen and (max-width: 700px){
+  .comp-section-title{
+    .upper_txt{
+      font-size: 14px;
+      letter-spacing: 0.75px;
+      margin-bottom: 5px;
+    }
+    .title{
+      @include tsukushi-b;
+      font-size: 30px;
+      line-height: 1.6;
+      letter-spacing: 0.05em;;
+    }
+    .description{
+      margin-top: 20px;
+      @include basicP;
+      span{
+        display: inline;
+      }
+    }
+    &.center{
+      text-align: center;
+      .title{
+        text-indent: 0em;
+      }
+    }
+    &.margin{
+      margin-bottom: 40px;
+    }
+    &.button{
+      display: block;
+      .comp-link-button{
+        display: none;
+      }
+    }
+  }
+}

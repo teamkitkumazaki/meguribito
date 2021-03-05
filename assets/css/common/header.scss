@@ -362,3 +362,42 @@
     }
   }
 }
+
+@media screen and (max-width: 700px){
+  .comp-header{
+    .header_inner{
+      display: block;
+      .header_left{
+        .h_logo{
+          height: 70px;
+          margin-right: 0px;
+          .logo_link{
+            display: block;
+            width: 70px;
+            height: 70px;
+            @include bgSet;
+            background-size: 45px;
+          }
+          .hum_button{
+            width: 60px;
+            height: 60px;
+            display: block;
+            position: relative;
+            button{
+              background-size: 25px;
+            }
+          }
+          .header_cart{
+            width: 60px;
+            height: 60px;
+            a{
+              width: 100%;
+              height: 100%;
+              background-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
