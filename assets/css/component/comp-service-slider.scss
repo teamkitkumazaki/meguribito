@@ -7,6 +7,9 @@
   width: 100vw;
   height: 480px;
   overflow: hidden;
+  @media screen and (max-width: 1200px){
+    left: 55vw;
+  }
   .slick-arrow{
     position: absolute;
     bottom: -50px;
