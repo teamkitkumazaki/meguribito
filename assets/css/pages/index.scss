@@ -188,3 +188,76 @@
     }
   }
 }
+
+@media screen and (max-width: 980px){
+  .page-index{
+    .section-main{
+      .main_inner{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+      }
+    }
+    .section-pickup{
+      padding: 80px 0;
+    }
+    .section-plan-list{
+      padding: 80px 0 40px;
+      background: #fff;
+    }
+    .section-service{
+      margin: 80px 0;
+      .section_inner{
+        position: relative;
+        background: #fff;
+        &::before{
+          display: none;
+        }
+        .txt_wrap{
+          width: 86vw;
+          box-sizing: border-box;
+          padding: 60px;
+          .description{
+            @include basicP;
+          }
+          .comp-link-button{
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+    .section-kagibito{
+      margin: 80px 0 120px;
+      .section_inner{
+        display: block;
+        &::before{
+          display: none;
+        }
+        .kagibito_img{
+          width: 72vw;
+          position: static;
+          @include flexSet;
+          margin-bottom: 30px;
+          .img_box{
+            width: 25%;
+          }
+        }
+        .txt_wrap{
+          width: 86vw;
+          box-sizing: border-box;
+          padding: 60px;
+          margin-left: 0;
+          .comp-link-button{
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+    .section-news{
+      margin-bottom: 80px;
+    }
+    .section-footer-link{
+      margin-bottom: 80px;
+    }
+  }
+}

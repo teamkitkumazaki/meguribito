@@ -348,3 +348,129 @@
     }
   }
 }
+@media screen and (max-width: 980px){
+  .comp-pickup-plan{
+    .pickup_item{
+      align-items: flex-start;
+      margin-bottom: 80px;
+      &:nth-last-of-type(1){
+        margin-bottom: 0;
+      }
+      .img_wrap{
+        width: 100%;
+      }
+      .txt_wrap{
+        width: 100%;
+        .title_wrap{
+        }
+        .desc_wrap{
+          .kagibito{
+            .kagibito_wrap{
+              .icon{
+                width: 50px;
+                height: 50px;
+                margin-right: 15px;
+              }
+              .kagibito_info{
+                width: calc(100% - 65px);
+                padding-bottom: 5px;
+                .info{
+                  font-size: 12px;
+                  letter-spacing: 0.5px;
+                  margin-bottom: 5px;
+                }
+                .name{
+                  font-size: 18px;
+                  letter-spacing: 1px;
+                }
+              }
+            }
+          }
+        }
+      }
+      &:nth-of-type(1){
+        display: block;
+        width: 100%;
+        margin: 0 auto 80px;
+        .img_wrap{
+          width: 100%;
+          margin-bottom: 30px;
+          a{
+            display: block;
+            overflow: hidden;
+            height: 56vw;
+            max-height: unset;
+          }
+        }
+        .txt_wrap{
+          width: 100%;
+
+          .title_wrap{
+            @include flexSet;
+            justify-content: flex-start;
+            align-items: center;
+            .slider_shifter{
+              width: 100%;
+              margin-top: 30px;
+              .img_box{
+                width: 100px;
+                padding: 0 0 5px 5px;
+              }
+            }
+            .title_txt{
+              width: 100%;
+            }
+            a{
+              font-size: 26px;
+              line-height: 1.5;
+              letter-spacing: 1.8px;
+              span{
+                display: inline;
+              }
+            }
+          }
+          .desc_wrap{
+            display: block;
+            p{
+              width: 100%;
+            }
+            .kagibito{
+              @include flexSet;
+              .comp-link-button{
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+      &:nth-of-type(n+2){
+        width: 100%;
+        .img_wrap{
+          margin-bottom: 30px;
+          a{
+            display: block;
+            overflow: hidden;
+            height: 56vw;
+            max-height: unset;
+            img{
+              display: block;
+            }
+          }
+        }
+        .txt_wrap{
+          .title_wrap{
+            display: block;
+            .title_txt{
+              width: 100%;
+            }
+            a{
+              span{
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

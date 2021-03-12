@@ -88,3 +88,14 @@
     }
   }
 }
+
+@media screen and (max-width: 980px){
+  .comp-service-slider{
+    position: static;
+    margin: auto;
+    width: 100vw;
+    height: 480px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+}
