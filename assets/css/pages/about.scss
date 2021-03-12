@@ -1,0 +1,140 @@
+.page-about{
+  .section-main{
+    margin-bottom: 100px;
+    .img_wrap{
+      width: 100%;
+      height: 550px;
+      margin-bottom: 60px;
+      @include bgSet;
+      background-image: url(../img/about/main.jpg);
+    }
+  }
+  .section-org{
+    margin-bottom: 160px;
+    .flex_wrap{
+      @include flexSet;
+      justify-content: space-between;
+      align-items: center;
+      @media screen and (max-width: 1200px){
+        align-items: flex-start;
+      }
+      .img_wrap{
+        width: 47%;
+      }
+      .txt_wrap{
+        width: 47%;
+        .org_name{
+          margin-bottom: 20px;
+          .small{
+            display: block;
+            font-size: 16px;
+            line-height: 1;
+            letter-spacing: normal;
+          }
+          .name{
+            @include tsukushi-b;
+            font-size: 30px;
+            line-height: normal;
+            letter-spacing: 0.03em;
+          }
+        }
+        .description{
+          @include basicP;
+          .comp-number-list{
+            margin: 20px auto;
+          }
+        }
+        .comp-link-button{
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  .section-member{
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 980px){
+  .page-about{
+    .section-main{
+      margin-bottom: 80px;
+      .img_wrap{
+        height: 500px;
+        margin-bottom: 60px;
+        background-image: url(../img/about/main_sp.jpg);
+      }
+    }
+    .section-org{
+      margin-bottom: 80px;
+      border-bottom: 1px solid #d8d8d8;
+      padding-bottom: 80px;
+      .flex_wrap{
+        display: block;
+        .img_wrap{
+          display: none;
+        }
+        .txt_wrap{
+          width: 100%;
+        }
+      }
+    }
+    .section-member{
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  .page-about{
+    .section-main{
+      position: relative;
+      margin-bottom: 40px;
+      .img_wrap{
+        height: 110vw;
+        margin-bottom: 0px;
+        @include bgSet;
+      }
+      .comp-section-title{
+        position: absolute;
+        bottom: 20px;
+        color: #fff;
+        margin-bottom: 0;
+        text-align: left;
+      }
+    }
+    .section-org{
+      margin-bottom: 60px;
+      padding-bottom: 60px;
+      .flex_wrap{
+        .txt_wrap{
+          .org_name{
+            margin-bottom: 15px;
+            .small{
+              font-size: 14px;
+            }
+            .name{
+              @include tsukushi-b;
+              font-size: 7vw;
+              line-height: normal;
+              letter-spacing: 0.03em;
+            }
+          }
+          .description{
+            @include basicP;
+            font-size: 14px;
+            .comp-number-list{
+              margin: 25px auto;
+            }
+          }
+          .comp-link-button{
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+    .section-member{
+      margin-bottom: 30px;
+    }
+  }
+}

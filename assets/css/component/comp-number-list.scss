@@ -1,0 +1,44 @@
+.comp-number-list{
+  .list_item{
+    @include flexSet;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+    .num{
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin-right: 12px;
+      background: $pointYellow;
+      color: #fff;
+      border-radius: 50%;
+      @include tsukushi-r;
+      font-size: 16px;
+      letter-spacing: 0.4px;
+      text-align: center;
+      line-height: 40px;
+      text-indent: 0.1em;
+    }
+    .content{
+      width: calc(100% - 52px);
+      @include tsukushi-b;
+      font-size: 18px;
+      line-height: 1.44;
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  .comp-number-list{
+    .list_item{
+      padding: 15px 10px;
+      margin-bottom: 5px;
+      .content{
+        font-size: 16px;
+        line-height: 1.6;
+      }
+    }
+  }
+}

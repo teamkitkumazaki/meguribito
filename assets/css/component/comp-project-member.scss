@@ -1,0 +1,158 @@
+.comp-project-member{
+  @include flexSet;
+  .member_item{
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 3vw;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    @include flexSet;
+    align-items: center;
+    &:nth-of-type(2n){
+      margin-right: 0;
+    }
+    .icon{
+      display: block;
+      width: 180px;
+      height: 180px;
+      margin-right: 30px;
+      @include bgSet;
+      background-size: contain;
+    }
+    .txt_wrap{
+      width: calc(100% - 210px);
+      .name_wrap{
+        margin-top: 15px;
+        margin-bottom: 20px;
+        .position{
+          @include tsukushi-r;
+          display: block;
+          font-size: 14px;
+          line-height: 1.64;
+          letter-spacing: 0.5px;
+          margin-bottom: 7px;
+        }
+        .name{
+          @include tsukushi-b;
+          font-size: 26px;
+          line-height: 1;
+          letter-spacing: normal;
+          text-indent: -0.05em;
+        }
+      }
+      .message{
+        @include basicP;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .comp-project-member{
+    .member_item{
+      align-items: flex-start;
+      .icon{
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin-right: 30px;
+      }
+      .txt_wrap{
+        width: calc(100% - 130px);
+        .name_wrap{
+          margin: 20px auto;
+          .position{
+            margin-bottom: 10px;
+          }
+          .name{
+            font-size: 28px;
+          }
+        }
+        .message{
+          margin-top: 40px;
+          margin-left: -120px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px){
+  .comp-project-member{
+    @include flexSet;
+    .member_item{
+      width: 100%;
+      margin-right: 0%;
+      margin-bottom: 10px;
+      padding: 25px;
+      @include flexSet;
+      align-items: center;
+      .icon{
+        display: block;
+        width: 140px;
+        height: 140px;
+        margin-right: 30px;
+        @include bgSet;
+        background-size: contain;
+      }
+      .txt_wrap{
+        width: calc(100% - 170px);
+        .name_wrap{
+          margin-top: 10px;
+          margin-bottom: 20px;
+          .position{
+            margin-bottom: 10px;
+          }
+          .name{
+            font-size: 26px;
+          }
+        }
+        .message{
+          margin-top: 20px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  .comp-project-member{
+    @include flexSet;
+    .member_item{
+      width: 100%;
+      margin-right: 0%;
+      margin-bottom: 10px;
+      padding: 20px;
+      align-items: flex-start;
+      .icon{
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+      }
+      .txt_wrap{
+        width: calc(100% - 100px);
+        .name_wrap{
+          margin-bottom: 20px;
+          .position{
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            margin-bottom: 7px;
+          }
+          .name{
+            font-size: 22px;
+          }
+        }
+        .message{
+          margin-left: -95px;
+          margin-top: 30px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
