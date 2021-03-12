@@ -13,6 +13,7 @@
 
 /*########## ページ個別レイアウト ##########*/
 @import 'pages/index.scss';
+@import 'pages/about.scss';
 @import 'pages/flow.scss';
 
 
@@ -28,6 +29,8 @@
 @import 'component/comp-kagibito-wrap.scss';
 @import 'component/comp-underpage-lead.scss';
 @import 'component/comp-block-ttl.scss';
+@import 'component/comp-number-list.scss';
+
 
 
 /* プラン一覧 */
@@ -38,6 +41,9 @@
 
 /* 旅の流れ */
 @import 'component/comp-flow-wrap.scss';
+
+/* 運営団体 */
+@import 'component/comp-project-member.scss';
 
 
 /* トップページ */
