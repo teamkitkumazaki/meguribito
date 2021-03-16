@@ -52,18 +52,18 @@
     }
   }
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 720px){
   .comp-section-title{
     .upper_txt{
-      font-size: 14px;
-      letter-spacing: 0.75px;
+      font-size: 2.4vw;
+      letter-spacing: 0.05em;
       margin-bottom: 5px;
     }
     .title{
       @include tsukushi-b;
-      font-size: 30px;
+      font-size: 8vw;
       line-height: 1.6;
-      letter-spacing: 0.05em;;
+      letter-spacing: 0.05em;
     }
     .description{
       margin-top: 20px;
