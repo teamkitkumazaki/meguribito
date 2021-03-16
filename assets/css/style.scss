@@ -13,6 +13,7 @@
 
 /*########## ページ個別レイアウト ##########*/
 @import 'pages/index.scss';
+@import 'pages/kagibitoList.scss';
 @import 'pages/kagibitoDetail.scss';
 @import 'pages/about.scss';
 @import 'pages/flow.scss';
@@ -31,6 +32,7 @@
 @import 'component/comp-underpage-lead.scss';
 @import 'component/comp-block-ttl.scss';
 @import 'component/comp-number-list.scss';
+@import 'component/comp-pager.scss';
 @import 'component/comp-sns-wrap.scss';
 
 

@@ -1239,6 +1239,21 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 40px;
   }
 }
+.page-kagibito-list .section-lead {
+  margin-bottom: 80px;
+}
+.page-kagibito-list .section-plans {
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 720px) {
+  .page-kagibito-list .section-lead {
+    margin-bottom: 40px;
+  }
+  .page-kagibito-list .section-plans {
+    margin-bottom: 60px;
+  }
+}
 .page-kagibito-detail .section-kagibito {
   margin-bottom: 100px;
 }
@@ -2415,10 +2430,11 @@ footer .footer_inner .footer_lower .copyright {
   .comp-underpage-lead .page_ttl {
     font-size: 28px;
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .comp-underpage-lead .sub_ttl {
     font-size: 18px;
+    line-height: 1.8;
     letter-spacing: 1.4px;
     margin-bottom: 20px;
   }
@@ -2445,13 +2461,13 @@ footer .footer_inner .footer_lower .copyright {
   line-height: normal;
   letter-spacing: 1px;
   text-align: center;
-  padding: 7px 0;
+  padding: 15px 0;
   border-right: 1px solid #fff;
   box-sizing: border-box;
 }
 .comp-block-ttl .title {
   width: calc(100% - 70px);
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.38;
   letter-spacing: 1px;
   padding: 0px 15px;
@@ -2546,6 +2562,168 @@ footer .footer_inner .footer_lower .copyright {
   .comp-number-list .list_item .content {
     font-size: 16px;
     line-height: 1.6;
+  }
+}
+.comp-pager .wp-pagenavi {
+  margin-top: 60px;
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.comp-pager .pages {
+  display: none;
+}
+.comp-pager .first, .comp-pager .last {
+  display: none;
+}
+.comp-pager a, .comp-pager span {
+  display: block;
+  width: 38px;
+  height: 43px;
+  text-align: center;
+  line-height: 41px;
+  box-sizing: border-box;
+  text-indent: 0.1em;
+}
+.comp-pager a, .comp-pager span {
+  box-sizing: border-box;
+  color: #333;
+  margin-right: 0.5em;
+  text-indent: -1px;
+}
+.comp-pager a.page, .comp-pager a.page-numbers, .comp-pager span.page, .comp-pager span.page-numbers {
+  font-size: 16px;
+  transition: opacity 0.3s;
+  background: #3f3f3f;
+  border: 1px solid #3f3f3f;
+  color: #fff;
+  text-indent: 1px;
+}
+.comp-pager a.page:hover, .comp-pager a.page-numbers:hover, .comp-pager span.page:hover, .comp-pager span.page-numbers:hover {
+  opacity: 0.75;
+}
+.comp-pager a.extend, .comp-pager span.extend {
+  border: 0px;
+  display: block;
+  margin-left: -0.8em;
+  margin-right: -0.3em;
+  color: #999;
+  line-height: 43px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.comp-pager a.current, .comp-pager span.current {
+  font-size: 16px;
+  background-color: #ebf0f3;
+  margin-right: 0.5em;
+  color: #222;
+  border: 1px solid #ebf0f3;
+}
+.comp-pager a.previouspostslink, .comp-pager a.prev, .comp-pager span.previouspostslink, .comp-pager span.prev {
+  position: relative;
+  background-color: #646464;
+  border: 1px solid #646464;
+  margin-right: 0.5em;
+  text-indent: -9999px;
+  transition: opacity 0.3s;
+}
+.comp-pager a.previouspostslink:hover, .comp-pager a.prev:hover, .comp-pager span.previouspostslink:hover, .comp-pager span.prev:hover {
+  opacity: 0.75;
+}
+.comp-pager a.previouspostslink::before, .comp-pager a.prev::before, .comp-pager span.previouspostslink::before, .comp-pager span.prev::before {
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 5px;
+  right: 0;
+  margin: auto;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(-135deg);
+}
+.comp-pager a.nextpostslink, .comp-pager a.next, .comp-pager span.nextpostslink, .comp-pager span.next {
+  position: relative;
+  background-color: #646464;
+  border: 1px solid #646464;
+  text-indent: -9999px;
+  transition: opacity 0.3s;
+}
+.comp-pager a.nextpostslink:hover, .comp-pager a.next:hover, .comp-pager span.nextpostslink:hover, .comp-pager span.next:hover {
+  opacity: 0.75;
+}
+.comp-pager a.nextpostslink::before, .comp-pager a.next::before, .comp-pager span.nextpostslink::before, .comp-pager span.next::before {
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 5px;
+  margin: auto;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 720px) {
+  .comp-pager {
+    margin-top: 25px;
+  }
+  .comp-pager a, .comp-pager span {
+    margin-bottom: 0.5em;
+  }
+  .comp-pager a.pages, .comp-pager span.pages {
+    display: none;
+  }
+  .comp-pager a.first, .comp-pager a.last, .comp-pager span.first, .comp-pager span.last {
+    display: none;
+  }
+  .comp-pager a.current, .comp-pager a.page, .comp-pager a.page-numbers, .comp-pager a.previouspostslink, .comp-pager a.nextpostslink, .comp-pager a.prev, .comp-pager a.next, .comp-pager span.current, .comp-pager span.page, .comp-pager span.page-numbers, .comp-pager span.previouspostslink, .comp-pager span.nextpostslink, .comp-pager span.prev, .comp-pager span.next {
+    display: block;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    font-size: 14px !important;
+  }
+  .comp-pager a.current, .comp-pager span.current {
+    margin-right: 0.5em;
+  }
+  .comp-pager a.page, .comp-pager a.page-numbers, .comp-pager span.page, .comp-pager span.page-numbers {
+    margin-right: 0.5em;
+  }
+  .comp-pager a.previouspostslink, .comp-pager a.prev, .comp-pager span.previouspostslink, .comp-pager span.prev {
+    margin-right: 0.5em;
+  }
+  .comp-pager a.previouspostslink::before, .comp-pager a.prev::before, .comp-pager span.previouspostslink::before, .comp-pager span.prev::before {
+    width: 6px;
+    height: 6px;
+    left: 0;
+    right: -2px;
+  }
+  .comp-pager a.nextpostslink, .comp-pager a.next, .comp-pager span.nextpostslink, .comp-pager span.next {
+    margin-right: 0;
+  }
+  .comp-pager a.nextpostslink::before, .comp-pager a.next::before, .comp-pager span.nextpostslink::before, .comp-pager span.next::before {
+    width: 6px;
+    height: 6px;
+    left: -2px;
+    right: 0;
+  }
+  .comp-pager a.extend, .comp-pager span.extend {
+    display: none !important;
+    margin-right: 0.8em;
+    margin-left: 0.3em;
+    margin-bottom: 10px;
   }
 }
 .comp-sns-wrap {
@@ -2954,6 +3132,7 @@ footer .footer_inner .footer_lower .copyright {
   border-radius: 20px;
   background: #fff;
   box-sizing: border-box;
+  margin-bottom: 40px;
 }
 .comp-kagibito-list .kagibito_item:nth-of-type(4n) {
   margin-right: 0;
@@ -3005,6 +3184,9 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-kagibito-list .kagibito_item .txt_wrap .comp-sns-wrap {
   margin-top: 25px;
+}
+.comp-kagibito-list.in_detail .kagibito_item {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 980px) {
@@ -3095,6 +3277,9 @@ footer .footer_inner .footer_lower .copyright {
   }
   .comp-kagibito-list .kagibito_item .txt_wrap .comp-sns-wrap {
     margin-top: 20px;
+  }
+  .comp-kagibito-list.in_detail .kagibito_item {
+    margin-bottom: 3vw;
   }
   .comp-kagibito-list.in_detail .kagibito_item:nth-of-type(4) {
     display: block;

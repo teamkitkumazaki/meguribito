@@ -1,0 +1,152 @@
+.comp-pager {
+  .wp-pagenavi{
+    margin-top: 60px;
+    @include tsukushi-r;
+    @include flexSet;
+    justify-content: center;
+    align-items: center;
+  }
+  .pages{
+    display: none;
+  }
+    .first, .last{
+      display: none;
+    }
+    a,span{
+      display: block;
+      width: 38px;
+      height: 43px;
+      text-align: center;
+      line-height: 41px;
+      box-sizing: border-box;
+      text-indent: 0.1em;
+    }
+    a, span{
+      box-sizing: border-box;
+      color: #333;
+      margin-right: 0.5em;
+      text-indent: -1px;
+      &.page, &.page-numbers{
+        font-size: 16px;
+        @include hover;
+        background: $black02;
+        border: 1px solid $black02;
+        color: #fff;
+        text-indent: 1px;
+      }
+      &.extend{
+        border: 0px;
+        display: block;
+        margin-left: -0.8em;
+        margin-right: -0.3em;
+        color: #999;
+        line-height: 43px;
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+      &.current{
+        font-size: 16px;
+        background-color: #ebf0f3;
+        margin-right: 0.5em;
+        color: #222;
+        border: 1px solid #ebf0f3;
+      }
+      &.previouspostslink, &.prev{
+        position: relative;
+        background-color: #646464;
+        border: 1px solid #646464;
+        margin-right: 0.5em;
+        text-indent: -9999px;
+        @include hover;
+        &::before{
+          display: block;
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          content: "";
+          top: 0;
+          bottom: 0;
+          left: 5px;
+          right: 0;
+          margin: auto;
+          border-top: 1px solid #fff;
+          border-right: 1px solid #fff;
+          transform: rotate(-135deg);
+        }
+      }
+      &.nextpostslink, &.next{
+        position: relative;
+        background-color: #646464;
+        border: 1px solid #646464;
+        text-indent: -9999px;
+        @include hover;
+        &::before{
+          display: block;
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          content: "";
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 5px;
+          margin: auto;
+          border-top: 1px solid #fff;
+          border-right: 1px solid #fff;
+          transform: rotate(45deg);
+        }
+      }
+    }
+}
+@media screen and (max-width: 720px){
+  .comp-pager {
+    margin-top: 25px;
+    a, span{
+      margin-bottom: 0.5em;
+      &.pages{
+        display: none;
+      }
+      &.first, &.last{
+        display: none;
+      }
+      &.current, &.page, &.page-numbers, &.previouspostslink, &.nextpostslink, &.prev, &.next{
+        display: block;
+        width: 38px;
+        height: 38px;
+        line-height: 36px;
+        letter-spacing: -1px;
+        font-size: 14px !important;
+      }
+      &.current{
+        margin-right: 0.5em;
+      }
+      &.page, &.page-numbers{
+        margin-right: 0.5em;
+      }
+      &.previouspostslink, &.prev{
+        margin-right: 0.5em;
+        &::before{
+          width: 6px;
+          height: 6px;
+          left: 0;
+          right: -2px;
+        }
+      }
+      &.nextpostslink , &.next{
+        margin-right: 0;
+        &::before{
+          width: 6px;
+          height: 6px;
+          left: -2px;
+          right: 0;
+        }
+      }
+      &.extend{
+        display: none !important;
+        margin-right: 0.8em;
+        margin-left: 0.3em;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

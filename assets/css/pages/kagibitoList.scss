@@ -1,0 +1,19 @@
+.page-kagibito-list{
+  .section-lead{
+    margin-bottom: 80px;
+  }
+  .section-plans{
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 720px){
+  .page-kagibito-list{
+    .section-lead{
+      margin-bottom: 40px;
+    }
+    .section-plans{
+      margin-bottom: 60px;
+    }
+  }
+}
