@@ -1,0 +1,37 @@
+.comp-sns-wrap{
+  margin-top: 10px;
+  @include flexSet;
+  a{
+    @include hover;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right:10px;
+    background-color: $black02;
+    border-radius: 50%;
+    @include bgSet;
+    &.ig{
+      background-size: 14px;
+      background-image: url(../img/common/icon_ig_white.png);
+    }
+    &.fb{
+      background-size: 7px;
+      background-image: url(../img/common/icon_fb_white.png);
+    }
+    &.tw{
+      background-size: 13px;
+      background-image: url(../img/common/icon_tw_white.png);
+    }
+    &:nth-last-of-type(1){
+      margin-right: 0;
+    }
+  }
+  &.center{
+    justify-content: center
+  }
+  &.brown{
+    a{
+      /*background-color: $basicBgColor;*/
+    }
+  }
+}

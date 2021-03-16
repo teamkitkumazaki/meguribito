@@ -1,0 +1,293 @@
+.page-kagibito-detail{
+  .section-kagibito{
+    margin-bottom: 100px;
+    .basic_info{
+      @include flexSet;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      .kagibito_info{
+        @include flexSet;
+        align-items: center;
+        .icon{
+          display: block;
+          width: 140px;
+          height: 140px;
+          margin-right: 30px;
+          border-radius: 50%;
+          @include bgSet;
+        }
+        .txt_wrap{
+          .kagibito_name{
+            @include tsukushi-b;
+            font-size: 30px;
+            line-height: 1;
+            letter-spacing: normal;
+            margin-bottom: 10px;
+          }
+          .position{
+            @include tsukushi-b;
+            color: #646464;
+            font-size: 14px;
+            line-height: 1.64;
+            letter-spacing: 1px;
+            .place{
+              position: relative;
+              padding-right: 0.75em;
+              margin-right: 0.75em;
+              &::after{
+                position: absolute;
+                display: block;
+                content: "";
+                width: 1px;
+                height: 80%;
+                top:0;
+                bottom:0;
+                right:0;
+                margin: auto;
+                background: #646464;
+              }
+            }
+          }
+        }
+      }
+      .kagibito_status{
+        @include flexSet;
+        .status_item{
+          width: 150px;
+          text-align: center;
+          border-radius: 20px;
+          padding: 20px 0;
+          background: #fff;
+          margin-right: 15px;
+          &:nth-last-of-type(1){
+            margin-right: 0;
+          }
+          .title{
+            display: block;
+            @include tsukushi-b;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            span{
+              display: block;
+            }
+          }
+          .number{
+            @include tsukushi-r;
+            font-size: 44px;
+            line-height: 1;
+            letter-spacing: normal;
+          }
+        }
+      }
+    }
+    .message_info{
+      @include flexSet;
+      .message_item{
+        width: 48%;
+        margin-right: 4%;
+        border-radius: 20px;
+        padding: 30px;
+        box-sizing: border-box;
+        background: #fff;
+        &:nth-of-type(2n){
+          margin-right: 0;
+        }
+        .message_ttl{
+          @include tsukushi-b;
+          font-size: 24px;
+          line-height: 1.25;
+          letter-spacing: normal;
+          margin-bottom: 15px;
+        }
+        .description{
+          @include basicP;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .section-plans{
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #ddd;
+    .comp-section-title{
+      margin-bottom: 70px;
+    }
+  }
+  .section-others{
+    margin-bottom: 120px;
+    .comp-section-title{
+      margin-bottom: 70px;
+    }
+  }
+}
+
+@media screen and (max-width: 980px){
+  .page-kagibito-detail{
+    .section-kagibito{
+      margin-bottom: 100px;
+      .basic_info{
+        display: block;
+        margin-bottom: 40px;
+        .kagibito_info{
+          margin-bottom: 40px;
+        }
+        .kagibito_status{
+          .status_item{
+            width: 48%;
+            margin-right: 4%;
+            box-sizing: border-box;
+            @include flexSet;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 15px;
+            padding: 20px;
+            &:nth-last-of-type(1){
+              margin-right: 0;
+            }
+            .title{
+              font-size: 16px;
+              margin-bottom: 0px;
+              span{
+                display: inline;
+              }
+            }
+            .number{
+              font-size: 38px;
+            }
+          }
+        }
+      }
+      .message_info{
+        display: block;
+        .message_item{
+          width: 100%;
+          margin-right: 0%;
+          border-radius: 15px;
+          padding: 30px;
+          box-sizing: border-box;
+          background: #fff;
+          margin-bottom: 20px;
+          &:nth-of-type(2n){
+            margin-right: 0;
+            margin-bottom: 0;
+          }
+          .message_ttl{
+            @include tsukushi-b;
+            font-size: 24px;
+            line-height: 1.25;
+            letter-spacing: normal;
+            margin-bottom: 15px;
+          }
+          .description{
+            @include basicP;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .section-plans{
+      margin-bottom: 80px;
+      padding-bottom: 80px;
+      .comp-section-title{
+        margin-bottom: 60px;
+      }
+    }
+    .section-others{
+      margin-bottom: 80px;
+      .comp-section-title{
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 730px){
+  .page-kagibito-detail{
+    .section-kagibito{
+      margin-bottom: 60px;
+      .basic_info{
+        display: block;
+        margin-bottom: 40px;
+        .kagibito_info{
+          display: block;
+          .icon{
+            margin: 0 auto 30px;
+          }
+          .txt_wrap{
+            text-align: center;
+            .kagibito_name{
+              font-size: 26px;
+              margin-bottom: 10px;
+            }
+            .position{
+              @include tsukushi-b;
+              margin-bottom: 30px;
+            }
+            .comp-sns-wrap{
+              justify-content: center;
+            }
+          }
+        }
+        .kagibito_status{
+          @include flexSet;
+          .status_item{
+            display: block;
+            width: 48%;
+            margin-right: 4%;
+            padding: 20px;
+            box-sizing: border-box;
+            &:nth-last-of-type(1){
+              margin-right: 0;
+            }
+            .title{
+              display: block;
+              @include tsukushi-b;
+              font-size: 14px;
+              line-height: 1.5;
+              margin-bottom: 10px;
+              span{
+                display: block;
+              }
+            }
+            .number{
+              font-size: 40px;
+            }
+          }
+        }
+      }
+      .message_info{
+        .message_item{
+          width: 100%;
+          margin-right: 0%;
+          border-radius: 15px;
+          padding: 30px 25px 25px;
+          &:nth-of-type(2n){
+            margin-right: 0;
+          }
+          .message_ttl{
+            font-size: 5.5vw;
+            text-align: center;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    .section-plans{
+      margin-bottom: 60px;
+      padding-bottom: 60px;
+      .comp-section-title{
+        text-align: center;
+        margin-bottom: 50px;
+      }
+    }
+    .section-others{
+      margin-bottom: 60px;
+      .comp-section-title{
+        text-align: center;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

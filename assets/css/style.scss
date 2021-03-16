@@ -13,6 +13,7 @@
 
 /*########## ページ個別レイアウト ##########*/
 @import 'pages/index.scss';
+@import 'pages/kagibitoDetail.scss';
 @import 'pages/about.scss';
 @import 'pages/flow.scss';
 
@@ -30,11 +31,16 @@
 @import 'component/comp-underpage-lead.scss';
 @import 'component/comp-block-ttl.scss';
 @import 'component/comp-number-list.scss';
+@import 'component/comp-sns-wrap.scss';
 
 
 
 /* プラン一覧 */
 @import 'component/comp-plan-list.scss';
+@import 'component/comp-plan-list-02.scss';
+
+/* カギビト一覧 */
+@import 'component/comp-kagibito-list.scss';
 
 /* ニュース一覧 */
 @import 'component/comp-news-list.scss';
