@@ -992,9 +992,10 @@ if (document.getElementById('index')) {
       prevArrow: '<button type="button" class="slick-prev">PREV</button>',
       nextArrow: '<button type="button" class="slick-next">NEXT</button>',
       responsive: [{
-        breakpoint: 760,
+        breakpoint: 980,
         settings: {
           slidesToShow: 1,
+          centerMode: true,
           centerPadding: '10%',
           centerMode: false,
         }

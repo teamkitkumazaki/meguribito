@@ -105,3 +105,40 @@
     }
   }
 }
+
+@media screen and (max-width: 720px){
+  .comp-slider-txt{
+    left: 6vw;
+    bottom: 40px;
+    .site_ttl{
+      font-size: 9.2vw;
+      line-height: 1.54;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+    }
+    .slide_txt{
+      padding-left: 0px;
+      .number{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 12px;
+        padding-right: 0px;
+        margin-right: 10px;
+        position: relative;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        &::after{
+          display: none;
+        }
+      }
+      .txt{
+        font-size: 5vw;
+        letter-spacing: 0.05em;
+        margin-bottom: 3px;
+      }
+    }
+  }
+}

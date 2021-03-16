@@ -15,6 +15,9 @@
         overflow: hidden;
         height: 16vw;
         max-height: 275px;
+        @media screen and (min-width: 720px){
+          background-image: none !important;
+        }
         img{
           transition: transform .7s, opacity .7s;
         }

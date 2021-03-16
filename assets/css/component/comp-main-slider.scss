@@ -25,3 +25,14 @@
     }
   }
 }
+
+@media screen and (max-width: 720px){
+  .comp-main-slider{
+    height: 80vh;
+    ul{
+      li{
+        height: 80vh;
+      }
+    }
+  }
+}
