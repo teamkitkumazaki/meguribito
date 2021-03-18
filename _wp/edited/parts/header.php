@@ -31,7 +31,7 @@
 					</a>
 				</div>
 				<div class="count_item">
-					<a href="#aaaa">
+					<a href="<?php echo esc_url(home_url('/' ));?>kagibito">
 						<span class="number">
 							<span class="num">12</span><span class="unit">人</span>
 						</span>

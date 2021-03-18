@@ -1,4 +1,7 @@
 <?php
+
+	global $wp_rewrite;
+	$wp_rewrite->flush_rules();
 /**
  * Storefront engine room
  *
@@ -77,5 +80,76 @@ if ( version_compare( get_bloginfo( 'version' ), '4.7.3', '>=' ) && ( is_admin()
  add_action( 'wp', 'disable_page_wpautop' );
  add_filter( 'wpcf7_validate_email', 'wpcf7_main_validation_filter', 11, 2 );
  add_filter( 'wpcf7_validate_email*', 'wpcf7_main_validation_filter', 11, 2 );
- 
+
+ //カスタム投稿タイプの追加
+ add_action( 'init', 'create_post_type' );
+ function create_post_type() {
+   $customPostSupports = [  // supports のパラメータを設定する配列（初期値だと title と editor のみ投稿画面で使える）
+     'title',  // 記事タイトル,
+     'editor',  // 記事本文
+     'custom-fields' ,//カスタムフィールド
+     'thumbnail',  // アイキャッチ画像*/
+   ];
+   //カスタム投稿タイプ１（ここから）
+   register_post_type(
+     'kagibito',  // カスタム投稿名
+     array(
+       'labels' => array(
+         'name' => __( 'カギビト' ), // 管理画面の左メニューに表示されるテキスト
+         'singular_name' => __( 'kagibito' ),
+         'rewrite' => array('slug' => 'kagibito-post'),
+         'rewrite' => array( 'with_front' => false ),
+       ),
+       'public' => true,  // 投稿タイプをパブリックにするか否か
+       'menu_position' => 5,  // 管理画面上でどこに配置するか ※「5」で「投稿」の下に配置
+       'has_archive' => true,  // アーカイブを有効にするか否か
+       'supports' => array(
+         'title',
+         'custom-fields',
+         'thumbnail'
+       )
+     )
+   );
+   register_post_type(
+     'news',  // カスタム投稿名
+     array(
+       'labels' => array(
+         'name' => __( 'お知らせ' ), // 管理画面の左メニューに表示されるテキスト
+         'singular_name' => __( 'news' ),
+         'rewrite' => array('slug' => 'news-post'),
+         'rewrite' => array( 'with_front' => false ),
+       ),
+       'public' => true,  // 投稿タイプをパブリックにするか否か
+       'menu_position' => 6,  // 管理画面上でどこに配置するか ※「5」で「投稿」の下に配置
+       'has_archive' => true,  // アーカイブを有効にするか否か
+       'supports' => $customPostSupports  // 投稿画面でどのmoduleを使うか的な設定
+     )
+   );
+   register_taxonomy(
+     'newscat', //タグ名（任意）
+     'news', //カスタム投稿名
+     array(
+       'hierarchical' => true, //タグタイプの指定（階層をもつかどうか？）
+       //ダッシュボードに表示させる名前
+       'label' => 'お知らせのカテゴリ',
+       'public' => true,
+       'show_ui' => true,
+       'rewrite' => true,
+     )
+   );
+   register_taxonomy(
+     'kagibito-place', //タグ名（任意）
+     'kagibito', //カスタム投稿名
+     array(
+       'hierarchical' => true, //タグタイプの指定（階層をもつかどうか？）
+       //ダッシュボードに表示させる名前
+       'label' => 'カギビトの活動地域',
+       'public' => true,
+       'show_ui' => true,
+       'rewrite' => true,
+     )
+   );
+ }
+
+
 ?>
