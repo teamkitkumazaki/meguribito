@@ -24,8 +24,8 @@
 		$thumnail = get_the_post_thumbnail_url( $post->ID, 'large' );
   	$description = SCF::get( 'post_desc', $post->ID );
 	}else{
-		$page_title = 'Able Art Company';
-		$site_title = 'Able Art Company';
+		$page_title = 'Meguribito(メグリビト) | その時間を結ぶ「人」に巡り会えるサービス';
+		$site_title = 'Meguribito(メグリビト) | その時間を結ぶ「人」に巡り会えるサービス';
   	$site_permalink = get_the_permalink();
 		$description = "メグリビトは、普段出会うことのできない地域の体験やコミュニティに、拠点やそこに根ざす人を通じて出会うことのできるサービスです。パッケージ化されたツアーではなく、もっとその地域ならではの場所・人・体験に触れながら旅をする。そして日本全国に帰りたい場所が増えていく体験を提供します。";
 		$thumbnail_id = get_post_thumbnail_id($post->ID);
@@ -51,7 +51,7 @@
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="<?php echo $site_title; ?>">
 	<meta property="og:description" content="<?php echo $description; ?>">
-	<meta property="og:site_name" content="Able Art Company">
+	<meta property="og:site_name" content="Meguribito">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:description" content="<?php echo $description; ?>">
 	<meta name="twitter:title" content="<?php echo $site_title; ?>">

@@ -1,0 +1,77 @@
+.comp-chart-layout{
+  border-top: 1px solid #d8d8d8;
+  border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+  .chart_item{
+    @include flexSet;
+    border-bottom: 1px solid #d8d8d8;
+    .content, .title{
+      display: block;
+      letter-spacing: 0.01em;
+      line-height: 1.6;
+      box-sizing: border-box;
+    }
+    .title{
+      width: 250px;
+      padding: 15px;
+      background: #f1f1f1;
+      font-size: 16px;
+      @include tsukushi-b;
+    }
+    .content{
+      width: calc(100% - 250px);
+      padding: 15px 20px 15px 20px;
+      font-size: 14px;
+      span{
+        display: block;
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+      a{
+        @include hover;
+        color: #068acc;
+      }
+      .anker_button{
+        @include hover;
+        color: #068acc;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+      }
+      .added{
+        font-size: 12px;
+        color: #646464;
+      }
+      hr{
+        border: 0;
+        padding: 0;
+        margin: 5px 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 730px){
+  .comp-chart-layout{
+    border: 0px;
+    .chart_item {
+      display: block;
+      border-bottom: 0px solid #d8d8d8;
+      margin-bottom: 20px;
+      .content, .title{
+        letter-spacing: 1px;
+        line-height: 1.6;
+        box-sizing: border-box;
+      }
+      .title{
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+      }
+      .content{
+        width: 100%;
+        padding: 15px 10px;
+        font-size: 14px;
+      }
+    }
+  }
+}
