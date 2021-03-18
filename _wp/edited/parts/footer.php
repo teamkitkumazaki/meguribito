@@ -19,8 +19,8 @@
       </div>
       <div class="nav_lower">
         <a href="<?php echo esc_url(home_url('/'));?>about">運営団体</a>
-        <a href="#aaaa">プライバシーポリシー</a>
-        <a href="#aaaa">特定商取引法に基づく表記</a>
+        <a href="<?php echo esc_url(home_url('/'));?>privacy">プライバシーポリシー</a>
+        <a href="<?php echo esc_url(home_url('/'));?>transaction">特定商取引法に基づく表記</a>
       </div>
       <p class="copyright">Copyright © MEGURIBITO 2020</p>
   </div><!-- footer_inner -->
