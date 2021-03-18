@@ -1,0 +1,109 @@
+.comp-privacy-text{
+  .text_item{
+    margin-bottom: 60px;
+    &:nth-last-of-type(1){
+      margin-bottom: 0;
+    }
+    .item_ttl{
+      @include tsukushi-b;
+      font-size: 24px;
+      line-height: 1.6;
+      letter-spacing: 0.6px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .content_item{
+      p{
+        line-height: 1.8;
+        letter-spacing: 0.32px;
+        span{
+          display: block;
+        }
+        &.mt{
+          margin-top: 15px;
+        }
+      }
+    }
+    .list{
+      margin-top: 15px;
+      letter-spacing: 0.32px;
+      li{
+        line-height: 1.8;
+        font-size: 14px;
+        letter-spacing: 0.28px;
+        position: relative;
+        padding-left: 15px;
+        margin-bottom: 15px;
+        &:nth-last-of-type(1){
+          margin-bottom: 0;
+        }
+        &::before{
+          display: block;
+          content: "";
+          width: 4px;
+          height: 4px;
+          position: absolute;
+          left:0;
+          top:12px;
+          margin: auto;
+          background: $black01;
+          border-radius: 50%;
+        }
+      }
+    }
+    .list2{
+      margin-top: 25px;
+      letter-spacing: 0.32px;
+      li{
+        line-height: 1.8;
+        font-size: 14px;
+        letter-spacing: 0.28px;
+        position: relative;
+        padding-left: 15px;
+        margin-bottom: 15px;
+        &:nth-last-of-type(1){
+          margin-bottom: 0;
+        }
+        &::before{
+          display: block;
+          content: "";
+          width: 4px;
+          height: 4px;
+          position: absolute;
+          left:0;
+          top:12px;
+          margin: auto;
+          border: 1px solid $black01;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 740px){
+  .comp-privacy-text{
+    .text_item{
+      margin-bottom: 45px;
+      &:nth-last-of-type(1){
+        margin-bottom: 0;
+      }
+      .item_ttl{
+        font-size: 20px;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+        margin-bottom: 15px;
+      }
+      .content_item{
+        p{
+          font-size: 14px;
+          line-height: 2;
+          letter-spacing: 0.28px;
+          &.mt{
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}

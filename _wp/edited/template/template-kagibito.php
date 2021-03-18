@@ -2,7 +2,7 @@
 <html>
 <head>
   <?php
-    /*Template Name: カギビト一覧 アーカイブ */
+    /*Template Name: カギビト一覧 */
     get_template_part("parts/head");
   ?>
 </head>

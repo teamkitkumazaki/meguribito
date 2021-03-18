@@ -1,0 +1,32 @@
+.page-transaction{
+  .comp-underpage-lead .page_ttl{
+    margin-bottom: 70px;
+  }
+  .comp-underpage-lead{
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 980px){
+  .page-transaction{
+    .comp-block-line{
+      margin: 60px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  .page-transaction{
+    .comp-underpage-lead .page_ttl{
+      font-size: 7.5vw;
+      margin-bottom: 30px;
+    }
+    .comp-underpage-lead{
+      margin-bottom: 60px;
+      .comp-section-title .title{
+        font-size: 6vw;
+        text-align: center;
+      }
+    }
+  }
+}

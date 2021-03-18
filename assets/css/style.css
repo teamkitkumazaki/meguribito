@@ -1894,6 +1894,61 @@ footer .footer_inner .footer_lower .copyright {
     padding: 60px 0 20px;
   }
 }
+.page-transaction .comp-underpage-lead .page_ttl {
+  margin-bottom: 70px;
+}
+.page-transaction .comp-underpage-lead {
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 980px) {
+  .page-transaction .comp-block-line {
+    margin: 60px 0;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-transaction .comp-underpage-lead .page_ttl {
+    font-size: 7.5vw;
+    margin-bottom: 30px;
+  }
+  .page-transaction .comp-underpage-lead {
+    margin-bottom: 60px;
+  }
+  .page-transaction .comp-underpage-lead .comp-section-title .title {
+    font-size: 6vw;
+    text-align: center;
+  }
+}
+.page-privacy .comp-underpage-lead .page_ttl {
+  margin-bottom: 50px;
+}
+.page-privacy .comp-block-line {
+  margin: 60px 0;
+}
+.page-privacy .section-terms {
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 980px) {
+  .page-privacy .comp-block-line {
+    margin: 60px 0;
+  }
+  .page-privacy .section-terms {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-privacy .comp-underpage-lead .page_ttl {
+    font-size: 7.5vw;
+    margin-bottom: 30px;
+  }
+  .page-privacy .comp-block-line {
+    margin: 60px 0;
+  }
+  .page-privacy .section-terms {
+    margin-bottom: 60px;
+  }
+}
 /*########## コンポーネント ##########*/
 /* 共通パーツ */
 .comp-fixed-header {
@@ -2770,6 +2825,104 @@ footer .footer_inner .footer_lower .copyright {
   /*background-color: $basicBgColor;*/
 }
 
+.comp-block-line {
+  width: 100vw;
+  height: 1px;
+  background: #d8d8d8;
+  border: 0px;
+  padding: 0;
+  margin: 0 -9vw;
+}
+.comp-block-line.margin {
+  margin: 120px -9vw;
+}
+
+.comp-chart-layout {
+  border-top: 1px solid #d8d8d8;
+  border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+}
+.comp-chart-layout .chart_item {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #d8d8d8;
+}
+.comp-chart-layout .chart_item .content, .comp-chart-layout .chart_item .title {
+  display: block;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+.comp-chart-layout .chart_item .title {
+  width: 250px;
+  padding: 15px;
+  background: #f1f1f1;
+  font-size: 16px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+}
+.comp-chart-layout .chart_item .content {
+  width: calc(100% - 250px);
+  padding: 15px 20px 15px 20px;
+  font-size: 14px;
+}
+.comp-chart-layout .chart_item .content span {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.comp-chart-layout .chart_item .content a {
+  transition: opacity 0.3s;
+  color: #068acc;
+}
+.comp-chart-layout .chart_item .content a:hover {
+  opacity: 0.75;
+}
+.comp-chart-layout .chart_item .content .anker_button {
+  transition: opacity 0.3s;
+  color: #068acc;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+.comp-chart-layout .chart_item .content .anker_button:hover {
+  opacity: 0.75;
+}
+.comp-chart-layout .chart_item .content .added {
+  font-size: 12px;
+  color: #646464;
+}
+.comp-chart-layout .chart_item .content hr {
+  border: 0;
+  padding: 0;
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 730px) {
+  .comp-chart-layout {
+    border: 0px;
+  }
+  .comp-chart-layout .chart_item {
+    display: block;
+    border-bottom: 0px solid #d8d8d8;
+    margin-bottom: 20px;
+  }
+  .comp-chart-layout .chart_item .content, .comp-chart-layout .chart_item .title {
+    letter-spacing: 1px;
+    line-height: 1.6;
+    box-sizing: border-box;
+  }
+  .comp-chart-layout .chart_item .title {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .comp-chart-layout .chart_item .content {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+}
 /* プラン一覧 */
 .comp-plan-list {
   display: flex;
@@ -5105,5 +5258,108 @@ footer .footer_inner .footer_lower .copyright {
     font-size: 12px;
     letter-spacing: 0.4px;
     padding: 0 15px;
+  }
+}
+/* プライバシーポリシー */
+.comp-privacy-text .text_item {
+  margin-bottom: 60px;
+}
+.comp-privacy-text .text_item:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.comp-privacy-text .text_item .item_ttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: 0.6px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.comp-privacy-text .text_item .content_item p {
+  line-height: 1.8;
+  letter-spacing: 0.32px;
+}
+.comp-privacy-text .text_item .content_item p span {
+  display: block;
+}
+.comp-privacy-text .text_item .content_item p.mt {
+  margin-top: 15px;
+}
+.comp-privacy-text .text_item .list {
+  margin-top: 15px;
+  letter-spacing: 0.32px;
+}
+.comp-privacy-text .text_item .list li {
+  line-height: 1.8;
+  font-size: 14px;
+  letter-spacing: 0.28px;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+.comp-privacy-text .text_item .list li:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.comp-privacy-text .text_item .list li::before {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 12px;
+  margin: auto;
+  background: #3f3f3f;
+  border-radius: 50%;
+}
+.comp-privacy-text .text_item .list2 {
+  margin-top: 25px;
+  letter-spacing: 0.32px;
+}
+.comp-privacy-text .text_item .list2 li {
+  line-height: 1.8;
+  font-size: 14px;
+  letter-spacing: 0.28px;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+.comp-privacy-text .text_item .list2 li:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.comp-privacy-text .text_item .list2 li::before {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 12px;
+  margin: auto;
+  border: 1px solid #3f3f3f;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 740px) {
+  .comp-privacy-text .text_item {
+    margin-bottom: 45px;
+  }
+  .comp-privacy-text .text_item:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
+  .comp-privacy-text .text_item .item_ttl {
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+  }
+  .comp-privacy-text .text_item .content_item p {
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.28px;
+  }
+  .comp-privacy-text .text_item .content_item p.mt {
+    margin-top: 15px;
   }
 }
