@@ -31,7 +31,7 @@
   &.margin{
     margin-bottom: 90px;
   }
-  &.button{
+  &.button, &.flex{
     @include flexSet;
     align-items: center;
     justify-content: space-between;
@@ -81,7 +81,7 @@
     &.margin{
       margin-bottom: 40px;
     }
-    &.button{
+    &.button, &.flex{
       display: block;
       .comp-link-button{
         display: none;

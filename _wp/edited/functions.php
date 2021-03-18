@@ -69,3 +69,13 @@ if ( version_compare( get_bloginfo( 'version' ), '4.7.3', '>=' ) && ( is_admin()
  * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
  * https://github.com/woocommerce/theme-customisations
  */
+
+ // * 固定ページのみ自動整形機能を無効化
+ function disable_page_wpautop() {
+   remove_filter( 'the_content', 'wpautop' );
+ }
+ add_action( 'wp', 'disable_page_wpautop' );
+ add_filter( 'wpcf7_validate_email', 'wpcf7_main_validation_filter', 11, 2 );
+ add_filter( 'wpcf7_validate_email*', 'wpcf7_main_validation_filter', 11, 2 );
+ 
+?>

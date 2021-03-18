@@ -21,6 +21,7 @@
     font-size: 16px;
     color: #646464;
     text-indent: 0px;
+    background-color: transparent !important;
     &::after{
       display: inline-block;
       @include tsukushi-r;
