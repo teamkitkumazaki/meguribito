@@ -17,6 +17,7 @@
 @import 'pages/kagibitoDetail.scss';
 @import 'pages/about.scss';
 @import 'pages/flow.scss';
+@import 'pages/privacy.scss';
 
 
 
@@ -34,6 +35,7 @@
 @import 'component/comp-number-list.scss';
 @import 'component/comp-pager.scss';
 @import 'component/comp-sns-wrap.scss';
+@import 'component/comp-block-line.scss';
 
 
 
@@ -61,3 +63,6 @@
 @import 'component/comp-pickup-plan.scss';
 @import 'component/comp-footer-link.scss';
 @import 'component/comp-service-slider.scss';
+
+/* プライバシーポリシー */
+@import 'component/comp-privacy-text.scss';
