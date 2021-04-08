@@ -25,7 +25,7 @@ footer{
         justify-content: center;
         a{
           display: block;
-          background: #fff;
+          border: 1px solid #fff;
           width: 40px;
           height: 40px;
           border-radius: 50%;
@@ -133,7 +133,6 @@ footer{
         .sns_wrap{
           a{
             display: block;
-            background: #fff;
             width: 35px;
             height: 35px;
             @include bgSet;

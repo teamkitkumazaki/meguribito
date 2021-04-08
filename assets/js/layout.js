@@ -210,99 +210,6 @@ if (document.getElementById('index')) {
 
   returnTop();
 
-  function humMenuControll(target){
-    var btnSearch = $('#btnSearch');
-    var btnSearch02 = $('#btnSearch02');
-    var humClose = $('#humClose');
-    var humState = 0;
-    var fadeBox = [];
-    var toggleButton = [];
-    var toggleContents = [];
-    var toggleState = [];
-    var current_scrollY;
-
-    function hummenuMove(){
-      if(humState == 0){
-        target.addClass('open');
-        humState = 1;
-        current_scrollY = $(window).scrollTop();
-        setTimeout(function() {
-          $('body').addClass('bind');
-          $('body').css({
-            top: -1 * current_scrollY
-          });
-          target.find('.fade_box').each(function(index) {
-            fadeBox[index] = $(this);
-            var duration = 100 * index;
-            setTimeout(function() {
-              fadeBox[index].addClass('open');
-            }, duration);
-          });
-        }, 250);
-      }else{
-        target.removeClass('open');
-        $('body').removeClass('bind');
-        $('body').attr('style', '');
-        $('html, body').prop({scrollTop: current_scrollY});
-        humState = 0;
-        setTimeout(function() {
-          target.find('.fade_box').each(function(index) {
-            $(this).removeClass('open');
-          });
-        }, 1000);
-      }
-    }
-
-    function humToggleControll(e){
-      if (toggleState[e] == -1 || toggleState[e] == 0) {
-        toggleButton[e].addClass('active');
-        var tagetHeight = toggleContents[e].find('.toggle_inner').outerHeight();
-        toggleContents[e].css({
-          'height': tagetHeight + 'px'
-        });
-        toggleState[e] = 1;
-      } else {
-        toggleButton[e].removeClass('active');
-        toggleContents[e].css({
-          'height': 0 + 'px'
-        });
-        toggleState[e] = 0;
-      }
-    }
-
-    function init(){
-      target.find('.search_box').each(function(index) {
-        toggleState[index] = -1;
-        toggleButton[index] = $(this).find('button');
-        toggleContents[index] = $(this).find('.search_toggle');
-        toggleButton[index].on({
-          'click': function(){
-            humToggleControll(index);
-          }
-        })
-      });
-      btnSearch.on({
-        'click': function(){
-          hummenuMove();
-        }
-      })
-      btnSearch02.on({
-        'click': function(){
-          hummenuMove();
-        }
-      })
-      humClose.on({
-        'click': function(){
-          hummenuMove();
-        }
-      })
-    }
-
-    init();
-  }
-
-  humMenuControll($('#searchHummenu'));
-
 
   /* トップページ メインのピックアップ画像切り替え */
   function slideItemThumb(target) {
@@ -405,175 +312,64 @@ if (document.getElementById('index')) {
   slideItemThumb($('#sliderShifter'));
 }
 
-  // 作品詳細 ローディングアニメーション
-  function loadingSet(target){
-    var imgPreloader = new Image();
-    var mainImg = $('#mainImg');
-    var originSrc = mainImg.attr('src');
-    var loadingState = 0;
-    mainImg.attr('src', "");
-    mainImg.attr('src', originSrc);
+// ハンバーガーメニューの開閉
+function humMenuControll2(target){
+  var humMenuButton = $('#humButton');
+  var humMenuButton2 = $('#humButton2');
+  var humClose = $('#humClose');
+  var humMenuState = 0;
+  var fadeBox = [];
+  var current_scrollY;
 
-    function removeLoading(){
-      $('article').removeClass('loading');
-    }
-
-    function init(){
-      mainImg.on({
-        'load': function() {
-          setTimeout(function() {
-            loadingState = 1;
-            removeLoading()
-          }, 1000);
-        }
-      })
+  function hummenuMove(){
+    if(humMenuState == 0){
+      target.addClass('open');
+      humMenuState = 1;
+      current_scrollY = $(window).scrollTop();
       setTimeout(function() {
-        if(loadingState == 0){
-          removeLoading();
-        }
-      }, 8000);
-    }
-      init();
-  }
-
-  if (document.getElementById('workDetail')) {
-    loadingSet();
-  }
-
-  // アーティスト詳細 ローディングアニメーション
-  function loadingSet2(target) {
-  var originSrc = [];
-  var loadingCount = 0;
-  var imgLength = target.find('.slider_img').length;
-  var loadingState = 0;
-
-    function loadingDelete(){
-      setTimeout(function() {
-        $('article').removeClass('loading');
-      }, 1000);
-    }
-
-
-    function init(){
-      target.find('.slider_img').each(function(index) {
-        originSrc[index] = $(this).attr('src');
-        $(this).attr('src', "");
-        $(this).attr('src', originSrc[index]);
-        $(this).on({
-          'load': function(){
-            loadingCount = loadingCount + 1;
-            if(loadingCount = imgLength){
-              loadingState = 1;
-              loadingDelete();
-            }
-          }
-        })
-      });
-      setTimeout(function() {
-        if(loadingState == 0){
-          loadingDelete();
-        }
-      }, 8000);
-    }
-
-    init();
-
-  }
-
-  if (document.getElementById('artistDetail')) {
-    loadingSet2($('#artistSlider'));
-  }
-
-  function artistPopControll(target){
-    var profilePopButton = $('#profilePopButton');
-    var detailClose = $('#detailClose');
-    var detailPopState = 0;
-    var current_scrollY;
-
-    function detailPopMove(){
-      if(detailPopState == 0){
-        target.addClass('open');
-        detailPopState = 1;
-        current_scrollY = $(window).scrollTop();
         $('body').addClass('bind');
         $('body').css({
           top: -1 * current_scrollY
         });
-      }else{
-        target.removeClass('open');
-        $('body').removeClass('bind');
-        $('body').attr('style', '');
-        $('html, body').prop({scrollTop: current_scrollY});
-        detailPopState = 0;
+      }, 250);
+    }else{
+      target.removeClass('open');
+      $('body').removeClass('bind');
+      $('body').attr('style', '');
+      $('html, body').prop({scrollTop: current_scrollY});
+      humMenuState = 0;
+      $(this).removeClass('open');
+    }
+  }
+
+  function init(){
+    humMenuButton.on({
+      'click': function(){
+        hummenuMove();
       }
-    }
-
-
-    function init(){
-      profilePopButton.on({
-        'click': function(){
-          detailPopMove();
-        }
-      })
-      detailClose.on({
-        'click': function(){
-          detailPopMove();
-        }
-      })
-    }
-
-    init();
-
-  }
-
-  if (document.getElementById('artistDetail')) {
-    artistPopControll($('#artistDetailPop'));
-  }
-
-  function worksSearchToggle(target){
-    var toggle = [];
-    var height = [];
-    var toggleState = [];
-    var toggleButton = [];
-    var toggleContents = [];
-    function humToggleControll(e){
-      if (toggleState[e] == -1 || toggleState[e] == 0) {
-        toggleButton[e].addClass('active');
-        var tagetHeight = toggleContents[e].find('.toggle_inner').outerHeight();
-        toggle[e].css({
-          'height': tagetHeight + height[e] + 30 + 'px'
-        });
-        toggleState[e] = 1;
-      } else {
-        toggleButton[e].removeClass('active');
-        toggle[e].css({
-          'height': height[e] + 'px'
-        });
-        toggleState[e] = 0;
+    })
+    humMenuButton2.on({
+      'click': function(){
+        hummenuMove();
       }
-    }
-
-    function init(){
-      target.find('.search_button').each(function(index) {
-        toggle[index] = $(this);
-        height[index] = $(this).outerHeight();
-        toggleState[index] = -1;
-        toggleButton[index] = $(this).find('.search_ttl');
-        toggleContents[index] = $(this).find('.search_toggle');
-        toggleButton[index].on({
-          'click': function(){
-            humToggleControll(index);
-          }
-        })
-      });
-    }
-
-    init();
+    })
+    humClose.on({
+      'click': function(){
+        hummenuMove();
+      }
+    })
   }
 
-  if (document.getElementById('worksList')) {
-    worksSearchToggle($('#worksSearch'));
-  }
+  init();
+}
+
+humMenuControll2($('#slideMenuNew'));
+
+
+
+
+
+
 
 
 

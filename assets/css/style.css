@@ -394,7 +394,23 @@ button:focus {
   margin-top: 10px;
 }
 .comp-header .header_inner .header_right .count_contents .count_item a .content span {
+  position: relative;
   display: inline-block;
+  padding-right: 20px;
+}
+.comp-header .header_inner .header_right .count_contents .count_item a .content span::after {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  display: block;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
 }
 .comp-header .header_inner .header_right .box_contents {
   display: flex;
@@ -661,7 +677,7 @@ footer .footer_inner .footer_upper .sns_wrap {
 }
 footer .footer_inner .footer_upper .sns_wrap a {
   display: block;
-  background: #fff;
+  border: 1px solid #fff;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -770,7 +786,6 @@ footer .footer_inner .footer_lower .copyright {
   }
   footer .footer_inner .footer_upper .sns_wrap a {
     display: block;
-    background: #fff;
     width: 35px;
     height: 35px;
     background-repeat: no-repeat;
@@ -1996,6 +2011,10 @@ footer .footer_inner .footer_lower .copyright {
 .comp-fixed-header .header_inner .header_right .count_contents .count_item a {
   color: #3f3f3f;
 }
+.comp-fixed-header .header_inner .header_right .count_contents .count_item .content span::after {
+  border-top: 1px solid #3f3f3f !important;
+  border-right: 1px solid #3f3f3f !important;
+}
 .comp-fixed-header .header_inner .header_right .box_contents .box_item {
   width: 100px;
   height: 100px;
@@ -2111,6 +2130,509 @@ footer .footer_inner .footer_lower .copyright {
     width: 100%;
     height: 100%;
     background-size: 25px;
+  }
+}
+.comp-slide-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  will-change: opacity;
+  transition: opacity 0.3s;
+  background-color: #222;
+}
+.comp-slide-menu.open {
+  opacity: 1;
+  pointer-events: all;
+}
+.comp-slide-menu .hum_close {
+  cursor: pointer;
+  transition: opacity 0.3s;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 4px;
+  left: 22px;
+  -webkit-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: none;
+  z-index: 100;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-size: 20px;
+  background-image: url(https://res.cloudinary.com/dbwqcy0op/image/upload/v1614235429/hummenu/pop_close_cnrhfh.svg);
+}
+.comp-slide-menu .hum_close:focus {
+  outline: none;
+}
+.comp-slide-menu .search_inner {
+  max-width: 1400px;
+  width: 80.5vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: calc(100vh - 100px);
+  overflow: scroll;
+  overflow-x: hidden;
+  padding-top: 80px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+@media screen and (max-width: 1100px) {
+  .comp-slide-menu .search_inner {
+    width: 86vw;
+  }
+}
+@media screen and (max-width: 980px) {
+  .comp-slide-menu .search_inner {
+    max-width: 780px;
+    width: 86vw;
+  }
+}
+@media screen and (max-width: 720px) {
+  .comp-slide-menu .search_inner {
+    width: 88vw;
+  }
+}
+.comp-slide-menu .search_inner::-webkit-scrollbar {
+  display: none;
+}
+.comp-slide-menu .search_inner .content {
+  width: calc(100% - 2px);
+  margin-left: 1px;
+  color: #fff;
+}
+.comp-slide-menu .search_inner .content .count_contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+.comp-slide-menu .search_inner .content .count_contents .count_item {
+  min-width: 140px;
+}
+.comp-slide-menu .search_inner .content .count_contents .count_item:nth-of-type(2) {
+  padding-left: 35px;
+}
+.comp-slide-menu .search_inner .content .count_contents .count_item.line {
+  position: relative;
+  padding-right: 35px;
+  min-width: 100px;
+}
+.comp-slide-menu .search_inner .content .count_contents .count_item.line::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 1px;
+  height: 80%;
+  background: #fff;
+}
+.comp-slide-menu .search_inner .content .count_contents .count_item a {
+  transition: opacity 0.3s;
+  display: block;
+  color: #fff;
+}
+.comp-slide-menu .search_inner .content .count_contents .count_item a:hover {
+  opacity: 0.75;
+}
+.comp-slide-menu .search_inner .content .count_contents .count_item a .number {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.comp-slide-menu .search_inner .content .count_contents .count_item a .number .num {
+  display: block;
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin-right: 0.3em;
+}
+.comp-slide-menu .search_inner .content .count_contents .count_item a .content {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.comp-slide-menu .search_inner .content .count_contents .count_item a .content span {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+}
+.comp-slide-menu .search_inner .content .count_contents .count_item a .content span::after {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  display: block;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_upper {
+  margin-bottom: 35px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #646464;
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_upper .nav_item {
+  margin-bottom: 10px;
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_upper .nav_item:nth-last-of-type(1) {
+  margin-bottom: 0px;
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_upper .nav_item a {
+  transition: opacity 0.3s;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  color: #fff;
+  padding-left: 40px;
+  position: relative;
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_upper .nav_item a:hover {
+  opacity: 0.75;
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_upper .nav_item a::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_upper .nav_item a.mypage::after {
+  background-size: contain;
+  background-image: url(../img/common/calendar_white.svg);
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_upper .nav_item a.cart::after {
+  background-size: contain;
+  background-image: url(../img/common/cart.svg);
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_middle {
+  margin-bottom: 35px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #646464;
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_middle .nav_item {
+  margin-bottom: 25px;
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_middle .nav_item:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_middle .nav_item a {
+  transition: opacity 0.3s;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_middle .nav_item a:hover {
+  opacity: 0.75;
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_lower {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_lower .nav_item {
+  margin-right: 0.7em;
+  padding-right: 0.7em;
+  position: relative;
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_lower .nav_item::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 1px;
+  height: 80%;
+  background: #fff;
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_lower .nav_item:nth-last-of-type(1) {
+  margin-right: 0em;
+  padding-right: 0em;
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_lower .nav_item:nth-last-of-type(1)::after {
+  display: none;
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_lower .nav_item a {
+  transition: opacity 0.3s;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+.comp-slide-menu .search_inner .content .hummenu_nav_lower .nav_item a:hover {
+  opacity: 0.75;
+}
+.comp-slide-menu .search_inner .content .sns_wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.comp-slide-menu .search_inner .content .sns_wrap a {
+  display: block;
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.comp-slide-menu .search_inner .content .sns_wrap a:nth-last-of-type(1) {
+  margin-right: 0;
+}
+.comp-slide-menu .search_inner .content .sns_wrap a.ig {
+  background-size: 22px;
+  background-image: url(../img/common/icon_ig.png);
+}
+.comp-slide-menu .search_inner .content .sns_wrap a.fb {
+  background-size: 14px;
+  background-image: url(../img/common/icon_fb.png);
+}
+.comp-slide-menu .search_inner .content .sns_wrap a.tw {
+  background-size: 20px;
+  background-image: url(../img/common/icon_tw.png);
+}
+.comp-slide-menu .search_inner .content .nav_footer {
+  display: none;
+  align-items: center;
+}
+.comp-slide-menu .search_inner .content .nav_footer .logo {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-size: 45px;
+  background-image: url(../img/common/logo_white.svg);
+}
+.comp-slide-menu .search_inner .content .nav_footer .catchcopy {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1100px) {
+  .comp-slide-menu .hum_close {
+    width: 70px;
+    height: 70px;
+    top: 5px;
+    left: 5px;
+    background-size: 20px;
+  }
+  .comp-slide-menu .search_inner {
+    max-width: 80%;
+    width: 80%;
+    display: block;
+    height: calc(100vh - 100px);
+    padding-top: 80px;
+  }
+  .comp-slide-menu .search_inner .content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 740px) {
+  .comp-slide-menu .hum_close {
+    width: 60px;
+    height: 60px;
+    top: 0px;
+    left: 0px;
+    background-size: 15px;
+  }
+  .comp-slide-menu .search_inner {
+    max-width: 100vw;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    padding: 80px 7vw 0;
+    box-sizing: border-box;
+  }
+  .comp-slide-menu .search_inner .content {
+    width: 100%;
+    margin-left: 0px;
+    display: block;
+  }
+  .comp-slide-menu .search_inner .content .count_contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  .comp-slide-menu .search_inner .content .count_contents .count_item {
+    min-width: 140px;
+  }
+  .comp-slide-menu .search_inner .content .count_contents .count_item:nth-of-type(2) {
+    padding-left: 35px;
+  }
+  .comp-slide-menu .search_inner .content .count_contents .count_item.line {
+    position: relative;
+    padding-right: 35px;
+    min-width: 100px;
+  }
+  .comp-slide-menu .search_inner .content .count_contents .count_item.line::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 1px;
+    height: 80%;
+    background: #fff;
+  }
+  .comp-slide-menu .search_inner .content .count_contents .count_item a {
+    transition: opacity 0.3s;
+    display: block;
+    color: #fff;
+  }
+  .comp-slide-menu .search_inner .content .count_contents .count_item a:hover {
+    opacity: 0.75;
+  }
+  .comp-slide-menu .search_inner .content .count_contents .count_item a .number {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  .comp-slide-menu .search_inner .content .count_contents .count_item a .number .num {
+    display: block;
+    font-family: "TsukuARdGothicStd-R";
+    font-weight: normal;
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-right: 0.3em;
+  }
+  .comp-slide-menu .search_inner .content .count_contents .count_item a .content {
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .comp-slide-menu .search_inner .content .hummenu_nav_upper .nav_item {
+    margin-bottom: 10px;
+  }
+  .comp-slide-menu .search_inner .content .hummenu_nav_upper .nav_item:nth-last-of-type(1) {
+    margin-bottom: 0px;
+  }
+  .comp-slide-menu .search_inner .content .hummenu_nav_upper .nav_item a {
+    font-size: 18px;
+    padding-left: 40px;
+  }
+  .comp-slide-menu .search_inner .content .hummenu_nav_upper .nav_item a::after {
+    width: 25px;
+    height: 25px;
+  }
+  .comp-slide-menu .search_inner .content .hummenu_nav_middle .nav_item {
+    margin-bottom: 25px;
+  }
+  .comp-slide-menu .search_inner .content .hummenu_nav_middle .nav_item a {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+  .comp-slide-menu .search_inner .content .hummenu_nav_lower {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .comp-slide-menu .search_inner .content .hummenu_nav_lower .nav_item {
+    margin-right: 1em;
+    padding-right: 1em;
+    position: relative;
+    line-height: 2;
+  }
+  .comp-slide-menu .search_inner .content .hummenu_nav_lower .nav_item::after {
+    height: 50%;
+  }
+  .comp-slide-menu .search_inner .content .hummenu_nav_lower .nav_item:nth-last-of-type(1), .comp-slide-menu .search_inner .content .hummenu_nav_lower .nav_item:nth-last-of-type(2) {
+    margin-right: 0em;
+    padding-right: 0em;
+  }
+  .comp-slide-menu .search_inner .content .hummenu_nav_lower .nav_item:nth-last-of-type(1)::after, .comp-slide-menu .search_inner .content .hummenu_nav_lower .nav_item:nth-last-of-type(2)::after {
+    display: none;
+  }
+  .comp-slide-menu .search_inner .content .hummenu_nav_lower .nav_item:nth-last-of-type(1) {
+    width: 100%;
+  }
+  .comp-slide-menu .search_inner .content .hummenu_nav_lower .nav_item a {
+    font-size: 14px;
+    letter-spacing: 0.4px;
+  }
+  .comp-slide-menu .search_inner .content .sns_wrap {
+    margin-bottom: 40px;
+  }
+  .comp-slide-menu .search_inner .content .sns_wrap a {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .comp-slide-menu .search_inner .content .sns_wrap a.ig {
+    background-size: 22px;
+  }
+  .comp-slide-menu .search_inner .content .sns_wrap a.fb {
+    background-size: 14px;
+  }
+  .comp-slide-menu .search_inner .content .sns_wrap a.tw {
+    background-size: 20px;
+  }
+  .comp-slide-menu .search_inner .content .nav_footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .comp-slide-menu .search_inner .content .nav_footer .logo {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-size: 35px;
+    background-image: url(../img/common/logo_white.svg);
+  }
+  .comp-slide-menu .search_inner .content .nav_footer .catchcopy {
+    font-size: 4.2vw;
   }
 }
 .comp-link-button.right {

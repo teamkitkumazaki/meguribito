@@ -50,6 +50,14 @@
           a{
             color: $black01;
           }
+          .content{
+            span{
+              &::after{
+                border-top: 1px solid $black01 !important;
+                border-right: 1px solid $black01 !important;
+              }
+            }
+          }
         }
       }
       .box_contents{
