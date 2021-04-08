@@ -1,0 +1,17 @@
+.comp-booking-button{
+  button{
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    background-color: $pointYellow;
+    color: #fff;
+    @include tsukushi-b;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 #aaaaaa;
+    @include hover;
+    cursor: pointer;
+  }
+}

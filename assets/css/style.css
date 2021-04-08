@@ -1254,6 +1254,321 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 40px;
   }
 }
+.page-plan-detail .section-main {
+  margin-bottom: 45px;
+}
+.page-plan-detail .section-main .img_box {
+  width: 100%;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.page-plan-detail .section-main .img_box img {
+  display: none;
+}
+.page-plan-detail .section-lead .section_inner {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px dotted #BF992E;
+}
+.page-plan-detail .section-lead .comp-section-title {
+  margin-bottom: 30px;
+}
+.page-plan-detail .section-lead .comp-section-title .title {
+  font-size: 40px;
+  line-height: 1.53;
+  letter-spacing: 0.03em;
+}
+.page-plan-detail .section-lead .comp-section-title .title span {
+  display: block;
+}
+.page-plan-detail .section-lead .location {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.page-plan-detail .section-lead .location span {
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: #464646;
+  position: relative;
+  padding: 5px 0;
+}
+.page-plan-detail .section-lead .location span::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.page-plan-detail .section-lead .location span.area {
+  padding-left: 30px;
+  margin-right: 20px;
+}
+.page-plan-detail .section-lead .location span.area::before {
+  width: 15px;
+  height: 100%;
+  background-size: 14px;
+  background-image: url(../img/common/pin.svg);
+}
+.page-plan-detail .section-lead .location span.guesthouse {
+  padding-left: 30px;
+}
+.page-plan-detail .section-lead .location span.guesthouse::before {
+  width: 17px;
+  height: 100%;
+  background-size: 17px;
+  background-image: url(../img/common/guesthouse.svg);
+}
+.page-plan-detail .section-lead .description {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+}
+.page-plan-detail .section-lead .description .button_wrap {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.page-plan-detail .section-lead .description .button_wrap a {
+  transition: opacity 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: inherit;
+}
+.page-plan-detail .section-lead .description .button_wrap a:hover {
+  opacity: 0.75;
+}
+.page-plan-detail .section-lead .description .button_wrap a .icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #fff;
+  margin-right: 10px;
+}
+.page-plan-detail .section-lead .description .button_wrap a .text {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.93px;
+}
+.page-plan-detail .section-lead .description .button_wrap .favorite_button {
+  margin-right: 30px;
+}
+.page-plan-detail .section-lead .description .button_wrap .sns_wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-plan-detail .section-lead .description .button_wrap .sns_wrap a {
+  margin-right: 15px;
+}
+.page-plan-detail .section-lead .description .button_wrap .sns_wrap a:nth-last-of-type(1) {
+  margin-right: 0;
+}
+.page-plan-detail .section-plan-outline {
+  margin-bottom: 100px;
+}
+.page-plan-detail .section-plan-outline .lead_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.page-plan-detail .section-plan-outline .lead_flex .kagibito_wrap {
+  width: 47%;
+}
+.page-plan-detail .section-plan-outline .lead_flex .kagibito_wrap .kagibito_prof {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.page-plan-detail .section-plan-outline .lead_flex .kagibito_wrap .kagibito_prof .icon {
+  width: 65px;
+  height: 65px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: opacity 0.3s;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 1px solid #BF992E;
+  box-sizing: border-box;
+}
+.page-plan-detail .section-plan-outline .lead_flex .kagibito_wrap .kagibito_prof .icon:hover {
+  opacity: 0.75;
+}
+.page-plan-detail .section-plan-outline .lead_flex .kagibito_wrap .kagibito_prof .kagibito_info {
+  width: calc(100% - 80px);
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+}
+.page-plan-detail .section-plan-outline .lead_flex .kagibito_wrap .kagibito_prof .kagibito_info .info {
+  display: block;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.44px;
+  color: #646464;
+  margin-bottom: 3px;
+}
+.page-plan-detail .section-plan-outline .lead_flex .kagibito_wrap .kagibito_prof .kagibito_info .name {
+  transition: opacity 0.3s;
+  display: block;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 0.54px;
+  color: inherit;
+}
+.page-plan-detail .section-plan-outline .lead_flex .kagibito_wrap .kagibito_prof .kagibito_info .name:hover {
+  opacity: 0.75;
+}
+.page-plan-detail .section-plan-outline .lead_flex .kagibito_wrap .description {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+}
+.page-plan-detail .section-plan-outline .lead_flex .plan_outline {
+  width: 47%;
+}
+.page-plan-detail .section-plan-outline .lead_flex .plan_outline .outline_inner {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 25px;
+}
+.page-plan-detail .section-plan-outline .lead_flex .plan_outline .outline_inner .title {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  display: block;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.page-plan-detail .section-plan-outline .lead_flex .plan_outline .outline_inner .content {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  color: #646464;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.8px;
+}
+.page-plan-detail .section-plan-outline .lead_flex .plan_outline .outline_inner .content .item {
+  display: block;
+  padding-left: 15px;
+  position: relative;
+}
+.page-plan-detail .section-plan-outline .lead_flex .plan_outline .outline_inner .content .item::after {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 14px;
+  margin: auto;
+  background: #646464;
+  border-radius: 50%;
+}
+.page-plan-detail .section-detail01 {
+  margin-bottom: 160px;
+}
+.page-plan-detail .section-detail01 .detail_main {
+  width: 85%;
+  margin: 0 auto 120px;
+}
+.page-plan-detail .section-detail01 .detail_main .img_wrap {
+  margin-bottom: 25px;
+}
+.page-plan-detail .section-detail01 .detail_main .txt_wrap .main_ttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.77;
+  letter-spacing: 0.03em;
+  margin-bottom: 15px;
+}
+.page-plan-detail .section-detail01 .detail_main .txt_wrap .description {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+}
+.page-plan-detail .section-detail02 {
+  margin-bottom: 160px;
+}
+.page-plan-detail .section-detail02 .comp-plan-detail-flex {
+  margin-bottom: 80px;
+}
+
+.page-plan-detail .section-booking {
+  padding: 120px 0;
+  margin-bottom: 120px;
+  background: #fff;
+  position: relative;
+}
+.page-plan-detail .section-booking .booking_flex .txt_wrap {
+  width: 35%;
+}
+.page-plan-detail .section-booking .booking_flex .txt_wrap .address {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.page-plan-detail .section-booking .booking_flex .txt_wrap .address .add_txt {
+  display: block;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.03em;
+  color: #646464;
+}
+.page-plan-detail .section-booking .booking_flex .txt_wrap .address .map_link {
+  transition: opacity 0.3s;
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.03em;
+  color: #646464;
+}
+.page-plan-detail .section-booking .booking_flex .txt_wrap .address .map_link:hover {
+  opacity: 0.75;
+}
+.page-plan-detail .section-booking .booking_flex .txt_wrap .facility {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.page-plan-detail .section-booking .booking_flex .txt_wrap .facility span {
+  width: 48%;
+  margin-right: 4%;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #646464;
+  margin-bottom: 20px;
+}
+.page-plan-detail .section-booking .booking_flex .txt_wrap .facility span:nth-of-type(2n) {
+  margin-right: 0;
+}
 .page-kagibito-list .section-lead {
   margin-bottom: 80px;
 }
@@ -3445,6 +3760,101 @@ footer .footer_inner .footer_lower .copyright {
     font-size: 14px;
   }
 }
+.comp-kagibito-comment {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comp-kagibito-comment .icon_wrap {
+  width: 65px;
+  margin-right: 20px;
+  text-align: center;
+}
+.comp-kagibito-comment .icon_wrap a {
+  transition: opacity 0.3s;
+  display: block;
+  color: inherit;
+}
+.comp-kagibito-comment .icon_wrap a:hover {
+  opacity: 0.75;
+}
+.comp-kagibito-comment .icon_wrap a .icon {
+  display: block;
+  width: 65px;
+  height: 65px;
+  margin-top: 5px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: 1px solid #BF992E;
+  margin-bottom: 10px;
+}
+.comp-kagibito-comment .icon_wrap a .name {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+.comp-kagibito-comment .comment_wrap {
+  width: calc(100% - 85px);
+}
+.comp-kagibito-comment .comment_wrap .comment_inner {
+  background: #fff;
+  border-radius: 15px 15px 15px 0;
+  padding: 15px 20px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+.comp-kagibito-comment.brown {
+  margin-top: 20px;
+}
+.comp-kagibito-comment.brown .icon_wrap {
+  width: 50px;
+  margin-right: 15px;
+}
+.comp-kagibito-comment.brown .icon_wrap a .icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0px;
+}
+.comp-kagibito-comment.brown .icon_wrap a .name {
+  font-size: 10px;
+}
+.comp-kagibito-comment.brown .comment_wrap {
+  width: calc(100% - 65px);
+}
+.comp-kagibito-comment.brown .comment_wrap .comment_inner {
+  background: #f9f6f3;
+  padding: 12px 15px;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+}
+
+.comp-booking-button button {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #BF992E;
+  color: #fff;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 #aaaaaa;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+.comp-booking-button button:hover {
+  opacity: 0.75;
+}
+
 /* プラン一覧 */
 .comp-plan-list {
   display: flex;
@@ -3797,6 +4207,254 @@ footer .footer_inner .footer_lower .copyright {
     display: none;
   }
 }
+/* プラン詳細 */
+.comp-plan-detail-flex .detail_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.comp-plan-detail-flex .detail_item:nth-of-type(2n), .comp-plan-detail-flex .detail_item .reverse {
+  flex-direction: row-reverse;
+}
+.comp-plan-detail-flex .detail_item:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.comp-plan-detail-flex .detail_item .img_wrap {
+  width: 47%;
+}
+.comp-plan-detail-flex .detail_item .txt_wrap {
+  width: 47%;
+}
+.comp-plan-detail-flex .detail_item .txt_wrap .title_wrap {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dotted #BF992E;
+}
+.comp-plan-detail-flex .detail_item .txt_wrap .title_wrap .mini_ttl {
+  display: inline-block;
+  background-color: #3f3f3f;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.comp-plan-detail-flex .detail_item .txt_wrap .title_wrap .detail_ttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.66;
+  letter-spacing: 0.03em;
+}
+.comp-plan-detail-flex .detail_item .txt_wrap .description {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+}
+
+.comp-spot-list .spot_inner {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 50px;
+}
+.comp-spot-list .spot_inner .spot_ttl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.comp-spot-list .spot_inner .spot_ttl .icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: 1px solid #BF992E;
+  margin-right: 15px;
+  box-sizing: border-box;
+}
+.comp-spot-list .spot_inner .spot_ttl .title {
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+}
+.comp-spot-list .spot_inner .slick-slider .item_box .img_wrap {
+  margin-bottom: 15px;
+}
+.comp-spot-list .spot_inner .slick-slider .item_box .txt_wrap .title_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f4f4f4;
+  position: relative;
+  margin-bottom: 20px;
+}
+.comp-spot-list .spot_inner .slick-slider .item_box .txt_wrap .title_wrap::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #3f3f3f;
+}
+.comp-spot-list .spot_inner .slick-slider .item_box .txt_wrap .title_wrap .num {
+  position: relative;
+  z-index: 10;
+  width: 50px;
+  text-align: center;
+  color: #fff;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 0.03em;
+}
+.comp-spot-list .spot_inner .slick-slider .item_box .txt_wrap .title_wrap .spot_name {
+  width: calc(100% - 50px);
+  padding: 10px 15px;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+}
+.comp-spot-list .spot_inner .slick-slider .item_box .txt_wrap .description {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 760px) {
+  .comp-spot-list .slick-dots {
+    display: none !important;
+  }
+  .comp-spot-list .slick-list {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  .comp-spot-list .slick-list .slick-track {
+    max-width: 1400px;
+    width: 80.5vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100% !important;
+    transform: translate3d(0px, 0px, 0px) !important;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 1100px) {
+  .comp-spot-list .slick-list .slick-track {
+    width: 86vw;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 980px) {
+  .comp-spot-list .slick-list .slick-track {
+    max-width: 780px;
+    width: 86vw;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 720px) {
+  .comp-spot-list .slick-list .slick-track {
+    width: 88vw;
+  }
+}
+@media screen and (min-width: 760px) {
+  .comp-spot-list .slick-list .slick-track .slick-slide {
+    width: 31% !important;
+    margin-right: 3.5%;
+  }
+  .comp-spot-list .slick-list .slick-track .slick-slide:nth-last-of-type(1) {
+    margin-right: 0;
+  }
+}
+.comp-guesthouse-detail {
+  position: absolute;
+  left: 45vw;
+  top: 60px;
+  bottom: 0;
+  margin: auto;
+  width: 100vw;
+  overflow: hidden;
+}
+.comp-guesthouse-detail .slick-arrow {
+  position: absolute;
+  bottom: -50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-size: 15px;
+  padding: 5px 0;
+  display: inline-block;
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  font-size: 16px;
+  color: #646464;
+  text-indent: 0px;
+  background-color: transparent !important;
+}
+.comp-guesthouse-detail .slick-arrow::after {
+  display: inline-block;
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  font-size: 14px;
+  color: #646464;
+  text-indent: 0px;
+}
+.comp-guesthouse-detail .slick-arrow.slick-prev {
+  left: 0;
+  padding-left: 25px;
+  background-position: center left;
+  background-image: url(../img/common/caret_prev.svg);
+}
+.comp-guesthouse-detail .slick-arrow.slick-next {
+  left: 100px;
+  padding-right: 25px;
+  background-position: center right;
+  background-image: url(../img/common/caret_next.svg);
+}
+.comp-guesthouse-detail .slick-slider {
+  width: 500px;
+  margin-bottom: 60px;
+}
+.comp-guesthouse-detail .slick-slider .item_box {
+  display: block !important;
+}
+.comp-guesthouse-detail .slick-slider .item_box .slider_img {
+  width: 500px;
+  box-sizing: border-box;
+  border-right: 15px solid #fff;
+}
+.comp-guesthouse-detail .yado_detail_txt {
+  width: 45vw;
+}
+.comp-guesthouse-detail .yado_detail_txt .yado_detail_ttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: 0.03em;
+  color: #363636;
+}
+.comp-guesthouse-detail .yado_detail_txt .description {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+}
+
 /* カギビト一覧 */
 .comp-kagibito-list {
   display: flex;

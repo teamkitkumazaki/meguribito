@@ -1,0 +1,106 @@
+.comp-spot-list{
+  .spot_inner{
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 50px;
+    .spot_ttl{
+      @include flexSet;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 45px;
+      .icon{
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        @include bgSet;
+        border: 1px solid $pointYellow;
+        margin-right: 15px;
+        box-sizing: border-box;
+      }
+      .title{
+        font-size: 26px;
+        letter-spacing: 0.03em;
+        @include tsukushi-b;
+      }
+    }
+    .slick-slider{
+      .item_box{
+        .img_wrap{
+          margin-bottom: 15px;
+        }
+        .txt_wrap{
+          .title_wrap{
+            @include flexSet;
+            align-items: center;
+            background-color: #f4f4f4;
+            position: relative;
+            margin-bottom: 20px;
+            &::after{
+              display: block;
+              content: "";
+              position: absolute;
+              width: 50px;
+              height: 100%;
+              top:0;
+              bottom:0;
+              left:0;
+              margin: auto;
+              background: $black01;
+            }
+            .num{
+              position: relative;
+              z-index: 10;
+              width: 50px;
+              text-align: center;
+              color: #fff;
+              @include tsukushi-b;
+              font-size: 20px;
+              line-height: normal;
+              letter-spacing: 0.03em;
+            }
+            .spot_name{
+              width: calc(100% - 50px);
+              padding: 10px 15px;
+              box-sizing: border-box;
+              font-size: 20px;
+              line-height: 1.6;
+              letter-spacing: 0.03em;
+              @include tsukushi-b;
+            }
+          }
+          .description{
+            @include basicP;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 760px){
+	.comp-spot-list {
+		.slick-dots{
+			display: none !important;
+		}
+		.slick-list{
+			padding: 0 !important;
+			width: 100% !important;
+			.slick-track{
+				@include waku;
+				width: 100% !important;
+				transform: translate3d(0px, 0px, 0px) !important;
+				.slick-slide{
+					width: 31% !important;
+          margin-right: 3.5%;
+          &:nth-last-of-type(1){
+            margin-right: 0;
+          }
+				}
+			}
+		}
+	}
+}

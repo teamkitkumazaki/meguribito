@@ -13,6 +13,8 @@
 
 /*########## ページ個別レイアウト ##########*/
 @import 'pages/index.scss';
+@import 'pages/planDetail.scss';
+@import 'pages/planDetail2.scss';
 @import 'pages/kagibitoList.scss';
 @import 'pages/kagibitoDetail.scss';
 @import 'pages/about.scss';
@@ -39,12 +41,20 @@
 @import 'component/comp-sns-wrap.scss';
 @import 'component/comp-block-line.scss';
 @import 'component/comp-chart-layout.scss';
+@import 'component/comp-kagibito-comment.scss';
+@import 'component/comp-booking-button.scss';
 
 
 
 /* プラン一覧 */
 @import 'component/comp-plan-list.scss';
 @import 'component/comp-plan-list-02.scss';
+
+/* プラン詳細 */
+@import 'component/comp-plan-detail-flex.scss';
+@import 'component/comp-spot-list.scss';
+@import 'component/comp-guesthouse-detail.scss';
+
 
 /* カギビト一覧 */
 @import 'component/comp-kagibito-list.scss';

@@ -799,4 +799,43 @@ humMenuControll2($('#slideMenuNew'));
     });
   }
 
+  if (document.getElementById('planDetail')) {
+    $('#spotSlider').slick({
+      accessibility: false,
+      infinite: false,
+      dots: true,
+      slidesToShow: 3,
+      centerMode: true,
+      autoplay: false,
+      responsive: [{
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '10%',
+          centerMode: false,
+        }
+      }]
+    });
+    $('#yadoImageSlider').slick({
+      accessibility: false,
+      infinite: true,
+      dots: false,
+      slidesToShow: 1,
+      centerMode: false,
+      autoplay: false,
+      autoplaySpeed: 5000,
+      speed: 500,
+      prevArrow: '<button type="button" class="slick-prev">PREV</button>',
+      nextArrow: '<button type="button" class="slick-next">NEXT</button>',
+      responsive: [{
+        breakpoint: 980,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: '10%',
+          centerMode: false,
+        }
+      }]
+    });
+  }
 });

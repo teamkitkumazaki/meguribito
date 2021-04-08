@@ -1,0 +1,54 @@
+.page-plan-detail{
+  .section-booking{
+    padding: 120px 0;
+    margin-bottom: 120px;
+    background: #fff;
+    position: relative;
+    .booking_flex{
+      .txt_wrap{
+        width: 35%;
+        .address{
+          @include tsukushi-b;
+          @include flexSet;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 30px;
+          .add_txt{
+            display: block;
+            font-size: 16px;
+            line-height: normal;
+            letter-spacing: 0.03em;
+            color: #646464;
+          }
+          .map_link{
+            @include hover;
+            text-decoration: underline;
+            font-size: 16px;
+            line-height: normal;
+            letter-spacing: 0.03em;
+            color: #646464;
+          }
+        }
+        .facility{
+          @include flexSet;
+          margin-bottom: 30px;
+          span{
+            width: 48%;
+            margin-right: 4%;
+            @include tsukushi-b;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            color: #646464;
+            margin-bottom: 20px;
+            &:nth-of-type(2n){
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-detail03{
+
+  }
+}

@@ -1,0 +1,45 @@
+.comp-plan-detail-flex{
+  .detail_item{
+    @include flexSet;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+    &:nth-of-type(2n), .reverse{
+      flex-direction: row-reverse;
+    }
+    &:nth-last-of-type(1){
+      margin-bottom: 0;
+    }
+    .img_wrap{
+      width: 47%;
+    }
+    .txt_wrap{
+      width: 47%;
+      .title_wrap{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px dotted $pointYellow;
+        .mini_ttl{
+          display: inline-block;
+          background-color: $black02;
+          color: #fff;
+          font-size: 16px;
+          letter-spacing: 0.5px;
+          @include tsukushi-b;
+          padding: 10px 10px;
+          border-radius: 5px;
+          margin-bottom: 10px;
+        }
+        .detail_ttl{
+          @include tsukushi-b;
+          font-size: 26px;
+          line-height: 1.66;
+          letter-spacing: 0.03em;
+        }
+      }
+      .description{
+        @include basicP;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.comp-guesthouse-detail{
+  position: absolute;
+  left: 45vw;
+  top: 60px;
+  bottom: 0;
+  margin: auto;
+  width: 100vw;
+  overflow: hidden;
+  .slick-arrow{
+    position: absolute;
+    bottom: -50px;
+    @include bgSet;
+    background-size: 15px;
+    padding: 5px 0;
+    display: inline-block;
+    @include tsukushi-r;
+    font-size: 16px;
+    color: #646464;
+    text-indent: 0px;
+    background-color: transparent !important;
+    &::after{
+      display: inline-block;
+      @include tsukushi-r;
+      font-size: 14px;
+      color: #646464;
+      text-indent: 0px;
+    }
+    &.slick-prev{
+      left:0;
+      padding-left: 25px;
+      background-position: center left;
+      background-image: url(../img/common/caret_prev.svg);
+    }
+    &.slick-next{
+      left: 100px;
+      padding-right: 25px;
+      background-position: center right;
+      background-image: url(../img/common/caret_next.svg);
+    }
+  }
+  .slick-slider{
+    width: 500px;
+    margin-bottom: 60px;
+    .item_box{
+      display: block !important;
+      .slider_img{
+        width: 500px;
+        box-sizing: border-box;
+        border-right: 15px solid #fff;
+      }
+    }
+  }
+  .yado_detail_txt{
+    width: 45vw;
+    .yado_detail_ttl{
+      @include tsukushi-b;
+      font-size: 24px;
+      line-height: normal;
+      letter-spacing: 0.03em;
+      color: #363636;
+    }
+    .description{
+      @include basicP;
+    }
+  }
+}
