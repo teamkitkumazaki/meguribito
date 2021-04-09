@@ -1,0 +1,104 @@
+.comp-trip-faq{
+  margin-bottom: 60px;
+  .faq_wrap{
+    .qa_item{
+      height: 62px;
+      overflow: hidden;
+      transition: height 0.5s;
+      will-change: height;
+      margin-bottom: 10px;
+      .qa_button{
+        width: 100%;
+        text-align: left;
+        position: relative;
+        display: block;
+        font-size: 14px;
+        line-height: normal;
+        border-radius: 5px;
+        letter-spacing: 0.1em;
+        color: #222;
+        background: #fff;
+        padding: 15px;
+        @include tsukushi-b;
+        font-size: 16px;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+        transition: opacity 0.3s;
+        &::before, &::after{
+          position: absolute;
+          display: block;
+          content: "";
+          width: 16px;
+          height: 16px;
+          top: 0;
+          bottom: 0;
+          right: 15px;
+          margin: auto;
+          @include bgSet;
+          background-size: 16px;
+          transition: opacity 0.2s;
+        }
+        &::before{
+          background-image: url(../img/common/icon_plus.svg)
+        }
+        &::after{
+          opacity: 0;
+          background-image: url(../img/common/icon_minus.svg);
+        }
+        span{
+          position: relative;
+          display: block;
+          padding: 0 30px;
+          &::before{
+             display: block;
+             content: "Q.";
+             position: absolute;
+             top:0;
+             bottom:0;
+             left:0;
+             margin: auto;
+             width: 16px;
+             height: 35px;
+             font-size: 16px;
+             @include tsukushi-b;
+          }
+        }
+        &.active{
+          &::before{
+            opacity: 0;
+          }
+          &::after{
+            opacity: 1;
+          }
+        }
+      }
+      .qa_contents{
+        padding: 0 10px 20px;
+        @include basicP;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        p{
+          padding: 20px 30px 10px 25px;
+          a{
+            color: #068acc;
+          }
+          &:nth-of-type(1){
+            position: relative;
+            &::before{
+               display: block;
+               content: "A.";
+               position: absolute;
+               top: 18px;
+               left: -2px;
+               margin: auto;
+               width: 20px;
+               height: 16px;
+               font-size: 16px;
+               @include tsukushi-b;
+            }
+          }
+        }
+      }
+    }
+  }
+}

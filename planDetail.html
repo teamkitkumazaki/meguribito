@@ -80,12 +80,12 @@
 	</header>
 	<!-- loading -->
 	<article id="planDetail" class="page-plan-detail">
-		<section class="section-main">
+		<section id="main" class="section-main">
 			<div class="img_box" style="background-image: url(assets/img/sample/main.jpg);">
 				<img src="assets/img/sample/main_sp.jpg">
 			</div>
 		</section>
-		<section class="section-lead">
+		<section id="lead" class="section-lead">
 			<div class="section_inner">
 				<div class="comp-section-title center">
 					<p class="upper_txt">村上ひろふみさんと行く</p>
@@ -123,7 +123,7 @@
 				</div><!-- description -->
 			</div><!-- section_inner -->
 		</section>
-		<section class="section-plan-outline">
+		<section id="outline" class="section-plan-outline">
 			<div class="section_inner">
 				<div class="lead_flex">
 					<div class="kagibito_wrap">
@@ -151,7 +151,7 @@
 				</div><!-- lead_flex -->
 			</div><!-- section_inner -->
 		</section>
-		<section class="section-detail01">
+		<section id="detail01" class="section-detail01">
 			<div class="section_inner">
 				<div class="detail_main">
 					<div class="img_wrap">
@@ -237,7 +237,7 @@
 				</div><!-- comp-plan-detail-flex -->
 			</div><!-- section_inner -->
 		</section>
-		<section class="section-detail02">
+		<section id="detail02" class="section-detail02">
 			<div class="section_inner">
 				<div class="comp-section-title margin">
 					<p class="upper_txt">街の余白について</p>
@@ -327,7 +327,7 @@
 				</div><!-- comp-spot-list -->
 			</div><!-- section_inner -->
 		</section>
-		<section class="section-booking">
+		<section id="booking" class="section-booking">
 			<div class="section_inner">
 				<div class="booking_flex">
 					<div class="txt_wrap">
@@ -381,18 +381,318 @@
 				</div><!-- booking_flex -->
 			</div><!-- section_inner -->
 		</section>
-		<section class="section-detail03">
+		<section id="detail03" class="section-detail03">
 			<div class="section_inner">
 				<div class="detail_flex">
-					<div class="flex_fix">
-					</div>
 					<div class="flex_left">
-						<div class="comp-section-title margin">
+						<div class="comp-section-title">
 							<p class="upper_txt">旅程・レビュー・よくある質問など</p>
 							<h2 class="title"><span>プラン詳細</span></h2>
 						</div>
-					</div>
+						<div class="comp-time-shcedule">
+							<h3 class="detail_ttl">旅程について</h3>
+							<div id="dayShifter" class="day_shifter">
+								<button>1日目</button>
+								<button>2日目</button>
+								<button>3日目</button>
+							</div>
+							<div class="shcedule_wrap">
+								<div id="day1" class="schedule_inner">
+									<div class="schedule_item">
+										<div class="title_wrap">
+											<span class="time">AM10:00ごろ</span>
+											<h4 class="title">尾道駅に到着・ヤドカリにチェックイン</h4>
+										</div>
+										<div class="description">
+											<p><span>尾道駅でカギビトと合流し、ゲストハウス「ヤドカリ」までご案内いたします。</span><span>カフェで一息つきながら、チェックインの手続きや荷物の整理を進めましょう！</span></p>
+										</div>
+									</div>
+									<div class="schedule_item">
+										<div class="title_wrap">
+											<span class="time">AM12:00ごろ</span>
+											<h4 class="title">オノミチシェアにドロップイン</h4>
+										</div>
+										<div class="description">
+											<p>シェアオフィス「オノミチシェア」にドロップインをします。10:00~19:00までの時間のオフィス使用料はプラン料金の中に含まれています。深夜帯まで利用したい場合は、直接オフィスの係員の方にご相談ください！</p>
+										</div>
+									</div>
+									<div class="yahoku_item">
+										<p class="yohaku_txt">お仕事頑張ってください！</p>
+									</div>
+									<div class="schedule_item">
+										<div class="title_wrap">
+											<span class="time">PM17:00ごろ</span>
+											<h4 class="title">カギビトと合流・飲屋街「新開地区」へ</h4>
+										</div>
+										<div class="description">
+											<p>シェアオフィス「オノミチシェア」にドロップインをします。10:00~19:00までの時間のオフィス使用料はプラン料金の中に含まれています。深夜帯まで利用したい場合は、直接オフィスの係員の方にご相談ください！</p>
+										</div>
+									</div>
+									<div class="schedule_item">
+										<div class="title_wrap">
+											<span class="time">PM22:00ごろ</span>
+											<h4 class="title">カギビトは朝が早いので帰ります！</h4>
+										</div>
+										<div class="description">
+											<p>シェアオフィス「オノミチシェア」にドロップインをします。10:00~19:00までの時間のオフィス使用料はプラン料金の中に含まれています。深夜帯まで利用したい場合は、直接オフィスの係員の方にご相談ください！</p>
+										</div>
+									</div>
+									<div class="yahoku_item">
+										<p class="yohaku_txt">素敵な尾道の夜を！</p>
+									</div>
+									<div class="schedule_item">
+										<div class="title_wrap">
+											<span class="time">??:??ごろ</span>
+											<h4 class="title">ゲストハウスに帰宅・就寝</h4>
+										</div>
+									</div>
+								</div><!-- schedule_inner -->
+							</div><!-- shcedule_wrap -->
+						</div>
+						<div class="comp-trip-review">
+							<h3 class="detail_ttl">旅人の声</h3>
+							<div class="review_wrap">
+								<div class="review_item">
+									<a href="#aaaa" class="icon" style="background-image: url(assets/img/common/default_icon.png);"></a>
+									<div class="review_content">
+										<a class="user_name" href="#aaaa">skmzk418さん</a>
+										<p class="review">はじめてにも関わらず、丁寧に収穫の方法を教えてもらいました。単なる体験ではなく、それに携わる人の思いもお聴きすることができ、現地に出向かないと分からない空気感も感じることができました。</p>
+									</div>
+								</div>
+								<div class="review_item">
+									<a href="#aaaa" class="icon" style="background-image: url(assets/img/common/default_icon.png);"></a>
+									<div class="review_content">
+										<a class="user_name" href="#aaaa">aiueo123さん</a>
+										<p class="review">体験の合間にコダテルで仕事をさせてもらったのですが、普通のコワーキングスペースとは違い、すぐ近くで会員さん同士でディスカッションがはじまり、興味津々。気づいたら自分もその話の輪に入って盛り上がってしまいました。自分自身の企てもシェアでき、気づきももらいました。ありがとうございました！</p>
+									</div>
+								</div>
+							</div><!-- review_wrap -->
+						</div><!-- comp-trip-review -->
+						<div class="comp-trip-faq">
+							<h3 class="detail_ttl">よくある質問</h3>
+							<div id="faqToggle" class="faq_wrap">
+								<div class="qa_item">
+									<button class="qa_button">
+										<span>滞在中は、コダテルのコワーキングスペースや備品等も使えますか？</span>
+									</button>
+									<div class="qa_contents">
+										<p>長時間に渡らない限りは基本的に無料です。ただし、KAGIBITOの予定もありますので、あらかじめ空いている時間を尋ねていただけるとスムーズです。</p>
+									</div>
+								</div>
+								<div class="qa_item">
+									<button class="qa_button">
+										<span>KAGIBITOに企ての相談をする場合、お金は別途必要でしょうか？</span>
+									</button>
+									<div class="qa_contents">
+										<p>長時間に渡らない限りは基本的に無料です。ただし、KAGIBITOの予定もありますので、あらかじめ空いている時間を尋ねていただけるとスムーズです。</p>
+									</div>
+								</div>
+							</div><!-- faq_wrap -->
+						</div><!-- comp-trip-faq -->
+						<div class="trip_detail">
+							<h3 class="detail_ttl">プランの基本情報</h3>
+							<div class="comp-chart-layout">
+								<div class="chart_item">
+              		<span class="title">開催時期</span>
+              		<span class="content">通年（7月〜9月）</span>
+            		</div>
+								<div class="chart_item">
+              		<span class="title">体験料</span>
+              		<span class="content">10,000円（宿泊費込）</span>
+            		</div>
+                <div class="chart_item">
+              		<span class="title">最小催行人数</span>
+              		<span class="content">1名</span>
+            		</div>
+								<div class="chart_item">
+              		<span class="title">最大催行人数</span>
+              		<span class="content">4名</span>
+            		</div>
+								<div class="chart_item">
+              		<span class="title">拠点名</span>
+              		<span class="content">コダテル</span>
+            		</div>
+								<div class="chart_item">
+              		<span class="title">住所</span>
+              		<span class="content">〒796-0001　愛媛県八幡浜市向灘2187</span>
+            		</div>
+								<div class="chart_item">
+									<span class="title">電話番号</span>
+									<span class="content">0894-21-2629</span>
+								</div>
+								<div class="chart_item">
+									<span class="title">移動手段</span>
+									<span class="content">松山空港〜ＪＲ八幡浜駅　車で1.5時間／電車で50分<br>その後、ＪＲ八幡浜駅発のバスに乗って10分、勘定公民館前バス停下車、徒歩２分</span>
+								</div>
+								<div class="chart_item">
+									<span class="title">ネット環境</span>
+									<span class="content">Wi-Fi有り</span>
+								</div>
+								<div class="chart_item">
+									<span class="title">アメニティ・設備</span>
+									<span class="content">ノートパソコン使用に適した仕事スペース/ハンガー/消化器/キッチン/駐車場（２台）/ヘアドライアー/シャワー室/モニター/コーヒーサーバー</span>
+								</div>
+								<div class="chart_item">
+									<span class="title">その他</span>
+									<span class="content">・新型コロナウイルス感染症対策有り<br>・キャンセルについて<br>連絡なしの場合…料金の100％<br>当日…料金の100％<br>前日…料金の80％</span>
+								</div>
+							</div>
+						</div><!-- trip_detail -->
+					</div><!-- flex_left -->
+					<div id="fixedSection" class="detail_fix_section">
+						<div class="fix_inner">
+							<div class="img_wrap">
+								<img src="assets/img/sample/fix_image.jpg">
+							</div>
+							<div class="txt_wrap">
+								<p class="plan_ttl"><span>瀬戸内のアーティスト達と過ごす</span><span>ローカルヒッピーライフ</span></p>
+								<div class="terms_wrap">
+									<div class="price_wrap">
+										<span class="price">11,000円(税込)</span>
+										<span class="duration">2泊3日</span>
+									</div>
+									<div class="term_detail">
+										<span class="detail_list">シェアオフィス「オノミチシェア」使用料(10時~18時)はプラン料金の中に含まれています。</span>
+										<span class="detail_list">ナイトツアー内での旅人の飲食店は別途自己負担でお願いします。</span>
+									</div>
+								</div>
+							</div>
+							<div class="comp-booking-button">
+								<button><span>体験を予約する</span></button>
+							</div>
+						</div>
+					</div><!-- detail_fix_section -->
 				</div>
+			</div><!-- section_inner -->
+		</section>
+		<section id="plans" class="section-plans">
+			<div class="section_inner">
+				<div class="comp-section-title margin button">
+					<div class="title_wrap">
+						<p class="upper_txt">新しい体験、続々更新中</p>
+						<h2 class="title">その他のプランを探す</h2>
+					</div>
+					<div class="comp-link-button">
+						<a href="#aaaa"><span>体験一覧を見る</span></a>
+					</div>
+				</div><!-- comp-section-title -->
+				<div class="comp-plan-list">
+					<div class="plan_item">
+						<div class="img_wrap">
+							<a href="#aaaa" style="background-image:url(assets/img/plan/plan01_sp.jpg);">
+								<img class="img_pc" src="assets/img/plan/plan01.jpg">
+								<!--<img class="img_sp" src="assets/img/plan/plan01_sp.jpg"> -->
+							</a>
+						</div><!-- img_wrap -->
+						<div class="txt_wrap">
+							<div class="comp-kagibito-wrap">
+								<span class="icon" style="background-image: url(assets/img/kagibito/kagibito03.jpg);"></span>
+								<span class="name">長原レキさんと行く</span>
+							</div>
+							<div class="title_wrap">
+								<h3><a href="#aaaa">建設中のゲストハウスに宿泊しながら学ぶ、新しい場所の作り方。</a></h3>
+								<div class="location">
+									<span class="area">徳島県・海陽町</span><span class="guesthouse">IN BETWEEN BLUES</span>
+								</div>
+							</div><!-- title_wrap -->
+						</div>
+					</div><!-- plan_item -->
+					<div class="plan_item">
+						<div class="img_wrap">
+							<a href="#aaaa" style="background-image:url(assets/img/plan/plan02_sp.jpg);">
+								<img src="assets/img/plan/plan02.jpg">
+							</a>
+						</div><!-- img_wrap -->
+						<div class="txt_wrap">
+							<div class="comp-kagibito-wrap">
+								<span class="icon" style="background-image: url(assets/img/kagibito/kagibito03.jpg);"></span>
+								<span class="name">長原レキさんと行く</span>
+							</div>
+							<div class="title_wrap">
+								<h3><a href="#aaaa">ガイド付きの川釣り体験で鮮魚を釣る・捌く・焼く四万十の旅。</a></h3>
+								<div class="location">
+									<span class="area">徳島県・海陽町</span><span class="guesthouse">IN BETWEEN BLUES</span>
+								</div>
+							</div><!-- title_wrap -->
+						</div>
+					</div><!-- plan_item -->
+					<div class="plan_item">
+						<div class="img_wrap">
+							<a href="#aaaa" style="background-image:url(assets/img/plan/plan03_sp.jpg);">
+								<img src="assets/img/plan/plan03.jpg">
+							</a>
+						</div><!-- img_wrap -->
+						<div class="txt_wrap">
+							<div class="comp-kagibito-wrap">
+								<span class="icon" style="background-image: url(assets/img/kagibito/kagibito03.jpg);"></span>
+								<span class="name">長原レキさんと行く</span>
+							</div>
+							<div class="title_wrap">
+								<h3><a href="#aaaa">古都で古くから愛されるサウナの名所で心と体を整える体験。</a></h3>
+								<div class="location">
+									<span class="area">徳島県・海陽町</span><span class="guesthouse">IN BETWEEN BLUES</span>
+								</div>
+							</div><!-- title_wrap -->
+						</div>
+					</div><!-- plan_item -->
+					<div class="plan_item">
+						<div class="img_wrap">
+							<a href="#aaaa" style="background-image:url(assets/img/plan/plan04_sp.jpg);">
+								<img src="assets/img/plan/plan04.jpg">
+							</a>
+						</div><!-- img_wrap -->
+						<div class="txt_wrap">
+							<div class="comp-kagibito-wrap">
+								<span class="icon" style="background-image: url(assets/img/kagibito/kagibito03.jpg);"></span>
+								<span class="name">長原レキさんと行く</span>
+							</div>
+							<div class="title_wrap">
+								<h3><a href="#aaaa">大自然×シーシャ？日本屈指の水とすだちで味わう最強の自然派水タバコ。</a></h3>
+								<div class="location">
+									<span class="area">徳島県・海陽町</span><span class="guesthouse">IN BETWEEN BLUES</span>
+								</div>
+							</div><!-- title_wrap -->
+						</div>
+					</div><!-- plan_item -->
+					<div class="plan_item">
+						<div class="img_wrap">
+							<a href="#aaaa" style="background-image:url(assets/img/plan/plan05_sp.jpg);">
+								<img src="assets/img/plan/plan05.jpg">
+							</a>
+						</div><!-- img_wrap -->
+						<div class="txt_wrap">
+							<div class="comp-kagibito-wrap">
+								<span class="icon" style="background-image: url(assets/img/kagibito/kagibito03.jpg);"></span>
+								<span class="name">長原レキさんと行く</span>
+							</div>
+							<div class="title_wrap">
+								<h3><a href="#aaaa">大自然×シーシャ？日本屈指の水とすだちで味わう最強の自然派水タバコ。</a></h3>
+								<div class="location">
+									<span class="area">徳島県・海陽町</span><span class="guesthouse">IN BETWEEN BLUES</span>
+								</div>
+							</div><!-- title_wrap -->
+						</div>
+					</div><!-- plan_item -->
+					<div class="plan_item">
+						<div class="img_wrap">
+							<a href="#aaaa" style="background-image:url(assets/img/plan/plan06_sp.jpg);">
+								<img src="assets/img/plan/plan06.jpg">
+							</a>
+						</div><!-- img_wrap -->
+						<div class="txt_wrap">
+							<div class="comp-kagibito-wrap">
+								<span class="icon" style="background-image: url(assets/img/kagibito/kagibito03.jpg);"></span>
+								<span class="name">長原レキさんと行く</span>
+							</div>
+							<div class="title_wrap">
+								<h3><a href="#aaaa">大自然×シーシャ？日本屈指の水とすだちで味わう最強の自然派水タバコ。</a></h3>
+								<div class="location">
+									<span class="area">徳島県・海陽町</span><span class="guesthouse">IN BETWEEN BLUES</span>
+								</div>
+							</div><!-- title_wrap -->
+						</div>
+					</div><!-- plan_item -->
+				</div><!-- comp-plan-list -->
 			</div><!-- section_inner -->
 		</section>
 	</article>
@@ -473,4 +773,7 @@
 		</div><!-- footer_inner -->
 	</footer>
 </body>
+<!--<script>
+$("#fixedSection").parents().css("overflow", "visible")
+</script> -->
 </html>

@@ -365,415 +365,60 @@ function humMenuControll2(target){
 
 humMenuControll2($('#slideMenuNew'));
 
+//よくある質問
+function faqToggle(target) {
+  var toggleItem = [];
+  var toggleButton = [];
+  var toggleContents = [];
+  var toggleState = [];
 
-
-
-
-
-
-
-
-
-  function photoGallaryControll(){
-    var gallaryPop = $('#gallaryPop');
-    var photoGallary = $('.comp-photo-gallary-list');
-    var imgButton = [];
-    var imgBox = [];
-    var imgBoxLength = [];
-    var gallaryImg = $('#gallaryImg');
-    var gallaryImgBox = $('#gallaryImgBox');
-    var detailClose = $('#detailClose');
-    var caretPrev = $('#caretPrev');
-    var caretNext = $('#caretNext');
-    var gallaryImgBox = $('#gallaryImgBox');
-    var gallaryLength = photoGallary.find('button').length;
-    var detailPopState = 0;
-    var gallaryDisplay = -1;
-    var current_scrollY;
-
-    function gallaryPopMove(e, f){
-      if(e != -1){
-        gallaryPop.addClass('open');
-        gallaryImgBox.addClass('loading');
-        gallaryImg.attr('src',imgBox[e][f]);
-        current_scrollY = $(window).scrollTop();
-        detailPopState = e;
-        gallaryDisplay = f;
-        setTimeout(function() {
-          gallaryImgBox.removeClass('loading');
-        }, 500);
-      }else{
-        gallaryPop.removeClass('open');
-        detailPopState = -1;
-        gallaryDisplay = -1;
-        setTimeout(function() {
-          gallaryImgBox.addClass('loading');
-        }, 500);
-      }
-    }
-
-    function slideNext(){
-      if(gallaryDisplay == imgBoxLength[detailPopState] - 1){
-        gallaryDisplay = 0;
-      }else{
-        gallaryDisplay = gallaryDisplay + 1;
-      }
-      gallaryImgBox.addClass('loading');
-      setTimeout(function() {
-        gallaryPopMove(detailPopState, gallaryDisplay);
-      }, 350);
-    };
-
-    function slidePrev(){
-      if(gallaryDisplay != 0){
-        gallaryDisplay = gallaryDisplay - 1;
-      }else{
-        gallaryDisplay = imgBoxLength[detailPopState] - 1;
-      }
-      gallaryImgBox.addClass('loading');
-      setTimeout(function() {
-        gallaryPopMove(gallaryDisplay);
-      }, 350);
-    };
-
-    function tabTouch(){
-      if(startTouchX - endTouchX > 50){
-        slideNext();
-      }else if(startTouchX - endTouchX < - 50){
-        slidePrev();
-      }
-    };
-
-    function windowDrag() {
-      if (startDragX - endDragX > 100) {
-        slideNext();
-      } else if (startDragX - endDragX < -100) {
-        slidePrev();
-      }
-    };
-
-
-    function init(){
-      $('article').find('.comp-photo-gallary-list').each(function(index) {
-        imgBox[index] = [];
-        imgBoxLength[index] = $(this).find('button').length;
-        $(this).find('button').each(function(index2) {
-          var imgSrc = $(this).find('img').attr('src');
-          imgBox[index][index2] = imgSrc;
-          $(this).on({
-            'click': function(){
-              gallaryPopMove(index,index2);
-            }
-          })
+  function toggleMove(e) {
+    var w = $(window).width();
+    var toggleHeight = toggleButton[e].outerHeight();
+    var targetHeight = toggleContents[e].outerHeight();
+    if (toggleState[e] == -1 || toggleState[e] == 0) {
+      toggleButton[e].addClass('active');
+      if (w > 750) {
+        toggleItem[e].css({
+          'height': toggleHeight + targetHeight + 'px'
         });
-      });
-      detailClose.on({
-        'click': function(){
-          gallaryPopMove(-1, -1);
-        }
-      })
-      gallaryImgBox.on({
-        'dragstart': function(e) {
-          startDragX = event.pageX;
-        },
-        'dragend': function(e) {
-          endDragX = event.pageX;
-          windowDrag();
-        }
-      });
-
-      gallaryImgBox.on({
-        'touchstart' : function(e){
-          startTouchX = event.changedTouches[0].pageX;
-        },
-        'touchend' : function(e){
-          endTouchX = event.changedTouches[0].pageX;
-          tabTouch();
-        }
-      });
-      caretNext.on({
-        'click': function(){
-          slideNext();
-        }
-      })
-      caretPrev.on({
-        'click': function(){
-          slidePrev();
-        }
-      })
-    }
-
-    init();
-  }
-
-
-  if (document.getElementById('usecaseDetail')) {
-    photoGallaryControll();
-  }
-
-  if (document.getElementById('caseEn')) {
-    photoGallaryControll();
-  }
-
-  /* お問い合わせフォームのバリデーション */
-  function setMyForm(target){
-    var ERROR_MESSAGE_CLASSNAME = 'errorMsg'; //エラー時のメッセージ要素のclass名
-    var ERROR_INPUT_CLASSNAME = 'errorInput'; //エラー時のinput要素のclass名
-    var errorCount = 0;
-    var submitButton = $('#submitButton');
-    var items = []; //チェック対象となるテキスト入力要素を格納した配列
-
-    //項目チェックする
-    var checkAll = function(){
-      errorCount = 0;
-
-      //input,textareaのチェック
-      for( var i=0; i<items.length; i++ ){
-        if( items[i].prop('isSuccess') == false ){
-          errorCount++;
-        };
-      };
-
-
-      if( errorCount == 0 ){
-        submitButton.find('input').attr('disabled', false);
-        submitButton.find('input').attr('value', '送信する');
-        submitButton.removeClass('disabled');
-      }else{
-        submitButton.find('input').attr('disabled', true);
-        submitButton.addClass('disabled');
-        submitButton.find('input').attr('value', '全ての項目を入力ください');
-      };
-    };
-
-    //エラーメッセージの追加
-    var addErrorMessage = function(selector, msg){
-      removeErrorMessage(selector);
-      selector.parent('div').append('<span class="attention '+ERROR_MESSAGE_CLASSNAME+'">'+msg+'</span>');
-      selector.addClass(ERROR_INPUT_CLASSNAME);
-    };
-
-    //エラーメッセージの削除
-    var removeErrorMessage = function(selector){
-      var msgSelector = selector.parent().parent('div').find('.'+ERROR_MESSAGE_CLASSNAME);
-      if( msgSelector.length != 0 ){
-        msgSelector.remove();
-        selector.removeClass(ERROR_INPUT_CLASSNAME);
-      };
-    };
-
-    //input,textareaの未入力チェック
-    var checkEmptyText = function(selector, msg){
-      if( selector.val() == '' ||  selector.val() == null){
-        addErrorMessage(selector, msg);
-        selector.prop('isSuccess', false);
-      }else{
-        removeErrorMessage(selector);
-        selector.prop('isSuccess', true);
-      };
-    };
-
-    var emptyThrough = function(selector){
-      if( selector.val() == '' ||  selector.val() == null){
-        removeErrorMessage(selector);
-        selector.prop('isSuccess', true);
+      } else {
+        toggleItem[e].css({
+          'height': toggleHeight + targetHeight + 'px'
+        });
       }
-    };
-
-    //radioの未入力チェック
-    var checkRadioBox = function(selector, msg){
-      if( selector.prop("checked")){
-        removeErrorMessage(selector);
-        selector.prop('isSuccess', true);
-        submitButton.removeClass('disabled');
-        submitButton.find('input').attr('value', '送信する');
-      }else{
-        addErrorMessage(selector, msg);
-        selector.prop('isSuccess', false);
-        submitButton.addClass('disabled');
-        submitButton.find('input').attr('value', '全ての項目を入力してください');
-      };
-    };
-
-    //文字列のフォーマットチェック
-    function checkFormatText(selector, _mode, msg){
-      var value = selector.val();
-      switch(_mode){
-        //全角のみ
-        case 0:
-          if(value.match(/^[^ -~｡-ﾟ]*$/)){
-            selector.prop('isSuccess', true);
-            removeErrorMessage(selector);
-          }else{
-            selector.prop('isSuccess', false);
-          };
-          break;
-        //ふりがなのみ
-        case 1:
-          if(value.match(/^[\u3040-\u309F]+$/)){
-            selector.prop('isSuccess', true);
-          }else{
-            selector.prop('isSuccess', false);
-          };
-          break;
-        //半角数字のみ
-        case 2:
-          if(value.match(/^[0-9]*$/)){
-            selector.prop('isSuccess', true);
-          }else{
-            selector.prop('isSuccess', false);
-          };
-          break;
-        //メールアドレスかどうか
-        case 3:
-          if(value.match(/^[a-zA-Z0-9!$&*.=^`|~#%'+\/?_{}-]+@([a-zA-Z0-9_-]+\.)+[a-zA-Z]{2,6}$/)){
-            selector.prop('isSuccess', true);
-          }else{
-            selector.prop('isSuccess', false);
-          };
-          break;
-      };
-      if( selector.prop('isSuccess') == false ){
-        addErrorMessage(selector, msg);
-      }else{
-        removeErrorMessage(selector);
-      };
-    };
-
-    //初期設定
-    var init = function(){
-      target.find('input[type=button]').attr('disabled', true);
-      //submitイベントの設定
-      target.on({
-        'submit': function(){
-          checkAll();
-        }
-      });
-      //input要素を配列に格納
-      items = [
-        target.find('input[name="username"]'), //0 氏名
-        target.find('input[name="companyname"]'), //1 所属
-        target.find('select[name="prefname"]'), //2 お住まいの都道府県
-        target.find('input[name="usermail"]'), //3 メールアドレス
-        target.find('textarea[name="content"]'), //4 お問い合わせ内容
-        target.find('input[name="agreement"]') //5 プラポリへの同意
-      ];
-      //input要素のプロパティを設定
-      $.each(items, function(index){
-        items[index].prop('isSuccess', false);
-      });
-
-      //enterキーでsubmitしてしまうのを防止する
-      target.find('input[type=text]').on({
-        'keypress': function(e){
-          if( (e.keyCode == 13) ) return false;
-        }
-      });
-      // -1 お問い合わせの目的
-      $('input[name="contacttype"]').on({
-        'click': function(){
-          var selectedNum = $(this).attr('number');
-          if(selectedNum == 1){
-            $('#displayControll').addClass('optional');
-            if(items[1].prop('isSuccess')){}else{
-              items[1].prop('isSuccess', true);
-            }
-            checkAll();
-          }else{
-            $('#displayControll').removeClass('optional');
-            if(items[1].prop('isSuccess')){
-              checkEmptyText( items[1], '※所属を入力してください。' );
-              checkAll();
-            }
-          }
-        }
-      });
-      //0 氏名
-      items[0].on({
-        'keyup': function(){
-          checkEmptyText( items[0], '※氏名を入力してください。' );
-          checkAll();
-        },
-        'blur': function(){
-          checkEmptyText( items[0], '※氏名を入力してください。' );
-          checkAll();
-        }
-      });
-      //1 所属
-      items[1].on({
-        'keyup': function(){
-          checkEmptyText( items[1], '※所属を入力してください。' );
-          checkAll();
-        },
-        'blur': function(){
-          checkEmptyText( items[1], '※所属を入力してください。' );
-          checkAll();
-        }
-      });
-      //2 お住まいの都道府県
-      items[2].on({
-        'blur': function(){
-          checkEmptyText( items[2], '※項目を選択してください。' );
-          checkAll();
-        }
-      });
-      //3 メールアドレス
-      items[3].on({
-        'blur': function(){
-          checkEmptyText( items[3], '※メールアドレスをご入力ください。' );
-          if( items[3].prop('isSuccess') ) checkFormatText( items[3], 3, '※メールアドレスの形式をご確認ください' );
-          checkAll();
-        }
-      });
-      //4 お問い合わせ内容
-      items[4].on({
-        'keyup': function(){
-          checkEmptyText( items[4], '※お問い合わせ内容を入力してください。' );
-          checkAll();
-        },
-        'blur': function(){
-          checkEmptyText( items[4], '※お問い合わせ内容を入力してください。' );
-          checkAll();
-        }
-      });
-      //5 プラポリへの同意
-      items[5].on({
-        'click': function(){
-          checkRadioBox( items[5], '※プライバシーポリシーに同意ください。');
-          checkAll();
-        }
-      });
-      submitButton.on({
-        'click': function(){
-          if( errorCount == 0 ){
-            processOrderContent();
-            var scrollHeight = $('#formWrap').offset().top;
-          }else{
-            var scrollHeight = $('#formWrap').offset().top;
-            $("html, body").animate({
-              scrollTop: scrollHeight
-            }, 300);
-          };
-        }
-      })
-    };
-
-    function processOrderContent(){
-      submitButton.addClass('disabled');
-      $('#ajaxLoader').addClass('loading');
-      setTimeout(function() {
-        $('#ajaxLoader').removeClass('loading');
-          target.submit();
-      }, 1000);
+      toggleState[e] = 1;
+    } else {
+      toggleButton[e].removeClass('active');
+        toggleItem[e].css({
+          'height': toggleHeight + 'px'
+        });
+      toggleState[e] = 0;
     }
-
-    init();
-
-  };
-
-  if (document.getElementById('contact')) {
-    setMyForm($('#formWrap'));
   }
+
+  function init() {
+    $.each(target.find('.qa_item'), function(index) {
+      toggleItem[index] = $(this);
+      toggleButton[index] = $(this).find('.qa_button');
+      toggleContents[index] = $(this).find('.qa_contents');
+      $(this).css({'height': toggleButton[index].outerHeight() + 4 + 'px'});
+      toggleState[index] = -1;
+      toggleButton[index].on({
+        'click': function() {
+          toggleMove(index);
+        }
+      });
+    });
+  }
+
+  init();
+
+}
+
+if (document.getElementById('planDetail')) {
+  faqToggle($('#faqToggle'));
+}
 
   if (document.getElementById('index')) {
     $('#serviceSlider').slick({

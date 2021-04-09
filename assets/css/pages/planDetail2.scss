@@ -2,6 +2,7 @@
   .section-booking{
     padding: 120px 0;
     margin-bottom: 120px;
+    overflow: hidden;
     background: #fff;
     position: relative;
     .booking_flex{
@@ -49,6 +50,106 @@
     }
   }
   .section-detail03{
-
+    margin-bottom: 120px;
+    .section_inner{
+      position: relative;
+    }
+    .detail_flex{
+      @include flexSet;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .detail_fix_section{
+      width: 33%;
+      position: sticky;
+      top: 140px;
+      .fix_inner{
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        .img_wrap{
+          border-radius: 5px;
+          overflow: hidden;
+          margin-bottom: 15px;
+        }
+        .txt_wrap{
+          .plan_ttl{
+            @include tsukushi-b;
+            font-size: 22px;
+            letter-spacing: 0.03em;
+            line-height: 1.4;
+            margin-bottom: 15px;
+          }
+          .terms_wrap{
+            .price_wrap{
+              margin-bottom: 25px;
+              .price{
+                @include tsukushi-b;
+                font-size: 18px;
+                letter-spacing: 0.03em;
+                position: relative;
+                padding-right: 1em;
+                margin-right: 0.3em;
+                &::after{
+                  display: block;
+                  content: "/";
+                  position: absolute;
+                  right: 0;
+                  top:0;
+                  bottom:0;
+                  height: 16px;
+                }
+              }
+              .duration{
+                @include tsukushi-b;
+                font-size: 16px;
+                letter-spacing: 0.03em;
+                color: #646464;
+              }
+            }
+            .term_detail{
+              @include basicP;
+              font-size: 14px;
+              letter-spacing: 0.5px;
+              margin-bottom: 30px;
+              .detail_list{
+                display: block;
+                padding-left: 15px;
+                position: relative;
+                &::after{
+                  display: block;
+                  content: "";
+                  width: 4px;
+                  height: 4px;
+                  position: absolute;
+                  left: 0;
+                  top: 14px;
+                  margin: auto;
+                  background: #646464;
+                  border-radius: 50%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .flex_left{
+      width: 60%;
+      .comp-section-title{
+        margin-bottom: 50px;
+      }
+      .detail_ttl{
+        font-size: 26px;
+        line-height: 1;
+        letter-spacing: 0.03em;
+        @include tsukushi-b;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .section-plans{
+    padding: 120px 0 60px;
+    background-color: #fff;
   }
 }

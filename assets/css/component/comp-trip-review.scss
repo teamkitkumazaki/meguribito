@@ -1,0 +1,37 @@
+.comp-trip-review{
+  margin-bottom: 60px;
+  .review_item{
+    @include flexSet;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    &:nth-last-of-type(1){
+      margin-bottom: 0;
+    }
+    .icon{
+      @include hover;
+      width: 70px;
+      height: 70px;
+      margin-right: 20px;
+      border-radius: 50%;
+      @include bgSet;
+    }
+    .review_content{
+      width: calc(100% - 90px);
+      padding-top: 5px;
+      .user_name{
+        @include hover;
+        @include tsukushi-b;
+        color: inherit;
+        font-size: 18px;
+        letter-spacing: 0.03em;
+      }
+      .review{
+        margin-top: 10px;
+        @include basicP;
+        font-size: 14px;
+      }
+    }
+  }
+}
