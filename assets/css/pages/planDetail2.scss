@@ -175,3 +175,118 @@
     }
   }
 }
+@media screen and (max-width: 980px){
+  .page-plan-detail{
+    .section-booking{
+      padding: 0 0 80px;
+      background: transparent;
+      margin-bottom: 0px;
+      overflow: hidden;
+      .booking_flex{
+        display: block;
+        .height_adjust{
+          display: none;
+        }
+        .txt_wrap{
+          width: 100%;
+        }
+      }
+    }
+    .section-detail03{
+      margin-bottom: 80px;
+      .detail_flex{
+        display: block;
+      }
+      .detail_fix_section{
+        .fix_inner{
+          display: none;
+        }
+      }
+      .flex_left{
+        width: 100%;
+        .comp-section-title{
+          margin-bottom: 50px;
+        }
+      }
+    }
+    .section-plans{
+      padding: 80px 0 20px;
+    }
+  }
+}
+@media screen and (max-width: 720px){
+  .page-plan-detail{
+    .section-booking{
+      padding: 0;
+      margin-bottom: 60px;
+      .booking_flex{
+        display: block;
+        .txt_wrap{
+          width: 100%;
+          .address{
+            margin-bottom: 30px;
+            .add_txt{
+              font-size: 16px;
+            }
+            .map_link{
+              font-size: 14px;
+            }
+          }
+          .facility{
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+    .section-detail03{
+      margin-bottom: 40px;
+      .detail_flex{
+        display: block;
+      }
+      .detail_fix_section{
+        display: none;
+      }
+      .flex_left{
+        width: 100%;
+        .comp-section-title{
+          margin-bottom: 30px;
+        }
+        .detail_ttl{
+          font-size: 22px;
+          letter-spacing: 0.03em;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .section-plans{
+      padding: 60px 0 20px;
+    }
+  }
+}
+.fixed_cart_button{
+  display: none;
+  @media screen and (max-width: 980px){
+    display: block;
+  }
+  position: sticky;
+  z-index: 50;
+  left:0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 -1px 4px 0 rgb(102 102 102 / 30%);
+  transition: transform 0.3s cubic-bezier(0.5, 1, 0.89, 1), opacity 0.3s cubic-bezier(0.5, 1, 0.89, 1);
+  transform: translate3d(0, 100%, 0);
+  .comp-booking-button{
+    padding: 15px 0;
+    @media screen and (max-width: 720px){
+      display: block;
+    }
+    @include waku;
+  }
+  &.display{
+    transform: translate3d(0, 0%, 0);
+  }
+}

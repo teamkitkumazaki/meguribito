@@ -78,3 +78,64 @@
     }
   }
 }
+
+@media screen and (max-width: 980px){
+  .comp-guesthouse-detail{
+    position: static;
+    height: auto !important;
+    width: 100vw;
+    overflow: visible;
+    margin-left: -7vw;
+    .slick-arrow{
+      display: none !important;
+    }
+    .slick-slider{
+      width: 70vw;
+      margin: 0 auto 30px;
+      .item_box{
+        display: block !important;
+        .slider_img{
+          width: 70vw;
+          box-sizing: border-box;
+          border-right: 15px solid #fff;
+        }
+      }
+    }
+    .yado_detail_txt{
+      width: 100%;
+      padding: 0 7vw;
+      box-sizing: border-box;
+      margin-bottom: 40px;
+      .yado_detail_ttl{
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 980px){
+  .comp-guesthouse-detail{
+    margin-left: -6vw;
+    .slick-slider{
+      width: 86vw;
+      margin: 0 auto 30px;
+      .item_box{
+        display: block !important;
+        .slider_img{
+          width: 86vw;
+          border-right: 15px solid #fff;
+        }
+      }
+    }
+    .yado_detail_txt{
+      padding: 0 6vw;
+      margin-bottom: 30px;
+      .yado_detail_ttl{
+        margin-bottom: 15px;
+        font-size: 5.5vw;
+      }
+      .description{
+        font-size: 14px;
+      }
+    }
+  }
+}

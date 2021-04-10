@@ -102,9 +102,9 @@
 
  // 通常投稿に親子関係を付ける
  function registered_post_hierarchical( $post_type, $post_type_object ) {
-   if ( $post_type == 'post' ) {
+   if ( $post_type == 'product' ) {
      $post_type_object->hierarchical = true;
-     add_post_type_support( 'post', 'page-attributes' );
+     add_post_type_support( 'product', 'page-attributes' );
    }
  }
  add_action( 'registered_post_type', 'registered_post_hierarchical', 10, 2 );

@@ -139,6 +139,7 @@
   }
   .section-plan-outline{
     margin-bottom: 100px;
+    overflow: hidden;
     .lead_flex{
       @include flexSet;
       justify-content: space-between;
@@ -228,6 +229,7 @@
   }
   .section-detail01{
     margin-bottom: 160px;
+    overflow: hidden;
     .detail_main{
       width: 85%;
       margin: 0 auto 120px;
@@ -268,6 +270,272 @@
       margin-bottom: 80px;
       .comp-plan-detail-flex{
         margin-bottom: 80px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 980px){
+  .page-plan-detail{
+    overflow: visible;
+    .section-main{
+      margin-bottom: 45px;
+      .img_box{
+        height: 70vh;
+        overflow: hidden;
+        position: relative;
+        background-image: none !important;
+        img{
+          width: 100%;
+          position: absolute;
+          width: 100%;
+          top: -8vh;
+          bottom: -8vh;
+          margin: auto;
+          display: block;
+        }
+      }
+    }
+    .section-lead{
+      .comp-section-title{
+        margin-bottom: 25px;
+        .title{
+          font-size: 34px;
+        }
+      }
+      .description{
+        width: 100%;
+      }
+    }
+    .section-plan-outline{
+      margin-bottom: 80px;
+      .lead_flex{
+        display: block;
+        .kagibito_wrap{
+          width: 100%;
+          margin-bottom: 40px;
+        }
+        .plan_outline{
+          width: 100%;
+        }
+      }
+    }
+    .section-detail01{
+      margin-bottom: 80px;
+      .detail_main{
+        width: 100%;
+        margin: 0 auto 80px;
+        .img_wrap{
+          margin-bottom: 25px;
+          position: relative;
+          height: 480px;
+          overflow: hidden;
+          img{
+            position: absolute;
+            top:0;
+            bottom:0;
+            left: -7vw;
+            right: -7vw;
+            margin: auto;
+            max-width: unset;
+            width: auto;
+            height: 480px;
+          }
+        }
+      }
+    }
+    .section-detail02{
+      margin-bottom: 80px;
+    }
+  }
+}
+@media screen and (max-width: 720px){
+  .page-plan-detail{
+    overflow: visible;
+    .comp-section-title.margin {
+      margin-bottom: 30px;
+    }
+    .section-main{
+      margin-bottom: 35px;
+      .img_box{
+        width: 100%;
+        height: 115vw;
+        img{
+          display: block;
+          position: static;
+        }
+      }
+    }
+    .section-lead{
+      .section_inner{
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+      }
+      .comp-section-title{
+        margin-bottom: 15px;
+        text-align: left;
+        .upper_txt{
+          margin-bottom: 10px;
+        }
+        .title{
+          font-size: 7vw;
+          letter-spacing: 0.03em;
+          span{
+            display: inline;
+          }
+        }
+      }
+      .location{
+        text-align: left;
+        margin-bottom: 20px;
+        span{
+          font-size: 12px;
+          line-height: normal;
+          color: #464646;
+          position: relative;
+          padding: 5px 0;
+          &.area{
+            padding-left: 20px;
+            margin-right: 10px;
+            &::before{
+              width: 14px;
+              background-size: 12px;
+            }
+          }
+          &.guesthouse{
+            padding-left: 20px;
+            &::before{
+              width: 14px;
+              background-size: 14px;
+            }
+          }
+        }
+      }
+      .description{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 14px;
+        .button_wrap{
+          margin-top: 30px;
+          @include flexSet;
+          justify-content: center;
+          a{
+            .text{
+              font-size: 14px;
+              letter-spacing: 0.5px;
+            }
+            &.favorite{
+              .icon{
+                background-size: 16px;
+                background-image: url(../img/plan/icon_favorite.png);
+              }
+            }
+          }
+          .favorite_button{
+            margin-right: 20px;
+          }
+          .sns_wrap{
+            @include flexSet;
+            a{
+              margin-right: 3px;
+              .text{
+                display: none;
+              }
+              &:nth-last-of-type(1){
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .section-plan-outline{
+      margin-bottom: 60px;
+      .lead_flex{
+        .kagibito_wrap{
+          width: 100%;
+          margin-bottom: 30px;
+          .kagibito_prof{
+            margin-bottom: 15px;
+            .icon{
+              width: 50px;
+              height: 50px;
+              margin-right: 15px;
+            }
+            .kagibito_info{
+              width: calc(100% - 65px);
+              margin-top: 5px;
+              .info{
+                font-size: 12px;
+                letter-spacing: 0.34px;
+                margin-bottom: 3px;
+              }
+              .name{
+                font-size: 16px;
+                letter-spacing: 0.4px;
+              }
+            }
+          }
+        }
+        .plan_outline{
+          width: 100%;
+          .outline_inner{
+            padding: 20px;
+            border-radius: 10px;
+            .title{
+              font-size: 20px;
+              margin-bottom: 15px;
+            }
+            .content{
+              font-size: 14px;
+              line-height: 1.88;
+              letter-spacing: 0.5px;
+              .item{
+                padding-left: 15px;
+                &::after{
+                  top: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .section-detail01{
+      margin-bottom: 60px;
+      .detail_main{
+        width: 100%;
+        margin: 0 auto 60px;
+        .img_wrap{
+          height: 70vw;
+          margin-bottom: 25px;
+          img{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -7vw;
+            right: -7vw;
+            margin: auto;
+            max-width: unset;
+            width: auto;
+            height: 70vw;
+          }
+        }
+        .txt_wrap{
+          .main_ttl{
+            font-size: 5.5vw;
+            line-height: 1.7;
+            margin-bottom: 15px;
+          }
+          .description{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .section-detail02{
+      margin-bottom: 60px;
+      .comp-plan-detail-flex{
+        margin-bottom: 60px;
       }
     }
   }

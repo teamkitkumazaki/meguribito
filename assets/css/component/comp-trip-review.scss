@@ -26,11 +26,53 @@
         color: inherit;
         font-size: 18px;
         letter-spacing: 0.03em;
+        .icon{
+          display: none;
+        }
       }
       .review{
         margin-top: 10px;
         @include basicP;
         font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  .comp-trip-review{
+    margin-bottom: 50px;
+    .review_item{
+      display: block;
+      padding: 20px;
+      .icon{
+        display: none;
+      }
+      .review_content{
+        width: 100%;
+        padding-top: 0px;
+        .user_name{
+          @include flexSet;
+          align-items: center;
+          font-size: 18px;
+          letter-spacing: 0.03em;
+          .icon{
+            display: block;
+            @include hover;
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+            border-radius: 50%;
+            @include bgSet;
+          }
+          .name{
+            width: calc(100% - 65px);
+          }
+        }
+        .review{
+          margin-top: 10px;
+          font-size: 12px;
+        }
       }
     }
   }

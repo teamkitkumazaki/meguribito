@@ -102,3 +102,42 @@
     }
   }
 }
+
+@media screen and (max-width: 720px){
+  .comp-trip-faq{
+    margin-bottom: 50px;
+    .faq_wrap{
+      .qa_item{
+        height: 72px;
+        margin-bottom: 10px;
+        .qa_button{
+          width: 100%;
+          text-align: left;
+          position: relative;
+          display: block;
+          font-size: 14px;
+          &::before, &::after{
+            position: absolute;
+            display: block;
+            content: "";
+            width: 16px;
+            height: 16px;
+            right: 15px;
+            background-size: 16px;
+            transition: opacity 0.2s;
+          }
+          span{
+            padding: 0 25px 0 30px;
+          }
+        }
+        .qa_contents{
+          padding: 0 10px 20px;
+          font-size: 12px;
+          p{
+            padding: 15px 0px 0px 25px;
+          }
+        }
+      }
+    }
+  }
+}

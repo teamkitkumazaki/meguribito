@@ -128,6 +128,9 @@ if (document.getElementById('index')) {
     function afterScroll() {
       fixedHeader.addClass('rolled');
       $('header').addClass('rolled');
+      if (document.getElementById('planDetail')) {
+        $('#fixedCartButton').addClass('display');
+      }
       scrollSwitch = 1;
     };
 
@@ -135,7 +138,10 @@ if (document.getElementById('index')) {
     function beforeScroll() {
       fixedHeader.removeClass('rolled');
       $('header').removeClass('rolled');
-    scrollSwitch = 0;
+      if (document.getElementById('planDetail')) {
+        $('#fixedCartButton').removeClass('display');
+      }
+      scrollSwitch = 0;
   };
 
   function init() {
@@ -469,11 +475,12 @@ if (document.getElementById('planDetail')) {
       centerMode: true,
       autoplay: false,
       responsive: [{
-        breakpoint: 760,
+        breakpoint: 720,
         settings: {
+          infinite: true,
           slidesToShow: 1,
           centerPadding: '10%',
-          centerMode: false,
+          centerMode: true,
         }
       }]
     });

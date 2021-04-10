@@ -1,5 +1,6 @@
 .comp-spot-list{
   .spot_inner{
+    overflow: hidden;
     border-radius: 15px;
     background-color: #fff;
     padding: 50px;
@@ -82,9 +83,7 @@
 @media screen and (max-width: 1200px){
   .comp-spot-list{
     .spot_inner{
-      border-radius: 15px;
-      background-color: #fff;
-      padding: 50px;
+      padding: 40px;
       .slick-slider{
         .item_box{
           display: flex !important;
@@ -97,12 +96,71 @@
           }
           .txt_wrap{
             width: calc(100% - 280px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px){
+  .comp-spot-list{
+    .spot_inner{
+      padding: 60px 7vw;
+      box-sizing: border-box;
+      width: 100vw;
+      margin-left: -7vw;
+      border-radius: 0;
+      .spot_ttl{
+        margin-bottom: 45px;
+        .icon{
+          display: block;
+          width: 50px;
+          height: 50px;
+          margin-right: 15px;
+        }
+        .title{
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  .comp-spot-list{
+    .spot_inner{
+      margin-left: -6vw;
+      margin-right: -6vw;
+      padding: 60px 0vw 30px;
+      .spot_ttl{
+        display: block;
+        margin-bottom: 45px;
+        text-align: center;
+        .icon{
+          display: block;
+          width: 60px;
+          height: 60px;
+          margin: 0 auto 15px;
+        }
+        .title{
+          font-size: 4.5vw;
+        }
+      }
+      .slick-slider{
+        .item_box{
+          display: block !important;
+          padding: 0 12px;
+          margin-bottom: 0;
+          .img_wrap{
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 10px;
+          }
+          .txt_wrap{
+            width: 100%;
             .title_wrap{
-              @include flexSet;
-              align-items: center;
-              background-color: #f4f4f4;
-              position: relative;
-              margin-bottom: 20px;
+              margin-bottom: 10px;
               &::after{
                 display: block;
                 content: "";
@@ -116,29 +174,18 @@
                 background: $black01;
               }
               .num{
-                position: relative;
-                z-index: 10;
                 width: 50px;
-                text-align: center;
-                color: #fff;
-                @include tsukushi-b;
-                font-size: 20px;
-                line-height: normal;
-                letter-spacing: 0.03em;
+                font-size: 16px;
               }
               .spot_name{
                 width: calc(100% - 50px);
                 padding: 10px 15px;
-                box-sizing: border-box;
-                font-size: 20px;
-                line-height: 1.6;
-                letter-spacing: 0.03em;
-                @include tsukushi-b;
+                font-size: 16px;
               }
             }
             .description{
               @include basicP;
-              font-size: 14px;
+              font-size: 12px;
             }
           }
         }
@@ -146,7 +193,6 @@
     }
   }
 }
-
 
 @media screen and (min-width: 1200px){
 	.comp-spot-list {
@@ -171,7 +217,7 @@
 		}
 	}
 }
-@media screen and (min-width: 980px) and (max-width: 1199px){
+@media screen and (min-width: 720px) and (max-width: 1199px){
 	.comp-spot-list {
 		.slick-dots{
 			display: none !important;
@@ -187,6 +233,28 @@
 					width: 100% !important;
           margin-right: 0%;
           margin-bottom: 60px;
+          &:nth-last-of-type(1){
+            margin-right: 0;
+            margin-bottom: 0;
+          }
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 720px){
+	.comp-spot-list {
+		.slick-dots{
+			display: none !important;
+		}
+    .slick-arrow{
+      display: none !important;
+    }
+		.slick-list{
+			.slick-track{
+				.slick-slide{
+          margin-right: 0%;
+          margin-bottom: 40px;
           &:nth-last-of-type(1){
             margin-right: 0;
             margin-bottom: 0;
