@@ -1,7 +1,7 @@
 .comp-guesthouse-detail{
   position: absolute;
   left: 45vw;
-  top: 60px;
+  top: 0px;
   bottom: 0;
   margin: auto;
   width: 100vw;
@@ -61,6 +61,20 @@
     }
     .description{
       @include basicP;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .comp-guesthouse-detail{
+    .slick-slider{
+      width: 450px;
+      margin-bottom: 60px;
+      .item_box{
+        .slider_img{
+          width: 450px;
+        }
+      }
     }
   }
 }

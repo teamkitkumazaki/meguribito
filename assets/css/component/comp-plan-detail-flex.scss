@@ -43,3 +43,11 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px){
+  .comp-plan-detail-flex{
+    .detail_item{
+      align-items: flex-start;
+    }
+  }
+}

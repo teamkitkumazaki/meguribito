@@ -255,3 +255,20 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px){
+  .page-plan-detail{
+    .section-plan-outline{
+      margin-bottom: 100px;
+    }
+    .section-detail01{
+      margin-bottom: 80px;
+    }
+    .section-detail02{
+      margin-bottom: 80px;
+      .comp-plan-detail-flex{
+        margin-bottom: 80px;
+      }
+    }
+  }
+}

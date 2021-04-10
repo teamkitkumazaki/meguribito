@@ -13,14 +13,14 @@
       box-sizing: border-box;
     }
     .title{
-      width: 250px;
+      width: 25%;
       padding: 15px;
       background: #f1f1f1;
       font-size: 16px;
       @include tsukushi-b;
     }
     .content{
-      width: calc(100% - 250px);
+      width: 75%;
       padding: 15px 20px 15px 20px;
       font-size: 14px;
       span{

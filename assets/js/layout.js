@@ -420,6 +420,22 @@ if (document.getElementById('planDetail')) {
   faqToggle($('#faqToggle'));
 }
 
+function contetHeightAdjust(){
+  var heightAdjust = $('#heightAdjust');
+  var guestHouseWrap = $('#guestHouseWrap');
+  var wrapInner = $('#wrapInner').outerHeight();
+  heightAdjust.css({'height': wrapInner + 30 + 'px'});
+  guestHouseWrap.css({'height': wrapInner + 30 + 'px'});
+}
+
+if (document.getElementById('planDetail')) {
+  $(window).on({
+    'resize': function(){
+      contetHeightAdjust();
+    }
+  })
+}
+
   if (document.getElementById('index')) {
     $('#serviceSlider').slick({
       accessibility: false,
@@ -482,5 +498,6 @@ if (document.getElementById('planDetail')) {
         }
       }]
     });
+    contetHeightAdjust($('#faqToggle'));
   }
 });
