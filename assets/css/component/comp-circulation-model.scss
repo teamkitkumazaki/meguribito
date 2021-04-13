@@ -92,3 +92,48 @@
     }
   }
 }
+
+@media screen and (max-width: 720px){
+  .comp-circulation-model{
+    height: 84vw;
+    margin-bottom: 60px;
+    .simply-scroll-list{
+      width: calc(65vw * 10);
+      ul{
+        &:first-child{
+          animation: loop 60s -30s linear infinite;
+        }
+        li{
+          width: 50vw;
+          margin-right: 15vw;
+          .img_wrap{
+            margin-bottom: 20px;
+            position: relative;
+            &::after{
+              right: -9.5vw;
+            }
+          }
+          .txt_wrap{
+            display: block;
+            .num{
+              display: block;
+              width: 40px;
+              height: 40px;
+              margin: 0 auto 15px;
+              line-height: 40px;
+              font-size: 16px;
+            }
+            .ttl{
+              width: 100%;
+              font-size: 18px;
+              text-align: center;
+            }
+          }
+        }
+      }
+      ul + ul{
+        animation: loop2 60s linear infinite;
+      }
+    }
+  }
+}

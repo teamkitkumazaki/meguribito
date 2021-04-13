@@ -520,7 +520,7 @@ if (document.getElementById('planDetail')) {
         settings: {
           infinite: true,
           slidesToShow: 1,
-          centerPadding: '10%',
+          centerPadding: '5%',
           centerMode: true,
         }
       }]
