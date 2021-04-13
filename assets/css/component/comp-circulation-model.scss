@@ -1,0 +1,94 @@
+@keyframes loop {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.comp-circulation-model{
+  width: 100%;
+  height: 400px;
+  margin-bottom: 80px;
+  position: relative;
+  .simply-scroll-list{
+    position: relative;
+    width: calc(370px * 10);
+    @include flexSet;
+    flex-flow: row nowrap;
+    overflow: hidden;
+    ul{
+      width: 100%;
+      @include flexSet;
+      flex-flow: row nowrap;
+      &:first-child{
+        animation: loop 40s -20s linear infinite;
+        backface-visibility: hidden;
+        will-change: transform;
+      }
+      li{
+        width: 300px;
+        margin-right: 70px;
+        .img_wrap{
+          margin-bottom: 30px;
+          position: relative;
+          &::after{
+            position: absolute;
+            display: block;
+            content: "";
+            width: 16px;
+            height: 16px;
+            top:0;
+            bottom: 0;
+            right: -42px;
+            margin: auto;
+            @include bgSet;
+            background-size: contain;
+            background-image: url(../img/service/slider_caret.svg);
+          }
+          img{
+            pointer-events: none;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+        }
+        .txt_wrap{
+          @include flexSet;
+          align-items: center;
+          .num{
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            background-color: $black01;
+            border-radius: 50%;
+            @include tsukushi-r;
+            color: #fff;
+            line-height: 60px;
+            font-size: 20px;
+            text-align: center;
+          }
+          .ttl{
+            width: calc(100% - 75px);
+            @include tsukushi-b;
+            font-size: 22px;
+            line-height: 1.6;
+            letter-spacing: 0.03em;
+          }
+        }
+      }
+    }
+    ul + ul{
+      animation: loop2 40s linear infinite;
+    }
+  }
+}

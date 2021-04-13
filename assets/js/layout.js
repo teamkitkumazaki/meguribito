@@ -507,4 +507,23 @@ if (document.getElementById('planDetail')) {
     });
     contetHeightAdjust($('#faqToggle'));
   }
+  if (document.getElementById('service')) {
+    $('#characterSlider').slick({
+      accessibility: false,
+      infinite: false,
+      dots: true,
+      slidesToShow: 3,
+      centerMode: true,
+      autoplay: false,
+      responsive: [{
+        breakpoint: 720,
+        settings: {
+          infinite: true,
+          slidesToShow: 1,
+          centerPadding: '10%',
+          centerMode: true,
+        }
+      }]
+    });
+  }
 });

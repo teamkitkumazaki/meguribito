@@ -18,6 +18,7 @@
 @import 'pages/kagibitoList.scss';
 @import 'pages/kagibitoDetail.scss';
 @import 'pages/about.scss';
+@import 'pages/service.scss';
 @import 'pages/flow.scss';
 @import 'pages/transaction.scss';
 @import 'pages/privacy.scss';
@@ -64,6 +65,10 @@
 /* ニュース一覧 */
 @import 'component/comp-news-list.scss';
 
+/* サービス紹介 */
+@import 'component/comp-service-concept.scss';
+@import 'component/comp-character-wrap.scss';
+@import 'component/comp-circulation-model.scss';
 /* 旅の流れ */
 @import 'component/comp-flow-wrap.scss';
 

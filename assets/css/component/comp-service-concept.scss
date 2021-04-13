@@ -1,0 +1,39 @@
+.comp-service-concept{
+  .concept_item{
+    @include flexSet;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: $basicBgColor;
+    margin-bottom: 15px;
+    &:nth-last-of-type(1){
+      margin-bottom: 0;
+    }
+    .img_wrap{
+      width: 300px;
+      margin-right: 40px;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .txt_wrap{
+      width: calc(100% - 360px);
+      .title_wrap{
+        letter-spacing: 0.03em;
+        @include tsukushi-b;
+        margin-bottom: 10px;
+        .mini_ttl{
+          display: block;
+          font-size: 16px;
+          line-height: normal;
+        }
+        .concept_ttl{
+          font-size: 26px;
+          line-height: 1.6;
+        }
+      }
+      .description{
+        @include basicP;
+      }
+    }
+  }
+}

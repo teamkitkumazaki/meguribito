@@ -1,0 +1,60 @@
+.page-service{
+  .section-lead{
+    padding: 200px 0 120px;
+    .img_wrap{
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 60px;
+      @include bgSet;
+      background-image: url(../img/common/logo.svg);
+    }
+    .comp-section-title{
+      margin-bottom: 40px;
+      .title{
+        .indent{
+          display: inline-block;
+          width: 0.75em;
+        }
+      }
+    }
+    .lead_txt{
+      text-align: center;
+      p{
+        @include tsukushi-b;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.03em;
+        color: #363636;
+        margin-bottom: 20px;
+        span{
+          display: block;
+        }
+      }
+    }
+  }
+  .section-concept{
+    padding: 120px 0;
+    background: #fff;
+  }
+  .section-character{
+    padding: 120px 0;
+  }
+  .section-message{
+    padding: 120px 0;
+    background: #fff;
+    .flex_txt_wrap{
+      @include flexSet;
+      justify-content: space-between;
+      .txt_section{
+        width: 47%;
+        @include basicP;
+        p{
+          margin-bottom: 1em;
+          &:nth-last-of-type(1){
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
