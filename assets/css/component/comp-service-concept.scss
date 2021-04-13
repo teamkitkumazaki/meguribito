@@ -37,3 +37,24 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px){
+  .comp-service-concept{
+    .concept_item{
+      .txt_wrap{
+        .title_wrap{
+          margin-bottom: 10px;
+          .mini_ttl{
+            font-size: 14px;
+          }
+          .concept_ttl{
+            font-size: 22px;
+          }
+        }
+        .description{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
