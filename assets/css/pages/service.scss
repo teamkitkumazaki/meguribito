@@ -100,3 +100,52 @@
     }
   }
 }
+@media screen and (max-width: 980px){
+  .page-service{
+    .section-lead{
+      padding: 200px 0 80px;
+      .img_wrap{
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 60px;
+        @include bgSet;
+        background-image: url(../img/common/logo.svg);
+      }
+      .comp-section-title{
+        margin-bottom: 40px;
+        .title{
+          .indent{
+            display: inline-block;
+            width: 0.75em;
+          }
+        }
+      }
+      .lead_txt{
+        text-align: left;
+        p{
+          @include tsukushi-b;
+          font-size: 18px;
+          line-height: 2;
+          letter-spacing: 0.03em;
+          color: #363636;
+          margin-bottom: 20px;
+          span{
+            display: inline;
+          }
+        }
+      }
+    }
+    .section-message{
+      .flex_txt_wrap{
+        display: block;
+        .txt_section{
+          width: 100%;
+          @include basicP;
+          &:nth-of-type(1){
+            margin-bottom: 1em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -2690,6 +2690,54 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 0;
   }
 }
+@media screen and (max-width: 980px) {
+  .page-service .section-lead {
+    padding: 200px 0 80px;
+  }
+  .page-service .section-lead .img_wrap {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 60px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/common/logo.svg);
+  }
+  .page-service .section-lead .comp-section-title {
+    margin-bottom: 40px;
+  }
+  .page-service .section-lead .comp-section-title .title .indent {
+    display: inline-block;
+    width: 0.75em;
+  }
+  .page-service .section-lead .lead_txt {
+    text-align: left;
+  }
+  .page-service .section-lead .lead_txt p {
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    color: #363636;
+    margin-bottom: 20px;
+  }
+  .page-service .section-lead .lead_txt p span {
+    display: inline;
+  }
+  .page-service .section-message .flex_txt_wrap {
+    display: block;
+  }
+  .page-service .section-message .flex_txt_wrap .txt_section {
+    width: 100%;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.6px;
+  }
+  .page-service .section-message .flex_txt_wrap .txt_section:nth-of-type(1) {
+    margin-bottom: 1em;
+  }
+}
 .page-flow .section-flow-01 {
   margin: 80px auto 100px;
 }
@@ -6497,6 +6545,36 @@ footer .footer_inner .footer_lower .copyright {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 720px) {
+  .comp-service-concept .concept_item {
+    display: block;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .comp-service-concept .concept_item .img_wrap {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  .comp-service-concept .concept_item .img_wrap img {
+    width: 100%;
+  }
+  .comp-service-concept .concept_item .txt_wrap {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .comp-service-concept .concept_item .txt_wrap .title_wrap {
+    margin-bottom: 10px;
+  }
+  .comp-service-concept .concept_item .txt_wrap .title_wrap .mini_ttl {
+    font-size: 14px;
+  }
+  .comp-service-concept .concept_item .txt_wrap .title_wrap .concept_ttl {
+    font-size: 22px;
+  }
+}
 .comp-character-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -6539,6 +6617,49 @@ footer .footer_inner .footer_lower .copyright {
   padding: 0 5px;
 }
 
+@media screen and (max-width: 980px) {
+  .comp-character-wrap {
+    display: block;
+  }
+  .comp-character-wrap .item_box {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex !important;
+    align-items: flex-start;
+    padding: 15px 15px 20px;
+    border-radius: 15px;
+    min-height: unset;
+  }
+  .comp-character-wrap .item_box .img_wrap {
+    width: 200px;
+    margin-right: 30px;
+    border-radius: 15px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+  }
+  .comp-character-wrap .item_box .txt_wrap {
+    width: calc(100% - 240px);
+    margin-top: 10px;
+  }
+  .comp-character-wrap .item_box .txt_wrap .title_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .comp-character-wrap .item_box .txt_wrap .title_wrap .name {
+    font-size: 22px;
+    margin-right: 0.6em;
+    margin-bottom: 0px;
+  }
+  .comp-character-wrap .item_box .txt_wrap .title_wrap .name_added {
+    font-size: 14px;
+  }
+  .comp-character-wrap .item_box .txt_wrap .description {
+    font-size: 12px;
+    padding: 0;
+  }
+}
 @media screen and (min-width: 980px) {
   .comp-character-wrap .slick-dots {
     display: none !important;
@@ -6581,60 +6702,20 @@ footer .footer_inner .footer_lower .copyright {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 720px) and (max-width: 979px) {
-  .comp-character-wrap .slick-dots {
-    display: none !important;
-  }
-  .comp-character-wrap .slick-list {
-    padding: 0 !important;
-    width: 100% !important;
-  }
-  .comp-character-wrap .slick-list .slick-track {
-    max-width: 1400px;
-    width: 80.5vw;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100% !important;
-    transform: translate3d(0px, 0px, 0px) !important;
-  }
-}
-@media screen and (min-width: 720px) and (max-width: 979px) and (max-width: 1100px) {
-  .comp-character-wrap .slick-list .slick-track {
-    width: 86vw;
-  }
-}
-@media screen and (min-width: 720px) and (max-width: 979px) and (max-width: 980px) {
-  .comp-character-wrap .slick-list .slick-track {
-    max-width: 780px;
-    width: 86vw;
-  }
-}
-@media screen and (min-width: 720px) and (max-width: 979px) and (max-width: 720px) {
-  .comp-character-wrap .slick-list .slick-track {
-    width: 88vw;
-  }
-}
-@media screen and (min-width: 720px) and (max-width: 979px) {
-  .comp-character-wrap .slick-list .slick-track .slick-slide {
-    width: 100% !important;
-    margin-right: 0%;
-    margin-bottom: 60px;
-  }
-  .comp-character-wrap .slick-list .slick-track .slick-slide:nth-last-of-type(1) {
-    margin-right: 0;
-    margin-bottom: 0;
-  }
-}
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 979px) {
   .comp-character-wrap .slick-dots {
     display: none !important;
   }
   .comp-character-wrap .slick-arrow {
     display: none !important;
   }
+  .comp-character-wrap .slick-list {
+    padding: 0 !important;
+  }
   .comp-character-wrap .slick-list .slick-track .slick-slide {
+    width: 100% !important;
     margin-right: 0%;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
   }
   .comp-character-wrap .slick-list .slick-track .slick-slide:nth-last-of-type(1) {
     margin-right: 0;

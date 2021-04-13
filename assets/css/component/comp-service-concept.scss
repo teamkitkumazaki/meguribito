@@ -58,3 +58,35 @@
     }
   }
 }
+@media screen and (max-width: 720px){
+  .comp-service-concept{
+    .concept_item{
+      display: block;
+      padding: 20px;
+      border-radius: 15px;
+      .img_wrap{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        img{
+          width: 100%;
+        }
+      }
+      .txt_wrap{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        .title_wrap{
+          margin-bottom: 10px;
+          .mini_ttl{
+            font-size: 14px;
+          }
+          .concept_ttl{
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}
