@@ -12,11 +12,11 @@
 			</div>
 			<nav class="h_nav">
 				<ul>
-					<li><a href="#aaaa">メグリビトについて</a></li>
+					<li><a href="<?php echo esc_url(home_url('/' ));?>service">メグリビトについて</a></li>
 					<li><a href="#aaaa">運営からのお知らせ</a></li>
 				</ul>
 				<ul>
-					<li><a href="#aaaa">私たちについて</a></li>
+					<li><a href="<?php echo esc_url(home_url('/' ));?>about">私たちについて</a></li>
 					<li><a href="<?php echo esc_url(home_url('/' ));?>flow">旅の流れ</a></li>
 				</ul>
 			</nav><!-- h_nav -->
@@ -80,16 +80,16 @@
 			</div>
 			<div class="hummenu_nav_middle">
 				<div class="nav_item">
-					<a href="#aaaa"><span>メグリビトについて</span></a>
+					<a href="<?php echo esc_url(home_url('/' ));?>service"><span>メグリビトについて</span></a>
 				</div>
 				<div class="nav_item">
 					<a href="#aaaa"><span>運営からのお知らせ</span></a>
 				</div>
 				<div class="nav_item">
-					<a href="#aaaa"><span>私たちについて</span></a>
+					<a href="<?php echo esc_url(home_url('/' ));?>about"><span>私たちについて</span></a>
 				</div>
 				<div class="nav_item">
-					<a href="#aaaa"><span>旅の流れ</span></a>
+					<a href="<?php echo esc_url(home_url('/' ));?>flow"><span>旅の流れ</span></a>
 				</div>
 			</div>
 			<div class="hummenu_nav_lower">
@@ -97,10 +97,10 @@
 					<a href="#aaaa"><span>運営団体</span></a>
 				</div>
 				<div class="nav_item">
-					<a href="#aaaa"><span>プライバシーポリシー</span></a>
+					<a href="<?php echo esc_url(home_url('/' ));?>privacy"><span>プライバシーポリシー</span></a>
 				</div>
 				<div class="nav_item">
-					<a href="#aaaa"><span>特定商取引法に基づく表記</span></a>
+					<a href="<?php echo esc_url(home_url('/' ));?>transaction"><span>特定商取引法に基づく表記</span></a>
 				</div>
 			</div>
 			<div class="sns_wrap">

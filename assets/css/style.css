@@ -6569,11 +6569,12 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-service-concept .concept_item .txt_wrap .title_wrap .mini_ttl {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   line-height: normal;
+  margin-bottom: 10px;
 }
 .comp-service-concept .concept_item .txt_wrap .title_wrap .concept_ttl {
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.6;
 }
 .comp-service-concept .concept_item .txt_wrap .description {

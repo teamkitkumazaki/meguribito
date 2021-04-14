@@ -11,11 +11,11 @@
 			</div>
 			<nav class="h_nav">
 				<ul>
-					<li><a href="#aaaa">メグリビトについて</a></li>
+					<li><a href="<?php echo esc_url(home_url('/' ));?>service">メグリビトについて</a></li>
 					<li><a href="#aaaa">運営からのお知らせ</a></li>
 				</ul>
 				<ul>
-					<li><a href="#aaaa">私たちについて</a></li>
+					<li><a href="<?php echo esc_url(home_url('/' ));?>about">私たちについて</a></li>
 					<li><a href="<?php echo esc_url(home_url('/' ));?>flow">旅の流れ</a></li>
 				</ul>
 			</nav><!-- h_nav -->

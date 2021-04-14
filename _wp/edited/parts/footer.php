@@ -11,7 +11,7 @@
     </div><!-- footer_upper -->
     <div class="footer_lower">
       <div class="nav_upper">
-        <a href="#aaaa">メグリビトについて</a>
+        <a href="<?php echo esc_url(home_url('/' ));?>service">メグリビトについて</a>
         <a href="#aaaa">プラン一覧</a>
         <a href="<?php echo esc_url(home_url('/' ));?>kagibito">カギビト一覧</a>
         <a href="<?php echo esc_url(home_url('/' ));?>flow">旅の流れ</a>
