@@ -5,7 +5,7 @@ body {
   font-style: normal;
   line-height: 1;
 	letter-spacing: 0.07em;
-  color: $black02;
+  color: $black02 !important;
 	background: $basicBgColor;
 	font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	&.bind{

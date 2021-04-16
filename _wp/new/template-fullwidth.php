@@ -1,3 +1,9 @@
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+<?php get_template_part("parts/head");?>
+</head>
+<body>
 <?php
 /**
  * The template for displaying full width pages.
@@ -8,7 +14,7 @@
  */
 
 get_header(); ?>
-
+<article id="index" class="page-index">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -32,6 +38,8 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php
-get_footer();
+</article>
+<?php get_template_part("parts/hummenu");?>
+<?php get_template_part("parts/footer");?>
+</body>
+</html>
