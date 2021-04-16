@@ -73,6 +73,10 @@
       width: 80%;
       margin: 0 auto;
       @include basicP;
+      .comp-booking-button{
+        max-width: 600px;
+        margin: 40px auto 20px;
+      }
       .button_wrap{
         margin-top: 50px;
         @include flexSet;
@@ -414,6 +418,10 @@
         width: 100%;
         margin: 0 auto;
         font-size: 14px;
+        .comp-booking-button{
+          max-width: 100%;
+          margin: 20px auto;
+        }
         .button_wrap{
           margin-top: 30px;
           @include flexSet;

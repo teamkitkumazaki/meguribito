@@ -497,6 +497,15 @@
 				</div>
 			</div><!-- section_inner -->
 		</section>
+    <section id="detailPopup" class="section-popup comp-detail-pop open">
+			<div class="scroll_wrap">
+				<div class="section_inner">
+          <?php
+      			get_template_part( 'content', 'single' );
+      		?>
+				</div><!-- section_inner -->
+			</div><!-- scroll_wrap -->
+		</section>
   <?php endwhile; endif; ?>
 	<section id="plans" class="section-plans">
 		<div class="section_inner">

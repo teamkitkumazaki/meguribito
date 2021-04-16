@@ -1,14 +1,21 @@
-<?php
-/**
+<!doctype html>
+<html>
+<head>
+<?php /**
  * The template for displaying full width pages.
  *
  * Template Name: Full width
  *
  * @package storefront
  */
-
-get_header(); ?>
-
+ get_template_part("parts/head");
+?>
+</head>
+<body>
+<header class="comp-header">
+<?php get_template_part("parts/header");?>
+</header>
+<article id="index" class="page-index">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -32,6 +39,8 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php
-get_footer();
+</article>
+<?php get_template_part("parts/hummenu");?>
+<?php get_template_part("parts/footer");?>
+</body>
+</html>
