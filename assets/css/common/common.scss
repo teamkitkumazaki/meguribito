@@ -64,6 +64,7 @@ button{
 	background: transparent;
 	appearance: none;
 	border: none;
+	background-color: transparent !important;
 	&:focus{
 		outline: none;
 	}

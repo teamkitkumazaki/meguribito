@@ -210,6 +210,7 @@ button {
   -webkit-appearance: none;
           appearance: none;
   border: none;
+  background-color: transparent !important;
 }
 button:focus {
   outline: none;
@@ -3911,6 +3912,8 @@ footer .footer_inner .footer_lower .copyright {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  background-color: transparent !important;
+  pointer-events: auto;
 }
 
 @media screen and (max-width: 980px) {
