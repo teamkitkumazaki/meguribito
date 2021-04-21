@@ -270,6 +270,10 @@ button:focus {
   }
 }
 
+.storefront-breadcrumb {
+  display: none !important;
+}
+
 .comp-header {
   position: absolute;
   width: 100%;
@@ -2591,6 +2595,227 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 30px;
   }
 }
+.page-cart .section-lead {
+  margin-bottom: 60px;
+}
+.page-cart .section-cart {
+  margin-bottom: 120px;
+}
+.page-cart .section-cart .woocommerce table, .page-cart .section-cart .woocommerce tbody {
+  width: 100%;
+  display: block;
+}
+.page-cart .section-cart .woocommerce td {
+  display: block;
+}
+.page-cart .section-cart .woocommerce thead {
+  display: none;
+}
+.page-cart .section-cart .woocommerce .cart {
+  margin-bottom: 35px !important;
+}
+.page-cart .section-cart .woocommerce .cart tbody {
+  margin-bottom: 0px !important;
+}
+.page-cart .section-cart .woocommerce .cart tr {
+  width: 100%;
+  display: none;
+  box-sizing: border-box;
+}
+.page-cart .section-cart .woocommerce .cart tr.cart_item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  padding: 25px;
+}
+.page-cart .section-cart .woocommerce .cart tr .coupon {
+  display: none;
+}
+.page-cart .section-cart .woocommerce .cart .product-remove {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 0 !important;
+}
+.page-cart .section-cart .woocommerce .cart .product-remove a {
+  color: #fff;
+  background: #3f3f3f;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  line-height: 27px;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  text-indent: 0.1em;
+  transition: opacity 0.3s;
+}
+.page-cart .section-cart .woocommerce .cart .product-remove a:hover {
+  opacity: 0.75;
+}
+.page-cart .section-cart .woocommerce .cart .product-remove a::before {
+  display: none !important;
+}
+.page-cart .section-cart .woocommerce .cart .product-thumbnail {
+  width: 120px;
+  padding: 0 !important;
+}
+.page-cart .section-cart .woocommerce .cart .product-thumbnail a {
+  display: block;
+}
+.page-cart .section-cart .woocommerce .cart .product-thumbnail a img {
+  max-width: 100% !important;
+}
+.page-cart .section-cart .woocommerce .cart .product-name {
+  width: calc(100% - 570px);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+.page-cart .section-cart .woocommerce .cart .product-name a {
+  display: block;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  color: inherit;
+  text-align: left !important;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.page-cart .section-cart .woocommerce .cart .product-name .variation {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-cart .section-cart .woocommerce .cart .product-name .variation dt {
+  display: none;
+}
+.page-cart .section-cart .woocommerce .cart .product-name .variation dd {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.44;
+  letter-spacing: 0.03em;
+}
+.page-cart .section-cart .woocommerce .cart .product-price, .page-cart .section-cart .woocommerce .cart .product-quantity, .page-cart .section-cart .woocommerce .cart .product-subtotal {
+  text-align: center;
+  font-size: 18px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+.page-cart .section-cart .woocommerce .cart .product-price::before, .page-cart .section-cart .woocommerce .cart .product-quantity::before, .page-cart .section-cart .woocommerce .cart .product-subtotal::before {
+  width: 100%;
+  display: block;
+  content: "金額";
+  text-align: center;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  color: #3f3f3f;
+  padding: 10px 0;
+  background: #f4f4f4;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.page-cart .section-cart .woocommerce .cart .product-price {
+  width: 150px;
+  box-sizing: border-box;
+  padding: 0;
+  padding-right: 20px;
+}
+.page-cart .section-cart .woocommerce .cart .product-price::before {
+  content: "金額";
+}
+.page-cart .section-cart .woocommerce .cart .product-quantity {
+  width: 150px;
+  box-sizing: border-box;
+  padding: 0;
+  padding-right: 20px;
+}
+.page-cart .section-cart .woocommerce .cart .product-quantity::before {
+  content: "人数";
+}
+.page-cart .section-cart .woocommerce .cart .product-subtotal {
+  width: 150px;
+  box-sizing: border-box;
+  padding: 0;
+  padding-right: 30px;
+}
+.page-cart .section-cart .woocommerce .cart .product-subtotal::before {
+  content: "合計";
+}
+.page-cart .section-cart .woocommerce .cart-collaterals {
+  padding: 0 20px;
+}
+.page-cart .section-cart .woocommerce .cart-collaterals .cart_totals {
+  width: 100% !important;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-cart .section-cart .woocommerce .cart-collaterals .cart_totals h2 {
+  display: none;
+}
+.page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .shop_table {
+  width: 35%;
+}
+.page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .shop_table .cart-subtotal {
+  display: none;
+}
+.page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .shop_table .order-total {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 0.03em;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+}
+.page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .shop_table .order-total th::after {
+  display: inline;
+  content: "金額:";
+}
+.page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .shop_table .order-total td {
+  background-color: transparent !important;
+}
+.page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .shop_table .order-total td strong {
+  font-size: 24px;
+}
+.page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .shop_table .order-total td strong::after {
+  font-size: 18px;
+  display: inline-block;
+  content: "(税込)";
+  padding-left: 5px;
+}
+.page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout {
+  width: 50%;
+  margin-bottom: 0 !important;
+}
+.page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout a {
+  display: block;
+  background-color: #BF992E;
+  padding: 15px 0;
+  text-align: center;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  margin-bottom: 0 !important;
+  transition: opacity 0.3s;
+}
+.page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout a:hover {
+  opacity: 0.75;
+}
+
 .page-service .section-lead {
   padding: 200px 0 120px;
 }
@@ -4659,8 +4884,8 @@ footer .footer_inner .footer_lower .copyright {
   display: block;
   width: 100%;
   padding: 15px 0;
-  background-color: #BF992E;
-  color: #fff;
+  background-color: #BF992E !important;
+  color: #fff !important;
   font-family: "FOT-筑紫A丸ゴシック Std D";
   font-weight: bold;
   font-size: 20px;
@@ -5948,7 +6173,7 @@ footer .footer_inner .footer_lower .copyright {
   border-radius: 5px;
   letter-spacing: 0.1em;
   color: #222;
-  background: #fff;
+  background: #fff !important;
   padding: 15px;
   font-family: "FOT-筑紫A丸ゴシック Std D";
   font-weight: bold;
