@@ -2604,6 +2604,44 @@ footer .footer_inner .footer_lower .copyright {
 .page-cart .section-cart {
   margin-bottom: 120px;
 }
+.page-cart .section-cart .woocommerce .cart-empty {
+  background-color: #fff !important;
+  border-left: 0px !important;
+  color: inherit !important;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+.page-cart .section-cart .woocommerce .cart-empty::before {
+  position: absolute;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 1.5em;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  color: inherit !important;
+}
+.page-cart .section-cart .woocommerce .return-to-shop .button {
+  background-color: transparent !important;
+  color: inherit;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  transition: opacity 0.3s;
+}
+.page-cart .section-cart .woocommerce .return-to-shop .button:hover {
+  opacity: 0.75;
+}
+@media screen and (max-width: 980px) {
+  .page-cart .section-cart .woocommerce .return-to-shop .button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
 .page-cart .section-cart .woocommerce table, .page-cart .section-cart .woocommerce tbody {
   width: 100%;
   display: block;
@@ -2909,6 +2947,133 @@ footer .footer_inner .footer_lower .copyright {
   .page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout {
     width: 100%;
     margin-bottom: 0 !important;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-cart {
+    min-height: unset;
+  }
+  .page-cart .section-lead {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .page-cart .section-lead .page_ttl {
+    font-size: 6.5vw;
+    letter-spacing: 0.03em;
+  }
+  .page-cart .section-lead .sub_ttl {
+    font-size: 3.6vw;
+    letter-spacing: 0.03em;
+  }
+  .page-cart .section-cart {
+    margin-bottom: 60px;
+  }
+  .page-cart .section-cart .woocommerce .cart {
+    margin-bottom: 20px !important;
+  }
+  .page-cart .section-cart .woocommerce .cart tr.cart_item {
+    padding: 20px;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-remove {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 0 !important;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-remove a {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    text-indent: 0.1em;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-remove a::before {
+    display: none !important;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-thumbnail {
+    width: 30%;
+    padding: 0 !important;
+    margin-bottom: 20px;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-name {
+    width: 70%;
+    padding: 0 0 0 20px;
+    margin-bottom: 20px;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-name::before {
+    display: none !important;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-name a {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-name .variation {
+    margin-bottom: 5px;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-name .variation dt {
+    display: none;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-name .variation dd {
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 10px;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-price, .page-cart .section-cart .woocommerce .cart .product-quantity, .page-cart .section-cart .woocommerce .cart .product-subtotal {
+    text-align: left;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-price::before, .page-cart .section-cart .woocommerce .cart .product-quantity::before, .page-cart .section-cart .woocommerce .cart .product-subtotal::before {
+    width: 50%;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 0px;
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-price {
+    width: 100%;
+    padding-right: 0px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-quantity {
+    width: 100%;
+    padding-right: 0px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-subtotal {
+    width: 100%;
+    margin-right: 0;
+  }
+  .page-cart .section-cart .woocommerce .cart-collaterals {
+    padding: 0 10px;
+  }
+  .page-cart .section-cart .woocommerce .cart-collaterals .cart_totals {
+    display: block;
+  }
+  .page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .shop_table {
+    width: 100%;
+  }
+  .page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .shop_table .order-total {
+    font-size: 18px;
+  }
+  .page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .shop_table .order-total th {
+    display: block;
+  }
+  .page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .shop_table .order-total td::before {
+    display: none !important;
+  }
+  .page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .shop_table .order-total td strong {
+    font-size: 20px;
+  }
+  .page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .shop_table .order-total td strong::after {
+    font-size: 16px;
   }
 }
 .page-service .section-lead {
@@ -8864,6 +9029,37 @@ footer .footer_inner .footer_lower .copyright {
     padding: 0 15px;
   }
 }
+/* カート・マイページ */
+.woocommerce-message {
+  position: fixed !important;
+  bottom: 0;
+  z-index: 50;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: auto !important;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+@media screen and (max-width: 980px) {
+  .woocommerce-message {
+    font-size: 14px;
+  }
+}
+.woocommerce-message::before {
+  position: absolute;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 1.5em;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+.woocommerce-message a {
+  display: none !important;
+}
+
 /* プライバシーポリシー */
 .comp-privacy-text .text_item {
   margin-bottom: 60px;

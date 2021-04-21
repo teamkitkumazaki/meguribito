@@ -1,0 +1,27 @@
+.woocommerce-message{
+  position: fixed !important;
+  bottom: 0;
+  z-index: 50;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: auto !important;
+  box-sizing: border-box;
+  line-height: 1.6;
+  @media screen and (max-width: 980px){
+    font-size: 14px;
+  }
+  &::before{
+    position: absolute;
+    top: 0 !important;
+    bottom: 0  !important;
+    left: 1.5em;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+  }
+  a{
+    display: none !important;
+  }
+}
