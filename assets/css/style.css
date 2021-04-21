@@ -2595,6 +2595,9 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 30px;
   }
 }
+.page-cart {
+  min-height: unset;
+}
 .page-cart .section-lead {
   margin-bottom: 60px;
 }
@@ -2689,6 +2692,7 @@ footer .footer_inner .footer_lower .copyright {
 .page-cart .section-cart .woocommerce .cart .product-name .variation {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 .page-cart .section-cart .woocommerce .cart .product-name .variation dt {
   display: none;
@@ -2699,6 +2703,22 @@ footer .footer_inner .footer_lower .copyright {
   font-size: 14px;
   line-height: 1.44;
   letter-spacing: 0.03em;
+  margin-bottom: 0;
+}
+.page-cart .section-cart .woocommerce .cart .product-name .variation dd:nth-of-type(1) p::before {
+  display: inline-block;
+  content: "予約日:";
+  padding-right: 5px;
+}
+.page-cart .section-cart .woocommerce .cart .product-name .variation dd:nth-of-type(2) p::before {
+  display: inline-block;
+  content: "〜";
+  display: inline-block;
+  padding: 0 5px;
+}
+.page-cart .section-cart .woocommerce .cart .product-name .variation dd:nth-of-type(2) p::after {
+  display: inline;
+  content: "間";
 }
 .page-cart .section-cart .woocommerce .cart .product-price, .page-cart .section-cart .woocommerce .cart .product-quantity, .page-cart .section-cart .woocommerce .cart .product-subtotal {
   text-align: center;
@@ -2799,6 +2819,12 @@ footer .footer_inner .footer_lower .copyright {
   width: 50%;
   margin-bottom: 0 !important;
 }
+.page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout #wc-stripe-payment-request-wrapper {
+  display: none !important;
+}
+.page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout #wc-stripe-payment-request-button-separator {
+  display: none !important;
+}
 .page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout a {
   display: block;
   background-color: #BF992E;
@@ -2816,6 +2842,75 @@ footer .footer_inner .footer_lower .copyright {
   opacity: 0.75;
 }
 
+@media screen and (max-width: 1100px) {
+  .page-cart .section-cart .woocommerce .cart .product-name {
+    width: calc(100% - 480px);
+  }
+  .page-cart .section-cart .woocommerce .cart .product-price, .page-cart .section-cart .woocommerce .cart .product-quantity, .page-cart .section-cart .woocommerce .cart .product-subtotal {
+    font-size: 16px;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-price {
+    width: 120px;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-quantity {
+    width: 120px;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-subtotal {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .page-cart .section-cart {
+    margin-bottom: 80px;
+  }
+  .page-cart .section-cart .woocommerce .cart {
+    margin-bottom: 25px !important;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-thumbnail {
+    width: 120px;
+    margin-bottom: 30px;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-name {
+    width: calc(100% - 120px);
+    margin-bottom: 30px;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-price, .page-cart .section-cart .woocommerce .cart .product-quantity, .page-cart .section-cart .woocommerce .cart .product-subtotal {
+    text-align: center;
+    font-size: 18px;
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    letter-spacing: 0.03em;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-price {
+    width: 30%;
+    margin-right: 5%;
+    padding-right: 0px;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-quantity {
+    width: 30%;
+    margin-right: 5%;
+    padding-right: 0px;
+  }
+  .page-cart .section-cart .woocommerce .cart .product-subtotal {
+    width: 30%;
+    padding-right: 0px;
+  }
+  .page-cart .section-cart .woocommerce .cart-collaterals {
+    padding: 0 20px;
+  }
+  .page-cart .section-cart .woocommerce .cart-collaterals .cart_totals {
+    width: 100% !important;
+    display: block;
+  }
+  .page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .shop_table {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout {
+    width: 100%;
+    margin-bottom: 0 !important;
+  }
+}
 .page-service .section-lead {
   padding: 200px 0 120px;
 }

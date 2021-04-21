@@ -1,4 +1,5 @@
 .page-cart{
+    min-height: unset;
   .section-lead{
     margin-bottom: 60px;
   }
@@ -84,6 +85,7 @@
           }
           .variation{
             @include flexSet;
+            margin-bottom: 10px;
             dt{
               display: none;
             }
@@ -92,6 +94,30 @@
               font-size: 14px;
               line-height: 1.44;
               letter-spacing: 0.03em;
+              margin-bottom: 0;
+              &:nth-of-type(1){
+                p{
+                  &::before{
+                    display: inline-block;
+                    content: "予約日:";
+                    padding-right: 5px;
+                  }
+                }
+              }
+              &:nth-of-type(2){
+                p{
+                  &::before{
+                    display: inline-block;
+                    content: "〜";
+                    display: inline-block;
+                    padding: 0 5px;
+                  }
+                  &::after{
+                    display: inline;
+                    content: "間";
+                  }
+                }
+              }
             }
           }
         }
@@ -189,6 +215,12 @@
           .wc-proceed-to-checkout{
             width: 50%;
             margin-bottom: 0 !important;
+            #wc-stripe-payment-request-wrapper{
+              display: none !important;
+            }
+            #wc-stripe-payment-request-button-separator{
+              display: none !important;
+            }
             a{
               display: block;
               background-color: $pointYellow;
@@ -206,4 +238,89 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 1100px){
+  .page-cart{
+    .section-cart{
+      .woocommerce{
+        .cart{
+          .product-name{
+            width: calc(100% - 480px);
+          }
+          .product-price, .product-quantity, .product-subtotal{
+            font-size: 16px;
+          }
+          .product-price{
+            width: 120px;
+          }
+          .product-quantity{
+            width: 120px;
+          }
+          .product-subtotal{
+            width: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px){
+  .page-cart{
+    .section-cart{
+      margin-bottom: 80px;
+      .woocommerce{
+        .cart{
+          margin-bottom: 25px !important;
+          .product-thumbnail{
+            width: 120px;
+            margin-bottom: 30px;
+          }
+          .product-name{
+            width: calc(100% - 120px);
+            margin-bottom: 30px;
+          }
+          .product-price, .product-quantity, .product-subtotal{
+            text-align: center;
+            font-size: 18px;
+            @include tsukushi-b;
+            letter-spacing: 0.03em;
+          }
+          .product-price{
+            width: 30%;
+            margin-right: 5%;
+            padding-right: 0px;
+          }
+          .product-quantity{
+            width: 30%;
+            margin-right: 5%;
+            padding-right: 0px;
+          }
+          .product-subtotal{
+            width: 30%;
+            padding-right: 0px;
+          }
+        }
+        .cart-collaterals{
+          padding: 0 20px;
+          .cart_totals{
+            width: 100% !important;
+            display: block;
+            .shop_table{
+              width: 100%;
+              margin-bottom: 20px;
+            }
+            .wc-proceed-to-checkout{
+              width: 100%;
+              margin-bottom: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px){
+
 }
