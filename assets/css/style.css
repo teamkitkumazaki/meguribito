@@ -4431,6 +4431,266 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 60px;
   }
 }
+/*######## マイページ ##########*/
+.woocommerce-error {
+  position: fixed !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto !important;
+  z-index: 100;
+}
+
+.page-mypage {
+  margin-top: 160px;
+  margin-bottom: 120px;
+  min-height: unset;
+}
+
+#customer_login.u-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#customer_login.u-columns .col-1 {
+  width: 47% !important;
+  float: none !important;
+  margin: 0 !important;
+}
+#customer_login.u-columns .col-2 {
+  width: 47% !important;
+  float: none !important;
+  margin: 0 !important;
+}
+#customer_login.u-columns .col-2 h2 {
+  display: none;
+}
+#customer_login.u-columns .col-2::before {
+  display: block;
+  content: "新規会員登録";
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+#customer_login.u-columns h2 {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+#customer_login.u-columns form {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+}
+#customer_login.u-columns form label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: normal;
+  position: relative;
+}
+#customer_login.u-columns form input[type=email],
+#customer_login.u-columns form input[type=tel],
+#customer_login.u-columns form input[type=text],
+#customer_login.u-columns form input[type=password] {
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  transition: border 0.2s;
+  will-change: border;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+#customer_login.u-columns form input[type=email]:focus,
+#customer_login.u-columns form input[type=tel]:focus,
+#customer_login.u-columns form input[type=text]:focus,
+#customer_login.u-columns form input[type=password]:focus {
+  outline: none;
+  border: 1px solid #979797;
+}
+#customer_login.u-columns form button[type=submit] {
+  display: block;
+  width: 100%;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 20px !important;
+  text-align: center;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  background-color: #BF992E !important;
+}
+#customer_login.u-columns form button[type=submit]:hover {
+  opacity: 0.75;
+}
+#customer_login.u-columns form .show-password-input {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  height: 15px;
+  margin: auto;
+  padding: 0;
+  line-height: 1;
+}
+#customer_login.u-columns form .woocommerce-password-strength {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+#customer_login.u-columns form .woocommerce-password-hint {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+}
+#customer_login.u-columns form .form-row {
+  margin-bottom: 20px;
+}
+#customer_login.u-columns form .form-row .woocommerce-form-login__rememberme {
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+#customer_login.u-columns form .lost_password {
+  margin-top: 30px;
+  text-align: center;
+}
+#customer_login.u-columns form .lost_password a {
+  color: #068acc !important;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+}
+#customer_login.u-columns form .woocommerce-privacy-policy-text {
+  font-size: 14px;
+  margin: 15px 0 20px;
+  line-height: 1.6;
+}
+#customer_login.u-columns form .woocommerce-privacy-policy-text a {
+  color: #068acc;
+}
+
+.lost_reset_password {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+}
+.lost_reset_password p {
+  display: none;
+}
+.lost_reset_password p.form-row {
+  display: block;
+}
+.lost_reset_password::before {
+  display: block;
+  content: "パスワードの再発行";
+  text-align: center;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.lost_reset_password label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: normal;
+  position: relative;
+}
+.lost_reset_password input[type=email],
+.lost_reset_password input[type=tel],
+.lost_reset_password input[type=text],
+.lost_reset_password input[type=password] {
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  transition: border 0.2s;
+  will-change: border;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+.lost_reset_password input[type=email]:focus,
+.lost_reset_password input[type=tel]:focus,
+.lost_reset_password input[type=text]:focus,
+.lost_reset_password input[type=password]:focus {
+  outline: none;
+  border: 1px solid #979797;
+}
+.lost_reset_password button[type=submit] {
+  display: block;
+  width: 100%;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 20px !important;
+  text-align: center;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  background-color: #BF992E !important;
+}
+.lost_reset_password button[type=submit]:hover {
+  opacity: 0.75;
+}
+.lost_reset_password .show-password-input {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  height: 15px;
+  margin: auto;
+  padding: 0;
+  line-height: 1;
+}
+.lost_reset_password .woocommerce-password-strength {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.lost_reset_password .woocommerce-password-hint {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+}
+.lost_reset_password .form-row-first {
+  width: 100% !important;
+  margin: 0px 0 10px;
+}
+.lost_reset_password .form-row-first::before {
+  display: block;
+  content: "入力頂いたアドレス宛にパスワード再発行リンクをお送りします。";
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 /*########## コンポーネント ##########*/
 /* 共通パーツ */
 .comp-fixed-header {

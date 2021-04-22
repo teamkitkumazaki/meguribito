@@ -1,0 +1,59 @@
+#customer_login{
+  &.u-columns{
+    @include flexSet;
+    justify-content: space-between;
+    .col-1{
+      width: 47% !important;
+      float: none !important;
+      margin: 0 !important
+    }
+    .col-2{
+      width: 47% !important;
+      float: none !important;
+      margin: 0 !important;
+      h2{
+        display: none;
+      }
+      &::before{
+        display: block;
+        content: "新規会員登録";
+        @include tsukushi-b;
+        @include mypageTitle;
+      }
+    }
+    h2{
+      @include mypageTitle
+    }
+    form{
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      @include formSet;
+      .form-row{
+        margin-bottom: 20px;
+        .woocommerce-form-login__rememberme{
+          margin-top: -5px;
+          margin-bottom: 15px;
+        }
+      }
+      .lost_password{
+        margin-top: 30px;
+        text-align: center;
+        a{
+          color: #068acc !important;
+          font-size: 16px;
+          letter-spacing: 0.5px;
+          text-decoration: underline;
+        }
+      }
+      .woocommerce-privacy-policy-text{
+        font-size: 14px;
+        margin: 15px 0 20px;
+        line-height: 1.6;
+        a{
+          color: #068acc;
+        }
+      }
+    }
+  }
+}

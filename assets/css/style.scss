@@ -26,7 +26,10 @@
 @import 'pages/transaction.scss';
 @import 'pages/privacy.scss';
 
-
+/*######## マイページ ##########*/
+@import 'pages/mypage/common.scss';
+@import 'pages/mypage/login.scss';
+@import 'pages/mypage/reset.scss';
 
 
 /*########## コンポーネント ##########*/
