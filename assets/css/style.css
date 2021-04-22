@@ -3076,6 +3076,902 @@ footer .footer_inner .footer_lower .copyright {
     font-size: 16px;
   }
 }
+.page-payment {
+  min-height: unset;
+}
+.page-payment .section-lead {
+  margin-bottom: 60px;
+}
+.page-payment .section-payment {
+  margin-bottom: 120px;
+}
+.page-payment .section-payment .woocommerce-form-coupon-toggle {
+  display: none;
+}
+.page-payment .section-payment .woocommerce-checkout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.page-payment .section-payment .woocommerce-checkout #order_review_heading {
+  display: none !important;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set {
+  width: 60% !important;
+  float: none !important;
+  padding: 40px 50px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: #fff;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row-first, .page-payment .section-payment .woocommerce-checkout .col2-set .form-row-last {
+  width: 47%;
+  margin: 0;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set h3 {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row {
+  margin-bottom: 25px;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row#billing_country_field {
+  display: none;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: normal;
+  position: relative;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row label::after {
+  display: block;
+  content: "任意";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #979797;
+  width: 60px;
+  text-align: center;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+  height: 25px;
+  line-height: 25px;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row label .optional {
+  display: none !important;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row input[type=checkbox],
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row input[type=radio] {
+  margin-right: 10px;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=email],
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=tel],
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=text] {
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  transition: border 0.2s;
+  will-change: border;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=email]:focus,
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=tel]:focus,
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=text]:focus {
+  outline: none;
+  border: 1px solid #979797;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper .select2-selection--single {
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 5px 10px !important;
+  transition: border 0.2s;
+  will-change: border;
+  box-sizing: border-box;
+  height: auto !important;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper .select2-selection--single .select2-selection__arrow {
+  position: absolute;
+  top: 3px !important;
+  right: 10px !important;
+  width: 20px;
+  height: 10px !important;
+  bottom: 0 !important;
+  margin: auto !important;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper .select2-selection--single:focus {
+  outline: none;
+  border: 1px solid #979797;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper select {
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  transition: border 0.2s;
+  will-change: border;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper select:focus {
+  outline: none;
+  border: 1px solid #979797;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper textarea {
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  line-height: 1.6;
+  height: 150px;
+  transition: border 0.2s;
+  will-change: border;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper textarea:focus {
+  outline: none;
+  border: 1px solid #979797;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.validate-required label::after {
+  display: none;
+  content: "必須";
+  background-color: #3f3f3f;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row#ce4wp_checkout_consent_checkbox_field label::after {
+  display: none;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-invalid::after {
+  display: block;
+  content: "入力内容をご確認ください。";
+  margin-top: 5px;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  color: #e2401c;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-invalid label {
+  color: #e2401c;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-invalid .woocommerce-input-wrapper input[type=email],
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-invalid .woocommerce-input-wrapper input[type=tel],
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-invalid .woocommerce-input-wrapper input[type=text] {
+  border: 1px solid #e2401c;
+  box-shadow: none !important;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-invalid .woocommerce-input-wrapper .select2-selection--single {
+  border: 1px solid #e2401c;
+  background-color: rgba(226, 64, 28, 0.2);
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-invalid .woocommerce-input-wrapper .select2-selection--single:focus {
+  outline: none;
+  border: 1px solid #979797;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-invalid .woocommerce-input-wrapper select {
+  border: 1px solid #e2401c;
+  background-color: rgba(226, 64, 28, 0.05);
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-invalid .woocommerce-input-wrapper textarea {
+  border: 1px solid #e2401c;
+  background-color: rgba(226, 64, 28, 0.05);
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-validated label {
+  color: #0f834d;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-validated input[type=email],
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-validated input[type=tel],
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-validated input[type=text] {
+  border: 1px solid #0f834d;
+  box-shadow: none !important;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-validated .select2-selection--single {
+  border: 1px solid #0f834d;
+  background-color: rgba(15, 131, 77, 0.2);
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-validated .select2-selection--single:focus {
+  outline: none;
+  border: 1px solid #0f834d;
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-validated select {
+  border: 1px solid #0f834d;
+  background-color: rgba(15, 131, 77, 0.05);
+}
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-validated textarea {
+  border: 1px solid #0f834d;
+  background-color: rgba(15, 131, 77, 0.05);
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order {
+  width: 32% !important;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: #fff;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order::before {
+  display: block;
+  content: "予約内容";
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table {
+  width: 100%;
+  display: block;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table thead {
+  display: none;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody {
+  width: 100%;
+  display: block;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #d8d8d8;
+  width: 100%;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item:nth-last-of-type(1) {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-bottom: 0px solid #d8d8d8;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-name {
+  width: 100% !important;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-name .product-quantity {
+  display: none;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-name .variation {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-name .variation dt {
+  display: none;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-name .variation dd {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.44;
+  letter-spacing: 0.03em;
+  margin-bottom: 0;
+  color: #646464;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-name .variation dd:nth-of-type(1) p::before {
+  display: inline-block;
+  content: "予約日:";
+  padding-right: 5px;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-name .variation dd:nth-of-type(2) p::before {
+  display: inline-block;
+  content: "〜";
+  display: inline-block;
+  padding: 0 5px;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-name .variation dd:nth-of-type(2) p::after {
+  display: inline;
+  content: "間";
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-total {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-total:after {
+  display: inline;
+  content: "(税込)";
+  font-size: 12px;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tfoot {
+  display: block;
+  margin-top: 30px;
+  border-top: 1px solid #d8d8d8;
+  padding-top: 25px;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tfoot th, .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tfoot td {
+  display: block;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tfoot .cart-subtotal {
+  display: none;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tfoot .order-total {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tfoot .order-total th {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  background: #BF992E;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  padding: 7px 0;
+  border-radius: 30px;
+  width: 100px;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tfoot .order-total td {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tfoot .order-total td::after {
+  display: inline;
+  content: "(税込)";
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment::before {
+  display: block !important;
+  content: "決済方法" !important;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .wc_payment_methods .wc_payment_method label {
+  display: flex !important;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 25px !important;
+  justify-content: flex-start;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .wc_payment_methods .wc_payment_method label .stripe-icon {
+  margin: 15px 0 0 !important;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .wc_payment_methods .payment_box {
+  padding: 20px !important;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .wc_payment_methods .payment_box .woocommerce-error {
+  border-left: 0px;
+  line-height: 1.4;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 14px !important;
+  margin-bottom: 0 !important;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .wc_payment_methods .payment_box .woocommerce-error::before {
+  display: none !important;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .wc_payment_methods #stripe-payment-data p:nth-of-type(1) {
+  display: none;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .wc_payment_methods #stripe-payment-data .woocommerce-SavedPaymentMethods {
+  padding: 0 !important;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .wc_payment_methods .wc-credit-card-form .form-row label {
+  display: block !important;
+  padding: 10px 0 !important;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .wc_payment_methods .wc-credit-card-form .form-row.form-row-first, .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .wc_payment_methods .wc-credit-card-form .form-row.form-row-last {
+  width: 100% !important;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .wc_payment_methods .woocommerce-SavedPaymentMethods-saveNew {
+  display: none !important;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .place-order {
+  margin-top: 30px !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  box-sizing: border-box;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .place-order .woocommerce-terms-and-conditions-wrapper {
+  line-height: 1.6;
+  color: #646464;
+  margin-bottom: 30px;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .place-order .woocommerce-terms-and-conditions-wrapper .woocommerce-privacy-policy-text {
+  margin-bottom: 20px;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .place-order .woocommerce-terms-and-conditions-wrapper .woocommerce-privacy-policy-text a {
+  color: #068acc;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .place-order button[type=submit] {
+  background-color: #BF992E !important;
+  color: #fff;
+  padding: 7px 0;
+  font-size: 20px !important;
+  text-align: center;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .place-order button[type=submit]:hover {
+  opacity: 0.75;
+}
+
+@media screen and (max-width: 1100px) {
+  .page-payment .section-payment {
+    margin-bottom: 80px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set {
+    width: 55% !important;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set .form-row {
+    margin-bottom: 25px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order {
+    width: 38% !important;
+    padding: 30px 25px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .page-payment .section-payment {
+    margin-bottom: 80px;
+  }
+  .page-payment .section-payment .woocommerce-checkout {
+    display: block;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set {
+    width: 100% !important;
+    margin-bottom: 40px;
+    padding: 40px 50px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set .form-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: normal;
+    position: relative;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=email],
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=tel],
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=text] {
+    font-size: 16px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper .select2-selection--single {
+    font-size: 16px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper select {
+    font-size: 16px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper textarea {
+    font-size: 16px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order {
+    width: 100% !important;
+    padding: 40px 50px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-payment {
+    min-height: unset;
+  }
+  .page-payment .section-lead {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .page-payment .section-lead .page_ttl {
+    font-size: 6.5vw;
+    letter-spacing: 0.03em;
+  }
+  .page-payment .section-lead .sub_ttl {
+    font-size: 3.6vw;
+    letter-spacing: 0.03em;
+  }
+  .page-payment .section-payment {
+    margin-bottom: 60px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set {
+    width: 100% !important;
+    padding: 30px 25px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set .col-1 {
+    margin-bottom: 60px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set .form-row-first, .page-payment .section-payment .woocommerce-checkout .col2-set .form-row-last {
+    width: 100%;
+    margin: 0;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set h3 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set .woocommerce-additional-fields__field-wrapper {
+    margin-bottom: 25px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set .form-row {
+    margin-bottom: 25px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set .form-row:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set .form-row label {
+    display: block;
+    font-size: 16px;
+    padding-right: 60px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set .form-row label.checkbox {
+    padding-right: 0;
+  }
+  .page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-invalid::after {
+    margin-top: 10px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order {
+    width: 100% !important;
+    padding: 30px 25px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #fff;
+  }
+  .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order::before {
+    display: block;
+    content: "予約内容";
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table {
+    margin-bottom: 60px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody {
+    width: 100%;
+    display: block;
+  }
+  .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tfoot {
+    display: block;
+  }
+  .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tfoot .order-total th {
+    font-size: 14px;
+    padding: 7px 0;
+    width: 80px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tfoot .order-total td {
+    font-size: 18px;
+  }
+  .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment::before {
+    display: block !important;
+    content: "決済方法" !important;
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .wc_payment_methods {
+    width: calc(100% + 20px);
+    margin-left: -10px !important;
+  }
+  .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .wc_payment_methods .payment_box {
+    padding: 20px !important;
+  }
+  .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .place-order .woocommerce-terms-and-conditions-wrapper .woocommerce-privacy-policy-text {
+    font-size: 14px;
+  }
+}
+.page-payment .section-lead-completed {
+  margin-bottom: 60px;
+}
+.page-payment .section-payment {
+  margin-bottom: 120px;
+}
+.page-payment .section-payment .woocommerce-order::before {
+  display: block;
+  content: "ご注文情報";
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-thankyou-order-received {
+  display: none;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-overview {
+  margin: 0 0 20px !important;
+  background-color: #fff !important;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-overview::before {
+  display: none !important;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-overview li {
+  box-sizing: border-box;
+  padding: 10px 0 10px 0;
+  margin-right: 40px;
+  /*border-right: 1px solid #d8d8d8;*/
+  border-bottom: 0px dotted #e3e3e3 !important;
+  text-align: center;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-overview li strong {
+  display: inline-block;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  padding-left: 10px;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details {
+  margin-top: 60px;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .woocommerce-order-details__title {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent !important;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details thead {
+  display: none;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details table, .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tbody {
+  width: 100%;
+  display: block;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details td {
+  display: block;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr.order_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-thumbnail {
+  width: 120px;
+  padding: 0 !important;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-thumbnail a {
+  display: block;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-thumbnail a img {
+  max-width: 100% !important;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-name a {
+  display: block;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.6;
+  color: inherit;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-name .product-quantity {
+  display: none;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-name .wc-booking-summary {
+  margin: 0 !important;
+  border: 0px solid #ddd !important;
+  padding: 0 !important;
+  color: unset !important;
+  border-radius: 0px !important;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-name .wc-booking-summary-number {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin-bottom: 15px;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-name .wc-booking-summary-list {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 16px;
+  color: #646464;
+  letter-spacing: 0.03em;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-name .wc-booking-summary-actions {
+  display: none;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-total {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-total .amount::after {
+  display: inline;
+  content: "(税込)";
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot {
+  width: 100%;
+  display: block;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr {
+  display: none;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr:nth-last-of-type(1) {
+  width: 40%;
+  margin-left: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  padding: 30px 10px 0 !important;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr:nth-last-of-type(1) th {
+  font-size: 18px;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr:nth-last-of-type(1) td {
+  font-size: 20px;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr:nth-last-of-type(1) td .amount::after {
+  display: inline;
+  content: "(税込)";
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-customer-details {
+  margin-top: 60px;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-customer-details .woocommerce-column__title {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-customer-details address {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 30px;
+  line-height: 1.6;
+  font-style: normal;
+}
+
+@media screen and (max-width: 980px) {
+  .page-payment .section-lead-completed {
+    margin-bottom: 60px;
+  }
+  .page-payment .section-lead-completed .page_ttl {
+    font-size: 32px;
+    letter-spacing: 0.03em;
+  }
+  .page-payment .section-lead-completed .sub_ttl {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+  }
+  .page-payment .section-payment {
+    margin-bottom: 80px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-overview {
+    margin: 0 0 20px !important;
+    background-color: #fff !important;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-overview::before {
+    display: none !important;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-overview li {
+    margin-right: 30px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details {
+    margin-top: 60px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .woocommerce-order-details__title {
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent !important;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details thead {
+    display: none;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details table, .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tbody {
+    width: 100%;
+    display: block;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details td {
+    display: block;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 25px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-name {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-name a {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot {
+    width: 100%;
+    display: block;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr {
+    display: none;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr:nth-last-of-type(1) {
+    width: 50%;
+    margin-left: 50%;
+  }
+}
 .page-service .section-lead {
   padding: 200px 0 120px;
 }
@@ -9030,7 +9926,7 @@ footer .footer_inner .footer_lower .copyright {
   }
 }
 /* カート・マイページ */
-.woocommerce-message {
+.woocommerce .woocommerce-message {
   position: fixed !important;
   bottom: 0;
   z-index: 50;
@@ -9042,11 +9938,11 @@ footer .footer_inner .footer_lower .copyright {
   line-height: 1.6;
 }
 @media screen and (max-width: 980px) {
-  .woocommerce-message {
+  .woocommerce .woocommerce-message {
     font-size: 14px;
   }
 }
-.woocommerce-message::before {
+.woocommerce .woocommerce-message::before {
   position: absolute;
   top: 0 !important;
   bottom: 0 !important;
@@ -9056,7 +9952,7 @@ footer .footer_inner .footer_lower .copyright {
   height: 20px;
   margin: auto;
 }
-.woocommerce-message a {
+.woocommerce .woocommerce-message a {
   display: none !important;
 }
 

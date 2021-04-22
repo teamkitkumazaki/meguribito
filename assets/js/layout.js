@@ -442,6 +442,15 @@ if (document.getElementById('planDetail')) {
   })
 }
 
+function checkoutTextArrange(){
+  $('#place_order').text('予約を確定する');
+  $('#ce4wp_checkout_consent_checkbox_field').find('label').html('<label class="checkbox "><input type="checkbox" class="input-checkbox " name="ce4wp_checkout_consent_checkbox" id="ce4wp_checkout_consent_checkbox" value="1">メールマガジンを受け取る</label>');
+}
+
+if (document.getElementById('paymentPage')) {
+  checkoutTextArrange();
+}
+
   if (document.getElementById('index')) {
     $('#serviceSlider').slick({
       accessibility: false,
