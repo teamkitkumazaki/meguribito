@@ -1,0 +1,196 @@
+.woocommerce-error{
+  position: fixed !important;
+  bottom:0;
+  left:0;
+  right:0;
+  margin: auto !important;
+  z-index: 100;
+}
+.page-mypage{
+  margin-top: 160px;
+  margin-bottom: 120px;
+  min-height: unset;
+  .section-account-info{
+    margin-bottom: 60px;
+    .mypage_title{
+      @include mypageTitle;
+    }
+    .flex_wrap{
+      @include flexSet;
+      justify-content: space-between;
+      align-items: center;
+      .myprofile{
+        @include flexSet;
+        justify-content: space-between;
+        align-items: center;
+        .icon_wrap{
+          width: 120px;
+          height: 120px;
+          border: solid 1px #4d4327;
+          box-sizing: border-box;
+          border-radius: 50%;
+          backgorund-color: #fff;
+          @include bgSet;
+          background-image: url(../img/common/icon_default.svg);
+          margin-right: 20px;
+        }
+        .profile_wrap{
+          .user_name{
+            @include tsukushi-b;
+            font-size: 24px;;
+            letter-spacing: 0.03em;
+            margin-bottom: 10px;
+          }
+          .profile_point{
+            @include tsukushi-b;
+            @include flexSet;
+            align-items: center;
+            font-size: 16px;
+            letter-spacing: 0.03em;
+            color: #464646;
+            .num{
+              @include tsukushi-r;
+              font-size: 30px;
+              color: $black01;
+              display: inline-block;
+              padding: 0 0.2em;
+            }
+          }
+        }
+        .logout_link{
+          @include tsukushi-b;
+          font-size: 14px;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #979797;
+          text-decoration: underline;
+          @include hover;
+        }
+      }
+      .history_wrap{
+        width: 150px;
+        text-align: center;
+        border-radius: 20px;
+        padding: 20px 0;
+        background: #fff;
+        margin-right: 15px;
+        .title{
+          @include tsukushi-b;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 1.5;
+          margin-bottom: 10px;
+          span{
+            display: block;
+          }
+        }
+        .number{
+          @include tsukushi-r;
+          font-size: 44px;
+          line-height: 1;
+          letter-spacing: normal;
+        }
+      }
+    }
+  }
+  .section-mypage{
+    .woocommerce-MyAccount-navigation{
+      width: 100%;
+      float: none;
+      ul{
+        @include flexSet;
+        align-items: center;
+        li{
+          padding: 0 20px;
+          text-align: center;
+          border-bottom: 2px solid #979797;
+          a{
+            display: block;
+            padding: 10px 20px;
+            @include tsukushi-b;
+            @include hover;
+            font-size: 16px;
+            line-height: normal;
+            letter-spacing: 0,03em;
+            color: #979797;
+            &::before{
+              display: none !important;
+            }
+            &::after{
+              font-family: inherit;
+              font-size: 16px;
+              line-height: normal;
+              letter-spacing: 0,03em;
+              color: #979797;
+              text-indent: 0;
+            }
+          }
+          &.woocommerce-MyAccount-navigation-link--bookings{
+            order: 0;
+            a{
+              &::after{
+                display: inline;
+                content: "中のプラン";
+                font-size: 16px;
+                line-height: normal;
+                letter-spacing: 0,03em;
+                color: #979797;
+              }
+            }
+          }
+          &.woocommerce-MyAccount-navigation-link--orders{
+            order:1;
+            a{
+              &::after{
+                content: "今までに行ったプラン";
+              }
+            }
+          }
+          &.woocommerce-MyAccount-navigation-link--edit-address{
+            order: 2;
+            a{
+              &::after{
+                content: "情報の変更";
+              }
+            }
+          }
+          &.woocommerce-MyAccount-navigation-link--edit-account{
+            order: 3;
+            a{
+              &::after{
+                content: "情報の変更";
+              }
+            }
+          }
+          &.woocommerce-MyAccount-navigation-link--dashboard,
+          &.woocommerce-MyAccount-navigation-link--downloads,
+          &.woocommerce-MyAccount-navigation-link--payment-methods,
+          &.woocommerce-MyAccount-navigation-link--customer-logout{
+            display: none;
+          }
+          &.active, &.is-active{
+            border-bottom: 2px solid $pointYellow;
+            a{
+              color: $pointYellow;
+              &::after{
+                color: $pointYellow;
+              }
+            }
+          }
+        }
+      }
+    }
+    .woocommerce-MyAccount-content{
+      width: 100%;
+      float: none;
+      padding: 30px;
+      background-color: #fff;
+      h2{
+        display: none;
+      }
+      h3{
+        @include mypageTitle;
+      }
+    }
+  }
+}

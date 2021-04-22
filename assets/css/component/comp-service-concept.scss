@@ -1,0 +1,126 @@
+.comp-service-concept{
+  .concept_item{
+    @include flexSet;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: $basicBgColor;
+    margin-bottom: 15px;
+    &:nth-last-of-type(1){
+      margin-bottom: 0;
+    }
+    .img_wrap{
+      width: 300px;
+      margin-right: 40px;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .txt_wrap{
+      width: calc(100% - 360px);
+      .title_wrap{
+        letter-spacing: 0.03em;
+        @include tsukushi-b;
+        margin-bottom: 10px;
+        .mini_ttl{
+          display: block;
+          font-size: 14px;
+          line-height: normal;
+          margin-bottom: 10px;
+        }
+        .concept_ttl{
+          font-size: 22px;
+          line-height: 1.6;
+        }
+      }
+      .description{
+        @include basicP;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .comp-service-concept{
+    .concept_item{
+      .txt_wrap{
+        .title_wrap{
+          margin-bottom: 10px;
+          .mini_ttl{
+            font-size: 14px;
+          }
+          .concept_ttl{
+            font-size: 22px;
+          }
+        }
+        .description{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 980px){
+  .comp-service-concept{
+    .concept_item{
+      display: block;
+      padding: 20px;
+      border-radius: 15px;
+      .img_wrap{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        img{
+          width: 100%;
+        }
+      }
+      .txt_wrap{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        .title_wrap{
+          margin-bottom: 10px;
+          .mini_ttl{
+            font-size: 14px;
+          }
+          .concept_ttl{
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px){
+  .comp-service-concept{
+    .concept_item{
+      display: block;
+      padding: 15px;
+      border-radius: 10px;
+      .img_wrap{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        img{
+          width: 100%;
+        }
+      }
+      .txt_wrap{
+        width: 100%;
+        padding: 0 10px 10px;
+        box-sizing: border-box;
+        .title_wrap{
+          margin-bottom: 10px;
+          .mini_ttl{
+            font-size: 12px;
+            margin-bottom: 5px;
+          }
+          .concept_ttl{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

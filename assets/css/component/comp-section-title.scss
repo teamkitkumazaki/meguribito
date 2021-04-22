@@ -35,6 +35,8 @@
     @include flexSet;
     align-items: center;
     justify-content: space-between;
+    background-color: transparent !important;
+    pointer-events: auto;
   }
 }
 @media screen and (max-width: 980px){

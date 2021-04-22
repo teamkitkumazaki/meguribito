@@ -1,0 +1,30 @@
+.woocommerce-EditAccountForm{
+  &::before{
+    display: block;
+    content: "アカウント情報の変更";
+    @include mypageTitle;
+  }
+  @include formSet;
+  legend{
+    display: none;
+  }
+  .form-row{
+    margin-bottom: 25px;
+    em {
+      display: none;
+    }
+  }
+  button[type=submit]{
+    max-width: 30%;
+  }
+  .form-row-first{
+    float: right !important;
+    width: 47% !important;
+    margin: 0 0 25px !important;
+  }
+  .form-row-last{
+    float: left !important;
+    width: 47% !important;
+    margin: 0 6% 25px 0 !important;
+  }
+}

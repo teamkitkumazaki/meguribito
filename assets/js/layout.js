@@ -442,6 +442,33 @@ if (document.getElementById('planDetail')) {
   })
 }
 
+function checkoutTextArrange(){
+  $('#place_order').text('予約を確定する');
+  $('#ce4wp_checkout_consent_checkbox_field').find('label').html('<label class="checkbox "><input type="checkbox" class="input-checkbox " name="ce4wp_checkout_consent_checkbox" id="ce4wp_checkout_consent_checkbox" value="1">メールマガジンを受け取る</label>');
+}
+
+if (document.getElementById('paymentPage')) {
+  checkoutTextArrange();
+}
+
+function arrangeMypageNav(){
+  var currentLink = location.href;
+  var logout = $('#logoutLink');
+  var navigation = $('.woocommerce-MyAccount-navigation');
+  var addressLink = $('.woocommerce-MyAccount-navigation-link--edit-address');
+  var historyLink = $('.woocommerce-MyAccount-navigation-link--orders');
+  var logoutLink = $('.woocommerce-MyAccount-navigation-link--customer-logout a').attr('href');
+  var navLink = [];
+  console.log('currentLink:' + currentLink);
+  addressLink.find('a').attr('href', 'https://meguribito.com/my-account/edit-address/billing/');
+  historyLink.find('a').text('');
+  logout.attr('href', logoutLink);
+}
+
+if (document.getElementById('mypage')) {
+  arrangeMypageNav();
+}
+
   if (document.getElementById('index')) {
     $('#serviceSlider').slick({
       accessibility: false,
@@ -506,5 +533,24 @@ if (document.getElementById('planDetail')) {
       }]
     });
     contetHeightAdjust($('#faqToggle'));
+  }
+  if (document.getElementById('service')) {
+    $('#characterSlider').slick({
+      accessibility: false,
+      infinite: false,
+      dots: true,
+      slidesToShow: 3,
+      centerMode: true,
+      autoplay: false,
+      responsive: [{
+        breakpoint: 720,
+        settings: {
+          infinite: true,
+          slidesToShow: 1,
+          centerPadding: '5%',
+          centerMode: true,
+        }
+      }]
+    });
   }
 });

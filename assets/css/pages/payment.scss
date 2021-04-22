@@ -1,0 +1,683 @@
+.page-payment {
+  min-height: unset;
+
+  .section-lead {
+    margin-bottom: 60px;
+  }
+
+  .section-payment {
+    margin-bottom: 120px;
+
+    .woocommerce-form-coupon-toggle {
+      display: none;
+    }
+
+    .woocommerce-checkout {
+      @include flexSet;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      #order_review_heading {
+        display: none !important;
+      }
+
+      .col2-set {
+        width: 60% !important;
+        float: none !important;
+        padding: 40px 50px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background: #fff;
+
+        .form-row-first, .form-row-last{
+          width: 47%;
+          margin: 0;
+        }
+
+        h3 {
+          @include tsukushi-b;
+          font-size: 22px;
+          line-height: 1.6;
+          letter-spacing: 0.03em;
+          margin-bottom: 20px;
+        }
+
+        .woocommerce-billing-fields__field-wrapper {}
+
+        .form-row {
+          margin-bottom: 25px;
+          &#billing_country_field {
+            display: none;
+          }
+
+          label {
+            display: block;
+            margin-bottom: 5px;
+            @include tsukushi-b;
+            font-size: 16px;
+            line-height: normal;
+            letter-spacing: normal;
+            position: relative;
+            &::after{
+              display: block;
+              content: "任意";
+              position: absolute;
+              right:0;
+              top:0;
+              bottom:0;
+              margin: auto;
+              border-radius: 5px;
+              background-color: #979797;
+              width: 60px;
+              text-align: center;
+              @include tsukushi-b;
+              font-size: 12px;
+              color: #fff;
+              height: 25px;
+              line-height: 25px;
+            }
+            .optional{
+              display: none !important;
+            }
+          }
+
+          input[type=checkbox],
+          input[type=radio]{
+            margin-right: 10px;
+          }
+
+          .woocommerce-input-wrapper {
+            input[type=email],
+            input[type=tel],
+            input[type=text] {
+              border: 1px solid #f8f8f8;
+              border-radius: 5px;
+              background-color: #f8f8f8;
+              padding: 10px;
+              transition: border 0.2s;
+              will-change: border;
+              box-sizing: border-box;
+              letter-spacing: 0.5px;
+
+              &:focus {
+                outline: none;
+                border: 1px solid #979797;
+              }
+            }
+            .select2-selection--single{
+              border: 1px solid #f8f8f8;
+              border-radius: 5px;
+              background-color: #f8f8f8;
+              padding: 5px 10px !important;
+              transition: border 0.2s;
+              will-change: border;
+              box-sizing: border-box;
+              height: auto !important;
+              font-size: 14px;
+              letter-spacing: 0.5px;
+              .select2-selection__arrow{
+                position: absolute;
+                top: 3px !important;
+                right: 10px !important;
+                width: 20px;
+                height: 10px !important;
+                bottom: 0 !important;
+                margin: auto !important;
+              }
+              &:focus {
+                outline: none;
+                border: 1px solid #979797;
+              }
+            }
+            select {
+              border: 1px solid #f8f8f8;
+              border-radius: 5px;
+              background-color: #f8f8f8;
+              padding: 10px;
+              transition: border 0.2s;
+              will-change: border;
+              box-sizing: border-box;
+              letter-spacing: 0.5px;
+              &:focus {
+                outline: none;
+                border: 1px solid #979797;
+              }
+            }
+            textarea {
+              border: 1px solid #f8f8f8;
+              border-radius: 5px;
+              background-color: #f8f8f8;
+              padding: 10px;
+              line-height: 1.6;
+              height: 150px;
+              transition: border 0.2s;
+              will-change: border;
+              box-sizing: border-box;
+              letter-spacing: 0.5px;
+              &:focus {
+                outline: none;
+                border: 1px solid #979797;
+              }
+            }
+          }
+          &.validate-required{
+            label{
+              &::after{
+                display:none;
+                content: "必須";
+                background-color: $black01;
+              }
+            }
+          }
+          &#ce4wp_checkout_consent_checkbox_field{
+            label{
+              &::after{
+                display: none;
+              }
+            }
+          }
+          &.woocommerce-invalid{
+            &::after{
+              display: block;
+              content: "入力内容をご確認ください。";
+              margin-top: 5px;
+              font-size: 12px;
+              letter-spacing: 0.4px;
+              color: #e2401c;
+            }
+            label {
+              color: #e2401c;
+            }
+
+            .woocommerce-input-wrapper {
+              input[type=email],
+              input[type=tel],
+              input[type=text] {
+                border: 1px solid #e2401c;
+                box-shadow: none !important;
+              }
+              .select2-selection--single{
+                border: 1px solid #e2401c;
+                background-color: rgba(#e2401c, 0.2);
+                &:focus {
+                  outline: none;
+                  border: 1px solid #979797;
+                }
+              }
+              select {
+                border: 1px solid #e2401c;
+                background-color: rgba(#e2401c, 0.05);
+              }
+              textarea {
+                border: 1px solid #e2401c;
+                background-color: rgba(#e2401c, 0.05);
+              }
+            }
+          }
+          &.woocommerce-validated{
+            label {
+              color: #0f834d;
+            }
+            input[type=email],
+            input[type=tel],
+            input[type=text] {
+              border: 1px solid #0f834d;
+              box-shadow: none !important;
+            }
+            .select2-selection--single{
+              border: 1px solid #0f834d;
+              background-color: rgba(#0f834d, 0.2);
+              &:focus {
+                outline: none;
+                border: 1px solid #0f834d;
+              }
+            }
+            select {
+              border: 1px solid #0f834d;
+              background-color: rgba(#0f834d, 0.05);
+            }
+            textarea {
+              border: 1px solid #0f834d;
+              background-color: rgba(#0f834d, 0.05);
+            }
+          }
+        }
+      }
+
+      .woocommerce-checkout-review-order {
+        width: 32% !important;
+        padding: 40px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background: #fff;
+        &::before{
+          display: block;
+          content: "予約内容";
+          @include tsukushi-b;
+          font-size: 24px;
+          line-height: normal;
+          letter-spacing: 0.03em;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        .woocommerce-checkout-review-order-table{
+          width: 100%;
+          display: block;
+          thead{
+            display: none;
+          }
+          tbody{
+            width: 100%;
+            display: block;
+            .cart_item{
+              @include flexSet;
+              margin-bottom: 30px;
+              padding-bottom: 25px;
+              border-bottom: 1px solid #d8d8d8;
+              &:nth-last-of-type(1){
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+                border-bottom: 0px solid #d8d8d8;
+              }
+              width: 100%;
+              .product-name{
+                width: 100% !important;
+                @include tsukushi-b;
+                font-size: 18px;
+                line-height: 1.6;
+                letter-spacing: 0.03em;
+                .product-quantity{
+                  display: none;
+                }
+                .variation{
+                  margin-top: 10px;
+                  @include flexSet;
+                  margin-bottom: 10px;
+                  dt{
+                    display: none;
+                  }
+                  dd{
+                    @include tsukushi-b;
+                    font-size: 14px;
+                    line-height: 1.44;
+                    letter-spacing: 0.03em;
+                    margin-bottom: 0;
+                    color: #646464;
+                    &:nth-of-type(1){
+                      p{
+                        &::before{
+                          display: inline-block;
+                          content: "予約日:";
+                          padding-right: 5px;
+                        }
+                      }
+                    }
+                    &:nth-of-type(2){
+                      p{
+                        &::before{
+                          display: inline-block;
+                          content: "〜";
+                          display: inline-block;
+                          padding: 0 5px;
+                        }
+                        &::after{
+                          display: inline;
+                          content: "間";
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .product-total{
+                margin-top: 10px;
+                display: block;
+                width: 100%;
+                text-align: right;
+                &:after{
+                  display: inline;
+                  content: "(税込)";
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+          tfoot{
+            display: block;
+            margin-top: 30px;
+            border-top: 1px solid #d8d8d8;
+            padding-top: 25px;
+            th, td{
+              display: block;
+            }
+            .cart-subtotal{
+              display: none;
+            }
+            .order-total{
+              @include flexSet;
+              align-items: center;
+              justify-content: space-between;
+              th{
+                @include tsukushi-b;
+                background: $pointYellow;
+                color: #fff;
+                font-size: 16px;
+                line-height: 1;
+                letter-spacing: 0.03em;
+                padding: 7px 0;
+                border-radius: 30px;
+                width: 100px;
+              }
+              td{
+                @include tsukushi-b;
+                font-size: 18px;
+                line-height: 1.4;
+                letter-spacing: 0.03em;
+                &::after{
+                  display: inline;
+                  content: "(税込)";
+                }
+              }
+            }
+          }
+        }
+        .woocommerce-checkout-payment{
+          &::before{
+            display: block !important;
+            content: "決済方法" !important;
+            @include tsukushi-b;
+            font-size: 24px;
+            line-height: normal;
+            letter-spacing: 0.03em;
+            margin-bottom: 20px;
+            text-align: center;
+          }
+          .wc_payment_methods{
+            .wc_payment_method{
+              label{
+                display: flex !important;
+                @include flexSet;
+                padding: 20px 25px !important;
+                justify-content: flex-start;
+                .stripe-icon{
+                  margin: 15px 0 0 !important;
+                }
+              }
+            }
+            .payment_box{
+              padding: 20px !important;
+              .woocommerce-error{
+                &::before{
+                  display: none !important;
+                }
+                border-left: 0px;
+                line-height: 1.4;
+                padding: 15px 20px;
+                border-radius: 5px;
+                font-size: 14px !important;
+                margin-bottom: 0 !important;
+              }
+            }
+            #stripe-payment-data{
+              p:nth-of-type(1){
+                display: none;
+              }
+              .woocommerce-SavedPaymentMethods{
+                padding: 0 !important;
+              }
+            }
+            .wc-credit-card-form{
+              .form-row{
+                label{
+                  display: block !important;
+                  padding: 10px 0 !important;
+                }
+                &.form-row-first, &.form-row-last{
+                  width: 100% !important;
+                }
+              }
+            }
+            .woocommerce-SavedPaymentMethods-saveNew{
+              display: none !important;
+            }
+          }
+          .place-order{
+            margin-top: 30px !important;
+            padding: 0 !important;
+            background-color: transparent !important;
+            box-sizing: border-box;
+            .woocommerce-terms-and-conditions-wrapper{
+              line-height: 1.6;
+              color: #646464;
+              margin-bottom: 30px;
+              .woocommerce-privacy-policy-text{
+                margin-bottom: 20px;
+                a{
+                  color: #068acc;
+                }
+              }
+            }
+            button[type=submit]{
+              background-color: $pointYellow !important;
+              color: #fff;
+              padding: 7px 0;
+              font-size: 20px !important;
+              text-align: center;
+              @include tsukushi-b;
+              border-radius: 5px;
+              @include hover;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .page-payment {
+    .section-payment {
+      margin-bottom: 80px;
+      .woocommerce-checkout {
+        .col2-set {
+          width: 55% !important;
+          .form-row {
+            margin-bottom: 25px;
+          }
+        }
+        .woocommerce-checkout-review-order {
+          width: 38% !important;
+          padding: 30px 25px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 980px) {
+  .page-payment {
+
+    .section-payment {
+      margin-bottom: 80px;
+
+      .woocommerce-checkout {
+        display: block;
+
+        .col2-set {
+          width: 100% !important;
+          margin-bottom: 40px;
+          padding: 40px 50px;
+
+
+          .form-row {
+
+            label {
+              display: block;
+              margin-bottom: 5px;
+              @include tsukushi-b;
+              font-size: 16px;
+              line-height: normal;
+              letter-spacing: normal;
+              position: relative;
+            }
+
+            .woocommerce-input-wrapper {
+              input[type=email],
+              input[type=tel],
+              input[type=text] {
+                font-size: 16px;
+              }
+              .select2-selection--single{
+                font-size: 16px;
+              }
+              select {
+                font-size: 16px;
+              }
+              textarea {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+
+        .woocommerce-checkout-review-order {
+          width: 100% !important;
+          padding: 40px 50px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-payment {
+    min-height: unset;
+
+    .section-lead {
+      margin-bottom: 40px;
+      text-align: center;
+      .page_ttl{
+        font-size: 6.5vw;
+        letter-spacing: 0.03em;
+      }
+      .sub_ttl{
+        font-size: 3.6vw;
+        letter-spacing: 0.03em;
+      }
+    }
+
+    .section-payment {
+      margin-bottom: 60px;
+
+      .woocommerce-checkout {
+
+        .col2-set {
+          width: 100% !important;
+          padding: 30px 25px;
+          .col-1{
+            margin-bottom: 60px;
+          }
+          .form-row-first, .form-row-last{
+            width: 100%;
+            margin: 0;
+          }
+
+          h3 {
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 20px;
+          }
+
+          .woocommerce-additional-fields__field-wrapper{
+            margin-bottom: 25px;
+          }
+          .form-row {
+            margin-bottom: 25px;
+            &:nth-last-of-type(1){
+              margin-bottom: 0;
+            }
+
+            label {
+              display: block;
+              font-size: 16px;
+              padding-right: 60px;
+              line-height: 1.6;
+              margin-bottom: 10px;
+              &.checkbox{
+                padding-right: 0;
+              }
+            }
+
+            &.woocommerce-invalid{
+              &::after{
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+
+        .woocommerce-checkout-review-order {
+          width: 100% !important;
+          padding: 30px 25px;
+          box-sizing: border-box;
+          border-radius: 5px;
+          background: #fff;
+          &::before{
+            display: block;
+            content: "予約内容";
+            @include tsukushi-b;
+            font-size: 24px;
+            line-height: normal;
+            letter-spacing: 0.03em;
+            margin-bottom: 20px;
+            text-align: center;
+          }
+          .woocommerce-checkout-review-order-table{
+            margin-bottom: 60px;
+            tbody{
+              width: 100%;
+              display: block;
+            }
+            tfoot{
+              display: block;
+              .order-total{
+                th{
+                  font-size: 14px;
+                  padding: 7px 0;
+                  width: 80px;
+                }
+                td{
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+          .woocommerce-checkout-payment{
+            &::before{
+              display: block !important;
+              content: "決済方法" !important;
+              @include tsukushi-b;
+              font-size: 24px;
+              line-height: normal;
+              letter-spacing: 0.03em;
+              margin-bottom: 20px;
+              text-align: center;
+            }
+            .wc_payment_methods{
+              width: calc(100% + 20px);
+              margin-left: -10px !important;
+              .payment_box{
+                padding: 20px !important;
+              }
+            }
+            .place-order{
+              .woocommerce-terms-and-conditions-wrapper{
+                .woocommerce-privacy-policy-text{
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

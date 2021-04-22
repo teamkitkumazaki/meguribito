@@ -18,11 +18,21 @@
 @import 'pages/kagibitoList.scss';
 @import 'pages/kagibitoDetail.scss';
 @import 'pages/about.scss';
+@import 'pages/cart.scss';
+@import 'pages/payment.scss';
+@import 'pages/completed.scss';
+@import 'pages/service.scss';
 @import 'pages/flow.scss';
 @import 'pages/transaction.scss';
 @import 'pages/privacy.scss';
 
-
+/*######## マイページ ##########*/
+@import 'pages/mypage/common.scss';
+@import 'pages/mypage/login.scss';
+@import 'pages/mypage/reset.scss';
+@import 'pages/mypage/account.scss';
+@import 'pages/mypage/address.scss';
+@import 'pages/mypage/booking.scss';
 
 
 /*########## コンポーネント ##########*/
@@ -57,6 +67,8 @@
 @import 'component/comp-time-shcedule.scss';
 @import 'component/comp-trip-review.scss';
 @import 'component/comp-trip-faq.scss';
+@import 'component/comp-detail-pop.scss';
+
 
 /* カギビト一覧 */
 @import 'component/comp-kagibito-list.scss';
@@ -64,6 +76,10 @@
 /* ニュース一覧 */
 @import 'component/comp-news-list.scss';
 
+/* サービス紹介 */
+@import 'component/comp-service-concept.scss';
+@import 'component/comp-character-wrap.scss';
+@import 'component/comp-circulation-model.scss';
 /* 旅の流れ */
 @import 'component/comp-flow-wrap.scss';
 
@@ -79,5 +95,12 @@
 @import 'component/comp-footer-link.scss';
 @import 'component/comp-service-slider.scss';
 
+/* カート・マイページ */
+@import 'component/comp-woocommerce-message.scss';
+
+
 /* プライバシーポリシー */
 @import 'component/comp-privacy-text.scss';
+
+/* テキストプリセット */
+@import 'component/comp-text-set.scss';

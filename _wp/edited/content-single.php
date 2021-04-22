@@ -6,27 +6,22 @@
  */
 
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-	<?php
-	do_action( 'storefront_single_post_top' );
-
-	/**
-	 * Functions hooked into storefront_single_post add_action
-	 *
-	 * @hooked storefront_post_header          - 10
-	 * @hooked storefront_post_content         - 30
-	 */
-	do_action( 'storefront_single_post' );
-
-	/**
-	 * Functions hooked in to storefront_single_post_bottom action
-	 *
-	 * @hooked storefront_post_nav         - 10
-	 * @hooked storefront_display_comments - 20
-	 */
-	do_action( 'storefront_single_post_bottom' );
-	?>
-
-</article><!-- #post-## -->
+	<p>content-single</p>
+	<div class="storefront_single_post_top">
+		<?php do_action( 'storefront_single_post_top' );?>
+	</div>
+	<div class="storefront_single_post">
+		<?php do_action( 'storefront_single_post' );?>
+	</div>
+	<div class="storefront_single_post">
+		<?php do_action( 'storefront_single_post' );?>
+	</div>
+	<div class="storefront_single_post_bottom">
+		<?php do_action( 'storefront_single_post_bottom' );?>
+	</div>
+	<form class="cart" action="<?php the_permalink();?>" method="post" enctype="multipart/form-data">
+		<div class="quantity">
+			<input type="number" id="quantity_60795153ca8a2" class="input-text qty text" step="1" min="1" max="4" name="quantity" value="1" title="数" size="4" placeholder="" inputmode="numeric">
+		</div>
+		<button type="submit" name="add-to-cart" value="14" class="single_add_to_cart_button button alt">お買い物カゴに追加</button>
+	</form>
