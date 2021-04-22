@@ -43,7 +43,7 @@ get_header(); ?>
 							<span class="icon_image"></span>
 						</div>
 						<div class="profile_wrap">
-							<p class="user_name"><?php echo $userInfo->display_name;?><span class="user_email"><?php echo $userInfo->user_email;?></p>
+							<p class="user_name"><?php echo $userInfo->display_name;?><span class="user_email">(<?php echo $userInfo->user_email;?>)</p>
 							<div class="profile_detail">
 								<div class="profile_point">
 									<span class="title">予約/計画中のプラン</span>

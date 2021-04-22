@@ -97,7 +97,16 @@ $pointYellow: #BF992E;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
 }
-
+@mixin breakTableLayout{
+  display: block;
+  width: 100%;
+  thead{
+    display: none;
+  }
+  tbody, tfoot, tr,td{
+    display: block;
+  }
+}
 @mixin formSet{
   .form-row{
     margin-bottom: 25px;

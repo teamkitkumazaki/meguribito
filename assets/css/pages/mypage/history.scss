@@ -1,0 +1,81 @@
+.woocommerce-MyAccount-orders{
+  &::before{
+    display: block;
+    content: "今までに行ったプラン";
+    @include mypageTitle;
+    margin-bottom: 5px;
+  }
+  @include breakTableLayout;
+  thead{
+    display: none !important;
+  }
+  tr{
+    @include flexSet;
+    align-items: center;
+    padding: 25px 0;
+    position: relative;
+    border-bottom: 1px dotted #d8d8d8;
+    &:nth-last-of-type(1){
+      padding: 25px 0 0;
+      border-bottom: 0px dotted #d8d8d8;
+    }
+    .woocommerce-orders-table__cell-order-number{
+      width: 80px;
+      margin-right: 20px;
+      a{
+        @include tsukushi-b;
+        display: block;
+        text-align: center;
+        background-color: $black01;
+        color: #fff;
+        padding: 7px 0;
+        font-size:14px;
+        border-radius: 40px;
+        color: #fff;
+        @include hover;
+      }
+    }
+    .woocommerce-orders-table__cell-order-date{
+      @include tsukushi-b;
+      font-size: 18px;
+      line-height: 1;
+      letter-spacing: 0.03em;
+      position: relative;
+      background-color: transparent !important;
+      &::before{
+        display: inline;
+        content: "注文日:" !important;
+      }
+    }
+    .woocommerce-orders-table__cell-order-status,
+    .woocommerce-orders-table__cell-order-total{
+      display: none;
+    }
+    .woocommerce-orders-table__cell-order-actions{
+      height: 20px;
+      position: absolute;
+      right:0;
+      top: 20px;
+      margin: auto;
+      a{
+        @include hover;
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+        line-height: 20px;
+        height: 20px;
+        @include tsukushi-b;
+        background-color: $pointYellow;
+        color: #fff;
+        letter-spacing: 0.03em;
+        font-size: 14px;
+        border-radius: 100px;
+        &::before{
+          display: inline;
+          content: "詳細を見る";
+          color: #fff;
+        }
+      }
+    }
+  }
+}

@@ -4488,7 +4488,12 @@ footer .footer_inner .footer_lower .copyright {
   font-weight: bold;
   font-size: 24px;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+.page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .user_name .user_email {
+  display: inline-block;
+  font-size: 16px;
+  padding-left: 10px;
 }
 .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .profile_point {
   font-family: "FOT-筑紫A丸ゴシック Std D";
@@ -4499,6 +4504,7 @@ footer .footer_inner .footer_lower .copyright {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: #464646;
+  margin-bottom: 10px;
 }
 .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .profile_point .num {
   font-family: "TsukuARdGothicStd-R";
@@ -4507,6 +4513,7 @@ footer .footer_inner .footer_lower .copyright {
   color: #3f3f3f;
   display: inline-block;
   padding: 0 0.2em;
+  margin-bottom: 5px;
 }
 .page-mypage .section-account-info .flex_wrap .myprofile .logout_link {
   font-family: "FOT-筑紫A丸ゴシック Std D";
@@ -5138,6 +5145,247 @@ footer .footer_inner .footer_lower .copyright {
   float: right !important;
   width: 47% !important;
   margin: 0 0 25px 6% !important;
+}
+
+.my_account_bookings {
+  display: block;
+  width: 100%;
+}
+.my_account_bookings::before {
+  display: block;
+  content: "予約中のプラン";
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  margin-bottom: 5px;
+}
+.my_account_bookings thead {
+  display: none;
+}
+.my_account_bookings tbody, .my_account_bookings tfoot, .my_account_bookings tr, .my_account_bookings td {
+  display: block;
+}
+.my_account_bookings tr {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px 0;
+  position: relative;
+  border-bottom: 1px dotted #d8d8d8;
+}
+.my_account_bookings tr:nth-last-of-type(1) {
+  padding: 25px 0 0;
+  border-bottom: 0px dotted #d8d8d8;
+}
+.my_account_bookings tr .booking-id {
+  display: none;
+}
+.my_account_bookings tr .booking-status {
+  display: none;
+}
+.my_account_bookings tr .booking-start-date {
+  order: 0;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #646464;
+  position: relative;
+  padding-left: 30px;
+  background-color: transparent !important;
+}
+.my_account_bookings tr .booking-start-date::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-size: contain;
+  background-image: url(../img/common/mypage.svg);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.my_account_bookings tr .booking-end-date {
+  width: 60%;
+  order: 1;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #646464;
+  background-color: transparent !important;
+}
+.my_account_bookings tr .booking-end-date::before {
+  display: inline;
+  content: "〜";
+}
+.my_account_bookings tr .booked-product {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  width: 100%;
+  order: 2;
+  margin: 10px 0 0;
+  font-size: 22px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  background-color: transparent !important;
+  transition: opacity 0.3s;
+}
+.my_account_bookings tr .booked-product:hover {
+  opacity: 0.75;
+}
+.my_account_bookings tr .booked-product a {
+  color: inherit;
+}
+.my_account_bookings tr .booking-cancel {
+  order: 4;
+}
+.my_account_bookings tr .order-number {
+  order: 5;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.my_account_bookings tr .order-number a {
+  transition: opacity 0.3s;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  background-color: #BF992E;
+  color: #fff;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  border-radius: 100px;
+}
+.my_account_bookings tr .order-number a:hover {
+  opacity: 0.75;
+}
+.my_account_bookings tr .order-number a::before {
+  display: inline;
+  content: "詳細を見る";
+  color: #fff;
+}
+
+.woocommerce-MyAccount-orders {
+  display: block;
+  width: 100%;
+}
+.woocommerce-MyAccount-orders::before {
+  display: block;
+  content: "今までに行ったプラン";
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  margin-bottom: 5px;
+}
+.woocommerce-MyAccount-orders thead {
+  display: none;
+}
+.woocommerce-MyAccount-orders tbody, .woocommerce-MyAccount-orders tfoot, .woocommerce-MyAccount-orders tr, .woocommerce-MyAccount-orders td {
+  display: block;
+}
+.woocommerce-MyAccount-orders thead {
+  display: none !important;
+}
+.woocommerce-MyAccount-orders tr {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 25px 0;
+  position: relative;
+  border-bottom: 1px dotted #d8d8d8;
+}
+.woocommerce-MyAccount-orders tr:nth-last-of-type(1) {
+  padding: 25px 0 0;
+  border-bottom: 0px dotted #d8d8d8;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-number {
+  width: 80px;
+  margin-right: 20px;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-number a {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  background-color: #3f3f3f;
+  color: #fff;
+  padding: 7px 0;
+  font-size: 14px;
+  border-radius: 40px;
+  color: #fff;
+  transition: opacity 0.3s;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-number a:hover {
+  opacity: 0.75;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-date {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  position: relative;
+  background-color: transparent !important;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-date::before {
+  display: inline;
+  content: "注文日:" !important;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-status,
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-total {
+  display: none;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-actions {
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  margin: auto;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-actions a {
+  transition: opacity 0.3s;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  line-height: 20px;
+  height: 20px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  background-color: #BF992E;
+  color: #fff;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  border-radius: 100px;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-actions a:hover {
+  opacity: 0.75;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-actions a::before {
+  display: inline;
+  content: "詳細を見る";
+  color: #fff;
 }
 
 /*########## コンポーネント ##########*/
