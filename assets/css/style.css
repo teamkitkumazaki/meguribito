@@ -4446,6 +4446,193 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 120px;
   min-height: unset;
 }
+.page-mypage .section-account-info {
+  margin-bottom: 60px;
+}
+.page-mypage .section-account-info .mypage_title {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.page-mypage .section-account-info .flex_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-mypage .section-account-info .flex_wrap .myprofile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-mypage .section-account-info .flex_wrap .myprofile .icon_wrap {
+  width: 120px;
+  height: 120px;
+  border: solid 1px #4d4327;
+  box-sizing: border-box;
+  border-radius: 50%;
+  backgorund-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../img/common/icon_default.svg);
+  margin-right: 20px;
+}
+.page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .user_name {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+.page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .profile_point {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #464646;
+}
+.page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .profile_point .num {
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  font-size: 30px;
+  color: #3f3f3f;
+  display: inline-block;
+  padding: 0 0.2em;
+}
+.page-mypage .section-account-info .flex_wrap .myprofile .logout_link {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #979797;
+  text-decoration: underline;
+  transition: opacity 0.3s;
+}
+.page-mypage .section-account-info .flex_wrap .myprofile .logout_link:hover {
+  opacity: 0.75;
+}
+.page-mypage .section-account-info .flex_wrap .history_wrap {
+  width: 150px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px 0;
+  background: #fff;
+  margin-right: 15px;
+}
+.page-mypage .section-account-info .flex_wrap .history_wrap .title {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.page-mypage .section-account-info .flex_wrap .history_wrap .title span {
+  display: block;
+}
+.page-mypage .section-account-info .flex_wrap .history_wrap .number {
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 1;
+  letter-spacing: normal;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation {
+  width: 100%;
+  float: none;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li {
+  padding: 0 20px;
+  text-align: center;
+  border-bottom: 2px solid #979797;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li a {
+  display: block;
+  padding: 10px 20px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  transition: opacity 0.3s;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0, 3em;
+  color: #979797;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li a:hover {
+  opacity: 0.75;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li a::before {
+  display: none !important;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li a::after {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0, 3em;
+  color: #979797;
+  text-indent: 0;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--bookings {
+  order: 0;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--bookings a::after {
+  display: inline;
+  content: "中のプラン";
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0, 3em;
+  color: #979797;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--orders {
+  order: 1;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--orders a::after {
+  content: "今までに行ったプラン";
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--edit-address {
+  order: 2;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--edit-address a::after {
+  content: "情報の変更";
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--edit-account {
+  order: 3;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--edit-account a::after {
+  content: "情報の変更";
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--dashboard, .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--downloads, .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--payment-methods, .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--customer-logout {
+  display: none;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.active {
+  border-bottom: 2px solid #BF992E;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.active a {
+  color: #BF992E;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.active a::after {
+  color: #BF992E;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-content {
+  width: 100%;
+  float: none;
+  padding: 30px;
+  background-color: #fff;
+}
 
 #customer_login.u-columns {
   display: flex;
@@ -4689,6 +4876,107 @@ footer .footer_inner .footer_lower .copyright {
   letter-spacing: 0.6px;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.woocommerce-EditAccountForm::before {
+  display: block;
+  content: "アカウント情報の変更";
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.woocommerce-EditAccountForm label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: normal;
+  position: relative;
+}
+.woocommerce-EditAccountForm input[type=email],
+.woocommerce-EditAccountForm input[type=tel],
+.woocommerce-EditAccountForm input[type=text],
+.woocommerce-EditAccountForm input[type=password] {
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  transition: border 0.2s;
+  will-change: border;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+.woocommerce-EditAccountForm input[type=email]:focus,
+.woocommerce-EditAccountForm input[type=tel]:focus,
+.woocommerce-EditAccountForm input[type=text]:focus,
+.woocommerce-EditAccountForm input[type=password]:focus {
+  outline: none;
+  border: 1px solid #979797;
+}
+.woocommerce-EditAccountForm button[type=submit] {
+  display: block;
+  width: 100%;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 20px !important;
+  text-align: center;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  background-color: #BF992E !important;
+}
+.woocommerce-EditAccountForm button[type=submit]:hover {
+  opacity: 0.75;
+}
+.woocommerce-EditAccountForm .show-password-input {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  height: 15px;
+  margin: auto;
+  padding: 0;
+  line-height: 1;
+}
+.woocommerce-EditAccountForm .woocommerce-password-strength {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.woocommerce-EditAccountForm .woocommerce-password-hint {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+}
+.woocommerce-EditAccountForm legend {
+  display: none;
+}
+.woocommerce-EditAccountForm .form-row {
+  margin-bottom: 25px;
+}
+.woocommerce-EditAccountForm .form-row em {
+  display: none;
+}
+.woocommerce-EditAccountForm button[type=submit] {
+  max-width: 30%;
+}
+.woocommerce-EditAccountForm .form-row-first {
+  float: right !important;
+  width: 47% !important;
+  margin: 0 0 25px !important;
+}
+.woocommerce-EditAccountForm .form-row-last {
+  float: left !important;
+  width: 47% !important;
+  margin: 0 6% 25px 0 !important;
 }
 
 /*########## コンポーネント ##########*/
