@@ -1,0 +1,16 @@
+.woocommerce-address-fields{
+  @include formSet;
+  button[type=submit]{
+    max-width: 30%;
+  }
+  .form-row-first{
+    float: left !important;
+    width: 47% !important;
+    margin: 0 0 25px !important;
+  }
+  .form-row-last{
+    float: right !important;
+    width: 47% !important;
+    margin: 0 0 25px 6% !important;
+  }
+}

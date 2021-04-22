@@ -99,6 +99,9 @@ $pointYellow: #BF992E;
 }
 
 @mixin formSet{
+  .form-row{
+    margin-bottom: 25px;
+  }
   label {
     display: block;
     margin-bottom: 5px;
@@ -121,6 +124,20 @@ $pointYellow: #BF992E;
     box-sizing: border-box;
     letter-spacing: 0.5px;
 
+    &:focus {
+      outline: none;
+      border: 1px solid #979797;
+    }
+  }
+  select {
+    border: 1px solid #f8f8f8;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    padding: 10px;
+    transition: border 0.2s;
+    will-change: border;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
     &:focus {
       outline: none;
       border: 1px solid #979797;

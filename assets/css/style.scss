@@ -32,6 +32,7 @@
 @import 'pages/mypage/reset.scss';
 @import 'pages/mypage/account.scss';
 @import 'pages/mypage/address.scss';
+@import 'pages/mypage/booking.scss';
 
 
 /*########## コンポーネント ##########*/
@@ -100,3 +101,6 @@
 
 /* プライバシーポリシー */
 @import 'component/comp-privacy-text.scss';
+
+/* テキストプリセット */
+@import 'component/comp-text-set.scss';

@@ -4618,13 +4618,13 @@ footer .footer_inner .footer_lower .copyright {
 .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--dashboard, .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--downloads, .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--payment-methods, .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--customer-logout {
   display: none;
 }
-.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.active {
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.active, .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.is-active {
   border-bottom: 2px solid #BF992E;
 }
-.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.active a {
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.active a, .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.is-active a {
   color: #BF992E;
 }
-.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.active a::after {
+.page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.active a::after, .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.is-active a::after {
   color: #BF992E;
 }
 .page-mypage .section-mypage .woocommerce-MyAccount-content {
@@ -4632,6 +4632,18 @@ footer .footer_inner .footer_lower .copyright {
   float: none;
   padding: 30px;
   background-color: #fff;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-content h2 {
+  display: none;
+}
+.page-mypage .section-mypage .woocommerce-MyAccount-content h3 {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 
 #customer_login.u-columns {
@@ -4679,6 +4691,9 @@ footer .footer_inner .footer_lower .copyright {
   border-radius: 10px;
   padding: 30px;
 }
+#customer_login.u-columns form .form-row {
+  margin-bottom: 25px;
+}
 #customer_login.u-columns form label {
   display: block;
   margin-bottom: 5px;
@@ -4706,6 +4721,20 @@ footer .footer_inner .footer_lower .copyright {
 #customer_login.u-columns form input[type=tel]:focus,
 #customer_login.u-columns form input[type=text]:focus,
 #customer_login.u-columns form input[type=password]:focus {
+  outline: none;
+  border: 1px solid #979797;
+}
+#customer_login.u-columns form select {
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  transition: border 0.2s;
+  will-change: border;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+#customer_login.u-columns form select:focus {
   outline: none;
   border: 1px solid #979797;
 }
@@ -4797,6 +4826,9 @@ footer .footer_inner .footer_lower .copyright {
   letter-spacing: 0.03em;
   margin-bottom: 20px;
 }
+.lost_reset_password .form-row {
+  margin-bottom: 25px;
+}
 .lost_reset_password label {
   display: block;
   margin-bottom: 5px;
@@ -4824,6 +4856,20 @@ footer .footer_inner .footer_lower .copyright {
 .lost_reset_password input[type=tel]:focus,
 .lost_reset_password input[type=text]:focus,
 .lost_reset_password input[type=password]:focus {
+  outline: none;
+  border: 1px solid #979797;
+}
+.lost_reset_password select {
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  transition: border 0.2s;
+  will-change: border;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+.lost_reset_password select:focus {
   outline: none;
   border: 1px solid #979797;
 }
@@ -4889,6 +4935,9 @@ footer .footer_inner .footer_lower .copyright {
   letter-spacing: 0.03em;
   margin-bottom: 20px;
 }
+.woocommerce-EditAccountForm .form-row {
+  margin-bottom: 25px;
+}
 .woocommerce-EditAccountForm label {
   display: block;
   margin-bottom: 5px;
@@ -4916,6 +4965,20 @@ footer .footer_inner .footer_lower .copyright {
 .woocommerce-EditAccountForm input[type=tel]:focus,
 .woocommerce-EditAccountForm input[type=text]:focus,
 .woocommerce-EditAccountForm input[type=password]:focus {
+  outline: none;
+  border: 1px solid #979797;
+}
+.woocommerce-EditAccountForm select {
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  transition: border 0.2s;
+  will-change: border;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+.woocommerce-EditAccountForm select:focus {
   outline: none;
   border: 1px solid #979797;
 }
@@ -4977,6 +5040,104 @@ footer .footer_inner .footer_lower .copyright {
   float: left !important;
   width: 47% !important;
   margin: 0 6% 25px 0 !important;
+}
+
+.woocommerce-address-fields .form-row {
+  margin-bottom: 25px;
+}
+.woocommerce-address-fields label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: normal;
+  position: relative;
+}
+.woocommerce-address-fields input[type=email],
+.woocommerce-address-fields input[type=tel],
+.woocommerce-address-fields input[type=text],
+.woocommerce-address-fields input[type=password] {
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  transition: border 0.2s;
+  will-change: border;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+.woocommerce-address-fields input[type=email]:focus,
+.woocommerce-address-fields input[type=tel]:focus,
+.woocommerce-address-fields input[type=text]:focus,
+.woocommerce-address-fields input[type=password]:focus {
+  outline: none;
+  border: 1px solid #979797;
+}
+.woocommerce-address-fields select {
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  transition: border 0.2s;
+  will-change: border;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+.woocommerce-address-fields select:focus {
+  outline: none;
+  border: 1px solid #979797;
+}
+.woocommerce-address-fields button[type=submit] {
+  display: block;
+  width: 100%;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 20px !important;
+  text-align: center;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  background-color: #BF992E !important;
+}
+.woocommerce-address-fields button[type=submit]:hover {
+  opacity: 0.75;
+}
+.woocommerce-address-fields .show-password-input {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  height: 15px;
+  margin: auto;
+  padding: 0;
+  line-height: 1;
+}
+.woocommerce-address-fields .woocommerce-password-strength {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.woocommerce-address-fields .woocommerce-password-hint {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+}
+.woocommerce-address-fields button[type=submit] {
+  max-width: 30%;
+}
+.woocommerce-address-fields .form-row-first {
+  float: left !important;
+  width: 47% !important;
+  margin: 0 0 25px !important;
+}
+.woocommerce-address-fields .form-row-last {
+  float: right !important;
+  width: 47% !important;
+  margin: 0 0 25px 6% !important;
 }
 
 /*########## コンポーネント ##########*/
@@ -10606,4 +10767,9 @@ footer .footer_inner .footer_lower .copyright {
   .comp-privacy-text .text_item .content_item p.mt {
     margin-top: 15px;
   }
+}
+/* テキストプリセット */
+.comp-text-set {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
 }

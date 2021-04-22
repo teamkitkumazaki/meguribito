@@ -31,6 +31,9 @@ get_header(); ?>
 ?>
   <article id="mypage" class="page-mypage">
 		<?php if (is_user_logged_in()) : ?>
+			<?php
+				$userInfo = wp_get_current_user();
+			?>
 		<section class="section-account-info">
 			<div class="section_inner">
 				<h1 class="mypage_title">マイページ</h1>
@@ -40,7 +43,7 @@ get_header(); ?>
 							<span class="icon_image"></span>
 						</div>
 						<div class="profile_wrap">
-							<p class="user_name">skmzk418</p>
+							<p class="user_name"><?php echo $userInfo->display_name;?><span class="user_email"><?php echo $userInfo->user_email;?></p>
 							<div class="profile_detail">
 								<div class="profile_point">
 									<span class="title">予約/計画中のプラン</span>
@@ -48,7 +51,7 @@ get_header(); ?>
 									<span class="unit">件</span>
 								</div>
 							</div><!-- profile_detail -->
-							<a class="logout_link" href="#aaaa">ログアウト</a>
+							<a id="logoutLink" class="logout_link" href="/my-account/customer-logout">ログアウト</a>
 						</div>
 					</div>
 					<div class="history_wrap">
@@ -69,6 +72,9 @@ get_header(); ?>
 			</div>
 		</section>
 	</article>
+	<div class="comp-text-set" style="opacity:0; height:0px;">
+		<p>情報・変更</p>
+	</div>
   <?php get_template_part("parts/hummenu");?>
   <?php get_template_part("parts/footer");?>
 </body>

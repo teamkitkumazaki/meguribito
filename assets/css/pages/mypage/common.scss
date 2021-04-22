@@ -168,7 +168,7 @@
           &.woocommerce-MyAccount-navigation-link--customer-logout{
             display: none;
           }
-          &.active{
+          &.active, &.is-active{
             border-bottom: 2px solid $pointYellow;
             a{
               color: $pointYellow;
@@ -185,6 +185,12 @@
       float: none;
       padding: 30px;
       background-color: #fff;
+      h2{
+        display: none;
+      }
+      h3{
+        @include mypageTitle;
+      }
     }
   }
 }

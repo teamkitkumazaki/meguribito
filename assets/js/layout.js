@@ -453,19 +453,16 @@ if (document.getElementById('paymentPage')) {
 
 function arrangeMypageNav(){
   var currentLink = location.href;
+  var logout = $('#logoutLink');
   var navigation = $('.woocommerce-MyAccount-navigation');
   var addressLink = $('.woocommerce-MyAccount-navigation-link--edit-address');
+  var historyLink = $('.woocommerce-MyAccount-navigation-link--orders');
+  var logoutLink = $('.woocommerce-MyAccount-navigation-link--customer-logout a').attr('href');
   var navLink = [];
   console.log('currentLink:' + currentLink);
   addressLink.find('a').attr('href', 'https://meguribito.com/my-account/edit-address/billing/');
-  navigation.find('li').each(function(index) {
-    navLink[index] = $(this).find('a').attr('href');
-    console.log('navLink:' + navLink[index]);
-    if(currentLink == navLink[index]){
-      console.log('index:' + index);
-      $(this).addClass('active');
-    }
-  });
+  historyLink.find('a').text('');
+  logout.attr('href', logoutLink);
 }
 
 if (document.getElementById('mypage')) {
