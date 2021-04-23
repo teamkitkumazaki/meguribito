@@ -80,7 +80,6 @@
         border-radius: 20px;
         padding: 20px 0;
         background: #fff;
-        margin-right: 15px;
         .title{
           @include tsukushi-b;
           font-weight: bold;
@@ -192,6 +191,7 @@
       float: none;
       padding: 30px;
       background-color: #fff;
+      box-sizing: border-box;
       h2{
         display: none;
       }

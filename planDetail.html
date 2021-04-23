@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,11 +24,16 @@
 	<link rel="dns-prefetch" href="https://demo.agestream.jp/meguribito">
 	<link rel="stylesheet" href="assets/css/style.css?ver210312_2">
 	<link rel="stylesheet" href="assets/slick/slick.css">
+	<link rel="stylesheet" href="https://meguribito.com/wp-content/plugins/woocommerce-bookings/dist/css/frontend.css?ver=1.15.38">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css?ver=5.7.1">
+	<link rel="stylesheet" href="https://meguribito.com/wp-content/themes/meguribito/assets/css/woocommerce/extensions/bookings.css?ver=5.7.1">
 	<script type="text/javascript" src="https://webfont.fontplus.jp/accessor/script/fontplus.js?QQ69TeiJCsk%3D&box=dFsrremOrPA%3D&aa=1&ab=2" charset="utf-8"></script>
 	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+
 	<script type="text/javascript" src="assets/slick/slick.min.js"></script>
 	<script type="text/javascript" src="assets/js/layout.js?ver201120"></script>
 </head>
+
 <body>
 	<header class="comp-header">
 		<div class="header_inner">
@@ -99,8 +105,8 @@
 					<p>かつて志賀直哉などの文豪も筆を執りに訪れた尾道は、静かな海と風光明媚な景色、そしてほどよく栄え酒場も充実している環境は、じっくりと腰を据えて仕事をするのには最高の街並みです。</p>
 					<p>また、港町として栄えた都市であることから歴史的に文化のアンテナが高いこともあり、現在も国内・海外問わず、アーティストやクリエイターが多く在住・移住しているこの町の日常生活の中には、個性的で力強い生き方をするアーティストとの出会いもたくさんあります。</p>
 					<div class="comp-booking-button">
-							<button><span>プランを予約する</span></button>
-						</div>
+						<button><span>プランを予約する</span></button>
+					</div>
 					<div class="button_wrap">
 						<div class="favorite_button">
 							<a class="favorite" href="#aaaa">
@@ -343,7 +349,7 @@
 							<a class="map_link" href="#aaaa">MAP</a>
 						</div>
 						<div id="guestHouseWrap" class="comp-guesthouse-detail">
-							<div id="wrapInner"  class="detail_inner">
+							<div id="wrapInner" class="detail_inner">
 								<div id="yadoImageSlider" class="slick-slider">
 									<div class="item_box slick-slide">
 										<div class="slider_img">
@@ -499,29 +505,29 @@
 							<h3 class="detail_ttl">プランの基本情報</h3>
 							<div class="comp-chart-layout">
 								<div class="chart_item">
-              		<span class="title">開催時期</span>
-              		<span class="content">通年（7月〜9月）</span>
-            		</div>
+									<span class="title">開催時期</span>
+									<span class="content">通年（7月〜9月）</span>
+								</div>
 								<div class="chart_item">
-              		<span class="title">体験料</span>
-              		<span class="content">10,000円（宿泊費込）</span>
-            		</div>
-                <div class="chart_item">
-              		<span class="title">最小催行人数</span>
-              		<span class="content">1名</span>
-            		</div>
+									<span class="title">体験料</span>
+									<span class="content">10,000円（宿泊費込）</span>
+								</div>
 								<div class="chart_item">
-              		<span class="title">最大催行人数</span>
-              		<span class="content">4名</span>
-            		</div>
+									<span class="title">最小催行人数</span>
+									<span class="content">1名</span>
+								</div>
 								<div class="chart_item">
-              		<span class="title">拠点名</span>
-              		<span class="content">コダテル</span>
-            		</div>
+									<span class="title">最大催行人数</span>
+									<span class="content">4名</span>
+								</div>
 								<div class="chart_item">
-              		<span class="title">住所</span>
-              		<span class="content">〒796-0001　愛媛県八幡浜市向灘2187</span>
-            		</div>
+									<span class="title">拠点名</span>
+									<span class="content">コダテル</span>
+								</div>
+								<div class="chart_item">
+									<span class="title">住所</span>
+									<span class="content">〒796-0001　愛媛県八幡浜市向灘2187</span>
+								</div>
 								<div class="chart_item">
 									<span class="title">電話番号</span>
 									<span class="content">0894-21-2629</span>
@@ -701,143 +707,301 @@
 				</div><!-- comp-plan-list -->
 			</div><!-- section_inner -->
 		</section>
-		<section id="detailPopup" class="section-popup comp-detail-pop open">
-		<div class="scroll_wrap">
-			<div class="section_inner">
-				<div class="cart_wrap">
-					<form class="cart" action="https://meguribito.com/product/onomichi-local/" method="post" enctype="multipart/form-data">
-						<div class="quantity hidden">
-							<input type="hidden" id="quantity_60797364a1f32" class="qty" name="quantity" value="1">
+		<section id="detailPopup" class="section-popup comp-detail-pop">
+			<button id="popClose" class="pop_close"></button>
+			<div class="scroll_wrap">
+				<div class="section_inner">
+					<div class="detail_left">
+						<div class="img_wrap">
+							<img src="assets/img/index/pick01.jpg">
 						</div>
+						<div class="txt_wrap">
+							<h2 class="plan_ttl">穏やかな海に囲まれながら働き、アーティスト達と過ごすローカルライフ。</h2>
+							<div class="location">
+								<span class="area">広島県・尾道市</span>
+								<span class="guesthouse">ゲストハウス ヤドカリ</span>
+							</div>
+							<div class="kagibito_wrap">
+								<a href="#aaaa" class="icon" style="background-image: url(assets/img/kagibito/kagibito04.jpg);"></a>
+								<div class="kagibito_info">
+									<span class="info">ゲストハウスヤドカリ・オーナー</span>
+									<a class="name" href="#aaaa">村上 ひろふみさん</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- detail_left -->
+					<div class="detail_right">
+						<div class="comp-booking-section">
+							<div class="default_wrap">
 
-						<button type="submit" name="add-to-cart" value="45" class="single_add_to_cart_button button alt">お買い物カゴに追加</button>
-					</form>
-				</div>
-				<div class="default_wrap">
-										<div class="woocommerce_before_main_content">
-								<div id="primary" class="content-area">
-			<main id="main" class="site-main" role="main">
-							</main></div>
+								<div class="single-product">
+									<div class="woocommerce-notices-wrapper"></div>
+									<div id="product-89" class="product type-product post-89 status-publish first instock product_cat-uncategorized has-post-thumbnail virtual sold-individually taxable purchasable product-type-booking">
 
-					<div class="single-product">
+										<div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 1; transition: opacity 0.25s ease-in-out 0s;"><a href="#"
+												class="woocommerce-product-gallery__trigger">🔍</a>
+											<figure class="woocommerce-product-gallery__wrapper">
+												<div data-thumb="https://meguribito.com/wp-content/uploads/2021/04/ogp-100x100.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image" style="position: relative; overflow: hidden;"><a
+														href="https://meguribito.com/wp-content/uploads/2021/04/ogp.jpg"><img width="416" height="218" src="https://meguribito.com/wp-content/uploads/2021/04/ogp-416x218.jpg" class="wp-post-image" alt="" loading="lazy" title="ogp"
+															data-caption="" data-src="https://meguribito.com/wp-content/uploads/2021/04/ogp.jpg" data-large_image="https://meguribito.com/wp-content/uploads/2021/04/ogp.jpg" data-large_image_width="1200"
+															data-large_image_height="630"
+															srcset="https://meguribito.com/wp-content/uploads/2021/04/ogp-416x218.jpg 416w, https://meguribito.com/wp-content/uploads/2021/04/ogp-300x158.jpg 300w, https://meguribito.com/wp-content/uploads/2021/04/ogp-1024x538.jpg 1024w, https://meguribito.com/wp-content/uploads/2021/04/ogp-768x403.jpg 768w, https://meguribito.com/wp-content/uploads/2021/04/ogp.jpg 1200w"
+															sizes="(max-width: 416px) 100vw, 416px"></a><img role="presentation" alt="" src="https://meguribito.com/wp-content/uploads/2021/04/ogp.jpg" class="zoomImg"
+														style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 1200px; height: 630px; border: none; max-width: none; max-height: none;"></div>
+											</figure>
+										</div>
 
-								<div class="woocommerce-notices-wrapper"></div><div id="product-93" class="product type-product post-93 status-publish first instock product_cat-uncategorized sold-individually taxable shipping-taxable purchasable product-type-booking">
+										<div class="summary entry-summary">
+											<h1 class="product_title entry-title">瀬戸内のアーティスト達と過ごすローカルヒッピーライフ</h1>
+											<p class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>10,000</bdi></span> より <small class="woocommerce-price-suffix">(税込)</small></p>
 
-	<div class="woocommerce-product-gallery woocommerce-product-gallery--without-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 1; transition: opacity 0.25s ease-in-out 0s;">
-	<figure class="woocommerce-product-gallery__wrapper">
-		<div class="woocommerce-product-gallery__image--placeholder"><img src="https://meguribito.com/wp-content/uploads/woocommerce-placeholder-416x416.png" alt="商品画像を待っています" class="wp-post-image"></div>	</figure>
-</div>
+											<noscript>予約を作成するためには、お使いのブラウザーが JavaScript に対応している必要があります。</noscript>
 
-	<div class="summary entry-summary">
-		<h1 class="product_title entry-title">瀬戸内のアーティスト達と過ごすローカルヒッピーライフ(テスト)</h1><p class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>10,000</bdi></span> <small class="woocommerce-price-suffix">(税込)</small></p>
+											<form class="cart" method="post" enctype="multipart/form-data" data-nonce="1e5ad60665">
 
-<noscript>予約を作成するためには、お使いのブラウザーが JavaScript に対応している必要があります。</noscript>
-
-<form class="cart" method="post" enctype="multipart/form-data" data-nonce="6a4933f110">
-
-	<div id="wc-bookings-booking-form" class="wc-bookings-booking-form" style="">
-
-
-		<fieldset class="wc-bookings-date-picker wc-bookings-date-picker-booking wc_bookings_field_start_date">
-	<div class="picker hasDatepicker" data-display="always_visible" data-duration-unit="day" data-default-availability="true" data-min_date="0" data-max_date="+12m" data-default_date="2021-04-17" data-is_range_picker_enabled="0" id="dp1618603822901" style="position: static; zoom: 1;"><div class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="display: block;"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all ui-state-disabled" title="前"><span class="ui-icon ui-icon-circle-triangle-w">前</span></a><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="次"><span class="ui-icon ui-icon-circle-triangle-e">次</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">4月</span>&nbsp;<span class="ui-datepicker-year">2021</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th scope="col"><span title="月曜日">月</span></th><th scope="col"><span title="火曜日">火</span></th><th scope="col"><span title="水曜日">水</span></th><th scope="col"><span title="木曜日">木</span></th><th scope="col"><span title="金曜日">金</span></th><th scope="col" class="ui-datepicker-week-end"><span title="土曜日">土</span></th><th scope="col" class="ui-datepicker-week-end"><span title="日曜日">日</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">29</span></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">30</span></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">31</span></td><td class=" ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">1</span></td><td class=" ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">2</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">3</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">4</span></td></tr><tr><td class=" ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">5</span></td><td class=" ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">6</span></td><td class=" ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">7</span></td><td class=" ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">8</span></td><td class=" ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">9</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">10</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">11</span></td></tr><tr><td class=" ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">12</span></td><td class=" ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">13</span></td><td class=" ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">14</span></td><td class=" ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">15</span></td><td class=" ui-datepicker-unselectable ui-state-disabled bookable" title="この日は予約可能です"><span class="ui-state-default">16</span></td><td class=" ui-datepicker-week-end bookable ui-datepicker-today" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="3" data-year="2021"><a class="ui-state-default ui-state-highlight" href="#">17</a></td><td class=" ui-datepicker-week-end bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="3" data-year="2021"><a class="ui-state-default" href="#">18</a></td></tr><tr><td class=" bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="3" data-year="2021"><a class="ui-state-default" href="#">19</a></td><td class=" bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="3" data-year="2021"><a class="ui-state-default" href="#">20</a></td><td class=" bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="3" data-year="2021"><a class="ui-state-default" href="#">21</a></td><td class=" bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="3" data-year="2021"><a class="ui-state-default" href="#">22</a></td><td class=" bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="3" data-year="2021"><a class="ui-state-default" href="#">23</a></td><td class=" ui-datepicker-week-end bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="3" data-year="2021"><a class="ui-state-default" href="#">24</a></td><td class=" ui-datepicker-week-end bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="3" data-year="2021"><a class="ui-state-default" href="#">25</a></td></tr><tr><td class=" bookable-range selection-start-date ui-datepicker-current-day" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="3" data-year="2021"><a class="ui-state-default ui-state-active" href="#">26</a></td><td class=" bookable-range" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="3" data-year="2021"><a class="ui-state-default" href="#">27</a></td><td class=" bookable-range selection-end-date" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="3" data-year="2021"><a class="ui-state-default" href="#">28</a></td><td class=" bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="3" data-year="2021"><a class="ui-state-default" href="#">29</a></td><td class=" bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="3" data-year="2021"><a class="ui-state-default" href="#">30</a></td><td class=" ui-datepicker-week-end ui-datepicker-other-month bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="4" data-year="2021"><a class="ui-state-default ui-priority-secondary" href="#">1</a></td><td class=" ui-datepicker-week-end ui-datepicker-other-month bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="4" data-year="2021"><a class="ui-state-default ui-priority-secondary" href="#">2</a></td></tr></tbody></table></div></div>
-
-		<div class="wc-bookings-date-picker-date-fields" style="display: none;">
-
-				<label>
-			<input type="text" autocomplete="off" name="wc_bookings_field_start_date_month" placeholder="mm" size="2" class="booking_date_month">
-			<span>月</span>
-		</label> / <label>
-			<input type="text" autocomplete="off" name="wc_bookings_field_start_date_day" placeholder="dd" size="2" class="booking_date_day">
-			<span>日</span>
-		</label>
-		 / <label>
-			<input type="text" autocomplete="off" value="2021" name="wc_bookings_field_start_date_year" placeholder="YYYY" size="4" class="booking_date_year">
-			<span>年</span>
-		</label>
-	</div>
-
-	</fieldset>
-
-		<div class="wc-bookings-booking-cost" style="zoom: 1;" data-raw-price="">予約費用: <strong><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>10,000</bdi></span> <small class="woocommerce-price-suffix">(税込)</small></strong></div>
-
-	</div>
+												<div id="wc-bookings-booking-form" class="wc-bookings-booking-form" style="">
 
 
-	<input type="hidden" name="add-to-cart" value="93" class="wc-booking-product-id">
+													<p class="form-field form-field-wide wc_bookings_field_duration" style="display: none;">
+														<label for="wc_bookings_field_duration">期間:</label>
+														<input type="number" value="3" step="1" min="3" max="6" name="wc_bookings_field_duration" id="wc_bookings_field_duration"> 日
+													</p>
+													<p class="form-field form-field-wide wc_bookings_field_persons">
+														<label for="wc_bookings_field_persons">人数:</label>
+														<input type="number" value="1" step="1" min="1" max="3" name="wc_bookings_field_persons" id="wc_bookings_field_persons">
+													</p>
+													<p class="form-field form-field-wide wc_booking_field_ wc_bookings_field_resource">
+														<label for="wc_bookings_field_resource" value="ドミトリー(+¥22,000)">タイプ:</label>
+														<select name="wc_bookings_field_resource" id="wc_bookings_field_resource">
+															<option value="120">ドミトリー (+¥22,000)</option>
+															<option value="121">個室 (+¥25,000)</option>
+														</select>
+													</p>
 
-	<button type="submit" class="wc-bookings-booking-form-button single_add_to_cart_button button alt" style="">今すぐ予約</button>
+													<fieldset class="wc-bookings-date-picker wc-bookings-date-picker-booking wc_bookings_field_start_date">
+														<div class="picker hasDatepicker" data-display="" data-duration-unit="day" data-default-availability="true" data-min_date="+14d" data-max_date="+6m" data-default_date="2021-04-23" data-is_range_picker_enabled="1"
+															id="dp1619165971699" style="position: static; zoom: 1; display: none;">
+															<div class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="display: block;">
+																<div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all ui-state-disabled" title="前"><span class="ui-icon ui-icon-circle-triangle-w">前</span></a><a
+																		class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="次"><span class="ui-icon ui-icon-circle-triangle-e">次</span></a>
+																	<div class="ui-datepicker-title"><span class="ui-datepicker-month">5月</span>&nbsp;<span class="ui-datepicker-year">2021</span></div>
+																</div>
+																<table class="ui-datepicker-calendar">
+																	<thead>
+																		<tr>
+																			<th scope="col"><span title="月曜日">月</span></th>
+																			<th scope="col"><span title="火曜日">火</span></th>
+																			<th scope="col"><span title="水曜日">水</span></th>
+																			<th scope="col"><span title="木曜日">木</span></th>
+																			<th scope="col"><span title="金曜日">金</span></th>
+																			<th scope="col" class="ui-datepicker-week-end"><span title="土曜日">土</span></th>
+																			<th scope="col" class="ui-datepicker-week-end"><span title="日曜日">日</span></th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled fully_booked" title="この日は満員で予約不可です"><span class="ui-state-default">26</span></td>
+																			<td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled fully_booked" title="この日は満員で予約不可です"><span class="ui-state-default">27</span></td>
+																			<td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled fully_booked" title="この日は満員で予約不可です"><span class="ui-state-default">28</span></td>
+																			<td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">29</span></td>
+																			<td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">30</span></td>
+																			<td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">1</span></td>
+																			<td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">2</span></td>
+																		</tr>
+																		<tr>
+																			<td class=" ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">3</span></td>
+																			<td class=" ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">4</span></td>
+																			<td class=" ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">5</span></td>
+																			<td class=" ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">6</span></td>
+																			<td class=" ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">7</span></td>
+																			<td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">8</span></td>
+																			<td class=" ui-datepicker-week-end bookable-range selection-start-date ui-datepicker-current-day" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="4" data-year="2021"><a
+																					class="ui-state-default ui-state-active" href="#">9</a></td>
+																		</tr>
+																		<tr>
+																			<td class=" bookable-range" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="4" data-year="2021"><a class="ui-state-default" href="#">10</a></td>
+																			<td class=" bookable-range" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="4" data-year="2021"><a class="ui-state-default" href="#">11</a></td>
+																			<td class=" bookable-range selection-end-date" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="4" data-year="2021"><a class="ui-state-default" href="#">12</a></td>
+																			<td class=" bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="4" data-year="2021"><a class="ui-state-default" href="#">13</a></td>
+																			<td class=" bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="4" data-year="2021"><a class="ui-state-default" href="#">14</a></td>
+																			<td class=" ui-datepicker-week-end bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="4" data-year="2021"><a class="ui-state-default" href="#">15</a></td>
+																			<td class=" ui-datepicker-week-end bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="4" data-year="2021"><a class="ui-state-default" href="#">16</a></td>
+																		</tr>
+																		<tr>
+																			<td class=" bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="4" data-year="2021"><a class="ui-state-default" href="#">17</a></td>
+																			<td class=" bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="4" data-year="2021"><a class="ui-state-default" href="#">18</a></td>
+																			<td class=" ui-datepicker-unselectable ui-state-disabled fully_booked" title="この日は満員で予約不可です"><span class="ui-state-default">19</span></td>
+																			<td class=" ui-datepicker-unselectable ui-state-disabled fully_booked" title="この日は満員で予約不可です"><span class="ui-state-default">20</span></td>
+																			<td class=" ui-datepicker-unselectable ui-state-disabled fully_booked" title="この日は満員で予約不可です"><span class="ui-state-default">21</span></td>
+																			<td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">22</span></td>
+																			<td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">23</span></td>
+																		</tr>
+																		<tr>
+																			<td class=" ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">24</span></td>
+																			<td class=" ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">25</span></td>
+																			<td class=" ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">26</span></td>
+																			<td class=" ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">27</span></td>
+																			<td class=" ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">28</span></td>
+																			<td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">29</span></td>
+																			<td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">30</span></td>
+																		</tr>
+																		<tr>
+																			<td class=" ui-datepicker-unselectable ui-state-disabled not_bookable bookable" title="この日は予約可能です"><span class="ui-state-default">31</span></td>
+																			<td class=" ui-datepicker-other-month bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="5" data-year="2021"><a class="ui-state-default ui-priority-secondary" href="#">1</a></td>
+																			<td class=" ui-datepicker-other-month bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="5" data-year="2021"><a class="ui-state-default ui-priority-secondary" href="#">2</a></td>
+																			<td class=" ui-datepicker-other-month bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="5" data-year="2021"><a class="ui-state-default ui-priority-secondary" href="#">3</a></td>
+																			<td class=" ui-datepicker-other-month bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="5" data-year="2021"><a class="ui-state-default ui-priority-secondary" href="#">4</a></td>
+																			<td class=" ui-datepicker-week-end ui-datepicker-other-month bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="5" data-year="2021"><a
+																					class="ui-state-default ui-priority-secondary" href="#">5</a></td>
+																			<td class=" ui-datepicker-week-end ui-datepicker-other-month bookable" title="この日は予約可能です" data-handler="selectDay" data-event="click" data-month="5" data-year="2021"><a
+																					class="ui-state-default ui-priority-secondary" href="#">6</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
 
+														<span class="label">日付を開始</span>:
+														<div class="wc-bookings-date-picker-date-fields">
+															<span>開始:</span><br>
 
-</form>
+															<label>
+																<input type="text" autocomplete="off" name="wc_bookings_field_start_date_month" placeholder="mm" size="2" class="booking_date_month">
+																<span>月</span>
+															</label> / <label>
+																<input type="text" autocomplete="off" name="wc_bookings_field_start_date_day" placeholder="dd" size="2" class="booking_date_day">
+																<span>日</span>
+															</label>
+															/ <label>
+																<input type="text" autocomplete="off" value="2021" name="wc_bookings_field_start_date_year" placeholder="YYYY" size="4" class="booking_date_year">
+																<span>年</span>
+															</label>
+														</div>
 
-<div class="product_meta">
+														<div class="wc-bookings-date-picker-date-fields">
+															<span>終了:</span><br>
+															<label>
+																<input type="text" autocomplete="off" name="wc_bookings_field_start_date_to_month" placeholder="mm" size="2" class="booking_to_date_month">
+																<span>月</span>
+															</label> / <label>
+																<input type="text" name="wc_bookings_field_start_date_to_day" placeholder="dd" size="2" class="booking_to_date_day">
+																<span>日</span>
+															</label>
+															/ <label>
+																<input type="text" autocomplete="off" value="2021" name="wc_bookings_field_start_date_to_year" placeholder="YYYY" size="4" class="booking_to_date_year">
+																<span>年</span>
+															</label>
+														</div>
+													</fieldset>
 
-
-
-	<span class="posted_in">カテゴリー: <a href="https://meguribito.com/product-category/uncategorized/" rel="tag">Uncategorized</a></span>
-
-
-</div>
-<div class="edit-link"><a class="post-edit-link" href="https://meguribito.com/wp-admin/post.php?post=93&amp;action=edit">編集 <span class="screen-reader-text">瀬戸内のアーティスト達と過ごすローカルヒッピーライフ(テスト)</span></a></div>	</div>
-
-
-	<div class="woocommerce-tabs wc-tabs-wrapper">
-		<ul class="tabs wc-tabs" role="tablist">
-							<li class="reviews_tab active" id="tab-title-reviews" role="tab" aria-controls="tab-reviews">
-					<a href="#tab-reviews">
-						レビュー (0)					</a>
-				</li>
-					</ul>
-					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews" style="">
-				<div id="reviews" class="woocommerce-Reviews">
-	<div id="comments">
-		<h2 class="woocommerce-Reviews-title">
-			レビュー		</h2>
-
-					<p class="woocommerce-noreviews">レビューはまだありません。</p>
-			</div>
-
-			<p class="woocommerce-verification-required">以前にこの商品を購入したことのあるログイン済みのユーザーのみレビューを残すことができます。</p>
-
-	<div class="clear"></div>
-</div>
-			</div>
-
-			</div>
-
-
-	<section class="related products">
-
-					<h2>関連商品</h2>
-
-		<ul class="products columns-3">
-
-
-					<li class="product type-product post-89 status-publish first instock product_cat-uncategorized has-post-thumbnail sold-individually taxable shipping-taxable purchasable product-type-booking">
-	<a href="https://meguribito.com/product/onomichi_local/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="324" height="324" src="https://meguribito.com/wp-content/uploads/2021/04/ogp-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" srcset="https://meguribito.com/wp-content/uploads/2021/04/ogp-324x324.jpg 324w, https://meguribito.com/wp-content/uploads/2021/04/ogp-100x100.jpg 100w, https://meguribito.com/wp-content/uploads/2021/04/ogp-150x150.jpg 150w" sizes="(max-width: 324px) 100vw, 324px"><h2 class="woocommerce-loop-product__title">瀬戸内のアーティスト達と過ごすローカルヒッピーライフ</h2>
-	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>10,000</bdi></span> より <small class="woocommerce-price-suffix">(税込)</small></span>
-</a><a href="https://meguribito.com/product/onomichi_local/" data-quantity="1" class="button product_type_booking add_to_cart_button" data-product_id="89" data-product_sku="" aria-label="“瀬戸内のアーティスト達と過ごすローカルヒッピーライフ”の詳細を読む" rel="nofollow">続きを読む</a></li>
-
-
-		</ul>
-
-	</section>
-			<nav class="storefront-product-pagination" aria-label="さらに商品を表示">
-							<a href="https://meguribito.com/product/onomichi_local/" rel="prev">
-					<img width="324" height="324" src="https://meguribito.com/wp-content/uploads/2021/04/ogp-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy">					<span class="storefront-product-pagination__title">瀬戸内のアーティスト達と過ごすローカルヒッピーライフ</span>
-				</a>
-
-					</nav><!-- .storefront-product-pagination -->
-		</div>
-
+													<div class="wc-bookings-booking-cost" style="zoom: 1;" data-raw-price="">予約費用: <strong><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>28,000</bdi></span> <small
+																class="woocommerce-price-suffix">(税込)</small></strong></div>
 
 												</div>
 
-					/* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
-				</div>
-			</div><!-- section_inner -->
-		</div><!-- scroll_wrap -->
-	</div></section>
+
+												<input type="hidden" name="add-to-cart" value="89" class="wc-booking-product-id">
+
+												<button type="submit" class="wc-bookings-booking-form-button single_add_to_cart_button button alt" style="">今すぐ予約</button>
+
+
+											</form>
+
+											<div class="product_meta">
+
+
+
+												<span class="posted_in">カテゴリー: <a href="https://meguribito.com/product-category/uncategorized/" rel="tag">Uncategorized</a></span>
+
+
+											</div>
+											<div class="edit-link"><a class="post-edit-link" href="https://meguribito.com/wp-admin/post.php?post=89&amp;action=edit">編集 <span class="screen-reader-text">瀬戸内のアーティスト達と過ごすローカルヒッピーライフ</span></a></div>
+										</div>
+
+
+										<div class="woocommerce-tabs wc-tabs-wrapper">
+											<ul class="tabs wc-tabs" role="tablist">
+												<li class="reviews_tab active" id="tab-title-reviews" role="tab" aria-controls="tab-reviews">
+													<a href="#tab-reviews">
+														レビュー (0) </a>
+												</li>
+											</ul>
+											<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews" style="">
+												<div id="reviews" class="woocommerce-Reviews">
+													<div id="comments">
+														<h2 class="woocommerce-Reviews-title">
+															レビュー </h2>
+
+														<p class="woocommerce-noreviews">レビューはまだありません。</p>
+													</div>
+
+													<div id="review_form_wrapper">
+														<div id="review_form">
+															<div id="respond" class="comment-respond">
+																<span id="reply-title" class="comment-reply-title">“瀬戸内のアーティスト達と過ごすローカルヒッピーライフ” の口コミを投稿します <small><a rel="nofollow" id="cancel-comment-reply-link" href="/product/onomichi_local/#respond"
+																			style="display:none;">コメントをキャンセル</a></small></span>
+																<form action="https://meguribito.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate="">
+																	<p class="comment-form-comment"><label for="comment">レビュー&nbsp;<span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" required=""></textarea></p>
+																	<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="送信"> <input type="hidden" name="comment_post_ID" value="89" id="comment_post_ID">
+																		<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+																	</p><input type="hidden" id="_wp_unfiltered_html_comment_disabled" name="_wp_unfiltered_html_comment" value="16a6e1ec36">
+																	<script>
+																		(function() {
+																			if (window === window.parent) {
+																				document.getElementById('_wp_unfiltered_html_comment_disabled').name = '_wp_unfiltered_html_comment';
+																			}
+																		})();
+																	</script>
+																</form>
+															</div><!-- #respond -->
+														</div>
+													</div>
+
+													<div class="clear"></div>
+												</div>
+											</div>
+
+										</div>
+
+
+										<section class="related products">
+
+											<h2>関連商品</h2>
+
+											<ul class="products columns-3">
+
+
+												<li class="product type-product post-93 status-publish first instock product_cat-uncategorized sold-individually taxable shipping-taxable purchasable product-type-booking">
+													<a href="https://meguribito.com/product/test/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="324" height="324"
+															src="https://meguribito.com/wp-content/uploads/woocommerce-placeholder-324x324.png" class="woocommerce-placeholder wp-post-image" alt="プレースホルダー" loading="lazy"
+															srcset="https://meguribito.com/wp-content/uploads/woocommerce-placeholder-324x324.png 324w, https://meguribito.com/wp-content/uploads/woocommerce-placeholder-100x100.png 100w, https://meguribito.com/wp-content/uploads/woocommerce-placeholder-416x416.png 416w, https://meguribito.com/wp-content/uploads/woocommerce-placeholder-300x300.png 300w, https://meguribito.com/wp-content/uploads/woocommerce-placeholder-1024x1024.png 1024w, https://meguribito.com/wp-content/uploads/woocommerce-placeholder-150x150.png 150w, https://meguribito.com/wp-content/uploads/woocommerce-placeholder-768x768.png 768w, https://meguribito.com/wp-content/uploads/woocommerce-placeholder.png 1200w"
+															sizes="(max-width: 324px) 100vw, 324px">
+														<h2 class="woocommerce-loop-product__title">瀬戸内のアーティスト達と過ごすローカルヒッピーライフ(テスト)</h2>
+														<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>10,000</bdi></span> <small class="woocommerce-price-suffix">(税込)</small></span>
+													</a><a href="https://meguribito.com/product/test/" data-quantity="1" class="button product_type_booking add_to_cart_button" data-product_id="93" data-product_sku="" aria-label="“瀬戸内のアーティスト達と過ごすローカルヒッピーライフ(テスト)”の詳細を読む"
+														rel="nofollow">続きを読む</a>
+												</li>
+
+
+											</ul>
+
+										</section>
+										<nav class="storefront-product-pagination" aria-label="さらに商品を表示">
+
+											<a href="https://meguribito.com/product/test/" rel="next">
+												<img width="324" height="324" src="https://meguribito.com/wp-content/uploads/woocommerce-placeholder-324x324.png" class="woocommerce-placeholder wp-post-image" alt="プレースホルダー" loading="lazy"> <span
+													class="storefront-product-pagination__title">瀬戸内のアーティスト達と過ごすローカルヒッピーライフ(テスト)</span>
+											</a>
+										</nav><!-- .storefront-product-pagination -->
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div><!-- detail_right -->
+				</div><!-- section_inner -->
+			</div><!-- scroll_wrap -->
+		</section>
 	</article>
 	<div id="fixedCartButton" class="fixed_cart_button">
 		<div class="comp-booking-button">
@@ -918,10 +1082,11 @@
 					<a href="#aaaa">特定商取引法に基づく表記</a>
 				</div>
 				<p class="copyright">Copyright © MEGURIBITO 2020</p>
-		</div><!-- footer_inner -->
+			</div><!-- footer_inner -->
 	</footer>
 </body>
 <!--<script>
 $("#fixedSection").parents().css("overflow", "visible")
 </script> -->
+
 </html>

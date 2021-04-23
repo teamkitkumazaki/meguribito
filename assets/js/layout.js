@@ -426,6 +426,61 @@ if (document.getElementById('planDetail')) {
   faqToggle($('#faqToggle'));
 }
 
+function bookingWrapButton(target){
+  var popState = 0;
+  var detailPopup = $('#detailPopup')
+  var popClose = $('#popClose');
+  var bookingResource = $('#wc_bookings_field_resource');
+  var resourceValue;
+
+  function bookingWrapSwitch(){
+    if(popState == 0){
+      detailPopup.addClass('open');
+      popState = 1;
+    }else{
+      detailPopup.removeClass('open');
+      popState = 0;
+    }
+  }
+
+  function addBookingResourceText(){
+    resourceValue = bookingResource.find('option:selected').text();
+    console.log(resourceValue);
+    bookingResource.parent('p').children('label').attr('value', resourceValue);
+  }
+
+  function init(){
+    target.find('.comp-booking-button button').each(function(index) {
+      $(this).on({
+        'click': function(){
+          bookingWrapSwitch();
+        }
+      })
+    });
+
+    popClose.on({
+      'click': function(){
+        bookingWrapSwitch();
+      }
+    })
+
+    bookingResource.on({
+      'change': function(){
+        addBookingResourceText();
+      }
+    })
+
+    addBookingResourceText();
+
+  }
+
+  init();
+}
+
+if (document.getElementById('planDetail')) {
+  bookingWrapButton($('body'));
+}
+
 function contetHeightAdjust(){
   var heightAdjust = $('#heightAdjust');
   var guestHouseWrap = $('#guestHouseWrap');

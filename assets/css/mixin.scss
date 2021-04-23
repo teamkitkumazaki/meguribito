@@ -89,6 +89,81 @@ $pointYellow: #BF992E;
   line-height: 2;
   letter-spacing: 0.6px;
 }
+@mixin locationSet{
+  span{
+    @include tsukushi-r;
+    font-size: 16px;
+    line-height: normal;
+    color: #464646;
+    position: relative;
+    padding: 5px 0;
+    &::before{
+      display: block;
+      content: "";
+      position: absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      margin: auto;
+      @include bgSet;
+    }
+    &.area{
+      padding-left: 30px;
+      margin-right: 20px;
+      &::before{
+        width: 15px;
+        height: 100%;
+        background-size: 14px;
+        background-image: url(../img/common/pin.svg);
+      }
+    }
+    &.guesthouse{
+      padding-left: 30px;
+      &::before{
+        width: 17px;
+        height: 100%;
+        background-size: 17px;
+        background-image: url(../img/common/guesthouse.svg);
+      }
+    }
+  }
+}
+
+@mixin kagibitoSet{
+  @include flexSet;
+  align-items: center;
+  .icon{
+    @include hover;
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid $pointYellow;
+    @include bgSet;
+    margin-right: 20px;
+    box-sizing: border-box;
+  }
+  .kagibito_info{
+    width: calc(100% - 90px);
+    padding-bottom: 5px;
+    .info{
+      display: block;
+      @include tsukushi-r;
+      font-size: 14px;
+      line-height: normal;
+      letter-spacing: 0.8px;
+      margin-bottom: 5px;
+    }
+    .name{
+      display: block;
+      @include tsukushi-b;
+      font-size: 20px;
+      letter-spacing: 1.16px;
+      color: inherit;
+      @include hover;
+    }
+  }
+}
 @mixin mypageTitle{
   @include tsukushi-b;
   font-weight: bold;
