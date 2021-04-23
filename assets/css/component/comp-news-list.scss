@@ -99,6 +99,13 @@
       margin-right: 0;
     }
   }
+  &.archive{
+    .news_item{
+      &:nth-of-type(n+2){
+        margin-bottom: 60px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1200px){
@@ -222,6 +229,13 @@
               }
             }
           }
+        }
+      }
+    }
+    &.archive{
+      .news_item{
+        &:nth-of-type(n+2){
+          margin-bottom: 10px;
         }
       }
     }

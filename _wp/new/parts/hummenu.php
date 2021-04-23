@@ -13,7 +13,7 @@
 			<nav class="h_nav">
 				<ul>
 					<li><a href="<?php echo esc_url(home_url('/' ));?>service">メグリビトについて</a></li>
-					<li><a href="<?php echo esc_url(home_url('/' ));?>news">運営からのお知らせ</a></li>
+					<li><a href="<?php echo esc_url(home_url('/' ));?>information/">運営からのお知らせ</a></li>
 				</ul>
 				<ul>
 					<li><a href="<?php echo esc_url(home_url('/' ));?>about">私たちについて</a></li>
@@ -79,7 +79,7 @@
 					<a href="<?php echo esc_url(home_url('/' ));?>service"><span>メグリビトについて</span></a>
 				</div>
 				<div class="nav_item">
-					<a href="<?php echo esc_url(home_url('/' ));?>news"><span>運営からのお知らせ</span></a>
+					<a href="<?php echo esc_url(home_url('/' ));?>information/"><span>運営からのお知らせ</span></a>
 				</div>
 				<div class="nav_item">
 					<a href="<?php echo esc_url(home_url('/' ));?>about"><span>運営団体</span></a>

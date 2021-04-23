@@ -12,7 +12,7 @@
 			<nav class="h_nav">
 				<ul>
 					<li><a href="<?php echo esc_url(home_url('/' ));?>service">メグリビトについて</a></li>
-					<li><a href="<?php echo esc_url(home_url('/' ));?>news">運営からのお知らせ</a></li>
+					<li><a href="<?php echo esc_url(home_url('/' ));?>information">運営からのお知らせ</a></li>
 				</ul>
 				<ul>
 					<li><a href="<?php echo esc_url(home_url('/' ));?>about">私たちについて</a></li>
