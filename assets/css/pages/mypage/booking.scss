@@ -1,3 +1,109 @@
 .my_account_bookings{
-  
+  &::before{
+    display: block;
+    content: "予約中のプラン";
+    @include mypageTitle;
+    margin-bottom: 5px;
+  }
+  @include breakTableLayout;
+  tr{
+    @include flexSet;
+    padding: 25px 0;
+    position: relative;
+    border-bottom: 1px dotted #d8d8d8;
+    &:nth-last-of-type(1){
+      padding: 25px 0 0;
+      border-bottom: 0px dotted #d8d8d8;
+    }
+    .booking-id{
+      display: none;
+    }
+    .booking-status{
+      display: none;
+    }
+    .booking-start-date{
+      order: 0;
+      @include tsukushi-b;
+      font-size: 14px;
+      line-height: 1;
+      letter-spacing: 0.03em;
+      color: #646464;
+      position: relative;
+      padding-left: 30px;
+      background-color: transparent !important;
+      &::before{
+        display: block;
+        content: "";
+        width: 20px;
+        height: 20px;
+        @include bgSet;
+        background-size: contain;
+        background-image: url(../img/common/mypage.svg);
+        position: absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        margin: auto;
+      }
+    }
+    .booking-end-date{
+      width: 60%;
+      order: 1;
+      @include tsukushi-b;
+      font-size: 14px;
+      line-height: 1;
+      letter-spacing: 0.03em;
+      color: #646464;
+      background-color: transparent !important;
+      &::before{
+        display: inline;
+        content: "〜";
+      }
+    }
+    .booked-product{
+      @include tsukushi-b;
+      width: 100%;
+      order: 2;
+      margin: 10px 0 0;
+      font-size: 22px;
+      line-height: 1.6;
+      letter-spacing: 0.03em;
+      background-color: transparent !important;
+      @include hover;
+      a{
+        color: inherit;
+      }
+    }
+    .booking-cancel{
+      order: 4;
+    }
+    .order-number{
+      order: 5;
+      height: 40px;
+      position: absolute;
+      right:0;
+      top:0;
+      bottom:0;
+      margin: auto;
+      a{
+        @include hover;
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+        line-height: 40px;
+        height: 40px;
+        @include tsukushi-b;
+        background-color: $pointYellow;
+        color: #fff;
+        letter-spacing: 0.03em;
+        font-size: 16px;
+        border-radius: 100px;
+        &::before{
+          display: inline;
+          content: "詳細を見る";
+          color: #fff;
+        }
+      }
+    }
+  }
 }

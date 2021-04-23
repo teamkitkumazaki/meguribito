@@ -132,19 +132,12 @@
           text-align: center;
           @include bgSet;
           line-height: 180px;
-          &.mypage{
-            background-color: #f1f1f1;
-            color: $black01;
-            background-size: 25px;
-            background-position: center top 40px;
-            background-image: url(../img/common/mypage.svg);
-          }
           &.cart{
             background-color: $black01;
             color: #fff;
-            background-size: 32px;
-            background-position: left 42px top 38px;
-            background-image: url(../img/common/cart.svg);
+            background-size: 25px;
+            background-position: center top 40px;
+            background-image: url(../img/common/calendar_white.svg);
           }
         }
       }
@@ -184,6 +177,10 @@
             }
             a{
               color: $black01;
+              .content span::after{
+                border-top: 1px solid $black01 !important;
+                border-right: 1px solid $black01 !important;
+              }
             }
           }
         }
@@ -237,11 +234,8 @@
             height: 100px;
             font-size: 10px;
             line-height: 150px;
-            &.mypage{
-              background-position: center top 30px;
-            }
             &.cart{
-              background-position: left 32px top 28px;
+              background-position: center top 30px;
             }
           }
         }
@@ -339,7 +333,7 @@
               @include hover;
               @include bgSet;
               background-size: 35px;
-              background-image: url(../img/common/cart.svg);
+              background-image: url(../img/common/mypage.svg);
             }
           }
           &::after{

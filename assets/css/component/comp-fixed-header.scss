@@ -65,15 +65,10 @@
           width: 100px;
           height: 100px;
           line-height: 150px;
-          &.mypage{
+          &.cart{
             background-size: 25px;
             background-position: center top 30px;
-            background-image: url(../img/common/mypage.svg);
-          }
-          &.cart{
-            background-size: 32px;
-            background-position: left 32px top 25px;
-            background-image: url(../img/common/cart.svg);
+            background-image: url(../img/common/calendar_white.svg);
           }
         }
       }
@@ -164,7 +159,7 @@
           }
           .header_cart{
             a{
-              background-image: url(../img/common/cart_black.svg);
+              background-image: url(../img/common/mypage.svg);
             }
           }
         }

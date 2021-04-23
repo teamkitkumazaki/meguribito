@@ -1,0 +1,605 @@
+.comp-booking-section{
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 1px 5px 3px 0 rgba(0, 0, 0, 0.12);
+  border: solid 1px #d8d8d8;
+  background-color: #fff;
+  .woocommerce-product-gallery,
+  .related,
+  .woocommerce-Reviews,
+  .product_meta,
+  .edit-link,
+  .woocommerce-tabs,
+  .storefront-product-pagination {
+    display: none !important;
+  }
+  .default_wrap{
+    .product-type-booking{
+      .summary{
+        width: 100%;
+        display: block;
+        margin-bottom: 0;
+        .product_title{
+          display: none !important;
+        }
+        .price{
+          display: none !important;
+        }
+        form.cart{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          &::before{
+            display: block;
+            content: "プランを予約する";
+            @include mypageTitle;
+            text-align: center;
+            margin-bottom: 40px;
+          }
+          .wc-bookings-booking-form{
+            margin-bottom: 0 !important;
+            &::before{
+              display: block;
+              content: "▼宿泊タイプを選ぶ";
+              @include tsukushi-b;
+              font-size: 16px;
+              letter-spacing: 0.03em;
+              color: $black01;
+              margin-bottom: 15px;
+            }
+            .form-field{
+              width: 100%;
+              border: 1px solid #d9d9d9;
+              padding: 0 10px;
+              box-sizing: border-box;
+              @include flexSet;
+              justify-content: space-between;
+              align-items: center;
+              border-radius: 5px;
+              position: relative;
+              margin-bottom: 10px;
+              &:hover{
+                border: 1px solid #979797;
+              }
+              label{
+                width: 20%;
+                @include tsukushi-b;
+                font-size: 14px;
+                line-height: normal;
+                letter-spacing: 0.03em;
+                color: #646464;
+                &::after{
+                  display: block;
+                  content: attr(value);
+                  width: 100%;
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  right: 30px;
+                  margin: auto;
+                  text-align: right;
+                  height: 24px;
+                  pointer-events: none;
+                  font-size: 14px;
+                  @include tsukushi-b;
+                  letter-spacing: 0.03em;
+                }
+              }
+              input[type=number]{
+                width: 75%;
+                border: none;
+                padding: 10px 0;
+                box-sizing: border-box;
+                text-align: right;
+                line-height: 1;
+                font-size: 14px;
+                @include tsukushi-b;
+                &:focus{
+                  outline: none;
+                }
+              }
+              select{
+                width: 75%;
+                border: none;
+                padding: 10px 0;
+                box-sizing: border-box;
+                text-align: right;
+                color: #fff;
+                background-image: url(https://journal.komons-japan.com/wp-content/themes/komons-theme/img/contact/selector_caret.png);
+                background-size: 10px;
+                background-repeat: no-repeat;
+                background-position: center right 0px;
+                font-family: inherit;
+                appearance: none;
+                @include tsukushi-b;
+                &:focus{
+                  outline: none;
+                }
+              }
+            }
+            .wc_bookings_field_persons{
+            }
+            .wc_bookings_field_resource{
+            }
+            fieldset{
+              @include flexSet;
+              width: 100%;
+              margin: 30px 0 0px!important;
+              padding: 0 !important;
+              background-color: transparent !important;
+              color: #fff;
+              &::before{
+                width: 100%;
+                display: block;
+                content: "▼宿泊日程を選ぶ";
+                @include tsukushi-b;
+                font-size: 16px;
+                letter-spacing: 0.03em;
+                color: $black01;
+                margin-bottom: 15px;
+              }
+              .ui-datepicker-inline{
+                border: none;
+                .ui-datepicker-header{
+                  @include flexSet;
+                  align-items: center;
+                  justify-content: space-between;
+                  background-color: transparent !important;
+                  .ui-corner-all{
+                    width: auto;
+                    background-size: 15px;
+                    padding: 5px 0;
+                    display: inline-block;
+                    @include tsukushi-r;
+                    font-weight: normal;
+                    font-size: 16px;
+                    letter-spacing: 0.03em;
+                    color: #646464;
+                    @include bgSet;
+                    background-size: 16px;
+                    line-height: 40px;
+                    background-color: transparent !important;
+                    span{
+                      display: none;
+                    }
+
+                  }
+                  .ui-datepicker-prev{
+                    padding-left: 25px;
+                    background-position: center left;
+                    background-image: url(../img/common/caret_prev.svg);
+                    &::after{
+                      display: inline;
+                      content: "前月";
+                    }
+                  }
+                  .ui-datepicker-next{
+                    padding-right: 25px;
+                    background-position: center right;
+                    background-image: url(../img/common/caret_next.svg);
+                    &::after{
+                      display: inline;
+                      content: "翌月";
+                    }
+                  }
+                  .ui-datepicker-title{
+                    @include flexSet;
+                    @include tsukushi-b;
+                    margin: 0 !important;
+                    text-align: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    letter-spacing: 0.03em;
+                    color: $black01;
+                    .ui-datepicker-year{
+                      order: 0;
+                      &::after{
+                        display: inline;
+                        content: "年";
+                      }
+                    }
+                    .ui-datepicker-month{
+                      order: 1;
+                    }
+                  }
+                }
+                .ui-datepicker-calendar{
+                  width: 100%;
+                  display: block;
+                  font-size: 14px;
+                  padding: 20px;
+                  background-color: #f8f8f8;
+                  @include breakTableLayout;
+                  @include tsukushi-b;
+                  box-sizing: border-box;
+                  thead{
+                    display: block;
+                    th{
+                      color: #4d4327;
+                      background-color: transparent !important;
+                      font-size: 14px;
+                    }
+                  }
+                  tr{
+                    @include flexSet;
+                    justify-content: space-between;
+                  }
+                  th, td{
+                    width: calc(100% / 7.2);
+                    background-color: transparent !important;
+                  }
+                  td{
+                    font-size: 12px;
+                    padding: 5px !important;
+                    box-sizing: border-box;
+                    position: relative;
+                    &::before{
+                      position: absolute;
+                      display: block;
+                      content: "";
+                      width: calc(100% + 10px);
+                      height: calc(100% - 10px);
+                      left: 0px;
+                      right: 0px;
+                      top:5px;
+                      bottom: 5px;
+                      margin: auto;
+                    }
+                    .ui-state-default, a{
+                      border-radius: 50%;
+                      width: 34px;
+                      height: 34px;
+                      margin: 0 auto;
+                      padding: 0;
+                      line-height: 34px;
+                      letter-spacing: 0.01em;
+                      text-indent: 0.1em;
+                      text-align: center;
+                      border: none;
+                      background: none !important;
+                      position: relative;
+                      z-index: 10;
+                    }
+                    &.bookable-range{
+                      &::before{
+                        background: #fff;
+                      }
+                      .ui-state-default{
+                        background-color: transparent;
+                        color: $black01;
+                      }
+                    }
+                    &.bookable{
+                      .ui-state-active, a{
+                        background-color: transparent !important;
+                        color: $black01 !important;
+                      }
+                    }
+                    &.selection-start-date{
+                      &::before{
+                        background: #fff;
+                        width: calc(50% + 10px);
+                        right: -10px;
+                        left: unset;
+                      }
+                      &.ui-state-active, a{
+                        background-color: $pointYellow !important;
+                        color: #fff !important;
+                      }
+                    }
+                    &.selection-end-date{
+                      &::before{
+                        background: #fff;
+                        width: calc(50% + 10px);
+                        left: -10px;
+                        right: unset;
+                      }
+                      .ui-state-active, a{
+                        background-color: $pointYellow !important;
+                        color: #fff !important;
+                      }
+                    }
+                    &.ui-datepicker-other-month{
+
+                    }
+                    &.fully_booked{
+                      &.ui-state-active, a{
+                        background-color: #d8d8d8 !important;
+                        color: #acacac !important;
+                      }
+                    }
+                  }
+                }
+              }
+              .label{
+                display: none;
+              }
+              .wc-bookings-date-picker-date-fields{
+                width: 50%;
+                background: #fff;
+                border: 1px solid #d8d8d8;
+                box-sizing: border-box;
+                @include flexSet;
+                color: #fff;
+                font-size: 16px;
+                margin-bottom: 15px;
+                &::before{
+                  width: 100%;
+                  @include tsukushi-b;
+                  font-size: 14px;
+                  line-height: 1;
+                  letter-spacing: 0.03em;
+                  color: #646464;
+                  padding: 10px 0 0 10px;
+                }
+                label{
+                  display: flex;
+                  align-items: center;
+                  width: auto !important;
+                  border: none;
+                  @include tsukushi-r;
+                  pointer-events: none;
+                  span{
+                    display: block;
+                  }
+                  input{
+                    font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+                    border: none;
+                    font-size: 16px;
+                    &:focus{
+                      outline: none;
+                    }
+                  }
+                  &:nth-last-of-type(1){
+                    order:0;
+                    margin-left: -0.5em;
+                    input{
+                      width: 40px;
+                    }
+                  }
+                  &:nth-last-of-type(2){
+                    order:2;
+                    input{
+                      width: 25px;
+                    }
+                  }
+                  &:nth-last-of-type(3){
+                    order:1;
+                    background: #fff;
+                    input{
+                      width: 25px;
+                    }
+                  }
+                }
+                &:nth-of-type(2){
+                  border-left: 1px solid #d8d8d8;
+                  border-right: 0px;
+                  margin-left: 0%;
+                  order:3;
+                  &::before{
+                    display: block;
+                    content: "チェックイン";
+                  }
+                }
+                &:nth-of-type(3){
+                  order:4;
+                  &::before{
+                    display: block;
+                    content: "チェックアウト";
+                  }
+                }
+                span{
+                  display: none;
+                }
+              }
+            }
+            .wc-bookings-booking-cost{
+              padding: 15px 0 30px;
+              background-color: transparent !important;
+              @include flexSet;
+              align-items: center;
+              justify-content: space-between;
+              @include tsukushi-b;
+              font-size: 16px;
+              letter-spacing: 0.03em;
+              strong{
+                font-size: 20px;
+              }
+            }
+          }
+          button[type="submit"]{
+            display: block;
+            width: 100%;
+            padding: 15px 0;
+            font-size: 18px;
+            @include tsukushi-b;
+            letter-spacing: 0.03em;
+            color: #fff;
+            background-color: $pointYellow !important;
+            @include hover;
+            cursor: pointer;
+            border-radius: 5px;
+          }
+          .wc-bookings-booking-form fieldset .picker{
+            display: block !important;
+            order:1;
+            width: 100%;
+            margin: -2.5em 0 20px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  .comp-booking-section{
+    padding: 30px 20px;
+    border-radius: 10px;
+    .default_wrap{
+      .product-type-booking{
+        .summary{
+          form.cart{
+            &::before{
+              font-size: 24px;
+              margin-bottom: 30px;
+            }
+            .wc-bookings-booking-form{
+              margin-bottom: 0 !important;
+              .form-field{
+                width: 100%;
+                padding: 0 10px;
+                margin-bottom: 5px;
+                input[type=number]{
+                  font-size: 16px;
+                  padding: 5px 0;
+                }
+                select{
+                  width: 75%;
+                  padding: 15px 0;
+                  font-size: 16px;
+                }
+              }
+              fieldset{
+                width: 100%;
+                margin: 30px 0 0px !important;
+                color: #fff;
+                &::before{
+                  margin-bottom: 10px;
+                }
+                .ui-datepicker-inline{
+                  .ui-datepicker-header{
+                    .ui-corner-all{
+                      background-size: 15px;
+                      padding: 5px 0;
+                      font-size: 14px;
+                      line-height: 37px;
+                    }
+                    .ui-datepicker-prev{
+                      padding-left: 22px;
+                    }
+                    .ui-datepicker-next{
+                      padding-right: 22px;
+                    }
+                    .ui-datepicker-title{
+                      font-size: 16px;
+                    }
+                  }
+                  .ui-datepicker-calendar{
+                    width: 100%;
+                    padding: 15px;
+                    th, td{
+                      width: calc(100% / 7.2);
+                      background-color: transparent !important;
+                    }
+                    td{
+                      font-size: 12px;
+                      padding: 5px !important;
+                      box-sizing: border-box;
+                      position: relative;
+                      &::before{
+                        position: absolute;
+                        display: block;
+                        content: "";
+                        width: calc(100% + 10px);
+                        height: calc(100% - 10px);
+                        left: 0px;
+                        right: 0px;
+                        top:5px;
+                        bottom: 5px;
+                        margin: auto;
+                      }
+                      .ui-state-default, a{
+                        width: 30px;
+                        height: 30px;
+                        margin: 0 auto;
+                        line-height: 30px;
+                      }
+                    }
+                  }
+                }
+                .label{
+                  display: none;
+                }
+                .wc-bookings-date-picker-date-fields{
+                  width: 100%;
+                  background: #fff;
+                  border: 1px solid #d8d8d8;
+                  box-sizing: border-box;
+                  @include flexSet;
+                  color: #fff;
+                  &::before{
+                    width: 100%;
+                    @include tsukushi-b;
+                    font-size: 14px;
+                    line-height: 1;
+                    letter-spacing: 0.03em;
+                    color: #646464;
+                    padding: 10px 0 0 10px;
+                  }
+                  label{
+                    display: flex;
+                    align-items: center;
+                    width: auto !important;
+                    border: none;
+                    @include tsukushi-r;
+                    pointer-events: none;
+                    span{
+                      display: block;
+                    }
+                    &:nth-last-of-type(1){
+                      order:0;
+                      margin-left: -0.5em;
+                      input{
+                        min-width: 5em;
+                      }
+                    }
+                    &:nth-last-of-type(2){
+                      order:2;
+                      input{
+                        min-width: 3em;
+                      }
+                    }
+                    &:nth-last-of-type(3){
+                      order:1;
+                      background: #fff;
+                      input{
+                        min-width: 3em;
+                      }
+                    }
+                  }
+                  &:nth-of-type(2){
+                    border-left: 1px solid #d8d8d8;
+                    border-right: 1px solid #d8d8d8;
+                    border-bottom: 0px solid #d8d8d8;
+                    margin-left: 0%;
+                    margin-bottom: 0;
+                    order:3;
+                  }
+                  &:nth-of-type(3){
+                    order:4;
+                  }
+                }
+              }
+              .wc-bookings-booking-cost{
+                padding: 15px 0 30px;
+                font-size: 14px;
+                strong{
+                  font-size: 18px;
+                }
+              }
+            }
+            button[type="submit"]{
+              padding: 10px 0;
+              font-size: 18px;
+            }
+            .wc-bookings-booking-form fieldset .picker{
+              order:1;
+              margin: -2.5em 0 10px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

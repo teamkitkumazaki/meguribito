@@ -15,6 +15,7 @@
 @import 'pages/index.scss';
 @import 'pages/planDetail.scss';
 @import 'pages/planDetail2.scss';
+@import 'pages/planList.scss';
 @import 'pages/kagibitoList.scss';
 @import 'pages/kagibitoDetail.scss';
 @import 'pages/about.scss';
@@ -33,6 +34,7 @@
 @import 'pages/mypage/account.scss';
 @import 'pages/mypage/address.scss';
 @import 'pages/mypage/booking.scss';
+@import 'pages/mypage/history.scss';
 
 
 /*########## コンポーネント ##########*/
@@ -68,6 +70,8 @@
 @import 'component/comp-trip-review.scss';
 @import 'component/comp-trip-faq.scss';
 @import 'component/comp-detail-pop.scss';
+@import 'component/comp-booking-section.scss';
+
 
 
 /* カギビト一覧 */

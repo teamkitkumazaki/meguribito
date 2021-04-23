@@ -95,7 +95,7 @@
 							<span class="icon_image"></span>
 						</div>
 						<div class="profile_wrap">
-							<p class="user_name">meguribito_wp<span class="user_email">(kumazaki@agestream.com)</span></p>
+							<p class="user_name">meguribito_wp<span class="user_email">kumazaki@agestream.com</span></p>
 							<div class="profile_detail">
 								<div class="profile_point">
 									<span class="title">予約/計画中のプラン</span>
@@ -123,7 +123,7 @@
 							<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--dashboard">
 								<a href="https://meguribito.com/my-account/">ダッシュボード</a>
 							</li>
-							<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--orders">
+							<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--orders is-active">
 								<a href="https://meguribito.com/my-account/orders/"></a>
 							</li>
 							<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--downloads">
@@ -138,7 +138,7 @@
 							<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-account">
 								<a href="https://meguribito.com/my-account/edit-account/">アカウント詳細</a>
 							</li>
-							<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--bookings is-active">
+							<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--bookings">
 								<a href="https://meguribito.com/my-account/bookings/">予約</a>
 							</li>
 							<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--customer-logout">
@@ -150,82 +150,81 @@
 
 					<div class="woocommerce-MyAccount-content">
 						<div class="woocommerce-notices-wrapper"></div>
-						<div class="bookings-my-account-notice"></div>
 
-
-						<h2>今後の予約</h2>
-
-						<table class="shop_table my_account_bookings">
+						<table class="woocommerce-orders-table woocommerce-MyAccount-orders shop_table shop_table_responsive my_account_orders account-orders-table">
 							<thead>
 								<tr>
-									<th scope="col" class="booking-id">ID</th>
-									<th scope="col" class="booked-product">予約済み</th>
-									<th scope="col" class="order-number">注文</th>
-									<th scope="col" class="booking-start-date">開始日</th>
-									<th scope="col" class="booking-end-date">終了日</th>
-									<th scope="col" class="booking-status">ステータス</th>
-									<th scope="col" class="booking-cancel"></th>
+									<th class="woocommerce-orders-table__header woocommerce-orders-table__header-order-number"><span class="nobr">順序</span></th>
+									<th class="woocommerce-orders-table__header woocommerce-orders-table__header-order-date"><span class="nobr">日付</span></th>
+									<th class="woocommerce-orders-table__header woocommerce-orders-table__header-order-status"><span class="nobr">ステータス</span></th>
+									<th class="woocommerce-orders-table__header woocommerce-orders-table__header-order-total"><span class="nobr">合計</span></th>
+									<th class="woocommerce-orders-table__header woocommerce-orders-table__header-order-actions"><span class="nobr">操作</span></th>
 								</tr>
 							</thead>
+
 							<tbody>
-								<tr>
-									<td class="booking-id">112</td>
-									<td class="booked-product">
-										<a href="https://meguribito.com/product/onomichi_local/">
-											瀬戸内のアーティスト達と過ごすローカルヒッピーライフ </a>
-									</td>
-									<td class="order-number">
-										<a href="https://meguribito.com/my-account/view-order/113/">
-											113 </a>
-									</td>
-									<td class="booking-start-date" data-all-day="yes" data-timezone="Asia/Tokyo">2021年4月25日</td>
-									<td class="booking-end-date" data-all-day="yes" data-timezone="Asia/Tokyo">2021年4月27日</td>
-									<td class="booking-status">未払い</td>
-									<td class="booking-cancel">
-									</td>
-								</tr>
-								<tr>
-									<td class="booking-id">116</td>
-									<td class="booked-product">
-										<a href="https://meguribito.com/product/onomichi_local/">
-											瀬戸内のアーティスト達と過ごすローカルヒッピーライフ </a>
-									</td>
-									<td class="order-number">
+								<tr class="woocommerce-orders-table__row woocommerce-orders-table__row--status-processing order">
+									<td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-number" data-title="順序">
 										<a href="https://meguribito.com/my-account/view-order/117/">
-											117 </a>
+											#117 </a>
+
 									</td>
-									<td class="booking-start-date" data-all-day="yes" data-timezone="Asia/Tokyo">2021年4月25日</td>
-									<td class="booking-end-date" data-all-day="yes" data-timezone="Asia/Tokyo">2021年4月27日</td>
-									<td class="booking-status">未払い</td>
-									<td class="booking-cancel">
+									<td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-date" data-title="日付">
+										<time datetime="2021-04-22T14:47:38+00:00">2021年4月22日</time>
+
+									</td>
+									<td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-status" data-title="ステータス">
+										処理中
+									</td>
+									<td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-total" data-title="合計">
+										1点 <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">¥</span>10,000</span>
+									</td>
+									<td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-actions" data-title="操作">
+										<a href="https://meguribito.com/my-account/view-order/117/" class="woocommerce-button button view">表示</a>
 									</td>
 								</tr>
-								<tr>
-									<td class="booking-id">114</td>
-									<td class="booked-product">
-										<a href="https://meguribito.com/product/onomichi_local/">
-											瀬戸内のアーティスト達と過ごすローカルヒッピーライフ </a>
-									</td>
-									<td class="order-number">
+								<tr class="woocommerce-orders-table__row woocommerce-orders-table__row--status-processing order">
+									<td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-number" data-title="順序">
 										<a href="https://meguribito.com/my-account/view-order/115/">
-											115 </a>
+											#115 </a>
+
 									</td>
-									<td class="booking-start-date" data-all-day="yes" data-timezone="Asia/Tokyo">2021年4月26日</td>
-									<td class="booking-end-date" data-all-day="yes" data-timezone="Asia/Tokyo">2021年4月28日</td>
-									<td class="booking-status">未払い</td>
-									<td class="booking-cancel">
+									<td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-date" data-title="日付">
+										<time datetime="2021-04-22T13:53:26+00:00">2021年4月22日</time>
+
+									</td>
+									<td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-status" data-title="ステータス">
+										処理中
+									</td>
+									<td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-total" data-title="合計">
+										1点 <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">¥</span>10,000</span>
+									</td>
+									<td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-actions" data-title="操作">
+										<a href="https://meguribito.com/my-account/view-order/115/" class="woocommerce-button button view">表示</a>
+									</td>
+								</tr>
+								<tr class="woocommerce-orders-table__row woocommerce-orders-table__row--status-processing order">
+									<td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-number" data-title="順序">
+										<a href="https://meguribito.com/my-account/view-order/113/">
+											#113 </a>
+
+									</td>
+									<td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-date" data-title="日付">
+										<time datetime="2021-04-22T13:04:09+00:00">2021年4月22日</time>
+
+									</td>
+									<td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-status" data-title="ステータス">
+										処理中
+									</td>
+									<td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-total" data-title="合計">
+										1点 <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">¥</span>10,000</span>
+									</td>
+									<td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-order-actions" data-title="操作">
+										<a href="https://meguribito.com/my-account/view-order/113/" class="woocommerce-button button view">表示</a>
 									</td>
 								</tr>
 							</tbody>
 						</table>
-
-
-						<div class="woocommerce-pagination woocommerce-pagination--without-numbers woocommerce-Pagination">
-
-						</div>
-
-
-
 					</div>
 				</div>
 			</div>

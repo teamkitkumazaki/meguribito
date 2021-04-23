@@ -7,21 +7,130 @@
   right: 0;
   margin: auto;
   background: $basicBgColor;
-  transition: bottom 0.3s;
+  transition: bottom 0.5s;
   z-index: 1000;
   &.open{
     bottom: 0;
   }
+  .pop_close{
+    cursor: pointer;
+    transition: opacity .3s;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 4px;
+    left: 22px;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    z-index: 100;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-size: 20px;
+    background-image: url(../img/common/pop_close_black.svg);
+    &:focus{
+      outline: none;
+    }
+  }
   .scroll_wrap{
-    padding: 60px 0;
+    padding: 100px 0;
     box-sizing: border-box;
-    height: calc(100vh - 60px);
+    height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     .section_inner{
-      height: 120vh;
-      background: #fff;
+      @include flexSet;
+      justify-content: space-between;
+      .detail_left{
+        width: 55%;
+        .img_wrap{
+          border-radius: 15px;
+          overflow: hidden;
+          margin-bottom: 30px;
+          img{
+            pointer-events: none;
+          }
+        }
+        .txt_wrap{
+          .plan_ttl{
+            @include tsukushi-b;
+            font-size: 24px;
+            line-height: 1.6;
+            letter-spacing: 0.03em;
+            margin-bottom: 15px;
+          }
+          .location{
+            @include locationSet;
+            margin-bottom: 20px;
+          }
+          .kagibito_wrap{
+            @include kagibitoSet;
+          }
+        }
+      }
+      .detail_right{
+        width: 38%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px){
+  .comp-detail-pop{
+    .scroll_wrap{
+      .section_inner{
+        .detail_left{
+          width: 50%;
+        }
+        .detail_right{
+          width: 45%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px){
+  .comp-detail-pop{
+    .scroll_wrap{
+      .section_inner{
+        @include flexSet;
+        .detail_left{
+          width: 100%;
+          order: 1;
+          .img_wrap, .txt_wrap{
+            display: none;
+          }
+        }
+        .detail_right{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  .comp-detail-pop{
+    .pop_close{
+      width: 40px;
+      height: 40px;
+      top: 5px;
+      left: 5px;
+    }
+    .scroll_wrap{
+      padding: 60px 0;
+      height: 100vh;
+      .section_inner{
+        .detail_left{
+          width: 100%;
+        }
+        .detail_right{
+          width: 100%;
+        }
+      }
     }
   }
 }

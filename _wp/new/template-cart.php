@@ -45,6 +45,9 @@ get_header(); ?>
         <?php endwhile; endif;?>
 			</div>
 		</section>
+		<div class="comp-text-set" style="opacity:0; height:0px;">
+			<p>メールマガジンを受け取る・内容・方法・間</p>
+		</div>
 	</article>
   <?php get_template_part("parts/hummenu");?>
   <?php get_template_part("parts/footer");?>

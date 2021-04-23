@@ -39,6 +39,9 @@
 					<div class="description">
 						<p>かつて志賀直哉などの文豪も筆を執りに訪れた尾道は、静かな海と風光明媚な景色、そしてほどよく栄え酒場も充実している環境は、じっくりと腰を据えて仕事をするのには最高の街並みです。</p>
 						<p>また、港町として栄えた都市であることから歴史的に文化のアンテナが高いこともあり、現在も国内・海外問わず、アーティストやクリエイターが多く在住・移住しているこの町の日常生活の中には、個性的で力強い生き方をするアーティストとの出会いもたくさんあります。</p>
+						<div class="comp-booking-button">
+							<button><span>プランを予約する</span></button>
+						</div>
 						<div class="button_wrap">
 							<div class="favorite_button">
 								<a class="favorite" href="#aaaa">
@@ -641,65 +644,70 @@
 			</div><!-- section_inner -->
 		</section>
 	</article>
-	<section id="detailPopup" class="section-popup comp-detail-pop open">
+	<section id="detailPopup" class="section-popup comp-detail-pop">
+		<button id="popClose" class="pop_close"></button>
 		<div class="scroll_wrap">
 			<div class="section_inner">
-				<div class="cart_wrap">
-					<form class="cart" action="https://meguribito.com/product/onomichi-local/" method="post" enctype="multipart/form-data">
-						<div class="quantity hidden">
-							<input type="hidden" id="quantity_60797364a1f32" class="qty" name="quantity" value="1">
-						</div>
-
-						<button type="submit" name="add-to-cart" value="45" class="single_add_to_cart_button button alt">お買い物カゴに追加</button>
-					</form>
-				</div>
-				<div class="default_wrap">
-					<?php
-					/**
-					 * The Template for displaying all single products
-					 *
-					 * This template can be overridden by copying it to yourtheme/woocommerce/single-product.php.
-					 *
-					 * HOWEVER, on occasion WooCommerce will need to update template files and you
-					 * (the theme developer) will need to copy the new files to your theme to
-					 * maintain compatibility. We try to do this as little as possible, but it does
-					 * happen. When this occurs the version of the template file will be bumped and
-					 * the readme will list any important changes.
-					 *
-					 * @see         https://docs.woocommerce.com/document/template-structure/
-					 * @package     WooCommerce\Templates
-					 * @version     1.6.4
-					 */
-
-					if ( ! defined( 'ABSPATH' ) ) {
-						exit; // Exit if accessed directly
-					}
-
-					get_header( 'shop' ); ?>
-					<div class="woocommerce_before_main_content">
-						<?php
-							/**
-							 * woocommerce_before_main_content hook.
-							 *
-							 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-							 * @hooked woocommerce_breadcrumb - 20
-							 */
-							do_action( 'woocommerce_before_main_content' );
-						?>
+				<div class="detail_left">
+					<div class="img_wrap">
+						<img src="<?php echo get_template_directory_uri();?>/assets/img/index/pick01.jpg">
 					</div>
+					<div class="txt_wrap">
+						<h2 class="plan_ttl">穏やかな海に囲まれながら働き、アーティスト達と過ごすローカルライフ。</h2>
+						<div class="location">
+							<span class="area">広島県・尾道市</span>
+							<span class="guesthouse">ゲストハウス ヤドカリ</span>
+						</div>
+						<div class="kagibito_wrap">
+							<a href="#aaaa" class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito04.jpg);"></a>
+							<div class="kagibito_info">
+								<span class="info">ゲストハウスヤドカリ・オーナー</span>
+								<a class="name" href="#aaaa">村上 ひろふみさん</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- detail_left -->
+				<div class="detail_right">
+					<div class="comp-booking-section">
+						<div class="default_wrap">
+							<?php
+							/**
+							 * The Template for displaying all single products
+							 *
+							 * This template can be overridden by copying it to yourtheme/woocommerce/single-product.php.
+							 *
+							 * HOWEVER, on occasion WooCommerce will need to update template files and you
+							 * (the theme developer) will need to copy the new files to your theme to
+							 * maintain compatibility. We try to do this as little as possible, but it does
+							 * happen. When this occurs the version of the template file will be bumped and
+							 * the readme will list any important changes.
+							 *
+							 * @see         https://docs.woocommerce.com/document/template-structure/
+							 * @package     WooCommerce\Templates
+							 * @version     1.6.4
+							 */
 
-					<div class="single-product">
-							<?php while ( have_posts() ) : ?>
-								<?php the_post(); ?>
+							if ( ! defined( 'ABSPATH' ) ) {
+								exit; // Exit if accessed directly
+							}
 
-								<?php wc_get_template_part( 'content', 'single-product' ); ?>
+							get_header( 'shop' ); ?>
 
-							<?php endwhile; // end of the loop. ?>
+							<div class="single-product">
+									<?php while ( have_posts() ) : ?>
+										<?php the_post(); ?>
+											<?php wc_get_template_part( 'content', 'single-product' ); ?>
+									<?php endwhile; // end of the loop. ?>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div><!-- section_inner -->
 		</div><!-- scroll_wrap -->
 	</section>
+	<div class="comp-text-set" style="opacity:0; height:0px;">
+		<p>状況確認・選ぶ・年・0123456789・費用・¥・チェックイン・チェックアウト・月火水木金土日</p>
+	</div>
 </article>
 <?php get_template_part("parts/hummenu");?>
 <?php get_template_part("parts/footer");?>

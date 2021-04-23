@@ -6,7 +6,7 @@
 				</div>
 				<a class="logo_link" href="<?php echo esc_url(home_url('/' ));?>"></a>
 				<div id="hCart" class="header_cart">
-					<a href="#aaaa"></a>
+					<a href="<?php echo esc_url(home_url('/' ));?>my-account/bookings/"></a>
 				</div>
 			</div>
 			<nav class="h_nav">
@@ -23,7 +23,7 @@
 		<div class="header_right">
 			<div class="count_contents">
 				<div class="count_item line">
-					<a href="#aaaa">
+					<a href="<?php echo esc_url(home_url('/' ));?>my-account/bookings/">
 						<span class="number">
 							<span class="num">18</span><span class="unit">件</span>
 						</span>
@@ -40,8 +40,7 @@
 				</div>
 			</div><!-- count_contents -->
 			<div class="box_contents">
-				<a class="box_item mypage" href="#aaaa"><span>旅の記録</span></a>
-				<a class="box_item cart" href="#aaaa"><span>購入中のプラン</span></a>
+				<a class="box_item cart" href="<?php echo esc_url(home_url('/' ));?>my-account/bookings/"><span>旅の記録</span></a>
 			</div>
 		</div><!-- header_right -->
 	</div><!-- header_inner -->

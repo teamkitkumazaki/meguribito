@@ -7,7 +7,50 @@
 
   .section-payment {
     margin-bottom: 120px;
-
+    .woocommerce-form-login-toggle{
+      .woocommerce-info{
+        border-left: 0px;
+        background: #d8d8d8;
+        color: $black01;
+        &::before{
+          color: $black01;
+        }
+        a{
+          color: #068acc;
+        }
+      }
+    }
+    .woocommerce-form{
+      @include formSet;
+      background-color: #fff;
+      padding: 30px;
+      margin-top: -20px;
+      margin-bottom: 60px;
+      p{
+        @include basicP;
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+      .clear{
+        margin-top: -10px;
+      }
+      label{
+        &.woocommerce-form-login__rememberme{
+          display: inline-block;
+        }
+      }
+      button[type="submit"]{
+        width: 50%;
+        margin: 20px auto 0;
+      }
+      .lost_password{
+        text-align: center;
+        a{
+          color: #068acc;
+          text-decoration: underline;
+        }
+      }
+    }
     .woocommerce-form-coupon-toggle {
       display: none;
     }
@@ -292,38 +335,25 @@
                 .variation{
                   margin-top: 10px;
                   @include flexSet;
+                  align-items: center;
                   margin-bottom: 10px;
+                  @include tsukushi-b;
+                  font-size: 14px;
+                  line-height: 2;
+                  letter-spacing: 0.03em;
                   dt{
-                    display: none;
+                    width: 40%;
                   }
                   dd{
-                    @include tsukushi-b;
-                    font-size: 14px;
-                    line-height: 1.44;
-                    letter-spacing: 0.03em;
+                    width: 60%;
                     margin-bottom: 0;
                     color: #646464;
                     &:nth-of-type(1){
                       p{
-                        &::before{
-                          display: inline-block;
-                          content: "予約日:";
-                          padding-right: 5px;
-                        }
                       }
                     }
                     &:nth-of-type(2){
                       p{
-                        &::before{
-                          display: inline-block;
-                          content: "〜";
-                          display: inline-block;
-                          padding: 0 5px;
-                        }
-                        &::after{
-                          display: inline;
-                          content: "間";
-                        }
                       }
                     }
                   }
@@ -566,7 +596,43 @@
 
     .section-payment {
       margin-bottom: 60px;
-
+      .woocommerce-form-login-toggle{
+        .woocommerce-info{
+          border-left: 0px;
+          background: #d8d8d8;
+          color: $black01;
+          &::before{
+            color: $black01;
+          }
+          a{
+            margin-top: 10px;
+            display: block;
+            color: #068acc;
+          }
+        }
+      }
+      .woocommerce-form{
+        @include formSet;
+        background-color: #fff;
+        padding: 25px 20px;
+        margin-top: -20px;
+        margin-bottom: 60px;
+        p{
+          font-size: 14px;
+          margin-bottom: 15px;
+        }
+        button[type="submit"]{
+          width: 100%;
+          margin: 20px auto 0;
+        }
+        .lost_password{
+          text-align: center;
+          a{
+            color: #068acc;
+            text-decoration: underline;
+          }
+        }
+      }
       .woocommerce-checkout {
 
         .col2-set {

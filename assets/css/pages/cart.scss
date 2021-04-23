@@ -71,6 +71,7 @@
           }
         }
         .product-remove{
+          display: none;
           position: absolute;
           top: 15px;
           right: 15px;
@@ -99,6 +100,7 @@
             display: block;
             img{
               max-width: 100% !important;
+              height: auto;
             }
           }
         }
@@ -120,36 +122,23 @@
           .variation{
             @include flexSet;
             margin-bottom: 10px;
+            @include tsukushi-b;
+            color: #646464;
+            font-size: 14px;
+            line-height: 1.44;
+            letter-spacing: 0.03em;
             dt{
-              display: none;
+              margin-right: 5px;
             }
             dd{
-              @include tsukushi-b;
-              font-size: 14px;
-              line-height: 1.44;
-              letter-spacing: 0.03em;
               margin-bottom: 0;
+              margin-right: 15px;
               &:nth-of-type(1){
                 p{
-                  &::before{
-                    display: inline-block;
-                    content: "予約日:";
-                    padding-right: 5px;
-                  }
                 }
               }
               &:nth-of-type(2){
                 p{
-                  &::before{
-                    display: inline-block;
-                    content: "〜";
-                    display: inline-block;
-                    padding: 0 5px;
-                  }
-                  &::after{
-                    display: inline;
-                    content: "間";
-                  }
                 }
               }
             }
@@ -378,6 +367,7 @@
           tr{
             &.cart_item{
               padding: 20px;
+              align-items: flex-start;
             }
           }
           .product-remove{
@@ -402,6 +392,7 @@
             margin-bottom: 20px;
           }
           .product-name{
+            @include flexSet;
             width: 70%;
             padding: 0 0 0 20px;
             margin-bottom: 20px;
@@ -409,17 +400,22 @@
               display: none !important;
             }
             a{
+              order: 2;
               font-size: 14px;
               letter-spacing: 0.03em;
+              line-height: 1.6;
+              margin-bottom: 5px;
             }
             .variation{
+              font-size: 3.2vw;
+              color: #646464;
+              line-height: 1.8;
+              order: 1;
               margin-bottom: 5px;
               dt{
-                display: none;
               }
               dd{
-                @include tsukushi-b;
-                font-size: 10px;
+                margin-right: 15px;
               }
             }
           }

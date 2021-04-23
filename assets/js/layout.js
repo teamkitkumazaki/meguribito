@@ -426,6 +426,61 @@ if (document.getElementById('planDetail')) {
   faqToggle($('#faqToggle'));
 }
 
+function bookingWrapButton(target){
+  var popState = 0;
+  var detailPopup = $('#detailPopup')
+  var popClose = $('#popClose');
+  var bookingResource = $('#wc_bookings_field_resource');
+  var resourceValue;
+
+  function bookingWrapSwitch(){
+    if(popState == 0){
+      detailPopup.addClass('open');
+      popState = 1;
+    }else{
+      detailPopup.removeClass('open');
+      popState = 0;
+    }
+  }
+
+  function addBookingResourceText(){
+    resourceValue = bookingResource.find('option:selected').text();
+    console.log(resourceValue);
+    bookingResource.parent('p').children('label').attr('value', resourceValue);
+  }
+
+  function init(){
+    target.find('.comp-booking-button button').each(function(index) {
+      $(this).on({
+        'click': function(){
+          bookingWrapSwitch();
+        }
+      })
+    });
+
+    popClose.on({
+      'click': function(){
+        bookingWrapSwitch();
+      }
+    })
+
+    bookingResource.on({
+      'change': function(){
+        addBookingResourceText();
+      }
+    })
+
+    addBookingResourceText();
+
+  }
+
+  init();
+}
+
+if (document.getElementById('planDetail')) {
+  bookingWrapButton($('body'));
+}
+
 function contetHeightAdjust(){
   var heightAdjust = $('#heightAdjust');
   var guestHouseWrap = $('#guestHouseWrap');
@@ -467,6 +522,44 @@ function arrangeMypageNav(){
 
 if (document.getElementById('mypage')) {
   arrangeMypageNav();
+}
+
+function setBookingHistory(){
+  var detailLink = [];
+  var detailLink2 = [];
+  var hrefTxt = [];
+  var bookingList = $('.my_account_bookings');
+  bookingList.find('tr').each(function(index) {
+    detailLink[index] = $(this).find('.booked-product a');
+    detailLink2[index] = $(this).find('.order-number a');
+    detailLink2[index].text('');
+    hrefTxt[index] = detailLink[index].attr('href');
+    detailLink[index].attr('href', 'javascript:void(0);').attr('link', hrefTxt);
+    detailLink2[index].attr('href', 'javascript:void(0);').attr('link', hrefTxt);
+  });
+}
+
+if (document.getElementById('mypage')) {
+  setBookingHistory();
+}
+
+function setHistoryList(){
+  var detailLink = [];
+  var detailLink2 = [];
+  var hrefTxt = [];
+  var bookingList = $('.woocommerce-MyAccount-orders');
+  bookingList.find('tr').each(function(index) {
+    detailLink[index] = $(this).find('.woocommerce-orders-table__cell-order-number a');
+    detailLink2[index] = $(this).find('.woocommerce-orders-table__cell-order-actions a');
+    detailLink2[index].text('');
+    hrefTxt[index] = detailLink[index].attr('href');
+    detailLink[index].attr('href', 'javascript:void(0);').attr('link', hrefTxt);
+    detailLink2[index].attr('href', 'javascript:void(0);').attr('link', hrefTxt);
+  });
+}
+
+if (document.getElementById('mypage')) {
+  setHistoryList();
 }
 
   if (document.getElementById('index')) {

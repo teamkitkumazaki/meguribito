@@ -39,7 +39,12 @@
             @include tsukushi-b;
             font-size: 24px;;
             letter-spacing: 0.03em;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            .user_email{
+              display: inline-block;
+              font-size: 16px;
+              padding-left: 10px;
+            }
           }
           .profile_point{
             @include tsukushi-b;
@@ -48,12 +53,14 @@
             font-size: 16px;
             letter-spacing: 0.03em;
             color: #464646;
+            margin-bottom: 10px;
             .num{
               @include tsukushi-r;
               font-size: 30px;
               color: $black01;
               display: inline-block;
               padding: 0 0.2em;
+              margin-bottom: 5px;
             }
           }
         }
@@ -73,7 +80,6 @@
         border-radius: 20px;
         padding: 20px 0;
         background: #fff;
-        margin-right: 15px;
         .title{
           @include tsukushi-b;
           font-weight: bold;
@@ -185,6 +191,7 @@
       float: none;
       padding: 30px;
       background-color: #fff;
+      box-sizing: border-box;
       h2{
         display: none;
       }

@@ -432,19 +432,12 @@ button:focus {
   background-size: cover;
   line-height: 180px;
 }
-.comp-header .header_inner .header_right .box_contents .box_item.mypage {
-  background-color: #f1f1f1;
-  color: #3f3f3f;
-  background-size: 25px;
-  background-position: center top 40px;
-  background-image: url(../img/common/mypage.svg);
-}
 .comp-header .header_inner .header_right .box_contents .box_item.cart {
   background-color: #3f3f3f;
   color: #fff;
-  background-size: 32px;
-  background-position: left 42px top 38px;
-  background-image: url(../img/common/cart.svg);
+  background-size: 25px;
+  background-position: center top 40px;
+  background-image: url(../img/common/calendar_white.svg);
 }
 .comp-header.underpage {
   background-image: none;
@@ -467,6 +460,10 @@ button:focus {
 }
 .comp-header.underpage .header_inner .header_right .count_contents .count_item a {
   color: #3f3f3f;
+}
+.comp-header.underpage .header_inner .header_right .count_contents .count_item a .content span::after {
+  border-top: 1px solid #3f3f3f !important;
+  border-right: 1px solid #3f3f3f !important;
 }
 
 @media screen and (max-width: 1200px) {
@@ -497,11 +494,8 @@ button:focus {
     font-size: 10px;
     line-height: 150px;
   }
-  .comp-header .header_inner .header_right .box_contents .box_item.mypage {
-    background-position: center top 30px;
-  }
   .comp-header .header_inner .header_right .box_contents .box_item.cart {
-    background-position: left 32px top 28px;
+    background-position: center top 30px;
   }
   .comp-header.underpage {
     background-image: none;
@@ -586,7 +580,7 @@ button:focus {
     background-position: center center;
     background-size: cover;
     background-size: 35px;
-    background-image: url(../img/common/cart.svg);
+    background-image: url(../img/common/mypage.svg);
   }
   .comp-header .header_inner .header_left .h_logo .header_cart a:hover {
     opacity: 0.75;
@@ -2137,6 +2131,23 @@ footer .footer_inner .footer_lower .copyright {
   transform: translate3d(0, 0%, 0);
 }
 
+.page-plan-list .section-plan-list {
+  margin-top: 200px;
+  margin-bottom: 160px;
+}
+
+@media screen and (max-width: 980px) {
+  .page-plan-list .section-plan-list {
+    margin-top: 160px;
+    margin-bottom: 120px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-plan-list .section-plan-list {
+    margin-top: 120px;
+    margin-bottom: 80px;
+  }
+}
 .page-kagibito-list .section-lead {
   margin-bottom: 80px;
 }
@@ -2559,8 +2570,11 @@ footer .footer_inner .footer_lower .copyright {
     position: absolute;
     bottom: 20px;
     color: #fff;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
     text-align: left;
+  }
+  .page-about .section-main .comp-section-title .title {
+    color: #fff !important;
   }
   .page-about .section-org {
     margin-bottom: 60px;
@@ -2675,6 +2689,7 @@ footer .footer_inner .footer_lower .copyright {
   display: none;
 }
 .page-cart .section-cart .woocommerce .cart .product-remove {
+  display: none;
   position: absolute;
   top: 15px;
   right: 15px;
@@ -2708,6 +2723,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .page-cart .section-cart .woocommerce .cart .product-thumbnail a img {
   max-width: 100% !important;
+  height: auto;
 }
 .page-cart .section-cart .woocommerce .cart .product-name {
   width: calc(100% - 570px);
@@ -2731,32 +2747,19 @@ footer .footer_inner .footer_lower .copyright {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 10px;
-}
-.page-cart .section-cart .woocommerce .cart .product-name .variation dt {
-  display: none;
-}
-.page-cart .section-cart .woocommerce .cart .product-name .variation dd {
   font-family: "FOT-筑紫A丸ゴシック Std D";
   font-weight: bold;
+  color: #646464;
   font-size: 14px;
   line-height: 1.44;
   letter-spacing: 0.03em;
+}
+.page-cart .section-cart .woocommerce .cart .product-name .variation dt {
+  margin-right: 5px;
+}
+.page-cart .section-cart .woocommerce .cart .product-name .variation dd {
   margin-bottom: 0;
-}
-.page-cart .section-cart .woocommerce .cart .product-name .variation dd:nth-of-type(1) p::before {
-  display: inline-block;
-  content: "予約日:";
-  padding-right: 5px;
-}
-.page-cart .section-cart .woocommerce .cart .product-name .variation dd:nth-of-type(2) p::before {
-  display: inline-block;
-  content: "〜";
-  display: inline-block;
-  padding: 0 5px;
-}
-.page-cart .section-cart .woocommerce .cart .product-name .variation dd:nth-of-type(2) p::after {
-  display: inline;
-  content: "間";
+  margin-right: 15px;
 }
 .page-cart .section-cart .woocommerce .cart .product-price, .page-cart .section-cart .woocommerce .cart .product-quantity, .page-cart .section-cart .woocommerce .cart .product-subtotal {
   text-align: center;
@@ -2973,6 +2976,7 @@ footer .footer_inner .footer_lower .copyright {
   }
   .page-cart .section-cart .woocommerce .cart tr.cart_item {
     padding: 20px;
+    align-items: flex-start;
   }
   .page-cart .section-cart .woocommerce .cart .product-remove {
     position: absolute;
@@ -2996,6 +3000,8 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 20px;
   }
   .page-cart .section-cart .woocommerce .cart .product-name {
+    display: flex;
+    flex-wrap: wrap;
     width: 70%;
     padding: 0 0 0 20px;
     margin-bottom: 20px;
@@ -3004,19 +3010,21 @@ footer .footer_inner .footer_lower .copyright {
     display: none !important;
   }
   .page-cart .section-cart .woocommerce .cart .product-name a {
+    order: 2;
     font-size: 14px;
     letter-spacing: 0.03em;
-  }
-  .page-cart .section-cart .woocommerce .cart .product-name .variation {
+    line-height: 1.6;
     margin-bottom: 5px;
   }
-  .page-cart .section-cart .woocommerce .cart .product-name .variation dt {
-    display: none;
+  .page-cart .section-cart .woocommerce .cart .product-name .variation {
+    font-size: 3.2vw;
+    color: #646464;
+    line-height: 1.8;
+    order: 1;
+    margin-bottom: 5px;
   }
   .page-cart .section-cart .woocommerce .cart .product-name .variation dd {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
-    font-weight: bold;
-    font-size: 10px;
+    margin-right: 15px;
   }
   .page-cart .section-cart .woocommerce .cart .product-price, .page-cart .section-cart .woocommerce .cart .product-quantity, .page-cart .section-cart .woocommerce .cart .product-subtotal {
     text-align: left;
@@ -3084,6 +3092,179 @@ footer .footer_inner .footer_lower .copyright {
 }
 .page-payment .section-payment {
   margin-bottom: 120px;
+}
+.page-payment .section-payment .woocommerce-form-login-toggle .woocommerce-info {
+  border-left: 0px;
+  background: #d8d8d8;
+  color: #3f3f3f;
+}
+.page-payment .section-payment .woocommerce-form-login-toggle .woocommerce-info::before {
+  color: #3f3f3f;
+}
+.page-payment .section-payment .woocommerce-form-login-toggle .woocommerce-info a {
+  color: #068acc;
+}
+.page-payment .section-payment .woocommerce-form {
+  background-color: #fff;
+  padding: 30px;
+  margin-top: -20px;
+  margin-bottom: 60px;
+}
+.page-payment .section-payment .woocommerce-form .form-row {
+  margin-bottom: 25px;
+}
+.page-payment .section-payment .woocommerce-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: normal;
+  position: relative;
+}
+.page-payment .section-payment .woocommerce-form input[type=email],
+.page-payment .section-payment .woocommerce-form input[type=tel],
+.page-payment .section-payment .woocommerce-form input[type=text],
+.page-payment .section-payment .woocommerce-form input[type=password] {
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  transition: border 0.2s;
+  will-change: border;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+.page-payment .section-payment .woocommerce-form input[type=email]:focus,
+.page-payment .section-payment .woocommerce-form input[type=tel]:focus,
+.page-payment .section-payment .woocommerce-form input[type=text]:focus,
+.page-payment .section-payment .woocommerce-form input[type=password]:focus {
+  outline: none;
+  border: 1px solid #979797;
+}
+.page-payment .section-payment .woocommerce-form select {
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  transition: border 0.2s;
+  will-change: border;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+.page-payment .section-payment .woocommerce-form select:focus {
+  outline: none;
+  border: 1px solid #979797;
+}
+.page-payment .section-payment .woocommerce-form button[type=submit] {
+  display: block;
+  width: 100%;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 20px !important;
+  text-align: center;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  background-color: #BF992E !important;
+}
+.page-payment .section-payment .woocommerce-form button[type=submit]:hover {
+  opacity: 0.75;
+}
+.page-payment .section-payment .woocommerce-form .show-password-input {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  height: 15px;
+  margin: auto;
+  padding: 0;
+  line-height: 1;
+}
+.page-payment .section-payment .woocommerce-form .woocommerce-password-strength {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.page-payment .section-payment .woocommerce-form .woocommerce-password-hint {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+}
+@media screen and (max-width: 720px) {
+  .page-payment .section-payment .woocommerce-form .form-row {
+    margin-bottom: 25px;
+  }
+  .page-payment .section-payment .woocommerce-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: normal;
+    position: relative;
+  }
+  .page-payment .section-payment .woocommerce-form input[type=email],
+.page-payment .section-payment .woocommerce-form input[type=tel],
+.page-payment .section-payment .woocommerce-form input[type=text],
+.page-payment .section-payment .woocommerce-form input[type=password] {
+    font-size: 16px;
+  }
+  .page-payment .section-payment .woocommerce-form select {
+    font-size: 16px;
+  }
+  .page-payment .section-payment .woocommerce-form button[type=submit] {
+    display: block;
+    padding: 7px 0;
+    font-size: 18px !important;
+  }
+  .page-payment .section-payment .woocommerce-form .show-password-input {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    height: 15px;
+    margin: auto;
+    padding: 0;
+    line-height: 1;
+  }
+  .page-payment .section-payment .woocommerce-form .woocommerce-password-strength {
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+  .page-payment .section-payment .woocommerce-form .woocommerce-password-hint {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+  }
+}
+.page-payment .section-payment .woocommerce-form p {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.page-payment .section-payment .woocommerce-form .clear {
+  margin-top: -10px;
+}
+.page-payment .section-payment .woocommerce-form label.woocommerce-form-login__rememberme {
+  display: inline-block;
+}
+.page-payment .section-payment .woocommerce-form button[type=submit] {
+  width: 50%;
+  margin: 20px auto 0;
+}
+.page-payment .section-payment .woocommerce-form .lost_password {
+  text-align: center;
+}
+.page-payment .section-payment .woocommerce-form .lost_password a {
+  color: #068acc;
+  text-decoration: underline;
 }
 .page-payment .section-payment .woocommerce-form-coupon-toggle {
   display: none;
@@ -3355,34 +3536,21 @@ footer .footer_inner .footer_lower .copyright {
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin-bottom: 10px;
-}
-.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-name .variation dt {
-  display: none;
-}
-.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-name .variation dd {
   font-family: "FOT-筑紫A丸ゴシック Std D";
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.44;
+  line-height: 2;
   letter-spacing: 0.03em;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-name .variation dt {
+  width: 40%;
+}
+.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-name .variation dd {
+  width: 60%;
   margin-bottom: 0;
   color: #646464;
-}
-.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-name .variation dd:nth-of-type(1) p::before {
-  display: inline-block;
-  content: "予約日:";
-  padding-right: 5px;
-}
-.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-name .variation dd:nth-of-type(2) p::before {
-  display: inline-block;
-  content: "〜";
-  display: inline-block;
-  padding: 0 5px;
-}
-.page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-name .variation dd:nth-of-type(2) p::after {
-  display: inline;
-  content: "間";
 }
 .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-total {
   margin-top: 10px;
@@ -3595,6 +3763,180 @@ footer .footer_inner .footer_lower .copyright {
   .page-payment .section-payment {
     margin-bottom: 60px;
   }
+  .page-payment .section-payment .woocommerce-form-login-toggle .woocommerce-info {
+    border-left: 0px;
+    background: #d8d8d8;
+    color: #3f3f3f;
+  }
+  .page-payment .section-payment .woocommerce-form-login-toggle .woocommerce-info::before {
+    color: #3f3f3f;
+  }
+  .page-payment .section-payment .woocommerce-form-login-toggle .woocommerce-info a {
+    margin-top: 10px;
+    display: block;
+    color: #068acc;
+  }
+  .page-payment .section-payment .woocommerce-form {
+    background-color: #fff;
+    padding: 25px 20px;
+    margin-top: -20px;
+    margin-bottom: 60px;
+  }
+  .page-payment .section-payment .woocommerce-form .form-row {
+    margin-bottom: 25px;
+  }
+  .page-payment .section-payment .woocommerce-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: normal;
+    position: relative;
+  }
+  .page-payment .section-payment .woocommerce-form input[type=email],
+.page-payment .section-payment .woocommerce-form input[type=tel],
+.page-payment .section-payment .woocommerce-form input[type=text],
+.page-payment .section-payment .woocommerce-form input[type=password] {
+    border: 1px solid #f8f8f8;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    padding: 10px;
+    transition: border 0.2s;
+    will-change: border;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+  }
+  .page-payment .section-payment .woocommerce-form input[type=email]:focus,
+.page-payment .section-payment .woocommerce-form input[type=tel]:focus,
+.page-payment .section-payment .woocommerce-form input[type=text]:focus,
+.page-payment .section-payment .woocommerce-form input[type=password]:focus {
+    outline: none;
+    border: 1px solid #979797;
+  }
+  .page-payment .section-payment .woocommerce-form select {
+    border: 1px solid #f8f8f8;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    padding: 10px;
+    transition: border 0.2s;
+    will-change: border;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+  }
+  .page-payment .section-payment .woocommerce-form select:focus {
+    outline: none;
+    border: 1px solid #979797;
+  }
+  .page-payment .section-payment .woocommerce-form button[type=submit] {
+    display: block;
+    width: 100%;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 20px !important;
+    text-align: center;
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    background-color: #BF992E !important;
+  }
+  .page-payment .section-payment .woocommerce-form button[type=submit]:hover {
+    opacity: 0.75;
+  }
+  .page-payment .section-payment .woocommerce-form .show-password-input {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    height: 15px;
+    margin: auto;
+    padding: 0;
+    line-height: 1;
+  }
+  .page-payment .section-payment .woocommerce-form .woocommerce-password-strength {
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+  .page-payment .section-payment .woocommerce-form .woocommerce-password-hint {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) and (max-width: 720px) {
+  .page-payment .section-payment .woocommerce-form .form-row {
+    margin-bottom: 25px;
+  }
+  .page-payment .section-payment .woocommerce-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: normal;
+    position: relative;
+  }
+  .page-payment .section-payment .woocommerce-form input[type=email],
+.page-payment .section-payment .woocommerce-form input[type=tel],
+.page-payment .section-payment .woocommerce-form input[type=text],
+.page-payment .section-payment .woocommerce-form input[type=password] {
+    font-size: 16px;
+  }
+  .page-payment .section-payment .woocommerce-form select {
+    font-size: 16px;
+  }
+  .page-payment .section-payment .woocommerce-form button[type=submit] {
+    display: block;
+    padding: 7px 0;
+    font-size: 18px !important;
+  }
+  .page-payment .section-payment .woocommerce-form .show-password-input {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    height: 15px;
+    margin: auto;
+    padding: 0;
+    line-height: 1;
+  }
+  .page-payment .section-payment .woocommerce-form .woocommerce-password-strength {
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+  .page-payment .section-payment .woocommerce-form .woocommerce-password-hint {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-payment .section-payment .woocommerce-form p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-payment .section-payment .woocommerce-form button[type=submit] {
+    width: 100%;
+    margin: 20px auto 0;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-payment .section-payment .woocommerce-form .lost_password {
+    text-align: center;
+  }
+  .page-payment .section-payment .woocommerce-form .lost_password a {
+    color: #068acc;
+    text-decoration: underline;
+  }
+}
+@media screen and (max-width: 720px) {
   .page-payment .section-payment .woocommerce-checkout .col2-set {
     width: 100% !important;
     padding: 30px 25px;
@@ -3970,6 +4312,137 @@ footer .footer_inner .footer_lower .copyright {
   .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr:nth-last-of-type(1) {
     width: 50%;
     margin-left: 50%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-payment .section-lead-completed {
+    margin-bottom: 40px;
+  }
+  .page-payment .section-lead-completed .page_ttl {
+    font-size: 7vw;
+    letter-spacing: 0.03em;
+    line-height: 1.4;
+  }
+  .page-payment .section-lead-completed .sub_ttl {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+  }
+  .page-payment .section-payment {
+    margin-bottom: 60px;
+  }
+  .page-payment .section-payment .woocommerce-order::before {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-overview {
+    margin: 0 0 20px !important;
+    padding: 5px 20px;
+    display: block;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-overview li {
+    padding: 15px 0 15px 0;
+    margin-right: 0px;
+    border-bottom: 1px dotted #e3e3e3 !important;
+    text-align: left;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-overview li:nth-last-of-type(1) {
+    border-bottom: 0 !important;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-overview li strong {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    padding-left: 0px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details {
+    margin-top: 60px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .woocommerce-order-details__title {
+    font-size: 20px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent !important;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr.order_item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-thumbnail {
+    width: 120px;
+    padding: 0 !important;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-thumbnail a {
+    display: block;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-thumbnail a img {
+    max-width: 100% !important;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-name a {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-name .product-quantity {
+    display: none;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-name .wc-booking-summary {
+    margin: 0 !important;
+    border: 0px solid #ddd !important;
+    padding: 0 !important;
+    color: unset !important;
+    border-radius: 0px !important;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-name .wc-booking-summary-number {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-name .wc-booking-summary-list {
+    font-size: 14px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-total {
+    font-size: 16px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr {
+    display: none;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr:nth-last-of-type(1) {
+    width: 100%;
+    margin-left: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    padding: 30px 10px 0 !important;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr:nth-last-of-type(1) th {
+    font-size: 18px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr:nth-last-of-type(1) td {
+    font-size: 20px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-customer-details {
+    margin-top: 60px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-customer-details .woocommerce-column__title {
+    font-size: 20px;
+  }
+  .page-payment .section-payment .woocommerce-order .woocommerce-customer-details address {
+    padding: 20px;
   }
 }
 .page-service .section-lead {
@@ -4458,6 +4931,11 @@ footer .footer_inner .footer_lower .copyright {
   letter-spacing: 0.03em;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 720px) {
+  .page-mypage .section-account-info .mypage_title {
+    font-size: 20px;
+  }
+}
 .page-mypage .section-account-info .flex_wrap {
   display: flex;
   flex-wrap: wrap;
@@ -4488,7 +4966,12 @@ footer .footer_inner .footer_lower .copyright {
   font-weight: bold;
   font-size: 24px;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+.page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .user_name .user_email {
+  display: inline-block;
+  font-size: 16px;
+  padding-left: 10px;
 }
 .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .profile_point {
   font-family: "FOT-筑紫A丸ゴシック Std D";
@@ -4499,6 +4982,7 @@ footer .footer_inner .footer_lower .copyright {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: #464646;
+  margin-bottom: 10px;
 }
 .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .profile_point .num {
   font-family: "TsukuARdGothicStd-R";
@@ -4507,6 +4991,7 @@ footer .footer_inner .footer_lower .copyright {
   color: #3f3f3f;
   display: inline-block;
   padding: 0 0.2em;
+  margin-bottom: 5px;
 }
 .page-mypage .section-account-info .flex_wrap .myprofile .logout_link {
   font-family: "FOT-筑紫A丸ゴシック Std D";
@@ -4527,7 +5012,6 @@ footer .footer_inner .footer_lower .copyright {
   border-radius: 20px;
   padding: 20px 0;
   background: #fff;
-  margin-right: 15px;
 }
 .page-mypage .section-account-info .flex_wrap .history_wrap .title {
   font-family: "FOT-筑紫A丸ゴシック Std D";
@@ -4632,6 +5116,7 @@ footer .footer_inner .footer_lower .copyright {
   float: none;
   padding: 30px;
   background-color: #fff;
+  box-sizing: border-box;
 }
 .page-mypage .section-mypage .woocommerce-MyAccount-content h2 {
   display: none;
@@ -4644,6 +5129,11 @@ footer .footer_inner .footer_lower .copyright {
   line-height: 1.6;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 720px) {
+  .page-mypage .section-mypage .woocommerce-MyAccount-content h3 {
+    font-size: 20px;
+  }
 }
 
 #customer_login.u-columns {
@@ -4677,6 +5167,11 @@ footer .footer_inner .footer_lower .copyright {
   letter-spacing: 0.03em;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 720px) {
+  #customer_login.u-columns .col-2::before {
+    font-size: 20px;
+  }
+}
 #customer_login.u-columns h2 {
   font-family: "FOT-筑紫A丸ゴシック Std D";
   font-weight: bold;
@@ -4685,6 +5180,11 @@ footer .footer_inner .footer_lower .copyright {
   line-height: 1.6;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 720px) {
+  #customer_login.u-columns h2 {
+    font-size: 20px;
+  }
 }
 #customer_login.u-columns form {
   background-color: #fff;
@@ -4775,6 +5275,54 @@ footer .footer_inner .footer_lower .copyright {
   letter-spacing: 0.6px;
   font-size: 14px;
 }
+@media screen and (max-width: 720px) {
+  #customer_login.u-columns form .form-row {
+    margin-bottom: 25px;
+  }
+  #customer_login.u-columns form label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: normal;
+    position: relative;
+  }
+  #customer_login.u-columns form input[type=email],
+#customer_login.u-columns form input[type=tel],
+#customer_login.u-columns form input[type=text],
+#customer_login.u-columns form input[type=password] {
+    font-size: 16px;
+  }
+  #customer_login.u-columns form select {
+    font-size: 16px;
+  }
+  #customer_login.u-columns form button[type=submit] {
+    display: block;
+    padding: 7px 0;
+    font-size: 18px !important;
+  }
+  #customer_login.u-columns form .show-password-input {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    height: 15px;
+    margin: auto;
+    padding: 0;
+    line-height: 1;
+  }
+  #customer_login.u-columns form .woocommerce-password-strength {
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+  #customer_login.u-columns form .woocommerce-password-hint {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+  }
+}
 #customer_login.u-columns form .form-row {
   margin-bottom: 20px;
 }
@@ -4825,6 +5373,11 @@ footer .footer_inner .footer_lower .copyright {
   line-height: 1.6;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 720px) {
+  .lost_reset_password::before {
+    font-size: 20px;
+  }
 }
 .lost_reset_password .form-row {
   margin-bottom: 25px;
@@ -4910,6 +5463,54 @@ footer .footer_inner .footer_lower .copyright {
   letter-spacing: 0.6px;
   font-size: 14px;
 }
+@media screen and (max-width: 720px) {
+  .lost_reset_password .form-row {
+    margin-bottom: 25px;
+  }
+  .lost_reset_password label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: normal;
+    position: relative;
+  }
+  .lost_reset_password input[type=email],
+.lost_reset_password input[type=tel],
+.lost_reset_password input[type=text],
+.lost_reset_password input[type=password] {
+    font-size: 16px;
+  }
+  .lost_reset_password select {
+    font-size: 16px;
+  }
+  .lost_reset_password button[type=submit] {
+    display: block;
+    padding: 7px 0;
+    font-size: 18px !important;
+  }
+  .lost_reset_password .show-password-input {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    height: 15px;
+    margin: auto;
+    padding: 0;
+    line-height: 1;
+  }
+  .lost_reset_password .woocommerce-password-strength {
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+  .lost_reset_password .woocommerce-password-hint {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+  }
+}
 .lost_reset_password .form-row-first {
   width: 100% !important;
   margin: 0px 0 10px;
@@ -4934,6 +5535,11 @@ footer .footer_inner .footer_lower .copyright {
   line-height: 1.6;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 720px) {
+  .woocommerce-EditAccountForm::before {
+    font-size: 20px;
+  }
 }
 .woocommerce-EditAccountForm .form-row {
   margin-bottom: 25px;
@@ -5018,6 +5624,54 @@ footer .footer_inner .footer_lower .copyright {
   line-height: 2;
   letter-spacing: 0.6px;
   font-size: 14px;
+}
+@media screen and (max-width: 720px) {
+  .woocommerce-EditAccountForm .form-row {
+    margin-bottom: 25px;
+  }
+  .woocommerce-EditAccountForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: normal;
+    position: relative;
+  }
+  .woocommerce-EditAccountForm input[type=email],
+.woocommerce-EditAccountForm input[type=tel],
+.woocommerce-EditAccountForm input[type=text],
+.woocommerce-EditAccountForm input[type=password] {
+    font-size: 16px;
+  }
+  .woocommerce-EditAccountForm select {
+    font-size: 16px;
+  }
+  .woocommerce-EditAccountForm button[type=submit] {
+    display: block;
+    padding: 7px 0;
+    font-size: 18px !important;
+  }
+  .woocommerce-EditAccountForm .show-password-input {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    height: 15px;
+    margin: auto;
+    padding: 0;
+    line-height: 1;
+  }
+  .woocommerce-EditAccountForm .woocommerce-password-strength {
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+  .woocommerce-EditAccountForm .woocommerce-password-hint {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+  }
 }
 .woocommerce-EditAccountForm legend {
   display: none;
@@ -5126,6 +5780,54 @@ footer .footer_inner .footer_lower .copyright {
   letter-spacing: 0.6px;
   font-size: 14px;
 }
+@media screen and (max-width: 720px) {
+  .woocommerce-address-fields .form-row {
+    margin-bottom: 25px;
+  }
+  .woocommerce-address-fields label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: normal;
+    position: relative;
+  }
+  .woocommerce-address-fields input[type=email],
+.woocommerce-address-fields input[type=tel],
+.woocommerce-address-fields input[type=text],
+.woocommerce-address-fields input[type=password] {
+    font-size: 16px;
+  }
+  .woocommerce-address-fields select {
+    font-size: 16px;
+  }
+  .woocommerce-address-fields button[type=submit] {
+    display: block;
+    padding: 7px 0;
+    font-size: 18px !important;
+  }
+  .woocommerce-address-fields .show-password-input {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    height: 15px;
+    margin: auto;
+    padding: 0;
+    line-height: 1;
+  }
+  .woocommerce-address-fields .woocommerce-password-strength {
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+  .woocommerce-address-fields .woocommerce-password-hint {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+  }
+}
 .woocommerce-address-fields button[type=submit] {
   max-width: 30%;
 }
@@ -5138,6 +5840,257 @@ footer .footer_inner .footer_lower .copyright {
   float: right !important;
   width: 47% !important;
   margin: 0 0 25px 6% !important;
+}
+
+.my_account_bookings {
+  display: block;
+  width: 100%;
+}
+.my_account_bookings::before {
+  display: block;
+  content: "予約中のプラン";
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 720px) {
+  .my_account_bookings::before {
+    font-size: 20px;
+  }
+}
+.my_account_bookings thead {
+  display: none;
+}
+.my_account_bookings tbody, .my_account_bookings tfoot, .my_account_bookings tr, .my_account_bookings td {
+  display: block;
+}
+.my_account_bookings tr {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px 0;
+  position: relative;
+  border-bottom: 1px dotted #d8d8d8;
+}
+.my_account_bookings tr:nth-last-of-type(1) {
+  padding: 25px 0 0;
+  border-bottom: 0px dotted #d8d8d8;
+}
+.my_account_bookings tr .booking-id {
+  display: none;
+}
+.my_account_bookings tr .booking-status {
+  display: none;
+}
+.my_account_bookings tr .booking-start-date {
+  order: 0;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #646464;
+  position: relative;
+  padding-left: 30px;
+  background-color: transparent !important;
+}
+.my_account_bookings tr .booking-start-date::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-size: contain;
+  background-image: url(../img/common/mypage.svg);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.my_account_bookings tr .booking-end-date {
+  width: 60%;
+  order: 1;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #646464;
+  background-color: transparent !important;
+}
+.my_account_bookings tr .booking-end-date::before {
+  display: inline;
+  content: "〜";
+}
+.my_account_bookings tr .booked-product {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  width: 100%;
+  order: 2;
+  margin: 10px 0 0;
+  font-size: 22px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  background-color: transparent !important;
+  transition: opacity 0.3s;
+}
+.my_account_bookings tr .booked-product:hover {
+  opacity: 0.75;
+}
+.my_account_bookings tr .booked-product a {
+  color: inherit;
+}
+.my_account_bookings tr .booking-cancel {
+  order: 4;
+}
+.my_account_bookings tr .order-number {
+  order: 5;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.my_account_bookings tr .order-number a {
+  transition: opacity 0.3s;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  background-color: #BF992E;
+  color: #fff;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  border-radius: 100px;
+}
+.my_account_bookings tr .order-number a:hover {
+  opacity: 0.75;
+}
+.my_account_bookings tr .order-number a::before {
+  display: inline;
+  content: "詳細を見る";
+  color: #fff;
+}
+
+.woocommerce-MyAccount-orders {
+  display: block;
+  width: 100%;
+}
+.woocommerce-MyAccount-orders::before {
+  display: block;
+  content: "今までに行ったプラン";
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 720px) {
+  .woocommerce-MyAccount-orders::before {
+    font-size: 20px;
+  }
+}
+.woocommerce-MyAccount-orders thead {
+  display: none;
+}
+.woocommerce-MyAccount-orders tbody, .woocommerce-MyAccount-orders tfoot, .woocommerce-MyAccount-orders tr, .woocommerce-MyAccount-orders td {
+  display: block;
+}
+.woocommerce-MyAccount-orders thead {
+  display: none !important;
+}
+.woocommerce-MyAccount-orders tr {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 25px 0;
+  position: relative;
+  border-bottom: 1px dotted #d8d8d8;
+}
+.woocommerce-MyAccount-orders tr:nth-last-of-type(1) {
+  padding: 25px 0 0;
+  border-bottom: 0px dotted #d8d8d8;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-number {
+  width: 80px;
+  margin-right: 20px;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-number a {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  background-color: #3f3f3f;
+  color: #fff;
+  padding: 7px 0;
+  font-size: 14px;
+  border-radius: 40px;
+  color: #fff;
+  transition: opacity 0.3s;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-number a:hover {
+  opacity: 0.75;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-date {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  position: relative;
+  background-color: transparent !important;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-date::before {
+  display: inline;
+  content: "注文日:" !important;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-status,
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-total {
+  display: none;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-actions {
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  margin: auto;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-actions a {
+  transition: opacity 0.3s;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  line-height: 20px;
+  height: 20px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  background-color: #BF992E;
+  color: #fff;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  border-radius: 100px;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-actions a:hover {
+  opacity: 0.75;
+}
+.woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-actions a::before {
+  display: inline;
+  content: "詳細を見る";
+  color: #fff;
 }
 
 /*########## コンポーネント ##########*/
@@ -5196,15 +6149,10 @@ footer .footer_inner .footer_lower .copyright {
   height: 100px;
   line-height: 150px;
 }
-.comp-fixed-header .header_inner .header_right .box_contents .box_item.mypage {
+.comp-fixed-header .header_inner .header_right .box_contents .box_item.cart {
   background-size: 25px;
   background-position: center top 30px;
-  background-image: url(../img/common/mypage.svg);
-}
-.comp-fixed-header .header_inner .header_right .box_contents .box_item.cart {
-  background-size: 32px;
-  background-position: left 32px top 25px;
-  background-image: url(../img/common/cart.svg);
+  background-image: url(../img/common/calendar_white.svg);
 }
 
 @media screen and (max-width: 1200px) {
@@ -5269,7 +6217,7 @@ footer .footer_inner .footer_lower .copyright {
     background-image: url(../img/common/menu_button.svg);
   }
   .comp-fixed-header .header_inner .header_left .h_logo .header_cart a {
-    background-image: url(../img/common/cart_black.svg);
+    background-image: url(../img/common/mypage.svg);
   }
 }
 @media screen and (max-width: 700px) {
@@ -8171,25 +9119,819 @@ footer .footer_inner .footer_lower .copyright {
   right: 0;
   margin: auto;
   background: #f9f6f3;
-  transition: bottom 0.3s;
+  transition: bottom 0.5s;
   z-index: 1000;
 }
 .comp-detail-pop.open {
   bottom: 0;
 }
+.comp-detail-pop .pop_close {
+  cursor: pointer;
+  transition: opacity 0.3s;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 4px;
+  left: 22px;
+  -webkit-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: none;
+  z-index: 100;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-size: 20px;
+  background-image: url(../img/common/pop_close_black.svg);
+}
+.comp-detail-pop .pop_close:focus {
+  outline: none;
+}
 .comp-detail-pop .scroll_wrap {
-  padding: 60px 0;
+  padding: 100px 0;
   box-sizing: border-box;
-  height: calc(100vh - 60px);
+  height: 100vh;
   overflow: scroll;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
 .comp-detail-pop .scroll_wrap .section_inner {
-  height: 120vh;
-  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left {
+  width: 55%;
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left .img_wrap {
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left .img_wrap img {
+  pointer-events: none;
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .plan_ttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  margin-bottom: 15px;
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .location {
+  margin-bottom: 20px;
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .location span {
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: #464646;
+  position: relative;
+  padding: 5px 0;
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .location span::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .location span.area {
+  padding-left: 30px;
+  margin-right: 20px;
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .location span.area::before {
+  width: 15px;
+  height: 100%;
+  background-size: 14px;
+  background-image: url(../img/common/pin.svg);
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .location span.guesthouse {
+  padding-left: 30px;
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .location span.guesthouse::before {
+  width: 17px;
+  height: 100%;
+  background-size: 17px;
+  background-image: url(../img/common/guesthouse.svg);
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .kagibito_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .kagibito_wrap .icon {
+  transition: opacity 0.3s;
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #BF992E;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .kagibito_wrap .icon:hover {
+  opacity: 0.75;
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .kagibito_wrap .kagibito_info {
+  width: calc(100% - 90px);
+  padding-bottom: 5px;
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .kagibito_wrap .kagibito_info .info {
+  display: block;
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  margin-bottom: 5px;
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .kagibito_wrap .kagibito_info .name {
+  display: block;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1.16px;
+  color: inherit;
+  transition: opacity 0.3s;
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .kagibito_wrap .kagibito_info .name:hover {
+  opacity: 0.75;
+}
+.comp-detail-pop .scroll_wrap .section_inner .detail_right {
+  width: 38%;
 }
 
+@media screen and (max-width: 1150px) {
+  .comp-detail-pop .scroll_wrap .section_inner .detail_left {
+    width: 50%;
+  }
+  .comp-detail-pop .scroll_wrap .section_inner .detail_right {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 980px) {
+  .comp-detail-pop .scroll_wrap .section_inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .comp-detail-pop .scroll_wrap .section_inner .detail_left {
+    width: 100%;
+    order: 1;
+  }
+  .comp-detail-pop .scroll_wrap .section_inner .detail_left .img_wrap, .comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap {
+    display: none;
+  }
+  .comp-detail-pop .scroll_wrap .section_inner .detail_right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .comp-detail-pop .pop_close {
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    left: 5px;
+  }
+  .comp-detail-pop .scroll_wrap {
+    padding: 60px 0;
+    height: 100vh;
+  }
+  .comp-detail-pop .scroll_wrap .section_inner .detail_left {
+    width: 100%;
+  }
+  .comp-detail-pop .scroll_wrap .section_inner .detail_right {
+    width: 100%;
+  }
+}
+.comp-booking-section {
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 1px 5px 3px 0 rgba(0, 0, 0, 0.12);
+  border: solid 1px #d8d8d8;
+  background-color: #fff;
+}
+.comp-booking-section .woocommerce-product-gallery,
+.comp-booking-section .related,
+.comp-booking-section .woocommerce-Reviews,
+.comp-booking-section .product_meta,
+.comp-booking-section .edit-link,
+.comp-booking-section .woocommerce-tabs,
+.comp-booking-section .storefront-product-pagination {
+  display: none !important;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary {
+  width: 100%;
+  display: block;
+  margin-bottom: 0;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary .product_title {
+  display: none !important;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary .price {
+  display: none !important;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart::before {
+  display: block;
+  content: "プランを予約する";
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 720px) {
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart::before {
+    font-size: 20px;
+  }
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form {
+  margin-bottom: 0 !important;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form::before {
+  display: block;
+  content: "▼宿泊タイプを選ぶ";
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #3f3f3f;
+  margin-bottom: 15px;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .form-field {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .form-field:hover {
+  border: 1px solid #979797;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .form-field label {
+  width: 20%;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.03em;
+  color: #646464;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .form-field label::after {
+  display: block;
+  content: attr(value);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 30px;
+  margin: auto;
+  text-align: right;
+  height: 24px;
+  pointer-events: none;
+  font-size: 14px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .form-field input[type=number] {
+  width: 75%;
+  border: none;
+  padding: 10px 0;
+  box-sizing: border-box;
+  text-align: right;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .form-field input[type=number]:focus {
+  outline: none;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .form-field select {
+  width: 75%;
+  border: none;
+  padding: 10px 0;
+  box-sizing: border-box;
+  text-align: right;
+  color: #fff;
+  background-image: url(https://journal.komons-japan.com/wp-content/themes/komons-theme/img/contact/selector_caret.png);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center right 0px;
+  font-family: inherit;
+  -webkit-appearance: none;
+          appearance: none;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .form-field select:focus {
+  outline: none;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 30px 0 0px !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  color: #fff;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset::before {
+  width: 100%;
+  display: block;
+  content: "▼宿泊日程を選ぶ";
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #3f3f3f;
+  margin-bottom: 15px;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline {
+  border: none;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent !important;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-header .ui-corner-all {
+  width: auto;
+  background-size: 15px;
+  padding: 5px 0;
+  display: inline-block;
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #646464;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-size: 16px;
+  line-height: 40px;
+  background-color: transparent !important;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-header .ui-corner-all span {
+  display: none;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-prev {
+  padding-left: 25px;
+  background-position: center left;
+  background-image: url(../img/common/caret_prev.svg);
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-prev::after {
+  display: inline;
+  content: "前月";
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-next {
+  padding-right: 25px;
+  background-position: center right;
+  background-image: url(../img/common/caret_next.svg);
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-next::after {
+  display: inline;
+  content: "翌月";
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-title {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  margin: 0 !important;
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  color: #3f3f3f;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-title .ui-datepicker-year {
+  order: 0;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-title .ui-datepicker-year::after {
+  display: inline;
+  content: "年";
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-title .ui-datepicker-month {
+  order: 1;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar {
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  display: block;
+  width: 100%;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar thead {
+  display: none;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar tbody, .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar tfoot, .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar tr, .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td {
+  display: block;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar thead {
+  display: block;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar thead th {
+  color: #4d4327;
+  background-color: transparent !important;
+  font-size: 14px;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar tr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar th, .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td {
+  width: calc(100% / 7.2);
+  background-color: transparent !important;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td {
+  font-size: 12px;
+  padding: 5px !important;
+  box-sizing: border-box;
+  position: relative;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: calc(100% + 10px);
+  height: calc(100% - 10px);
+  left: 0px;
+  right: 0px;
+  top: 5px;
+  bottom: 5px;
+  margin: auto;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td .ui-state-default, .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td a {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  text-indent: 0.1em;
+  text-align: center;
+  border: none;
+  background: none !important;
+  position: relative;
+  z-index: 10;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td.bookable-range::before {
+  background: #fff;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td.bookable-range .ui-state-default {
+  background-color: transparent;
+  color: #3f3f3f;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td.bookable .ui-state-active, .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td.bookable a {
+  background-color: transparent !important;
+  color: #3f3f3f !important;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td.selection-start-date::before {
+  background: #fff;
+  width: calc(50% + 10px);
+  right: -10px;
+  left: unset;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td.selection-start-date.ui-state-active, .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td.selection-start-date a {
+  background-color: #BF992E !important;
+  color: #fff !important;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td.selection-end-date::before {
+  background: #fff;
+  width: calc(50% + 10px);
+  left: -10px;
+  right: unset;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td.selection-end-date .ui-state-active, .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td.selection-end-date a {
+  background-color: #BF992E !important;
+  color: #fff !important;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td.fully_booked.ui-state-active, .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td.fully_booked a {
+  background-color: #d8d8d8 !important;
+  color: #acacac !important;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .label {
+  display: none;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields {
+  width: 50%;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields::before {
+  width: 100%;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #646464;
+  padding: 10px 0 0 10px;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label {
+  display: flex;
+  align-items: center;
+  width: auto !important;
+  border: none;
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  pointer-events: none;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label span {
+  display: block;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label input {
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  border: none;
+  font-size: 16px;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label input:focus {
+  outline: none;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label:nth-last-of-type(1) {
+  order: 0;
+  margin-left: -0.5em;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label:nth-last-of-type(1) input {
+  width: 40px;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label:nth-last-of-type(2) {
+  order: 2;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label:nth-last-of-type(2) input {
+  width: 25px;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label:nth-last-of-type(3) {
+  order: 1;
+  background: #fff;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label:nth-last-of-type(3) input {
+  width: 25px;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields:nth-of-type(2) {
+  border-left: 1px solid #d8d8d8;
+  border-right: 0px;
+  margin-left: 0%;
+  order: 3;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields:nth-of-type(2)::before {
+  display: block;
+  content: "チェックイン";
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields:nth-of-type(3) {
+  order: 4;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields:nth-of-type(3)::before {
+  display: block;
+  content: "チェックアウト";
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields span {
+  display: none;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .wc-bookings-booking-cost {
+  padding: 15px 0 30px;
+  background-color: transparent !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .wc-bookings-booking-cost strong {
+  font-size: 20px;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart button[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-color: #BF992E !important;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart button[type=submit]:hover {
+  opacity: 0.75;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .picker {
+  display: block !important;
+  order: 1;
+  width: 100%;
+  margin: -2.5em 0 20px !important;
+}
+
+@media screen and (max-width: 720px) {
+  .comp-booking-section {
+    padding: 30px 20px;
+    border-radius: 10px;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart::before {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form {
+    margin-bottom: 0 !important;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .form-field {
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 5px;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .form-field input[type=number] {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .form-field select {
+    width: 75%;
+    padding: 15px 0;
+    font-size: 16px;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset {
+    width: 100%;
+    margin: 30px 0 0px !important;
+    color: #fff;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset::before {
+    margin-bottom: 10px;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-header .ui-corner-all {
+    background-size: 15px;
+    padding: 5px 0;
+    font-size: 14px;
+    line-height: 37px;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-prev {
+    padding-left: 22px;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-next {
+    padding-right: 22px;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-title {
+    font-size: 16px;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar {
+    width: 100%;
+    padding: 15px;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar th, .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td {
+    width: calc(100% / 7.2);
+    background-color: transparent !important;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td {
+    font-size: 12px;
+    padding: 5px !important;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: calc(100% + 10px);
+    height: calc(100% - 10px);
+    left: 0px;
+    right: 0px;
+    top: 5px;
+    bottom: 5px;
+    margin: auto;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td .ui-state-default, .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td a {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    line-height: 30px;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .label {
+    display: none;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields::before {
+    width: 100%;
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    color: #646464;
+    padding: 10px 0 0 10px;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label {
+    display: flex;
+    align-items: center;
+    width: auto !important;
+    border: none;
+    font-family: "TsukuARdGothicStd-R";
+    font-weight: normal;
+    pointer-events: none;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label span {
+    display: block;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label:nth-last-of-type(1) {
+    order: 0;
+    margin-left: -0.5em;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label:nth-last-of-type(1) input {
+    min-width: 5em;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label:nth-last-of-type(2) {
+    order: 2;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label:nth-last-of-type(2) input {
+    min-width: 3em;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label:nth-last-of-type(3) {
+    order: 1;
+    background: #fff;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields label:nth-last-of-type(3) input {
+    min-width: 3em;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields:nth-of-type(2) {
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+    border-bottom: 0px solid #d8d8d8;
+    margin-left: 0%;
+    margin-bottom: 0;
+    order: 3;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields:nth-of-type(3) {
+    order: 4;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .wc-bookings-booking-cost {
+    padding: 15px 0 30px;
+    font-size: 14px;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .wc-bookings-booking-cost strong {
+    font-size: 18px;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart button[type=submit] {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+  .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .picker {
+    order: 1;
+    margin: -2.5em 0 10px !important;
+  }
+}
 /* カギビト一覧 */
 .comp-kagibito-list {
   display: flex;

@@ -98,6 +98,43 @@
 			<div class="section_inner">
 				<div class="woocommerce">
 					<div class="woocommerce-notices-wrapper"></div>
+					<div class="woocommerce-form-login-toggle">
+
+						<div class="woocommerce-info">
+							登録済みの方はこちら <a href="#" class="showlogin">ログインはこちらから</a> </div>
+					</div>
+					<form class="woocommerce-form woocommerce-form-login login" method="post">
+
+
+						<p>以前に買い物をしたことがある場合は、以下にあなたの詳細を入力してください。新規のお客様は、[請求と配送]セクションに進んでください。</p>
+
+						<p class="form-row form-row-first">
+							<label for="username">ユーザー名またはメールアドレス&nbsp;<span class="required">*</span></label>
+							<input type="text" class="input-text" name="username" id="username" autocomplete="username">
+						</p>
+						<p class="form-row form-row-last">
+							<label for="password">パスワード&nbsp;<span class="required">*</span></label>
+							<input class="input-text" type="password" name="password" id="password" autocomplete="current-password">
+						</p>
+						<div class="clear"></div>
+
+
+						<p class="form-row">
+							<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
+								<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever"> <span>ログイン状態を保存</span>
+							</label>
+							<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="060b34ba9d"><input type="hidden" name="_wp_http_referer" value="/checkout/"> <input type="hidden" name="redirect"
+								value="https://meguribito.com/checkout/">
+							<button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="ログイン">ログイン</button>
+						</p>
+						<p class="lost_password">
+							<a href="https://meguribito.com/my-account/lost-password/">パスワードをお忘れですか ?</a>
+						</p>
+
+						<div class="clear"></div>
+
+
+					</form>
 					<div class="woocommerce-form-coupon-toggle">
 
 						<div class="woocommerce-info">
@@ -133,14 +170,13 @@
 
 									<div class="woocommerce-billing-fields__field-wrapper">
 										<p class="form-row form-row-first validate-required" id="billing_last_name_field" data-priority="10"><label for="billing_last_name" class="">姓&nbsp;<abbr class="required" title="必須">*</abbr></label><span
-												class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_last_name" id="billing_last_name" placeholder="" value="熊崎" autocomplete="family-name"></span></p>
+												class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_last_name" id="billing_last_name" placeholder="" value="" autocomplete="family-name"></span></p>
 										<p class="form-row form-row-last validate-required" id="billing_first_name_field" data-priority="20"><label for="billing_first_name" class="">名&nbsp;<abbr class="required" title="必須">*</abbr></label><span
-												class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_first_name" id="billing_first_name" placeholder="" value="慎之介" autocomplete="given-name"></span></p>
+												class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_first_name" id="billing_first_name" placeholder="" value="" autocomplete="given-name"></span></p>
 										<p class="form-row form-row-wide" id="billing_company_field" data-priority="30"><label for="billing_company" class="">会社名&nbsp;<span class="optional">(オプション)</span></label><span class="woocommerce-input-wrapper"><input type="text"
-													class="input-text " name="billing_company" id="billing_company" placeholder="" value="AGE STREAM" autocomplete="organization"></span></p>
+													class="input-text " name="billing_company" id="billing_company" placeholder="" value="" autocomplete="organization"></span></p>
 										<p class="form-row form-row-wide address-field update_totals_on_change validate-required" id="billing_country_field" data-priority="40"><label for="billing_country" class="">国または地域&nbsp;<abbr class="required"
-													title="必須">*</abbr></label><span class="woocommerce-input-wrapper"><select name="billing_country" id="billing_country" class="country_to_state country_select select2-hidden-accessible" autocomplete="country"
-													data-placeholder="国または地域を選択…" tabindex="-1" aria-hidden="true">
+													title="必須">*</abbr></label><span class="woocommerce-input-wrapper"><select name="billing_country" id="billing_country" class="country_to_state country_select " autocomplete="country" data-placeholder="国または地域を選択…">
 													<option value="">国または地域を選択…</option>
 													<option value="IS">アイスランド</option>
 													<option value="IE">アイルランド</option>
@@ -391,13 +427,10 @@
 													<option value="MK">北マケドニア</option>
 													<option value="MP">北マリアナ諸島</option>
 													<option value="KP">北朝鮮</option>
-												</select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" aria-haspopup="true"
-															aria-expanded="false" tabindex="0" aria-labelledby="select2-billing_country-container" role="combobox"><span class="select2-selection__rendered" id="select2-billing_country-container" role="textbox" aria-readonly="true"
-																title="日本">日本</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><noscript><button
-														type="submit" name="woocommerce_checkout_update_totals" value="国または地域を更新">国または地域を更新</button></noscript></span></p>
+												</select><noscript><button type="submit" name="woocommerce_checkout_update_totals" value="国または地域を更新">国または地域を更新</button></noscript></span></p>
 										<p class="form-row address-field validate-required validate-postcode form-row-first" id="billing_postcode_field" data-priority="65" data-o_class="form-row form-row-first address-field validate-required validate-postcode"><label
 												for="billing_postcode" class="">郵便番号&nbsp;<abbr class="required" title="必須">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_postcode" id="billing_postcode"
-													placeholder="" value="158-0082" autocomplete="postal-code"></span></p>
+													placeholder="" value="" autocomplete="postal-code"></span></p>
 										<p class="form-row address-field validate-required validate-state form-row-last" id="billing_state_field" data-priority="66" data-o_class="form-row form-row-last address-field validate-required validate-state"><label
 												for="billing_state" class="">都道府県&nbsp;<abbr class="required" title="必須">*</abbr></label><span class="woocommerce-input-wrapper"><select name="billing_state" id="billing_state" class="state_select select2-hidden-accessible"
 													autocomplete="address-level1" data-placeholder="オプションを選択…" data-input-classes="" tabindex="-1" aria-hidden="true">
@@ -451,19 +484,19 @@
 													<option value="JP47">沖縄県</option>
 												</select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" aria-haspopup="true"
 															aria-expanded="false" tabindex="0" aria-labelledby="select2-billing_state-container" role="combobox"><span class="select2-selection__rendered" id="select2-billing_state-container" role="textbox" aria-readonly="true"
-																title="東京都">東京都</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></span></p>
+																title="愛媛県">愛媛県</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></span></p>
 										<p class="form-row address-field validate-required form-row-wide" id="billing_city_field" data-priority="67" data-o_class="form-row form-row-wide address-field validate-required"><label for="billing_city" class="">市区町村&nbsp;<abbr
-													class="required" title="必須">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_city" id="billing_city" placeholder="" value="目黒区"
-													autocomplete="address-level2"></span></p>
+													class="required" title="必須">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_city" id="billing_city" placeholder="" value="" autocomplete="address-level2"></span>
+										</p>
 										<p class="form-row address-field validate-required form-row-wide" id="billing_address_1_field" data-priority="68"><label for="billing_address_1" class="">番地&nbsp;<abbr class="required" title="必須">*</abbr></label><span
-												class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_address_1" id="billing_address_1" placeholder="番地" value="自由が丘1-8-20" autocomplete="address-line1" data-placeholder="番地"></span></p>
+												class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_address_1" id="billing_address_1" placeholder="番地" value="" autocomplete="address-line1" data-placeholder="番地"></span></p>
 										<p class="form-row address-field form-row-wide" id="billing_address_2_field" data-priority="69"><label for="billing_address_2" class="screen-reader-text">アパート名、棟名、部屋番号など(オプション)&nbsp;<span
-													class="optional">(オプション)</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_address_2" id="billing_address_2" placeholder="アパート名、棟名、部屋番号など(オプション)" value="自由が丘ビル1F"
+													class="optional">(オプション)</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_address_2" id="billing_address_2" placeholder="アパート名、棟名、部屋番号など(オプション)" value=""
 													autocomplete="address-line2" data-placeholder="アパート名、棟名、部屋番号など(オプション)"></span></p>
 										<p class="form-row form-row-wide validate-required validate-phone" id="billing_phone_field" data-priority="100"><label for="billing_phone" class="">電話&nbsp;<abbr class="required" title="必須">*</abbr></label><span
-												class="woocommerce-input-wrapper"><input type="tel" class="input-text " name="billing_phone" id="billing_phone" placeholder="" value="08038254004" autocomplete="tel"></span></p>
+												class="woocommerce-input-wrapper"><input type="tel" class="input-text " name="billing_phone" id="billing_phone" placeholder="" value="" autocomplete="tel"></span></p>
 										<p class="form-row form-row-wide validate-required validate-email" id="billing_email_field" data-priority="110"><label for="billing_email" class="">メールアドレス&nbsp;<abbr class="required" title="必須">*</abbr></label><span
-												class="woocommerce-input-wrapper"><input type="email" class="input-text " name="billing_email" id="billing_email" placeholder="" value="skmzk418.scammyman@gmail.com" autocomplete="email username"></span></p>
+												class="woocommerce-input-wrapper"><input type="email" class="input-text " name="billing_email" id="billing_email" placeholder="" value="" autocomplete="email username"></span></p>
 									</div>
 
 								</div>
@@ -486,9 +519,8 @@
 									</div>
 
 
-									<p class="form-row ce-field form-row-wide" id="ce4wp_checkout_consent_checkbox_field" data-priority=""><span class="woocommerce-input-wrapper"><label class="checkbox ">
-												<input type="checkbox" class="input-checkbox " name="ce4wp_checkout_consent_checkbox" id="ce4wp_checkout_consent_checkbox" value="1"> メグリビトからのメールマガジン・各種情報を受け取る<span
-													class="optional">(オプション)</span></label></span></p>
+									<p class="form-row ce-field form-row-wide" id="ce4wp_checkout_consent_checkbox_field" data-priority=""><span class="woocommerce-input-wrapper"><label class="checkbox "><label class="checkbox "><input type="checkbox"
+														class="input-checkbox " name="ce4wp_checkout_consent_checkbox" id="ce4wp_checkout_consent_checkbox" value="1">メールマガジンを受け取る</label></label></span></p>
 								</div>
 							</div>
 						</div>
@@ -514,16 +546,24 @@
 											<dl class="variation">
 												<dt class="variation-">予約日:</dt>
 												<dd class="variation-">
-													<p>2021年4月24日</p>
+													<p>2021年5月10日</p>
+												</dd>
+												<dt class="variation-">人数:</dt>
+												<dd class="variation-">
+													<p>1</p>
 												</dd>
 												<dt class="variation-">期間:</dt>
 												<dd class="variation-">
 													<p>4 日</p>
 												</dd>
+												<dt class="variation-">予約タイプ:</dt>
+												<dd class="variation-">
+													<p>個室</p>
+												</dd>
 											</dl>
 										</td>
 										<td class="product-total">
-											<span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>10,000</bdi></span>
+											<span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>25,000</bdi></span>
 										</td>
 									</tr>
 								</tbody>
@@ -531,7 +571,7 @@
 
 									<tr class="cart-subtotal">
 										<th>小計</th>
-										<td><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>10,000</bdi></span></td>
+										<td><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>25,000</bdi></span></td>
 									</tr>
 
 
@@ -541,7 +581,7 @@
 
 									<tr class="order-total">
 										<th>合計</th>
-										<td><strong><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>10,000</bdi></span></strong> </td>
+										<td><strong><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>25,000</bdi></span></strong> </td>
 									</tr>
 
 
@@ -550,16 +590,25 @@
 
 							<div id="payment" class="woocommerce-checkout-payment">
 								<ul class="wc_payment_methods payment_methods methods">
+									<li class="wc_payment_method payment_method_cod">
+										<input id="payment_method_cod" type="radio" class="input-radio" name="payment_method" value="cod" checked="checked" data-order_button_text="">
+
+										<label for="payment_method_cod">
+											代金引換 </label>
+										<div class="payment_box payment_method_cod">
+											<p>配達時に現金で支払う。</p>
+										</div>
+									</li>
 									<li class="wc_payment_method payment_method_stripe">
-										<input id="payment_method_stripe" type="radio" class="input-radio" name="payment_method" value="stripe" checked="checked" data-order_button_text="" style="display: none;">
+										<input id="payment_method_stripe" type="radio" class="input-radio" name="payment_method" value="stripe" data-order_button_text="">
 
 										<label for="payment_method_stripe">
 											クレジットカード (Stripe) <img src="https://meguribito.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg" class="stripe-visa-icon stripe-icon" alt="Visa"><img
 												src="https://meguribito.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg" class="stripe-mastercard-icon stripe-icon" alt="Mastercard"><img
 												src="https://meguribito.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg" class="stripe-amex-icon stripe-icon" alt="American Express"><img
 												src="https://meguribito.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/jcb.svg" class="stripe-jcb-icon stripe-icon" alt="JCB"> </label>
-										<div class="payment_box payment_method_stripe">
-											<div id="stripe-payment-data" data-email="skmzk418.scammyman@gmail.com" data-full-name=" " data-currency="jpy">
+										<div class="payment_box payment_method_stripe" style="display:none;">
+											<div id="stripe-payment-data" data-email="" data-full-name=" " data-currency="jpy">
 												<p>Stripe 経由でクレジットカードで支払う。</p>
 												<ul class="woocommerce-SavedPaymentMethods wc-saved-payment-methods" data-count="0"></ul>
 												<fieldset id="wc-stripe-cc-form" class="wc-credit-card-form wc-payment-form" style="background:transparent;">
@@ -570,8 +619,8 @@
 															<div id="stripe-card-element" class="wc-stripe-elements-field StripeElement empty">
 																<div class="__PrivateStripeElement"
 																	style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe
-																		name="__privateStripeFrame9526" frameborder="0" allowtransparency="true" scrolling="no" allow="payment *"
-																		src="https://js.stripe.com/v3/elements-inner-card-762c8afb5f4070dd76cac7255007f123.html#wait=false&amp;style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;rtl=false&amp;componentName=cardNumber&amp;keyMode=live&amp;apiKey=pk_live_51Ih8HFKSxuASIufi8Nok7PClSWWBYRJ90tgkiycBiWgxntyU5iWuY7dtOTv5xaeeK3kLmATy5i3khMTJWKZ5MUAY005fLJtCoN&amp;referrer=https%3A%2F%2Fmeguribito.com%2Fcheckout%2F&amp;controllerId=__privateStripeController9521"
+																		name="__privateStripeFrame6636" frameborder="0" allowtransparency="true" scrolling="no" allow="payment *"
+																		src="https://js.stripe.com/v3/elements-inner-card-14d7bd00456e084840584d666a4933c6.html#wait=false&amp;style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;rtl=false&amp;componentName=cardNumber&amp;keyMode=live&amp;apiKey=pk_live_51Ih8HFKSxuASIufi8Nok7PClSWWBYRJ90tgkiycBiWgxntyU5iWuY7dtOTv5xaeeK3kLmATy5i3khMTJWKZ5MUAY005fLJtCoN&amp;referrer=https%3A%2F%2Fmeguribito.com%2Fcheckout%2F&amp;controllerId=__privateStripeController6631"
 																		title="セキュアなカード番号入力フレーム"
 																		style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; will-change: transform !important; height: 18px;"></iframe><input
 																		class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1"
@@ -589,8 +638,8 @@
 														<div id="stripe-exp-element" class="wc-stripe-elements-field StripeElement empty">
 															<div class="__PrivateStripeElement"
 																style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe
-																	name="__privateStripeFrame9527" frameborder="0" allowtransparency="true" scrolling="no" allow="payment *"
-																	src="https://js.stripe.com/v3/elements-inner-card-762c8afb5f4070dd76cac7255007f123.html#wait=false&amp;style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;rtl=false&amp;componentName=cardExpiry&amp;keyMode=live&amp;apiKey=pk_live_51Ih8HFKSxuASIufi8Nok7PClSWWBYRJ90tgkiycBiWgxntyU5iWuY7dtOTv5xaeeK3kLmATy5i3khMTJWKZ5MUAY005fLJtCoN&amp;referrer=https%3A%2F%2Fmeguribito.com%2Fcheckout%2F&amp;controllerId=__privateStripeController9521"
+																	name="__privateStripeFrame6637" frameborder="0" allowtransparency="true" scrolling="no" allow="payment *"
+																	src="https://js.stripe.com/v3/elements-inner-card-14d7bd00456e084840584d666a4933c6.html#wait=false&amp;style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;rtl=false&amp;componentName=cardExpiry&amp;keyMode=live&amp;apiKey=pk_live_51Ih8HFKSxuASIufi8Nok7PClSWWBYRJ90tgkiycBiWgxntyU5iWuY7dtOTv5xaeeK3kLmATy5i3khMTJWKZ5MUAY005fLJtCoN&amp;referrer=https%3A%2F%2Fmeguribito.com%2Fcheckout%2F&amp;controllerId=__privateStripeController6631"
 																	title="セキュアな有効期限入力フレーム"
 																	style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; will-change: transform !important; height: 18px;"></iframe><input
 																	class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1"
@@ -604,8 +653,8 @@
 														<div id="stripe-cvc-element" class="wc-stripe-elements-field StripeElement empty">
 															<div class="__PrivateStripeElement"
 																style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe
-																	name="__privateStripeFrame9528" frameborder="0" allowtransparency="true" scrolling="no" allow="payment *"
-																	src="https://js.stripe.com/v3/elements-inner-card-762c8afb5f4070dd76cac7255007f123.html#wait=false&amp;style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;rtl=false&amp;componentName=cardCvc&amp;keyMode=live&amp;apiKey=pk_live_51Ih8HFKSxuASIufi8Nok7PClSWWBYRJ90tgkiycBiWgxntyU5iWuY7dtOTv5xaeeK3kLmATy5i3khMTJWKZ5MUAY005fLJtCoN&amp;referrer=https%3A%2F%2Fmeguribito.com%2Fcheckout%2F&amp;controllerId=__privateStripeController9521"
+																	name="__privateStripeFrame6638" frameborder="0" allowtransparency="true" scrolling="no" allow="payment *"
+																	src="https://js.stripe.com/v3/elements-inner-card-14d7bd00456e084840584d666a4933c6.html#wait=false&amp;style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;rtl=false&amp;componentName=cardCvc&amp;keyMode=live&amp;apiKey=pk_live_51Ih8HFKSxuASIufi8Nok7PClSWWBYRJ90tgkiycBiWgxntyU5iWuY7dtOTv5xaeeK3kLmATy5i3khMTJWKZ5MUAY005fLJtCoN&amp;referrer=https%3A%2F%2Fmeguribito.com%2Fcheckout%2F&amp;controllerId=__privateStripeController6631"
 																	title="セキュアなセキュリティコード入力フレーム"
 																	style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; will-change: transform !important; height: 18px;"></iframe><input
 																	class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1"
@@ -620,7 +669,7 @@
 													<br>
 													<div class="clear"></div>
 												</fieldset>
-												<p class="form-row woocommerce-SavedPaymentMethods-saveNew woocommerce-validated">
+												<p class="form-row woocommerce-SavedPaymentMethods-saveNew woocommerce-validated" style="display: none;">
 													<input id="wc-stripe-new-payment-method" name="wc-stripe-new-payment-method" type="checkbox" value="true" style="width:auto;">
 													<label for="wc-stripe-new-payment-method" style="display:inline;">今後の購入に使用するため、アカウントに支払い情報を保存します。</label>
 												</p>
@@ -636,14 +685,22 @@
 
 									<div class="woocommerce-terms-and-conditions-wrapper">
 										<div class="woocommerce-privacy-policy-text">
-											<p>個人データは、注文の処理、このサイトでの利用サポート、<a href="https://meguribito.com/privacy/" class="woocommerce-privacy-policy-link" target="_blank">プライバシーポリシー</a>に説明されている他の用途に使用されます。</p>
+											<p>個人情報は、注文の処理、このサイトでの利用サポート、<a href="https://meguribito.com/privacy/" class="woocommerce-privacy-policy-link" target="_blank">プライバシーポリシー</a>に説明されている他の用途に使用されます。</p>
 										</div>
+										<p class="form-row validate-required">
+											<label class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox">
+												<input type="checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" name="terms" id="terms">
+												<span class="woocommerce-terms-and-conditions-checkbox-text">サイトの<a href="https://meguribito.com/privacy/" class="woocommerce-terms-and-conditions-link" target="_blank">利用規約</a>を読んで同意しました</span>&nbsp;<span
+													class="required">*</span>
+											</label>
+											<input type="hidden" name="terms-field" value="1">
+										</p>
 									</div>
 
 
 									<button type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="注文する" data-value="注文する">注文する</button>
 
-									<input type="hidden" id="woocommerce-process-checkout-nonce" name="woocommerce-process-checkout-nonce" value="ec198d161f"><input type="hidden" name="_wp_http_referer" value="/?wc-ajax=update_order_review">
+									<input type="hidden" id="woocommerce-process-checkout-nonce" name="woocommerce-process-checkout-nonce" value="6d6b7adf3d"><input type="hidden" name="_wp_http_referer" value="/?wc-ajax=update_order_review">
 								</div>
 							</div>
 
@@ -734,234 +791,243 @@
 	</footer>
 </body>
 <style id='storefront-woocommerce-style-inline-css'>
-@font-face {
-				font-family: star;
-				src: url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//star.eot);
-				src:
-					url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//star.eot?#iefix) format("embedded-opentype"),
-					url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//star.woff) format("woff"),
-					url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//star.ttf) format("truetype"),
-					url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//star.svg#star) format("svg");
-				font-weight: 400;
-				font-style: normal;
-			}
-			@font-face {
-				font-family: WooCommerce;
-				src: url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//WooCommerce.eot);
-				src:
-					url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//WooCommerce.eot?#iefix) format("embedded-opentype"),
-					url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//WooCommerce.woff) format("woff"),
-					url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//WooCommerce.ttf) format("truetype"),
-					url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//WooCommerce.svg#WooCommerce) format("svg");
-				font-weight: 400;
-				font-style: normal;
-			}
+	@font-face {
+		font-family: star;
+		src: url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//star.eot);
+		src:
+			url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//star.eot?#iefix) format("embedded-opentype"),
+			url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//star.woff) format("woff"),
+			url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//star.ttf) format("truetype"),
+			url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//star.svg#star) format("svg");
+		font-weight: 400;
+		font-style: normal;
+	}
 
-			a.cart-contents,
-			.site-header-cart .widget_shopping_cart a {
-				color: #333333;
-			}
+	@font-face {
+		font-family: WooCommerce;
+		src: url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//WooCommerce.eot);
+		src:
+			url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//WooCommerce.eot?#iefix) format("embedded-opentype"),
+			url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//WooCommerce.woff) format("woff"),
+			url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//WooCommerce.ttf) format("truetype"),
+			url(https://meguribito.com/wp-content/plugins/woocommerce/assets/fonts//WooCommerce.svg#WooCommerce) format("svg");
+		font-weight: 400;
+		font-style: normal;
+	}
 
-			a.cart-contents:hover,
-			.site-header-cart .widget_shopping_cart a:hover,
-			.site-header-cart:hover > li > a {
-				color: #747474;
-			}
+	a.cart-contents,
+	.site-header-cart .widget_shopping_cart a {
+		color: #333333;
+	}
 
-			table.cart td.product-remove,
-			table.cart td.actions {
-				border-top-color: #ffffff;
-			}
+	a.cart-contents:hover,
+	.site-header-cart .widget_shopping_cart a:hover,
+	.site-header-cart:hover>li>a {
+		color: #747474;
+	}
 
-			.storefront-handheld-footer-bar ul li.cart .count {
-				background-color: #333333;
-				color: #ffffff;
-				border-color: #ffffff;
-			}
+	table.cart td.product-remove,
+	table.cart td.actions {
+		border-top-color: #ffffff;
+	}
 
-			.woocommerce-tabs ul.tabs li.active a,
-			ul.products li.product .price,
-			.onsale,
-			.wc-block-grid__product-onsale,
-			.widget_search form:before,
-			.widget_product_search form:before {
-				color: #6d6d6d;
-			}
+	.storefront-handheld-footer-bar ul li.cart .count {
+		background-color: #333333;
+		color: #ffffff;
+		border-color: #ffffff;
+	}
 
-			.woocommerce-breadcrumb a,
-			a.woocommerce-review-link,
-			.product_meta a {
-				color: #727272;
-			}
+	.woocommerce-tabs ul.tabs li.active a,
+	ul.products li.product .price,
+	.onsale,
+	.wc-block-grid__product-onsale,
+	.widget_search form:before,
+	.widget_product_search form:before {
+		color: #6d6d6d;
+	}
 
-			.wc-block-grid__product-onsale,
-			.onsale {
-				border-color: #6d6d6d;
-			}
+	.woocommerce-breadcrumb a,
+	a.woocommerce-review-link,
+	.product_meta a {
+		color: #727272;
+	}
 
-			.star-rating span:before,
-			.quantity .plus, .quantity .minus,
-			p.stars a:hover:after,
-			p.stars a:after,
-			.star-rating span:before,
-			#payment .payment_methods li input[type=radio]:first-child:checked+label:before {
-				color: #96588a;
-			}
+	.wc-block-grid__product-onsale,
+	.onsale {
+		border-color: #6d6d6d;
+	}
 
-			.widget_price_filter .ui-slider .ui-slider-range,
-			.widget_price_filter .ui-slider .ui-slider-handle {
-				background-color: #96588a;
-			}
+	.star-rating span:before,
+	.quantity .plus,
+	.quantity .minus,
+	p.stars a:hover:after,
+	p.stars a:after,
+	.star-rating span:before,
+	#payment .payment_methods li input[type=radio]:first-child:checked+label:before {
+		color: #96588a;
+	}
 
-			.order_details {
-				background-color: #f8f8f8;
-			}
+	.widget_price_filter .ui-slider .ui-slider-range,
+	.widget_price_filter .ui-slider .ui-slider-handle {
+		background-color: #96588a;
+	}
 
-			.order_details > li {
-				border-bottom: 1px dotted #e3e3e3;
-			}
+	.order_details {
+		background-color: #f8f8f8;
+	}
 
-			.order_details:before,
-			.order_details:after {
-				background: -webkit-linear-gradient(transparent 0,transparent 0),-webkit-linear-gradient(135deg,#f8f8f8 33.33%,transparent 33.33%),-webkit-linear-gradient(45deg,#f8f8f8 33.33%,transparent 33.33%)
-			}
+	.order_details>li {
+		border-bottom: 1px dotted #e3e3e3;
+	}
 
-			#order_review {
-				background-color: #ffffff;
-			}
+	.order_details:before,
+	.order_details:after {
+		background: -webkit-linear-gradient(transparent 0, transparent 0), -webkit-linear-gradient(135deg, #f8f8f8 33.33%, transparent 33.33%), -webkit-linear-gradient(45deg, #f8f8f8 33.33%, transparent 33.33%)
+	}
 
-			#payment .payment_methods > li .payment_box,
-			#payment .place-order {
-				background-color: #fafafa;
-			}
+	#order_review {
+		background-color: #ffffff;
+	}
 
-			#payment .payment_methods > li:not(.woocommerce-notice) {
-				background-color: #f5f5f5;
-			}
+	#payment .payment_methods>li .payment_box,
+	#payment .place-order {
+		background-color: #fafafa;
+	}
 
-			#payment .payment_methods > li:not(.woocommerce-notice):hover {
-				background-color: #f0f0f0;
-			}
+	#payment .payment_methods>li:not(.woocommerce-notice) {
+		background-color: #f5f5f5;
+	}
 
-			.woocommerce-pagination .page-numbers li .page-numbers.current {
-				background-color: #e6e6e6;
-				color: #636363;
-			}
+	#payment .payment_methods>li:not(.woocommerce-notice):hover {
+		background-color: #f0f0f0;
+	}
 
-			.wc-block-grid__product-onsale,
-			.onsale,
-			.woocommerce-pagination .page-numbers li .page-numbers:not(.current) {
-				color: #6d6d6d;
-			}
+	.woocommerce-pagination .page-numbers li .page-numbers.current {
+		background-color: #e6e6e6;
+		color: #636363;
+	}
 
-			p.stars a:before,
-			p.stars a:hover~a:before,
-			p.stars.selected a.active~a:before {
-				color: #6d6d6d;
-			}
+	.wc-block-grid__product-onsale,
+	.onsale,
+	.woocommerce-pagination .page-numbers li .page-numbers:not(.current) {
+		color: #6d6d6d;
+	}
 
-			p.stars.selected a.active:before,
-			p.stars:hover a:before,
-			p.stars.selected a:not(.active):before,
-			p.stars.selected a.active:before {
-				color: #96588a;
-			}
+	p.stars a:before,
+	p.stars a:hover~a:before,
+	p.stars.selected a.active~a:before {
+		color: #6d6d6d;
+	}
 
-			.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
-				background-color: #eeeeee;
-				color: #333333;
-			}
+	p.stars.selected a.active:before,
+	p.stars:hover a:before,
+	p.stars.selected a:not(.active):before,
+	p.stars.selected a.active:before {
+		color: #96588a;
+	}
 
-			.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger:hover {
-				background-color: #d5d5d5;
-				border-color: #d5d5d5;
-				color: #333333;
-			}
+	.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
+		background-color: #eeeeee;
+		color: #333333;
+	}
 
-			.button.added_to_cart:focus,
-			.button.wc-forward:focus {
-				outline-color: #96588a;
-			}
+	.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger:hover {
+		background-color: #d5d5d5;
+		border-color: #d5d5d5;
+		color: #333333;
+	}
 
-			.added_to_cart,
-			.site-header-cart .widget_shopping_cart a.button,
-			.wc-block-grid__products .wc-block-grid__product .wp-block-button__link {
-				background-color: #eeeeee;
-				border-color: #eeeeee;
-				color: #333333;
-			}
+	.button.added_to_cart:focus,
+	.button.wc-forward:focus {
+		outline-color: #96588a;
+	}
 
-			.added_to_cart:hover,
-			.site-header-cart .widget_shopping_cart a.button:hover,
-			.wc-block-grid__products .wc-block-grid__product .wp-block-button__link:hover {
-				background-color: #d5d5d5;
-				border-color: #d5d5d5;
-				color: #333333;
-			}
+	.added_to_cart,
+	.site-header-cart .widget_shopping_cart a.button,
+	.wc-block-grid__products .wc-block-grid__product .wp-block-button__link {
+		background-color: #eeeeee;
+		border-color: #eeeeee;
+		color: #333333;
+	}
 
-			.added_to_cart.alt, .added_to_cart, .widget a.button.checkout {
-				background-color: #333333;
-				border-color: #333333;
-				color: #ffffff;
-			}
+	.added_to_cart:hover,
+	.site-header-cart .widget_shopping_cart a.button:hover,
+	.wc-block-grid__products .wc-block-grid__product .wp-block-button__link:hover {
+		background-color: #d5d5d5;
+		border-color: #d5d5d5;
+		color: #333333;
+	}
 
-			.added_to_cart.alt:hover, .added_to_cart:hover, .widget a.button.checkout:hover {
-				background-color: #1a1a1a;
-				border-color: #1a1a1a;
-				color: #ffffff;
-			}
+	.added_to_cart.alt,
+	.added_to_cart,
+	.widget a.button.checkout {
+		background-color: #333333;
+		border-color: #333333;
+		color: #ffffff;
+	}
 
-			.button.loading {
-				color: #eeeeee;
-			}
+	.added_to_cart.alt:hover,
+	.added_to_cart:hover,
+	.widget a.button.checkout:hover {
+		background-color: #1a1a1a;
+		border-color: #1a1a1a;
+		color: #ffffff;
+	}
 
-			.button.loading:hover {
-				background-color: #eeeeee;
-			}
+	.button.loading {
+		color: #eeeeee;
+	}
 
-			.button.loading:after {
-				color: #333333;
-			}
+	.button.loading:hover {
+		background-color: #eeeeee;
+	}
 
-			@media screen and ( min-width: 768px ) {
-				.site-header-cart .widget_shopping_cart,
-				.site-header .product_list_widget li .quantity {
-					color: #404040;
-				}
+	.button.loading:after {
+		color: #333333;
+	}
 
-				.site-header-cart .widget_shopping_cart .buttons,
-				.site-header-cart .widget_shopping_cart .total {
-					background-color: #f5f5f5;
-				}
+	@media screen and (min-width: 768px) {
 
-				.site-header-cart .widget_shopping_cart {
-					background-color: #f0f0f0;
-				}
-			}
-				.storefront-product-pagination a {
-					color: #6d6d6d;
-					background-color: #ffffff;
-				}
-				.storefront-sticky-add-to-cart {
-					color: #6d6d6d;
-					background-color: #ffffff;
-				}
+		.site-header-cart .widget_shopping_cart,
+		.site-header .product_list_widget li .quantity {
+			color: #404040;
+		}
 
-				.storefront-sticky-add-to-cart a:not(.button) {
-					color: #333333;
-				}
+		.site-header-cart .widget_shopping_cart .buttons,
+		.site-header-cart .widget_shopping_cart .total {
+			background-color: #f5f5f5;
+		}
 
-				.wc-bookings-date-picker .ui-datepicker td.bookable a {
-					background-color: #96588a !important;
-				}
+		.site-header-cart .widget_shopping_cart {
+			background-color: #f0f0f0;
+		}
+	}
 
-				.wc-bookings-date-picker .ui-datepicker td.bookable a.ui-state-default {
-					background-color: #8c4e80 !important;
-				}
+	.storefront-product-pagination a {
+		color: #6d6d6d;
+		background-color: #ffffff;
+	}
 
-				.wc-bookings-date-picker .ui-datepicker td.bookable a.ui-state-active {
-					background-color: #642658 !important;
-				}
+	.storefront-sticky-add-to-cart {
+		color: #6d6d6d;
+		background-color: #ffffff;
+	}
 
+	.storefront-sticky-add-to-cart a:not(.button) {
+		color: #333333;
+	}
+
+	.wc-bookings-date-picker .ui-datepicker td.bookable a {
+		background-color: #96588a !important;
+	}
+
+	.wc-bookings-date-picker .ui-datepicker td.bookable a.ui-state-default {
+		background-color: #8c4e80 !important;
+	}
+
+	.wc-bookings-date-picker .ui-datepicker td.bookable a.ui-state-active {
+		background-color: #642658 !important;
+	}
 </style>
+
 </html>
