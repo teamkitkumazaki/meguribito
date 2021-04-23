@@ -7,7 +7,7 @@
 				</div>
 				<a class="logo_link" href="<?php echo esc_url( home_url( '/' ) );?>"></a>
 				<div id="hCart" class="header_cart">
-					<a href="#aaaa"></a>
+					<a href="<?php echo esc_url(home_url('/' ));?>my-account/bookings/"></a>
 				</div>
 			</div>
 			<nav class="h_nav">
@@ -41,8 +41,7 @@
 				</div>
 			</div><!-- count_contents -->
 			<div class="box_contents">
-				<a class="box_item mypage" href="#aaaa"><span>旅の記録</span></a>
-				<a class="box_item cart" href="#aaaa"><span>購入中のプラン</span></a>
+				<a class="box_item cart" href="<?php echo esc_url(home_url('/' ));?>my-account/bookings/"><span>旅の記録</span></a>
 			</div>
 		</div><!-- header_right -->
 	</div><!-- header_inner -->
@@ -62,7 +61,7 @@
 					</a>
 				</div>
 				<div class="count_item">
-					<a href="#aaaa">
+					<a href="<?php echo esc_url(home_url('/' ));?>kagibito/">
 						<span class="number">
 							<span class="num">12</span><span class="unit">人</span>
 						</span>
@@ -72,10 +71,7 @@
 			</div>
 			<div class="hummenu_nav_upper">
 				<div class="nav_item">
-					<a class="mypage" href="#aaaa"><span>旅の記録</span></a>
-				</div>
-				<div class="nav_item">
-					<a class="cart" href="#aaaa"><span>購入中のプラン</span></a>
+					<a class="mypage" href="<?php echo esc_url(home_url('/' ));?>my-account/bookings/"><span>旅の記録</span></a>
 				</div>
 			</div>
 			<div class="hummenu_nav_middle">
@@ -86,16 +82,13 @@
 					<a href="#aaaa"><span>運営からのお知らせ</span></a>
 				</div>
 				<div class="nav_item">
-					<a href="<?php echo esc_url(home_url('/' ));?>about"><span>私たちについて</span></a>
+					<a href="<?php echo esc_url(home_url('/' ));?>about"><span>運営団体</span></a>
 				</div>
 				<div class="nav_item">
 					<a href="<?php echo esc_url(home_url('/' ));?>flow"><span>旅の流れ</span></a>
 				</div>
 			</div>
 			<div class="hummenu_nav_lower">
-				<div class="nav_item">
-					<a href="#aaaa"><span>運営団体</span></a>
-				</div>
 				<div class="nav_item">
 					<a href="<?php echo esc_url(home_url('/' ));?>privacy"><span>プライバシーポリシー</span></a>
 				</div>
@@ -105,8 +98,8 @@
 			</div>
 			<div class="sns_wrap">
 				<a class="ig" href="#aaaa"></a>
-				<a class="fb" href="#aaaa"></a>
-				<a class="tw" href="#aaaa"></a>
+				<a class="fb" target="_blank" href="https://note.com/meguribito_tabi/n/nbe2445eed532"></a>
+				<a class="tw" target="_blank" href="https://twitter.com/MEGURIBITO_TABI"></a>
 			</div>
 			<div class="nav_footer">
 				<span class="logo"></span>

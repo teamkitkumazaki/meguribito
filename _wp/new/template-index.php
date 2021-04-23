@@ -101,7 +101,7 @@ get_header(); ?>
 			<div class="comp-pickup-plan">
 				<div class="pickup_item first">
 					<div id="mainPickImg" class="img_wrap">
-						<a href="#aaaa" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/index/pick01_sp.jpg)">
+						<a href="/product/onomichi_local/" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/index/pick01_sp.jpg)">
 							<img src="<?php echo get_template_directory_uri();?>/assets/img/index/pick01.jpg">
 						</a>
 					</div><!-- img_wrap -->
@@ -112,7 +112,7 @@ get_header(); ?>
 									<span class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito04.jpg);"></span>
 									<span class="name">村上ひろふみさんと行く</span>
 								</div>
-								<h3><a href="#aaaa"><span>瀬戸内のアーティスト達と過ごす、</span><span>ローカルヒッピーライフ。</span></a></h3>
+								<h3><a href="/product/onomichi_local/"><span>瀬戸内のアーティスト達と過ごす、</span><span>ローカルヒッピーライフ。</span></a></h3>
 								<div class="location">
 									<span class="area">広島県・尾道市</span>
 									<span class="guesthouse">ゲストハウス ヤドカリ</span>
@@ -137,7 +137,7 @@ get_header(); ?>
 									</div>
 								</div>
 								<div class="comp-link-button right">
-									<a href="#aaaa"><span>詳細を見る</span></a>
+									<a href="/product/onomichi_local/"><span>詳細を見る</span></a>
 								</div>
 							</div>
 						</div><!-- desc_wrap -->
@@ -401,7 +401,7 @@ get_header(); ?>
 						<span>パッケージ化されたツアーではなく、もっとその地域ならではの場所・人・体験に触れながら旅をする。そして日本全国に帰りたい場所が増えていく体験を提供します。</span>
 						</p>
 						<div class="comp-link-button right">
-							<a href="#aaaa"><span>メグリビトについて</span></a>
+							<a href="/service"><span>メグリビトについて</span></a>
 						</div>
 				</div>
 			</div><!-- txt_wrap -->
@@ -434,7 +434,7 @@ get_header(); ?>
 						<span>パッケージ化されたツアーではなく、もっとその地域ならではの場所・人・体験に触れながら旅をする。そして日本全国に帰りたい場所が増えていく体験を提供します。</span>
 					</p>
 					<div class="comp-link-button right">
-						<a href="#aaaa"><span>カギビト一覧</span></a>
+						<a href="/kagibito/"><span>カギビト一覧</span></a>
 					</div>
 				</div>
 			</div><!-- txt_wrap -->

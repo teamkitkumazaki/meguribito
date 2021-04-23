@@ -171,6 +171,9 @@ $pointYellow: #BF992E;
   line-height: 1.6;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+  @media screen and (max-width: 720px){
+    font-size: 20px;
+  }
 }
 @mixin breakTableLayout{
   display: block;
@@ -257,5 +260,50 @@ $pointYellow: #BF992E;
   .woocommerce-password-hint{
     @include basicP;
     font-size: 14px;
+  }
+  @media screen and (max-width: 720px){
+    .form-row{
+      margin-bottom: 25px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      @include tsukushi-b;
+      font-size: 16px;
+      line-height: normal;
+      letter-spacing: normal;
+      position: relative;
+    }
+    input[type=email],
+    input[type=tel],
+    input[type=text],
+    input[type="password"] {
+      font-size: 16px;
+    }
+    select {
+      font-size: 16px;
+    }
+    button[type="submit"]{
+      display: block;
+      padding: 7px 0;
+      font-size: 18px !important;
+    }
+    .show-password-input{
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      height: 15px;
+      margin: auto;
+      padding: 0;
+      line-height: 1;
+    }
+    .woocommerce-password-strength{
+      margin: 10px 0;
+      padding: 0 10px;
+    }
+    .woocommerce-password-hint{
+      @include basicP;
+      font-size: 14px;
+    }
   }
 }
