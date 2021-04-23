@@ -2131,6 +2131,23 @@ footer .footer_inner .footer_lower .copyright {
   transform: translate3d(0, 0%, 0);
 }
 
+.page-plan-list .section-plan-list {
+  margin-top: 200px;
+  margin-bottom: 160px;
+}
+
+@media screen and (max-width: 980px) {
+  .page-plan-list .section-plan-list {
+    margin-top: 160px;
+    margin-bottom: 120px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-plan-list .section-plan-list {
+    margin-top: 120px;
+    margin-bottom: 80px;
+  }
+}
 .page-kagibito-list .section-lead {
   margin-bottom: 80px;
 }
@@ -2553,8 +2570,11 @@ footer .footer_inner .footer_lower .copyright {
     position: absolute;
     bottom: 20px;
     color: #fff;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
     text-align: left;
+  }
+  .page-about .section-main .comp-section-title .title {
+    color: #fff !important;
   }
   .page-about .section-org {
     margin-bottom: 60px;
@@ -2703,6 +2723,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .page-cart .section-cart .woocommerce .cart .product-thumbnail a img {
   max-width: 100% !important;
+  height: auto;
 }
 .page-cart .section-cart .woocommerce .cart .product-name {
   width: calc(100% - 570px);
@@ -2726,32 +2747,19 @@ footer .footer_inner .footer_lower .copyright {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 10px;
-}
-.page-cart .section-cart .woocommerce .cart .product-name .variation dt {
-  display: none;
-}
-.page-cart .section-cart .woocommerce .cart .product-name .variation dd {
   font-family: "FOT-筑紫A丸ゴシック Std D";
   font-weight: bold;
+  color: #646464;
   font-size: 14px;
   line-height: 1.44;
   letter-spacing: 0.03em;
+}
+.page-cart .section-cart .woocommerce .cart .product-name .variation dt {
+  margin-right: 5px;
+}
+.page-cart .section-cart .woocommerce .cart .product-name .variation dd {
   margin-bottom: 0;
-}
-.page-cart .section-cart .woocommerce .cart .product-name .variation dd:nth-of-type(1) p::before {
-  display: inline-block;
-  content: "予約日:";
-  padding-right: 5px;
-}
-.page-cart .section-cart .woocommerce .cart .product-name .variation dd:nth-of-type(2) p::before {
-  display: inline-block;
-  content: "〜";
-  display: inline-block;
-  padding: 0 5px;
-}
-.page-cart .section-cart .woocommerce .cart .product-name .variation dd:nth-of-type(2) p::after {
-  display: inline;
-  content: "間";
+  margin-right: 15px;
 }
 .page-cart .section-cart .woocommerce .cart .product-price, .page-cart .section-cart .woocommerce .cart .product-quantity, .page-cart .section-cart .woocommerce .cart .product-subtotal {
   text-align: center;
@@ -2968,6 +2976,7 @@ footer .footer_inner .footer_lower .copyright {
   }
   .page-cart .section-cart .woocommerce .cart tr.cart_item {
     padding: 20px;
+    align-items: flex-start;
   }
   .page-cart .section-cart .woocommerce .cart .product-remove {
     position: absolute;
@@ -2991,6 +3000,8 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 20px;
   }
   .page-cart .section-cart .woocommerce .cart .product-name {
+    display: flex;
+    flex-wrap: wrap;
     width: 70%;
     padding: 0 0 0 20px;
     margin-bottom: 20px;
@@ -2999,19 +3010,21 @@ footer .footer_inner .footer_lower .copyright {
     display: none !important;
   }
   .page-cart .section-cart .woocommerce .cart .product-name a {
+    order: 2;
     font-size: 14px;
     letter-spacing: 0.03em;
-  }
-  .page-cart .section-cart .woocommerce .cart .product-name .variation {
+    line-height: 1.6;
     margin-bottom: 5px;
   }
-  .page-cart .section-cart .woocommerce .cart .product-name .variation dt {
-    display: none;
+  .page-cart .section-cart .woocommerce .cart .product-name .variation {
+    font-size: 3.2vw;
+    color: #646464;
+    line-height: 1.8;
+    order: 1;
+    margin-bottom: 5px;
   }
   .page-cart .section-cart .woocommerce .cart .product-name .variation dd {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
-    font-weight: bold;
-    font-size: 10px;
+    margin-right: 15px;
   }
   .page-cart .section-cart .woocommerce .cart .product-price, .page-cart .section-cart .woocommerce .cart .product-quantity, .page-cart .section-cart .woocommerce .cart .product-subtotal {
     text-align: left;

@@ -99,8 +99,11 @@
         position: absolute;
         bottom: 20px;
         color: #fff;
-        margin-bottom: 0;
+        margin-bottom: 0 !important;
         text-align: left;
+        .title{
+          color: #fff !important;
+        }
       }
     }
     .section-org{
