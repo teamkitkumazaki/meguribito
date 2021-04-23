@@ -12,15 +12,16 @@
     <div class="footer_lower">
       <div class="nav_upper">
         <a href="<?php echo esc_url(home_url('/' ));?>service">メグリビトについて</a>
-        <a href="#aaaa">プラン一覧</a>
+        <a href="<?php echo esc_url(home_url('/' ));?>plans">プラン一覧</a>
         <a href="<?php echo esc_url(home_url('/' ));?>kagibito">カギビト一覧</a>
         <a href="<?php echo esc_url(home_url('/' ));?>flow">旅の流れ</a>
-        <a href="#aaaa">運営からのお知らせ</a>
+        <a href="<?php echo esc_url(home_url('/' ));?>news">運営からのお知らせ</a>
       </div>
       <div class="nav_lower">
         <a href="<?php echo esc_url(home_url('/'));?>about">運営団体</a>
         <a href="<?php echo esc_url(home_url('/'));?>privacy">プライバシーポリシー</a>
         <a href="<?php echo esc_url(home_url('/'));?>transaction">特定商取引法に基づく表記</a>
+        <a href="#aaaa">お問い合わせ</a>
       </div>
       <p class="copyright">Copyright © MEGURIBITO 2020</p>
   </div><!-- footer_inner -->

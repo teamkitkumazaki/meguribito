@@ -12,7 +12,7 @@
 			<nav class="h_nav">
 				<ul>
 					<li><a href="<?php echo esc_url(home_url('/' ));?>service">メグリビトについて</a></li>
-					<li><a href="#aaaa">運営からのお知らせ</a></li>
+					<li><a href="<?php echo esc_url(home_url('/' ));?>news">運営からのお知らせ</a></li>
 				</ul>
 				<ul>
 					<li><a href="<?php echo esc_url(home_url('/' ));?>about">私たちについて</a></li>
@@ -23,7 +23,7 @@
 		<div class="header_right">
 			<div class="count_contents">
 				<div class="count_item line">
-					<a href="<?php echo esc_url(home_url('/' ));?>my-account/bookings/">
+					<a href="<?php echo esc_url(home_url('/' ));?>plans">
 						<span class="number">
 							<span class="num">18</span><span class="unit">件</span>
 						</span>

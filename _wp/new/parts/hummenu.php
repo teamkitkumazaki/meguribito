@@ -13,7 +13,7 @@
 			<nav class="h_nav">
 				<ul>
 					<li><a href="<?php echo esc_url(home_url('/' ));?>service">メグリビトについて</a></li>
-					<li><a href="#aaaa">運営からのお知らせ</a></li>
+					<li><a href="<?php echo esc_url(home_url('/' ));?>news">運営からのお知らせ</a></li>
 				</ul>
 				<ul>
 					<li><a href="<?php echo esc_url(home_url('/' ));?>about">私たちについて</a></li>
@@ -24,7 +24,7 @@
 		<div class="header_right">
 			<div class="count_contents">
 				<div class="count_item line">
-					<a href="#aaaa">
+					<a href="<?php echo esc_url(home_url('/' ));?>plans">
 						<span class="number">
 							<span class="num">18</span><span class="unit">件</span>
 						</span>
@@ -53,7 +53,7 @@
 		<div class="content">
 			<div class="count_contents">
 				<div class="count_item line">
-					<a href="#aaaa">
+					<a href="<?php echo esc_url(home_url('/' ));?>plans">
 						<span class="number">
 							<span class="num">18</span><span class="unit">件</span>
 						</span>
@@ -79,7 +79,7 @@
 					<a href="<?php echo esc_url(home_url('/' ));?>service"><span>メグリビトについて</span></a>
 				</div>
 				<div class="nav_item">
-					<a href="#aaaa"><span>運営からのお知らせ</span></a>
+					<a href="<?php echo esc_url(home_url('/' ));?>news"><span>運営からのお知らせ</span></a>
 				</div>
 				<div class="nav_item">
 					<a href="<?php echo esc_url(home_url('/' ));?>about"><span>運営団体</span></a>
@@ -94,6 +94,9 @@
 				</div>
 				<div class="nav_item">
 					<a href="<?php echo esc_url(home_url('/' ));?>transaction"><span>特定商取引法に基づく表記</span></a>
+				</div>
+				<div class="nav_item">
+					<a href="#aaaa"><span>お問い合わせ</span></a>
 				</div>
 			</div>
 			<div class="sns_wrap">

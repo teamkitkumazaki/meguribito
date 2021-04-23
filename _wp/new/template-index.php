@@ -224,7 +224,7 @@ get_header(); ?>
 					<h2 class="title">新着のプラン</h2>
 				</div>
 				<div class="comp-link-button">
-					<a href="#aaaa"><span>体験一覧を見る</span></a>
+					<a href="/plans"><span>体験一覧を見る</span></a>
 				</div>
 			</div><!-- comp-section-title -->
 			<div class="comp-plan-list">
