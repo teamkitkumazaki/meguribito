@@ -2632,6 +2632,119 @@ footer .footer_inner .footer_lower .copyright {
     font-size: 6.6vw;
   }
 }
+.page-news-detail .section-main .img_box {
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.page-news-detail .section-contents {
+  margin-bottom: 120px;
+}
+.page-news-detail .section-contents .post_contents {
+  width: 65%;
+  margin: 0 auto;
+}
+.page-news-detail .section-contents .post_contents .post_head {
+  position: relative;
+  margin-top: 60px;
+  padding-bottom: 45px;
+  margin-bottom: 45px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.page-news-detail .section-contents .post_contents .post_head .post_date {
+  position: absolute;
+  left: -140px;
+  top: 103px;
+  transform: rotate(90deg);
+  text-align: left;
+  width: 200px;
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.page-news-detail .section-contents .post_contents .post_head .post_title {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.page-news-detail .section-contents .post_contents .post_head .post_tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+.page-news-detail .section-contents .post_contents .post_head .post_tags li {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  margin-right: 10px;
+}
+.page-news-detail .section-contents .post_contents .post_head .post_tags li:nth-last-of-type(1) {
+  margin-right: 0;
+}
+.page-news-detail .section-contents .post_contents .post_head .post_tags li a {
+  transition: opacity 0.3s;
+  font-size: 16px;
+  color: #646464;
+}
+.page-news-detail .section-contents .post_contents .post_head .post_tags li a:hover {
+  opacity: 0.75;
+}
+.page-news-detail .section-contents .post_contents .post_head .post_desc {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+}
+.page-news-detail .section-contents .post_contents .sns_share {
+  border-top: 1px solid #d8d8d8;
+  padding-top: 60px;
+}
+.page-news-detail .section-contents .post_contents .sns_share .share_ttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.page-news-detail .section-contents .post_contents .sns_share ul {
+  text-align: center;
+  margin-top: 35px;
+}
+.page-news-detail .section-contents .post_contents .sns_share ul li {
+  display: inline-block;
+  margin: 0 8px;
+}
+.page-news-detail .section-contents .post_contents .sns_share ul li a {
+  transition: opacity 0.3s;
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+.page-news-detail .section-contents .post_contents .sns_share ul li a:hover {
+  opacity: 0.75;
+}
+.page-news-detail .section-relation {
+  margin-bottom: 120px;
+}
+.page-news-detail .section-relation .relation_ttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.page-news-detail .section-relation .comp-news-list .news_item:nth-of-type(1) {
+  display: none;
+}
+
 .page-cart {
   min-height: unset;
 }
@@ -12405,6 +12518,34 @@ footer .footer_inner .footer_lower .copyright {
     padding: 0 15px;
   }
 }
+/* ニュース詳細 */
+.comp-article-content .content_item {
+  margin-bottom: 80px;
+}
+.comp-article-content .content_item .section_ttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  letter-spacing: normal;
+  margin-bottom: 35px;
+}
+.comp-article-content .content_item .img_wrap {
+  margin-bottom: 30px;
+}
+.comp-article-content .content_item .content_txt {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+}
+.comp-article-content .content_item .content_txt p {
+  margin-bottom: 1.5em;
+}
+.comp-article-content .content_item .content_txt p:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
 /* カート・マイページ */
 .woocommerce .woocommerce-message {
   position: fixed !important;

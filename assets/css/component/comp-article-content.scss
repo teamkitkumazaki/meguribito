@@ -1,0 +1,26 @@
+.comp-article-content{
+  .content_item{
+    margin-bottom: 80px;
+    .section_ttl{
+      @include tsukushi-b;
+      font-size: 28px;
+      letter-spacing: 0.03em;
+      line-height: 1.5;
+      letter-spacing: normal;
+      margin-bottom: 35px;
+    }
+    .img_wrap{
+      margin-bottom: 30px;
+    }
+    .content_txt{
+      @include basicP;
+      p{
+        margin-bottom: 1.5em;
+        &:nth-last-of-type(1){
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+}

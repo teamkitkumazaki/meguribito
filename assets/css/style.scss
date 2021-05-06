@@ -20,6 +20,7 @@
 @import 'pages/kagibitoDetail.scss';
 @import 'pages/about.scss';
 @import 'pages/newsList.scss';
+@import 'pages/newsDetail.scss';
 @import 'pages/cart.scss';
 @import 'pages/payment.scss';
 @import 'pages/completed.scss';
@@ -100,9 +101,12 @@
 @import 'component/comp-footer-link.scss';
 @import 'component/comp-service-slider.scss';
 
+/* ニュース詳細 */
+@import 'component/comp-article-content.scss';
+
+
 /* カート・マイページ */
 @import 'component/comp-woocommerce-message.scss';
-
 
 /* プライバシーポリシー */
 @import 'component/comp-privacy-text.scss';
