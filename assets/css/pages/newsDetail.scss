@@ -59,6 +59,7 @@
       .sns_share{
         border-top: 1px solid #d8d8d8;
         padding-top: 60px;
+        margin-top: 60px;
         .share_ttl{
           @include tsukushi-b;
           font-size: 20px;
@@ -84,6 +85,7 @@
     }
   }
   .section-relation{
+    margin-top: 120px;
     margin-bottom: 120px;
     .relation_ttl{
       @include tsukushi-b;
@@ -98,6 +100,99 @@
         &:nth-of-type(1){
           display: none;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px){
+  .page-news-detail{
+    .section-contents{
+      margin-bottom: 80px;
+      .post_contents{
+        width: 100%;
+        .post_head{
+          .post_date{
+            position: static;
+            transform: rotate(0deg);
+            width: 100%;
+            font-size: 14px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    .section-relation{
+      margin-top: 120px;
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  .page-news-detail{
+    .section-main{
+      .img_box{
+        height: 60vw;
+      }
+    }
+    .section-contents{
+      margin-bottom: 60px;
+      .post_contents{
+        width: 100%;
+        margin: 0 auto;
+        .post_head{
+          margin-top: 40px;
+          padding-bottom: 30px;
+          margin-bottom: 30px;
+          .post_title{
+            font-size: 24px;
+            margin-bottom: 20px;
+          }
+          .post_tags{
+            @include flexSet;
+            margin-bottom: 25px;
+            li{
+              a{
+                @include hover;
+                font-size: 16px;
+                color: #646464;
+              }
+            }
+          }
+          .post_desc{
+            font-size: 14px;
+          }
+        }
+        .sns_share{
+          padding-top: 40px;
+          margin-top: 40px;
+          .share_ttl{
+            @include tsukushi-b;
+            font-size: 20px;
+            line-height: normal;
+            letter-spacing: 0.03em;
+            text-align: center;
+          }
+          ul{
+            margin-top: 25px;
+            li{
+              a{
+                width: 60px;
+                height: 60px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .section-relation{
+      margin-top: 80px;
+      margin-bottom: 60px;
+      .relation_ttl{
+        @include tsukushi-b;
+        font-size: 20px;
+        margin-bottom: 40px;
       }
     }
   }

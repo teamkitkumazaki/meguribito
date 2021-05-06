@@ -2703,6 +2703,7 @@ footer .footer_inner .footer_lower .copyright {
 .page-news-detail .section-contents .post_contents .sns_share {
   border-top: 1px solid #d8d8d8;
   padding-top: 60px;
+  margin-top: 60px;
 }
 .page-news-detail .section-contents .post_contents .sns_share .share_ttl {
   font-family: "FOT-筑紫A丸ゴシック Std D";
@@ -2730,6 +2731,7 @@ footer .footer_inner .footer_lower .copyright {
   opacity: 0.75;
 }
 .page-news-detail .section-relation {
+  margin-top: 120px;
   margin-bottom: 120px;
 }
 .page-news-detail .section-relation .relation_ttl {
@@ -2745,6 +2747,91 @@ footer .footer_inner .footer_lower .copyright {
   display: none;
 }
 
+@media screen and (max-width: 980px) {
+  .page-news-detail .section-contents {
+    margin-bottom: 80px;
+  }
+  .page-news-detail .section-contents .post_contents {
+    width: 100%;
+  }
+  .page-news-detail .section-contents .post_contents .post_head .post_date {
+    position: static;
+    transform: rotate(0deg);
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .page-news-detail .section-relation {
+    margin-top: 120px;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-news-detail .section-main .img_box {
+    height: 60vw;
+  }
+  .page-news-detail .section-contents {
+    margin-bottom: 60px;
+  }
+  .page-news-detail .section-contents .post_contents {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .page-news-detail .section-contents .post_contents .post_head {
+    margin-top: 40px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  .page-news-detail .section-contents .post_contents .post_head .post_title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .page-news-detail .section-contents .post_contents .post_head .post_tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+  .page-news-detail .section-contents .post_contents .post_head .post_tags li a {
+    transition: opacity 0.3s;
+    font-size: 16px;
+    color: #646464;
+  }
+  .page-news-detail .section-contents .post_contents .post_head .post_tags li a:hover {
+    opacity: 0.75;
+  }
+  .page-news-detail .section-contents .post_contents .post_head .post_desc {
+    font-size: 14px;
+  }
+  .page-news-detail .section-contents .post_contents .sns_share {
+    padding-top: 40px;
+    margin-top: 40px;
+  }
+  .page-news-detail .section-contents .post_contents .sns_share .share_ttl {
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+  .page-news-detail .section-contents .post_contents .sns_share ul {
+    margin-top: 25px;
+  }
+  .page-news-detail .section-contents .post_contents .sns_share ul li a {
+    width: 60px;
+    height: 60px;
+  }
+  .page-news-detail .section-relation {
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+  .page-news-detail .section-relation .relation_ttl {
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}
 .page-cart {
   min-height: unset;
 }
@@ -12520,7 +12607,14 @@ footer .footer_inner .footer_lower .copyright {
 }
 /* ニュース詳細 */
 .comp-article-content .content_item {
-  margin-bottom: 80px;
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+.comp-article-content .content_item:nth-last-of-type(1) {
+  border-bottom: 0;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 .comp-article-content .content_item .section_ttl {
   font-family: "FOT-筑紫A丸ゴシック Std D";
@@ -12538,6 +12632,10 @@ footer .footer_inner .footer_lower .copyright {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.6px;
+  margin-bottom: 40px;
+}
+.comp-article-content .content_item .content_txt:nth-last-of-type(1) {
+  margin-bottom: 0;
 }
 .comp-article-content .content_item .content_txt p {
   margin-bottom: 1.5em;
@@ -12546,6 +12644,25 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 720px) {
+  .comp-article-content .content_item {
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+  }
+  .comp-article-content .content_item .section_ttl {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  .comp-article-content .content_item .img_wrap {
+    margin-bottom: 30px;
+  }
+  .comp-article-content .content_item .content_txt {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+  }
+}
 /* カート・マイページ */
 .woocommerce .woocommerce-message {
   position: fixed !important;
