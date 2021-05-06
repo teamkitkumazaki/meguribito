@@ -96,11 +96,11 @@
 					<a href="<?php echo esc_url(home_url('/' ));?>transaction"><span>特定商取引法に基づく表記</span></a>
 				</div>
 				<div class="nav_item">
-					<a href="#aaaa"><span>お問い合わせ</span></a>
+					<a href="<?php echo esc_url(home_url('/' ));?>contact"><span>お問い合わせ</span></a>
 				</div>
 			</div>
 			<div class="sns_wrap">
-				<a class="ig" href="#aaaa"></a>
+				  <a class="ig" target="_blank" href="https://www.instagram.com/meguribito_tabi/"></a>
 				<a class="fb" target="_blank" href="https://note.com/meguribito_tabi/n/nbe2445eed532"></a>
 				<a class="tw" target="_blank" href="https://twitter.com/MEGURIBITO_TABI"></a>
 			</div>
