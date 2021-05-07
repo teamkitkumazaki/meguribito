@@ -106,7 +106,7 @@
 					<div class="news_item"></div><!-- news_item -->
 					<div class="news_item">
 						<div class="img_wrap">
-							<a href="#aaaa" style="background-image: url(assets/img/news/news02.jpg)"><img src="<?php echo get_template_directory_uri();?>/assets/img/news/news02.jpg"></a>
+							<a href="#aaaa" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/news/news02.jpg)"><img src="<?php echo get_template_directory_uri();?>/assets/img/news/news02.jpg"></a>
 						</div>
 						<div class="txt_wrap">
 							<a class="category" href="#aaaa">#お知らせ</a>
@@ -118,7 +118,7 @@
 					</div><!-- news_item -->
 					<div class="news_item">
 						<div class="img_wrap">
-							<a href="#aaaa" style="background-image: url(assets/img/news/news03.jpg)"><img src="<?php echo get_template_directory_uri();?>/assets/img/news/news03.jpg"></a>
+							<a href="#aaaa" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/news/news03.jpg)"><img src="<?php echo get_template_directory_uri();?>/assets/img/news/news03.jpg"></a>
 						</div>
 						<div class="txt_wrap">
 							<a class="category" href="#aaaa">#キャンペーン</a>
@@ -130,7 +130,7 @@
 					</div><!-- news_item -->
 					<div class="news_item">
 						<div class="img_wrap">
-							<a href="#aaaa" style="background-image: url(assets/img/news/news04.jpg)"><img src="<?php echo get_template_directory_uri();?>/assets/img/news/news04.jpg"></a>
+							<a href="#aaaa" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/news/news04.jpg)"><img src="<?php echo get_template_directory_uri();?>/assets/img/news/news04.jpg"></a>
 						</div>
 						<div class="txt_wrap">
 							<a class="category" href="#aaaa">#パートナー募集</a>

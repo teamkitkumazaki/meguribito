@@ -3,32 +3,13 @@
 <head>
 <?php get_template_part("parts/head");?>
 </head>
-<body <?php body_class(); ?>>
-	<?php wp_body_open(); ?>
-	<?php do_action( 'storefront_before_site' ); ?>
-	<?php do_action( 'storefront_before_header' ); ?>
+<body>
 <header class="comp-header">
-<?php
-/**
- * The template for displaying full width pages.
- *
- * Template Name: トップページ
- *
- * @package storefront
- */
-
-get_header(); ?>
+	<?php
+	/* Template Name: インデックスページ */
+	  get_template_part("parts/header");
+	?>
 </header>
-<?php
-/**
- * Functions hooked in to storefront_before_content
- *
- * @hooked storefront_header_widget_region - 10
- * @hooked woocommerce_breadcrumb - 10
- */
- do_action( 'storefront_before_content' );
- do_action( 'storefront_content_top' );
-?>
 <div id="loading" class="comp-index-loading">
 	<div id="loadInner" class="load_inner">
 		<div class="loading_content">
@@ -51,10 +32,24 @@ get_header(); ?>
 			</div><!-- comp-slider-txt -->
 			<div id="slideShow" class="comp-main-slider">
 				<ul>
-					<li class="slide01"><img src="<?php echo get_template_directory_uri();?>/assets/img/index/main01.jpg" alt="カギビトと出会う"></li>
-					<li class="slide02"><img class="first_view" src="<?php echo get_template_directory_uri();?>/assets/img/index/main02.jpg" alt="現地の日常の中に溶け込む"></li>
-					<li class="slide03"><img class="first_view" src="<?php echo get_template_directory_uri();?>/assets/img/index/main03.jpg" alt="旅の余白を楽しむ"></li>
-					<li class="slide04"><img class="first_view" src="<?php echo get_template_directory_uri();?>/assets/img/index/main04.jpg" alt="「帰りたくなる」旅先が増える"></li>
+					<?php
+						$repeat_group = SCF::get('main_slider', 56);
+						foreach ( $repeat_group as $fields ) {
+							$scrolling_img = $fields['slider_img'];
+							$slider_img_sp = $fields['slider_img_sp'];
+							$slider_txt = $fields['slider_txt'];
+							$thumb_img = wp_get_attachment_image_src($scrolling_img,'full');
+							$thumb_img_pc = wp_get_attachment_image_src($scrolling_img,'large');
+							$thumb_img_sp = wp_get_attachment_image_src($slider_img_sp,'medium_large');
+						?>
+						<li style="background-image: url(<?php echo $thumb_img_sp[0];?>);">
+							<img
+								class="blur"
+								src="<?php echo $thumb_img_pc[0];?>"
+								srcset="<?php echo $thumb_img_pc[0];?> 1440w, <?php echo $thumb_img[0];?> 2048w" sizes="100vw" alt="<?php echo $slider_txt;?>"
+							>
+						</li>
+					<?php } ?>
 				</ul>
 			</div><!-- comp-main-slider -->
 			<style>
@@ -381,7 +376,7 @@ get_header(); ?>
 							</div>
 							<div class="slider_txt">
 								<span class="number">STEP<span>3</span></span>
-								<span class="txt">カギビトに誘われ、ローカルの日常の中へ飛び込みます。</span>
+								<span class="txt">旅先で出会った人と深い関係値を持つことができます。</span>
 							</div>
 						</div>
 						<div class="item_box slick-slide">
@@ -390,7 +385,7 @@ get_header(); ?>
 							</div>
 							<div class="slider_txt">
 								<span class="number">STEP<span>4</span></span>
-								<span class="txt">カギビトに誘われ、ローカルの日常の中へ飛び込みます。</span>
+								<span class="txt">旅をすればするほど、”帰りたくなる場所”が増えます。</span>
 							</div>
 						</div>
 					</div>
@@ -502,7 +497,7 @@ get_header(); ?>
 		<div class="section_inner">
 			<div class="comp-footer-link">
 				<div class="link_item">
-					<a href="#aaaa">
+					<a href="/news/entry/">
 						<span class="img_wrap">
 							<img src="<?php echo get_template_directory_uri();?>/assets/img/index/footer_img01.jpg">
 						</span>
@@ -526,30 +521,18 @@ get_header(); ?>
 			</div><!-- comp-footer-link -->
 		</div><!-- section_inner -->
 	</section>
-	<div id="primary" class="content-area" style="display: none;">
-		<main id="main" class="site-main" role="main">
-
-			<?php
-			while ( have_posts() ) :
-				the_post();
-
-				do_action( 'storefront_page_before' );
-
-				get_template_part( 'content', 'page' );
-
-				/**
-				 * Functions hooked in to storefront_page_after action
-				 *
-				 * @hooked storefront_display_comments - 10
-				 */
-				do_action( 'storefront_page_after' );
-
-			endwhile; // End of the loop.
-			?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 </article>
+<div class="comp-text-set" style="opacity:0; height:0px;">
+	<p>
+	<?php
+		$repeat_group = SCF::get('main_slider', 56);
+		foreach ( $repeat_group as $fields ) {
+			$slider_txt = $fields['slider_txt'];
+		?>
+		<?php echo $slider_txt;?>,
+	<?php } ?>
+	</p>
+</div>
 <?php get_template_part("parts/hummenu");?>
 <?php get_template_part("parts/footer");?>
 </body>

@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/* ----- Google Fonts ----- */
+.single-entry .section_ttl {
+  margin-bottom: 60px;
+}
+.single-entry .section_in_section {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.single-entry .section_in_section:nth-last-of-type(1) {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-bottom: 0px solid #d8d8d8;
+}
+.single-entry .section_in_section .number_ttl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.single-entry .section_in_section .number_ttl .num {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  background: #BF992E;
+  color: #fff;
+  border-radius: 50%;
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  line-height: 40px;
+  text-indent: 0.1em;
+}
+.single-entry .section_in_section .number_ttl .text {
+  width: calc(100% - 52px);
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+.single-entry .section_in_section .quote_section {
+  margin-bottom: 40px;
+}
+.single-entry .section_in_section .quote_section .quote_ttl {
+  font-size: 18px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+.single-entry .section_in_section .quote_section .quote_wrap {
+  background: #fff;
+  padding: 20px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+}
+.single-entry .section_in_section .quote_section .quote_wrap .list_ul {
+  font-size: 14px;
+  color: #464646;
+  margin: 10px 0;
+}
+.single-entry .section_in_section .quote_section .quote_wrap .list_ul li {
+  position: relative;
+  padding-left: 15px;
+}
+.single-entry .section_in_section .quote_section .quote_wrap .list_ul li::before {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 12px;
+  margin: auto;
+  background: #464646;
+  border-radius: 50%;
+}
+.single-entry .section_in_section .quote_section .quote_wrap .small {
+  font-size: 14px;
+  color: #646464;
+}
+.single-entry .section_in_section .button_section {
+  margin-top: 80px;
+}
+.single-entry .section_in_section .button_section .button_wrap {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.single-entry .section_in_section .button_section .button_wrap a {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #BF992E !important;
+  color: #fff !important;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  border-radius: 100px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+.single-entry .section_in_section .button_section .button_wrap a:hover {
+  opacity: 0.75;
+}
+
+@media screen and (max-width: 740px) {
+  .single-entry .section_ttl {
+    font-size: 20px !important;
+    margin-bottom: 40px !important;
+  }
+  .single-entry .section_in_section {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d8d8d8;
+  }
+  .single-entry .section_in_section:nth-last-of-type(1) {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px solid #d8d8d8;
+  }
+  .single-entry .section_in_section .number_ttl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .single-entry .section_in_section .number_ttl .num {
+    width: 35px;
+    height: 35px;
+    margin-right: 12px;
+    font-size: 14px;
+    line-height: 37px;
+    text-indent: 0.2em;
+  }
+  .single-entry .section_in_section .number_ttl .text {
+    width: calc(100% - 47px);
+    font-size: 4.2vw;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+  }
+  .single-entry .section_in_section .quote_section {
+    margin-bottom: 40px;
+  }
+  .single-entry .section_in_section .quote_section .quote_ttl {
+    font-size: 18px;
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+  }
+  .single-entry .section_in_section .quote_section .quote_wrap {
+    padding: 20px;
+    font-size: 14px;
+  }
+  .single-entry .section_in_section .quote_section .quote_wrap .list_ul {
+    font-size: 14px;
+    color: #464646;
+    margin: 10px 0;
+  }
+  .single-entry .section_in_section .quote_section .quote_wrap .list_ul li {
+    position: relative;
+    padding-left: 15px;
+  }
+  .single-entry .section_in_section .quote_section .quote_wrap .list_ul li::before {
+    display: block;
+    content: "";
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    top: 12px;
+    margin: auto;
+    background: #464646;
+    border-radius: 50%;
+  }
+  .single-entry .section_in_section .quote_section .quote_wrap .small {
+    font-size: 12px;
+    color: #646464;
+  }
+  .single-entry .section_in_section .button_section {
+    margin-top: 40px;
+  }
+  .single-entry .section_in_section .button_section .section_ttl {
+    font-size: 4.2vw !important;
+    margin-bottom: 20px !important;
+  }
+  .single-entry .section_in_section .button_section .button_wrap {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .single-entry .section_in_section .button_section .button_wrap a {
+    padding: 15px 0;
+    font-size: 18px;
+  }
+}
