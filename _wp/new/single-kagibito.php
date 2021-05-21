@@ -35,13 +35,17 @@
           </div>
         </div>
         <div class="kagibito_status">
-          <div class="status_item">
+          <!--<div class="status_item">
             <span class="title">迎え入れた<span>旅人数</span></span>
             <span class="number">98</span>
-          </div>
+          </div> -->
+          <?php
+            $plan_length = count(SCF::get('hosting_plan'));
+            $true_length = $plan_length - 1;
+          ?>
           <div class="status_item">
             <span class="title">今まで企画した<span>プラン数</span></span>
-            <span class="number">3</span>
+            <span class="number"><?php echo $true_length;?></span>
           </div>
         </div>
       </div><!-- basic_info -->
@@ -65,6 +69,7 @@
       </div><!-- message_info -->
     </div><!-- section_inner -->
   </section>
+  <?php if($true_length != 0):?>
   <section class="section-plans">
     <div class="section_inner">
       <div class="comp-section-title">
@@ -72,39 +77,37 @@
         <h2 class="title">開催中のプラン</h2>
       </div><!-- comp-section-title -->
       <div class="comp-plan-list-02">
-        <div class="plan_item">
-          <div class="img_wrap">
-            <a href="#aaaa" style="background-image: url(https://meguribito.com/wp-content/themes/storefront/assets/img/plan/plan01_sp.jpg)">
-              <img src="https://meguribito.com/wp-content/themes/storefront/assets/img/plan/plan01.jpg">
-            </a>
-          </div><!-- img_wrap -->
-          <div class="txt_wrap">
-            <div class="title_wrap">
-              <h3><a href="#aaaa">建設中のゲストハウスに宿泊しながら学ぶ、新しい場所の作り方。</a></h3>
-              <div class="location">
-                <span class="area">徳島県・海陽町</span><span class="guesthouse">IN BETWEEN BLUES</span>
-              </div>
-            </div><!-- title_wrap -->
+        <?php
+          $repeat_group = SCF::get( 'hosting_plan' );
+          foreach ( $repeat_group as $fields ) {
+            $plan_item = $fields['plan_item'];
+          ?>
+          <?php if($plan_item != null):?>
+          <div class="plan_item">
+            <div class="img_wrap">
+              <?php
+              $plan_thumb_sp = SCF::get($plan_item, 'main_sp');
+              $plan_thumb_sp_url = wp_get_attachment_image_src($plan_thumb_sp,'meduim_large');
+              ?>
+              <a href="<?php echo get_permalink($plan_item);?>" style="background-image: url(<?php echo $plan_thumb_sp_url;?>)">
+                <img src="<?php echo get_the_post_thumbnail_url($plan_item,'medium_large');?>">
+              </a>
+            </div><!-- img_wrap -->
+            <div class="txt_wrap">
+              <div class="title_wrap">
+                <h3><a href="<?php echo get_permalink($plan_item);?>"><?php echo SCF::get('post_title', $plan_item);?></a></h3>
+                <div class="location">
+                  <span class="area"><?php echo esc_html( SCF::get('area_name'));?></span><span class="guesthouse"><?php echo esc_html( SCF::get('belongs'));?></span>
+                </div>
+              </div><!-- title_wrap -->
+            </div>
           </div>
-        </div>
-        <div class="plan_item">
-          <div class="img_wrap">
-            <a href="#aaaa" style="background-image: url(https://meguribito.com/wp-content/themes/storefront/assets/img/plan/plan06_sp.jpg)">
-              <img src="https://meguribito.com/wp-content/themes/storefront/assets/img/plan/plan06.jpg">
-            </a>
-          </div><!-- img_wrap -->
-          <div class="txt_wrap">
-            <div class="title_wrap">
-              <h3><a href="#aaaa">大自然×シーシャ？日本屈指の水とすだちで味わう最強の自然派水タバコ。</a></h3>
-              <div class="location">
-                <span class="area">徳島県・海陽町</span><span class="guesthouse">IN BETWEEN BLUES</span>
-              </div>
-            </div><!-- title_wrap -->
-          </div>
-        </div><!-- plan_item -->
+          <?php endif; ?>
+          <?php } ?>
       </div><!-- comp-plan-list-02 -->
     </div><!-- section_inner -->
   </section>
+  <?php endif; ?>
   <?php endwhile; endif; ?>
   <section class="section-others">
     <div class="section_inner">
@@ -114,78 +117,36 @@
           <h2 class="title">カギビト一覧</h2>
         </div>
         <div class="comp-link-button">
-          <a href="#aaaa"><span>カギビト一覧をみる</span></a>
+          <a href="/kagibito-list"><span>カギビト一覧をみる</span></a>
         </div>
       </div>
       <div class="comp-kagibito-list in_detail">
-        <div class="kagibito_item">
-          <div class="img_wrap">
-            <a href="#aaaa"><img src="https://meguribito.com/wp-content/themes/storefront/assets/img/kagibito/kagibito01.jpg"></a>
-          </div>
-          <div class="txt_wrap">
-            <a class="name" href="#aaaa">濵田 規史</a>
-            <div class="location">
-              <span>コダテル</span>
-              <span>愛媛県・八幡浜市</span>
-            </div>
-            <div class="comp-sns-wrap center">
-              <a class="ig" href="#aaaa"></a>
-              <a class="fb" href="#aaaa"></a>
-              <a class="tw" href="#aaaa"></a>
-            </div>
-          </div>
-        </div>
-        <div class="kagibito_item">
-          <div class="img_wrap">
-            <a href="#aaaa"><img src="https://meguribito.com/wp-content/themes/storefront/assets/img/kagibito/kagibito02.jpg"></a>
-          </div>
-          <div class="txt_wrap">
-            <a class="name" href="#aaaa">荒木 貴大</a>
-            <div class="location">
-              <span>MACCHI</span>
-              <span>愛媛県・八幡浜市</span>
-            </div>
-            <div class="comp-sns-wrap center">
-              <a class="ig" href="#aaaa"></a>
-              <a class="fb" href="#aaaa"></a>
-              <a class="tw" href="#aaaa"></a>
-            </div>
-          </div>
-        </div>
-        <div class="kagibito_item">
-          <div class="img_wrap">
-            <a href="#aaaa"><img src="https://meguribito.com/wp-content/themes/storefront/assets/img/kagibito/kagibito03.jpg"></a>
-          </div>
-          <div class="txt_wrap">
-            <a class="name" href="#aaaa">永原 レキ</a>
-            <div class="location">
-              <span>IN BETWEEN BLUES</span>
-              <span>徳島県・海陽町</span>
-            </div>
-            <div class="comp-sns-wrap center">
-              <a class="ig" href="#aaaa"></a>
-              <a class="fb" href="#aaaa"></a>
-              <a class="tw" href="#aaaa"></a>
-            </div>
-          </div>
-        </div>
-        <div class="kagibito_item">
-          <div class="img_wrap">
-            <a href="#aaaa"><img src="https://meguribito.com/wp-content/themes/storefront/assets/img/kagibito/kagibito04.jpg"></a>
-          </div>
-          <div class="txt_wrap">
-            <a class="name" href="#aaaa">坂井 勇貴</a>
-            <div class="location">
-              <span>宝島バナナファーム</span>
-              <span>熊本県・宇城市</span>
-            </div>
-            <div class="comp-sns-wrap center">
-              <a class="ig" href="#aaaa"></a>
-              <a class="fb" href="#aaaa"></a>
-              <a class="tw" href="#aaaa"></a>
-            </div>
-          </div>
-        </div>
+        <?php
+          $args2 = array(
+            'posts_per_page' => '4',
+            'orderby' => 'rand',
+            'post_type' => 'kagibito',
+            'paged' => $paged,
+          );
+          $the_query2 = new WP_Query( $args2 );
+          if ( $the_query2->have_posts() ) :
+            while ( $the_query2->have_posts() ) : $the_query2->the_post();
+            echo  '
+            <div class="kagibito_item">
+              <div class="img_wrap">
+                <a href="'.get_the_permalink().'"><img src="'.get_the_post_thumbnail_url( get_the_ID(), 'thumbnail' ).'"></a>
+              </div>
+              <div class="txt_wrap">
+                <a class="name" href="'.get_the_permalink().'">'. SCF::get('post_title').'</a>
+                <div class="location">
+                  <span>'.SCF::get('belongs').'</span>
+                  <span>'.SCF::get('area_name').'</span>
+                </div>
+              </div>
+            </div>';
+            endwhile;
+            endif;
+          ?>
       </div><!-- comp-kagibito-list -->
     </div><!-- section_inner -->
   </section>

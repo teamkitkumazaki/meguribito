@@ -40,7 +40,8 @@
   }
   .slick-slider{
     width: 500px;
-    margin-bottom: 60px;
+    min-height: 310px;
+    margin-bottom: 80px;
     .item_box{
       display: block !important;
       .slider_img{
@@ -54,10 +55,11 @@
     width: 45vw;
     .yado_detail_ttl{
       @include tsukushi-b;
-      font-size: 24px;
+      font-size: 22px;
       line-height: normal;
       letter-spacing: 0.03em;
       color: #363636;
+      margin-bottom: 10px;
     }
     .description{
       @include basicP;
@@ -91,6 +93,7 @@
     }
     .slick-slider{
       width: 70vw;
+      min-height: unset;
       margin: 0 auto 30px;
       .item_box{
         display: block !important;

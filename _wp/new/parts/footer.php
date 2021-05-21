@@ -13,7 +13,7 @@
       <div class="nav_upper">
         <a href="<?php echo esc_url(home_url('/' ));?>service">メグリビトについて</a>
         <a href="<?php echo esc_url(home_url('/' ));?>plans">プラン一覧</a>
-        <a href="<?php echo esc_url(home_url('/' ));?>kagibito">カギビト一覧</a>
+        <a href="<?php echo esc_url(home_url('/' ));?>kagibito-list">カギビト一覧</a>
         <a href="<?php echo esc_url(home_url('/' ));?>flow">旅の流れ</a>
         <a href="<?php echo esc_url(home_url('/' ));?>information/">運営からのお知らせ</a>
       </div>

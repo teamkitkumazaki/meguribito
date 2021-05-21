@@ -25,23 +25,37 @@
 			<div class="count_contents">
 				<div class="count_item line">
 					<a href="<?php echo esc_url(home_url('/' ));?>plans">
+						<?php
+							$wp_query = new WP_Query();
+							$param = array(
+								'post_type' => 'product',
+							);
+							$the_query = new WP_Query( $param );
+						?>
 						<span class="number">
-							<span class="num">18</span><span class="unit">件</span>
+							<span class="num"><?php echo $the_query->found_posts;?></span><span class="unit">件</span>
 						</span>
 						<span class="content"><span>プラン一覧</span></span>
 					</a>
 				</div>
 				<div class="count_item">
-					<a href="<?php echo esc_url(home_url('/' ));?>kagibito">
+					<a href="<?php echo esc_url(home_url('/' ));?>kagibito-list">
+						<?php
+							$wp_query2 = new WP_Query();
+							$param2 = array(
+								'post_type' => 'kagibito',
+							);
+							$the_query2 = new WP_Query( $param2 );
+						?>
 						<span class="number">
-							<span class="num">12</span><span class="unit">人</span>
+							<span class="num"><?php echo $the_query2->found_posts;?></span><span class="unit">人</span>
 						</span>
 						<span class="content"><span>カギビト一覧</span></span>
 					</a>
 				</div>
 			</div><!-- count_contents -->
 			<div class="box_contents">
-				<a class="box_item cart" href="<?php echo esc_url(home_url('/' ));?>my-account/bookings/"><span>旅の記録</span></a>
+				<a class="box_item cart" href="<?php echo esc_url(home_url('/' ));?>my-account/bookings/"><span>マイページ</span></a>
 			</div>
 		</div><!-- header_right -->
 	</div><!-- header_inner -->
@@ -55,15 +69,15 @@
 				<div class="count_item line">
 					<a href="<?php echo esc_url(home_url('/' ));?>plans">
 						<span class="number">
-							<span class="num">18</span><span class="unit">件</span>
+							<span class="num"><?php echo $the_query->found_posts;?></span><span class="unit">件</span>
 						</span>
 						<span class="content"><span>プラン一覧</span></span>
 					</a>
 				</div>
 				<div class="count_item">
-					<a href="<?php echo esc_url(home_url('/' ));?>kagibito/">
+					<a href="<?php echo esc_url(home_url('/' ));?>kagibito-list">
 						<span class="number">
-							<span class="num">12</span><span class="unit">人</span>
+							<span class="num"><?php echo $the_query2->found_posts;?></span><span class="unit">人</span>
 						</span>
 						<span class="content"><span>カギビト一覧</span></span>
 					</a>
@@ -71,7 +85,7 @@
 			</div>
 			<div class="hummenu_nav_upper">
 				<div class="nav_item">
-					<a class="mypage" href="<?php echo esc_url(home_url('/' ));?>my-account/bookings/"><span>旅の記録</span></a>
+					<a class="mypage" href="<?php echo esc_url(home_url('/' ));?>my-account/bookings/"><span>マイページ</span></a>
 				</div>
 			</div>
 			<div class="hummenu_nav_middle">
@@ -111,3 +125,4 @@
 		</div><!-- content -->
 </div><!-- search_inner -->
 </div><!-- comp-slide-menu -->
+<?php wp_reset_query(); ?>

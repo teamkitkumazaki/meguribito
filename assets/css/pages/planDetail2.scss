@@ -5,6 +5,14 @@
     overflow: hidden;
     background: #fff;
     position: relative;
+    .comp-section-title{
+      .title{
+        font-size: 32px;
+        span{
+          display: block;
+        }
+      }
+    }
     .booking_flex{
       @include flexSet;
       align-items: center;
@@ -21,6 +29,7 @@
           @include flexSet;
           align-items: center;
           justify-content: space-between;
+          margin-top: 20px;
           margin-bottom: 30px;
           .add_txt{
             display: block;
@@ -105,6 +114,7 @@
                   right: 0;
                   top:0;
                   bottom:0;
+                  margin: auto;
                   height: 16px;
                 }
               }
