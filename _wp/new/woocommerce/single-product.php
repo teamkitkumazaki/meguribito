@@ -21,34 +21,48 @@
 </header>
 	<article id="planDetail" class="page-plan-detail">
 	  <?php if(have_posts()):while(have_posts()): the_post();?>
+			<?php
+				$kagibito_id = SCF::get('kagibito_id');
+				$kagiibito_thumb = get_the_post_thumbnail_url($kagibito_id,'thumbnail');
+				$kagibito_name = SCF::get('post_title', $kagibito_id);
+				$kagibito_family_name = SCF::get('family_name', $kagibito_id);
+				$kagibito_belongs = SCF::get('belongs', $kagibito_id);
+				$kagibito_area = SCF::get('area_name', $kagibito_id);
+				$kagibito_profile = SCF::get('profile_txt', $kagibito_id);
+			?>
 			<section id="main" class="section-main">
-				<div class="img_box" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/sample/main.jpg);">
-					<img src="<?php echo get_template_directory_uri();?>/assets/img/sample/main_sp.jpg">
+				<?php
+					$main_thumb = SCF::get('main_pc');
+					$main_thumb_sp = SCF::get('main_sp');
+					$thumb_img = wp_get_attachment_image_src($main_thumb,'full');
+					$thumb_img_sp = wp_get_attachment_image_src($main_thumb_sp,'medium_large');
+				?>
+				<div class="img_box" style="background-image: url(<?php echo $thumb_img[0];?>">
+					<img src="<?php echo $thumb_img_sp[0];?>">
 				</div>
 			</section>
 			<section id="lead" class="section-lead">
 				<div class="section_inner">
 					<div class="comp-section-title center">
-						<p class="upper_txt">村上ひろふみさんと行く</p>
-						<h1 class="title"><span>瀬戸内のアーティスト達と過ごす</span><span>ローカルヒッピーライフ</span></h1>
+						<p class="upper_txt"><?php echo $kagibito_name;?>さんと行く</p>
+						<h1 class="title"><?php echo SCF::get('display_title');?></h1>
 					</div>
 					<div class="location">
-						<span class="area">広島県・尾道市</span>
-						<span class="guesthouse">ゲストハウス ヤドカリ</span>
+						<span class="area"><?php echo $kagibito_area;?></span>
+						<span class="guesthouse"><?php echo $kagibito_belongs;?></span>
 					</div>
 					<div class="description">
-						<p>かつて志賀直哉などの文豪も筆を執りに訪れた尾道は、静かな海と風光明媚な景色、そしてほどよく栄え酒場も充実している環境は、じっくりと腰を据えて仕事をするのには最高の街並みです。</p>
-						<p>また、港町として栄えた都市であることから歴史的に文化のアンテナが高いこともあり、現在も国内・海外問わず、アーティストやクリエイターが多く在住・移住しているこの町の日常生活の中には、個性的で力強い生き方をするアーティストとの出会いもたくさんあります。</p>
+						<?php echo SCF::get('plan_desc');?>
 						<div class="comp-booking-button">
 							<button><span>プランを予約する</span></button>
 						</div>
 						<div class="button_wrap">
-							<div class="favorite_button">
+							<!--<div class="favorite_button">
 								<a class="favorite" href="#aaaa">
 									<span class="icon"></span>
 									<span class="text">お気に入り登録</span>
 								</a>
-							</div>
+							</div> -->
 							<div class="sns_wrap">
 								<a class="tw" href="#aaaa">
 									<span class="icon"></span>
@@ -72,23 +86,27 @@
 					<div class="lead_flex">
 						<div class="kagibito_wrap">
 							<div class="kagibito_prof">
-								<a href="#aaaa" class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito04.jpg);"></a>
+								<a href="<?php echo get_permalink($kagibito_id);?>" class="icon" style="background-image: url(<?php echo $kagiibito_thumb;?>);"></a>
 								<div class="kagibito_info">
-									<span class="info">ゲストハウスヤドカリ・オーナー</span>
-									<a class="name" href="#aaaa">村上 ひろふみさん</a>
+									<span class="info"><?php echo $kagibito_belongs;?>・オーナー</span>
+									<a class="name" href="<?php echo get_permalink($kagibito_id);?>"><?php echo $kagibito_name;?>さん</a>
 								</div>
 							</div>
 							<div class="description">
-								<p>ここにカギビトのプロフィールが入ります。ここにカギビトのプロフィールが入ります。ここにカギビトのプロフィールが入ります。ここにカギビトのプロフィールが入ります。ここにカギビトのプロフィールが入ります。</p>
+								<p><?php echo $kagibito_profile;?></p>
 							</div>
 						</div><!-- kagibito_wrap -->
 						<div class="plan_outline">
 							<div class="outline_inner">
 								<span class="title">プランの内容</span>
 								<div class="content">
-									<span class="item">海沿いの絶景コワーキングオフィス使い放題</span>
-									<span class="item">アテンド付きナイトツアー</span>
-									<span class="item">ウシオショコラトル工場見学</span>
+									<?php
+										$repeat_group = SCF::get( 'plan_outline' );
+										foreach ( $repeat_group as $fields ) {
+											$plan_list = $fields['plan_list'];
+										?>
+										<span class="item"><?php echo $plan_list;?></span>
+										<?php } ?>
 								</div>
 							</div>
 						</div><!-- plan_outline -->
@@ -99,173 +117,192 @@
 				<div class="section_inner">
 					<div class="detail_main">
 						<div class="img_wrap">
-							<img src="<?php echo get_template_directory_uri();?>/assets/img/sample/detail_main.jpg">
+							<?php
+								$main_thumb = SCF::get('main_contents_img');
+								$thumb_img = wp_get_attachment_image_src($main_thumb,'full');
+								$thumb_img_sp = wp_get_attachment_image_src($main_thumb,'medium');
+							?>
+							<img
+							 src="<?php echo $thumb_img[0];?>"
+							 srcset="<?php echo $thumb_img[0];?> 1440w, <?php echo $thumb_img_sp[0];?> 768w" sizes="(max-width: 1200px) 100vw, 1200px"
+							>
 						</div>
 						<div class="txt_wrap">
-							<h2 class="main_ttl">海に面した静かなコワーキングスペースで、制作に没頭するワーケーションプラン</h2>
+							<h2 class="main_ttl"><?php echo SCF::get('main_contents_ttl');?></h2>
 							<div class="description">
-								<p>かつて志賀直哉などの文豪も筆を執りに訪れた尾道は、静かな海と風光明媚な景色、そしてほどよく栄え酒場も充実している環境は、じっくりと腰を据えて仕事をするのには最高の街並みです。また、港町として栄えた都市であることから歴史的に文化のアンテナが高いこともあり、現在も国内・海外問わず、アーティストやクリエイターが多く在住・移住しているこの町の日常生活の中には、個性的で力強い生き方をするアーティストとの出会いもたくさんあります。</p>
+								<p><?php echo SCF::get('main_contents_desc');?></p>
 							</div>
+							<?php if(get_post_meta($post->ID, 'main_contents_comment',true)):?>
 							<div class="comp-kagibito-comment">
 								<div class="icon_wrap">
-									<a href="#aaaa">
-										<span class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito04.jpg);"></span>
-										<span class="name">村上さん</span>
+									<a href="<?php echo get_permalink($kagibito_id);?>">
+										<span class="icon" style="background-image: url(<?php echo $kagiibito_thumb;?>);"></span>
+										<span class="name"><?php echo $kagibito_family_name;?>さん</span>
 									</a>
 								</div>
 								<div class="comment_wrap">
 									<div class="comment_inner">
-										<p>“ローカルの巣” 居酒屋「まる」にて、地元の方々と交流しながら地元の食を楽しむツアーです。“ローカルの巣” 居酒屋「まる」にて、地元の方々と交流しながら地元の食。“ローカルの巣” 居酒屋「まる」にて、地元の方々と交流しながら地元の食を楽しむツアーです。“ローカルの巣” 居酒屋「まる」にて、地元の方々と交流しながら地元の食。</p>
+										<p><?php echo SCF::get('main_contents_comment');?></p>
 									</div>
 								</div>
 							</div>
+							<?php endif; ?>
 						</div>
 					</div><!-- detail_main -->
 					<div class="comp-plan-detail-flex">
-						<div class="detail_item">
-							<div class="img_wrap">
-								<img src="<?php echo get_template_directory_uri();?>/assets/img/sample/detail_img01.jpg">
-							</div>
-							<div class="txt_wrap">
-								<div class="title_wrap">
-									<span class="mini_ttl">こんな体験もできます</span>
-									<h3 class="detail_ttl">古参の地元民と、移住者・旅行者が交わるスナック街「新開地区」</h3>
+						<?php
+							$repeat_group = SCF::get( 'sub_contents' );
+							foreach ( $repeat_group as $fields ) {
+								$sub_image = wp_get_attachment_image_src($fields['sub_image'],'large');
+								$sub_eyecatch = $fields['sub_eyecatch'];
+								$sub_ttl = $fields['sub_ttl'];
+								$sub_desc = $fields['sub_desc'];
+								$sub_comment = $fields['sub_comment'];
+							?>
+							<div class="detail_item">
+								<div class="img_wrap">
+									<img src="<?php echo $sub_image[0];?>">
 								</div>
-								<div class="description">
-									<p>市街地から4Km離れた「新開地区」は、港町として栄えた歴史とともに繁栄し今もなお深夜までネオンが灯るスナック・飲屋街。</p>
-									<p>古くから地元の住民に愛されたディープなお店だけではなく、移住者や若い店主が空き家物件を活用してここ数年の間にオープンしたような旅行者でも入りやすいお店も多く存在する。</p>
-								</div>
-								<div class="comp-kagibito-comment">
-									<div class="icon_wrap">
-										<a href="#aaaa">
-											<span class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito04.jpg);"></span>
-											<span class="name">村上さん</span>
-										</a>
+								<div class="txt_wrap">
+									<?php if($sub_ttl != null || $sub_eyecatch != null):?>
+									<div class="title_wrap">
+										<?php if($sub_eyecatch != null):?>
+										<span class="mini_ttl"><?php echo $sub_eyecatch;?></span>
+										<?php endif; ?>
+										<?php if($sub_ttl != null):?>
+										<h3 class="detail_ttl"><?php echo $sub_ttl;?></h3>
+										<?php endif; ?>
 									</div>
-									<div class="comment_wrap">
-										<div class="comment_inner">
-											<p>“ローカルの巣” 居酒屋「まる」にて、地元の方々と交流しながら地元の食を楽しむツアーです。“ローカルの巣” 居酒屋「まる」にて、地元の方々と交流しながら地元の食。</p>
+									<?php endif; ?>
+									<div class="description">
+										<?php echo $sub_desc;?>
+									</div>
+									<?php if($sub_comment != null):?>
+									<div class="comp-kagibito-comment">
+										<div class="icon_wrap">
+											<a href="<?php echo get_permalink($kagibito_id);?>" class="icon">
+												<span class="icon" style="background-image: url(<?php echo $kagiibito_thumb;?>);"></span>
+											</a>
+											<a href="<?php echo get_permalink($kagibito_id);?>">
+												<span class="name"><?php echo $kagibito_family_name;?>さん</span>
+											</a>
+										</div>
+										<div class="comment_wrap">
+											<div class="comment_inner">
+												<p><?php echo $sub_comment;?></p>
+											</div>
 										</div>
 									</div>
+									<?php endif; ?>
 								</div>
-							</div>
-						</div><!-- detail_item -->
-						<div class="detail_item">
-							<div class="img_wrap">
-								<img src="<?php echo get_template_directory_uri();?>/assets/img/sample/detail_img02.jpg">
-							</div>
-							<div class="txt_wrap">
-								<div class="title_wrap">
-									<span class="mini_ttl">こんな体験もできます</span>
-									<h3 class="detail_ttl">古参の地元民と、移住者・旅行者が交わるスナック街「新開地区」</h3>
-								</div>
-								<div class="description">
-									<p>市街地から4Km離れた「新開地区」は、港町として栄えた歴史とともに繁栄し今もなお深夜までネオンが灯るスナック・飲屋街。</p>
-									<p>古くから地元の住民に愛されたディープなお店だけではなく、移住者や若い店主が空き家物件を活用してここ数年の間にオープンしたような旅行者でも入りやすいお店も多く存在する。</p>
-								</div>
-								<div class="comp-kagibito-comment">
-									<div class="icon_wrap">
-										<a href="#aaaa">
-											<span class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito04.jpg);"></span>
-											<span class="name">村上さん</span>
-										</a>
-									</div>
-									<div class="comment_wrap">
-										<div class="comment_inner">
-											<p>“ローカルの巣” 居酒屋「まる」にて、地元の方々と交流しながら地元の食を楽しむツアーです。“ローカルの巣” 居酒屋「まる」にて、地元の方々と交流しながら地元の食。</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div><!-- detail_item -->
+							</div><!-- detail_item -->
+							<?php } ?>
 					</div><!-- comp-plan-detail-flex -->
 				</div><!-- section_inner -->
 			</section>
 			<section id="detail02" class="section-detail02">
 				<div class="section_inner">
+
 					<div class="comp-section-title margin">
-						<p class="upper_txt">街の余白について</p>
-						<h2 class="title"><span>尾道の街の日常</span></h2>
+						<p class="upper_txt"><?php echo esc_html( SCF::get('yohaku_sub_ttl'));?></p>
+						<h2 class="title"><span><?php echo esc_html( SCF::get('yohaku_ttl'));?></span></h2>
 					</div>
 					<div class="comp-plan-detail-flex">
-						<div class="detail_item">
-							<div class="img_wrap">
-								<img src="<?php echo get_template_directory_uri();?>/assets/img/sample/detail_img03.jpg">
-							</div>
-							<div class="txt_wrap">
-								<div class="title_wrap">
-									<span class="mini_ttl">こんな体験もできます</span>
-									<h3 class="detail_ttl">古参の地元民と、移住者・旅行者が交わるスナック街「新開地区」</h3>
+						<?php
+							$repeat_group = SCF::get( 'yohaku_contents' );
+							foreach ( $repeat_group as $fields ) {
+								$yohaku_image = wp_get_attachment_image_src($fields['yohaku_image'],'large');
+								$yohaku_eyecatch = $fields['yohaku_eyecatch'];
+								$yohaku_ttl = $fields['yohaku_contents_ttl'];
+								$yohaku_desc = $fields['yohaku_desc'];
+								$yohaku_comment = $fields['yohaku_comment'];
+							?>
+							<div class="detail_item">
+								<div class="img_wrap">
+									<img src="<?php echo $yohaku_image[0];?>">
 								</div>
-								<div class="description">
-									<p>市街地から4Km離れた「新開地区」は、港町として栄えた歴史とともに繁栄し今もなお深夜までネオンが灯るスナック・飲屋街。</p>
-									<p>古くから地元の住民に愛されたディープなお店だけではなく、移住者や若い店主が空き家物件を活用してここ数年の間にオープンしたような旅行者でも入りやすいお店も多く存在する。</p>
+								<div class="txt_wrap">
+									<?php if($yohaku_eyecatch != null || $yohaku_ttl != null):?>
+									<div class="title_wrap">
+										<?php if($yohaku_eyecatch != null):?>
+										<span class="mini_ttl"><?php echo $yohaku_eyecatch;?></span>
+										<?php endif; ?>
+										<?php if($yohaku_ttl != null):?>
+										<h3 class="detail_ttl"><?php echo $yohaku_ttl;?></h3>
+										<?php endif; ?>
+									</div>
+									<?php endif; ?>
+									<div class="description">
+										<?php echo $yohaku_desc;?>
+									</div>
+									<?php if($yohaku_comment != null):?>
+									<div class="comp-kagibito-comment">
+										<div class="icon_wrap">
+											<a href="<?php echo get_permalink($kagibito_id);?>" class="icon">
+												<span class="icon" style="background-image: url(<?php echo $kagiibito_thumb;?>);"></span>
+											</a>
+											<a href="<?php echo get_permalink($kagibito_id);?>">
+												<span class="name"><?php echo $kagibito_family_name;?>さん</span>
+											</a>
+										</div>
+
+										<div class="comment_wrap">
+											<div class="comment_inner">
+												<p><?php echo $yohaku_comment;?></p>
+											</div>
+										</div>
+									</div>
+									<?php endif; ?>
 								</div>
-							</div>
-						</div><!-- detail_item -->
+							</div><!-- detail_item -->
+							<?php } ?>
 					</div><!-- comp-plan-detail-flex -->
 					<div class="comp-spot-list">
 						<div class="spot_inner">
 							<div class="spot_ttl">
-								<span class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito04.jpg);"></span>
-								<h3 class="title">カギビトおすすめのローカルスポット</h3>
+								<span class="icon" style="background-image: url(<?php echo $kagiibito_thumb;?>);"></span>
+								<h3 class="title"><?php echo SCF::get('spot_main_ttl');?></h3>
 							</div>
 							<div id="spotSlider" class="slick-slider">
-								<div class="item_box slick-slide">
-									<div class="img_wrap">
-										<img src="<?php echo get_template_directory_uri();?>/assets/img/sample/spot01.jpg">
-									</div>
-									<div class="txt_wrap">
-										<div class="title_wrap">
-											<span class="num">1</span>
-											<h4 class="spot_name">拉麺またたび</h4>
+								<?php
+									$repeat_group = SCF::get( 'recommended_spot' );
+									$spot_num = 0;
+									foreach ( $repeat_group as $fields ) {
+										$spot_img = wp_get_attachment_image_src($fields['spot_img'],'medium');
+										$spot_ttl = $fields['spot_ttl'];
+										$spot_desc = $fields['spot_desc'];
+										$spot_comment = $fields['spot_comment'];
+										$spot_num = $spot_num + 1;
+									?>
+									<div class="item_box slick-slide">
+										<div class="img_wrap">
+											<img src="<?php echo $spot_img[0];?>">
 										</div>
-										<div class="description">
-											<p>魚介出汁ベースの伝統的なラーメンを、店主の上田さんが化学調味料を一切使わない独自のエッセンスで再解釈した「尾道ラーメン2.0」。実態はラーメン屋というより居酒屋で、店頭に入ると第一声で「何飲む？」と聞かれる。</p>
-											<div class="comp-kagibito-comment brown">
-												<div class="icon_wrap">
-													<a href="#aaaa">
-														<span class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito04.jpg);"></span>
-														<span class="name">村上さん</span>
-													</a>
-												</div>
-												<div class="comment_wrap">
-													<div class="comment_inner">
-														<p>“ローカルの巣” 居酒屋「まる」にて、地元の方々と交流しながら地元の食を楽しむツアーです。</p>
+										<div class="txt_wrap">
+											<div class="title_wrap">
+												<span class="num"><?php echo $spot_num;?></span>
+												<h4 class="spot_name"><?php echo $spot_ttl;?></h4>
+											</div>
+											<div class="description">
+												<p><?php echo $spot_desc;?></p>
+												<?php if($spot_comment != null):?>
+												<div class="comp-kagibito-comment brown">
+													<div class="icon_wrap">
+														<a href="<?php echo get_permalink($kagibito_id);?>" class="icon">
+															<span class="icon" style="background-image: url(<?php echo $kagiibito_thumb;?>);"></span>
+														</a>
+													</div>
+													<div class="comment_wrap">
+														<div class="comment_inner">
+															<p><?php echo $spot_comment;?></p>
+														</div>
 													</div>
 												</div>
+											<?php endif; ?>
 											</div>
 										</div>
-									</div>
-								</div><!-- item_box -->
-								<div class="item_box slick-slide">
-									<div class="img_wrap">
-										<img src="<?php echo get_template_directory_uri();?>/assets/img/sample/spot02.jpg">
-									</div>
-									<div class="txt_wrap">
-										<div class="title_wrap">
-											<span class="num">2</span>
-											<h4 class="spot_name">浄泉寺</h4>
-										</div>
-										<div class="description">
-											<p>東京で音楽活動を長らく続けてきた雪山さんが、尾道にUターンしてきた際に、有効活用されていなかった実家のお寺のお堂を「地元の人たちが集まる賑やかな場所にしたい」との思いからDJブースとスピーカーを導入し、尾道唯一のクラブとして地元のミュージシャンやアーティストに場所を提供しながら、定期的に音楽イベントや展示会などが開催される尾道随一のディープスポット。</p>
-										</div>
-									</div>
-								</div><!-- item_box -->
-								<div class="item_box slick-slide">
-									<div class="img_wrap">
-										<img src="<?php echo get_template_directory_uri();?>/assets/img/sample/spot03.jpg">
-									</div>
-									<div class="txt_wrap">
-										<div class="title_wrap">
-											<span class="num">3</span>
-											<h4 class="spot_name">やきとり 鳥徳</h4>
-										</div>
-										<div class="description">
-											<p>鹿児島出身の熱狂的阪神ファン(?)堀田さんが店主を務める九州地鶏と焼酎の美味しいお店。長らく地元の人に長く愛されたお店が閉店の危機に直面した際に、ゲストハウス「SHIMA INN」を経営していた堀田さんがお店をそのまま引き継ぎ、「ゲストハウスのフロント兼焼き鳥屋」の形態で2018年にリニューアルオープン。</p>
-										</div>
-									</div>
-								</div><!-- item_box -->
+									</div><!-- item_box -->
+								<?php } ?>
 							</div><!-- slick-slider -->
 						</div>
 					</div><!-- comp-spot-list -->
@@ -277,35 +314,31 @@
 						<div class="txt_wrap">
 							<div class="comp-section-title">
 								<p class="upper_txt">宿泊施設について</p>
-								<h2 class="title"><span>みはらし亭</span></h2>
+								<h2 class="title"><span><?php echo SCF::get('gusthouse');?></span></h2>
 							</div>
 							<div class="address">
-								<span class="add_txt">広島県尾道市東土堂町15-7</span>
-								<a class="map_link" href="#aaaa">MAP</a>
+								<span class="add_txt"><?php echo SCF::get('guesthouse_address');?></span>
+								<a target="_blank" class="map_link" href="<?php echo SCF::get('gesthouse_map');?>">MAP</a>
 							</div>
 							<div id="guestHouseWrap" class="comp-guesthouse-detail">
 								<div id="wrapInner"  class="detail_inner">
 									<div id="yadoImageSlider" class="slick-slider">
+										<?php
+										$repeat_group = SCF::get('guesthouse_img');
+										foreach ( $repeat_group as $fields ) {
+											$guesthouse_img = wp_get_attachment_image_src($fields['guesthouse_img_item'] , 'medium');
+										?>
 										<div class="item_box slick-slide">
 											<div class="slider_img">
-												<img src="<?php echo get_template_directory_uri();?>/assets/img/sample/yado01.jpg">
+												<img src="<?php echo $guesthouse_img[0];?>">
 											</div>
 										</div>
-										<div class="item_box slick-slide">
-											<div class="slider_img">
-												<img src="<?php echo get_template_directory_uri();?>/assets/img/sample/yado02.jpg">
-											</div>
-										</div>
-										<div class="item_box slick-slide">
-											<div class="slider_img">
-												<img src="<?php echo get_template_directory_uri();?>/assets/img/sample/yado03.jpg">
-											</div>
-										</div>
+										<?php } ?>
 									</div>
 									<div class="yado_detail_txt">
-										<h3 class="yado_detail_ttl">尾道を見晴らす、ゲストハウス。</h3>
+										<h3 class="yado_detail_ttl"><?php echo SCF::get('gusthouse_desc_ttl');?></h3>
 										<div class="description">
-											<p>尾道の坂の上にある築100年の茶園【さえん】（別荘建築）を尾道水道が望めるオープンスペースへとして再生しました。日本遺産にもなった絶景の箱庭的空間を歴史あるお寺や身近な自然とともにお楽しみください。</p>
+											<?php echo SCF::get('gusthouse_desc');?>
 										</div>
 									</div>
 								</div>
@@ -336,7 +369,7 @@
 								<p class="upper_txt">旅程・レビュー・よくある質問など</p>
 								<h2 class="title"><span>プラン詳細</span></h2>
 							</div>
-							<div class="comp-time-shcedule">
+							<!-- <div class="comp-time-shcedule">
 								<h3 class="detail_ttl">旅程について</h3>
 								<div id="dayShifter" class="day_shifter">
 									<button>1日目</button>
@@ -393,10 +426,10 @@
 												<h4 class="title">ゲストハウスに帰宅・就寝</h4>
 											</div>
 										</div>
-									</div><!-- schedule_inner -->
-								</div><!-- shcedule_wrap -->
-							</div>
-							<div class="comp-trip-review">
+									</div>
+								</div><
+							</div> -->
+							<!--<div class="comp-trip-review">
 								<h3 class="detail_ttl">旅人の声</h3>
 								<div class="review_wrap">
 									<div class="review_item">
@@ -413,95 +446,65 @@
 											<p class="review">体験の合間にコダテルで仕事をさせてもらったのですが、普通のコワーキングスペースとは違い、すぐ近くで会員さん同士でディスカッションがはじまり、興味津々。気づいたら自分もその話の輪に入って盛り上がってしまいました。自分自身の企てもシェアでき、気づきももらいました。ありがとうございました！</p>
 										</div>
 									</div>
-								</div><!-- review_wrap -->
-							</div><!-- comp-trip-review -->
+								</div>
+							</div> --><!-- comp-trip-review -->
 							<div class="comp-trip-faq">
 								<h3 class="detail_ttl">よくある質問</h3>
 								<div id="faqToggle" class="faq_wrap">
-									<div class="qa_item">
-										<button class="qa_button">
-											<span>滞在中は、コダテルのコワーキングスペースや備品等も使えますか？</span>
-										</button>
-										<div class="qa_contents">
-											<p>長時間に渡らない限りは基本的に無料です。ただし、KAGIBITOの予定もありますので、あらかじめ空いている時間を尋ねていただけるとスムーズです。</p>
+									<?php
+										$repeat_group = SCF::get( 'faq' );
+										foreach ( $repeat_group as $fields ) {
+											$question_q = $fields['question_q'];
+											$queation_a = $fields['queation_a'];
+										?>
+										<div class="qa_item">
+											<button class="qa_button">
+												<span><?php echo $question_q;?></span>
+											</button>
+											<div class="qa_contents">
+												<p><?php echo $question_a;?></p>
+											</div>
 										</div>
-									</div>
-									<div class="qa_item">
-										<button class="qa_button">
-											<span>KAGIBITOに企ての相談をする場合、お金は別途必要でしょうか？</span>
-										</button>
-										<div class="qa_contents">
-											<p>長時間に渡らない限りは基本的に無料です。ただし、KAGIBITOの予定もありますので、あらかじめ空いている時間を尋ねていただけるとスムーズです。</p>
-										</div>
-									</div>
+										<?php } ?>
 								</div><!-- faq_wrap -->
 							</div><!-- comp-trip-faq -->
 							<div class="trip_detail">
 								<h3 class="detail_ttl">プランの基本情報</h3>
 								<div class="comp-chart-layout">
-									<div class="chart_item">
-	              		<span class="title">開催時期</span>
-	              		<span class="content">通年（7月〜9月）</span>
-	            		</div>
-									<div class="chart_item">
-	              		<span class="title">体験料</span>
-	              		<span class="content">10,000円（宿泊費込）</span>
-	            		</div>
-	                <div class="chart_item">
-	              		<span class="title">最小催行人数</span>
-	              		<span class="content">1名</span>
-	            		</div>
-									<div class="chart_item">
-	              		<span class="title">最大催行人数</span>
-	              		<span class="content">4名</span>
-	            		</div>
-									<div class="chart_item">
-	              		<span class="title">拠点名</span>
-	              		<span class="content">コダテル</span>
-	            		</div>
-									<div class="chart_item">
-	              		<span class="title">住所</span>
-	              		<span class="content">〒796-0001　愛媛県八幡浜市向灘2187</span>
-	            		</div>
-									<div class="chart_item">
-										<span class="title">電話番号</span>
-										<span class="content">0894-21-2629</span>
-									</div>
-									<div class="chart_item">
-										<span class="title">移動手段</span>
-										<span class="content">松山空港〜ＪＲ八幡浜駅　車で1.5時間／電車で50分<br>その後、ＪＲ八幡浜駅発のバスに乗って10分、勘定公民館前バス停下車、徒歩２分</span>
-									</div>
-									<div class="chart_item">
-										<span class="title">ネット環境</span>
-										<span class="content">Wi-Fi有り</span>
-									</div>
-									<div class="chart_item">
-										<span class="title">アメニティ・設備</span>
-										<span class="content">ノートパソコン使用に適した仕事スペース/ハンガー/消化器/キッチン/駐車場（２台）/ヘアドライアー/シャワー室/モニター/コーヒーサーバー</span>
-									</div>
-									<div class="chart_item">
-										<span class="title">その他</span>
-										<span class="content">・新型コロナウイルス感染症対策有り<br>・キャンセルについて<br>連絡なしの場合…料金の100％<br>当日…料金の100％<br>前日…料金の80％</span>
-									</div>
+									<?php
+										$repeat_group = SCF::get( 'plan_detail' );
+										foreach ( $repeat_group as $fields ) {
+											$detail_ttl = $fields['detail_ttl'];
+											$detail_content = $fields['detail_content'];
+										?>
+										<div class="chart_item">
+		              		<span class="title"><?php echo $detail_ttl;?></span>
+		              		<span class="content"><?php echo $detail_content;?></span>
+		            		</div>
+										<?php } ?>
 								</div>
 							</div><!-- trip_detail -->
 						</div><!-- flex_left -->
 						<div id="fixedSection" class="detail_fix_section">
+							<?php
+								$article_thumb = SCF::get('thumbnail_img');
+								$article_thumb_img = wp_get_attachment_image_src($article_thumb ,'medium-large');
+							?>
 							<div class="fix_inner">
 								<div class="img_wrap">
-									<img src="<?php echo get_template_directory_uri();?>/assets/img/sample/fix_image.jpg">
+									<img src="<?php echo $article_thumb_img[0];?>">
 								</div>
 								<div class="txt_wrap">
-									<p class="plan_ttl"><span>瀬戸内のアーティスト達と過ごす</span><span>ローカルヒッピーライフ</span></p>
+									<p class="plan_ttl"><?php echo SCF::get('display_title');?></p>
 									<div class="terms_wrap">
 										<div class="price_wrap">
-											<span class="price">11,000円(税込)</span>
-											<span class="duration">2泊3日</span>
+											<span class="price">11,000円(税込)から</span>
+											<span class="duration">2泊3日から</span>
 										</div>
-										<div class="term_detail">
+										<!--<div class="term_detail">
 											<span class="detail_list">シェアオフィス「オノミチシェア」使用料(10時~18時)はプラン料金の中に含まれています。</span>
 											<span class="detail_list">ナイトツアー内での旅人の飲食店は別途自己負担でお願いします。</span>
-										</div>
+										</div> -->
 									</div>
 								</div>
 								<div class="comp-booking-button">
@@ -521,125 +524,51 @@
 						<h2 class="title">その他のプランを探す</h2>
 					</div>
 					<div class="comp-link-button">
-						<a href="#aaaa"><span>体験一覧を見る</span></a>
+						<a href="/plans"><span>体験一覧を見る</span></a>
 					</div>
 				</div><!-- comp-section-title -->
 				<div class="comp-plan-list">
-					<div class="plan_item">
-						<div class="img_wrap">
-							<a href="#aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/assets/img/plan/plan01_sp.jpg);">
-								<img class="img_pc" src="<?php echo get_template_directory_uri();?>/assets/img/plan/plan01.jpg">
-								<!--<img class="img_sp" src="<?php echo get_template_directory_uri();?>/assets/img/plan/plan01_sp.jpg"> -->
-							</a>
-						</div><!-- img_wrap -->
-						<div class="txt_wrap">
-							<div class="comp-kagibito-wrap">
-								<span class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito03.jpg);"></span>
-								<span class="name">長原レキさんと行く</span>
-							</div>
-							<div class="title_wrap">
-								<h3><a href="#aaaa">建設中のゲストハウスに宿泊しながら学ぶ、新しい場所の作り方。</a></h3>
-								<div class="location">
-									<span class="area">徳島県・海陽町</span><span class="guesthouse">IN BETWEEN BLUES</span>
+					<?php
+						$args2 = array(
+							'posts_per_page' => '6',
+							'orderby' => 'rand',
+							'post_type' => 'product',
+							'paged' => $paged,
+						);
+						$the_query2 = new WP_Query( $args2 );
+						if ( $the_query2->have_posts() ) :
+							while ( $the_query2->have_posts() ) : $the_query2->the_post();
+							$kagibito_id = SCF::get('kagibito_id');
+							$kagiibito_thumb = get_the_post_thumbnail_url($kagibito_id,'thumbnail');
+							$kagibito_name = SCF::get('post_title', $kagibito_id);
+							$kagibito_belongs = SCF::get('belongs', $kagibito_id);
+							$kagibito_area = SCF::get('area_name', $kagibito_id);
+							$main_thumb_sp = SCF::get('main_sp');
+							$thumb_img_sp = wp_get_attachment_image_src($main_thumb_sp,'medium_large');
+							echo  '
+							<div class="plan_item">
+								<div class="img_wrap">
+									<a href="'.get_the_permalink().'" style="background-image:url('.$thumb_img_sp[0].');">
+										<img class="img_pc" src="'.get_the_post_thumbnail_url( get_the_ID(), 'medium_large' ).'">
+									</a>
+								</div><!-- img_wrap -->
+								<div class="txt_wrap">
+									<div class="comp-kagibito-wrap">
+										<span class="icon" style="background-image: url('.$kagiibito_thumb.');"></span>
+										<span class="name">'.$kagibito_name.'さんと行く</span>
+									</div>
+									<div class="title_wrap">
+										<h3><a href="'.get_the_permalink().'">'. SCF::get('post_title').'</a></h3>
+										<div class="location">
+											<span class="area">'.$kagibito_area.'</span><span class="guesthouse">'.$kagibito_belongs.'</span>
+										</div>
+									</div><!-- title_wrap -->
 								</div>
-							</div><!-- title_wrap -->
-						</div>
-					</div><!-- plan_item -->
-					<div class="plan_item">
-						<div class="img_wrap">
-							<a href="#aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/assets/img/plan/plan02_sp.jpg);">
-								<img src="<?php echo get_template_directory_uri();?>/assets/img/plan/plan02.jpg">
-							</a>
-						</div><!-- img_wrap -->
-						<div class="txt_wrap">
-							<div class="comp-kagibito-wrap">
-								<span class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito03.jpg);"></span>
-								<span class="name">長原レキさんと行く</span>
-							</div>
-							<div class="title_wrap">
-								<h3><a href="#aaaa">ガイド付きの川釣り体験で鮮魚を釣る・捌く・焼く四万十の旅。</a></h3>
-								<div class="location">
-									<span class="area">徳島県・海陽町</span><span class="guesthouse">IN BETWEEN BLUES</span>
-								</div>
-							</div><!-- title_wrap -->
-						</div>
-					</div><!-- plan_item -->
-					<div class="plan_item">
-						<div class="img_wrap">
-							<a href="#aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/assets/img/plan/plan03_sp.jpg);">
-								<img src="<?php echo get_template_directory_uri();?>/assets/img/plan/plan03.jpg">
-							</a>
-						</div><!-- img_wrap -->
-						<div class="txt_wrap">
-							<div class="comp-kagibito-wrap">
-								<span class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito03.jpg);"></span>
-								<span class="name">長原レキさんと行く</span>
-							</div>
-							<div class="title_wrap">
-								<h3><a href="#aaaa">古都で古くから愛されるサウナの名所で心と体を整える体験。</a></h3>
-								<div class="location">
-									<span class="area">徳島県・海陽町</span><span class="guesthouse">IN BETWEEN BLUES</span>
-								</div>
-							</div><!-- title_wrap -->
-						</div>
-					</div><!-- plan_item -->
-					<div class="plan_item">
-						<div class="img_wrap">
-							<a href="#aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/assets/img/plan/plan04_sp.jpg);">
-								<img src="<?php echo get_template_directory_uri();?>/assets/img/plan/plan04.jpg">
-							</a>
-						</div><!-- img_wrap -->
-						<div class="txt_wrap">
-							<div class="comp-kagibito-wrap">
-								<span class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito03.jpg);"></span>
-								<span class="name">長原レキさんと行く</span>
-							</div>
-							<div class="title_wrap">
-								<h3><a href="#aaaa">大自然×シーシャ？日本屈指の水とすだちで味わう最強の自然派水タバコ。</a></h3>
-								<div class="location">
-									<span class="area">徳島県・海陽町</span><span class="guesthouse">IN BETWEEN BLUES</span>
-								</div>
-							</div><!-- title_wrap -->
-						</div>
-					</div><!-- plan_item -->
-					<div class="plan_item">
-						<div class="img_wrap">
-							<a href="#aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/assets/img/plan/plan05_sp.jpg);">
-								<img src="<?php echo get_template_directory_uri();?>/assets/img/plan/plan05.jpg">
-							</a>
-						</div><!-- img_wrap -->
-						<div class="txt_wrap">
-							<div class="comp-kagibito-wrap">
-								<span class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito03.jpg);"></span>
-								<span class="name">長原レキさんと行く</span>
-							</div>
-							<div class="title_wrap">
-								<h3><a href="#aaaa">大自然×シーシャ？日本屈指の水とすだちで味わう最強の自然派水タバコ。</a></h3>
-								<div class="location">
-									<span class="area">徳島県・海陽町</span><span class="guesthouse">IN BETWEEN BLUES</span>
-								</div>
-							</div><!-- title_wrap -->
-						</div>
-					</div><!-- plan_item -->
-					<div class="plan_item">
-						<div class="img_wrap">
-							<a href="#aaaa" style="background-image:url(<?php echo get_template_directory_uri();?>/assets/img/plan/plan06_sp.jpg);">
-								<img src="<?php echo get_template_directory_uri();?>/assets/img/plan/plan06.jpg">
-							</a>
-						</div><!-- img_wrap -->
-						<div class="txt_wrap">
-							<div class="comp-kagibito-wrap">
-								<span class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito03.jpg);"></span>
-								<span class="name">長原レキさんと行く</span>
-							</div>
-							<div class="title_wrap">
-								<h3><a href="#aaaa">大自然×シーシャ？日本屈指の水とすだちで味わう最強の自然派水タバコ。</a></h3>
-								<div class="location">
-									<span class="area">徳島県・海陽町</span><span class="guesthouse">IN BETWEEN BLUES</span>
-								</div>
-							</div><!-- title_wrap -->
-						</div>
-					</div><!-- plan_item -->
+							</div><!-- plan_item -->';
+							endwhile;
+							endif;
+							wp_reset_postdata();
+						?>
 				</div><!-- comp-plan-list -->
 			</div><!-- section_inner -->
 		</section>
@@ -648,25 +577,36 @@
 		<button id="popClose" class="pop_close"></button>
 		<div class="scroll_wrap">
 			<div class="section_inner">
+				<?php if(have_posts()):while(have_posts()): the_post();?>
+				<?php
+					$kagibito_id = SCF::get('kagibito_id');
+					$kagiibito_thumb = get_the_post_thumbnail_url($kagibito_id,'thumbnail');
+					$kagibito_name = SCF::get('post_title', $kagibito_id);
+					$kagibito_family_name = SCF::get('family_name', $kagibito_id);
+					$kagibito_belongs = SCF::get('belongs', $kagibito_id);
+					$kagibito_area = SCF::get('area_name', $kagibito_id);
+					$kagibito_profile = SCF::get('profile_txt', $kagibito_id);
+				?>
 				<div class="detail_left">
 					<div class="img_wrap">
-						<img src="<?php echo get_template_directory_uri();?>/assets/img/index/pick01.jpg">
+						<img src="<?php echo $article_thumb_img[0];?>">
 					</div>
 					<div class="txt_wrap">
-						<h2 class="plan_ttl">穏やかな海に囲まれながら働き、アーティスト達と過ごすローカルライフ。</h2>
+						<h2 class="plan_ttl"><?php echo SCF::get('display_title');?></h2>
 						<div class="location">
-							<span class="area">広島県・尾道市</span>
-							<span class="guesthouse">ゲストハウス ヤドカリ</span>
+							<span class="area"><?php echo $kagibito_area;?></span>
+							<span class="guesthouse"><?php echo $kagibito_belongs;?></span>
 						</div>
 						<div class="kagibito_wrap">
-							<a href="#aaaa" class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito04.jpg);"></a>
+							<a href="?php echo get_permalink($kagibito_id);?>" class="icon" style="background-image: url(<?php echo $kagiibito_thumb;?>);"></a>
 							<div class="kagibito_info">
-								<span class="info">ゲストハウスヤドカリ・オーナー</span>
-								<a class="name" href="#aaaa">村上 ひろふみさん</a>
+								<span class="info"><?php echo $kagibito_belongs;?></span>
+								<a class="name" href="<?php echo get_permalink($kagibito_id);?>"><?php echo $kagibito_name;?>さん</a>
 							</div>
 						</div>
 					</div>
 				</div><!-- detail_left -->
+				<?php endwhile; endif; ?>
 				<div class="detail_right">
 					<div class="comp-booking-section">
 						<div class="default_wrap">

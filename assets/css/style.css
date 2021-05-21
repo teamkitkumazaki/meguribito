@@ -1820,6 +1820,12 @@ footer .footer_inner .footer_lower .copyright {
   background: #fff;
   position: relative;
 }
+.page-plan-detail .section-booking .comp-section-title .title {
+  font-size: 32px;
+}
+.page-plan-detail .section-booking .comp-section-title .title span {
+  display: block;
+}
 .page-plan-detail .section-booking .booking_flex {
   display: flex;
   flex-wrap: wrap;
@@ -1841,6 +1847,7 @@ footer .footer_inner .footer_lower .copyright {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 .page-plan-detail .section-booking .booking_flex .txt_wrap .address .add_txt {
@@ -1933,6 +1940,7 @@ footer .footer_inner .footer_lower .copyright {
   right: 0;
   top: 0;
   bottom: 0;
+  margin: auto;
   height: 16px;
 }
 .page-plan-detail .section-detail03 .detail_fix_section .fix_inner .txt_wrap .terms_wrap .price_wrap .duration {
@@ -2607,6 +2615,229 @@ footer .footer_inner .footer_lower .copyright {
   }
   .page-about .section-member {
     margin-bottom: 30px;
+  }
+}
+.page-news-list .section-news {
+  margin-top: 200px;
+  margin-bottom: 160px;
+}
+
+@media screen and (max-width: 980px) {
+  .page-news-list .section-news {
+    margin-top: 160px;
+    margin-bottom: 120px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-news-list .section-news {
+    margin-top: 120px;
+    margin-bottom: 80px;
+  }
+  .page-news-list .section-news .comp-section-title {
+    text-align: center;
+  }
+  .page-news-list .section-news .comp-section-title .title {
+    font-size: 6.6vw;
+  }
+}
+.page-news-detail .section-main .img_box {
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.page-news-detail .section-contents {
+  margin-bottom: 120px;
+}
+.page-news-detail .section-contents .post_contents {
+  width: 65%;
+  margin: 0 auto;
+}
+.page-news-detail .section-contents .post_contents .post_head {
+  position: relative;
+  margin-top: 60px;
+  padding-bottom: 45px;
+  margin-bottom: 45px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.page-news-detail .section-contents .post_contents .post_head .post_date {
+  position: absolute;
+  left: -140px;
+  top: 103px;
+  transform: rotate(90deg);
+  text-align: left;
+  width: 200px;
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.page-news-detail .section-contents .post_contents .post_head .post_title {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.page-news-detail .section-contents .post_contents .post_head .post_tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+.page-news-detail .section-contents .post_contents .post_head .post_tags li {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  margin-right: 10px;
+}
+.page-news-detail .section-contents .post_contents .post_head .post_tags li:nth-last-of-type(1) {
+  margin-right: 0;
+}
+.page-news-detail .section-contents .post_contents .post_head .post_tags li a {
+  transition: opacity 0.3s;
+  font-size: 16px;
+  color: #646464;
+}
+.page-news-detail .section-contents .post_contents .post_head .post_tags li a:hover {
+  opacity: 0.75;
+}
+.page-news-detail .section-contents .post_contents .post_head .post_desc {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+}
+.page-news-detail .section-contents .post_contents .sns_share {
+  border-top: 1px solid #d8d8d8;
+  padding-top: 60px;
+  margin-top: 60px;
+}
+.page-news-detail .section-contents .post_contents .sns_share .share_ttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.page-news-detail .section-contents .post_contents .sns_share ul {
+  text-align: center;
+  margin-top: 35px;
+}
+.page-news-detail .section-contents .post_contents .sns_share ul li {
+  display: inline-block;
+  margin: 0 8px;
+}
+.page-news-detail .section-contents .post_contents .sns_share ul li a {
+  transition: opacity 0.3s;
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+.page-news-detail .section-contents .post_contents .sns_share ul li a:hover {
+  opacity: 0.75;
+}
+.page-news-detail .section-relation {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.page-news-detail .section-relation .relation_ttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.page-news-detail .section-relation .comp-news-list .news_item:nth-of-type(1) {
+  display: none;
+}
+
+@media screen and (max-width: 980px) {
+  .page-news-detail .section-contents {
+    margin-bottom: 80px;
+  }
+  .page-news-detail .section-contents .post_contents {
+    width: 100%;
+  }
+  .page-news-detail .section-contents .post_contents .post_head .post_date {
+    position: static;
+    transform: rotate(0deg);
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .page-news-detail .section-relation {
+    margin-top: 120px;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-news-detail .section-main .img_box {
+    height: 60vw;
+  }
+  .page-news-detail .section-contents {
+    margin-bottom: 60px;
+  }
+  .page-news-detail .section-contents .post_contents {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .page-news-detail .section-contents .post_contents .post_head {
+    margin-top: 40px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  .page-news-detail .section-contents .post_contents .post_head .post_title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .page-news-detail .section-contents .post_contents .post_head .post_tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+  .page-news-detail .section-contents .post_contents .post_head .post_tags li a {
+    transition: opacity 0.3s;
+    font-size: 16px;
+    color: #646464;
+  }
+  .page-news-detail .section-contents .post_contents .post_head .post_tags li a:hover {
+    opacity: 0.75;
+  }
+  .page-news-detail .section-contents .post_contents .post_head .post_desc {
+    font-size: 14px;
+  }
+  .page-news-detail .section-contents .post_contents .sns_share {
+    padding-top: 40px;
+    margin-top: 40px;
+  }
+  .page-news-detail .section-contents .post_contents .sns_share .share_ttl {
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+  .page-news-detail .section-contents .post_contents .sns_share ul {
+    margin-top: 25px;
+  }
+  .page-news-detail .section-contents .post_contents .sns_share ul li a {
+    width: 60px;
+    height: 60px;
+  }
+  .page-news-detail .section-relation {
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+  .page-news-detail .section-relation .relation_ttl {
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 40px;
   }
 }
 .page-cart {
@@ -8094,8 +8325,6 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-plan-detail-flex .detail_item .txt_wrap .title_wrap {
   margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px dotted #BF992E;
 }
 .comp-plan-detail-flex .detail_item .txt_wrap .title_wrap .mini_ttl {
   display: inline-block;
@@ -8159,8 +8388,6 @@ footer .footer_inner .footer_lower .copyright {
   }
   .comp-plan-detail-flex .detail_item .txt_wrap .title_wrap {
     margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px dotted #BF992E;
   }
   .comp-plan-detail-flex .detail_item .txt_wrap .title_wrap .mini_ttl {
     font-size: 12px;
@@ -8514,7 +8741,8 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-guesthouse-detail .slick-slider {
   width: 500px;
-  margin-bottom: 60px;
+  min-height: 310px;
+  margin-bottom: 80px;
 }
 .comp-guesthouse-detail .slick-slider .item_box {
   display: block !important;
@@ -8530,10 +8758,11 @@ footer .footer_inner .footer_lower .copyright {
 .comp-guesthouse-detail .yado_detail_txt .yado_detail_ttl {
   font-family: "FOT-筑紫A丸ゴシック Std D";
   font-weight: bold;
-  font-size: 24px;
+  font-size: 22px;
   line-height: normal;
   letter-spacing: 0.03em;
   color: #363636;
+  margin-bottom: 10px;
 }
 .comp-guesthouse-detail .yado_detail_txt .description {
   font-size: 16px;
@@ -8563,6 +8792,7 @@ footer .footer_inner .footer_lower .copyright {
   }
   .comp-guesthouse-detail .slick-slider {
     width: 70vw;
+    min-height: unset;
     margin: 0 auto 30px;
   }
   .comp-guesthouse-detail .slick-slider .item_box {
@@ -10208,6 +10438,9 @@ footer .footer_inner .footer_lower .copyright {
 .comp-news-list .news_item:nth-of-type(3n+4) {
   margin-right: 0;
 }
+.comp-news-list.archive .news_item:nth-of-type(n+2) {
+  margin-bottom: 60px;
+}
 
 @media screen and (max-width: 1200px) {
   .comp-news-list .news_item:nth-of-type(1) {
@@ -10327,6 +10560,9 @@ footer .footer_inner .footer_lower .copyright {
     width: 100%;
     box-sizing: border-box;
     padding: 15px 0;
+  }
+  .comp-news-list.archive .news_item:nth-of-type(n+2) {
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 720px) {
@@ -11060,11 +11296,12 @@ footer .footer_inner .footer_lower .copyright {
   display: block;
   width: 180px;
   height: 180px;
+  border-radius: 50%;
   margin-right: 30px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-size: contain;
+  background-size: 105%;
 }
 .comp-project-member .member_item .txt_wrap {
   width: calc(100% - 210px);
@@ -11293,8 +11530,20 @@ footer .footer_inner .footer_lower .copyright {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: #242424;
   overflow: hidden;
+}
+.comp-main-slider::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 10;
 }
 .comp-main-slider ul li {
   position: absolute;
@@ -11307,12 +11556,14 @@ footer .footer_inner .footer_lower .copyright {
   background-size: cover;
   opacity: 0;
   transition: opacity 2.5s, transform 8s;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+}
+@media screen and (min-width: 721px) {
+  .comp-main-slider ul li {
+    background-image: none !important;
+  }
 }
 .comp-main-slider ul li img {
-  opacity: 0;
+  opacity: 1;
 }
 .comp-main-slider ul li.display_slide {
   opacity: 1;
@@ -11325,6 +11576,9 @@ footer .footer_inner .footer_lower .copyright {
   }
   .comp-main-slider ul li {
     height: 80vh;
+  }
+  .comp-main-slider ul li img {
+    opacity: 0;
   }
 }
 .comp-slider-txt {
@@ -11645,8 +11899,8 @@ footer .footer_inner .footer_lower .copyright {
 .comp-pickup-plan .pickup_item:nth-of-type(1) .img_wrap a {
   display: block;
   overflow: hidden;
-  height: 43vw;
-  max-height: 740px;
+  height: 42vw;
+  max-height: 720px;
 }
 .comp-pickup-plan .pickup_item:nth-of-type(1) .txt_wrap {
   width: 100%;
@@ -12095,7 +12349,7 @@ footer .footer_inner .footer_lower .copyright {
   overflow: hidden;
   width: 100%;
   max-height: 375px;
-  height: 22vw;
+  height: 21vw;
 }
 .comp-footer-link .link_item a .img_wrap img {
   transition: transform 0.7s, opacity 0.7s;
@@ -12374,6 +12628,64 @@ footer .footer_inner .footer_lower .copyright {
     font-size: 12px;
     letter-spacing: 0.4px;
     padding: 0 15px;
+  }
+}
+/* ニュース詳細 */
+.comp-article-content .content_item {
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+.comp-article-content .content_item:nth-last-of-type(1) {
+  border-bottom: 0;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.comp-article-content .content_item .section_ttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  letter-spacing: normal;
+  margin-bottom: 35px;
+}
+.comp-article-content .content_item .img_wrap {
+  margin-bottom: 30px;
+}
+.comp-article-content .content_item .content_txt {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  margin-bottom: 40px;
+}
+.comp-article-content .content_item .content_txt:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.comp-article-content .content_item .content_txt p {
+  margin-bottom: 1.5em;
+}
+.comp-article-content .content_item .content_txt p:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 720px) {
+  .comp-article-content .content_item {
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+  }
+  .comp-article-content .content_item .section_ttl {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  .comp-article-content .content_item .img_wrap {
+    margin-bottom: 30px;
+  }
+  .comp-article-content .content_item .content_txt {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.6px;
+    font-size: 14px;
   }
 }
 /* カート・マイページ */
