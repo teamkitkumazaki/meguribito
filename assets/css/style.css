@@ -689,15 +689,15 @@ footer .footer_inner .footer_upper .sns_wrap a:nth-last-of-type(1) {
   margin-right: 0;
 }
 footer .footer_inner .footer_upper .sns_wrap a.ig {
-  background-size: 22px;
+  background-size: 20px;
   background-image: url(../img/common/icon_ig.png);
 }
 footer .footer_inner .footer_upper .sns_wrap a.fb {
-  background-size: 14px;
-  background-image: url(../img/common/icon_fb.png);
+  background-size: 18px;
+  background-image: url(../img/common/icon_note_white.png);
 }
 footer .footer_inner .footer_upper .sns_wrap a.tw {
-  background-size: 20px;
+  background-size: 18px;
   background-image: url(../img/common/icon_tw.png);
 }
 footer .footer_inner .footer_lower .nav_upper {
@@ -792,13 +792,13 @@ footer .footer_inner .footer_lower .copyright {
     background-size: cover;
   }
   footer .footer_inner .footer_upper .sns_wrap a.ig {
-    background-size: 18px;
+    background-size: 16px;
   }
   footer .footer_inner .footer_upper .sns_wrap a.fb {
-    background-size: 10px;
+    background-size: 14px;
   }
   footer .footer_inner .footer_upper .sns_wrap a.tw {
-    background-size: 16px;
+    background-size: 14px;
   }
   footer .footer_inner .footer_lower .nav_upper {
     display: flex;
@@ -847,13 +847,13 @@ footer .footer_inner .footer_lower .copyright {
     margin-right: 15px;
   }
   footer .footer_inner .footer_upper .sns_wrap a.ig {
-    background-size: 18px;
+    background-size: 16px;
   }
   footer .footer_inner .footer_upper .sns_wrap a.fb {
-    background-size: 10px;
+    background-size: 12px;
   }
   footer .footer_inner .footer_upper .sns_wrap a.tw {
-    background-size: 16px;
+    background-size: 14px;
   }
   footer .footer_inner .footer_lower .nav_upper {
     display: block;
@@ -2509,9 +2509,10 @@ footer .footer_inner .footer_lower .copyright {
 }
 .page-about .section-org .flex_wrap .txt_wrap .org_name .small {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1;
   letter-spacing: normal;
+  margin-bottom: 10px;
 }
 .page-about .section-org .flex_wrap .txt_wrap .org_name .name {
   font-family: "FOT-筑紫A丸ゴシック Std D";
@@ -2539,10 +2540,27 @@ footer .footer_inner .footer_lower .copyright {
   .page-about .section-main {
     margin-bottom: 80px;
   }
+  .page-about .section-main .section_inner {
+    position: relative;
+    z-index: 10;
+  }
   .page-about .section-main .img_wrap {
     height: 500px;
     margin-bottom: 60px;
     background-image: url(../img/about/main_sp.jpg);
+    position: relative;
+  }
+  .page-about .section-main .img_wrap::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
   }
   .page-about .section-org {
     margin-bottom: 80px;
@@ -5080,22 +5098,43 @@ footer .footer_inner .footer_lower .copyright {
     padding: 60px 0 20px;
   }
 }
+.page-transaction {
+  margin-bottom: 120px;
+}
+.page-transaction .trans_ttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 0.03em;
+  margin-bottom: 40px;
+}
+.page-transaction .comp-underpage-lead {
+  margin-bottom: 80px;
+}
 .page-transaction .comp-underpage-lead .page_ttl {
   margin-bottom: 70px;
 }
-.page-transaction .comp-underpage-lead {
-  margin-bottom: 120px;
-}
 
 @media screen and (max-width: 980px) {
+  .page-transaction {
+    margin-bottom: 100px;
+  }
   .page-transaction .comp-block-line {
     margin: 60px 0;
   }
 }
 @media screen and (max-width: 720px) {
-  .page-transaction .comp-underpage-lead .page_ttl {
-    font-size: 7.5vw;
+  .page-transaction {
+    margin-bottom: 60px;
+  }
+  .page-transaction .trans_ttl {
+    text-align: center;
+    font-size: 18px;
     margin-bottom: 30px;
+  }
+  .page-transaction .comp-underpage-lead .page_ttl {
+    font-size: 6.5vw;
+    margin-bottom: 40px;
   }
   .page-transaction .comp-underpage-lead {
     margin-bottom: 60px;
@@ -5133,6 +5172,56 @@ footer .footer_inner .footer_lower .copyright {
   }
   .page-privacy .section-terms {
     margin-bottom: 60px;
+  }
+}
+.page-terms {
+  margin-bottom: 120px;
+}
+.page-terms .section-lead {
+  margin-bottom: 60px;
+}
+.page-terms .section-lead .lead_txt {
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.32px;
+}
+.page-terms .section-lead .lead_txt .sub_title {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  margin-bottom: 15px;
+}
+.page-terms .section-terms {
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 980px) {
+  .page-terms {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-terms {
+    margin-bottom: 60px;
+  }
+  .page-terms .section-lead {
+    margin-bottom: 60px;
+  }
+  .page-terms .section-lead .lead_txt {
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.32px;
+  }
+  .page-terms .section-lead .lead_txt .sub_title {
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    margin-bottom: 15px;
+  }
+  .page-terms .section-terms {
+    margin-top: 60px;
   }
 }
 /*######## マイページ ##########*/
@@ -6328,8 +6417,7 @@ footer .footer_inner .footer_lower .copyright {
 /* 共通パーツ */
 .comp-fixed-header {
   position: fixed;
-  background-color: #fff;
-  box-shadow: 0px 5px 5px 0 rgba(6, 0, 1, 0.05);
+  background-color: #f9f6f3;
   z-index: 100;
   opacity: 0;
   transition: transform 0.3s cubic-bezier(0.5, 1, 0.89, 1), opacity 0.3s cubic-bezier(0.5, 1, 0.89, 1);
@@ -6771,15 +6859,15 @@ footer .footer_inner .footer_lower .copyright {
   margin-right: 0;
 }
 .comp-slide-menu .search_inner .content .sns_wrap a.ig {
-  background-size: 22px;
+  background-size: 16px;
   background-image: url(../img/common/icon_ig.png);
 }
 .comp-slide-menu .search_inner .content .sns_wrap a.fb {
   background-size: 14px;
-  background-image: url(../img/common/icon_fb.png);
+  background-image: url(../img/common/icon_note_white.png);
 }
 .comp-slide-menu .search_inner .content .sns_wrap a.tw {
-  background-size: 20px;
+  background-size: 14px;
   background-image: url(../img/common/icon_tw.png);
 }
 .comp-slide-menu .search_inner .content .nav_footer {
@@ -6961,13 +7049,13 @@ footer .footer_inner .footer_lower .copyright {
     margin-right: 10px;
   }
   .comp-slide-menu .search_inner .content .sns_wrap a.ig {
-    background-size: 22px;
+    background-size: 16px;
   }
   .comp-slide-menu .search_inner .content .sns_wrap a.fb {
-    background-size: 14px;
+    background-size: 12px;
   }
   .comp-slide-menu .search_inner .content .sns_wrap a.tw {
-    background-size: 20px;
+    background-size: 14px;
   }
   .comp-slide-menu .search_inner .content .nav_footer {
     display: flex;
@@ -7705,7 +7793,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 
 .comp-block-line {
-  width: 100vw;
+  width: 110vw;
   height: 1px;
   background: #d8d8d8;
   border: 0px;
@@ -11771,8 +11859,6 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-pickup-plan .pickup_item .txt_wrap .title_wrap {
   margin-bottom: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px dotted #BF992E;
 }
 .comp-pickup-plan .pickup_item .txt_wrap .title_wrap a {
   display: block;
@@ -11783,7 +11869,7 @@ footer .footer_inner .footer_lower .copyright {
   line-height: 1.54;
   letter-spacing: 1.2px;
   color: inherit;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   transition: opacity 0.3s;
 }
 .comp-pickup-plan .pickup_item .txt_wrap .title_wrap a:hover {
@@ -11911,6 +11997,9 @@ footer .footer_inner .footer_lower .copyright {
   justify-content: space-between;
   align-items: center;
 }
+.comp-pickup-plan .pickup_item:nth-of-type(1) .txt_wrap .title_wrap .title_txt {
+  width: 60%;
+}
 .comp-pickup-plan .pickup_item:nth-of-type(1) .txt_wrap .title_wrap .slider_shifter {
   display: flex;
   flex-wrap: wrap;
@@ -11937,6 +12026,8 @@ footer .footer_inner .footer_lower .copyright {
   border: 1px solid #BF992E;
 }
 .comp-pickup-plan .pickup_item:nth-of-type(1) .txt_wrap .title_wrap a {
+  display: block;
+  margin-bottom: 20px;
   font-size: 32px;
   line-height: 1.44;
   letter-spacing: 2.46px;
@@ -12035,19 +12126,16 @@ footer .footer_inner .footer_lower .copyright {
     justify-content: space-between;
     align-items: center;
   }
-  .comp-pickup-plan .pickup_item:nth-of-type(1) .txt_wrap .title_wrap .slider_shifter {
-    width: 300px;
-  }
-  .comp-pickup-plan .pickup_item:nth-of-type(1) .txt_wrap .title_wrap .title_txt {
-    width: calc(100% - 350px);
-  }
-  .comp-pickup-plan .pickup_item:nth-of-type(1) .txt_wrap .title_wrap a {
+  .comp-pickup-plan .pickup_item:nth-of-type(1) .txt_wrap .title_wrap .title_txt a {
     font-size: 26px;
     line-height: 1.5;
     letter-spacing: 1.8px;
   }
-  .comp-pickup-plan .pickup_item:nth-of-type(1) .txt_wrap .title_wrap a span {
+  .comp-pickup-plan .pickup_item:nth-of-type(1) .txt_wrap .title_wrap .title_txt a span {
     display: inline;
+  }
+  .comp-pickup-plan .pickup_item:nth-of-type(1) .txt_wrap .title_wrap .slider_shifter {
+    width: 300px;
   }
   .comp-pickup-plan .pickup_item:nth-of-type(n+2) {
     width: 100%;
@@ -12214,8 +12302,6 @@ footer .footer_inner .footer_lower .copyright {
   }
   .comp-pickup-plan .pickup_item .txt_wrap .title_wrap {
     margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px dotted #BF992E;
   }
   .comp-pickup-plan .pickup_item .txt_wrap .location span {
     font-size: 14px;
@@ -12744,6 +12830,36 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-privacy-text .text_item .content_item p.mt {
   margin-top: 15px;
+}
+.comp-privacy-text .text_item .content_section {
+  margin-top: 40px;
+}
+.comp-privacy-text .text_item .content_section .content_ttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  line-height: 1.6;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  margin-bottom: 15px;
+}
+.comp-privacy-text .text_item .content_section .desc_ttl {
+  font-size: 18px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.comp-privacy-text .text_item .content_section .desc {
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.32px;
+  margin-bottom: 1.5em;
+}
+.comp-privacy-text .text_item .content_section .desc.mt {
+  margin-top: 1.5em;
+}
+.comp-privacy-text .text_item .content_section .desc:nth-last-of-type(1) {
+  margin-bottom: 0;
 }
 .comp-privacy-text .text_item .list {
   margin-top: 15px;

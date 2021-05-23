@@ -37,8 +37,6 @@
       width: 43%;
       .title_wrap{
         margin-bottom: 30px;
-        padding-bottom: 30px;
-        border-bottom: 1px dotted $pointYellow;
         a{
           display: block;
           @include tsukushi-b;
@@ -47,7 +45,7 @@
           line-height: 1.54;
           letter-spacing: 1.2px;
           color: inherit;
-          margin-bottom: 15px;
+          margin-bottom: 25px;
           @include hover;
         }
       }
@@ -158,6 +156,9 @@
           @include flexSet;
           justify-content: space-between;
           align-items: center;
+          .title_txt{
+            width: 60%;
+          }
           .slider_shifter{
             @include flexSet;
             width: 330px;
@@ -182,6 +183,8 @@
             }
           }
           a{
+            display: block;
+            margin-bottom: 20px;
             font-size: 32px;
             line-height: 1.44;
             letter-spacing: 2.46px;
@@ -291,19 +294,19 @@
             @include flexSet;
             justify-content: space-between;
             align-items: center;
+            .title_txt{
+
+              a{
+                font-size: 26px;
+                line-height: 1.5;
+                letter-spacing: 1.8px;
+                span{
+                  display: inline;
+                }
+              }
+            }
             .slider_shifter{
               width: 300px;
-            }
-            .title_txt{
-              width: calc(100% - 350px);
-            }
-            a{
-              font-size: 26px;
-              line-height: 1.5;
-              letter-spacing: 1.8px;
-              span{
-                display: inline;
-              }
             }
           }
         }
@@ -490,8 +493,6 @@
         width: 100%;
         .title_wrap{
           margin-bottom: 20px;
-          padding-bottom: 20px;
-          border-bottom: 1px dotted #BF992E;
         }
         .location{
           span{

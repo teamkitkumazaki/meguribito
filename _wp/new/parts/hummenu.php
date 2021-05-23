@@ -12,17 +12,19 @@
 			</div>
 			<nav class="h_nav">
 				<ul>
-					<li><a href="<?php echo esc_url(home_url('/' ));?>service">メグリビトについて</a></li>
-					<li><a href="<?php echo esc_url(home_url('/' ));?>information/">運営からのお知らせ</a></li>
+					<!--<li><a href="<?php echo esc_url(home_url('/' ));?>information">運営からのお知らせ</a></li> -->
+					<li><a href="<?php echo esc_url(home_url('/' ));?>plans">プラン一覧</a></li>
+					<li><a href="<?php echo esc_url(home_url('/' ));?>kagibito-list">カギビト一覧</a></li>
 				</ul>
 				<ul>
+					<li><a href="<?php echo esc_url(home_url('/' ));?>service">メグリビトについて</a></li>
 					<li><a href="<?php echo esc_url(home_url('/' ));?>about">私たちについて</a></li>
-					<li><a href="<?php echo esc_url(home_url('/' ));?>flow">旅の流れ</a></li>
+					<!--<li><a href="<?php echo esc_url(home_url('/' ));?>flow">旅の流れ</a></li> -->
 				</ul>
 			</nav><!-- h_nav -->
 		</div><!-- header_left -->
 		<div class="header_right">
-			<div class="count_contents">
+			<!--<div class="count_contents">
 				<div class="count_item line">
 					<a href="<?php echo esc_url(home_url('/' ));?>plans">
 						<?php
@@ -53,7 +55,7 @@
 						<span class="content"><span>カギビト一覧</span></span>
 					</a>
 				</div>
-			</div><!-- count_contents -->
+			</div> --><!-- count_contents -->
 			<div class="box_contents">
 				<a class="box_item cart" href="<?php echo esc_url(home_url('/' ));?>my-account/bookings/"><span>マイページ</span></a>
 			</div>
@@ -65,7 +67,7 @@
 	<button id="humClose" class="hum_close"></button>
 	<div class="search_inner">
 		<div class="content">
-			<div class="count_contents">
+			<!--<div class="count_contents">
 				<div class="count_item line">
 					<a href="<?php echo esc_url(home_url('/' ));?>plans">
 						<span class="number">
@@ -82,7 +84,7 @@
 						<span class="content"><span>カギビト一覧</span></span>
 					</a>
 				</div>
-			</div>
+			</div> -->
 			<div class="hummenu_nav_upper">
 				<div class="nav_item">
 					<a class="mypage" href="<?php echo esc_url(home_url('/' ));?>my-account/bookings/"><span>マイページ</span></a>
@@ -92,11 +94,17 @@
 				<div class="nav_item">
 					<a href="<?php echo esc_url(home_url('/' ));?>service"><span>メグリビトについて</span></a>
 				</div>
-				<div class="nav_item">
+				<!--<div class="nav_item">
 					<a href="<?php echo esc_url(home_url('/' ));?>information/"><span>運営からのお知らせ</span></a>
-				</div>
+				</div> -->
 				<div class="nav_item">
 					<a href="<?php echo esc_url(home_url('/' ));?>about"><span>運営団体</span></a>
+				</div>
+				<div class="nav_item">
+					<a href="<?php echo esc_url(home_url('/' ));?>plans">プラン一覧</a>
+				</div>
+				<div class="nav_item">
+					<a href="<?php echo esc_url(home_url('/' ));?>kagibito-list">カギビト一覧</a>
 				</div>
 				<div class="nav_item">
 					<a href="<?php echo esc_url(home_url('/' ));?>flow"><span>旅の流れ</span></a>
@@ -110,17 +118,20 @@
 					<a href="<?php echo esc_url(home_url('/' ));?>transaction"><span>特定商取引法に基づく表記</span></a>
 				</div>
 				<div class="nav_item">
+					<a href="<?php echo esc_url(home_url('/'));?>terms">利用規約</a>
+				</div>
+				<div class="nav_item">
 					<a href="<?php echo esc_url(home_url('/' ));?>contact"><span>お問い合わせ</span></a>
 				</div>
 			</div>
 			<div class="sns_wrap">
 				  <a class="ig" target="_blank" href="https://www.instagram.com/meguribito_tabi/"></a>
-				<a class="fb" target="_blank" href="https://note.com/meguribito_tabi/n/nbe2445eed532"></a>
+				<a class="fb" target="_blank" href="https://note.com/meguribito_tabi"></a>
 				<a class="tw" target="_blank" href="https://twitter.com/MEGURIBITO_TABI"></a>
 			</div>
 			<div class="nav_footer">
 				<span class="logo"></span>
-				<span class="catchcopy">だれかの日常を、あなたの旅先に。</span>
+				<span class="catchcopy">誰かの日常を、あなたの旅先に</span>
 			</div>
 		</div><!-- content -->
 </div><!-- search_inner -->

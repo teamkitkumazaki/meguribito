@@ -1,0 +1,49 @@
+.page-terms{
+  margin-bottom: 120px;
+  .section-lead{
+    margin-bottom: 60px;
+    .lead_txt{
+      font-size: 14px;
+      line-height: 1.8;
+      letter-spacing: 0.32px;
+      .sub_title{
+        @include tsukushi-b;
+        font-size: 18px;
+        letter-spacing: 0.03em;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .section-terms{
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 980px){
+  .page-terms{
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 720px){
+  .page-terms{
+    margin-bottom: 60px;
+    .section-lead{
+      margin-bottom: 60px;
+      .lead_txt{
+        font-size: 14px;
+        line-height: 1.8;
+        letter-spacing: 0.32px;
+        .sub_title{
+          @include tsukushi-b;
+          font-size: 18px;
+          letter-spacing: 0.03em;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .section-terms{
+      margin-top: 60px;
+    }
+  }
+}

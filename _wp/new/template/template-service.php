@@ -127,7 +127,7 @@
   							<div class="txt_wrap">
   								<div class="title_wrap">
   									<h3 class="name">ジモトビト</h3>
-  									<span class="name_added"> (地元人・ZIMOTOBITO)</span>
+  									<span class="name_added"> (地元人・JIMOTOBITO)</span>
   								</div>
   								<div class="description">
   									<p>タビビトを受け入れ、地域ならではの体験を提供してくれる地元民。その街で、自分の仕事場や自分の好きなものを紹介してくれます。</p>

@@ -64,15 +64,30 @@
 								</a>
 							</div> -->
 							<div class="sns_wrap">
-								<a class="tw" href="#aaaa">
+								<a
+									class="tw"
+									target="_blank"
+        					rel="nofollow noopener"
+									href="https://twitter.com/share?url=<? echo get_the_permalink(); ?>&text=<? echo get_the_title(); ?>"
+								>
 									<span class="icon"></span>
 									<span class="text">ツイートする</span>
 								</a>
-								<a class="fb" href="#aaaa">
+								<a
+									class="fb"
+									target="_blank"
+					        rel="nofollow noopener"
+									href="http://www.facebook.com/share.php?u=<? echo get_the_permalink(); ?>"
+								>
 									<span class="icon"></span>
 									<span class="text">シェアする</span>
 								</a>
-								<a class="line" href="#aaaa">
+								<a
+									class="line"
+									target="_blank"
+					        rel="nofollow noopener"
+									href="https://social-plugins.line.me/lineit/share?url=<? echo get_the_permalink(); ?>"
+								>
 									<span class="icon"></span>
 									<span class="text">LINEで送る</span>
 								</a>
@@ -343,7 +358,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="facility">
+							<!--<div class="facility">
 								<span>エレベーターあり</span>
 								<span>Wi-Fi</span>
 								<span>エアコン</span>
@@ -352,7 +367,7 @@
 								<span>キッチン</span>
 								<span>無料駐車場</span>
 								<span>暖房</span>
-							</div>
+							</div> -->
 							<div class="comp-booking-button">
 								<button><span>プランを予約する</span></button>
 							</div>
@@ -527,49 +542,7 @@
 						<a href="/plans"><span>体験一覧を見る</span></a>
 					</div>
 				</div><!-- comp-section-title -->
-				<div class="comp-plan-list">
-					<?php
-						$args2 = array(
-							'posts_per_page' => '6',
-							'orderby' => 'rand',
-							'post_type' => 'product',
-							'paged' => $paged,
-						);
-						$the_query2 = new WP_Query( $args2 );
-						if ( $the_query2->have_posts() ) :
-							while ( $the_query2->have_posts() ) : $the_query2->the_post();
-							$kagibito_id = SCF::get('kagibito_id');
-							$kagiibito_thumb = get_the_post_thumbnail_url($kagibito_id,'thumbnail');
-							$kagibito_name = SCF::get('post_title', $kagibito_id);
-							$kagibito_belongs = SCF::get('belongs', $kagibito_id);
-							$kagibito_area = SCF::get('area_name', $kagibito_id);
-							$main_thumb_sp = SCF::get('main_sp');
-							$thumb_img_sp = wp_get_attachment_image_src($main_thumb_sp,'medium_large');
-							echo  '
-							<div class="plan_item">
-								<div class="img_wrap">
-									<a href="'.get_the_permalink().'" style="background-image:url('.$thumb_img_sp[0].');">
-										<img class="img_pc" src="'.get_the_post_thumbnail_url( get_the_ID(), 'medium_large' ).'">
-									</a>
-								</div><!-- img_wrap -->
-								<div class="txt_wrap">
-									<div class="comp-kagibito-wrap">
-										<span class="icon" style="background-image: url('.$kagiibito_thumb.');"></span>
-										<span class="name">'.$kagibito_name.'さんと行く</span>
-									</div>
-									<div class="title_wrap">
-										<h3><a href="'.get_the_permalink().'">'. SCF::get('post_title').'</a></h3>
-										<div class="location">
-											<span class="area">'.$kagibito_area.'</span><span class="guesthouse">'.$kagibito_belongs.'</span>
-										</div>
-									</div><!-- title_wrap -->
-								</div>
-							</div><!-- plan_item -->';
-							endwhile;
-							endif;
-							wp_reset_postdata();
-						?>
-				</div><!-- comp-plan-list -->
+				<?php get_template_part("parts/planList");?>
 			</div><!-- section_inner -->
 		</section>
 	</article>
@@ -646,7 +619,7 @@
 		</div><!-- scroll_wrap -->
 	</section>
 	<div class="comp-text-set" style="opacity:0; height:0px;">
-		<p>状況確認・選ぶ・年・0123456789・費用・¥・チェックイン・チェックアウト・月火水木金土日</p>
+		<p>状況確認・選ぶ・年・0123456789・費用・¥・チェックイン・チェックアウト・月火水木金土日・宿泊タイプ・日程</p>
 	</div>
 </article>
 <?php get_template_part("parts/hummenu");?>

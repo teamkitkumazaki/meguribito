@@ -52,34 +52,6 @@
 					<?php } ?>
 				</ul>
 			</div><!-- comp-main-slider -->
-			<style>
-			.slide01{
-				background-image: url(<?php echo get_template_directory_uri();?>/assets/img/index/main01.jpg);
-			}
-			.slide02{
-				background-image: url(<?php echo get_template_directory_uri();?>/assets/img/index/main02.jpg);
-			}
-			.slide03{
-				background-image: url(<?php echo get_template_directory_uri();?>/assets/img/index/main03.jpg);
-			}
-			.slide04{
-				background-image: url(<?php echo get_template_directory_uri();?>/assets/img/index/main04.jpg);
-			}
-			@media screen and (max-width: 720px){
-				.slide01{
-					background-image: url(<?php echo get_template_directory_uri();?>/assets/img/index/main01_sp.jpg);
-				}
-				.slide02{
-					background-image: url(<?php echo get_template_directory_uri();?>/assets/img/index/main02_sp.jpg);
-				}
-				.slide03{
-					background-image: url(<?php echo get_template_directory_uri();?>/assets/img/index/main03_sp.jpg);
-				}
-				.slide04{
-					background-image: url(<?php echo get_template_directory_uri();?>/assets/img/index/main04_sp.jpg);
-				}
-			}
-			</style>
 			<div id="gauge" class="gauge_wrap">
 				<div class="gauge_inner">
 					<span id="gaugeDisplay" class="gauge_display"></span>
@@ -94,120 +66,135 @@
 				<h2 class="title">おすすめのプラン</h2>
 			</div><!-- comp-section-title -->
 			<div class="comp-pickup-plan">
+				<?php
+						/* プランの情報 */
+						$main_pickup_id = SCF::get('main_pickup');
+						$pickup_img_desc = SCF::get('pickup_img_desc');
+						$main_plan_ttl = SCF::get('post_title', $main_pickup_id);
+						$sp_img = SCF::get('main_sp', $main_pickup_id);
+						$thumb = get_the_post_thumbnail_url($main_pickup_id,'large');
+						$main_sp = wp_get_attachment_image_src($sp_img,'medium_large');
+						/* カギビトの情報 */
+						$kagibito_id = SCF::get('kagibito_id', $main_pickup_id);
+						$kagiibito_thumb = get_the_post_thumbnail_url($kagibito_id,'thumbnail');
+						$kagibito_name = SCF::get('post_title', $kagibito_id);
+						$kagibito_belongs = SCF::get('belongs', $kagibito_id);
+						$kagibito_area = SCF::get('area_name', $kagibito_id);
+					?>
 				<div class="pickup_item first">
 					<div id="mainPickImg" class="img_wrap">
-						<a href="/product/onomichi_local/" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/index/pick01_sp.jpg)">
-							<img src="<?php echo get_template_directory_uri();?>/assets/img/index/pick01.jpg">
+						<a href="<?php echo get_permalink($main_pickup_id);?>" style="background-image: url(<?php echo $main_sp[0];?>)">
+							<?php
+								$num = 0;
+								$repeat_group = SCF::get( 'main_pickup_img' );
+								foreach ( $repeat_group as $fields ) {
+									$num = $num + 1;
+									$sub_image = wp_get_attachment_image_src($fields['pickup_img_item'],'full');
+								?>
+								<?php if ($num == 1) {echo '<img id="mainImgThumb" src="'.$sub_image[0].'">';}?>
+							<?php } ?>
 						</a>
 					</div><!-- img_wrap -->
 					<div class="txt_wrap">
 						<div class="title_wrap">
 							<div class="title_txt">
 								<div class="comp-kagibito-wrap no_icon">
-									<span class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito04.jpg);"></span>
-									<span class="name">村上ひろふみさんと行く</span>
+									<span class="icon" style="background-image: url(<?php echo $kagiibito_thumb;?>);"></span>
+									<span class="name"><?php echo $kagibito_name;?>さんと行く</span>
 								</div>
-								<h3><a href="/product/onomichi_local/"><span>瀬戸内のアーティスト達と過ごす、</span><span>ローカルヒッピーライフ。</span></a></h3>
+								<h3><a href="<?php echo get_permalink($main_pickup_id);?>"><?php echo $main_plan_ttl;?></a></h3>
 								<div class="location">
-									<span class="area">広島県・尾道市</span>
-									<span class="guesthouse">ゲストハウス ヤドカリ</span>
+									<span class="area"><?php echo $kagibito_area;?></span>
+									<span class="guesthouse"><?php echo $kagibito_belongs;?></span>
 								</div>
 							</div>
 							<div id="sliderShifter" class="slider_shifter">
-								<button class="img_box active_box"><img src="<?php echo get_template_directory_uri();?>/assets/img/index/pick01-1.jpg"></button>
-								<button class="img_box"><img src="<?php echo get_template_directory_uri();?>/assets/img/index/pick01-2.jpg"></button>
-								<button class="img_box"><img src="<?php echo get_template_directory_uri();?>/assets/img/index/pick01-3.jpg"></button>
-								<button class="img_box"><img src="<?php echo get_template_directory_uri();?>/assets/img/index/pick01-4.jpg"></button>
-								<button class="img_box"><img src="<?php echo get_template_directory_uri();?>/assets/img/index/pick01-5.jpg"></button>
+								<?php
+									$num = 0;
+									$repeat_group = SCF::get( 'main_pickup_img' );
+									foreach ( $repeat_group as $fields ) {
+										$num = $num + 1;
+										$sub_image = wp_get_attachment_image_src($fields['pickup_img_item'],'full');
+									?>
+									<?php
+									if ($num == 1) {
+    								echo '<button class="img_box active_box"><img src="'.$sub_image[0].'"></button>';
+								} else {
+									echo '<button class="img_box"><img src="'.$sub_image[0].'"></button>';
+								}
+								?>
+								<?php } ?>
 							</div>
 						</div><!-- title_wrap -->
 						<div class="desc_wrap">
-							<p>志賀直哉などの文豪も筆を執りに訪れた尾道は、現在もクリエイターに愛されるこの街のディープスポットには、個性的で力強い生き方をするアーティストとの出会いがたくさんあります！</p>
+							<p><?php echo $pickup_img_desc;?></p>
 							<div class="kagibito">
 								<div class="kagibito_wrap">
-									<a href="#aaaa" class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito04.jpg);"></a>
+									<a href="<?php echo get_permalink($kagibito_id);?>" class="icon" style="background-image: url(<?php echo $kagiibito_thumb;?>"></a>
 									<div class="kagibito_info">
-										<span class="info">ゲストハウスヤドカリ・オーナー</span>
-										<a class="name" href="#aaaa">村上 ひろふみさん</a>
+										<span class="info"><?php echo $kagibito_belongs;?>・オーナー</span>
+										<a class="name" href="<?php echo get_permalink($kagibito_id);?>"><?php echo $kagibito_name;?></a>
 									</div>
 								</div>
 								<div class="comp-link-button right">
-									<a href="/product/onomichi_local/"><span>詳細を見る</span></a>
+									<a href="<?php echo get_permalink($main_pickup_id);?>"><span>詳細を見る</span></a>
 								</div>
 							</div>
 						</div><!-- desc_wrap -->
 					</div><!-- txt_wrap -->
 				</div><!-- pickup_item -->
-				<div class="pickup_item">
-					<div class="img_wrap">
-						<a href="#aaaa" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/index/pick02_sp.jpg)">
-							<img src="<?php echo get_template_directory_uri();?>/assets/img/index/pick02.jpg">
-						</a>
-					</div><!-- img_wrap -->
-					<div class="txt_wrap">
-						<div class="comp-kagibito-wrap no_icon">
-							<span class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito01.jpg);"></span>
-							<span class="name">濵田規史さんと行く</span>
-						</div>
-						<div class="title_wrap">
-							<h3><a href="#aaaa">八幡浜の日常にディープダイブ。元気いっぱいな名物お母ちゃんに出会う旅。</a></h3>
-							<div class="location">
-								<span class="area">愛媛県・八幡浜市</span>
-								<span class="guesthouse">コダテル</span>
+				<?php
+					$repeat_group = SCF::get( 'sub_pickup' );
+					foreach ( $repeat_group as $fields ) {
+						/* プランの情報 */
+						$sub_pickup_id = $fields['sub_pickup_id'];
+						$plan_ttl = SCF::get('post_title', $sub_pickup_id);
+						$sp_img = SCF::get('main_sp', $sub_pickup_id);
+						$thumb = get_the_post_thumbnail_url($sub_pickup_id,'large');
+						$main_sp = wp_get_attachment_image_src($sp_img,'medium_large');
+						/* カギビトの情報 */
+						$kagibito_id = SCF::get('kagibito_id', $sub_pickup_id);
+						$kagiibito_thumb = get_the_post_thumbnail_url($kagibito_id,'thumbnail');
+						$kagibito_name = SCF::get('post_title', $kagibito_id);
+						$kagibito_belongs = SCF::get('belongs', $kagibito_id);
+						$kagibito_area = SCF::get('area_name', $kagibito_id);
+					?>
+					<div class="pickup_item">
+						<div class="img_wrap">
+							<a href="<?php echo get_permalink($sub_pickup_id);?>" style="background-image: url(<?php echo $main_sp[0];?>)">
+								<img src="<?php echo $thumb;?>">
+							</a>
+						</div><!-- img_wrap -->
+						<div class="txt_wrap">
+							<div class="comp-kagibito-wrap no_icon">
+								<span class="icon" style="background-image: url(<?php echo $kagiibito_thumb;?>"></span>
+								<span class="name"><?php echo $kagibito_name;?>さんと行く</span>
 							</div>
-						</div><!-- title_wrap -->
-						<div class="desc_wrap">
-							<p>志賀直哉などの文豪も筆を執りに訪れた尾道は、現在もクリエイターに愛されるこの街のディープスポットには、個性的で力強い生き方をするアーティストとの出会いがたくさんあります！</p>
-							<div class="kagibito">
-								<div class="kagibito_wrap">
-									<a href="#aaaa" class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito01.jpg);"></a>
-									<div class="kagibito_info">
-										<span class="info">コダテル オーナー</span>
-										<a class="name" href="#aaaa">濵田規史さん</a>
+							<div class="title_wrap">
+								<h3><a href="<?php echo get_permalink($sub_pickup_id);?>"><?php echo $plan_ttl;?></a></h3>
+								<div class="location">
+									<span class="area"><?php echo $kagibito_area;?></span>
+									<span class="guesthouse"><?php echo $kagibito_belongs;?></span>
+								</div>
+							</div><!-- title_wrap -->
+							<div class="desc_wrap">
+								<!--<p>志賀直哉などの文豪も筆を執りに訪れた尾道は、現在もクリエイターに愛されるこの街のディープスポットには、個性的で力強い生き方をするアーティストとの出会いがたくさんあります！</p> -->
+								<div class="kagibito">
+									<div class="kagibito_wrap">
+										<a href="<?php echo get_permalink($sub_pickup_id);?>" class="icon" style="background-image: url(<?php echo $kagiibito_thumb;?>"></a>
+										<div class="kagibito_info">
+											<span class="info"><?php echo $kagibito_belongs;?>・オーナー</span>
+											<a class="name" href="<?php echo get_permalink($kagibito_id);?>"><?php echo $kagibito_name;?></a>
+										</div>
+									</div>
+									<div class="comp-link-button">
+										<a href="<?php echo get_permalink($sub_pickup_id);?>"><span>詳細を見る</span></a>
 									</div>
 								</div>
-								<div class="comp-link-button">
-									<a href="#aaaa"><span>詳細を見る</span></a>
-								</div>
-							</div>
-						</div><!-- desc_wrap -->
-					</div><!-- txt_wrap -->
-				</div><!-- pickup_item -->
-				<div class="pickup_item">
-					<div class="img_wrap">
-						<a href="#aaaa" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/index/pick03_sp.jpg)">
-							<img src="<?php echo get_template_directory_uri();?>/assets/img/index/pick03.jpg">
-						</a>
-					</div><!-- img_wrap -->
-					<div class="txt_wrap">
-						<div class="comp-kagibito-wrap no_icon">
-							<span class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito03.jpg);"></span>
-							<span class="name">長原レキさんと行く</span>
-						</div>
-						<div class="title_wrap">
-							<h3><a href="#aaaa">大自然×シーシャ？日本屈指の水とすだちで味わう最強の自然派水タバコ。</a></h3>
-							<div class="location">
-								<span class="area">徳島県・海陽町</span>
-								<span class="guesthouse">IN BETWEEN BLUES</span>
-							</div>
-						</div><!-- title_wrap -->
-						<div class="desc_wrap">
-							<p>志賀直哉などの文豪も筆を執りに訪れた尾道は、現在もクリエイターに愛されるこの街のディープスポットには、個性的で力強い生き方をするアーティストとの出会いがたくさんあります！</p>
-							<div class="kagibito">
-								<div class="kagibito_wrap">
-									<a href="#aaaa" class="icon" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/kagibito/kagibito03.jpg);"></a>
-									<div class="kagibito_info">
-										<span class="info">IN BETWEEN BLUES</span>
-										<a class="name" href="#aaaa">長原レキさん</a>
-									</div>
-								</div>
-								<div class="comp-link-button">
-									<a href="#aaaa"><span>詳細を見る</span></a>
-								</div>
-							</div>
-						</div><!-- desc_wrap -->
-					</div><!-- txt_wrap -->
-				</div><!-- pickup_item -->
+							</div><!-- desc_wrap -->
+						</div><!-- txt_wrap -->
+					</div><!-- pickup_item -->
+					<?php } ?>
 			</div><!-- comp-pickup-plan -->
 		</div><!-- section_inner -->
 	</section>
@@ -222,49 +209,7 @@
 					<a href="/plans"><span>体験一覧を見る</span></a>
 				</div>
 			</div><!-- comp-section-title -->
-			<div class="comp-plan-list">
-				<?php
-					$args2 = array(
-						'posts_per_page' => '6',
-						'orderby' => 'rand',
-						'post_type' => 'product',
-						'paged' => $paged,
-					);
-					$the_query2 = new WP_Query( $args2 );
-					if ( $the_query2->have_posts() ) :
-						while ( $the_query2->have_posts() ) : $the_query2->the_post();
-						$kagibito_id = SCF::get('kagibito_id');
-						$kagiibito_thumb = get_the_post_thumbnail_url($kagibito_id,'thumbnail');
-						$kagibito_name = SCF::get('post_title', $kagibito_id);
-						$kagibito_belongs = SCF::get('belongs', $kagibito_id);
-						$kagibito_area = SCF::get('area_name', $kagibito_id);
-						$main_thumb_sp = SCF::get('main_sp');
-						$thumb_img_sp = wp_get_attachment_image_src($main_thumb_sp,'medium_large');
-						echo  '
-						<div class="plan_item">
-							<div class="img_wrap">
-								<a href="'.get_the_permalink().'" style="background-image:url('.$thumb_img_sp[0].');">
-									<img class="img_pc" src="'.get_the_post_thumbnail_url( get_the_ID(), 'medium_large' ).'">
-								</a>
-							</div><!-- img_wrap -->
-							<div class="txt_wrap">
-								<div class="comp-kagibito-wrap">
-									<span class="icon" style="background-image: url('.$kagiibito_thumb.');"></span>
-									<span class="name">'.$kagibito_name.'さんと行く</span>
-								</div>
-								<div class="title_wrap">
-									<h3><a href="'.get_the_permalink().'">'. SCF::get('post_title').'</a></h3>
-									<div class="location">
-										<span class="area">'.$kagibito_area.'</span><span class="guesthouse">'.$kagibito_belongs.'</span>
-									</div>
-								</div><!-- title_wrap -->
-							</div>
-						</div><!-- plan_item -->';
-						endwhile;
-						endif;
-						wp_reset_postdata();
-					?>
-			</div><!-- comp-plan-list -->
+			<?php get_template_part("parts/planList");?>
 		</div><!-- section_inner -->
 	</section>
 	<section class="section-service">
@@ -362,12 +307,12 @@
 			</div><!-- txt_wrap -->
 		</div><!-- section_inner -->
 	</section>
-	<section class="section-news">
+	<!--<section class="section-news">
 		<div class="section_inner">
 			<div class="comp-section-title center margin">
 				<p class="upper_txt">ニューストピックス</p>
 				<h2 class="title">メグリビトからのお知らせ</h2>
-			</div><!-- comp-section-title -->
+			</div>
 			<div class="comp-news-list">
 				<div class="news_item">
 					<div class="img_wrap">
@@ -380,7 +325,7 @@
 							<p class="description">本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜…<p>
 						</div>
 					</div>
-				</div><!-- news_item -->
+				</div>
 				<div class="news_item">
 					<div class="img_wrap">
 						<a href="#aaaa" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/news/news02.jpg)"><img src="<?php echo get_template_directory_uri();?>/assets/img/news/news02.jpg"></a>
@@ -392,7 +337,7 @@
 							<p class="description">本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜…<p>
 						</div>
 					</div>
-				</div><!-- news_item -->
+				</div>
 				<div class="news_item">
 					<div class="img_wrap">
 						<a href="#aaaa" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/news/news03.jpg)"><img src="<?php echo get_template_directory_uri();?>/assets/img/news/news03.jpg"></a>
@@ -404,7 +349,7 @@
 							<p class="description">本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜…<p>
 						</div>
 					</div>
-				</div><!-- news_item -->
+				</div>
 				<div class="news_item">
 					<div class="img_wrap">
 						<a href="#aaaa" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/news/news04.jpg)"><img src="<?php echo get_template_directory_uri();?>/assets/img/news/news04.jpg"></a>
@@ -416,10 +361,10 @@
 							<p class="description">本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜…<p>
 						</div>
 					</div>
-				</div><!-- news_item -->
-			</div><!-- comp-news-list -->
-		</div><!-- section_inner -->
-	</section>
+				</div>
+			</div>
+		</div>
+	</section> -->
 	<section class="section-footer-link">
 		<div class="section_inner">
 			<div class="comp-footer-link">
@@ -430,7 +375,7 @@
 						</span>
 						<span class="txt_wrap">
 							<span class="small">MEGURIBITOに掲載希望のオーナー様へ</span>
-							<span class="large">体験掲載についてのお問い合わせ</span>
+							<span class="large">プラン掲載についてのお問い合わせ</span>
 						</span>
 					</a>
 				</div>

@@ -28,7 +28,7 @@
     <div class="flex_wrap">
       <div class="txt_wrap">
         <div class="org_name">
-          <span class="small">運営団体</span>
+          <span class="small">特定非営利活動法人</span>
           <h2 class="name"><span>八幡浜元気プロジェクト</span></h2>
         </div>
         <div class="description">
@@ -48,13 +48,14 @@
             </div>
           </div><!-- comp-number-list -->
           <p>を目指しながら、他地域でも応用できるシクミやプラットフォームづくりを行っています。</p>
+          <p>※本サービスは、えひめ伴走型支援助成事業（公益財団法人 共生地域創造財団）の助成を受けて制作しています。</p>
         </div>
         <div class="comp-link-button right sp_wide">
-          <a href="#aaaa"><span>詳細を見る</span></a>
+          <a target="_blank" href="https://re-ygp.com"><span>詳細を見る</span></a>
         </div>
       </div>
       <div class="img_wrap">
-        <img src="https://meguribito.com/wp-content/themes/storefront/assets/img/about/org.jpg">
+        <img src="<?php echo get_template_directory_uri();?>/assets/img/about/org.jpg">
       </div>
     </div>
   </div><!-- section_inner -->
@@ -91,7 +92,7 @@
             </div>
           </div>
         </div>
-      <?php } ?>  
+      <?php } ?>
     </div><!-- comp-project-member -->
   </div><!-- section_inner -->
 </section>

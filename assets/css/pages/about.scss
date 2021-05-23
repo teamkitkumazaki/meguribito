@@ -27,9 +27,10 @@
           margin-bottom: 20px;
           .small{
             display: block;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 1;
             letter-spacing: normal;
+            margin-bottom: 10px;
           }
           .name{
             @include tsukushi-b;
@@ -59,10 +60,27 @@
   .page-about{
     .section-main{
       margin-bottom: 80px;
+      .section_inner{
+        position: relative;
+        z-index: 10;
+      }
       .img_wrap{
         height: 500px;
         margin-bottom: 60px;
         background-image: url(../img/about/main_sp.jpg);
+        position: relative;
+        &::before{
+          display: block;
+          content: "";
+          position: absolute;
+          top:0;
+          left:0;
+          right:0;
+          margin: auto;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0,0,0,0.2);
+        }
       }
     }
     .section-org{
