@@ -27,6 +27,9 @@
   							'orderby' => 'rand',
   							'post_type' => 'product',
   							'paged' => $paged,
+                'post_status' => array(
+                    'publish'
+                  ),
   						);
   						$the_query2 = new WP_Query( $args2 );
   						if ( $the_query2->have_posts() ) :

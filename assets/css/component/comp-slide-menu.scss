@@ -237,15 +237,15 @@
             margin-right: 0;
           }
           &.ig{
-            background-size: 22px;
+            background-size: 16px;
             background-image: url(../img/common/icon_ig.png);
           }
           &.fb{
             background-size: 14px;
-            background-image: url(../img/common/icon_fb.png);
+            background-image: url(../img/common/icon_note_white.png);
           }
           &.tw{
-            background-size: 20px;
+            background-size: 14px;
             background-image: url(../img/common/icon_tw.png);
           }
         }
@@ -425,13 +425,13 @@
             height: 40px;
             margin-right: 10px;
             &.ig{
-              background-size: 22px;
+              background-size: 16px;
             }
             &.fb{
-              background-size: 14px;
+              background-size: 12px;
             }
             &.tw{
-              background-size: 20px;
+              background-size: 14px;
             }
           }
         }

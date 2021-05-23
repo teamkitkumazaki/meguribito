@@ -24,6 +24,34 @@
         }
       }
     }
+    .content_section{
+      margin-top: 40px;
+      .content_ttl{
+        @include tsukushi-b;
+        line-height: 1.6;
+        font-size: 20px;
+        letter-spacing: 0.03em;
+        margin-bottom: 15px;
+      }
+      .desc_ttl{
+        font-size: 18px;
+        @include tsukushi-b;
+        letter-spacing: 0.03em;
+        margin-bottom: 20px;
+      }
+      .desc{
+        font-size: 14px;
+        line-height: 1.8;
+        letter-spacing: 0.32px;
+        margin-bottom: 1.5em;
+        &.mt{
+          margin-top: 1.5em;
+        }
+        &:nth-last-of-type(1){
+          margin-bottom: 0;
+        }
+      }
+    }
     .list{
       margin-top: 15px;
       letter-spacing: 0.32px;
