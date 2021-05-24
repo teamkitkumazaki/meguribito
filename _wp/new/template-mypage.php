@@ -71,6 +71,11 @@ get_header(); ?>
         <?php endwhile; endif;?>
 			</div>
 		</section>
+		<section class="section-unsubscribe">
+			<div class="section_inner">
+				<a class="unsubscribe_button" href="/delete"><span>アカウントの削除</span></a>
+			</div>
+		</section>
 	</article>
 	<div class="comp-text-set" style="opacity:0; height:0px;">
 		<p>情報・変更</p>

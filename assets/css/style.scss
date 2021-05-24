@@ -26,6 +26,7 @@
 @import 'pages/completed.scss';
 @import 'pages/service.scss';
 @import 'pages/flow.scss';
+@import 'pages/contact.scss';
 @import 'pages/transaction.scss';
 @import 'pages/privacy.scss';
 @import 'pages/terms.scss';
@@ -105,6 +106,8 @@
 /* ニュース詳細 */
 @import 'component/comp-article-content.scss';
 
+/* お問い合わせページ */
+@import 'component/comp-form-wrap.scss';
 
 /* カート・マイページ */
 @import 'component/comp-woocommerce-message.scss';

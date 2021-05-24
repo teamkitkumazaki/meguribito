@@ -71,7 +71,6 @@
           }
         }
         .product-remove{
-          display: none;
           position: absolute;
           top: 15px;
           right: 15px;
@@ -261,6 +260,15 @@
       }
     }
   }
+  .section-corp-info{
+    margin-bottom: 120px;
+    .corp_title{
+      @include tsukushi-b;
+      font-size: 26px;
+      letter-spacing: 0.03em;
+      margin-bottom: 30px;
+    }
+  }
 }
 
 @media screen and (max-width: 1100px){
@@ -285,6 +293,9 @@
           }
         }
       }
+    }
+    .section-corp-info{
+      margin-bottom: 100px;
     }
   }
 }
@@ -341,6 +352,9 @@
           }
         }
       }
+    }
+    .section-corp-info{
+      margin-bottom: 80px;
     }
   }
 }
@@ -404,6 +418,7 @@
               font-size: 14px;
               letter-spacing: 0.03em;
               line-height: 1.6;
+              padding-right: 10px;
               margin-bottom: 5px;
             }
             .variation{
@@ -478,6 +493,17 @@
               }
             }
           }
+        }
+      }
+    }
+    .section-corp-info{
+      margin-bottom: 60px;
+      .corp_title{
+        font-size: 22px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+        span{
+          display: block;
         }
       }
     }

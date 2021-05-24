@@ -1,0 +1,37 @@
+.page-contact{
+  margin-bottom: 120px;
+  .section_inner{
+    max-width: 780px;
+  }
+  .section-lead{
+    margin-bottom: 80px;
+    .description{
+      span{
+        display: inline;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px){
+  .page-contact{
+    margin-bottom: 80px;
+    .section-lead{
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 740px){
+  .page-contact{
+    margin-bottom: 60px;
+    .section-lead{
+      margin-bottom: 60px;
+      .description{
+        span{
+          display: block;
+        }
+      }
+    }
+  }
+}

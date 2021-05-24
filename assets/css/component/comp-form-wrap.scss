@@ -1,0 +1,346 @@
+.comp-form-wrap{
+  .attention{
+    width: 100%;
+    display: block;
+    @include tsukushi-b;
+    font-size: 14px;
+    padding: 15px 0 0px;
+    color: red;
+  }
+  .form_item{
+    @include flexSet;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .form_ttl{
+      @include flexSet;
+      align-items: baseline;
+      .content{
+        font-size: 18px;
+        letter-spacing: 0.03em;
+        @include tsukushi-b;
+        display: inline-block;
+        padding-right: 0.5em;
+      }
+      .required{
+        font-size: 12px;
+        letter-spacing: 0.24px;
+        color: #c20000;
+      }
+    }
+    .form_input{
+      width: 450px;
+      input[type="text"], input[type="email"]{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 14px;
+        padding: 10px;
+        background-color: #fff;
+        appearance: none;
+        border: none;
+        border-radius: 5px;
+        @media screen and (max-width: 980px){
+          font-size: 16px;
+        }
+        &:focus{
+          outline: none;
+        }
+      }
+      select{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 14px;
+        padding: 15px 10px;
+        background-color: #fff;
+        border: none;
+        appearance: none;
+        color: $black01;
+        border-radius: 5px;
+        background-position: center right 10px;
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-image: url(../img/common/select_caret.svg);
+        @media screen and (max-width: 980px){
+          font-size: 16px;
+        }
+        &:focus{
+          outline: none;
+        }
+      }
+      textarea{
+        display: block;
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.6;
+        appearance: none;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        border: none;
+        @media screen and (max-width: 980px){
+          font-size: 16px;
+        }
+        &:focus{
+          outline: none;
+        }
+      }
+      .radio_wrap{
+        label{
+          @include hover;
+          cursor: pointer;
+          input[type="radio"]{
+            display: none;
+          }
+          .wpcf7-list-item-label{
+            display: block;
+            padding-left: 25px;
+            position: relative;
+            font-size: 16px;
+            letter-spacing: 0.32px;
+            margin-bottom: 15px;
+            &::before{
+              display: block;
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 2px;
+              bottom: 0;
+              margin: auto;
+              width: 15px;
+              height: 15px;
+              background: #ebf0f3;
+              border-radius: 50%;
+              margin-right: 7px;
+            }
+            &::after{
+              display: block;
+              content: "";
+              position: absolute;
+              top: 1px;
+              bottom: -1px;
+              left: 3px;
+              margin: auto;
+              width: 9px;
+              height: 9px;
+              background-color: $black02;
+              border-radius: 50%;
+              opacity: 0;
+              transition: opacity .2s;
+            }
+          }
+          input[type="radio"]:checked + .wpcf7-list-item-label{
+            &::after{
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    &.optional{
+      .attention{
+        display: none;
+      }
+      .form_ttl{
+        .required{
+          display: none;
+        }
+      }
+    }
+  }
+  .submit_wrap{
+    .privacy_wrap{
+      margin-top: 70px;
+      text-align: center;
+      label{
+        display: block;
+        input[type="checkbox"]{
+          display: none;
+        }
+        cursor: pointer;
+        .agreement{
+          display: inline-block;
+          .wrap{
+            position: relative;
+            padding-left: 25px;
+            &::after{
+              display: block;
+              content: "";
+              position: absolute;
+              top:0;
+              bottom:0;
+              left:0;
+              margin: auto;
+              width: 18px;
+              height: 18px;
+              background-color: #ebf0f3;
+              @include bgSet;
+              background-size: 10px;
+              transition: background .2s;
+            }
+            a{
+              display: inline-block;
+              @include hover;
+              color: #068acc;
+            }
+          }
+        }
+        input[type="checkbox"]:checked + .agreement{
+          .wrap::after{
+            background-color: $black02;
+            background-image: url(../img/common/check.svg);
+          }
+        }
+      }
+    }
+    .ajax_loader{
+      width: 100%;
+      height: 0px;
+      overflow: hidden;
+      transition: height .2s;
+      &.loading{
+        height: 100px;
+      }
+      .loading{
+        display: block;
+        width: 100%;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 30px;
+        background-image: url(../img/common/loading.svg);
+      }
+    }
+    .status_message{
+      margin-top: 40px;
+      height: 0;
+      overflow: hidden;
+      text-align: left;
+      font-size: 14px;
+      transition: height .2s;
+      .text{
+        display: block;
+        background: #fff;
+        padding: 15px;
+        line-height: 1.6;
+      }
+      &.complete{
+        height: 80px;
+        margin-bottom: 0px;
+      }
+      &.error{
+        height: 100px;
+        margin-bottom: 0px;
+        .text{
+          color: #D62538;
+          border: 1px solid #D62538;
+        }
+      }
+    }
+    .submit_button{
+      max-width: 350px;
+      margin: 50px auto 0;
+      input[type="button"]{
+        appearance: none;
+        border: none;
+        @include hover;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        @include tsukushi-b;
+        font-weight: normal;
+        background-color: $black02;
+        color: #fff;
+      }
+      &.disabled{
+        pointer-events: none;
+        input[type="button"]{
+          background: #979797;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px){
+  .comp-form-wrap{
+    .form_item{
+      display: block;
+      margin-bottom: 30px;
+      padding-top: 30px;
+      border-top: 1px solid #ddd;
+      &:nth-of-type(1){
+        border-top: 0px;
+        padding-top: 0;
+      }
+      .form_ttl{
+        @include flexSet;
+        align-items: baseline;
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+      .form_input{
+        width: 100%;
+        textarea{
+          display: block;
+          height: 250px;
+        }
+        .radio_wrap{
+          margin-top: 25px;
+          label{
+            @include hover;
+            cursor: pointer;
+            input[type="radio"]{
+              display: none;
+            }
+            .wpcf7-list-item-label{
+              display: block;
+              line-height: 1.6;
+              padding-left: 25px;
+              font-size: 16px;
+              margin-bottom: 15px;
+              span{
+                display: block;
+                text-indent: -0.5em;
+              }
+            }
+          }
+        }
+      }
+    }
+    .ajax_loader{
+      &.loading{
+        height: 100px;
+      }
+      .loading{
+        width: 100%;
+        height: 100px;
+        background-size: 30px;
+      }
+    }
+    .status_message{
+      &.complete{
+        height: 100px;
+      }
+      &.error{
+        height: 120px;
+      }
+    }
+    .submit_wrap{
+      .privacy_wrap{
+        margin-top: 50px;
+        text-align: center;
+        label{
+          display: block;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

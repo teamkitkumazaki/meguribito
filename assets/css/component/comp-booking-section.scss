@@ -131,7 +131,7 @@
               &::before{
                 width: 100%;
                 display: block;
-                content: "▼宿泊日程を選ぶ";
+                content: "▼宿泊プラン日程を選ぶ";
                 @include tsukushi-b;
                 font-size: 16px;
                 letter-spacing: 0.03em;
@@ -402,7 +402,24 @@
               @include tsukushi-b;
               font-size: 16px;
               letter-spacing: 0.03em;
+              color: #fff;
+              position: relative;
+              &::before{
+                @include tsukushi-b;
+                font-size: 16px;
+                display: block;
+                content: "プラン料金";
+                color: #303030;
+                position: absolute;
+                z-index: 10;
+                top:0;
+                bottom:0;
+                left:0;
+                height: 30px;
+                margin: auto;
+              }
               strong{
+                color: #303030;
                 font-size: 20px;
               }
             }

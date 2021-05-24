@@ -13,11 +13,11 @@
 		$thumnail = get_template_directory_uri().'/assets/img/ogp/ogp.jpg';
 		$description = "メグリビトは、普段出会うことのできない地域の体験やコミュニティに、拠点やそこに根ざす人を通じて出会うことのできるサービスです。パッケージ化されたツアーではなく、もっとその地域ならではの場所・人・体験に触れながら旅をする。そして日本全国に帰りたい場所が増えていく体験を提供します。";
 	} else if( is_category() || is_archive() ){
-		$page_title = single_cat_title("", false).' | Meguribito(メグリビト)';
-		$site_title = single_cat_title("", false).' | Meguribito(メグリビト)';
+		$page_title = 'プラン一覧 | Meguribito(メグリビト)';
+		$site_title = 'プラン一覧 | Meguribito(メグリビト)';
 		$thumnail = get_template_directory_uri().'/assets/img/ogp/ogp.jpg';
   	$site_permalink = get_the_permalink();
-		$description = single_cat_title("", false).'に関する作品一覧';
+		$description = 'メグリビトのプラン一覧ページです。';
 	} else if( is_single() || is_page() ) {
   	$site_title = SCF::get('post_title', $post->ID).' | Meguribito(メグリビト)';
   	$site_permalink = get_the_permalink($post->ID);
@@ -64,4 +64,8 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/slick/slick.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/layout.js?<?php echo date('Ymd-Hi');?>"></script>
+	<?php $url = $_SERVER['REQUEST_URI']; ?>
+	<?php if(strstr($url,'contact')): ?>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/form.js?<?php echo date('Ymd-Hi');?>"></script>
+	<?php endif; ?>
 	<?php wp_head(); ?>

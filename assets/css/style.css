@@ -2938,7 +2938,6 @@ footer .footer_inner .footer_lower .copyright {
   display: none;
 }
 .page-cart .section-cart .woocommerce .cart .product-remove {
-  display: none;
   position: absolute;
   top: 15px;
   right: 15px;
@@ -3131,6 +3130,16 @@ footer .footer_inner .footer_lower .copyright {
 .page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout a:hover {
   opacity: 0.75;
 }
+.page-cart .section-corp-info {
+  margin-bottom: 120px;
+}
+.page-cart .section-corp-info .corp_title {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
 
 @media screen and (max-width: 1100px) {
   .page-cart .section-cart .woocommerce .cart .product-name {
@@ -3147,6 +3156,9 @@ footer .footer_inner .footer_lower .copyright {
   }
   .page-cart .section-cart .woocommerce .cart .product-subtotal {
     width: 120px;
+  }
+  .page-cart .section-corp-info {
+    margin-bottom: 100px;
   }
 }
 @media screen and (max-width: 980px) {
@@ -3199,6 +3211,9 @@ footer .footer_inner .footer_lower .copyright {
   .page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout {
     width: 100%;
     margin-bottom: 0 !important;
+  }
+  .page-cart .section-corp-info {
+    margin-bottom: 80px;
   }
 }
 @media screen and (max-width: 720px) {
@@ -3263,6 +3278,7 @@ footer .footer_inner .footer_lower .copyright {
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.6;
+    padding-right: 10px;
     margin-bottom: 5px;
   }
   .page-cart .section-cart .woocommerce .cart .product-name .variation {
@@ -3331,6 +3347,17 @@ footer .footer_inner .footer_lower .copyright {
   }
   .page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .shop_table .order-total td strong::after {
     font-size: 16px;
+  }
+  .page-cart .section-corp-info {
+    margin-bottom: 60px;
+  }
+  .page-cart .section-corp-info .corp_title {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  .page-cart .section-corp-info .corp_title span {
+    display: block;
   }
 }
 .page-payment {
@@ -5098,6 +5125,38 @@ footer .footer_inner .footer_lower .copyright {
     padding: 60px 0 20px;
   }
 }
+.page-contact {
+  margin-bottom: 120px;
+}
+.page-contact .section_inner {
+  max-width: 780px;
+}
+.page-contact .section-lead {
+  margin-bottom: 80px;
+}
+.page-contact .section-lead .description span {
+  display: inline;
+}
+
+@media screen and (max-width: 980px) {
+  .page-contact {
+    margin-bottom: 80px;
+  }
+  .page-contact .section-lead {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .page-contact {
+    margin-bottom: 60px;
+  }
+  .page-contact .section-lead {
+    margin-bottom: 60px;
+  }
+  .page-contact .section-lead .description span {
+    display: block;
+  }
+}
 .page-transaction {
   margin-bottom: 120px;
 }
@@ -5454,6 +5513,21 @@ footer .footer_inner .footer_lower .copyright {
   .page-mypage .section-mypage .woocommerce-MyAccount-content h3 {
     font-size: 20px;
   }
+}
+.page-mypage .section-unsubscribe {
+  margin-top: 60px;
+}
+.page-mypage .section-unsubscribe .unsubscribe_button {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  color: #646464;
+  text-decoration: underline;
+  transition: opacity 0.3s;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+}
+.page-mypage .section-unsubscribe .unsubscribe_button:hover {
+  opacity: 0.75;
 }
 
 #customer_login.u-columns {
@@ -9783,7 +9857,7 @@ footer .footer_inner .footer_lower .copyright {
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset::before {
   width: 100%;
   display: block;
-  content: "▼宿泊日程を選ぶ";
+  content: "▼宿泊プラン日程を選ぶ";
   font-family: "FOT-筑紫A丸ゴシック Std D";
   font-weight: bold;
   font-size: 16px;
@@ -10060,8 +10134,26 @@ footer .footer_inner .footer_lower .copyright {
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.03em;
+  color: #fff;
+  position: relative;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .wc-bookings-booking-cost::before {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  content: "プラン料金";
+  color: #303030;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  margin: auto;
 }
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .wc-bookings-booking-cost strong {
+  color: #303030;
   font-size: 20px;
 }
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart button[type=submit] {
@@ -12772,6 +12864,361 @@ footer .footer_inner .footer_lower .copyright {
     line-height: 2;
     letter-spacing: 0.6px;
     font-size: 14px;
+  }
+}
+/* お問い合わせページ */
+.comp-form-wrap .attention {
+  width: 100%;
+  display: block;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 14px;
+  padding: 15px 0 0px;
+  color: red;
+}
+.comp-form-wrap .form_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.comp-form-wrap .form_item .form_ttl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.comp-form-wrap .form_item .form_ttl .content {
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  display: inline-block;
+  padding-right: 0.5em;
+}
+.comp-form-wrap .form_item .form_ttl .required {
+  font-size: 12px;
+  letter-spacing: 0.24px;
+  color: #c20000;
+}
+.comp-form-wrap .form_item .form_input {
+  width: 450px;
+}
+.comp-form-wrap .form_item .form_input input[type=text], .comp-form-wrap .form_item .form_input input[type=email] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 10px;
+  background-color: #fff;
+  -webkit-appearance: none;
+          appearance: none;
+  border: none;
+  border-radius: 5px;
+}
+@media screen and (max-width: 980px) {
+  .comp-form-wrap .form_item .form_input input[type=text], .comp-form-wrap .form_item .form_input input[type=email] {
+    font-size: 16px;
+  }
+}
+.comp-form-wrap .form_item .form_input input[type=text]:focus, .comp-form-wrap .form_item .form_input input[type=email]:focus {
+  outline: none;
+}
+.comp-form-wrap .form_item .form_input select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 15px 10px;
+  background-color: #fff;
+  border: none;
+  -webkit-appearance: none;
+          appearance: none;
+  color: #3f3f3f;
+  border-radius: 5px;
+  background-position: center right 10px;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-image: url(../img/common/select_caret.svg);
+}
+@media screen and (max-width: 980px) {
+  .comp-form-wrap .form_item .form_input select {
+    font-size: 16px;
+  }
+}
+.comp-form-wrap .form_item .form_input select:focus {
+  outline: none;
+}
+.comp-form-wrap .form_item .form_input textarea {
+  display: block;
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-appearance: none;
+          appearance: none;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+@media screen and (max-width: 980px) {
+  .comp-form-wrap .form_item .form_input textarea {
+    font-size: 16px;
+  }
+}
+.comp-form-wrap .form_item .form_input textarea:focus {
+  outline: none;
+}
+.comp-form-wrap .form_item .form_input .radio_wrap label {
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+.comp-form-wrap .form_item .form_input .radio_wrap label:hover {
+  opacity: 0.75;
+}
+.comp-form-wrap .form_item .form_input .radio_wrap label input[type=radio] {
+  display: none;
+}
+.comp-form-wrap .form_item .form_input .radio_wrap label .wpcf7-list-item-label {
+  display: block;
+  padding-left: 25px;
+  position: relative;
+  font-size: 16px;
+  letter-spacing: 0.32px;
+  margin-bottom: 15px;
+}
+.comp-form-wrap .form_item .form_input .radio_wrap label .wpcf7-list-item-label::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  bottom: 0;
+  margin: auto;
+  width: 15px;
+  height: 15px;
+  background: #ebf0f3;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+.comp-form-wrap .form_item .form_input .radio_wrap label .wpcf7-list-item-label::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 1px;
+  bottom: -1px;
+  left: 3px;
+  margin: auto;
+  width: 9px;
+  height: 9px;
+  background-color: #3f3f3f;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.comp-form-wrap .form_item .form_input .radio_wrap label input[type=radio]:checked + .wpcf7-list-item-label::after {
+  opacity: 1;
+}
+.comp-form-wrap .form_item.optional .attention {
+  display: none;
+}
+.comp-form-wrap .form_item.optional .form_ttl .required {
+  display: none;
+}
+.comp-form-wrap .submit_wrap .privacy_wrap {
+  margin-top: 70px;
+  text-align: center;
+}
+.comp-form-wrap .submit_wrap .privacy_wrap label {
+  display: block;
+  cursor: pointer;
+}
+.comp-form-wrap .submit_wrap .privacy_wrap label input[type=checkbox] {
+  display: none;
+}
+.comp-form-wrap .submit_wrap .privacy_wrap label .agreement {
+  display: inline-block;
+}
+.comp-form-wrap .submit_wrap .privacy_wrap label .agreement .wrap {
+  position: relative;
+  padding-left: 25px;
+}
+.comp-form-wrap .submit_wrap .privacy_wrap label .agreement .wrap::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  background-color: #ebf0f3;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-size: 10px;
+  transition: background 0.2s;
+}
+.comp-form-wrap .submit_wrap .privacy_wrap label .agreement .wrap a {
+  display: inline-block;
+  transition: opacity 0.3s;
+  color: #068acc;
+}
+.comp-form-wrap .submit_wrap .privacy_wrap label .agreement .wrap a:hover {
+  opacity: 0.75;
+}
+.comp-form-wrap .submit_wrap .privacy_wrap label input[type=checkbox]:checked + .agreement .wrap::after {
+  background-color: #3f3f3f;
+  background-image: url(../img/common/check.svg);
+}
+.comp-form-wrap .submit_wrap .ajax_loader {
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.2s;
+}
+.comp-form-wrap .submit_wrap .ajax_loader.loading {
+  height: 100px;
+}
+.comp-form-wrap .submit_wrap .ajax_loader .loading {
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 30px;
+  background-image: url(../img/common/loading.svg);
+}
+.comp-form-wrap .submit_wrap .status_message {
+  margin-top: 40px;
+  height: 0;
+  overflow: hidden;
+  text-align: left;
+  font-size: 14px;
+  transition: height 0.2s;
+}
+.comp-form-wrap .submit_wrap .status_message .text {
+  display: block;
+  background: #fff;
+  padding: 15px;
+  line-height: 1.6;
+}
+.comp-form-wrap .submit_wrap .status_message.complete {
+  height: 80px;
+  margin-bottom: 0px;
+}
+.comp-form-wrap .submit_wrap .status_message.error {
+  height: 100px;
+  margin-bottom: 0px;
+}
+.comp-form-wrap .submit_wrap .status_message.error .text {
+  color: #D62538;
+  border: 1px solid #D62538;
+}
+.comp-form-wrap .submit_wrap .submit_button {
+  max-width: 350px;
+  margin: 50px auto 0;
+}
+.comp-form-wrap .submit_wrap .submit_button input[type=button] {
+  -webkit-appearance: none;
+          appearance: none;
+  border: none;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-weight: normal;
+  background-color: #3f3f3f;
+  color: #fff;
+}
+.comp-form-wrap .submit_wrap .submit_button input[type=button]:hover {
+  opacity: 0.75;
+}
+.comp-form-wrap .submit_wrap .submit_button.disabled {
+  pointer-events: none;
+}
+.comp-form-wrap .submit_wrap .submit_button.disabled input[type=button] {
+  background: #979797;
+}
+
+@media screen and (max-width: 980px) {
+  .comp-form-wrap .form_item {
+    display: block;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+  }
+  .comp-form-wrap .form_item:nth-of-type(1) {
+    border-top: 0px;
+    padding-top: 0;
+  }
+  .comp-form-wrap .form_item .form_ttl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .comp-form-wrap .form_item .form_input {
+    width: 100%;
+  }
+  .comp-form-wrap .form_item .form_input textarea {
+    display: block;
+    height: 250px;
+  }
+  .comp-form-wrap .form_item .form_input .radio_wrap {
+    margin-top: 25px;
+  }
+  .comp-form-wrap .form_item .form_input .radio_wrap label {
+    transition: opacity 0.3s;
+    cursor: pointer;
+  }
+  .comp-form-wrap .form_item .form_input .radio_wrap label:hover {
+    opacity: 0.75;
+  }
+  .comp-form-wrap .form_item .form_input .radio_wrap label input[type=radio] {
+    display: none;
+  }
+  .comp-form-wrap .form_item .form_input .radio_wrap label .wpcf7-list-item-label {
+    display: block;
+    line-height: 1.6;
+    padding-left: 25px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .comp-form-wrap .form_item .form_input .radio_wrap label .wpcf7-list-item-label span {
+    display: block;
+    text-indent: -0.5em;
+  }
+  .comp-form-wrap .ajax_loader.loading {
+    height: 100px;
+  }
+  .comp-form-wrap .ajax_loader .loading {
+    width: 100%;
+    height: 100px;
+    background-size: 30px;
+  }
+  .comp-form-wrap .status_message.complete {
+    height: 100px;
+  }
+  .comp-form-wrap .status_message.error {
+    height: 120px;
+  }
+  .comp-form-wrap .submit_wrap .privacy_wrap {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .comp-form-wrap .submit_wrap .privacy_wrap label {
+    display: block;
+    cursor: pointer;
   }
 }
 /* カート・マイページ */

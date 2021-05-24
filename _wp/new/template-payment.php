@@ -57,6 +57,32 @@ get_header(); ?>
         <?php endwhile; endif;?>
 			</div>
 		</section>
+		<?php $url = $_SERVER['REQUEST_URI']; ?>
+		<?php if(strstr($url,'checkout')): ?>
+		<section class="section-payment-terms">
+			<div class="section_inner">
+				<h3 class="corp_title">お申し込み・契約について</span></h3>
+				<div class="payment_terms">
+					<div class="terms_item">
+						<span class="num">1</span>
+						<span class="text">Meguribitoは、手配契約・運送等契約の当事者とはならず、お客様と宿泊施設の直接契約となります。</span>
+					</div>
+					<div class="terms_item">
+						<span class="num">2</span>
+						<span class="text">Meguribitoは、お客様と宿泊施設との間の仲介・媒介・斡旋等を行いません。予約後の連絡についても，当事者間で直接行ってください。</span>
+					</div>
+					<div class="terms_item">
+						<span class="num">3</span>
+						<span class="text">Meguribitoが積極的に特定の宿泊施設を紹介したり，勧めたりすることはありません。お客様のご判断で、宿泊施設や体験をお選びください。</span>
+					</div>
+					<div class="terms_item">
+						<span class="num">4</span>
+						<span class="text">Meguribitoは、ストライプジャパン株式会社が提供する決済サービス「STRIPE」を利用しています。本サイトを通じて決済した場合であっても、Meguribitoが宿泊プランの料金を収受するものではありません。</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<?php endif; ?>
 		<div class="comp-text-set" style="opacity:0; height:0px;">
 			<p>メールマガジンを受け取る・内容・方法・間・(税込)</p>
 		</div>
