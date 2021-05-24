@@ -1,0 +1,42 @@
+.page-delete{
+  margin-top: 160px;
+  margin-bottom: 120px;
+  min-height: unset;
+  .comp-section-title{
+    .title{
+      font-size: 30px;
+    }
+  }
+  .delete_form{
+    max-width: 50%;
+    margin: 30px auto 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    @include formSet;
+    label{
+      margin-bottom: 15px;
+    }
+    .submit_wrap{
+      position: relative;
+      @include hover;
+      button{
+        pointer-events: none;
+      }
+      input[type="submit"]{
+        position: absolute;
+        z-index: 20;
+        width: 100%;
+        height: 100%;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        margin: auto;
+        opacity: 0;
+        cursor: pointer;
+      }
+    }
+  }
+}

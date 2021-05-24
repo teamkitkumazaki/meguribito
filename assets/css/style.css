@@ -3574,6 +3574,13 @@ footer .footer_inner .footer_lower .copyright {
   letter-spacing: 0.03em;
   margin-bottom: 20px;
 }
+.page-payment .section-payment .woocommerce-checkout .col2-set .woocommerce-billing-fields__field-wrapper::before {
+  display: block;
+  line-height: 1.6;
+  font-size: 14px;
+  content: "個人情報はプラン宿泊施設の方への共有情報として使用されます。";
+  margin: -5px auto 20px;
+}
 .page-payment .section-payment .woocommerce-checkout .col2-set .form-row {
   margin-bottom: 25px;
 }
@@ -3963,6 +3970,52 @@ footer .footer_inner .footer_lower .copyright {
 .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .place-order button[type=submit]:hover {
   opacity: 0.75;
 }
+.page-payment .section-payment-terms {
+  margin-bottom: 120px;
+}
+.page-payment .section-payment-terms .corp_title {
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+.page-payment .section-payment-terms .payment_terms {
+  padding: 20px;
+  background: #fff;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+}
+.page-payment .section-payment-terms .payment_terms .terms_item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.page-payment .section-payment-terms .payment_terms .terms_item:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.page-payment .section-payment-terms .payment_terms .terms_item .num {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-right: 12px;
+  background: #BF992E;
+  color: #fff;
+  border-radius: 50%;
+  font-family: "TsukuARdGothicStd-R";
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  line-height: 35px;
+  text-indent: 0.01em;
+}
+.page-payment .section-payment-terms .payment_terms .terms_item .text {
+  width: calc(100% - 55px);
+}
 
 @media screen and (max-width: 1100px) {
   .page-payment .section-payment {
@@ -3977,6 +4030,9 @@ footer .footer_inner .footer_lower .copyright {
   .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order {
     width: 38% !important;
     padding: 30px 25px;
+  }
+  .page-payment .section-payment-terms {
+    margin-bottom: 100px;
   }
 }
 @media screen and (max-width: 980px) {
@@ -4018,6 +4074,9 @@ footer .footer_inner .footer_lower .copyright {
   .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order {
     width: 100% !important;
     padding: 40px 50px;
+  }
+  .page-payment .section-payment-terms {
+    margin-bottom: 80px;
   }
 }
 @media screen and (max-width: 720px) {
@@ -4307,6 +4366,43 @@ footer .footer_inner .footer_lower .copyright {
   }
   .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment .place-order .woocommerce-terms-and-conditions-wrapper .woocommerce-privacy-policy-text {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-payment .section-payment-terms {
+    margin-bottom: 60px;
+  }
+  .page-payment .section-payment-terms .corp_title {
+    font-size: 6vw;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .page-payment .section-payment-terms .payment_terms {
+    font-size: 14px;
+  }
+  .page-payment .section-payment-terms .payment_terms .terms_item {
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #ddd;
+  }
+  .page-payment .section-payment-terms .payment_terms .terms_item:nth-last-of-type(1) {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px dotted #ddd;
+  }
+  .page-payment .section-payment-terms .payment_terms .terms_item .num {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+    font-size: 14px;
+    line-height: 30px;
+    text-indent: 0.01em;
+    margin-top: 5px;
+  }
+  .page-payment .section-payment-terms .payment_terms .terms_item .text {
+    width: calc(100% - 45px);
   }
 }
 .page-payment .section-lead-completed {
@@ -6090,6 +6186,12 @@ footer .footer_inner .footer_lower .copyright {
   margin: 0 6% 25px 0 !important;
 }
 
+.woocommerce-address-fields::before {
+  display: block;
+  content: "個人情報はプラン予約時に、宿泊施設の方へ共有されます。";
+  font-size: 14px;
+  margin-bottom: 20px;
+}
 .woocommerce-address-fields .form-row {
   margin-bottom: 25px;
 }
@@ -6485,6 +6587,181 @@ footer .footer_inner .footer_lower .copyright {
   display: inline;
   content: "詳細を見る";
   color: #fff;
+}
+
+.page-delete {
+  margin-top: 160px;
+  margin-bottom: 120px;
+  min-height: unset;
+}
+.page-delete .comp-section-title .title {
+  font-size: 30px;
+}
+.page-delete .delete_form {
+  max-width: 50%;
+  margin: 30px auto 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+}
+.page-delete .delete_form .form-row {
+  margin-bottom: 25px;
+}
+.page-delete .delete_form label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: normal;
+  position: relative;
+}
+.page-delete .delete_form input[type=email],
+.page-delete .delete_form input[type=tel],
+.page-delete .delete_form input[type=text],
+.page-delete .delete_form input[type=password] {
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  transition: border 0.2s;
+  will-change: border;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+.page-delete .delete_form input[type=email]:focus,
+.page-delete .delete_form input[type=tel]:focus,
+.page-delete .delete_form input[type=text]:focus,
+.page-delete .delete_form input[type=password]:focus {
+  outline: none;
+  border: 1px solid #979797;
+}
+.page-delete .delete_form select {
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  transition: border 0.2s;
+  will-change: border;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+.page-delete .delete_form select:focus {
+  outline: none;
+  border: 1px solid #979797;
+}
+.page-delete .delete_form button[type=submit] {
+  display: block;
+  width: 100%;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 20px !important;
+  text-align: center;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  background-color: #BF992E !important;
+}
+.page-delete .delete_form button[type=submit]:hover {
+  opacity: 0.75;
+}
+.page-delete .delete_form .show-password-input {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  height: 15px;
+  margin: auto;
+  padding: 0;
+  line-height: 1;
+}
+.page-delete .delete_form .woocommerce-password-strength {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.page-delete .delete_form .woocommerce-password-hint {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+}
+@media screen and (max-width: 720px) {
+  .page-delete .delete_form .form-row {
+    margin-bottom: 25px;
+  }
+  .page-delete .delete_form label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-weight: bold;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: normal;
+    position: relative;
+  }
+  .page-delete .delete_form input[type=email],
+.page-delete .delete_form input[type=tel],
+.page-delete .delete_form input[type=text],
+.page-delete .delete_form input[type=password] {
+    font-size: 16px;
+  }
+  .page-delete .delete_form select {
+    font-size: 16px;
+  }
+  .page-delete .delete_form button[type=submit] {
+    display: block;
+    padding: 7px 0;
+    font-size: 18px !important;
+  }
+  .page-delete .delete_form .show-password-input {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    height: 15px;
+    margin: auto;
+    padding: 0;
+    line-height: 1;
+  }
+  .page-delete .delete_form .woocommerce-password-strength {
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+  .page-delete .delete_form .woocommerce-password-hint {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+  }
+}
+.page-delete .delete_form label {
+  margin-bottom: 15px;
+}
+.page-delete .delete_form .submit_wrap {
+  position: relative;
+  transition: opacity 0.3s;
+}
+.page-delete .delete_form .submit_wrap:hover {
+  opacity: 0.75;
+}
+.page-delete .delete_form .submit_wrap button {
+  pointer-events: none;
+}
+.page-delete .delete_form .submit_wrap input[type=submit] {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  cursor: pointer;
 }
 
 /*########## コンポーネント ##########*/

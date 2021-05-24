@@ -1,4 +1,10 @@
 .woocommerce-address-fields{
+  &::before{
+    display: block;
+    content: "個人情報はプラン予約時に、宿泊施設の方へ共有されます。";
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
   @include formSet;
   button[type=submit]{
     max-width: 30%;

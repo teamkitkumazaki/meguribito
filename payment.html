@@ -84,7 +84,6 @@
 		</div><!-- header_inner -->
 	</header>
 	<!-- loading -->
-
 	<article id="paymentPage" class="page-payment">
 		<section class="section-lead comp-underpage-lead">
 			<div class="section_inner">
@@ -98,43 +97,6 @@
 			<div class="section_inner">
 				<div class="woocommerce">
 					<div class="woocommerce-notices-wrapper"></div>
-					<div class="woocommerce-form-login-toggle">
-
-						<div class="woocommerce-info">
-							登録済みの方はこちら <a href="#" class="showlogin">ログインはこちらから</a> </div>
-					</div>
-					<form class="woocommerce-form woocommerce-form-login login" method="post">
-
-
-						<p>以前に買い物をしたことがある場合は、以下にあなたの詳細を入力してください。新規のお客様は、[請求と配送]セクションに進んでください。</p>
-
-						<p class="form-row form-row-first">
-							<label for="username">ユーザー名またはメールアドレス&nbsp;<span class="required">*</span></label>
-							<input type="text" class="input-text" name="username" id="username" autocomplete="username">
-						</p>
-						<p class="form-row form-row-last">
-							<label for="password">パスワード&nbsp;<span class="required">*</span></label>
-							<input class="input-text" type="password" name="password" id="password" autocomplete="current-password">
-						</p>
-						<div class="clear"></div>
-
-
-						<p class="form-row">
-							<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
-								<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever"> <span>ログイン状態を保存</span>
-							</label>
-							<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="060b34ba9d"><input type="hidden" name="_wp_http_referer" value="/checkout/"> <input type="hidden" name="redirect"
-								value="https://meguribito.com/checkout/">
-							<button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="ログイン">ログイン</button>
-						</p>
-						<p class="lost_password">
-							<a href="https://meguribito.com/my-account/lost-password/">パスワードをお忘れですか ?</a>
-						</p>
-
-						<div class="clear"></div>
-
-
-					</form>
 					<div class="woocommerce-form-coupon-toggle">
 
 						<div class="woocommerce-info">
@@ -170,11 +132,11 @@
 
 									<div class="woocommerce-billing-fields__field-wrapper">
 										<p class="form-row form-row-first validate-required" id="billing_last_name_field" data-priority="10"><label for="billing_last_name" class="">姓&nbsp;<abbr class="required" title="必須">*</abbr></label><span
-												class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_last_name" id="billing_last_name" placeholder="" value="" autocomplete="family-name"></span></p>
+												class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_last_name" id="billing_last_name" placeholder="" value="熊﨑" autocomplete="family-name"></span></p>
 										<p class="form-row form-row-last validate-required" id="billing_first_name_field" data-priority="20"><label for="billing_first_name" class="">名&nbsp;<abbr class="required" title="必須">*</abbr></label><span
-												class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_first_name" id="billing_first_name" placeholder="" value="" autocomplete="given-name"></span></p>
+												class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_first_name" id="billing_first_name" placeholder="" value="慎之介" autocomplete="given-name"></span></p>
 										<p class="form-row form-row-wide" id="billing_company_field" data-priority="30"><label for="billing_company" class="">会社名&nbsp;<span class="optional">(オプション)</span></label><span class="woocommerce-input-wrapper"><input type="text"
-													class="input-text " name="billing_company" id="billing_company" placeholder="" value="" autocomplete="organization"></span></p>
+													class="input-text " name="billing_company" id="billing_company" placeholder="" value="AGE STREAM" autocomplete="organization"></span></p>
 										<p class="form-row form-row-wide address-field update_totals_on_change validate-required" id="billing_country_field" data-priority="40"><label for="billing_country" class="">国または地域&nbsp;<abbr class="required"
 													title="必須">*</abbr></label><span class="woocommerce-input-wrapper"><select name="billing_country" id="billing_country" class="country_to_state country_select " autocomplete="country" data-placeholder="国または地域を選択…">
 													<option value="">国または地域を選択…</option>
@@ -430,7 +392,7 @@
 												</select><noscript><button type="submit" name="woocommerce_checkout_update_totals" value="国または地域を更新">国または地域を更新</button></noscript></span></p>
 										<p class="form-row address-field validate-required validate-postcode form-row-first" id="billing_postcode_field" data-priority="65" data-o_class="form-row form-row-first address-field validate-required validate-postcode"><label
 												for="billing_postcode" class="">郵便番号&nbsp;<abbr class="required" title="必須">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_postcode" id="billing_postcode"
-													placeholder="" value="" autocomplete="postal-code"></span></p>
+													placeholder="" value="158-0082" autocomplete="postal-code"></span></p>
 										<p class="form-row address-field validate-required validate-state form-row-last" id="billing_state_field" data-priority="66" data-o_class="form-row form-row-last address-field validate-required validate-state"><label
 												for="billing_state" class="">都道府県&nbsp;<abbr class="required" title="必須">*</abbr></label><span class="woocommerce-input-wrapper"><select name="billing_state" id="billing_state" class="state_select select2-hidden-accessible"
 													autocomplete="address-level1" data-placeholder="オプションを選択…" data-input-classes="" tabindex="-1" aria-hidden="true">
@@ -486,17 +448,17 @@
 															aria-expanded="false" tabindex="0" aria-labelledby="select2-billing_state-container" role="combobox"><span class="select2-selection__rendered" id="select2-billing_state-container" role="textbox" aria-readonly="true"
 																title="愛媛県">愛媛県</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></span></p>
 										<p class="form-row address-field validate-required form-row-wide" id="billing_city_field" data-priority="67" data-o_class="form-row form-row-wide address-field validate-required"><label for="billing_city" class="">市区町村&nbsp;<abbr
-													class="required" title="必須">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_city" id="billing_city" placeholder="" value="" autocomplete="address-level2"></span>
-										</p>
+													class="required" title="必須">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_city" id="billing_city" placeholder="" value="世田谷区"
+													autocomplete="address-level2"></span></p>
 										<p class="form-row address-field validate-required form-row-wide" id="billing_address_1_field" data-priority="68"><label for="billing_address_1" class="">番地&nbsp;<abbr class="required" title="必須">*</abbr></label><span
-												class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_address_1" id="billing_address_1" placeholder="番地" value="" autocomplete="address-line1" data-placeholder="番地"></span></p>
+												class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_address_1" id="billing_address_1" placeholder="番地" value="等々力3-22-7" autocomplete="address-line1" data-placeholder="番地"></span></p>
 										<p class="form-row address-field form-row-wide" id="billing_address_2_field" data-priority="69"><label for="billing_address_2" class="screen-reader-text">アパート名、棟名、部屋番号など(オプション)&nbsp;<span
-													class="optional">(オプション)</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_address_2" id="billing_address_2" placeholder="アパート名、棟名、部屋番号など(オプション)" value=""
+													class="optional">(オプション)</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_address_2" id="billing_address_2" placeholder="アパート名、棟名、部屋番号など(オプション)" value="グリーンコート等々力201"
 													autocomplete="address-line2" data-placeholder="アパート名、棟名、部屋番号など(オプション)"></span></p>
 										<p class="form-row form-row-wide validate-required validate-phone" id="billing_phone_field" data-priority="100"><label for="billing_phone" class="">電話&nbsp;<abbr class="required" title="必須">*</abbr></label><span
-												class="woocommerce-input-wrapper"><input type="tel" class="input-text " name="billing_phone" id="billing_phone" placeholder="" value="" autocomplete="tel"></span></p>
+												class="woocommerce-input-wrapper"><input type="tel" class="input-text " name="billing_phone" id="billing_phone" placeholder="" value="08038254004" autocomplete="tel"></span></p>
 										<p class="form-row form-row-wide validate-required validate-email" id="billing_email_field" data-priority="110"><label for="billing_email" class="">メールアドレス&nbsp;<abbr class="required" title="必須">*</abbr></label><span
-												class="woocommerce-input-wrapper"><input type="email" class="input-text " name="billing_email" id="billing_email" placeholder="" value="" autocomplete="email username"></span></p>
+												class="woocommerce-input-wrapper"><input type="email" class="input-text " name="billing_email" id="billing_email" placeholder="" value="skmzk418.scammyman@gmail.com" autocomplete="email username"></span></p>
 									</div>
 
 								</div>
@@ -542,28 +504,20 @@
 								<tbody>
 									<tr class="cart_item">
 										<td class="product-name">
-											瀬戸内のアーティスト達と過ごすローカルヒッピーライフ&nbsp; <strong class="product-quantity">×&nbsp;1</strong>
+											里山の暮らしから学ぶ、 心と体を整え「自然のままに生きる」という在り方&nbsp; <strong class="product-quantity">×&nbsp;1</strong>
 											<dl class="variation">
 												<dt class="variation-">予約日:</dt>
 												<dd class="variation-">
-													<p>2021年5月10日</p>
+													<p>2021年6月15日</p>
 												</dd>
 												<dt class="variation-">人数:</dt>
 												<dd class="variation-">
 													<p>1</p>
 												</dd>
-												<dt class="variation-">期間:</dt>
-												<dd class="variation-">
-													<p>4 日</p>
-												</dd>
-												<dt class="variation-">予約タイプ:</dt>
-												<dd class="variation-">
-													<p>個室</p>
-												</dd>
 											</dl>
 										</td>
 										<td class="product-total">
-											<span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>25,000</bdi></span>
+											<span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>22,000</bdi></span>
 										</td>
 									</tr>
 								</tbody>
@@ -571,7 +525,7 @@
 
 									<tr class="cart-subtotal">
 										<th>小計</th>
-										<td><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>25,000</bdi></span></td>
+										<td><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>22,000</bdi></span></td>
 									</tr>
 
 
@@ -581,7 +535,7 @@
 
 									<tr class="order-total">
 										<th>合計</th>
-										<td><strong><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>25,000</bdi></span></strong> </td>
+										<td><strong><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">¥</span>22,000</bdi></span></strong> </td>
 									</tr>
 
 
@@ -590,25 +544,16 @@
 
 							<div id="payment" class="woocommerce-checkout-payment">
 								<ul class="wc_payment_methods payment_methods methods">
-									<li class="wc_payment_method payment_method_cod">
-										<input id="payment_method_cod" type="radio" class="input-radio" name="payment_method" value="cod" checked="checked" data-order_button_text="">
-
-										<label for="payment_method_cod">
-											代金引換 </label>
-										<div class="payment_box payment_method_cod">
-											<p>配達時に現金で支払う。</p>
-										</div>
-									</li>
 									<li class="wc_payment_method payment_method_stripe">
-										<input id="payment_method_stripe" type="radio" class="input-radio" name="payment_method" value="stripe" data-order_button_text="">
+										<input id="payment_method_stripe" type="radio" class="input-radio" name="payment_method" value="stripe" checked="checked" data-order_button_text="" style="display: none;">
 
 										<label for="payment_method_stripe">
 											クレジットカード (Stripe) <img src="https://meguribito.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg" class="stripe-visa-icon stripe-icon" alt="Visa"><img
 												src="https://meguribito.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg" class="stripe-mastercard-icon stripe-icon" alt="Mastercard"><img
 												src="https://meguribito.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg" class="stripe-amex-icon stripe-icon" alt="American Express"><img
 												src="https://meguribito.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/jcb.svg" class="stripe-jcb-icon stripe-icon" alt="JCB"> </label>
-										<div class="payment_box payment_method_stripe" style="display:none;">
-											<div id="stripe-payment-data" data-email="" data-full-name=" " data-currency="jpy">
+										<div class="payment_box payment_method_stripe">
+											<div id="stripe-payment-data" data-email="skmzk418.scammyman@gmail.com" data-full-name=" " data-currency="jpy">
 												<p>Stripe 経由でクレジットカードで支払う。</p>
 												<ul class="woocommerce-SavedPaymentMethods wc-saved-payment-methods" data-count="0"></ul>
 												<fieldset id="wc-stripe-cc-form" class="wc-credit-card-form wc-payment-form" style="background:transparent;">
@@ -619,8 +564,8 @@
 															<div id="stripe-card-element" class="wc-stripe-elements-field StripeElement empty">
 																<div class="__PrivateStripeElement"
 																	style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe
-																		name="__privateStripeFrame6636" frameborder="0" allowtransparency="true" scrolling="no" allow="payment *"
-																		src="https://js.stripe.com/v3/elements-inner-card-14d7bd00456e084840584d666a4933c6.html#wait=false&amp;style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;rtl=false&amp;componentName=cardNumber&amp;keyMode=live&amp;apiKey=pk_live_51Ih8HFKSxuASIufi8Nok7PClSWWBYRJ90tgkiycBiWgxntyU5iWuY7dtOTv5xaeeK3kLmATy5i3khMTJWKZ5MUAY005fLJtCoN&amp;referrer=https%3A%2F%2Fmeguribito.com%2Fcheckout%2F&amp;controllerId=__privateStripeController6631"
+																		name="__privateStripeFrame4846" frameborder="0" allowtransparency="true" scrolling="no" allow="payment *"
+																		src="https://js.stripe.com/v3/elements-inner-card-96b43273d90c48cb8468f30c8f94e0ac.html#wait=false&amp;style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;rtl=false&amp;componentName=cardNumber&amp;keyMode=live&amp;apiKey=pk_live_51Ih8HFKSxuASIufi8Nok7PClSWWBYRJ90tgkiycBiWgxntyU5iWuY7dtOTv5xaeeK3kLmATy5i3khMTJWKZ5MUAY005fLJtCoN&amp;referrer=https%3A%2F%2Fmeguribito.com%2Fcheckout%2F&amp;controllerId=__privateStripeController4841"
 																		title="セキュアなカード番号入力フレーム"
 																		style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; will-change: transform !important; height: 18px;"></iframe><input
 																		class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1"
@@ -638,8 +583,8 @@
 														<div id="stripe-exp-element" class="wc-stripe-elements-field StripeElement empty">
 															<div class="__PrivateStripeElement"
 																style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe
-																	name="__privateStripeFrame6637" frameborder="0" allowtransparency="true" scrolling="no" allow="payment *"
-																	src="https://js.stripe.com/v3/elements-inner-card-14d7bd00456e084840584d666a4933c6.html#wait=false&amp;style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;rtl=false&amp;componentName=cardExpiry&amp;keyMode=live&amp;apiKey=pk_live_51Ih8HFKSxuASIufi8Nok7PClSWWBYRJ90tgkiycBiWgxntyU5iWuY7dtOTv5xaeeK3kLmATy5i3khMTJWKZ5MUAY005fLJtCoN&amp;referrer=https%3A%2F%2Fmeguribito.com%2Fcheckout%2F&amp;controllerId=__privateStripeController6631"
+																	name="__privateStripeFrame4847" frameborder="0" allowtransparency="true" scrolling="no" allow="payment *"
+																	src="https://js.stripe.com/v3/elements-inner-card-96b43273d90c48cb8468f30c8f94e0ac.html#wait=false&amp;style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;rtl=false&amp;componentName=cardExpiry&amp;keyMode=live&amp;apiKey=pk_live_51Ih8HFKSxuASIufi8Nok7PClSWWBYRJ90tgkiycBiWgxntyU5iWuY7dtOTv5xaeeK3kLmATy5i3khMTJWKZ5MUAY005fLJtCoN&amp;referrer=https%3A%2F%2Fmeguribito.com%2Fcheckout%2F&amp;controllerId=__privateStripeController4841"
 																	title="セキュアな有効期限入力フレーム"
 																	style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; will-change: transform !important; height: 18px;"></iframe><input
 																	class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1"
@@ -653,8 +598,8 @@
 														<div id="stripe-cvc-element" class="wc-stripe-elements-field StripeElement empty">
 															<div class="__PrivateStripeElement"
 																style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe
-																	name="__privateStripeFrame6638" frameborder="0" allowtransparency="true" scrolling="no" allow="payment *"
-																	src="https://js.stripe.com/v3/elements-inner-card-14d7bd00456e084840584d666a4933c6.html#wait=false&amp;style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;rtl=false&amp;componentName=cardCvc&amp;keyMode=live&amp;apiKey=pk_live_51Ih8HFKSxuASIufi8Nok7PClSWWBYRJ90tgkiycBiWgxntyU5iWuY7dtOTv5xaeeK3kLmATy5i3khMTJWKZ5MUAY005fLJtCoN&amp;referrer=https%3A%2F%2Fmeguribito.com%2Fcheckout%2F&amp;controllerId=__privateStripeController6631"
+																	name="__privateStripeFrame4848" frameborder="0" allowtransparency="true" scrolling="no" allow="payment *"
+																	src="https://js.stripe.com/v3/elements-inner-card-96b43273d90c48cb8468f30c8f94e0ac.html#wait=false&amp;style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;rtl=false&amp;componentName=cardCvc&amp;keyMode=live&amp;apiKey=pk_live_51Ih8HFKSxuASIufi8Nok7PClSWWBYRJ90tgkiycBiWgxntyU5iWuY7dtOTv5xaeeK3kLmATy5i3khMTJWKZ5MUAY005fLJtCoN&amp;referrer=https%3A%2F%2Fmeguribito.com%2Fcheckout%2F&amp;controllerId=__privateStripeController4841"
 																	title="セキュアなセキュリティコード入力フレーム"
 																	style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; will-change: transform !important; height: 18px;"></iframe><input
 																	class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1"
@@ -669,7 +614,7 @@
 													<br>
 													<div class="clear"></div>
 												</fieldset>
-												<p class="form-row woocommerce-SavedPaymentMethods-saveNew woocommerce-validated" style="display: none;">
+												<p class="form-row woocommerce-SavedPaymentMethods-saveNew woocommerce-validated" style="display: block;">
 													<input id="wc-stripe-new-payment-method" name="wc-stripe-new-payment-method" type="checkbox" value="true" style="width:auto;">
 													<label for="wc-stripe-new-payment-method" style="display:inline;">今後の購入に使用するため、アカウントに支払い情報を保存します。</label>
 												</p>
@@ -700,7 +645,7 @@
 
 									<button type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="注文する" data-value="注文する">注文する</button>
 
-									<input type="hidden" id="woocommerce-process-checkout-nonce" name="woocommerce-process-checkout-nonce" value="6d6b7adf3d"><input type="hidden" name="_wp_http_referer" value="/?wc-ajax=update_order_review">
+									<input type="hidden" id="woocommerce-process-checkout-nonce" name="woocommerce-process-checkout-nonce" value="161878f43b"><input type="hidden" name="_wp_http_referer" value="/?wc-ajax=update_order_review">
 								</div>
 							</div>
 
@@ -712,6 +657,32 @@
 				</div>
 			</div>
 		</section>
+		<section class="section-payment-terms">
+			<div class="section_inner">
+				<h3 class="corp_title">お申し込み・契約について</h3>
+				<div class="payment_terms">
+					<div class="terms_item">
+						<span class="num">1</span>
+						<span class="text">Meguribitoは、手配契約・運送等契約の当事者とはならず、お客様と宿泊施設の直接契約となります。</span>
+					</div>
+					<div class="terms_item">
+						<span class="num">2</span>
+						<span class="text">Meguribitoは、お客様と宿泊施設との間の仲介・媒介・斡旋等を行いません。予約後の連絡についても，当事者間で直接行ってください。</span>
+					</div>
+					<div class="terms_item">
+						<span class="num">3</span>
+						<span class="text">Meguribitoが積極的に特定の宿泊施設を紹介したり，勧めたりすることはありません。お客様のご判断で、宿泊施設や体験をお選びください。</span>
+					</div>
+					<div class="terms_item">
+						<span class="num">4</span>
+						<span class="text">Meguribitoは、ストライプジャパン株式会社が提供する決済サービス「STRIPE」を利用しています。本サイトを通じて決済した場合であっても、Meguribitoが宿泊プランの料金を収受するものではありません。</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="comp-text-set" style="opacity:0; height:0px;">
+			<p>メールマガジンを受け取る・内容・方法・間・(税込)</p>
+		</div>
 	</article>
 	<div id="fixedHeader" class="comp-header comp-fixed-header">
 		<div class="header_inner">
