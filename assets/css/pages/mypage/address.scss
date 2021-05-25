@@ -20,3 +20,33 @@
     margin: 0 0 25px 6% !important;
   }
 }
+
+@media screen and (max-width: 720px){
+  .woocommerce-address-fields{
+    label{
+      font-size: 14px;
+    }
+    p{
+      width: 100%;
+      order: 3;
+    }
+    &::before{
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    @include formSet;
+    button[type=submit]{
+      max-width: 100%;
+    }
+    .form-row-first{
+      float: none !important;
+      width: 100% !important;
+      margin: 0 0 25px !important;
+    }
+    .form-row-last{
+      float: none !important;
+      width: 100% !important;
+      margin: 0 0% 25px 0 !important;
+    }
+  }
+}

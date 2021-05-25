@@ -192,6 +192,9 @@
       padding: 30px;
       background-color: #fff;
       box-sizing: border-box;
+      @media screen and (max-width: 720px){
+        padding: 25px 20px;
+      }
       h2{
         display: none;
       }

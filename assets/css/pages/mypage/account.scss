@@ -5,6 +5,9 @@
     @include mypageTitle;
   }
   @include formSet;
+  label{
+    background: transparent !important;
+  }
   legend{
     display: none;
   }
@@ -26,5 +29,53 @@
     float: left !important;
     width: 47% !important;
     margin: 0 6% 25px 0 !important;
+  }
+}
+@media screen and (max-width: 720px){
+  .woocommerce-EditAccountForm{
+    @include flexSet;
+    label{
+      font-size: 14px;
+    }
+    legend{
+      display: none;
+    }
+    p{
+      width: 100%;
+      order: 3;
+    }
+    .form-row{
+      margin-bottom: 25px;
+      order: 2;
+      &:nth-of-type(1){
+        order: 1;
+      }
+      &:nth-of-type(2){
+        order: 0;
+      }
+      em {
+        display: none;
+      }
+    }
+    fieldset{
+      order: 2;
+      width: 100%;
+      .form-row{
+        order: 2 !important;
+      }
+    }
+    button[type=submit]{
+      max-width: 100%;
+    }
+    .form-row-first{
+      float: none !important;
+      width: 100% !important;
+      margin: 0 0 25px !important;
+    }
+    .form-row-last{
+      float: none !important;
+      width: 100% !important;
+      margin: 0 0% 25px 0 !important;
+    }
   }
 }
