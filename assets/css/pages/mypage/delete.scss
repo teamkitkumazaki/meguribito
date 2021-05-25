@@ -40,3 +40,46 @@
     }
   }
 }
+
+@media screen and (max-width: 980px){
+  .page-delete{
+    margin-top: 120px;
+    margin-bottom: 100px;
+    .comp-section-title{
+      .title{
+        font-size: 24px;
+      }
+    }
+    .delete_form{
+      max-width: 100%;
+      margin: 30px auto 0;
+      padding: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  .page-delete{
+    margin-top: 100px;
+    margin-bottom: 60px;
+    .comp-section-title{
+      .title{
+        font-size: 6.5vw;
+      }
+    }
+    .delete_form{
+      max-width: 100%;
+      margin: 30px auto 0;
+      border-radius: 5px;
+      padding: 20px 20px;
+      label{
+        margin-bottom: 10px;
+      }
+      .submit_wrap{
+        button{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

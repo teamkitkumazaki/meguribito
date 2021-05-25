@@ -78,7 +78,7 @@ get_header(); ?>
 		</section>
 	</article>
 	<div class="comp-text-set" style="opacity:0; height:0px;">
-		<p>情報・変更</p>
+		<p>情報・変更・見る</p>
 	</div>
   <?php get_template_part("parts/hummenu");?>
   <?php get_template_part("parts/footer");?>
