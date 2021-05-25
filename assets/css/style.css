@@ -5573,6 +5573,7 @@ footer .footer_inner .footer_lower .copyright {
   color: #979797;
 }
 .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--orders {
+  display: none;
   order: 1;
 }
 .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--orders a::after {
@@ -5615,7 +5616,19 @@ footer .footer_inner .footer_lower .copyright {
   }
 }
 .page-mypage .section-mypage .woocommerce-MyAccount-content h2 {
-  display: none;
+  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 720px) {
+  .page-mypage .section-mypage .woocommerce-MyAccount-content h2 {
+    font-size: 20px;
+  }
 }
 .page-mypage .section-mypage .woocommerce-MyAccount-content h3 {
   font-family: "FOT-筑紫A丸ゴシック Std D";
@@ -5700,13 +5713,11 @@ footer .footer_inner .footer_lower .copyright {
   .page-mypage .section-mypage .woocommerce-MyAccount-navigation {
     width: 100%;
     float: none;
-    overflow: scroll;
   }
   .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 100vw;
   }
   .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li {
     width: auto;
@@ -5737,6 +5748,7 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 30px;
   }
   .page-mypage .section-account-info .mypage_title {
+    display: none;
     text-align: center;
   }
   .page-mypage .section-account-info .flex_wrap {
@@ -5747,19 +5759,19 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 30px;
   }
   .page-mypage .section-account-info .flex_wrap .myprofile .icon_wrap {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     box-sizing: border-box;
-    margin-right: 15px;
+    margin-right: 0;
   }
   .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap {
-    width: calc(100% - 115px);
+    width: calc(100% - 110px);
   }
   .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .user_name {
     font-size: 16px;
     letter-spacing: 0.03em;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .user_name .user_email {
     display: block;
@@ -5809,7 +5821,6 @@ footer .footer_inner .footer_lower .copyright {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 650px;
   }
   .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li {
     padding: 0;
@@ -5817,10 +5828,33 @@ footer .footer_inner .footer_lower .copyright {
     border-bottom: 1px solid #979797;
   }
   .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li a {
+    font-size: 13px !important;
     padding: 10px;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li a::after {
+    font-size: 13px !important;
   }
   .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.active, .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.is-active {
     border-bottom: 1px solid #BF992E;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--bookings {
+    order: 0;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--bookings a::after {
+    display: inline;
+    content: "履歴";
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--edit-address {
+    order: 2;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--edit-address a::after {
+    content: "情報変更";
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--edit-account {
+    order: 3;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--edit-account a::after {
+    content: "";
   }
   .page-mypage .section-unsubscribe .unsubscribe_button {
     font-size: 14px;
@@ -6755,25 +6789,16 @@ footer .footer_inner .footer_lower .copyright {
   }
 }
 .my_account_bookings {
+  margin-bottom: 60px;
   display: block;
   width: 100%;
 }
-.my_account_bookings::before {
-  display: block;
-  content: "予約中のプラン";
-  font-family: "FOT-筑紫A丸ゴシック Std D";
-  font-weight: bold;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  margin-bottom: 20px;
-  margin-bottom: 5px;
+.my_account_bookings:nth-of-type(2) {
+  margin-bottom: 0;
 }
-@media screen and (max-width: 720px) {
-  .my_account_bookings::before {
-    font-size: 20px;
-  }
+.my_account_bookings::before {
+  display: none;
+  content: "予約中のプラン";
 }
 .my_account_bookings thead {
   display: none;
@@ -6796,7 +6821,11 @@ footer .footer_inner .footer_lower .copyright {
   display: none;
 }
 .my_account_bookings tr .booking-status {
-  display: none;
+  order: 2;
+  background: #f4f4f4;
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 10px;
 }
 .my_account_bookings tr .booking-start-date {
   order: 0;
@@ -6857,6 +6886,8 @@ footer .footer_inner .footer_lower .copyright {
   opacity: 0.75;
 }
 .my_account_bookings tr .booked-product a {
+  display: block;
+  padding-right: 200px;
   color: inherit;
 }
 .my_account_bookings tr .booking-cancel {
@@ -6895,6 +6926,67 @@ footer .footer_inner .footer_lower .copyright {
   color: #fff;
 }
 
+@media screen and (max-width: 980px) {
+  .my_account_bookings {
+    margin-bottom: 40px;
+  }
+  .my_account_bookings tr .booking-end-date {
+    width: 60%;
+  }
+  .my_account_bookings tr .booked-product {
+    font-size: 20px;
+  }
+  .my_account_bookings tr .booked-product a {
+    padding-right: 0px;
+  }
+  .my_account_bookings tr .order-number {
+    width: 100%;
+    order: 5;
+    height: unset;
+    position: static;
+  }
+  .my_account_bookings tr .order-number a {
+    width: 50%;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .my_account_bookings {
+    margin-bottom: 40px;
+  }
+  .my_account_bookings tr .booking-id {
+    display: none;
+  }
+  .my_account_bookings tr .booking-status {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+  .my_account_bookings tr .booking-start-date {
+    font-size: 12px;
+    padding-left: 25px;
+  }
+  .my_account_bookings tr .booking-start-date::before {
+    width: 15px;
+    height: 15px;
+  }
+  .my_account_bookings tr .booking-end-date {
+    width: auto;
+    font-size: 12px;
+  }
+  .my_account_bookings tr .booked-product {
+    font-size: 18px;
+  }
+  .my_account_bookings tr .booked-product a {
+    padding-right: 0px;
+  }
+  .my_account_bookings tr .order-number a {
+    width: 100%;
+    line-height: 35px;
+    height: 35px;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+}
 .woocommerce-MyAccount-orders {
   display: block;
   width: 100%;

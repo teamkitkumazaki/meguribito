@@ -1,9 +1,11 @@
 .my_account_bookings{
+  margin-bottom: 60px;
+  &:nth-of-type(2){
+    margin-bottom: 0;
+  }
   &::before{
-    display: block;
+    display: none;
     content: "予約中のプラン";
-    @include mypageTitle;
-    margin-bottom: 5px;
   }
   @include breakTableLayout;
   tr{
@@ -19,7 +21,11 @@
       display: none;
     }
     .booking-status{
-      display: none;
+      order: 2;
+      background: #f4f4f4;
+      padding: 10px;
+      font-size: 14px;
+      margin-top: 10px;
     }
     .booking-start-date{
       order: 0;
@@ -71,6 +77,8 @@
       background-color: transparent !important;
       @include hover;
       a{
+        display: block;
+        padding-right: 200px;
         color: inherit;
       }
     }
@@ -102,6 +110,75 @@
           display: inline;
           content: "詳細を見る";
           color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px){
+  .my_account_bookings{
+    margin-bottom: 40px;
+    tr{
+      .booking-end-date{
+        width: 60%;
+      }
+      .booked-product{
+        font-size: 20px;
+        a{
+          padding-right: 0px;
+        }
+      }
+      .order-number{
+        width: 100%;
+        order: 5;
+        height: unset;
+        position: static;
+        a{
+          width: 50%;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  .my_account_bookings{
+    margin-bottom: 40px;
+    tr{
+      .booking-id{
+        display: none;
+      }
+      .booking-status{
+        padding: 7px 10px;
+        font-size: 12px;
+      }
+      .booking-start-date{
+        font-size: 12px;
+        padding-left: 25px;
+        &::before{
+          width: 15px;
+          height: 15px;
+        }
+      }
+      .booking-end-date{
+        width: auto;
+        font-size: 12px;
+      }
+      .booked-product{
+        font-size: 18px;
+        a{
+          padding-right: 0px;
+        }
+      }
+      .order-number{
+        a{
+          width: 100%;
+          line-height: 35px;
+          height: 35px;
+          font-size: 14px;
+          margin-top: 15px;
         }
       }
     }

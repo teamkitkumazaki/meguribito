@@ -44,13 +44,13 @@ get_header(); ?>
 						</div>
 						<div class="profile_wrap">
 							<p class="user_name"><?php echo $userInfo->display_name;?><span class="user_email">(<?php echo $userInfo->user_email;?>)</p>
-							<div class="profile_detail">
+							<!-- <div class="profile_detail">
 								<div class="profile_point">
 									<span class="title">予約/計画中のプラン</span>
 									<span class="num">3</span>
 									<span class="unit">件</span>
 								</div>
-							</div><!-- profile_detail -->
+							</div> --><!-- profile_detail -->
 							<a id="logoutLink" class="logout_link" href="/my-account/customer-logout">ログアウト</a>
 						</div>
 					</div>
@@ -78,9 +78,17 @@ get_header(); ?>
 		</section>
 	</article>
 	<div class="comp-text-set" style="opacity:0; height:0px;">
-		<p>情報・変更・見る</p>
+		<p>予約中・情報・変更・見る・履歴</p>
 	</div>
   <?php get_template_part("parts/hummenu");?>
   <?php get_template_part("parts/footer");?>
+	<?php $url = $_SERVER['REQUEST_URI']; ?>
+	<?php if(strstr($url,'bookings') == false): ?>
+		<style>
+		.page-mypage .section-mypage h2{
+			display: none !important;
+		}
+		</style>
+	<?php endif; ?>
 </body>
 </html>

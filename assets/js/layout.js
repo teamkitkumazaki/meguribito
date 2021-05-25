@@ -534,8 +534,7 @@ function setBookingHistory(){
     detailLink2[index] = $(this).find('.order-number a');
     detailLink2[index].text('');
     hrefTxt[index] = detailLink[index].attr('href');
-    detailLink[index].attr('href', 'javascript:void(0);').attr('link', hrefTxt);
-    detailLink2[index].attr('href', 'javascript:void(0);').attr('link', hrefTxt);
+    detailLink2[index].attr('href', hrefTxt[index]);
   });
 }
 

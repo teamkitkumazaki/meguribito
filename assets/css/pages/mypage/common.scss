@@ -145,6 +145,7 @@
             }
           }
           &.woocommerce-MyAccount-navigation-link--orders{
+            display: none;
             order:1;
             a{
               &::after{
@@ -196,7 +197,8 @@
         padding: 25px 20px;
       }
       h2{
-        display: none;
+        @include mypageTitle;
+        margin-bottom: 0;
       }
       h3{
         @include mypageTitle;
@@ -280,11 +282,9 @@
       .woocommerce-MyAccount-navigation{
         width: 100%;
         float: none;
-        overflow: scroll;
         ul{
           @include flexSet;
           align-items: center;
-          width: 100vw;
           li{
             width: auto;
             padding: 0 10px 0 0;
@@ -316,6 +316,7 @@
     .section-account-info{
       margin-bottom: 30px;
       .mypage_title{
+        display: none;
         text-align: center;
       }
       .flex_wrap{
@@ -324,18 +325,18 @@
           width: 100%;
           margin-bottom: 30px;
           .icon_wrap{
-            width: 100px;
-            height: 100px;
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
             box-sizing: border-box;
-            margin-right: 15px;
+            margin-right: 0;
           }
           .profile_wrap{
-            width: calc(100% - 115px);
+            width: calc(100% - 110px);
             .user_name{
               font-size: 16px;
               letter-spacing: 0.03em;
-              margin-bottom: 5px;
+              margin-bottom: 10px;
               .user_email{
                 display: block;
                 font-size: 12px;
@@ -387,16 +388,44 @@
         ul{
           @include flexSet;
           align-items: center;
-          width: 650px;
           li{
-            padding: 0 ;
+            padding: 0;
             text-align: center;
             border-bottom: 1px solid #979797;
             a{
+              font-size: 13px !important;
               padding: 10px;
+              &::after{
+                font-size: 13px !important;
+              }
             }
             &.active, &.is-active{
               border-bottom: 1px solid $pointYellow;
+            }
+            &.woocommerce-MyAccount-navigation-link--bookings{
+              order: 0;
+              a{
+                &::after{
+                  display: inline;
+                  content: "履歴";
+                }
+              }
+            }
+            &.woocommerce-MyAccount-navigation-link--edit-address{
+              order: 2;
+              a{
+                &::after{
+                  content: "情報変更";
+                }
+              }
+            }
+            &.woocommerce-MyAccount-navigation-link--edit-account{
+              order: 3;
+              a{
+                &::after{
+                  content: "";
+                }
+              }
             }
           }
         }
