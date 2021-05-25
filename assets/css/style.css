@@ -140,6 +140,22 @@ body.bind {
   overflow: hidden;
 }
 
+body > .woocommerce {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  z-index: 100;
+  padding: 0;
+  margin: 0 !important;
+}
+body > .woocommerce .woocommerce-info {
+  margin-bottom: 0 !important;
+  line-height: 1.6;
+}
+
 article {
   width: 100vw;
   overflow: hidden;
@@ -5626,6 +5642,185 @@ footer .footer_inner .footer_lower .copyright {
   opacity: 0.75;
 }
 
+@media screen and (max-width: 1100px) {
+  .woocommerce-error {
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto !important;
+    z-index: 100;
+  }
+
+  .page-mypage {
+    margin-top: 140px;
+    margin-bottom: 100px;
+    min-height: unset;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li {
+    padding: 0 10px;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li a {
+    padding: 10px;
+    font-size: 14px !important;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li a::after {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 980px) {
+  .page-mypage {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    min-height: unset;
+  }
+  .page-mypage .section-account-info {
+    margin-bottom: 40px;
+  }
+  .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .user_name {
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+  .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .user_name .user_email {
+    font-size: 14px;
+  }
+  .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .profile_point {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .profile_point .num {
+    font-size: 24px;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation {
+    width: 100%;
+    float: none;
+    overflow: scroll;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100vw;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li {
+    width: auto;
+    padding: 0 10px 0 0;
+    border-bottom: 1px solid #979797;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li a {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li a::before {
+    display: none !important;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li a::after {
+    font-size: 14px;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.active, .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.is-active {
+    border-bottom: 1px solid #BF992E;
+  }
+}
+@media screen and (max-width: 720px) {
+  .page-mypage {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    min-height: unset;
+  }
+  .page-mypage .section-account-info {
+    margin-bottom: 30px;
+  }
+  .page-mypage .section-account-info .mypage_title {
+    text-align: center;
+  }
+  .page-mypage .section-account-info .flex_wrap {
+    display: block;
+  }
+  .page-mypage .section-account-info .flex_wrap .myprofile {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .page-mypage .section-account-info .flex_wrap .myprofile .icon_wrap {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-right: 15px;
+  }
+  .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap {
+    width: calc(100% - 115px);
+  }
+  .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .user_name {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    margin-bottom: 5px;
+  }
+  .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .user_name .user_email {
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    padding-left: 0px;
+  }
+  .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .profile_point {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .profile_point .num {
+    font-size: 24px;
+    padding: 0 0.2em;
+  }
+  .page-mypage .section-account-info .flex_wrap .myprofile .logout_link {
+    font-size: 12px;
+  }
+  .page-mypage .section-account-info .flex_wrap .history_wrap {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+  .page-mypage .section-account-info .flex_wrap .history_wrap .status_item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-mypage .section-account-info .flex_wrap .history_wrap .title {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .page-mypage .section-account-info .flex_wrap .history_wrap .title span {
+    display: inline;
+  }
+  .page-mypage .section-account-info .flex_wrap .history_wrap .number {
+    font-size: 28px;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation {
+    width: 100%;
+    float: none;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 650px;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li {
+    padding: 0;
+    text-align: center;
+    border-bottom: 1px solid #979797;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li a {
+    padding: 10px;
+  }
+  .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.active, .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li.is-active {
+    border-bottom: 1px solid #BF992E;
+  }
+  .page-mypage .section-unsubscribe .unsubscribe_button {
+    font-size: 14px;
+  }
+}
 #customer_login.u-columns {
   display: flex;
   flex-wrap: wrap;

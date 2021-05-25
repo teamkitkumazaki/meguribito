@@ -212,3 +212,197 @@
     }
   }
 }
+
+@media screen and (max-width: 1100px){
+  .woocommerce-error{
+    position: fixed !important;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto !important;
+    z-index: 100;
+  }
+  .page-mypage{
+    margin-top: 140px;
+    margin-bottom: 100px;
+    min-height: unset;
+    .section-mypage{
+      .woocommerce-MyAccount-navigation{
+        ul{
+          li{
+            padding: 0 10px;
+            a{
+              padding: 10px;
+              font-size: 14px !important;
+              &::after{
+                font-size: 14px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 980px){
+  .page-mypage{
+    margin-top: 120px;
+    margin-bottom: 80px;
+    min-height: unset;
+    .section-account-info{
+      margin-bottom: 40px;
+      .flex_wrap{
+        .myprofile{
+          .profile_wrap{
+            .user_name{
+              font-size: 18px;
+              letter-spacing: 0.03em;
+              margin-bottom: 10px;
+              .user_email{
+                font-size: 14px;
+              }
+            }
+            .profile_point{
+              font-size: 14px;
+              margin-bottom: 5px;
+              .num{
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .section-mypage{
+      .woocommerce-MyAccount-navigation{
+        width: 100%;
+        float: none;
+        overflow: scroll;
+        ul{
+          @include flexSet;
+          align-items: center;
+          width: 100vw;
+          li{
+            width: auto;
+            padding: 0 10px 0 0;
+            border-bottom: 1px solid #979797;
+            a{
+              padding: 10px;
+              font-size: 14px;
+              &::before{
+                display: none !important;
+              }
+              &::after{
+                font-size: 14px;
+              }
+            }
+            &.active, &.is-active{
+              border-bottom: 1px solid $pointYellow;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px){
+  .page-mypage{
+    margin-top: 100px;
+    margin-bottom: 60px;
+    min-height: unset;
+    .section-account-info{
+      margin-bottom: 30px;
+      .mypage_title{
+        text-align: center;
+      }
+      .flex_wrap{
+        display: block;
+        .myprofile{
+          width: 100%;
+          margin-bottom: 30px;
+          .icon_wrap{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            margin-right: 15px;
+          }
+          .profile_wrap{
+            width: calc(100% - 115px);
+            .user_name{
+              font-size: 16px;
+              letter-spacing: 0.03em;
+              margin-bottom: 5px;
+              .user_email{
+                display: block;
+                font-size: 12px;
+                margin-top: 10px;
+                padding-left: 0px;
+              }
+            }
+            .profile_point{
+              font-size: 12px;
+              margin-bottom: 0px;
+              .num{
+                font-size: 24px;
+                padding: 0 0.2em;
+              }
+            }
+          }
+          .logout_link{
+            font-size: 12px;
+          }
+        }
+        .history_wrap{
+          width: 100%;
+          box-sizing: border-box;
+          border-radius: 5px;
+          padding: 10px 20px;
+          .status_item{
+            @include flexSet;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .title{
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 0;
+            span{
+              display: inline;
+            }
+          }
+          .number{
+            font-size: 28px;
+          }
+        }
+      }
+    }
+    .section-mypage{
+      .woocommerce-MyAccount-navigation{
+        width: 100%;
+        float: none;
+        ul{
+          @include flexSet;
+          align-items: center;
+          width: 650px;
+          li{
+            padding: 0 ;
+            text-align: center;
+            border-bottom: 1px solid #979797;
+            a{
+              padding: 10px;
+            }
+            &.active, &.is-active{
+              border-bottom: 1px solid $pointYellow;
+            }
+          }
+        }
+      }
+    }
+    .section-unsubscribe{
+      .unsubscribe_button{
+        font-size: 14px;
+      }
+    }
+  }
+}

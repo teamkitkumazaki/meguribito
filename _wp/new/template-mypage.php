@@ -73,7 +73,7 @@ get_header(); ?>
 		</section>
 		<section class="section-unsubscribe">
 			<div class="section_inner">
-				<a class="unsubscribe_button" href="/delete"><span>アカウントの削除</span></a>
+				<a class="unsubscribe_button" href="/my-account/delete"><span>アカウントの削除</span></a>
 			</div>
 		</section>
 	</article>
