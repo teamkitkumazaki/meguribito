@@ -315,14 +315,14 @@
                 display: none;
               }
               .wc-bookings-date-picker-date-fields{
-                width: 50%;
+                width: 100%;
                 background: #fff;
                 border: 1px solid #d8d8d8;
                 box-sizing: border-box;
                 @include flexSet;
                 color: #fff;
                 font-size: 16px;
-                margin-bottom: 15px;
+                margin-bottom: 5px;
                 &::before{
                   width: 100%;
                   @include tsukushi-b;
@@ -373,8 +373,7 @@
                 }
                 &:nth-of-type(2){
                   border-left: 1px solid #d8d8d8;
-                  border-right: 0px;
-                  margin-left: 0%;
+                  border-right: 1px solid #d8d8d8;
                   order:3;
                   &::before{
                     display: block;
@@ -382,6 +381,8 @@
                   }
                 }
                 &:nth-of-type(3){
+                  border-left: 1px solid #d8d8d8;
+                  border-right: 1px solid #d8d8d8;
                   order:4;
                   &::before{
                     display: block;
@@ -427,6 +428,7 @@
           button[type="submit"]{
             display: block;
             width: 100%;
+            margin-top: 20px;
             padding: 15px 0;
             font-size: 18px;
             @include tsukushi-b;

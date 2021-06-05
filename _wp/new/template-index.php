@@ -159,12 +159,12 @@
 						$kagibito_belongs = SCF::get('belongs', $kagibito_id);
 						$kagibito_area = SCF::get('area_name', $kagibito_id);
 					?>
-					<div class="pickup_item">
+					<!-- <div class="pickup_item">
 						<div class="img_wrap">
 							<a href="<?php echo get_permalink($sub_pickup_id);?>" style="background-image: url(<?php echo $main_sp[0];?>)">
 								<img src="<?php echo $thumb;?>">
 							</a>
-						</div><!-- img_wrap -->
+						</div>
 						<div class="txt_wrap">
 							<div class="comp-kagibito-wrap no_icon">
 								<span class="icon" style="background-image: url(<?php echo $kagiibito_thumb;?>"></span>
@@ -176,9 +176,8 @@
 									<span class="area"><?php echo $kagibito_area;?></span>
 									<span class="guesthouse"><?php echo $kagibito_belongs;?></span>
 								</div>
-							</div><!-- title_wrap -->
+							</div><
 							<div class="desc_wrap">
-								<!--<p>志賀直哉などの文豪も筆を執りに訪れた尾道は、現在もクリエイターに愛されるこの街のディープスポットには、個性的で力強い生き方をするアーティストとの出会いがたくさんあります！</p> -->
 								<div class="kagibito">
 									<div class="kagibito_wrap">
 										<a href="<?php echo get_permalink($sub_pickup_id);?>" class="icon" style="background-image: url(<?php echo $kagiibito_thumb;?>"></a>
@@ -191,9 +190,9 @@
 										<a href="<?php echo get_permalink($sub_pickup_id);?>"><span>詳細を見る</span></a>
 									</div>
 								</div>
-							</div><!-- desc_wrap -->
-						</div><!-- txt_wrap -->
-					</div><!-- pickup_item -->
+							</div><
+						</div>
+					</div> -->
 					<?php } ?>
 			</div><!-- comp-pickup-plan -->
 		</div><!-- section_inner -->
@@ -365,7 +364,7 @@
 			</div>
 		</div>
 	</section> -->
-	<section class="section-footer-link">
+	<!--<section class="section-footer-link">
 		<div class="section_inner">
 			<div class="comp-footer-link">
 				<div class="link_item">
@@ -390,11 +389,12 @@
 						</span>
 					</a>
 				</div>
-			</div><!-- comp-footer-link -->
-		</div><!-- section_inner -->
-	</section>
+			</div><
+		</div>
+	</section> -->
 </article>
 <div class="comp-text-set" style="opacity:0; height:0px;">
+	<p>NEXT・PREV</p>
 	<p>
 	<?php
 		$repeat_group = SCF::get('main_slider', 56);

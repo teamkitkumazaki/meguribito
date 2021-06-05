@@ -351,7 +351,7 @@ button:focus {
   margin-right: 1.5em;
 }
 .comp-header .header_inner .header_left .h_nav ul li a {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   line-height: 2;
   display: block;
@@ -401,14 +401,14 @@ button:focus {
 }
 .comp-header .header_inner .header_right .count_contents .count_item a .number .num {
   display: block;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 32px;
   letter-spacing: 1px;
   margin-right: 0.3em;
 }
 .comp-header .header_inner .header_right .count_contents .count_item a .content {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   display: block;
   font-size: 14px;
@@ -676,7 +676,7 @@ footer .footer_inner .footer_upper .footer_logo {
   background-image: url(../img/common/logo_white.svg);
 }
 footer .footer_inner .footer_upper .catchcopy {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 20px;
   line-height: normal;
@@ -723,7 +723,7 @@ footer .footer_inner .footer_lower .nav_upper {
   margin-bottom: 30px;
 }
 footer .footer_inner .footer_lower .nav_upper a {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   display: block;
   font-size: 18px;
@@ -760,7 +760,7 @@ footer .footer_inner .footer_lower .nav_lower {
   margin-bottom: 60px;
 }
 footer .footer_inner .footer_lower .nav_lower a {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   display: block;
   font-size: 16px;
@@ -775,7 +775,7 @@ footer .footer_inner .footer_lower .nav_lower a:nth-last-of-type(1) {
 }
 footer .footer_inner .footer_lower .copyright {
   text-align: center;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 14px;
   line-height: 2;
@@ -829,7 +829,7 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 60px;
   }
   footer .footer_inner .footer_lower .nav_lower a {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     display: block;
     font-size: 14px;
@@ -850,7 +850,7 @@ footer .footer_inner .footer_lower .copyright {
     margin: 0 auto 30px;
   }
   footer .footer_inner .footer_upper .catchcopy {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 18px;
     line-height: normal;
@@ -877,7 +877,7 @@ footer .footer_inner .footer_lower .copyright {
     text-align: center;
   }
   footer .footer_inner .footer_lower .nav_upper a {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     display: block;
     font-size: 16px;
@@ -902,7 +902,7 @@ footer .footer_inner .footer_lower .copyright {
   }
   footer .footer_inner .footer_lower .copyright {
     text-align: center;
-    font-family: "TsukuARdGothicStd-R";
+    font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: normal;
     font-size: 14px;
     line-height: 2;
@@ -1306,7 +1306,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 30px;
 }
 .page-plan-detail .section-lead .location span {
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 16px;
   line-height: normal;
@@ -1384,7 +1384,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-right: 10px;
 }
 .page-plan-detail .section-lead .description .button_wrap a .text {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   line-height: normal;
@@ -1454,7 +1454,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .page-plan-detail .section-plan-outline .lead_flex .kagibito_wrap .kagibito_prof .kagibito_info {
   width: calc(100% - 80px);
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
 }
 .page-plan-detail .section-plan-outline .lead_flex .kagibito_wrap .kagibito_prof .kagibito_info .info {
@@ -1491,7 +1491,7 @@ footer .footer_inner .footer_lower .copyright {
   padding: 25px;
 }
 .page-plan-detail .section-plan-outline .lead_flex .plan_outline .outline_inner .title {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   display: block;
   font-size: 24px;
@@ -1500,7 +1500,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 15px;
 }
 .page-plan-detail .section-plan-outline .lead_flex .plan_outline .outline_inner .content {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   color: #646464;
   font-size: 16px;
@@ -1536,7 +1536,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 25px;
 }
 .page-plan-detail .section-detail01 .detail_main .txt_wrap .main_ttl {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 26px;
   line-height: 1.77;
@@ -1857,7 +1857,7 @@ footer .footer_inner .footer_lower .copyright {
   width: 35%;
 }
 .page-plan-detail .section-booking .booking_flex .txt_wrap .address {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   display: flex;
   flex-wrap: wrap;
@@ -1892,7 +1892,7 @@ footer .footer_inner .footer_lower .copyright {
 .page-plan-detail .section-booking .booking_flex .txt_wrap .facility span {
   width: 48%;
   margin-right: 4%;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -1930,7 +1930,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 15px;
 }
 .page-plan-detail .section-detail03 .detail_fix_section .fix_inner .txt_wrap .plan_ttl {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 22px;
   letter-spacing: 0.03em;
@@ -1941,7 +1941,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 25px;
 }
 .page-plan-detail .section-detail03 .detail_fix_section .fix_inner .txt_wrap .terms_wrap .price_wrap .price {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.03em;
@@ -1960,7 +1960,7 @@ footer .footer_inner .footer_lower .copyright {
   height: 16px;
 }
 .page-plan-detail .section-detail03 .detail_fix_section .fix_inner .txt_wrap .terms_wrap .price_wrap .duration {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -2001,7 +2001,7 @@ footer .footer_inner .footer_lower .copyright {
   font-size: 26px;
   line-height: 1;
   letter-spacing: 0.03em;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -2213,7 +2213,7 @@ footer .footer_inner .footer_lower .copyright {
   background-size: cover;
 }
 .page-kagibito-detail .section-kagibito .basic_info .kagibito_info .txt_wrap .kagibito_name {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 30px;
   line-height: 1;
@@ -2221,7 +2221,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 10px;
 }
 .page-kagibito-detail .section-kagibito .basic_info .kagibito_info .txt_wrap .position {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   color: #646464;
   font-size: 14px;
@@ -2262,7 +2262,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .page-kagibito-detail .section-kagibito .basic_info .kagibito_status .status_item .title {
   display: block;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 14px;
   line-height: 1.5;
@@ -2272,7 +2272,7 @@ footer .footer_inner .footer_lower .copyright {
   display: block;
 }
 .page-kagibito-detail .section-kagibito .basic_info .kagibito_status .status_item .number {
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 44px;
   line-height: 1;
@@ -2294,7 +2294,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-right: 0;
 }
 .page-kagibito-detail .section-kagibito .message_info .message_item .message_ttl {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 24px;
   line-height: 1.25;
@@ -2374,7 +2374,7 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 0;
   }
   .page-kagibito-detail .section-kagibito .message_info .message_item .message_ttl {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 24px;
     line-height: 1.25;
@@ -2423,7 +2423,7 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 10px;
   }
   .page-kagibito-detail .section-kagibito .basic_info .kagibito_info .txt_wrap .position {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     margin-bottom: 30px;
   }
@@ -2446,7 +2446,7 @@ footer .footer_inner .footer_lower .copyright {
   }
   .page-kagibito-detail .section-kagibito .basic_info .kagibito_status .status_item .title {
     display: block;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 14px;
     line-height: 1.5;
@@ -2531,7 +2531,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 10px;
 }
 .page-about .section-org .flex_wrap .txt_wrap .org_name .name {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 30px;
   line-height: normal;
@@ -2629,7 +2629,7 @@ footer .footer_inner .footer_lower .copyright {
     font-size: 14px;
   }
   .page-about .section-org .flex_wrap .txt_wrap .org_name .name {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 7vw;
     line-height: normal;
@@ -2702,14 +2702,14 @@ footer .footer_inner .footer_lower .copyright {
   transform: rotate(90deg);
   text-align: left;
   width: 200px;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   letter-spacing: 1px;
   font-size: 12px;
   letter-spacing: 1px;
 }
 .page-news-detail .section-contents .post_contents .post_head .post_title {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 30px;
   letter-spacing: 0.03em;
@@ -2722,7 +2722,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 25px;
 }
 .page-news-detail .section-contents .post_contents .post_head .post_tags li {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   margin-right: 10px;
 }
@@ -2748,7 +2748,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-top: 60px;
 }
 .page-news-detail .section-contents .post_contents .sns_share .share_ttl {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 20px;
   line-height: normal;
@@ -2777,7 +2777,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 120px;
 }
 .page-news-detail .section-relation .relation_ttl {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 28px;
   line-height: 1.6;
@@ -2849,7 +2849,7 @@ footer .footer_inner .footer_lower .copyright {
     margin-top: 40px;
   }
   .page-news-detail .section-contents .post_contents .sns_share .share_ttl {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 20px;
     line-height: normal;
@@ -2868,7 +2868,7 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 60px;
   }
   .page-news-detail .section-relation .relation_ttl {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 40px;
@@ -2905,7 +2905,7 @@ footer .footer_inner .footer_lower .copyright {
 .page-cart .section-cart .woocommerce .return-to-shop .button {
   background-color: transparent !important;
   color: inherit;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.03em;
@@ -2999,7 +2999,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .page-cart .section-cart .woocommerce .cart .product-name a {
   display: block;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   color: inherit;
   text-align: left !important;
@@ -3011,7 +3011,7 @@ footer .footer_inner .footer_lower .copyright {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 10px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   color: #646464;
   font-size: 14px;
@@ -3028,7 +3028,7 @@ footer .footer_inner .footer_lower .copyright {
 .page-cart .section-cart .woocommerce .cart .product-price, .page-cart .section-cart .woocommerce .cart .product-quantity, .page-cart .section-cart .woocommerce .cart .product-subtotal {
   text-align: center;
   font-size: 18px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   letter-spacing: 0.03em;
 }
@@ -3037,7 +3037,7 @@ footer .footer_inner .footer_lower .copyright {
   display: block;
   content: "金額";
   text-align: center;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   color: #3f3f3f;
   padding: 10px 0;
@@ -3045,6 +3045,12 @@ footer .footer_inner .footer_lower .copyright {
   border-radius: 10px;
   font-size: 14px;
   margin-bottom: 15px;
+}
+.page-cart .section-cart .woocommerce .cart .product-price {
+  margin-left: 150px;
+}
+.page-cart .section-cart .woocommerce .cart .product-quantity {
+  display: none;
 }
 .page-cart .section-cart .woocommerce .cart .product-price {
   width: 150px;
@@ -3101,7 +3107,7 @@ footer .footer_inner .footer_lower .copyright {
   font-size: 18px;
   line-height: normal;
   letter-spacing: 0.03em;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
 }
 .page-cart .section-cart .woocommerce .cart-collaterals .cart_totals .shop_table .order-total th::after {
@@ -3135,7 +3141,7 @@ footer .footer_inner .footer_lower .copyright {
   background-color: #BF992E;
   padding: 15px 0;
   text-align: center;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   color: #fff;
   font-size: 18px;
@@ -3150,7 +3156,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 120px;
 }
 .page-cart .section-corp-info .corp_title {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 26px;
   letter-spacing: 0.03em;
@@ -3159,13 +3165,14 @@ footer .footer_inner .footer_lower .copyright {
 
 @media screen and (max-width: 1100px) {
   .page-cart .section-cart .woocommerce .cart .product-name {
-    width: calc(100% - 480px);
+    width: calc(100% - 450px);
   }
   .page-cart .section-cart .woocommerce .cart .product-price, .page-cart .section-cart .woocommerce .cart .product-quantity, .page-cart .section-cart .woocommerce .cart .product-subtotal {
     font-size: 16px;
   }
   .page-cart .section-cart .woocommerce .cart .product-price {
     width: 120px;
+    margin-left: 50px;
   }
   .page-cart .section-cart .woocommerce .cart .product-quantity {
     width: 120px;
@@ -3195,22 +3202,24 @@ footer .footer_inner .footer_lower .copyright {
   .page-cart .section-cart .woocommerce .cart .product-price, .page-cart .section-cart .woocommerce .cart .product-quantity, .page-cart .section-cart .woocommerce .cart .product-subtotal {
     text-align: center;
     font-size: 18px;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     letter-spacing: 0.03em;
   }
   .page-cart .section-cart .woocommerce .cart .product-price {
-    width: 30%;
-    margin-right: 5%;
+    width: 47%;
+    margin-right: 6%;
+    margin-left: 0;
     padding-right: 0px;
   }
   .page-cart .section-cart .woocommerce .cart .product-quantity {
-    width: 30%;
-    margin-right: 5%;
+    display: none;
+    margin-right: 0%;
     padding-right: 0px;
   }
   .page-cart .section-cart .woocommerce .cart .product-subtotal {
-    width: 30%;
+    width: 47%;
+    margin-right: 0%;
     padding-right: 0px;
   }
   .page-cart .section-cart .woocommerce .cart-collaterals {
@@ -3324,6 +3333,9 @@ footer .footer_inner .footer_lower .copyright {
     font-size: 14px;
     margin-bottom: 0px;
   }
+  .page-cart .section-cart .woocommerce .cart .product-quantity {
+    display: none;
+  }
   .page-cart .section-cart .woocommerce .cart .product-price {
     width: 100%;
     padding-right: 0px;
@@ -3408,7 +3420,7 @@ footer .footer_inner .footer_lower .copyright {
 .page-payment .section-payment .woocommerce-form label {
   display: block;
   margin-bottom: 5px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   line-height: normal;
@@ -3456,7 +3468,7 @@ footer .footer_inner .footer_lower .copyright {
   padding: 10px 0;
   font-size: 20px !important;
   text-align: center;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   border-radius: 5px;
   transition: opacity 0.3s;
@@ -3493,7 +3505,7 @@ footer .footer_inner .footer_lower .copyright {
   .page-payment .section-payment .woocommerce-form label {
     display: block;
     margin-bottom: 5px;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 16px;
     line-height: normal;
@@ -3583,7 +3595,7 @@ footer .footer_inner .footer_lower .copyright {
   margin: 0;
 }
 .page-payment .section-payment .woocommerce-checkout .col2-set h3 {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 22px;
   line-height: 1.6;
@@ -3606,7 +3618,7 @@ footer .footer_inner .footer_lower .copyright {
 .page-payment .section-payment .woocommerce-checkout .col2-set .form-row label {
   display: block;
   margin-bottom: 5px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   line-height: normal;
@@ -3625,7 +3637,7 @@ footer .footer_inner .footer_lower .copyright {
   background-color: #979797;
   width: 60px;
   text-align: center;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 12px;
   color: #fff;
@@ -3641,7 +3653,8 @@ footer .footer_inner .footer_lower .copyright {
 }
 .page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=email],
 .page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=tel],
-.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=text] {
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=text],
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=password] {
   border: 1px solid #f8f8f8;
   border-radius: 5px;
   background-color: #f8f8f8;
@@ -3653,7 +3666,8 @@ footer .footer_inner .footer_lower .copyright {
 }
 .page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=email]:focus,
 .page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=tel]:focus,
-.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=text]:focus {
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=text]:focus,
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row .woocommerce-input-wrapper input[type=password]:focus {
   outline: none;
   border: 1px solid #979797;
 }
@@ -3733,7 +3747,8 @@ footer .footer_inner .footer_lower .copyright {
 }
 .page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-invalid .woocommerce-input-wrapper input[type=email],
 .page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-invalid .woocommerce-input-wrapper input[type=tel],
-.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-invalid .woocommerce-input-wrapper input[type=text] {
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-invalid .woocommerce-input-wrapper input[type=text],
+.page-payment .section-payment .woocommerce-checkout .col2-set .form-row.woocommerce-invalid .woocommerce-input-wrapper input[type=password] {
   border: 1px solid #e2401c;
   box-shadow: none !important;
 }
@@ -3788,7 +3803,7 @@ footer .footer_inner .footer_lower .copyright {
 .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order::before {
   display: block;
   content: "予約内容";
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 24px;
   line-height: normal;
@@ -3822,7 +3837,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tbody .cart_item .product-name {
   width: 100% !important;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 18px;
   line-height: 1.6;
@@ -3837,7 +3852,7 @@ footer .footer_inner .footer_lower .copyright {
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 10px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 14px;
   line-height: 2;
@@ -3881,7 +3896,7 @@ footer .footer_inner .footer_lower .copyright {
   justify-content: space-between;
 }
 .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tfoot .order-total th {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   background: #BF992E;
   color: #fff;
@@ -3893,7 +3908,7 @@ footer .footer_inner .footer_lower .copyright {
   width: 100px;
 }
 .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-review-order-table tfoot .order-total td {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 18px;
   line-height: 1.4;
@@ -3906,7 +3921,7 @@ footer .footer_inner .footer_lower .copyright {
 .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment::before {
   display: block !important;
   content: "決済方法" !important;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 24px;
   line-height: normal;
@@ -3977,7 +3992,7 @@ footer .footer_inner .footer_lower .copyright {
   padding: 7px 0;
   font-size: 20px !important;
   text-align: center;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   border-radius: 5px;
   transition: opacity 0.3s;
@@ -3990,7 +4005,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 120px;
 }
 .page-payment .section-payment-terms .corp_title {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 26px;
   letter-spacing: 0.03em;
@@ -4021,7 +4036,7 @@ footer .footer_inner .footer_lower .copyright {
   background: #BF992E;
   color: #fff;
   border-radius: 50%;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 16px;
   letter-spacing: 0.4px;
@@ -4066,7 +4081,7 @@ footer .footer_inner .footer_lower .copyright {
   .page-payment .section-payment .woocommerce-checkout .col2-set .form-row label {
     display: block;
     margin-bottom: 5px;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 16px;
     line-height: normal;
@@ -4139,7 +4154,7 @@ footer .footer_inner .footer_lower .copyright {
   .page-payment .section-payment .woocommerce-form label {
     display: block;
     margin-bottom: 5px;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 16px;
     line-height: normal;
@@ -4187,7 +4202,7 @@ footer .footer_inner .footer_lower .copyright {
     padding: 10px 0;
     font-size: 20px !important;
     text-align: center;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     border-radius: 5px;
     transition: opacity 0.3s;
@@ -4225,7 +4240,7 @@ footer .footer_inner .footer_lower .copyright {
   .page-payment .section-payment .woocommerce-form label {
     display: block;
     margin-bottom: 5px;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 16px;
     line-height: normal;
@@ -4307,6 +4322,9 @@ footer .footer_inner .footer_lower .copyright {
   .page-payment .section-payment .woocommerce-checkout .col2-set .woocommerce-additional-fields__field-wrapper {
     margin-bottom: 25px;
   }
+  .page-payment .section-payment .woocommerce-checkout .col2-set .woocommerce-account-fields {
+    margin-top: 25px;
+  }
   .page-payment .section-payment .woocommerce-checkout .col2-set .form-row {
     margin-bottom: 25px;
   }
@@ -4336,7 +4354,7 @@ footer .footer_inner .footer_lower .copyright {
   .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order::before {
     display: block;
     content: "予約内容";
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 24px;
     line-height: normal;
@@ -4365,7 +4383,7 @@ footer .footer_inner .footer_lower .copyright {
   .page-payment .section-payment .woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment::before {
     display: block !important;
     content: "決済方法" !important;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 24px;
     line-height: normal;
@@ -4430,7 +4448,7 @@ footer .footer_inner .footer_lower .copyright {
 .page-payment .section-payment .woocommerce-order::before {
   display: block;
   content: "ご注文情報";
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 24px;
   line-height: 1.6;
@@ -4462,7 +4480,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .page-payment .section-payment .woocommerce-order .woocommerce-order-overview li strong {
   display: inline-block;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -4472,7 +4490,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-top: 60px;
 }
 .page-payment .section-payment .woocommerce-order .woocommerce-order-details .woocommerce-order-details__title {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 24px;
   line-height: 1.6;
@@ -4521,7 +4539,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-name a {
   display: block;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 26px;
   line-height: 1.6;
@@ -4547,7 +4565,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 15px;
 }
 .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-name .wc-booking-summary-list {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   color: #646464;
@@ -4557,7 +4575,7 @@ footer .footer_inner .footer_lower .copyright {
   display: none;
 }
 .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tr .product-total {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -4580,7 +4598,7 @@ footer .footer_inner .footer_lower .copyright {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   letter-spacing: 0.03em;
   padding: 30px 10px 0 !important;
@@ -4599,7 +4617,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-top: 60px;
 }
 .page-payment .section-payment .woocommerce-order .woocommerce-customer-details .woocommerce-column__title {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 24px;
   line-height: 1.6;
@@ -4650,7 +4668,7 @@ footer .footer_inner .footer_lower .copyright {
     margin-top: 60px;
   }
   .page-payment .section-payment .woocommerce-order .woocommerce-order-details .woocommerce-order-details__title {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 24px;
     line-height: 1.6;
@@ -4812,7 +4830,7 @@ footer .footer_inner .footer_lower .copyright {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     letter-spacing: 0.03em;
     padding: 30px 10px 0 !important;
@@ -4856,7 +4874,7 @@ footer .footer_inner .footer_lower .copyright {
   text-align: center;
 }
 .page-service .section-lead .lead_txt p {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -4965,7 +4983,7 @@ footer .footer_inner .footer_lower .copyright {
     text-align: left;
   }
   .page-service .section-lead .lead_txt p {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 20px;
@@ -5062,7 +5080,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 20px;
 }
 .page-flow .section-flow-02 .trip_detail .detail_item .txt_wrap .title_wrap .small {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   display: block;
   font-size: 16px;
@@ -5072,7 +5090,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 5px;
 }
 .page-flow .section-flow-02 .trip_detail .detail_item .txt_wrap .title_wrap .item_ttl {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 22px;
   line-height: 1.5;
@@ -5146,7 +5164,7 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 20px;
   }
   .page-flow .section-flow-02 .trip_detail .detail_item .txt_wrap .title_wrap .small {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     display: block;
     font-size: 16px;
@@ -5156,7 +5174,7 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 5px;
   }
   .page-flow .section-flow-02 .trip_detail .detail_item .txt_wrap .title_wrap .item_ttl {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 22px;
     line-height: 1.5;
@@ -5209,7 +5227,7 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 20px;
   }
   .page-flow .section-flow-02 .trip_detail .detail_item .txt_wrap .title_wrap .small {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     display: block;
     font-size: 14px;
@@ -5273,7 +5291,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 120px;
 }
 .page-transaction .trans_ttl {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 22px;
   letter-spacing: 0.03em;
@@ -5357,7 +5375,7 @@ footer .footer_inner .footer_lower .copyright {
   letter-spacing: 0.32px;
 }
 .page-terms .section-lead .lead_txt .sub_title {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.03em;
@@ -5385,7 +5403,7 @@ footer .footer_inner .footer_lower .copyright {
     letter-spacing: 0.32px;
   }
   .page-terms .section-lead .lead_txt .sub_title {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 18px;
     letter-spacing: 0.03em;
@@ -5414,7 +5432,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 60px;
 }
 .page-mypage .section-account-info .mypage_title {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-weight: bold;
   font-size: 28px;
@@ -5453,7 +5471,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-right: 20px;
 }
 .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .user_name {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 24px;
   letter-spacing: 0.03em;
@@ -5465,7 +5483,7 @@ footer .footer_inner .footer_lower .copyright {
   padding-left: 10px;
 }
 .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .profile_point {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   display: flex;
   flex-wrap: wrap;
@@ -5476,7 +5494,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 10px;
 }
 .page-mypage .section-account-info .flex_wrap .myprofile .profile_wrap .profile_point .num {
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 30px;
   color: #3f3f3f;
@@ -5485,7 +5503,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 5px;
 }
 .page-mypage .section-account-info .flex_wrap .myprofile .logout_link {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 14px;
   line-height: normal;
@@ -5498,25 +5516,34 @@ footer .footer_inner .footer_lower .copyright {
   opacity: 0.75;
 }
 .page-mypage .section-account-info .flex_wrap .history_wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-mypage .section-account-info .flex_wrap .history_wrap .status_item {
   width: 150px;
   text-align: center;
   border-radius: 20px;
   padding: 20px 0;
+  margin-right: 10px;
   background: #fff;
 }
-.page-mypage .section-account-info .flex_wrap .history_wrap .title {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+.page-mypage .section-account-info .flex_wrap .history_wrap .status_item:nth-last-of-type(1) {
+  margin-right: 0;
+}
+.page-mypage .section-account-info .flex_wrap .history_wrap .status_item .title {
+  display: block;
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.5;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
-.page-mypage .section-account-info .flex_wrap .history_wrap .title span {
+.page-mypage .section-account-info .flex_wrap .history_wrap .status_item .title span {
   display: block;
 }
-.page-mypage .section-account-info .flex_wrap .history_wrap .number {
-  font-family: "TsukuARdGothicStd-R";
+.page-mypage .section-account-info .flex_wrap .history_wrap .status_item .number {
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 44px;
   line-height: 1;
@@ -5539,7 +5566,7 @@ footer .footer_inner .footer_lower .copyright {
 .page-mypage .section-mypage .woocommerce-MyAccount-navigation ul li a {
   display: block;
   padding: 10px 20px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   transition: opacity 0.3s;
   font-size: 16px;
@@ -5616,7 +5643,7 @@ footer .footer_inner .footer_lower .copyright {
   }
 }
 .page-mypage .section-mypage .woocommerce-MyAccount-content h2 {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-weight: bold;
   font-size: 28px;
@@ -5631,7 +5658,7 @@ footer .footer_inner .footer_lower .copyright {
   }
 }
 .page-mypage .section-mypage .woocommerce-MyAccount-content h3 {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-weight: bold;
   font-size: 28px;
@@ -5648,7 +5675,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-top: 60px;
 }
 .page-mypage .section-unsubscribe .unsubscribe_button {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   color: #646464;
   text-decoration: underline;
@@ -5790,27 +5817,27 @@ footer .footer_inner .footer_lower .copyright {
   .page-mypage .section-account-info .flex_wrap .myprofile .logout_link {
     font-size: 12px;
   }
-  .page-mypage .section-account-info .flex_wrap .history_wrap {
+  .page-mypage .section-account-info .flex_wrap .history_wrap .status_item {
     width: 100%;
     box-sizing: border-box;
     border-radius: 5px;
     padding: 10px 20px;
-  }
-  .page-mypage .section-account-info .flex_wrap .history_wrap .status_item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
-  .page-mypage .section-account-info .flex_wrap .history_wrap .title {
+  .page-mypage .section-account-info .flex_wrap .history_wrap .status_item .title {
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 0;
   }
-  .page-mypage .section-account-info .flex_wrap .history_wrap .title span {
+  .page-mypage .section-account-info .flex_wrap .history_wrap .status_item .title span {
     display: inline;
   }
-  .page-mypage .section-account-info .flex_wrap .history_wrap .number {
+  .page-mypage .section-account-info .flex_wrap .history_wrap .status_item .number {
     font-size: 28px;
   }
   .page-mypage .section-mypage .woocommerce-MyAccount-navigation {
@@ -5881,9 +5908,9 @@ footer .footer_inner .footer_lower .copyright {
 #customer_login.u-columns .col-2::before {
   display: block;
   content: "新規会員登録";
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-weight: bold;
   font-size: 28px;
@@ -5897,7 +5924,7 @@ footer .footer_inner .footer_lower .copyright {
   }
 }
 #customer_login.u-columns h2 {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-weight: bold;
   font-size: 28px;
@@ -5921,7 +5948,7 @@ footer .footer_inner .footer_lower .copyright {
 #customer_login.u-columns form label {
   display: block;
   margin-bottom: 5px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   line-height: normal;
@@ -5969,7 +5996,7 @@ footer .footer_inner .footer_lower .copyright {
   padding: 10px 0;
   font-size: 20px !important;
   text-align: center;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   border-radius: 5px;
   transition: opacity 0.3s;
@@ -6006,7 +6033,7 @@ footer .footer_inner .footer_lower .copyright {
   #customer_login.u-columns form label {
     display: block;
     margin-bottom: 5px;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 16px;
     line-height: normal;
@@ -6090,7 +6117,7 @@ footer .footer_inner .footer_lower .copyright {
   display: block;
   content: "パスワードの再発行";
   text-align: center;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-weight: bold;
   font-size: 28px;
@@ -6109,7 +6136,7 @@ footer .footer_inner .footer_lower .copyright {
 .lost_reset_password label {
   display: block;
   margin-bottom: 5px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   line-height: normal;
@@ -6157,7 +6184,7 @@ footer .footer_inner .footer_lower .copyright {
   padding: 10px 0;
   font-size: 20px !important;
   text-align: center;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   border-radius: 5px;
   transition: opacity 0.3s;
@@ -6194,7 +6221,7 @@ footer .footer_inner .footer_lower .copyright {
   .lost_reset_password label {
     display: block;
     margin-bottom: 5px;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 16px;
     line-height: normal;
@@ -6252,7 +6279,7 @@ footer .footer_inner .footer_lower .copyright {
 .woocommerce-EditAccountForm::before {
   display: block;
   content: "アカウント情報の変更";
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-weight: bold;
   font-size: 28px;
@@ -6271,7 +6298,7 @@ footer .footer_inner .footer_lower .copyright {
 .woocommerce-EditAccountForm label {
   display: block;
   margin-bottom: 5px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   line-height: normal;
@@ -6319,7 +6346,7 @@ footer .footer_inner .footer_lower .copyright {
   padding: 10px 0;
   font-size: 20px !important;
   text-align: center;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   border-radius: 5px;
   transition: opacity 0.3s;
@@ -6356,7 +6383,7 @@ footer .footer_inner .footer_lower .copyright {
   .woocommerce-EditAccountForm label {
     display: block;
     margin-bottom: 5px;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 16px;
     line-height: normal;
@@ -6484,7 +6511,7 @@ footer .footer_inner .footer_lower .copyright {
 .woocommerce-address-fields label {
   display: block;
   margin-bottom: 5px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   line-height: normal;
@@ -6532,7 +6559,7 @@ footer .footer_inner .footer_lower .copyright {
   padding: 10px 0;
   font-size: 20px !important;
   text-align: center;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   border-radius: 5px;
   transition: opacity 0.3s;
@@ -6569,7 +6596,7 @@ footer .footer_inner .footer_lower .copyright {
   .woocommerce-address-fields label {
     display: block;
     margin-bottom: 5px;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 16px;
     line-height: normal;
@@ -6642,7 +6669,7 @@ footer .footer_inner .footer_lower .copyright {
   .woocommerce-address-fields label {
     display: block;
     margin-bottom: 5px;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 16px;
     line-height: normal;
@@ -6690,7 +6717,7 @@ footer .footer_inner .footer_lower .copyright {
     padding: 10px 0;
     font-size: 20px !important;
     text-align: center;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     border-radius: 5px;
     transition: opacity 0.3s;
@@ -6728,7 +6755,7 @@ footer .footer_inner .footer_lower .copyright {
   .woocommerce-address-fields label {
     display: block;
     margin-bottom: 5px;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 16px;
     line-height: normal;
@@ -6809,6 +6836,7 @@ footer .footer_inner .footer_lower .copyright {
 .my_account_bookings tr {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   padding: 25px 0;
   position: relative;
   border-bottom: 1px dotted #d8d8d8;
@@ -6821,15 +6849,32 @@ footer .footer_inner .footer_lower .copyright {
   display: none;
 }
 .my_account_bookings tr .booking-status {
+  display: block !important;
   order: 2;
   background: #f4f4f4;
   padding: 10px;
   font-size: 14px;
   margin-top: 10px;
 }
+.my_account_bookings tr .booking-cancel {
+  background-color: transparent !important;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.my_account_bookings tr .booking-cancel a {
+  transition: opacity 0.3s;
+  display: block;
+  background-color: #fff !important;
+  border: 1px solid #d8d8d8;
+  color: #979797;
+  padding: 7px 15px;
+}
+.my_account_bookings tr .booking-cancel a:hover {
+  opacity: 0.75;
+}
 .my_account_bookings tr .booking-start-date {
   order: 0;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 14px;
   line-height: 1;
@@ -6858,7 +6903,7 @@ footer .footer_inner .footer_lower .copyright {
 .my_account_bookings tr .booking-end-date {
   width: 60%;
   order: 1;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 14px;
   line-height: 1;
@@ -6871,7 +6916,7 @@ footer .footer_inner .footer_lower .copyright {
   content: "〜";
 }
 .my_account_bookings tr .booked-product {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   width: 100%;
   order: 2;
@@ -6909,7 +6954,7 @@ footer .footer_inner .footer_lower .copyright {
   text-align: center;
   line-height: 40px;
   height: 40px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   background-color: #BF992E;
   color: #fff;
@@ -6994,7 +7039,7 @@ footer .footer_inner .footer_lower .copyright {
 .woocommerce-MyAccount-orders::before {
   display: block;
   content: "今までに行ったプラン";
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-weight: bold;
   font-size: 28px;
@@ -7034,7 +7079,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-right: 20px;
 }
 .woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-number a {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   display: block;
   text-align: center;
@@ -7050,7 +7095,7 @@ footer .footer_inner .footer_lower .copyright {
   opacity: 0.75;
 }
 .woocommerce-MyAccount-orders tr .woocommerce-orders-table__cell-order-date {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 18px;
   line-height: 1;
@@ -7080,7 +7125,7 @@ footer .footer_inner .footer_lower .copyright {
   text-align: center;
   line-height: 20px;
   height: 20px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   background-color: #BF992E;
   color: #fff;
@@ -7119,7 +7164,7 @@ footer .footer_inner .footer_lower .copyright {
 .page-delete .delete_form label {
   display: block;
   margin-bottom: 5px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   line-height: normal;
@@ -7167,7 +7212,7 @@ footer .footer_inner .footer_lower .copyright {
   padding: 10px 0;
   font-size: 20px !important;
   text-align: center;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   border-radius: 5px;
   transition: opacity 0.3s;
@@ -7204,7 +7249,7 @@ footer .footer_inner .footer_lower .copyright {
   .page-delete .delete_form label {
     display: block;
     margin-bottom: 5px;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 16px;
     line-height: normal;
@@ -7591,14 +7636,14 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-slide-menu .search_inner .content .count_contents .count_item a .number .num {
   display: block;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 32px;
   letter-spacing: 1px;
   margin-right: 0.3em;
 }
 .comp-slide-menu .search_inner .content .count_contents .count_item a .content {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   display: block;
   font-size: 14px;
@@ -7636,7 +7681,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-slide-menu .search_inner .content .hummenu_nav_upper .nav_item a {
   transition: opacity 0.3s;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 18px;
   line-height: normal;
@@ -7683,7 +7728,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-slide-menu .search_inner .content .hummenu_nav_middle .nav_item a {
   transition: opacity 0.3s;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 18px;
   line-height: 1;
@@ -7724,7 +7769,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-slide-menu .search_inner .content .hummenu_nav_lower .nav_item a {
   transition: opacity 0.3s;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   line-height: 1;
@@ -7780,7 +7825,7 @@ footer .footer_inner .footer_lower .copyright {
   background-image: url(../img/common/logo_white.svg);
 }
 .comp-slide-menu .search_inner .content .nav_footer .catchcopy {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 18px;
   line-height: 1;
@@ -7872,14 +7917,14 @@ footer .footer_inner .footer_lower .copyright {
   }
   .comp-slide-menu .search_inner .content .count_contents .count_item a .number .num {
     display: block;
-    font-family: "TsukuARdGothicStd-R";
+    font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: normal;
     font-size: 32px;
     letter-spacing: 1px;
     margin-right: 0.3em;
   }
   .comp-slide-menu .search_inner .content .count_contents .count_item a .content {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     display: block;
     font-size: 14px;
@@ -7976,7 +8021,7 @@ footer .footer_inner .footer_lower .copyright {
   text-align: right;
 }
 .comp-link-button a {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   display: inline-block;
   min-width: 120px;
@@ -8022,7 +8067,7 @@ footer .footer_inner .footer_lower .copyright {
     text-align: right;
   }
   .comp-link-button a {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     display: inline-block;
     min-width: 120px;
@@ -8091,7 +8136,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-kagibito-wrap .name {
   display: block;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 16px;
   line-height: normal;
@@ -8128,7 +8173,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 10px;
 }
 .comp-section-title .title {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 50px;
   line-height: 1.6;
@@ -8187,7 +8232,7 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 5px;
   }
   .comp-section-title .title {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 8vw;
     line-height: 1.6;
@@ -8222,7 +8267,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 40px;
 }
 .comp-section-sub-title .title {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 20px;
   line-height: normal;
@@ -8230,7 +8275,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 10px;
 }
 .comp-section-sub-title .sub_ttl {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 30px;
   line-height: 1.53;
@@ -8274,7 +8319,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-kagibito-wrap .name {
   display: block;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 16px;
   line-height: normal;
@@ -8308,7 +8353,7 @@ footer .footer_inner .footer_lower .copyright {
   padding-top: 200px;
 }
 .comp-underpage-lead .page_ttl {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 40px;
   line-height: 1;
@@ -8317,7 +8362,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 20px;
 }
 .comp-underpage-lead .sub_ttl {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 20px;
   line-height: normal;
@@ -8368,7 +8413,7 @@ footer .footer_inner .footer_lower .copyright {
   align-items: center;
   background-color: #3f3f3f;
   color: #fff;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   margin-bottom: 60px;
 }
@@ -8455,7 +8500,7 @@ footer .footer_inner .footer_lower .copyright {
   background: #BF992E;
   color: #fff;
   border-radius: 50%;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 16px;
   letter-spacing: 0.4px;
@@ -8465,7 +8510,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-number-list .list_item .content {
   width: calc(100% - 52px);
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 18px;
   line-height: 1.44;
@@ -8484,7 +8529,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-pager .wp-pagenavi {
   margin-top: 60px;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   display: flex;
   flex-wrap: wrap;
@@ -8720,7 +8765,7 @@ footer .footer_inner .footer_lower .copyright {
   padding: 15px;
   background: #f1f1f1;
   font-size: 16px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
 }
 .comp-chart-layout .chart_item .content {
@@ -8818,7 +8863,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 10px;
 }
 .comp-kagibito-comment .icon_wrap a .name {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 12px;
   letter-spacing: 0.2px;
@@ -8830,7 +8875,7 @@ footer .footer_inner .footer_lower .copyright {
   background: #fff;
   border-radius: 15px 15px 15px 0;
   padding: 15px 20px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 14px;
   line-height: 1.8;
@@ -8912,7 +8957,7 @@ footer .footer_inner .footer_lower .copyright {
   padding: 15px 0;
   background-color: #BF992E !important;
   color: #fff !important;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 20px;
   line-height: 1;
@@ -8970,7 +9015,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-plan-list .plan_item .txt_wrap .title_wrap a {
   display: block;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 22px;
   line-height: 1.59;
@@ -8983,7 +9028,7 @@ footer .footer_inner .footer_lower .copyright {
   opacity: 0.75;
 }
 .comp-plan-list .plan_item .txt_wrap .title_wrap .location span {
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 16px;
   line-height: normal;
@@ -9079,7 +9124,7 @@ footer .footer_inner .footer_lower .copyright {
   }
   .comp-plan-list .plan_item .txt_wrap .title_wrap a {
     display: block;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 14px;
     letter-spacing: 0.6px;
@@ -9138,7 +9183,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-plan-list-02 .plan_item .txt_wrap h3 {
   transition: opacity 0.3s;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 22px;
   line-height: 1.6;
@@ -9153,7 +9198,7 @@ footer .footer_inner .footer_lower .copyright {
   color: inherit;
 }
 .comp-plan-list-02 .plan_item .txt_wrap .location span {
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 16px;
   line-height: normal;
@@ -9314,14 +9359,14 @@ footer .footer_inner .footer_lower .copyright {
   color: #fff;
   font-size: 16px;
   letter-spacing: 0.5px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   padding: 10px 10px;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 .comp-plan-detail-flex .detail_item .txt_wrap .title_wrap .detail_ttl {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 26px;
   line-height: 1.66;
@@ -9415,7 +9460,7 @@ footer .footer_inner .footer_lower .copyright {
 .comp-spot-list .spot_inner .spot_ttl .title {
   font-size: 26px;
   letter-spacing: 0.03em;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
 }
 .comp-spot-list .spot_inner .slick-slider .item_box .img_wrap {
@@ -9447,7 +9492,7 @@ footer .footer_inner .footer_lower .copyright {
   width: 50px;
   text-align: center;
   color: #fff;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 20px;
   line-height: normal;
@@ -9460,7 +9505,7 @@ footer .footer_inner .footer_lower .copyright {
   font-size: 20px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
 }
 .comp-spot-list .spot_inner .slick-slider .item_box .txt_wrap .description {
@@ -9694,7 +9739,7 @@ footer .footer_inner .footer_lower .copyright {
   background-size: 15px;
   padding: 5px 0;
   display: inline-block;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 16px;
   color: #646464;
@@ -9703,7 +9748,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-guesthouse-detail .slick-arrow::after {
   display: inline-block;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 14px;
   color: #646464;
@@ -9738,7 +9783,7 @@ footer .footer_inner .footer_lower .copyright {
   width: 45vw;
 }
 .comp-guesthouse-detail .yado_detail_txt .yado_detail_ttl {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 22px;
   line-height: normal;
@@ -9864,7 +9909,7 @@ footer .footer_inner .footer_lower .copyright {
   position: relative;
   z-index: 30;
   width: 33.333333%;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   padding: 7px 0 9px;
@@ -9936,7 +9981,7 @@ footer .footer_inner .footer_lower .copyright {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   position: relative;
   z-index: 15;
@@ -9987,7 +10032,7 @@ footer .footer_inner .footer_lower .copyright {
   background-size: 9px 4px;
 }
 .comp-time-shcedule .shcedule_wrap .yahoku_item .yohaku_txt {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   line-height: 1.5;
@@ -10060,7 +10105,7 @@ footer .footer_inner .footer_lower .copyright {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
   }
   .comp-time-shcedule .shcedule_wrap .schedule_item .title_wrap .time {
@@ -10114,7 +10159,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-trip-review .review_item .review_content .user_name {
   transition: opacity 0.3s;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   color: inherit;
   font-size: 18px;
@@ -10200,7 +10245,7 @@ footer .footer_inner .footer_lower .copyright {
   color: #222;
   background: #fff !important;
   padding: 15px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -10246,7 +10291,7 @@ footer .footer_inner .footer_lower .copyright {
   width: 16px;
   height: 35px;
   font-size: 16px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
 }
 .comp-trip-faq .faq_wrap .qa_item .qa_button.active::before {
@@ -10282,7 +10327,7 @@ footer .footer_inner .footer_lower .copyright {
   width: 20px;
   height: 16px;
   font-size: 16px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
 }
 
@@ -10384,7 +10429,7 @@ footer .footer_inner .footer_lower .copyright {
   pointer-events: none;
 }
 .comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .plan_ttl {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 24px;
   line-height: 1.6;
@@ -10395,7 +10440,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 20px;
 }
 .comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .location span {
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 16px;
   line-height: normal;
@@ -10461,7 +10506,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .kagibito_wrap .kagibito_info .info {
   display: block;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 14px;
   line-height: normal;
@@ -10470,7 +10515,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-detail-pop .scroll_wrap .section_inner .detail_left .txt_wrap .kagibito_wrap .kagibito_info .name {
   display: block;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 20px;
   letter-spacing: 1.16px;
@@ -10561,7 +10606,7 @@ footer .footer_inner .footer_lower .copyright {
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart::before {
   display: block;
   content: "プランを予約する";
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-weight: bold;
   font-size: 28px;
@@ -10582,7 +10627,7 @@ footer .footer_inner .footer_lower .copyright {
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form::before {
   display: block;
   content: "▼宿泊タイプを選ぶ";
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -10607,7 +10652,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .form-field label {
   width: 20%;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 14px;
   line-height: normal;
@@ -10627,7 +10672,7 @@ footer .footer_inner .footer_lower .copyright {
   height: 24px;
   pointer-events: none;
   font-size: 14px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   letter-spacing: 0.03em;
 }
@@ -10639,7 +10684,7 @@ footer .footer_inner .footer_lower .copyright {
   text-align: right;
   line-height: 1;
   font-size: 14px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
 }
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .form-field input[type=number]:focus {
@@ -10659,7 +10704,7 @@ footer .footer_inner .footer_lower .copyright {
   font-family: inherit;
   -webkit-appearance: none;
           appearance: none;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
 }
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .form-field select:focus {
@@ -10678,7 +10723,7 @@ footer .footer_inner .footer_lower .copyright {
   width: 100%;
   display: block;
   content: "▼宿泊プラン日程を選ぶ";
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -10700,7 +10745,7 @@ footer .footer_inner .footer_lower .copyright {
   background-size: 15px;
   padding: 5px 0;
   display: inline-block;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-weight: normal;
   font-size: 16px;
@@ -10737,7 +10782,7 @@ footer .footer_inner .footer_lower .copyright {
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-title {
   display: flex;
   flex-wrap: wrap;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   margin: 0 !important;
   text-align: center;
@@ -10764,7 +10809,7 @@ footer .footer_inner .footer_lower .copyright {
   background-color: #f8f8f8;
   display: block;
   width: 100%;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   box-sizing: border-box;
 }
@@ -10863,7 +10908,7 @@ footer .footer_inner .footer_lower .copyright {
   display: none;
 }
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields {
-  width: 50%;
+  width: 100%;
   background: #fff;
   border: 1px solid #d8d8d8;
   box-sizing: border-box;
@@ -10871,11 +10916,11 @@ footer .footer_inner .footer_lower .copyright {
   flex-wrap: wrap;
   color: #fff;
   font-size: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields::before {
   width: 100%;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 14px;
   line-height: 1;
@@ -10888,7 +10933,7 @@ footer .footer_inner .footer_lower .copyright {
   align-items: center;
   width: auto !important;
   border: none;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   pointer-events: none;
 }
@@ -10925,8 +10970,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields:nth-of-type(2) {
   border-left: 1px solid #d8d8d8;
-  border-right: 0px;
-  margin-left: 0%;
+  border-right: 1px solid #d8d8d8;
   order: 3;
 }
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields:nth-of-type(2)::before {
@@ -10934,6 +10978,8 @@ footer .footer_inner .footer_lower .copyright {
   content: "チェックイン";
 }
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields:nth-of-type(3) {
+  border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
   order: 4;
 }
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields:nth-of-type(3)::before {
@@ -10950,7 +10996,7 @@ footer .footer_inner .footer_lower .copyright {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -10958,7 +11004,7 @@ footer .footer_inner .footer_lower .copyright {
   position: relative;
 }
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form .wc-bookings-booking-cost::before {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 16px;
   display: block;
@@ -10979,9 +11025,10 @@ footer .footer_inner .footer_lower .copyright {
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart button[type=submit] {
   display: block;
   width: 100%;
+  margin-top: 20px;
   padding: 15px 0;
   font-size: 18px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   letter-spacing: 0.03em;
   color: #fff;
@@ -11095,7 +11142,7 @@ footer .footer_inner .footer_lower .copyright {
   }
   .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .wc-bookings-date-picker-date-fields::before {
     width: 100%;
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 14px;
     line-height: 1;
@@ -11108,7 +11155,7 @@ footer .footer_inner .footer_lower .copyright {
     align-items: center;
     width: auto !important;
     border: none;
-    font-family: "TsukuARdGothicStd-R";
+    font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: normal;
     pointer-events: none;
   }
@@ -11201,7 +11248,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-kagibito-list .kagibito_item .txt_wrap .name {
   transition: opacity 0.3s;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   display: block;
   font-size: 24px;
@@ -11214,7 +11261,7 @@ footer .footer_inner .footer_lower .copyright {
   opacity: 0.75;
 }
 .comp-kagibito-list .kagibito_item .txt_wrap .location {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 14px;
   line-height: 1.8;
@@ -11362,7 +11409,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-news-list .news_item .txt_wrap .category {
   display: inline-block;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 14px;
   line-height: normal;
@@ -11376,7 +11423,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-news-list .news_item .txt_wrap .name {
   display: block;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 18px;
   line-height: 1.61;
@@ -11517,7 +11564,7 @@ footer .footer_inner .footer_lower .copyright {
     margin-bottom: 5px;
   }
   .comp-news-list .news_item .txt_wrap .name {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 14px;
     letter-spacing: 0.5px;
@@ -11670,7 +11717,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-service-concept .concept_item .txt_wrap .title_wrap {
   letter-spacing: 0.03em;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -11784,7 +11831,7 @@ footer .footer_inner .footer_lower .copyright {
 .comp-character-wrap .item_box .txt_wrap .title_wrap {
   text-align: center;
   letter-spacing: 0.03em;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -12044,7 +12091,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-right: 15px;
   background-color: #3f3f3f;
   border-radius: 50%;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   color: #fff;
   line-height: 60px;
@@ -12053,7 +12100,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-circulation-model .simply-scroll-list ul li .txt_wrap .ttl {
   width: calc(100% - 75px);
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 22px;
   line-height: 1.6;
@@ -12144,7 +12191,7 @@ footer .footer_inner .footer_lower .copyright {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
 }
 .comp-flow-wrap .flow_item .flow_ttl .box .step {
@@ -12164,7 +12211,7 @@ footer .footer_inner .footer_lower .copyright {
   padding: 0 10px;
 }
 .comp-flow-wrap .flow_item .flow_description .flow_subttl {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 22px;
   line-height: 1;
@@ -12311,7 +12358,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 20px;
 }
 .comp-project-member .member_item .txt_wrap .name_wrap .position {
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   display: block;
   font-size: 14px;
@@ -12320,7 +12367,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 7px;
 }
 .comp-project-member .member_item .txt_wrap .name_wrap .name {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 26px;
   line-height: 1;
@@ -12588,7 +12635,7 @@ footer .footer_inner .footer_lower .copyright {
   z-index: 50;
 }
 .comp-slider-txt .site_ttl {
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 65px;
   line-height: 1.54;
@@ -12606,7 +12653,7 @@ footer .footer_inner .footer_lower .copyright {
   padding-left: 10px;
 }
 .comp-slider-txt .slide_txt .number {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   border-radius: 50%;
   color: #fff;
@@ -12630,7 +12677,7 @@ footer .footer_inner .footer_lower .copyright {
   background: #fff;
 }
 .comp-slider-txt .slide_txt .txt {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 24px;
   line-height: 1;
@@ -12646,7 +12693,7 @@ footer .footer_inner .footer_lower .copyright {
     bottom: 50px;
   }
   .comp-slider-txt .site_ttl {
-    font-family: "TsukuARdGothicStd-R";
+    font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: normal;
     font-size: 65px;
     line-height: 1.54;
@@ -12663,7 +12710,7 @@ footer .footer_inner .footer_lower .copyright {
     align-items: center;
   }
   .comp-slider-txt .slide_txt .number {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     border-radius: 50%;
     color: #fff;
@@ -12687,7 +12734,7 @@ footer .footer_inner .footer_lower .copyright {
     background: #fff;
   }
   .comp-slider-txt .slide_txt .txt {
-    font-family: "FOT-筑紫A丸ゴシック Std D";
+    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
     font-weight: bold;
     font-size: 24px;
     line-height: 1;
@@ -12774,7 +12821,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-pickup-plan .pickup_item .txt_wrap .title_wrap a {
   display: block;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 26px;
   line-height: 1.44;
@@ -12788,7 +12835,7 @@ footer .footer_inner .footer_lower .copyright {
   opacity: 0.75;
 }
 .comp-pickup-plan .pickup_item .txt_wrap .location span {
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 16px;
   line-height: normal;
@@ -12866,7 +12913,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-pickup-plan .pickup_item .txt_wrap .desc_wrap .kagibito .kagibito_wrap .kagibito_info .info {
   display: block;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 14px;
   line-height: normal;
@@ -12875,7 +12922,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-pickup-plan .pickup_item .txt_wrap .desc_wrap .kagibito .kagibito_wrap .kagibito_info .name {
   display: block;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 20px;
   letter-spacing: 1.16px;
@@ -13371,7 +13418,7 @@ footer .footer_inner .footer_lower .copyright {
   color: #fff;
 }
 .comp-footer-link .link_item a .txt_wrap .small {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   display: block;
   font-size: 14px;
@@ -13380,7 +13427,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 10px;
 }
 .comp-footer-link .link_item a .txt_wrap .large {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   display: block;
   font-size: 21px;
@@ -13490,7 +13537,7 @@ footer .footer_inner .footer_lower .copyright {
   background-size: 15px;
   padding: 5px 0;
   display: inline-block;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 16px;
   color: #646464;
@@ -13499,7 +13546,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-service-slider .slick-arrow::after {
   display: inline-block;
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   font-size: 14px;
   color: #646464;
@@ -13545,11 +13592,11 @@ footer .footer_inner .footer_lower .copyright {
   box-sizing: border-box;
   font-size: 12px;
   line-height: 1;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
 }
 .comp-service-slider .slick-slider .item_box .slider_txt .number span {
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: normal;
   display: block;
   font-size: 30px;
@@ -13558,7 +13605,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-service-slider .slick-slider .item_box .slider_txt .txt {
   width: calc(100% - 80px);
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 14px;
   line-height: 1.63;
@@ -13640,7 +13687,7 @@ footer .footer_inner .footer_lower .copyright {
   padding-bottom: 0px;
 }
 .comp-article-content .content_item .section_ttl {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 28px;
   letter-spacing: 0.03em;
@@ -13690,7 +13737,7 @@ footer .footer_inner .footer_lower .copyright {
 .comp-form-wrap .attention {
   width: 100%;
   display: block;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 14px;
   padding: 15px 0 0px;
@@ -13710,7 +13757,7 @@ footer .footer_inner .footer_lower .copyright {
 .comp-form-wrap .form_item .form_ttl .content {
   font-size: 18px;
   letter-spacing: 0.03em;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   display: inline-block;
   padding-right: 0.5em;
@@ -13953,7 +14000,7 @@ footer .footer_inner .footer_lower .copyright {
   font-size: 16px;
   letter-spacing: 0.5px;
   text-align: center;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-weight: normal;
   background-color: #3f3f3f;
@@ -14080,7 +14127,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-bottom: 0;
 }
 .comp-privacy-text .text_item .item_ttl {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 24px;
   line-height: 1.6;
@@ -14102,7 +14149,7 @@ footer .footer_inner .footer_lower .copyright {
   margin-top: 40px;
 }
 .comp-privacy-text .text_item .content_section .content_ttl {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   line-height: 1.6;
   font-size: 20px;
@@ -14111,7 +14158,7 @@ footer .footer_inner .footer_lower .copyright {
 }
 .comp-privacy-text .text_item .content_section .desc_ttl {
   font-size: 18px;
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
@@ -14207,6 +14254,6 @@ footer .footer_inner .footer_lower .copyright {
 }
 /* テキストプリセット */
 .comp-text-set {
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
 }

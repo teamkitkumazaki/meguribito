@@ -619,7 +619,7 @@
 		</div><!-- scroll_wrap -->
 	</section>
 	<div class="comp-text-set" style="opacity:0; height:0px;">
-		<p>状況確認・選ぶ・年・0123456789・費用・¥・チェックイン・チェックアウト・月火水木金土日・宿泊タイプ・日程</p>
+		<p>状況確認・選ぶ・年・0123456789・費用・¥・チェックイン・チェックアウト・月火水木金土日・宿泊タイプ・日程・料金</p>
 	</div>
 </article>
 <?php get_template_part("parts/hummenu");?>

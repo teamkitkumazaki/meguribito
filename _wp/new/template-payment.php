@@ -58,7 +58,7 @@ get_header(); ?>
 			</div>
 		</section>
 		<?php $url = $_SERVER['REQUEST_URI']; ?>
-		<?php if(strstr($url,'checkout')): ?>
+		<?php if(strstr($url,'order-received') == false): ?>
 		<section class="section-payment-terms">
 			<div class="section_inner">
 				<h3 class="corp_title">お申し込み・契約について</span></h3>

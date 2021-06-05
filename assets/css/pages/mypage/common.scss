@@ -75,26 +75,34 @@
         }
       }
       .history_wrap{
-        width: 150px;
-        text-align: center;
-        border-radius: 20px;
-        padding: 20px 0;
-        background: #fff;
-        .title{
-          @include tsukushi-b;
-          font-weight: bold;
-          font-size: 14px;
-          line-height: 1.5;
-          margin-bottom: 10px;
-          span{
-            display: block;
+        @include flexSet;
+        .status_item{
+          width: 150px;
+          text-align: center;
+          border-radius: 20px;
+          padding: 20px 0;
+          margin-right: 10px;
+          background: #fff;
+          &:nth-last-of-type(1){
+            margin-right: 0;
           }
-        }
-        .number{
-          @include tsukushi-r;
-          font-size: 44px;
-          line-height: 1;
-          letter-spacing: normal;
+          .title{
+            display: block;
+            @include tsukushi-b;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 5px;
+            span{
+              display: block;
+            }
+          }
+          .number{
+            @include tsukushi-r;
+            font-size: 44px;
+            line-height: 1;
+            letter-spacing: normal;
+          }
         }
       }
     }
@@ -358,25 +366,27 @@
           }
         }
         .history_wrap{
-          width: 100%;
-          box-sizing: border-box;
-          border-radius: 5px;
-          padding: 10px 20px;
           .status_item{
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 10px 20px;
             @include flexSet;
             justify-content: space-between;
             align-items: center;
-          }
-          .title{
-            font-size: 14px;
-            line-height: 1.5;
-            margin-bottom: 0;
-            span{
-              display: inline;
+            margin-right: 0;
+            margin-bottom: 10px;
+            .title{
+              font-size: 14px;
+              line-height: 1.5;
+              margin-bottom: 0;
+              span{
+                display: inline;
+              }
             }
-          }
-          .number{
-            font-size: 28px;
+            .number{
+              font-size: 28px;
+            }
           }
         }
       }

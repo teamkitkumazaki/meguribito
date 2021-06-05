@@ -14,8 +14,8 @@
         <a href="<?php echo esc_url(home_url('/' ));?>service">メグリビトについて</a>
         <a href="<?php echo esc_url(home_url('/' ));?>plans">プラン一覧</a>
         <a href="<?php echo esc_url(home_url('/' ));?>kagibito-list">カギビト一覧</a>
-        <a href="<?php echo esc_url(home_url('/' ));?>flow">旅の流れ</a>
-        <a href="<?php echo esc_url(home_url('/' ));?>information/">運営からのお知らせ</a>
+        <!--<a href="<?php echo esc_url(home_url('/' ));?>flow">旅の流れ</a> -->
+        <!-- <a href="<?php echo esc_url(home_url('/' ));?>information/">運営からのお知らせ</a> -->
       </div>
       <div class="nav_lower">
         <a href="<?php echo esc_url(home_url('/'));?>about">運営団体</a>

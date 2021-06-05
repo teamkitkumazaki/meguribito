@@ -163,6 +163,12 @@
           }
         }
         .product-price{
+          margin-left: 150px;
+        }
+        .product-quantity{
+          display: none;
+        }
+        .product-price{
           width: 150px;
           box-sizing: border-box;
           padding: 0;
@@ -277,13 +283,14 @@
       .woocommerce{
         .cart{
           .product-name{
-            width: calc(100% - 480px);
+            width: calc(100% - 450px);
           }
           .product-price, .product-quantity, .product-subtotal{
             font-size: 16px;
           }
           .product-price{
             width: 120px;
+            margin-left: 50px;
           }
           .product-quantity{
             width: 120px;
@@ -322,17 +329,19 @@
             letter-spacing: 0.03em;
           }
           .product-price{
-            width: 30%;
-            margin-right: 5%;
+            width: 47%;
+            margin-right: 6%;
+            margin-left: 0;
             padding-right: 0px;
           }
           .product-quantity{
-            width: 30%;
-            margin-right: 5%;
+            display: none;
+            margin-right: 0%;
             padding-right: 0px;
           }
           .product-subtotal{
-            width: 30%;
+            width: 47%;
+            margin-right: 0%;
             padding-right: 0px;
           }
         }
@@ -450,6 +459,9 @@
               font-size: 14px;
               margin-bottom: 0px;
             }
+          }
+          .product-quantity{
+              display: none;
           }
           .product-price{
             width: 100%;

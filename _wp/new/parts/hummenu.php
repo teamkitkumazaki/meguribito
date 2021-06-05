@@ -106,9 +106,9 @@
 				<div class="nav_item">
 					<a href="<?php echo esc_url(home_url('/' ));?>kagibito-list">カギビト一覧</a>
 				</div>
-				<div class="nav_item">
+				<!--<div class="nav_item">
 					<a href="<?php echo esc_url(home_url('/' ));?>flow"><span>旅の流れ</span></a>
-				</div>
+				</div> -->
 			</div>
 			<div class="hummenu_nav_lower">
 				<div class="nav_item">

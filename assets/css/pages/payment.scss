@@ -140,7 +140,8 @@
           .woocommerce-input-wrapper {
             input[type=email],
             input[type=tel],
-            input[type=text] {
+            input[type=text],
+            input[type=password] {
               border: 1px solid #f8f8f8;
               border-radius: 5px;
               background-color: #f8f8f8;
@@ -243,7 +244,8 @@
             .woocommerce-input-wrapper {
               input[type=email],
               input[type=tel],
-              input[type=text] {
+              input[type=text],
+              input[type=password] {
                 border: 1px solid #e2401c;
                 box-shadow: none !important;
               }
@@ -709,6 +711,9 @@
 
           .woocommerce-additional-fields__field-wrapper{
             margin-bottom: 25px;
+          }
+          .woocommerce-account-fields{
+            margin-top: 25px;
           }
           .form-row {
             margin-bottom: 25px;

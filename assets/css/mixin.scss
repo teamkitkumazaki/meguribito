@@ -6,12 +6,12 @@ $pointYellow: #BF992E;
 /* ----- Google Fonts ----- */
 
 @mixin tsukushi-r{
-  font-family: "TsukuARdGothicStd-R";
+  font-family: "TsukuARdGothicStd-R", "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
   font-weight: normal;
 }
 
 @mixin tsukushi-b{
-  font-family: "FOT-筑紫A丸ゴシック Std D";
+  font-family: "FOT-筑紫A丸ゴシック Std D","ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
   font-weight: bold;
 }
 
@@ -201,7 +201,7 @@ $pointYellow: #BF992E;
   input[type=email],
   input[type=tel],
   input[type=text],
-  input[type="password"] {
+  input[type=password] {
     border: 1px solid #f8f8f8;
     border-radius: 5px;
     background-color: #f8f8f8;

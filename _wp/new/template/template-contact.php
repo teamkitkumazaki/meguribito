@@ -16,7 +16,7 @@
   			<div class="section_inner">
   				<div class="txt_wrap" style="text-align: center;">
   					<h1 class="page_ttl">お問い合わせ</h1>
-  					<p class="description"><span>プラン掲載やライター・カメラマンの</span>応募はこちらから。</p>
+  					<p class="description"><span>サービスについてのお問い合わせ、</span><span>またはプラン掲載やライター・カメラマンの</span>応募はこちらから。</p>
   				</div>
   			</div><!-- section_inner -->
   		</section>
