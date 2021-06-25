@@ -12,6 +12,7 @@
     .main_inner{
       width: 100%;
       height: 100vh;
+      max-height: 54vw;
       position: relative;
       .gauge_wrap{
         width: 100%;
@@ -195,6 +196,7 @@
       .main_inner{
         width: 100%;
         height: 100vh;
+        max-height: unset;
         position: relative;
       }
     }
