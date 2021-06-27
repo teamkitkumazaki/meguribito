@@ -5415,6 +5415,72 @@ footer .footer_inner .footer_lower .copyright {
     margin-top: 60px;
   }
 }
+.page-404 {
+  min-height: unset;
+}
+.page-404 .section-lead {
+  margin-bottom: 120px;
+}
+.page-404 .section-lead .section_inner {
+  max-width: 980px;
+  background: #fff;
+  padding: 50px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+.page-404 .section-lead .section_inner .txt_wrap {
+  text-align: center;
+}
+.page-404 .section-lead .section_inner .txt_wrap .page_ttl {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.page-404 .section-lead .section_inner .txt_wrap .sub_ttl {
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 2;
+}
+.page-404 .section-lead .section_inner .txt_wrap .sub_ttl span {
+  display: block;
+}
+.page-404 .section-lead .section_inner .comp-booking-button {
+  max-width: 500px;
+  margin: 40px auto 0;
+}
+
+@media screen and (max-width: 720px) {
+  .page-404 {
+    min-height: unset;
+  }
+  .page-404 .section-lead {
+    margin-bottom: 60px;
+  }
+  .page-404 .section-lead .section_inner {
+    padding: 30px 20px;
+    border-radius: 10px;
+  }
+  .page-404 .section-lead .section_inner .txt_wrap {
+    text-align: center;
+  }
+  .page-404 .section-lead .section_inner .txt_wrap .page_ttl {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .page-404 .section-lead .section_inner .txt_wrap .sub_ttl {
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 0.44px;
+    line-height: 2;
+  }
+  .page-404 .section-lead .section_inner .txt_wrap .sub_ttl span {
+    display: inline;
+  }
+  .page-404 .section-lead .section_inner .comp-booking-button {
+    margin: 30px auto 0;
+  }
+}
 /*######## マイページ ##########*/
 .woocommerce-error {
   position: fixed !important;
@@ -8953,7 +9019,7 @@ footer .footer_inner .footer_lower .copyright {
     width: calc(100% - 65px);
   }
 }
-.comp-booking-button button {
+.comp-booking-button button, .comp-booking-button a {
   display: block;
   width: 100%;
   padding: 15px 0;
@@ -8968,13 +9034,14 @@ footer .footer_inner .footer_lower .copyright {
   box-shadow: 0 2px 4px 0 #aaaaaa;
   transition: opacity 0.3s;
   cursor: pointer;
+  text-align: center;
 }
-.comp-booking-button button:hover {
+.comp-booking-button button:hover, .comp-booking-button a:hover {
   opacity: 0.75;
 }
 
 @media screen and (max-width: 720px) {
-  .comp-booking-button button {
+  .comp-booking-button button, .comp-booking-button a {
     padding: 15px 0;
     font-size: 16px;
     line-height: 1;

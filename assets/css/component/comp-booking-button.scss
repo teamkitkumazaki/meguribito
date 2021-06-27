@@ -1,5 +1,5 @@
 .comp-booking-button{
-  button{
+  button, a{
     display: block;
     width: 100%;
     padding: 15px 0;
@@ -13,12 +13,13 @@
     box-shadow: 0 2px 4px 0 #aaaaaa;
     @include hover;
     cursor: pointer;
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 720px){
   .comp-booking-button{
-    button{
+    button, a{
       padding: 15px 0;
       font-size: 16px;
       line-height: 1;
