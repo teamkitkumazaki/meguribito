@@ -64,8 +64,8 @@ get_header(); ?>
             <span class="content">〒796-0001<br>愛媛県八幡浜市向灘 3058</span>
           </div>
 					<div class="chart_item">
-            <span class="title">電話番号</span>
-            <span class="content">0894-22-5083<br>受付時間：10時～18時(土日祝を除く)</span>
+            <span class="title">メールアドレス</span>
+            <span class="content">info@meguribito.com</span>
 					</div>
 				</div><!-- comp-chart-layout -->
 			</div><!-- section_inner -->

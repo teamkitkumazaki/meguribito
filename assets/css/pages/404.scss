@@ -1,0 +1,67 @@
+.page-404{
+  min-height: unset;
+  .section-lead{
+    margin-bottom: 120px;
+    .section_inner{
+      max-width: 980px;
+      background: #fff;
+      padding: 50px;
+      box-sizing: border-box;
+      border-radius: 15px;
+      .txt_wrap{
+        text-align:center;
+        .page_ttl{
+          font-size: 32px;
+          margin-bottom: 40px;
+        }
+        .sub_ttl{
+          font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+          font-weight: normal;
+          font-size: 16px;
+          letter-spacing: 0.5px;
+          line-height: 2;
+          span{
+            display: block;
+          }
+        }
+      }
+      .comp-booking-button{
+        max-width: 500px;
+        margin: 40px auto 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  .page-404{
+    min-height: unset;
+    .section-lead{
+      margin-bottom: 60px;
+      .section_inner{
+        padding: 30px 20px;
+        border-radius: 10px;
+        .txt_wrap{
+          text-align:center;
+          .page_ttl{
+            font-size: 22px;
+            margin-bottom: 30px;
+          }
+          .sub_ttl{
+            text-align: left;
+            font-size: 14px;
+            letter-spacing: 0.44px;
+            line-height: 2;
+            span{
+              display: inline;;
+            }
+          }
+        }
+        .comp-booking-button{
+          margin: 30px auto 0;
+        }
+      }
+    }
+  }
+
+}

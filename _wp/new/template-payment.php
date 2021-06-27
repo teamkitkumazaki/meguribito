@@ -84,10 +84,32 @@ get_header(); ?>
 		</section>
 		<?php endif; ?>
 		<div class="comp-text-set" style="opacity:0; height:0px;">
-			<p>メールマガジンを受け取る・内容・方法・間・(税込)</p>
+			<p>代表者・メールマガジンを受け取る・内容・方法・間・(税込)</p>
 		</div>
 	</article>
   <?php get_template_part("parts/hummenu");?>
   <?php get_template_part("parts/footer");?>
 </body>
+<script>
+var titleTxt = [];
+var limitNum = 20;
+$('#order_comments').attr('placeholder', '宿泊拠点に事前に伝えておきたい内容・ご不明点・ご質問など');
+var cvcInput = $('#stripe-cvc-element').find('iframe').contents().find('input');
+console.log('cvcInput:' + cvcInput);
+$.each(cvcInput, function(index, element) {
+	console.log(index + ':' + element);
+});
+/*for (var i = 0; i < limitNum; i++) {
+	console.log('i:' + i);
+	console.log(cvcInput[i].attr('name'));
+	console.log('password:' + cvcInput[i]);
+}*/
+$('.woocommerce-billing-fields').find('h3').each(function(index) {
+	titleTxt[index] = $(this).text();
+	if(titleTxt[i] = '請求先情報の詳細'){
+		$(this).text('代表者情報の詳細');
+	}
+});
+
+</script>
 </html>
