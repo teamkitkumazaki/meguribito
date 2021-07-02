@@ -624,7 +624,9 @@ if (document.getElementById('mypage')) {
         }
       }]
     });
+
     contetHeightAdjust($('#faqToggle'));
+    
   }
   if (document.getElementById('service')) {
     $('#characterSlider').slick({

@@ -290,6 +290,11 @@ button:focus {
   display: none !important;
 }
 
+.slick-slider {
+  -webkit-user-select: unset !important;
+          user-select: unset !important;
+}
+
 .comp-header {
   position: absolute;
   width: 100%;
@@ -1917,7 +1922,7 @@ footer .footer_inner .footer_lower .copyright {
   align-items: flex-start;
 }
 .page-plan-detail .section-detail03 .detail_fix_section {
-  width: 33%;
+  width: 31%;
   position: sticky;
   top: 140px;
 }
@@ -8812,14 +8817,14 @@ footer .footer_inner .footer_lower .copyright {
 }
 
 .comp-chart-layout {
-  border-top: 1px solid #d8d8d8;
-  border-left: 1px solid #d8d8d8;
-  border-right: 1px solid #d8d8d8;
+  border-top: 1px solid #dfdfdf;
+  border-left: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf;
 }
 .comp-chart-layout .chart_item {
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 1px solid #dfdfdf;
   background-color: #f8f8f8;
 }
 .comp-chart-layout .chart_item .content, .comp-chart-layout .chart_item .title {
@@ -8879,7 +8884,7 @@ footer .footer_inner .footer_lower .copyright {
   }
   .comp-chart-layout .chart_item {
     display: block;
-    border-bottom: 0px solid #d8d8d8;
+    border-bottom: 0px solid #dfdfdf;
     margin-bottom: 20px;
     background-color: transparent;
   }
@@ -9981,7 +9986,11 @@ footer .footer_inner .footer_lower .copyright {
   line-height: 2;
   letter-spacing: 0.6px;
   font-size: 14px;
-  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.comp-time-shcedule .title_box .desc span {
+  display: block;
 }
 .comp-time-shcedule .shcedule_wrap {
   margin-bottom: 40px;
@@ -10005,9 +10014,10 @@ footer .footer_inner .footer_lower .copyright {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px;
+  padding: 15px 20px 15px 15px;
   background: #fff;
   margin-left: 35px;
+  box-sizing: border-box;
   margin-bottom: 10px;
 }
 .comp-time-shcedule .shcedule_wrap .item_box:nth-last-of-type(1) {
@@ -10034,9 +10044,9 @@ footer .footer_inner .footer_lower .copyright {
   font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
   font-size: 20px;
-  line-height: normal;
+  line-height: 1.6;
   letter-spacing: 0.03em;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .comp-time-shcedule .shcedule_wrap .item_box .txt_wrap .desc {
   font-size: 16px;
@@ -10045,12 +10055,117 @@ footer .footer_inner .footer_lower .copyright {
   font-size: 13px;
   line-height: 1.8;
 }
-@media screen and (min-width: 721px) {
+@media screen and (min-width: 21px) {
+  .comp-time-shcedule .slick-slider .slick-dots {
+    display: none !important;
+  }
+  .comp-time-shcedule .slick-slider .slick-track {
+    width: 100% !important;
+  }
+  .comp-time-shcedule .slick-slider .slick-list {
+    padding: 0 !important;
+  }
   .comp-time-shcedule .slick-slider .item_box {
+    width: calc(100% - 35px) !important;
     float: none !important;
   }
 }
 
+@media screen and (max-width: 1200px) and (min-width: 981px) {
+  .comp-time-shcedule .shcedule_wrap {
+    margin-bottom: 40px;
+  }
+  .comp-time-shcedule .shcedule_wrap .item_box .img_wrap {
+    width: 155px;
+  }
+  .comp-time-shcedule .shcedule_wrap .item_box .txt_wrap {
+    width: calc(100% - 180px);
+  }
+  .comp-time-shcedule .shcedule_wrap .item_box .txt_wrap .schedule_ttl {
+    font-size: 18px;
+  }
+  .comp-time-shcedule .shcedule_wrap .item_box .txt_wrap .desc {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .comp-time-shcedule {
+    margin-bottom: 60px;
+  }
+  .comp-time-shcedule .title_box {
+    padding-left: 25px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .comp-time-shcedule .title_box::before {
+    top: 10px;
+    left: -1px;
+    width: 12px;
+    height: 12px;
+  }
+  .comp-time-shcedule .title_box .text {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .comp-time-shcedule .title_box .desc {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .comp-time-shcedule .title_box .desc span {
+    display: inline;
+  }
+  .comp-time-shcedule .shcedule_wrap {
+    margin-bottom: 40px;
+  }
+  .comp-time-shcedule .shcedule_wrap.last {
+    position: relative;
+  }
+  .comp-time-shcedule .shcedule_wrap.last::before {
+    display: block;
+    content: "";
+    background: #f9f6f3;
+    width: 100%;
+    height: calc(100% + 50px);
+    position: absolute;
+    left: -2px;
+    top: -40px;
+  }
+  .comp-time-shcedule .shcedule_wrap .item_box {
+    display: block;
+    padding: 15px;
+    background: #fff;
+    margin-left: 25px;
+    margin-bottom: 10px;
+  }
+  .comp-time-shcedule .shcedule_wrap .item_box:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
+  .comp-time-shcedule .shcedule_wrap .item_box .img_wrap {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .comp-time-shcedule .shcedule_wrap .item_box .txt_wrap {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .comp-time-shcedule .shcedule_wrap .item_box .txt_wrap .time {
+    margin-bottom: 10px;
+  }
+  .comp-time-shcedule .shcedule_wrap .item_box .txt_wrap .schedule_ttl {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  .comp-time-shcedule .shcedule_wrap .item_box .txt_wrap .desc {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.6px;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+}
 .comp-trip-review {
   margin-bottom: 60px;
 }
