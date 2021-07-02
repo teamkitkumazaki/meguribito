@@ -9937,264 +9937,120 @@ footer .footer_inner .footer_lower .copyright {
   }
 }
 .comp-time-shcedule {
-  margin-bottom: 80px;
-}
-.comp-time-shcedule .day_shifter {
-  display: flex;
-  flex-wrap: wrap;
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 100px;
 }
-.comp-time-shcedule .day_shifter::before {
+.comp-time-shcedule::before {
   display: block;
   content: "";
   position: absolute;
-  z-index: 10;
-  top: 0px;
-  bottom: 0px;
-  left: 0;
-  right: 0;
+  top: 30px;
+  bottom: 0;
+  left: 5px;
   margin: auto;
-  background: #fff;
-  border-radius: 5px;
-  width: 100%;
-  height: 100%;
-}
-.comp-time-shcedule .day_shifter::after {
-  display: block;
-  content: "";
-  position: absolute;
-  z-index: 20;
-  top: 1px;
-  bottom: 1px;
-  left: 0;
-  background: #3f3f3f;
-  border-radius: 5px;
-  width: 33.333333%;
-  height: calc(100% - 2px);
-  transition: left 0.2s;
-}
-.comp-time-shcedule .day_shifter button {
-  position: relative;
-  z-index: 30;
-  width: 33.333333%;
-  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
-  font-weight: bold;
-  font-size: 16px;
-  padding: 7px 0 9px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  border: 1px solid #d8d8d8;
-  margin: 0;
-  transition: opacity 0.3s;
-  cursor: pointer;
-}
-.comp-time-shcedule .day_shifter button:nth-of-type(1) {
-  border-radius: 5px 0 0 5px;
-  border-right: 0;
-  color: #fff;
-}
-.comp-time-shcedule .day_shifter button:nth-last-of-type(1) {
-  border-left: 0;
-  border-radius: 0 5px 5px 0;
-}
-.comp-time-shcedule .shcedule_wrap {
-  padding: 30px;
-  background-color: #fff;
-  border-radius: 5px;
-}
-.comp-time-shcedule .shcedule_wrap .schedule_inner {
-  position: relative;
-}
-.comp-time-shcedule .shcedule_wrap .schedule_inner::before {
-  display: block;
-  content: "";
   width: 1px;
   height: 100%;
-  border-left: 1px dotted #BF992E;
-  position: absolute;
-  top: 15px;
-  left: 0px;
+  border-left: 1px dotted #979797;
 }
-.comp-time-shcedule .shcedule_wrap .schedule_item {
-  padding-left: 30px;
-  margin-bottom: 30px;
+.comp-time-shcedule .title_box {
+  position: relative;
+  z-index: 10;
+  padding-left: 35px;
+  margin-bottom: 20px;
   position: relative;
 }
-.comp-time-shcedule .shcedule_wrap .schedule_item:nth-last-of-type(1) {
-  margin-bottom: 0;
-}
-.comp-time-shcedule .shcedule_wrap .schedule_item:nth-last-of-type(1)::after {
+.comp-time-shcedule .title_box::before {
   display: block;
   content: "";
   position: absolute;
-  width: 100px;
-  height: calc(100% + 20px);
-  left: 0;
   top: 15px;
-  background: #fff;
-}
-.comp-time-shcedule .shcedule_wrap .schedule_item::before {
-  display: block;
-  content: "";
-  position: absolute;
+  left: -2px;
   width: 15px;
   height: 15px;
-  background-color: #BF992E;
   border-radius: 50%;
-  left: -7px;
-  top: 15px;
-  z-index: 10;
+  background: #303030;
 }
-.comp-time-shcedule .shcedule_wrap .schedule_item .title_wrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.comp-time-shcedule .title_box .text {
   font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
-  position: relative;
-  z-index: 15;
-}
-.comp-time-shcedule .shcedule_wrap .schedule_item .title_wrap .time {
-  font-size: 14px;
-  line-height: normal;
-  letter-spacing: 0.44px;
-  color: #646464;
-  margin-right: 1em;
-}
-.comp-time-shcedule .shcedule_wrap .schedule_item .title_wrap .title {
   font-size: 22px;
   line-height: normal;
-  letter-spacing: 0.03em;
 }
-.comp-time-shcedule .shcedule_wrap .schedule_item .description {
+.comp-time-shcedule .title_box .desc {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.6px;
   font-size: 14px;
-  position: relative;
-  z-index: 15;
+  margin-bottom: 25px;
 }
-.comp-time-shcedule .shcedule_wrap .yahoku_item {
-  text-align: center;
-  margin-bottom: 30px;
-  padding: 15px 0;
-  background: url(../img/common/wave.png) repeat-x left top;
-  background-size: 9px 4px;
-  width: calc(100% + 20px);
-  margin-left: -10px;
-  background-color: #fff;
-  position: relative;
-  z-index: 10;
+.comp-time-shcedule .shcedule_wrap {
+  margin-bottom: 40px;
 }
-.comp-time-shcedule .shcedule_wrap .yahoku_item::after {
+.comp-time-shcedule .shcedule_wrap.last {
+  position: relative;
+}
+.comp-time-shcedule .shcedule_wrap.last::before {
   display: block;
   content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  background: #f9f6f3;
   width: 100%;
-  height: 5px;
-  background: url(../img/common/wave.png) repeat-x left top;
-  background-size: 9px 4px;
+  height: calc(100% + 50px);
+  position: absolute;
+  left: -2px;
+  top: -40px;
 }
-.comp-time-shcedule .shcedule_wrap .yahoku_item .yohaku_txt {
+.comp-time-shcedule .shcedule_wrap .item_box {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+.comp-time-shcedule .shcedule_wrap .item_box:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.comp-time-shcedule .shcedule_wrap .item_box .img_wrap {
+  width: 185px;
+  margin-right: 25px;
+}
+.comp-time-shcedule .shcedule_wrap .item_box .txt_wrap {
+  width: calc(100% - 210px);
+}
+.comp-time-shcedule .shcedule_wrap .item_box .txt_wrap .time {
+  display: block;
   font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.27px;
+  color: #646464;
+  margin-bottom: 5px;
+}
+.comp-time-shcedule .shcedule_wrap .item_box .txt_wrap .schedule_ttl {
+  font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: normal;
   letter-spacing: 0.03em;
+  margin-bottom: 5px;
+}
+.comp-time-shcedule .shcedule_wrap .item_box .txt_wrap .desc {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+@media screen and (min-width: 721px) {
+  .comp-time-shcedule .slick-slider .item_box {
+    float: none !important;
+  }
 }
 
-@media screen and (max-width: 720px) {
-  .comp-time-shcedule {
-    margin-bottom: 50px;
-  }
-  .comp-time-shcedule .day_shifter {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    margin-bottom: 25px;
-  }
-  .comp-time-shcedule .day_shifter::after {
-    display: block;
-    content: "";
-    position: absolute;
-    z-index: 20;
-    top: 1px;
-    bottom: 1px;
-    left: 0;
-    background: #3f3f3f;
-    border-radius: 5px;
-    width: 33.333333%;
-    height: calc(100% - 2px);
-    transition: left 0.2s;
-  }
-  .comp-time-shcedule .day_shifter button {
-    font-size: 14px;
-    padding: 5px 0 7px;
-  }
-  .comp-time-shcedule .day_shifter button:nth-of-type(1) {
-    border-radius: 5px 0 0 5px;
-    border-right: 0;
-  }
-  .comp-time-shcedule .shcedule_wrap {
-    padding: 20px 20px 30px;
-  }
-  .comp-time-shcedule .shcedule_wrap .schedule_inner::before {
-    display: block;
-    content: "";
-    width: 1px;
-    height: 100%;
-    border-left: 1px dotted #BF992E;
-    position: absolute;
-    top: 15px;
-    left: 0px;
-  }
-  .comp-time-shcedule .shcedule_wrap .schedule_item {
-    padding-left: 20px;
-    margin-bottom: 30px;
-    position: relative;
-  }
-  .comp-time-shcedule .shcedule_wrap .schedule_item:nth-last-of-type(1) {
-    margin-bottom: 0;
-  }
-  .comp-time-shcedule .shcedule_wrap .schedule_item:nth-last-of-type(1)::after {
-    top: 8px;
-  }
-  .comp-time-shcedule .shcedule_wrap .schedule_item::before {
-    width: 12px;
-    height: 12px;
-    left: -6px;
-    top: 8px;
-  }
-  .comp-time-shcedule .shcedule_wrap .schedule_item .title_wrap {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
-    font-weight: bold;
-  }
-  .comp-time-shcedule .shcedule_wrap .schedule_item .title_wrap .time {
-    margin-right: 0;
-  }
-  .comp-time-shcedule .shcedule_wrap .schedule_item .title_wrap .title {
-    font-size: 18px;
-    line-height: 1.6;
-  }
-  .comp-time-shcedule .shcedule_wrap .schedule_item .description {
-    margin-top: 10px;
-  }
-  .comp-time-shcedule .shcedule_wrap .yahoku_item {
-    width: calc(100% + 10px);
-    margin-left: -5px;
-  }
-  .comp-time-shcedule .shcedule_wrap .yahoku_item .yohaku_txt {
-    font-size: 14px;
-  }
-}
 .comp-trip-review {
   margin-bottom: 60px;
 }
