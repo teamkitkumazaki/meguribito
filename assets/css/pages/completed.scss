@@ -143,29 +143,37 @@
           tfoot{
             width: 100%;
             display: block;
+            padding-top: 30px;
+            @include flexSet;
             tr{
-              display: none;
-              &:nth-last-of-type(1){
-                width: 40%;
-                margin-left: 60%;
-                @include flexSet;
-                justify-content: space-between;
-                align-items: center;
-                @include tsukushi-b;
-                letter-spacing: 0.03em;
-                padding: 30px 10px 0 !important;
-                th{
-                  font-size: 18px;
-                }
-                td{
-                  font-size: 20px;
-                  .amount{
-                    &::after{
-                      display: inline;
-                      content: "(税込)";
-                    }
+              width: auto !important;
+              margin-right: 30px;
+              @include flexSet;
+              align-items: center;
+              @include tsukushi-b;
+              line-height: 1.6;
+              letter-spacing: 0.03em;
+              padding: 10px 10px 0 !important;
+              th{
+                margin-right: 10px;
+                text-align: left;
+                font-size: 14px;
+              }
+              td{
+                font-size: 18px;
+                .amount{
+                  &::after{
+                    display: inline;
+                    content: "(税込)";
                   }
                 }
+              }
+              &:nth-last-of-type(2){
+                margin-right: 0;
+              }
+              &:nth-last-of-type(1){
+                width: 100% !important;
+                margin-right: 0;
               }
             }
           }

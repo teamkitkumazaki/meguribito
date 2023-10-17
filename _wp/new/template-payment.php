@@ -90,6 +90,9 @@ get_header(); ?>
   <?php get_template_part("parts/hummenu");?>
   <?php get_template_part("parts/footer");?>
 </body>
+<?php if(strstr($url,'/order-received/')): ?>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/notification.js?<?php echo date('Ymd-Hi');?>"></script>
+<?php endif; ?>
 <script>
 var titleTxt = [];
 var limitNum = 20;
@@ -110,6 +113,5 @@ $('.woocommerce-billing-fields').find('h3').each(function(index) {
 		$(this).text('代表者情報の詳細');
 	}
 });
-
 </script>
 </html>

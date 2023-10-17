@@ -1,251 +1,223 @@
 .comp-time-shcedule{
-  margin-bottom: 80px;
-  .day_shifter{
-    @include flexSet;
+  position: relative;
+  margin-bottom: 100px;
+  &::before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 30px;
+    bottom:0;
+    left:5px;
+    margin: auto;
+    width: 1px;
+    height: 100%;
+    border-left: 1px dotted #979797;
+  }
+  .title_box{
     position: relative;
-    margin-bottom: 25px;
+    z-index: 10;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    position: relative;
     &::before{
       display: block;
       content: "";
       position: absolute;
-      z-index: 10;
-      top: 0px;
-      bottom: 0px;
-      left: 0;
-      right:0;
-      margin: auto;
-      background: #fff;
-      border-radius: 5px;
-      width: 100%;
-      height: 100%;
+      top: 15px;
+      left: -2px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #303030;
     }
-    &::after{
-      display: block;
-      content: "";
-      position: absolute;
-      z-index: 20;
-      top: 1px;
-      bottom: 1px;
-      left: 0;
-      background: $black01;
-      border-radius: 5px;
-      width: 33.333333%;
-      height: calc(100% - 2px);
-      transition: left 0.2s;
-    }
-    button{
-      position: relative;
-      z-index: 30;
-      width: 33.333333%;
+    .text{
       @include tsukushi-b;
-      font-size: 16px;
-      padding: 7px 0 9px;
-      letter-spacing: 0.03em;
-      text-align: center;
-      border: 1px solid #d8d8d8;
-      margin: 0;
-      transition: opacity 0.3s;
-      cursor: pointer;
-      &:nth-of-type(1){
-        border-radius: 5px 0 0 5px;
-        border-right: 0;
-        color: #fff;
-      }
-      &:nth-last-of-type(1){
-        border-left: 0;
-        border-radius: 0 5px 5px 0;
+      font-size: 22px;
+      line-height: normal;
+    }
+    .desc{
+      @include basicP;
+      font-size: 14px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      span{
+        display: block;
       }
     }
   }
   .shcedule_wrap{
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 5px;
-    .schedule_inner{
+    margin-bottom: 40px;
+    &.last{
       position: relative;
       &::before{
         display: block;
         content: "";
-        width: 1px;
-        height: 100%;
-        border-left: 1px dotted $pointYellow;
+        background: $basicBgColor;
+        width: 100%;
+        height: calc(100% + 50px);
         position: absolute;
-        top: 15px;
-        left: 0px;
+        left: -2px;
+        top: -40px;
       }
+    }
+    .item_box{
+      position: relative;
+      z-index: 10;
+      @include flexSet;
+      align-items: center;
+      padding: 15px 20px 15px 15px;
+      background: #fff;
+      margin-left: 35px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      &:nth-last-of-type(1){
+        margin-bottom: 0;
       }
-      .schedule_item{
-        padding-left: 30px;
-        margin-bottom: 30px;
-        position: relative;
-        &:nth-last-of-type(1){
-          margin-bottom: 0;
-          &::after{
-            display: block;
-            content: "";
-            position: absolute;
-            width: 100px;
-            height: calc(100% + 20px);
-            left:0;
-            top:15px;
-            background: #fff;
-          }
-        }
-        &::before{
+      .img_wrap{
+        width: 185px;
+        margin-right: 25px;
+      }
+      .txt_wrap{
+        width: calc(100% - 210px);
+        .time{
           display: block;
-          content: "";
-          position: absolute;
-          width: 15px;
-          height: 15px;
-          background-color: $pointYellow;
-          border-radius: 50%;
-          left: -7px;
-          top: 15px;
-          z-index: 10;
-        }
-        .title_wrap{
-          @include flexSet;
-          align-items: center;
           @include tsukushi-b;
-          position: relative;
-          z-index: 15;
-          .time{
-            font-size: 14px;
-            line-height: normal;
-            letter-spacing: 0.44px;
-            color: #646464;
-            margin-right: 1em;
-          }
-          .title{
-            font-size: 22px;
-            line-height: normal;
-            letter-spacing: 0.03em;
-          }
+          font-size: 12px;
+          line-height: 1;
+          letter-spacing: 0.27px;
+          color: #646464;
+          margin-bottom: 5px;
         }
-        .description{
-          @include basicP;
-          font-size: 14px;
-          position: relative;
-          z-index: 15;
-        }
-      }
-      .yahoku_item{
-        text-align: center;
-        margin-bottom: 30px;
-        padding: 15px 0;
-        background: url(../img/common/wave.png) repeat-x left top;
-        background-size: 9px 4px;
-        width: calc(100% + 20px);
-        margin-left: -10px;
-        background-color: #fff;
-        position: relative;
-        z-index: 10;
-        &::after{
-          display: block;
-          content: "";
-          position: absolute;
-          left: 0;
-          right:0;
-          bottom: 0;
-          margin:auto;
-          width: 100%;
-          height: 5px;
-          background: url(../img/common/wave.png) repeat-x left top;
-          background-size: 9px 4px;
-        }
-        .yohaku_txt{
+        .schedule_ttl{
           @include tsukushi-b;
-          font-size: 16px;
-          line-height: 1.5;
+          font-size: 20px;
+          line-height: 1.6;
           letter-spacing: 0.03em;
+          margin-bottom: 10px;
+        }
+        .desc{
+          @include basicP;
+          font-size: 13px;
+          line-height: 1.8;
         }
       }
     }
   }
+  @media screen and (min-width: 21px){
+    .slick-slider{
+      .slick-dots{
+        display: none !important;
+      }
+      .slick-track{
+        width: 100% !important;
+      }
+      .slick-list{
+        padding: 0 !important;
+      }
+      .item_box{
+        width: calc(100% - 35px) !important;
+        float: none !important;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 981px){
+  .comp-time-shcedule{
+    .shcedule_wrap{
+      margin-bottom: 40px;
+      .item_box{
+        .img_wrap{
+          width: 155px;
+        }
+        .txt_wrap{
+          width: calc(100% - 180px);
+          .schedule_ttl{
+            font-size: 18px;
+          }
+          .desc{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 720px){
   .comp-time-shcedule{
-    margin-bottom: 50px;
-    .day_shifter{
-      @include flexSet;
+    margin-bottom: 60px;
+    .title_box{
+      padding-left: 25px;
+      margin-bottom: 20px;
       position: relative;
-      margin-bottom: 25px;
-      &::after{
-        display: block;
-        content: "";
-        position: absolute;
-        z-index: 20;
-        top: 1px;
-        bottom: 1px;
-        left: 0;
-        background: $black01;
-        border-radius: 5px;
-        width: 33.333333%;
-        height: calc(100% - 2px);
-        transition: left 0.2s;
+      &::before{
+        top: 10px;
+        left: -1px;
+        width: 12px;
+        height: 12px;
       }
-      button{
-        font-size: 14px;
-        padding: 5px 0 7px;
-        &:nth-of-type(1){
-          border-radius: 5px 0 0 5px;
-          border-right: 0;
+      .text{
+        font-size: 18px;
+        line-height: 1.6;
+      }
+      .desc{
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        span{
+          display: inline;
         }
       }
     }
     .shcedule_wrap{
-      padding: 20px 20px 30px;
-      .schedule_inner{
+      margin-bottom: 40px;
+      &.last{
+        position: relative;
         &::before{
           display: block;
           content: "";
-          width: 1px;
-          height: 100%;
-          border-left: 1px dotted $pointYellow;
+          background: $basicBgColor;
+          width: 100%;
+          height: calc(100% + 50px);
           position: absolute;
-          top: 15px;
-          left: 0px;
+          left: -2px;
+          top: -40px;
         }
+      }
+      .item_box{
+        display: block;
+        padding: 15px;
+        background: #fff;
+        margin-left: 25px;
+        margin-bottom: 10px;
+        &:nth-last-of-type(1){
+          margin-bottom: 0;
         }
-        .schedule_item{
-          padding-left: 20px;
-          margin-bottom: 30px;
-          position: relative;
-          &:nth-last-of-type(1){
-            margin-bottom: 0;
-            &::after{
-              top:8px;
-            }
-          }
-          &::before{
-            width: 12px;
-            height: 12px;
-            left: -6px;
-            top: 8px;
-          }
-          .title_wrap{
-            @include flexSet;
-            align-items: center;
-            @include tsukushi-b;
-            .time{
-              margin-right: 0;
-            }
-            .title{
-              font-size: 18px;
-              line-height: 1.6;
-            }
-          }
-          .description{
-            margin-top: 10px;
-          }
+        .img_wrap{
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 20px;
         }
-        .yahoku_item{
-          width: calc(100% + 10px);
-          margin-left: -5px;
-          .yohaku_txt{
-            font-size: 14px;
+        .txt_wrap{
+          width: 100%;
+          box-sizing: border-box;
+          .time{
+            margin-bottom: 10px;
+          }
+          .schedule_ttl{
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+          }
+          .desc{
+            @include basicP;
+            font-size: 13px;
+            line-height: 1.8;
           }
         }
       }
     }
+  }
 }

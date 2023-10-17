@@ -208,7 +208,12 @@
 					<a href="/plans"><span>体験一覧を見る</span></a>
 				</div>
 			</div><!-- comp-section-title -->
-			<?php get_template_part("parts/planList");?>
+			<?php if (current_user_can('administrator') || current_user_can('editor')) {
+				get_template_part("parts/planListPreview");
+			}else{
+				get_template_part("parts/planList");
+			}
+			;?>
 		</div><!-- section_inner -->
 	</section>
 	<section class="section-service">

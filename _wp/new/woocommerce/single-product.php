@@ -30,6 +30,7 @@
 				$kagibito_area = SCF::get('area_name', $kagibito_id);
 				$kagibito_profile = SCF::get('profile_txt', $kagibito_id);
 			?>
+			<div id="adminMail" style="display: none;"><?php echo SCF::get('mail_adress');?></div>
 			<section id="main" class="section-main">
 				<?php
 					$main_thumb = SCF::get('main_pc');
@@ -384,66 +385,103 @@
 								<p class="upper_txt">旅程・レビュー・よくある質問など</p>
 								<h2 class="title"><span>プラン詳細</span></h2>
 							</div>
-							<!-- <div class="comp-time-shcedule">
-								<h3 class="detail_ttl">旅程について</h3>
-								<div id="dayShifter" class="day_shifter">
-									<button>1日目</button>
-									<button>2日目</button>
-									<button>3日目</button>
+							<h3 class="detail_ttl">旅程について</h3>
+							<div id="timeSchedule" class="comp-time-shcedule">
+								<?php
+									$start = SCF::get('schedule01_img');
+									$end = SCF::get('schedule02_image');
+									$start_img = wp_get_attachment_image_src($start,'medium_large');
+									$end_img = wp_get_attachment_image_src($end,'medium_large');
+								;?>
+								<div class="title_box">
+									<h4 class="text">カギビトとの合流</h4>
 								</div>
 								<div class="shcedule_wrap">
-									<div id="day1" class="schedule_inner">
-										<div class="schedule_item">
-											<div class="title_wrap">
-												<span class="time">AM10:00ごろ</span>
-												<h4 class="title">尾道駅に到着・ヤドカリにチェックイン</h4>
-											</div>
-											<div class="description">
-												<p><span>尾道駅でカギビトと合流し、ゲストハウス「ヤドカリ」までご案内いたします。</span><span>カフェで一息つきながら、チェックインの手続きや荷物の整理を進めましょう！</span></p>
+									<div class="item_box">
+										<div class="img_wrap">
+											<img src="<?php echo $start_img[0];?>">
+										</div>
+										<div class="txt_wrap">
+											<span class="time"><?php echo SCF::get('schedule01_time');?></span>
+											<h5 class="schedule_ttl"><?php echo SCF::get('schedule01_title');?></h5>
+											<div class="desc">
+												<p><?php echo SCF::get('schedule01_text');?></p>
 											</div>
 										</div>
-										<div class="schedule_item">
-											<div class="title_wrap">
-												<span class="time">AM12:00ごろ</span>
-												<h4 class="title">オノミチシェアにドロップイン</h4>
-											</div>
-											<div class="description">
-												<p>シェアオフィス「オノミチシェア」にドロップインをします。10:00~19:00までの時間のオフィス使用料はプラン料金の中に含まれています。深夜帯まで利用したい場合は、直接オフィスの係員の方にご相談ください！</p>
-											</div>
+									</div><!-- item_box -->
+								</div><!-- shcedule_wrap -->
+								<div class="title_box">
+									<h4 class="text"><?php echo SCF::get('experience_ttl');?></h4>
+									<p class="desc"><?php echo SCF::get('experience_txt');?></p>
+								</div>
+								<div class="shcedule_wrap">
+									<?php
+										$repeat_group = SCF::get( 'exprience_content' );
+										foreach ( $repeat_group as $fields ) {
+											$ex_img = wp_get_attachment_image_src($fields['contents_image'],'medium_large');
+											$ex_time = $fields['contents_time'];
+											$ex_ttl = $fields['contents_ttl'];
+											$ex_desc = $fields['contents_desc'];
+										?>
+									<div class="item_box">
+										<div class="img_wrap">
+											<img src="<?php echo $ex_img[0];?>">
 										</div>
-										<div class="yahoku_item">
-											<p class="yohaku_txt">お仕事頑張ってください！</p>
-										</div>
-										<div class="schedule_item">
-											<div class="title_wrap">
-												<span class="time">PM17:00ごろ</span>
-												<h4 class="title">カギビトと合流・飲屋街「新開地区」へ</h4>
-											</div>
-											<div class="description">
-												<p>シェアオフィス「オノミチシェア」にドロップインをします。10:00~19:00までの時間のオフィス使用料はプラン料金の中に含まれています。深夜帯まで利用したい場合は、直接オフィスの係員の方にご相談ください！</p>
-											</div>
-										</div>
-										<div class="schedule_item">
-											<div class="title_wrap">
-												<span class="time">PM22:00ごろ</span>
-												<h4 class="title">カギビトは朝が早いので帰ります！</h4>
-											</div>
-											<div class="description">
-												<p>シェアオフィス「オノミチシェア」にドロップインをします。10:00~19:00までの時間のオフィス使用料はプラン料金の中に含まれています。深夜帯まで利用したい場合は、直接オフィスの係員の方にご相談ください！</p>
-											</div>
-										</div>
-										<div class="yahoku_item">
-											<p class="yohaku_txt">素敵な尾道の夜を！</p>
-										</div>
-										<div class="schedule_item">
-											<div class="title_wrap">
-												<span class="time">??:??ごろ</span>
-												<h4 class="title">ゲストハウスに帰宅・就寝</h4>
+										<div class="txt_wrap">
+											<?php if($ex_time != null):?>
+											<span class="time"><?php echo $ex_time ;?></span>
+											<?php endif; ?>
+											<h5 class="schedule_ttl"><?php echo $ex_ttl;?></h5>
+											<div class="desc">
+												<p><?php echo $ex_desc;?></p>
 											</div>
 										</div>
 									</div>
-								</div><
-							</div> -->
+									<?php } ?>
+								</div><!-- shcedule_wrap -->
+								<div class="title_box">
+									<h4 class="text"><?php echo SCF::get('yohaku_detail_ttl');?></h4>
+									<p class="desc"><?php echo SCF::get('yohaku_detail_text');?></p>
+								</div>
+								<div class="shcedule_wrap">
+									<?php
+										$repeat_group = SCF::get( 'yohaku_contents_detail' );
+										foreach ( $repeat_group as $fields ) {
+											$ex_img = wp_get_attachment_image_src($fields['yohaku_contents_detail_img'],'medium_large');
+											$ex_ttl = $fields['yohaku_contents_detail_ttl'];
+											$ex_desc = $fields['yohaku_contents_detail_txt'];
+										?>
+									<div class="item_box">
+										<div class="img_wrap">
+											<img src="<?php echo $ex_img[0];?>">
+										</div>
+										<div class="txt_wrap">
+											<h5 class="schedule_ttl"><?php echo $ex_ttl;?></h5>
+											<div class="desc">
+												<p><?php echo $ex_desc;?></p>
+											</div>
+										</div>
+									</div>
+									<?php } ?>
+								</div><!-- slick-slider -->
+								<div class="title_box">
+									<h4 class="text">カギビトとの別れ</h4>
+								</div>
+								<div class="shcedule_wrap single last">
+									<div class="item_box">
+										<div class="img_wrap">
+											<img src="<?php echo $end_img[0];?>">
+										</div>
+										<div class="txt_wrap">
+											<span class="time"><?php echo SCF::get('schedule02_time');?></span>
+											<h5 class="schedule_ttl"><?php echo SCF::get('schedule02_title');?></h5>
+											<div class="desc">
+												<p><?php echo SCF::get('schedule02_txt');?></p>
+											</div>
+										</div>
+									</div><!-- item_box -->
+								</div><!-- shcedule_wrap -->
+							</div><!-- comp-time-shcedule -->
 							<!--<div class="comp-trip-review">
 								<h3 class="detail_ttl">旅人の声</h3>
 								<div class="review_wrap">
@@ -625,4 +663,83 @@
 <?php get_template_part("parts/hummenu");?>
 <?php get_template_part("parts/footer");?>
 </body>
+<script>
+$(function() {
+	var bookingButton = $('.comp-booking-button button');
+	var stockArray = [];
+	var dateItems = [];
+	var stockArray = [
+		<?php
+			$repeat_group = SCF::get( 'calendar' );
+			foreach ( $repeat_group as $fields ) {
+				$set_date = $fields['set_date'];
+				$stock_num = $fields['stock_num'];
+			?>
+			{ date: '<?php echo $set_date;?>', value: '<?php echo $stock_num;?>'},
+		<?php } ?>
+	];
+	function stockSet(){
+		dateItems = [];
+		var datePicker = $('fieldset.wc-bookings-date-picker');
+		var txtLength = datePicker.html().length;
+		console.log('txtLength:' + txtLength);
+		var defaultStock = '<?php echo SCF::get('default_stock_num');?>';
+		setTimeout(function() {
+			datePicker.find('td').not('.ui-state-disabled').each(function(index) {
+				dateItems[index] = $(this);
+				var year = $(this).attr('data-year');
+				var month = $(this).attr('data-month');
+				var month = Number(month) + 1;
+				var day = $(this).find('a').text();
+				if(month < 10){month = '0' + month;}
+				if(day < 10){day = '0' + day;}
+				var dateTxt = year + '-' + month + '-' + day;
+				var target = stockArray.filter((obj) => {
+    			return (obj.date === dateTxt);
+				});
+				if(target[0] != undefined){
+					for (let i = -2; i < 1; i++) {
+						var str = index + i
+						dateItems[str].find('.stock').remove();
+						dateItems[str].append('<span class="stock">残り' + target[0].value + '</span>');
+						if(target[0].value == '0'){
+							dateItems[str].addClass('ui-datepicker-unselectable ui-state-disabled');
+						}
+					}
+				}else{
+					dateItems[index].append('<span class="stock">残り' + defaultStock + '</span>');
+				}
+			});
+
+			setFunction();
+
+		}, 1500);
+	}
+
+	bookingButton.on({
+		'click': function(){
+			stockSet();
+		}
+	})
+
+	function setFunction(){
+		$('.ui-datepicker-next').on({
+			'click': function(){
+				stockSet();
+			}
+		})
+		$('.ui-datepicker-prev').on({
+			'click': function(){
+				stockSet();
+			}
+		})
+		$('.ui-state-active').on({
+			'click': function(){
+				stockSet();
+			}
+		})
+	};
+
+});
+</script>
 </html>
