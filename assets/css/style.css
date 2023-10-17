@@ -4594,31 +4594,40 @@ footer .footer_inner .footer_lower .copyright {
 .page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot {
   width: 100%;
   display: block;
-}
-.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr {
-  display: none;
-}
-.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr:nth-last-of-type(1) {
-  width: 40%;
-  margin-left: 60%;
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr {
+  width: auto !important;
+  margin-right: 30px;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-family: "FOT-筑紫A丸ゴシック Std D", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: bold;
+  line-height: 1.6;
   letter-spacing: 0.03em;
-  padding: 30px 10px 0 !important;
+  padding: 10px 10px 0 !important;
 }
-.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr:nth-last-of-type(1) th {
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr th {
+  margin-right: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr td {
   font-size: 18px;
 }
-.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr:nth-last-of-type(1) td {
-  font-size: 20px;
-}
-.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr:nth-last-of-type(1) td .amount::after {
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr td .amount::after {
   display: inline;
   content: "(税込)";
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr:nth-last-of-type(2) {
+  margin-right: 0;
+}
+.page-payment .section-payment .woocommerce-order .woocommerce-order-details .order_details tfoot tr:nth-last-of-type(1) {
+  width: 100% !important;
+  margin-right: 0;
 }
 .page-payment .section-payment .woocommerce-order .woocommerce-customer-details {
   margin-top: 60px;
@@ -10881,6 +10890,15 @@ footer .footer_inner .footer_lower .copyright {
   padding: 5px !important;
   box-sizing: border-box;
   position: relative;
+}
+.comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td .stock {
+  width: 120%;
+  font-size: 10px;
+  display: block;
+  transform: scale(0.8);
+  margin: -5px -15%;
+  text-align: center;
+  color: #979797;
 }
 .comp-booking-section .default_wrap .product-type-booking .summary form.cart .wc-bookings-booking-form fieldset .ui-datepicker-inline .ui-datepicker-calendar td::before {
   position: absolute;

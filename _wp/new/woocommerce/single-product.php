@@ -30,6 +30,7 @@
 				$kagibito_area = SCF::get('area_name', $kagibito_id);
 				$kagibito_profile = SCF::get('profile_txt', $kagibito_id);
 			?>
+			<div id="adminMail" style="display: none;"><?php echo SCF::get('mail_adress');?></div>
 			<section id="main" class="section-main">
 				<?php
 					$main_thumb = SCF::get('main_pc');
@@ -662,4 +663,83 @@
 <?php get_template_part("parts/hummenu");?>
 <?php get_template_part("parts/footer");?>
 </body>
+<script>
+$(function() {
+	var bookingButton = $('.comp-booking-button button');
+	var stockArray = [];
+	var dateItems = [];
+	var stockArray = [
+		<?php
+			$repeat_group = SCF::get( 'calendar' );
+			foreach ( $repeat_group as $fields ) {
+				$set_date = $fields['set_date'];
+				$stock_num = $fields['stock_num'];
+			?>
+			{ date: '<?php echo $set_date;?>', value: '<?php echo $stock_num;?>'},
+		<?php } ?>
+	];
+	function stockSet(){
+		dateItems = [];
+		var datePicker = $('fieldset.wc-bookings-date-picker');
+		var txtLength = datePicker.html().length;
+		console.log('txtLength:' + txtLength);
+		var defaultStock = '<?php echo SCF::get('default_stock_num');?>';
+		setTimeout(function() {
+			datePicker.find('td').not('.ui-state-disabled').each(function(index) {
+				dateItems[index] = $(this);
+				var year = $(this).attr('data-year');
+				var month = $(this).attr('data-month');
+				var month = Number(month) + 1;
+				var day = $(this).find('a').text();
+				if(month < 10){month = '0' + month;}
+				if(day < 10){day = '0' + day;}
+				var dateTxt = year + '-' + month + '-' + day;
+				var target = stockArray.filter((obj) => {
+    			return (obj.date === dateTxt);
+				});
+				if(target[0] != undefined){
+					for (let i = -2; i < 1; i++) {
+						var str = index + i
+						dateItems[str].find('.stock').remove();
+						dateItems[str].append('<span class="stock">残り' + target[0].value + '</span>');
+						if(target[0].value == '0'){
+							dateItems[str].addClass('ui-datepicker-unselectable ui-state-disabled');
+						}
+					}
+				}else{
+					dateItems[index].append('<span class="stock">残り' + defaultStock + '</span>');
+				}
+			});
+
+			setFunction();
+
+		}, 1500);
+	}
+
+	bookingButton.on({
+		'click': function(){
+			stockSet();
+		}
+	})
+
+	function setFunction(){
+		$('.ui-datepicker-next').on({
+			'click': function(){
+				stockSet();
+			}
+		})
+		$('.ui-datepicker-prev').on({
+			'click': function(){
+				stockSet();
+			}
+		})
+		$('.ui-state-active').on({
+			'click': function(){
+				stockSet();
+			}
+		})
+	};
+
+});
+</script>
 </html>
